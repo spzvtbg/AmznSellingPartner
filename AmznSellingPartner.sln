@@ -1,9 +1,45 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmznSellingPartner.Models.Console", "AmznSellingPartner.Models.Console\AmznSellingPartner.Models.Console.csproj", "{C4FDA997-E8D1-46DD-89F4-099184A10D17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmznSellingPartner.Clients", "AmznSellingPartner.Clients\AmznSellingPartner.Clients.csproj", "{86C21CB9-A5D5-4B3F-8D74-5BF5961F2C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmznSellingPartner.Clients.WarehousingAndDistribution", "AmznSellingPartner.Clients.WarehousingAndDistribution\AmznSellingPartner.Clients.WarehousingAndDistribution.csproj", "{D3779BDB-B076-453B-8485-13701C318C02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmznSellingPartner.Models.WarehousingAndDistribution", "AmznSellingPartner.Models.WarehousingAndDistribution\AmznSellingPartner.Models.WarehousingAndDistribution.csproj", "{9BD9E0A4-2725-48FC-9670-A66815B63F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmznSellingPartner.Models", "AmznSellingPartner.Models\AmznSellingPartner.Models.csproj", "{4D793DEE-43DC-4557-A995-84A279D0E192}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4FDA997-E8D1-46DD-89F4-099184A10D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FDA997-E8D1-46DD-89F4-099184A10D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FDA997-E8D1-46DD-89F4-099184A10D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FDA997-E8D1-46DD-89F4-099184A10D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C21CB9-A5D5-4B3F-8D74-5BF5961F2C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C21CB9-A5D5-4B3F-8D74-5BF5961F2C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C21CB9-A5D5-4B3F-8D74-5BF5961F2C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C21CB9-A5D5-4B3F-8D74-5BF5961F2C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3779BDB-B076-453B-8485-13701C318C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3779BDB-B076-453B-8485-13701C318C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3779BDB-B076-453B-8485-13701C318C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3779BDB-B076-453B-8485-13701C318C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD9E0A4-2725-48FC-9670-A66815B63F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD9E0A4-2725-48FC-9670-A66815B63F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD9E0A4-2725-48FC-9670-A66815B63F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD9E0A4-2725-48FC-9670-A66815B63F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D793DEE-43DC-4557-A995-84A279D0E192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D793DEE-43DC-4557-A995-84A279D0E192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D793DEE-43DC-4557-A995-84A279D0E192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D793DEE-43DC-4557-A995-84A279D0E192}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

@@ -2,6 +2,8 @@
 {
     using Newtonsoft.Json;
 
+    using System.Collections.Generic;
+
     public class JMethod : JUnhandled
     {
         public string OperationId { get; set; }
@@ -27,5 +29,16 @@
 
         [JsonProperty("x-amzn-api-sandbox")]
         public JSandbox Sandbox { get; set; }
+
+        internal void GetSchemas(HashSet<string> schemas)
+        {
+            if (this.Tags?.Length > 0)
+            {
+                foreach (var tag in this.Tags)
+                {
+                    schemas.Add(tag);
+                }
+            }
+        }
     }
 }

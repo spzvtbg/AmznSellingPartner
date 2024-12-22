@@ -5,9 +5,11 @@
 
     public class JProperty : JUnhandled
     {
-        public string Description { get; set; }
+        public string Name { get; set; }
 
         public string Type { get; set; }
+
+        public string Description { get; set; }
 
         public string Ref { get; set; }
 
@@ -31,8 +33,6 @@
 
         [JsonProperty("x-docgen-enum-table-extension")]
         public JEnum[] EnumValues { get; set; }
-
-        public JProperties Properties { get; set; }
 
         public string Pattern { get; set; }
 

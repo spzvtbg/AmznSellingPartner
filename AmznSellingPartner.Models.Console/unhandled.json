@@ -1,1 +1,454 @@
-{}
+{
+  "JDefinition": {
+    "example": [
+      {
+        "addressLine1": "address_1",
+        "addressLine2": "address_2",
+        "addressLine3": "address_3",
+        "city": "Seattle",
+        "countryCode": "US",
+        "county": "Washington",
+        "district": "District1",
+        "name": "address_name",
+        "phoneNumber": "+14155552671",
+        "postalCode": "123456",
+        "stateOrRegion": "Washington"
+      },
+      {
+        "carrierCodeType": "SCAC",
+        "carrierCodeValue": "TestCarrierCode"
+      },
+      "SCAC",
+      "INCHES",
+      {
+        "contents": {
+          "products": [
+            {
+              "quantity": 1,
+              "sku": "testPen",
+              "expiration": "2025-06-07T12:12:09.061Z",
+              "prepDetails": {
+                "prepCategory": "PERFORATED",
+                "prepOwner": "AMAZON",
+                "labelOwner": "SELF",
+                "prepInstructions": [
+                  {
+                    "prepType": "ITEM_POLYBAGGING",
+                    "prepOwner": "AMAZON"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "measurements": {
+          "dimensions": {
+            "height": 1,
+            "length": 1,
+            "unitOfMeasurement": "INCHES",
+            "width": 1
+          },
+          "volume": {
+            "unitOfMeasurement": "CUIN",
+            "volume": 1
+          },
+          "weight": {
+            "unitOfMeasurement": "POUNDS",
+            "weight": 1
+          }
+        },
+        "type": "CASE"
+      },
+      {
+        "count": 1,
+        "distributionPackage": {
+          "contents": {
+            "products": [
+              {
+                "quantity": 1,
+                "sku": "testPen",
+                "expiration": "2025-06-07T12:12:09.061Z",
+                "prepDetails": {
+                  "prepCategory": "PERFORATED",
+                  "prepOwner": "AMAZON",
+                  "labelOwner": "SELF",
+                  "prepInstructions": [
+                    {
+                      "prepType": "ITEM_POLYBAGGING",
+                      "prepOwner": "AMAZON"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "measurements": {
+            "dimensions": {
+              "height": 1,
+              "length": 1,
+              "unitOfMeasurement": "INCHES",
+              "width": 1
+            },
+            "volume": {
+              "unitOfMeasurement": "CUIN",
+              "volume": 1
+            },
+            "weight": {
+              "unitOfMeasurement": "POUNDS",
+              "weight": 1
+            }
+          },
+          "type": "CASE"
+        }
+      },
+      "CASE",
+      "PDF",
+      {
+        "channelPlacedInboundShipments": [
+          {
+            "destinationAddress": {
+              "addressLine1": "address_1",
+              "addressLine2": "address_2",
+              "addressLine3": "address_3",
+              "city": "Seattle",
+              "countryCode": "US",
+              "county": "Washington",
+              "district": "District1",
+              "name": "address_name",
+              "phoneNumber": "+14155552671",
+              "postalCode": "123456",
+              "stateOrRegion": "Washington"
+            },
+            "orderId": "TestOrderId",
+            "originAddress": {
+              "addressLine1": "address_1",
+              "addressLine2": "address_2",
+              "addressLine3": "address_3",
+              "city": "Seattle",
+              "countryCode": "US",
+              "county": "Washington",
+              "district": "District1",
+              "name": "address_name",
+              "phoneNumber": "+14155552671",
+              "postalCode": "123456",
+              "stateOrRegion": "Washington"
+            },
+            "receivedQuantity": [],
+            "shipmentContainerQuantities": [
+              {
+                "count": 1,
+                "distributionPackage": {
+                  "contents": {
+                    "packages": [],
+                    "products": [
+                      {
+                        "quantity": 1,
+                        "sku": "testPen"
+                      }
+                    ]
+                  },
+                  "measurements": {
+                    "dimensions": {
+                      "height": 2.54,
+                      "length": 2.54,
+                      "unitOfMeasurement": "CENTIMETERS",
+                      "width": 2.54
+                    },
+                    "weight": {
+                      "unitOfMeasurement": "KILOGRAMS",
+                      "weight": 0.453592
+                    }
+                  },
+                  "type": "CASE"
+                }
+              }
+            ],
+            "shipmentId": "TestShipmentId",
+            "shipmentStatus": "CREATED"
+          }
+        ],
+        "createdAt": "2023-06-07T12:12:09.061Z",
+        "externalReferenceId": "TestReferenceId",
+        "destinationRegion": "us-west",
+        "orderId": "TestOrderId",
+        "orderStatus": "DRAFT",
+        "orderVersion": "2",
+        "originAddress": {
+          "addressLine1": "address_1",
+          "addressLine2": "address_2",
+          "addressLine3": "address_3",
+          "city": "Seattle",
+          "countryCode": "US",
+          "county": "Washington",
+          "district": "District1",
+          "name": "address_name",
+          "phoneNumber": "+14155552671",
+          "postalCode": "123456",
+          "stateOrRegion": "Washington"
+        },
+        "packagesToInbound": [
+          {
+            "count": 1,
+            "distributionPackage": {
+              "contents": {
+                "packages": [],
+                "products": [
+                  {
+                    "quantity": 1,
+                    "sku": "testPen"
+                  }
+                ]
+              },
+              "measurements": {
+                "dimensions": {
+                  "height": 2.54,
+                  "length": 2.54,
+                  "unitOfMeasurement": "CENTIMETERS",
+                  "width": 2.54
+                },
+                "weight": {
+                  "unitOfMeasurement": "KILOGRAMS",
+                  "weight": 0.453592
+                }
+              },
+              "type": "CASE"
+            }
+          }
+        ],
+        "shipBy": "2023-06-07T12:12:09.061Z",
+        "updatedAt": "2023-06-07T12:12:09.061Z",
+        "preferences": {
+          "destinationRegion": "us-west"
+        }
+      },
+      {
+        "externalReferenceId": "TestReferenceId",
+        "originAddress": {
+          "addressLine1": "address_1",
+          "addressLine2": "address_2",
+          "addressLine3": "address_3",
+          "city": "City1",
+          "countryCode": "CC",
+          "district": "District1",
+          "name": "address_name",
+          "postalCode": "123456",
+          "stateOrRegion": "State1"
+        },
+        "packagesToInbound": [
+          {
+            "count": 1,
+            "distributionPackage": {
+              "contents": {
+                "products": [
+                  {
+                    "quantity": 1,
+                    "sku": "testPen"
+                  }
+                ]
+              },
+              "measurements": {
+                "dimensions": {
+                  "height": 1,
+                  "length": 1,
+                  "unitOfMeasurement": "INCHES",
+                  "width": 1
+                },
+                "volume": {
+                  "unitOfMeasurement": "CUIN",
+                  "volume": 1
+                },
+                "weight": {
+                  "unitOfMeasurement": "POUNDS",
+                  "weight": 1
+                }
+              },
+              "type": "CASE"
+            }
+          }
+        ],
+        "shipBy": "2023-06-07T12:12:09.061Z",
+        "preferences": {
+          "destinationRegion": "us-west"
+        }
+      },
+      {
+        "packagesToInbound": [
+          {
+            "count": 1,
+            "distributionPackage": {
+              "contents": {
+                "products": [
+                  {
+                    "quantity": 1,
+                    "sku": "testPen"
+                  }
+                ]
+              },
+              "measurements": {
+                "dimensions": {
+                  "height": 1,
+                  "length": 1,
+                  "unitOfMeasurement": "INCHES",
+                  "width": 1
+                },
+                "volume": {
+                  "unitOfMeasurement": "CUIN",
+                  "volume": 1
+                },
+                "weight": {
+                  "unitOfMeasurement": "POUNDS",
+                  "weight": 1
+                }
+              },
+              "type": "CASE"
+            }
+          }
+        ]
+      },
+      "SHOW",
+      {
+        "orderPreference": "PARTIAL_ORDER",
+        "orderPreferenceValue": "SET"
+      },
+      {
+        "code": "INVALID_MSKU",
+        "description": "The MSKU of an invalid order."
+      },
+      "PARTIAL_ORDER",
+      "SET",
+      {
+        "failureCode": "TestErrorCode",
+        "failureReasons": [
+          "Test failure reason"
+        ],
+        "sku": "SampleSKU"
+      },
+      {
+        "packagesToOutbound": [
+          {
+            "count": 1,
+            "distributionPackage": {
+              "contents": {
+                "products": [
+                  {
+                    "quantity": 1,
+                    "sku": "testPen"
+                  }
+                ]
+              },
+              "measurements": {
+                "dimensions": {
+                  "height": 1,
+                  "length": 1,
+                  "unitOfMeasurement": "INCHES",
+                  "width": 1
+                },
+                "volume": {
+                  "unitOfMeasurement": "CUIN",
+                  "volume": 1
+                },
+                "weight": {
+                  "unitOfMeasurement": "POUNDS",
+                  "weight": 1
+                }
+              },
+              "type": "CASE"
+            }
+          }
+        ],
+        "productsToOutbound": [],
+        "orderPreferences": [
+          {
+            "orderPreference": "PARTIAL_ORDER",
+            "orderPreferenceValue": "SET"
+          }
+        ]
+      },
+      {
+        "createdAt": "2023-01-12T10:00:00Z",
+        "destinationAddress": {
+          "addressLine1": "address_1",
+          "addressLine2": "address_2",
+          "addressLine3": "address_3",
+          "city": "Seattle",
+          "countryCode": "US",
+          "county": "Washington",
+          "district": "District1",
+          "name": "address_name",
+          "phoneNumber": "+14155552671",
+          "postalCode": "123456",
+          "stateOrRegion": "Washington"
+        },
+        "originAddress": {
+          "addressLine1": "address_1",
+          "addressLine2": "address_2",
+          "addressLine3": "address_3",
+          "city": "Seattle",
+          "countryCode": "US",
+          "county": "Washington",
+          "district": "District1",
+          "name": "address_name",
+          "phoneNumber": "+14155552671",
+          "postalCode": "123456",
+          "stateOrRegion": "Washington"
+        },
+        "orderId": "TestOrderId",
+        "shipmentId": "TestShipmentId",
+        "shipmentPackageQuantities": [
+          {
+            "count": 1,
+            "distributionPackage": {
+              "contents": {
+                "products": [
+                  {
+                    "quantity": 1,
+                    "sku": "testPen"
+                  }
+                ]
+              },
+              "measurements": {
+                "dimensions": {
+                  "height": 1,
+                  "length": 1,
+                  "unitOfMeasurement": "INCHES",
+                  "width": 1
+                },
+                "volume": {
+                  "unitOfMeasurement": "CUIN",
+                  "volume": 1
+                },
+                "weight": {
+                  "unitOfMeasurement": "POUNDS",
+                  "weight": 1
+                }
+              },
+              "type": "CASE"
+            }
+          }
+        ],
+        "shipmentProductQuantities": [],
+        "shipmentStatus": "CREATED",
+        "updatedAt": "2023-01-12T10:00:00Z"
+      },
+      "CREATED",
+      "PLAIN_PAPER",
+      {
+        "name": "TestAttribute",
+        "value": "TestAttributeValue"
+      },
+      "CREATED_AT",
+      "ASCENDING",
+      {
+        "trackingDetails": [
+          {
+            "carrierCode": {
+              "carrierCodeType": "SCAC"
+            },
+            "shipBy": "2024-12-17T07:10:17.886Z",
+            "bookingId": "TRACKING_ID"
+          }
+        ]
+      }
+    ]
+  }
+}

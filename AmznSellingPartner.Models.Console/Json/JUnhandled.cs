@@ -9,16 +9,16 @@
     public class JUnhandled
     {
         [JsonExtensionData]
-        internal IDictionary<string, JToken> Unhandled { get; set; }
+        private IDictionary<string, JToken> unhandled;
 
         [OnDeserialized]
-        internal void OnDeserialized(StreamingContext _)
+        private void OnDeserialized(StreamingContext _)
         {
-            if (this.Unhandled?.Count > 0)
+            if (this.unhandled?.Count > 0)
             {
-                foreach (var (jpath, jtoken) in this.Unhandled)
+                foreach (var (jpath, jtoken) in this.unhandled)
                 {
-                    JSwagger.NotifyUnhandledDataDetected(this.GetType().Name, jpath, jtoken);
+                    JExtensions.NotifyUnhandledDataDetected(this.GetType().Name, jpath, jtoken);
                 }
             }
         }

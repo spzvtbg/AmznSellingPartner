@@ -1,18 +1,45 @@
 ﻿namespace AmznSellingPartner.Models.Console.Json
 {
-    using Newtonsoft.Json.Linq;
+    using AmznSellingPartner.Models.Console.CSharp;
 
-    using System;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
 
     public class JSwagger
     {
-        public static event Action<string, string, JToken> NotImplemented;
-
         public JPaths Paths { get; set; }
 
         public JDefinitions Definitions { get; set; }
 
-        internal static void NotifyUnhandledDataDetected(string jtype, string jpath, JToken jtoken)
-            => NotImplemented?.Invoke(jtype, jpath, jtoken);
+        [OnDeserialized]
+        private void OnDeserialized(StreamingContext _)
+        {
+            if (this.Definitions is null)
+            {
+                return;
+            }
+
+            foreach (var (name, definition) in this.Definitions)
+            {
+                definition.Name = name.Capitalize();
+            }
+        }
+
+        public IEnumerable<CSNamespace> ToCSNamespaces()
+        {
+            var definitions = this.Definitions.ToCSClasses();
+            var namespaces = new List<CSNamespace>();
+
+            foreach (var tag in this.Paths.GetTags())
+            {
+                var csNamespace = new CSNamespace();
+                csNamespace.Name = $"AmznSellingPartner.Models.{tag.Capitalize()}";
+                csNamespace.Classes = definitions;
+
+                namespaces.Add(csNamespace);
+            }
+
+            return namespaces;
+        }
     }
 }

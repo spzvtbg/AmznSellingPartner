@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string ShipmentId { get; set; }
 
 		/// <summary>
-		/// The package client reference identifier originally provided in the request body parameter for the getRates ope
-		/// ation.
+		/// The package client reference identifier originally provided in the request body parameter for the getRates
+		/// operation.
 		/// </summary>
 		[InQuery("packageClientReferenceId")]
 		[IsRequired]
@@ -25,15 +25,16 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string PackageClientReferenceId { get; set; }
 
 		/// <summary>
-		/// The file format of the document. Must be one of the supported formats returned by the getRates operation.
+		/// The file format of the document. Must be one of the supported formats returned by the getRates opera
+		/// tion.
 		/// </summary>
 		[InQuery("format")]
 		[JsonProperty("format")]
 		public string Format { get; set; }
 
 		/// <summary>
-		/// The resolution of the document (for example, 300 means 300 dots per inch). Must be one of the supported resolu
-		/// ions returned in the response to the getRates operation.
+		/// The resolution of the document (for example, 300 means 300 dots per inch). Must be one of the supported
+		/// resolutions returned in the response to the getRates operation.
 		/// </summary>
 		[InQuery("dpi")]
 		[JsonProperty("dpi")]

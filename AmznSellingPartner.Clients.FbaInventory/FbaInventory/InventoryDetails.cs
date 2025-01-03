@@ -3,7 +3,8 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Summarized inventory details. This object will not appear if the details parameter in the request is false.
+	/// Summarized inventory details. This object will not appear if the details parameter in the request is
+	/// false.
 	/// </summary>
 	public class InventoryDetails : BaseClass
 	{
@@ -20,15 +21,15 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		public int InboundWorkingQuantity { get; set; }
 
 		/// <summary>
-		/// The number of units in an inbound shipment that you have notified Amazon about and have provided a tracking nu
-		/// ber.
+		/// The number of units in an inbound shipment that you have notified Amazon about and have provided a tracking
+		/// number.
 		/// </summary>
 		[JsonProperty("inboundShippedQuantity")]
 		public int InboundShippedQuantity { get; set; }
 
 		/// <summary>
-		/// The number of units that have not yet been received at an Amazon fulfillment center for processing, but are pa
-		/// t of an inbound shipment with some units that have already been received and processed.
+		/// The number of units that have not yet been received at an Amazon fulfillment center for processing, but
+		/// are part of an inbound shipment with some units that have already been received and processed.
 		/// </summary>
 		[JsonProperty("inboundReceivingQuantity")]
 		public int InboundReceivingQuantity { get; set; }

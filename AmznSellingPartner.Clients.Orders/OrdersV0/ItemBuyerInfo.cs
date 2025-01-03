@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public class ItemBuyerInfo : BaseClass
 	{
 		/// <summary>
-		/// Buyer information for custom orders from the Amazon Custom program.  **Note**: This attribute is only availabl
-		/// for MFN (fulfilled by seller) orders.
+		/// Buyer information for custom orders from the Amazon Custom program.  **Note**: This attribute is only
+		/// available for MFN (fulfilled by seller) orders.
 		/// </summary>
 		[JsonProperty("BuyerCustomizedInfo")]
 		public BuyerCustomizedInfoDetail BuyerCustomizedInfo { get; set; }
@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public Money GiftWrapTax { get; set; }
 
 		/// <summary>
-		/// A gift message provided by the buyer.  **Note**: This attribute is only available for MFN (fulfilled by seller
-		/// orders.
+		/// A gift message provided by the buyer.  **Note**: This attribute is only available for MFN (fulfilled
+		/// by seller) orders.
 		/// </summary>
 		[JsonProperty("GiftMessageText")]
 		public string GiftMessageText { get; set; }

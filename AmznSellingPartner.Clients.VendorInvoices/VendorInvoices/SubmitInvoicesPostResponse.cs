@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expi
-		/// ed Token, or Invalid Signature.
+		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized,
+		/// Expired Token, or Invalid Signature.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public SubmitInvoicesResponse Value403 { get; set; }

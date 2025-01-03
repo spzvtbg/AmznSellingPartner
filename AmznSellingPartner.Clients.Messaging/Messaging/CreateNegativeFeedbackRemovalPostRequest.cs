@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
-		/// A marketplace identifier. This identifies the marketplace in which the order was placed. You can only specify
-		/// ne marketplace.
+		/// A marketplace identifier. This identifies the marketplace in which the order was placed. You can only
+		/// specify one marketplace.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]

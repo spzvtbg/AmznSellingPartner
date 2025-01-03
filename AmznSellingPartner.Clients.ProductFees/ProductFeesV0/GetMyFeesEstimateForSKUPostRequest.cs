@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		public GetMyFeesEstimateRequest Body { get; set; }
 
 		/// <summary>
-		/// Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is i
-		/// cluded with every operation that you submit.
+		/// Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which
+		/// is included with every operation that you submit.
 		/// </summary>
 		[InPath("SellerSKU")]
 		[IsRequired]

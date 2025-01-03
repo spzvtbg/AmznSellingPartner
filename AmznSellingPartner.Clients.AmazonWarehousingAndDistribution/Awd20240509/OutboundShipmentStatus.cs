@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		IN_TRANSIT,
 
 		/// <summary>
-		/// Carrier indicated that the shipment has arrived at the destination node, but the destination node has not ackn
-		/// wledged the delivery.
+		/// Carrier indicated that the shipment has arrived at the destination node, but the destination node has
+		/// not acknowledged the delivery.
 		/// </summary>
 		[EnumMember(Value = "DELIVERED")]
 		DELIVERED,

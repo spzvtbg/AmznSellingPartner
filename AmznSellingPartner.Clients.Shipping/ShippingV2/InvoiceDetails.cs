@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System;
 
 	/// <summary>
-	/// The invoice details for charges associated with the goods in the package. Only applies to certain regions.
+	/// The invoice details for charges associated with the goods in the package. Only applies to certain re
+	/// gions.
 	/// </summary>
 	public class InvoiceDetails : BaseClass
 	{

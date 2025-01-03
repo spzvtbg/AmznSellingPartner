@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 	public class GetItemEligibilityPreviewGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the marketplace in which you want to determine eligibility. Required only when program=INBO
-		/// ND.
+		/// The identifier for the marketplace in which you want to determine eligibility. Required only when pr
+		/// ogram=INBOUND.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[MaxItems(1)]

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public class InventorySummary : BaseClass
 	{
 		/// <summary>
-		/// The expiration details of the inventory. This object will only appear if the `details` parameter in the reques
-		/// is set to `SHOW`.
+		/// The expiration details of the inventory. This object will only appear if the `details` parameter in the
+		/// request is set to `SHOW`.
 		/// </summary>
 		[JsonProperty("expirationDetails")]
 		public List<ExpirationDetails> ExpirationDetails { get; set; }
@@ -29,7 +29,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public string Sku { get; set; }
 
 		/// <summary>
-		/// Total quantity that is in-transit from the seller and has not yet been received at an AWD Distribution Center
+		/// Total quantity that is in-transit from the seller and has not yet been received at an AWD Distribution
+		/// Center
 		/// </summary>
 		[JsonProperty("totalInboundQuantity")]
 		public long TotalInboundQuantity { get; set; }

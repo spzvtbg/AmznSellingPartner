@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public RejectionReason RejectionReason { get; set; }
 
 		/// <summary>
-		/// The date the order was reviewed. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date ti
-		/// e format.
+		/// The date the order was reviewed. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date time format.
 		/// </summary>
 		[JsonProperty("ReviewDate")]
 		public string ReviewDate { get; set; }
@@ -53,7 +53,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 
 		/// <summary>
 		/// A list of valid verification details that may be provided and the criteria required for when the verification
-		/// etail can be provided.
+		/// detail can be provided.
 		/// </summary>
 		[JsonProperty("ValidVerificationDetails")]
 		public List<ValidVerificationDetail> ValidVerificationDetails { get; set; }

@@ -25,7 +25,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string DestinationType { get; set; }
 
 		/// <summary>
-		/// The warehouse that the shipment should be sent to. Empty if the destination type is `AMAZON_OPTIMIZED`.
+		/// The warehouse that the shipment should be sent to. Empty if the destination type is `AMAZON_OPTIMIZE
+		/// D`.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]

@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System;
 
 	/// <summary>
-	/// The request schema for the getRates operation. When the channelType is Amazon, the shipTo address is not requi
-	/// ed and will be ignored.
+	/// The request schema for the getRates operation. When the channelType is Amazon, the shipTo address is
+	/// not required and will be ignored.
 	/// </summary>
 	public class GetRatesRequest : BaseClass
 	{

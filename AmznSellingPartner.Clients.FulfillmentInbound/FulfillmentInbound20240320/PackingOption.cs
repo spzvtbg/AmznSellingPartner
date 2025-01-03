@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A packing option contains a set of pack groups plus additional information about the packing option, such as a
-	/// y discounts or fees if it's selected.
+	/// A packing option contains a set of pack groups plus additional information about the packing option,
+	/// such as any discounts or fees if it's selected.
 	/// </summary>
 	public class PackingOption : BaseClass
 	{
@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public List<Incentive> Discounts { get; set; }
 
 		/// <summary>
-		/// The time at which this packing option is no longer valid. In [ISO 8601](https://developer-docs.amazon.com/sp-a
-		/// i/docs/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
+		/// The time at which this packing option is no longer valid. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
 		public DateTime Expiration { get; set; }

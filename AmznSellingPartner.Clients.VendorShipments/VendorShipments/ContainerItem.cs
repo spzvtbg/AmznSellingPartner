@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class ContainerItem : BaseClass
 	{
 		/// <summary>
-		/// The reference number for the item. Please provide the itemSequenceNumber from the 'items' segment to refer to
-		/// hat item's details here.
+		/// The reference number for the item. Please provide the itemSequenceNumber from the 'items' segment to
+		/// refer to that item's details here.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("itemReference")]

@@ -22,9 +22,10 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		public string Asin { get; set; }
 
 		/// <summary>
-		/// The marketplace identifier. The supported marketplaces for both sellers and vendors are US, CA, ES, UK, FR, IT
-		/// IN, DE and JP. The supported marketplaces for vendors only are BR, AU, MX, AE and NL.  Refer to [Marketplace
-		/// Ds](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) to find the identifier for the marketplace.
+		/// The marketplace identifier. The supported marketplaces for both sellers and vendors are US, CA, ES, UK,
+		/// FR, IT, IN, DE and JP. The supported marketplaces for vendors only are BR, AU, MX, AE and NL.  Refer
+		/// to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) to find the identifier
+		/// for the marketplace.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		public MarketplaceId MarketplaceId { get; set; }

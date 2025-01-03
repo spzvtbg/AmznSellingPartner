@@ -30,7 +30,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string SellerFulfillmentOrderItemId { get; set; }
 
 		/// <summary>
-		/// Error codes associated with the fulfillment order preview that indicate why the item is unfulfillable.
+		/// Error codes associated with the fulfillment order preview that indicate why the item is unfulfillabl
+		/// e.
 		/// </summary>
 		[JsonProperty("itemUnfulfillableReasons")]
 		public StringList ItemUnfulfillableReasons { get; set; }

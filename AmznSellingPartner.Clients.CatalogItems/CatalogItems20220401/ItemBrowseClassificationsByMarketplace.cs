@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Classifications (browse nodes) associated with the item in the Amazon catalog for the indicated Amazon marketp
-	/// ace.
+	/// Classifications (browse nodes) associated with the item in the Amazon catalog for the indicated Amazon
+	/// marketplace.
 	/// </summary>
 	public class ItemBrowseClassificationsByMarketplace : BaseClass
 	{
@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// Classifications (browse nodes) associated with the item in the Amazon catalog for the indicated Amazon marketp
-		/// ace.
+		/// Classifications (browse nodes) associated with the item in the Amazon catalog for the indicated Amazon
+		/// marketplace.
 		/// </summary>
 		[JsonProperty("classifications")]
 		public List<ItemBrowseClassification> Classifications { get; set; }

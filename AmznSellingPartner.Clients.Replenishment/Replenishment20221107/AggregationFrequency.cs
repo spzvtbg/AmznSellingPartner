@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The time period used to group data in the response. Note that this is only valid for the `PERFORMANCE` time pe
-	/// iod type.
+	/// The time period used to group data in the response. Note that this is only valid for the `PERFORMANCE`
+	/// time period type.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum AggregationFrequency

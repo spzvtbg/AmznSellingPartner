@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class CreateShippingLabelsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The purchase order number for which you want to return the shipping labels. It should be the same number as th
-		/// `purchaseOrderNumber` in the order.
+		/// The purchase order number for which you want to return the shipping labels. It should be the same number
+		/// as the `purchaseOrderNumber` in the order.
 		/// </summary>
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]

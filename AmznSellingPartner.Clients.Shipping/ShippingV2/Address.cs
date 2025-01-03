@@ -73,8 +73,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string Email { get; set; }
 
 		/// <summary>
-		/// The phone number of the person, business or institution located at that address, including the country calling
-		/// code.
+		/// The phone number of the person, business or institution located at that address, including the country
+		/// calling code.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(20)]

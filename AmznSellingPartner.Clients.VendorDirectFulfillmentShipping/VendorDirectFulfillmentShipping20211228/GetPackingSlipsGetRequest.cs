@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class GetPackingSlipsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The vendor `warehouseId` for order fulfillment. If not specified, the result contains orders for all warehouse
-		/// .
+		/// The vendor `warehouseId` for order fulfillment. If not specified, the result contains orders for all
+		/// warehouses.
 		/// </summary>
 		[InQuery("shipFromPartyId")]
 		[JsonProperty("shipFromPartyId")]
@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public int Limit { get; set; }
 
 		/// <summary>
-		/// Packing slips that become available after this date and time will be included in the result. Values are in [IS
-		/// 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format.
+		/// Packing slips that become available after this date and time will be included in the result. Values are
+		/// in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[IsRequired]
@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
-		/// Packing slips that became available before this date and time will be included in the result. Values are in [I
-		/// O 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format.
+		/// Packing slips that became available before this date and time will be included in the result. Values
+		/// are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format.
 		/// </summary>
 		[InQuery("createdBefore")]
 		[IsRequired]
@@ -52,8 +52,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// Used for pagination when there are more packing slips than the specified result size limit. The token value is
-		/// returned in the previous API call.
+		/// Used for pagination when there are more packing slips than the specified result size limit. The token
+		/// value is returned in the previous API call.
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]

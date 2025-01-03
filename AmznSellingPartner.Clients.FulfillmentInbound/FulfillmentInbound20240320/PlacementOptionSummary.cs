@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class PlacementOptionSummary : BaseClass
 	{
 		/// <summary>
-		/// The identifier of a placement option. A placement option represents the shipment splits and destinations of SK
-		/// s.
+		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
+		/// of SKUs.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]

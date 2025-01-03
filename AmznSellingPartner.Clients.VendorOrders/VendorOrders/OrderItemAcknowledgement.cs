@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using System;
 
 	/// <summary>
-	/// Represents the acknowledgement details for an individual order item, including the acknowledgement code, ackno
-	/// ledged quantity, scheduled ship and delivery dates, and rejection reason (if applicable).
+	/// Represents the acknowledgement details for an individual order item, including the acknowledgement code,
+	/// acknowledged quantity, scheduled ship and delivery dates, and rejection reason (if applicable).
 	/// </summary>
 	public class OrderItemAcknowledgement : BaseClass
 	{

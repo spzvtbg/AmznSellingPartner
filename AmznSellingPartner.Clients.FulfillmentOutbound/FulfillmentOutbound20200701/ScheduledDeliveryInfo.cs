@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class ScheduledDeliveryInfo : BaseClass
 	{
 		/// <summary>
-		/// The time zone of the destination address for the fulfillment order preview. Must be an IANA time zone name. Ex
-		/// mple: Asia/Tokyo.
+		/// The time zone of the destination address for the fulfillment order preview. Must be an IANA time zone
+		/// name. Example: Asia/Tokyo.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("deliveryTimeZone")]

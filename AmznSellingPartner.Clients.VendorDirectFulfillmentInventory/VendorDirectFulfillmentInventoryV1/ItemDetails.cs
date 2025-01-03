@@ -10,15 +10,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 	public class ItemDetails : BaseClass
 	{
 		/// <summary>
-		/// The buyer selected product identification of the item. Either buyerProductIdentifier or vendorProductIdentifie
+		/// The buyer selected product identification of the item. Either buyerProductIdentifier or vendorProductIdentifier
 		/// should be submitted.
 		/// </summary>
 		[JsonProperty("buyerProductIdentifier")]
 		public string BuyerProductIdentifier { get; set; }
 
 		/// <summary>
-		/// The vendor selected product identification of the item. Either buyerProductIdentifier or vendorProductIdentifi
-		/// r should be submitted.
+		/// The vendor selected product identification of the item. Either buyerProductIdentifier or vendorProductIdentifier
+		/// should be submitted.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
 		public string VendorProductIdentifier { get; set; }

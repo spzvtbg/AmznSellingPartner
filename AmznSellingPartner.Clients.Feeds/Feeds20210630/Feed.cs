@@ -59,7 +59,8 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		public DateTime ProcessingEndTime { get; set; }
 
 		/// <summary>
-		/// The identifier for the feed document. This identifier is unique only in combination with a seller ID.
+		/// The identifier for the feed document. This identifier is unique only in combination with a seller ID
+		/// .
 		/// </summary>
 		[JsonProperty("resultFeedDocumentId")]
 		public string ResultFeedDocumentId { get; set; }

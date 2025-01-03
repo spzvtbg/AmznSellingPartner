@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An amount of money. Includes the currency code and an optional unit of measure for items priced by weight.
+	/// An amount of money. Includes the currency code and an optional unit of measure for items priced by w
+	/// eight.
 	/// </summary>
 	public class Money : BaseClass
 	{
@@ -20,7 +21,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public Decimal Amount { get; set; }
 
 		/// <summary>
-		/// The unit of measure for prices of items sold by weight. If this field is absent, the item is sold by eaches.
+		/// The unit of measure for prices of items sold by weight. If this field is absent, the item is sold by
+		/// eaches.
 		/// </summary>
 		[JsonProperty("unitOfMeasure")]
 		public UnitOfMeasure UnitOfMeasure { get; set; }

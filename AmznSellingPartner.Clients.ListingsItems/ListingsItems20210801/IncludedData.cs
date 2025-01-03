@@ -57,8 +57,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		productTypes,
 
 		/// <summary>
-		/// Identifiers associated with the item in the Amazon catalog, such as Amazon Standard Identification Number (ASI
-		/// ). Can only be requested when `mode` is `VALIDATION_PREVIEW`.
+		/// Identifiers associated with the item in the Amazon catalog, such as Amazon Standard Identification Number
+		/// (ASIN). Can only be requested when `mode` is `VALIDATION_PREVIEW`.
 		/// </summary>
 		[EnumMember(Value = "identifiers")]
 		identifiers,

@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Dimensions Dimensions { get; set; }
 
 		/// <summary>
-		/// The items and their quantity in the box. This must be empty if the box `contentInformationSource` is `BARCODE_
-		/// D` or `MANUAL_PROCESS`.
+		/// The items and their quantity in the box. This must be empty if the box `contentInformationSource` is
+		/// `BARCODE_2D` or `MANUAL_PROCESS`.
 		/// </summary>
 		[JsonProperty("items")]
 		public List<ItemInput> Items { get; set; }

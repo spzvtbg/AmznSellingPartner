@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Represents an acknowledgement for an order, including the purchase order number, selling party details, acknow
-	/// edgement date, and a list of acknowledged items.
+	/// Represents an acknowledgement for an order, including the purchase order number, selling party details,
+	/// acknowledgement date, and a list of acknowledged items.
 	/// </summary>
 	public class OrderAcknowledgement : BaseClass
 	{

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class ImportDetails : BaseClass
 	{
 		/// <summary>
-		/// This is used for import purchase orders only. If the recipient requests, this field will contain the shipment
-		/// ethod of payment.
+		/// This is used for import purchase orders only. If the recipient requests, this field will contain the
+		/// shipment method of payment.
 		/// </summary>
 		[JsonProperty("methodOfPayment")]
 		public MethodOfPayment MethodOfPayment { get; set; }
@@ -31,8 +31,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public Route Route { get; set; }
 
 		/// <summary>
-		/// Types and numbers of container(s) for import purchase orders. Can be a comma-separated list if shipment has mu
-		/// tiple containers.
+		/// Types and numbers of container(s) for import purchase orders. Can be a comma-separated list if shipment
+		/// has multiple containers.
 		/// </summary>
 		[MaxLength(64)]
 		[JsonProperty("importContainers")]
@@ -45,8 +45,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public Weight BillableWeight { get; set; }
 
 		/// <summary>
-		/// Date on which the shipment is expected to be shipped. This value should not be in the past and not more than 6
-		/// days out in the future.
+		/// Date on which the shipment is expected to be shipped. This value should not be in the past and not more
+		/// than 60 days out in the future.
 		/// </summary>
 		[JsonProperty("estimatedShipByDate")]
 		public DateTime EstimatedShipByDate { get; set; }

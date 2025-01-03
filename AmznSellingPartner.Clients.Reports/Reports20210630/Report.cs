@@ -26,8 +26,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public string ReportId { get; set; }
 
 		/// <summary>
-		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-value
-		/// ) for more information.
+		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
+		/// for more information.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("reportType")]
@@ -46,8 +46,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public DateTime DataEndTime { get; set; }
 
 		/// <summary>
-		/// The identifier of the report schedule that created this report (if any). This identifier is unique only in com
-		/// ination with a seller ID.
+		/// The identifier of the report schedule that created this report (if any). This identifier is unique only
+		/// in combination with a seller ID.
 		/// </summary>
 		[JsonProperty("reportScheduleId")]
 		public string ReportScheduleId { get; set; }
@@ -67,21 +67,21 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public ProcessingStatus ProcessingStatus { get; set; }
 
 		/// <summary>
-		/// The date and time when the report processing started, in <a href='https://developer-docs.amazon.com/sp-api/doc
-		/// /iso-8601'>ISO 8601</a> date time format.
+		/// The date and time when the report processing started, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> date time format.
 		/// </summary>
 		[JsonProperty("processingStartTime")]
 		public DateTime ProcessingStartTime { get; set; }
 
 		/// <summary>
-		/// The date and time when the report processing completed, in <a href='https://developer-docs.amazon.com/sp-api/d
-		/// cs/iso-8601'>ISO 8601</a> date time format.
+		/// The date and time when the report processing completed, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> date time format.
 		/// </summary>
 		[JsonProperty("processingEndTime")]
 		public DateTime ProcessingEndTime { get; set; }
 
 		/// <summary>
-		/// The identifier for the report document. Pass this into the `getReportDocument` operation to get the informatio
+		/// The identifier for the report document. Pass this into the `getReportDocument` operation to get the information
 		/// you will need to retrieve the report document's contents.
 		/// </summary>
 		[JsonProperty("reportDocumentId")]

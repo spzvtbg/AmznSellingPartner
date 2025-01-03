@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class UpdateItemComplianceDetailsPutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The Marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs.amazon.co
-		/// /sp-api/docs/marketplace-ids).
+		/// The Marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs
+		/// .amazon.com/sp-api/docs/marketplace-ids).
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]

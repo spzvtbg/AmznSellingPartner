@@ -60,8 +60,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public string StateOrRegion { get; set; }
 
 		/// <summary>
-		/// The postal or zip code of that address. It contains a series of letters or digits or both, sometimes including
-		/// spaces or punctuation.
+		/// The postal or zip code of that address. It contains a series of letters or digits or both, sometimes
+		/// including spaces or punctuation.
 		/// </summary>
 		[JsonProperty("postalOrZipCode")]
 		public string PostalOrZipCode { get; set; }

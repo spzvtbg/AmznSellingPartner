@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		BABY,
 
 		/// <summary>
-		/// A prep type has been defined by the Fulfillment Center. This value is provided by Amazon and cannot be used as
-		/// an input.
+		/// A prep type has been defined by the Fulfillment Center. This value is provided by Amazon and cannot be
+		/// used as an input.
 		/// </summary>
 		[EnumMember(Value = "FC_PROVIDED")]
 		FC_PROVIDED,
@@ -85,8 +85,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		TEXTILE,
 
 		/// <summary>
-		/// An unknown prep category was found and needs to be updated. This value is provided by Amazon and cannot be use
-		/// as an input.
+		/// An unknown prep category was found and needs to be updated. This value is provided by Amazon and cannot
+		/// be used as an input.
 		/// </summary>
 		[EnumMember(Value = "UNKNOWN")]
 		UNKNOWN,

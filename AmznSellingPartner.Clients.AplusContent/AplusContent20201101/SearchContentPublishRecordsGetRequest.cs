@@ -26,11 +26,11 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public string Asin { get; set; }
 
 		/// <summary>
-		/// A page token from the nextPageToken response element returned by your previous call to this operation. nextPag
-		/// Token is returned when the results of a call exceed the page size. To get the next page of results, call the o
-		/// eration and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause
-		/// he request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken val
-		/// e is not usable across different operations.
+		/// A page token from the nextPageToken response element returned by your previous call to this operation.
+		/// nextPageToken is returned when the results of a call exceed the page size. To get the next page of results,
+		/// call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter
+		/// will cause the request to fail. When no nextPageToken value is returned there are no more pages to return.
+		/// A pageToken value is not usable across different operations.
 		/// </summary>
 		[InQuery("pageToken")]
 		[MinLength(1)]

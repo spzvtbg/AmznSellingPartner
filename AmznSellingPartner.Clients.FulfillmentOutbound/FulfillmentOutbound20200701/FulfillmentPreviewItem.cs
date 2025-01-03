@@ -24,16 +24,16 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public Quantity Quantity { get; set; }
 
 		/// <summary>
-		/// A fulfillment order item identifier that the seller created with a call to the `createFulfillmentOrder` operat
-		/// on.
+		/// A fulfillment order item identifier that the seller created with a call to the `createFulfillmentOrder`
+		/// operation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sellerFulfillmentOrderItemId")]
 		public string SellerFulfillmentOrderItemId { get; set; }
 
 		/// <summary>
-		/// The estimated shipping weight of the item quantity for a single item, as identified by `sellerSku`, in a shipm
-		/// nt.
+		/// The estimated shipping weight of the item quantity for a single item, as identified by `sellerSku`, in
+		/// a shipment.
 		/// </summary>
 		[JsonProperty("estimatedShippingWeight")]
 		public Weight EstimatedShippingWeight { get; set; }

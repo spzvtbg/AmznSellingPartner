@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Contains information about a pallet that is used in the inbound plan. The pallet is a container that holds mul
-	/// iple items or boxes.
+	/// Contains information about a pallet that is used in the inbound plan. The pallet is a container that
+	/// holds multiple items or boxes.
 	/// </summary>
 	public class Pallet : BaseClass
 	{

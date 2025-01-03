@@ -7,15 +7,16 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Use these parameters to filter results. Any result must match all of the provided parameters. For any paramete
-	/// that is an array, the result must match at least one element in the provided array.
+	/// Use these parameters to filter results. Any result must match all of the provided parameters. For any
+	/// parameter that is an array, the result must match at least one element in the provided array.
 	/// </summary>
 	public class ListOffersRequestFilters : BaseClass
 	{
 		/// <summary>
-		/// The marketplace identifier. The supported marketplaces for both sellers and vendors are US, CA, ES, UK, FR, IT
-		/// IN, DE and JP. The supported marketplaces for vendors only are BR, AU, MX, AE and NL.  Refer to [Marketplace
-		/// Ds](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) to find the identifier for the marketplace.
+		/// The marketplace identifier. The supported marketplaces for both sellers and vendors are US, CA, ES, UK,
+		/// FR, IT, IN, DE and JP. The supported marketplaces for vendors only are BR, AU, MX, AE and NL.  Refer
+		/// to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) to find the identifier
+		/// for the marketplace.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceId")]

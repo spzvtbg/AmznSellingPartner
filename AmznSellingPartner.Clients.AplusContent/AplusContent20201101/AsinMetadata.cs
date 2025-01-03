@@ -5,9 +5,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The A+ Content ASIN with additional metadata for content management. If you don't include the `includedDataSet
-	/// parameter in a call to the listContentDocumentAsinRelations operation, the related ASINs are returned without
-	/// metadata.
+	/// The A+ Content ASIN with additional metadata for content management. If you don't include the `includedDataSet`
+	/// parameter in a call to the listContentDocumentAsinRelations operation, the related ASINs are returned
+	/// without metadata.
 	/// </summary>
 	public class AsinMetadata : BaseClass
 	{

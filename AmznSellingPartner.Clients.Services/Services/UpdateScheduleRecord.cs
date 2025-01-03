@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 
 	/// <summary>
 	/// `UpdateScheduleRecord` entity contains the `AvailabilityRecord` if there is an error/warning while performing
-	/// he requested operation on it.
+	/// the requested operation on it.
 	/// </summary>
 	public class UpdateScheduleRecord : BaseClass
 	{

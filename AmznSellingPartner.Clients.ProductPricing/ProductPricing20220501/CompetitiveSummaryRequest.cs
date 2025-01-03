@@ -35,7 +35,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 
 		/// <summary>
 		/// The list of `lowestPricedOffersInput` parameters that are used to build `lowestPricedOffers` in the response.
-		/// his attribute is only valid if `lowestPricedOffers` is requested in `includedData`
+		/// This attribute is only valid if `lowestPricedOffers` is requested in `includedData`
 		/// </summary>
 		[MinItems(0)]
 		[MaxItems(5)]
@@ -50,8 +50,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		public HttpMethod Method { get; set; }
 
 		/// <summary>
-		/// The URI associated with the individual APIs that are called as part of the batch request. For `getCompetitiveS
-		/// mmary`, this is `/products/pricing/2022-05-01/items/competitiveSummary`.
+		/// The URI associated with the individual APIs that are called as part of the batch request. For `getCompetitiveSummary`,
+		/// this is `/products/pricing/2022-05-01/items/competitiveSummary`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("uri")]

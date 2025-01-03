@@ -24,7 +24,8 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		CARD,
 
 		/// <summary>
-		/// The payment is from a [Seller Wallet](https://sell.amazon.com/tools/seller-wallet) virtual bank account.
+		/// The payment is from a [Seller Wallet](https://sell.amazon.com/tools/seller-wallet) virtual bank acco
+		/// unt.
 		/// </summary>
 		[EnumMember(Value = "SELLER_WALLET")]
 		SELLER_WALLET,

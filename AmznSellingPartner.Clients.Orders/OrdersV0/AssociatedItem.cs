@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An item that is associated with an order item. For example, a tire installation service that is purchased with
-	/// tires.
+	/// An item that is associated with an order item. For example, a tire installation service that is purchased
+	/// with tires.
 	/// </summary>
 	public class AssociatedItem : BaseClass
 	{

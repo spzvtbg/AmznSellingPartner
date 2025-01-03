@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// A constraint that can apply to an individual owner. If no constraint is specified, both `AMAZON` and `SELLER`
-	/// re acceptable.
+	/// A constraint that can apply to an individual owner. If no constraint is specified, both `AMAZON` and
+	/// `SELLER` are acceptable.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum OwnerConstraint

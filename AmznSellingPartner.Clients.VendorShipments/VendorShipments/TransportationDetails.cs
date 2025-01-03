@@ -46,11 +46,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public CarrierDetails CarrierDetails { get; set; }
 
 		/// <summary>
-		/// The Bill of Lading (BOL) number is a unique number assigned to each shipment of goods by the vendor or shipper
-		/// during the creation of the Bill of Lading. This number must be unique for every shipment and cannot be a date/
-		/// ime or single character. The BOL numer is mandatory in Shipment Confirmation message for FTL and LTL shipments
-		/// and must match the paper BOL provided with the shipment. Instead of BOL, an alternative reference number (lik
-		/// Delivery Note Number) for the shipment can also be sent in this field.
+		/// The Bill of Lading (BOL) number is a unique number assigned to each shipment of goods by the vendor or
+		/// shipper during the creation of the Bill of Lading. This number must be unique for every shipment and
+		/// cannot be a date/time or single character. The BOL numer is mandatory in Shipment Confirmation message
+		/// for FTL and LTL shipments, and must match the paper BOL provided with the shipment. Instead of BOL, an
+		/// alternative reference number (like Delivery Note Number) for the shipment can also be sent in this f
+		/// ield.
 		/// </summary>
 		[JsonProperty("billOfLadingNumber")]
 		public string BillOfLadingNumber { get; set; }

@@ -40,9 +40,9 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// A locale for reason text localization. When not provided, the default language code of the first marketplace i
-		/// used. Examples: "en_US", "fr_CA", "fr_FR". Localized messages default to "en_US" when a localization is not a
-		/// ailable in the specified locale.
+		/// A locale for reason text localization. When not provided, the default language code of the first marketplace
+		/// is used. Examples: "en_US", "fr_CA", "fr_FR". Localized messages default to "en_US" when a localization
+		/// is not available in the specified locale.
 		/// </summary>
 		[InQuery("reasonLocale")]
 		[JsonProperty("reasonLocale")]

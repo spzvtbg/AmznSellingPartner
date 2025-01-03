@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 	public class TransactionReference : BaseClass
 	{
 		/// <summary>
-		/// GUID to identify this transaction. This value can be used with the Transaction Status API to return the status
-		/// of this transaction.
+		/// GUID to identify this transaction. This value can be used with the Transaction Status API to return the
+		/// status of this transaction.
 		/// </summary>
 		[JsonProperty("transactionId")]
 		public string TransactionId { get; set; }

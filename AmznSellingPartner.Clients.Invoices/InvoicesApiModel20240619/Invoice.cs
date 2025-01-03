@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class Invoice : BaseClass
 	{
 		/// <summary>
-		/// The date and time the invoice is issued. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/doc
-		/// /iso-8601) date-time format.
+		/// The date and time the invoice is issued. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format.
 		/// </summary>
 		[JsonProperty("date")]
 		public DateTime Date { get; set; }
@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public string ErrorCode { get; set; }
 
 		/// <summary>
-		/// The invoice identifier that is used by an external party. This is typically the government agency that authori
-		/// ed the invoice.
+		/// The invoice identifier that is used by an external party. This is typically the government agency that
+		/// authorized the invoice.
 		/// </summary>
 		[JsonProperty("externalInvoiceId")]
 		public string ExternalInvoiceId { get; set; }
@@ -43,20 +43,22 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public string Id { get; set; }
 
 		/// <summary>
-		/// The classification of the invoice type. This varies across marketplaces. Use the `getInvoicesAttributes` opera
-		/// ion to check `invoiceType` options.
+		/// The classification of the invoice type. This varies across marketplaces. Use the `getInvoicesAttributes`
+		/// operation to check `invoiceType` options.
 		/// </summary>
 		[JsonProperty("invoiceType")]
 		public string InvoiceType { get; set; }
 
 		/// <summary>
-		/// Use this identifier in conjunction with `externalInvoiceId` to identify invoices from the same seller.
+		/// Use this identifier in conjunction with `externalInvoiceId` to identify invoices from the same selle
+		/// r.
 		/// </summary>
 		[JsonProperty("series")]
 		public string Series { get; set; }
 
 		/// <summary>
-		/// The invoice status classification. Use the `getInvoicesAttributes` operation to check invoice status options.
+		/// The invoice status classification. Use the `getInvoicesAttributes` operation to check invoice status
+		/// options.
 		/// </summary>
 		[JsonProperty("status")]
 		public string Status { get; set; }
@@ -68,8 +70,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public List<TransactionIdentifier> TransactionIds { get; set; }
 
 		/// <summary>
-		/// Classification of the transaction that originated this invoice. Use the `getInvoicesAttributes` operation to c
-		/// eck `transactionType` options.
+		/// Classification of the transaction that originated this invoice. Use the `getInvoicesAttributes` operation
+		/// to check `transactionType` options.
 		/// </summary>
 		[JsonProperty("transactionType")]
 		public string TransactionType { get; set; }

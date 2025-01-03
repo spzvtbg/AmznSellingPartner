@@ -7,9 +7,10 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A product type definition represents the attributes and data requirements for a product type in the Amazon cat
-	/// log. Product type definitions are used interchangeably between the Selling Partner API for Listings Items, Sel
-	/// ing Partner API for Catalog Items, and JSON-based listings feeds in the Selling Partner API for Feeds.
+	/// A product type definition represents the attributes and data requirements for a product type in the Amazon
+	/// catalog. Product type definitions are used interchangeably between the Selling Partner API for Listings
+	/// Items, Selling Partner API for Catalog Items, and JSON-based listings feeds in the Selling Partner API
+	/// for Feeds.
 	/// </summary>
 	public class ProductTypeDefinition : BaseClass
 	{
@@ -34,17 +35,17 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public Requirements Requirements { get; set; }
 
 		/// <summary>
-		/// Identifies if the required attributes for a requirements set are enforced by the product type definition schem
-		/// . Non-enforced requirements enable structural validation of individual attributes without all of the required
-		/// ttributes being present (such as for partial updates).
+		/// Identifies if the required attributes for a requirements set are enforced by the product type definition
+		/// schema. Non-enforced requirements enable structural validation of individual attributes without all of
+		/// the required attributes being present (such as for partial updates).
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("requirementsEnforced")]
 		public RequirementsEnforced RequirementsEnforced { get; set; }
 
 		/// <summary>
-		/// Mapping of property group names to property groups. Property groups represent logical groupings of schema prop
-		/// rties that can be used for display or informational purposes.
+		/// Mapping of property group names to property groups. Property groups represent logical groupings of schema
+		/// properties that can be used for display or informational purposes.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("propertyGroups")]

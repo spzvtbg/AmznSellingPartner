@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Detailed information about an Amazon market where a seller can list items for sale and customers can view and
-	/// urchase items.
+	/// Detailed information about an Amazon market where a seller can list items for sale and customers can
+	/// view and purchase items.
 	/// </summary>
 	public class Marketplace : BaseClass
 	{

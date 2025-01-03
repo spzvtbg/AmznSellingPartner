@@ -26,8 +26,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public long ContentLength { get; set; }
 
 		/// <summary>
-		/// An MD5 hash of the content to be submitted to the upload destination. This value is used to determine if the d
-		/// ta has been corrupted or tampered with during transit.
+		/// An MD5 hash of the content to be submitted to the upload destination. This value is used to determine
+		/// if the data has been corrupted or tampered with during transit.
 		/// </summary>
 		[Pattern("^[A-Za-z0-9\\\\+/]{22}={2}")]
 		[JsonProperty("contentMD5")]

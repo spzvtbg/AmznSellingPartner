@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public enum ShipMode
 	{
 		/// <summary>
-		/// Small parcel shipments are under 70 pounds per parcel and shipped with your own packaging or carrier supplied
-		/// oxes.
+		/// Small parcel shipments are under 70 pounds per parcel and shipped with your own packaging or carrier
+		/// supplied boxes.
 		/// </summary>
 		[EnumMember(Value = "SmallParcel")]
 		SmallParcel,
@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		LTL,
 
 		/// <summary>
-		/// Truckload shipping is the movement of large amounts of homogeneous cargo, generally the amount necessary to fi
-		/// l an entire semi-trailer or intermodal container.
+		/// Truckload shipping is the movement of large amounts of homogeneous cargo, generally the amount necessary
+		/// to fill an entire semi-trailer or intermodal container.
 		/// </summary>
 		[EnumMember(Value = "TruckLoad")]
 		TruckLoad,

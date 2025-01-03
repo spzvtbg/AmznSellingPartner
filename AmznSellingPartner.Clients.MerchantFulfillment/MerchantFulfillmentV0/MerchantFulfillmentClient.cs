@@ -6,59 +6,61 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class MerchantFulfillmentClient(Uri baseAddress) : BaseHttpClient((baseAddress))
 	{
 		/// <summary>
-		/// Returns a list of shipping service offers that satisfy the specified shipment request details.  **Usage Plan:*
-		/// | Rate (requests per second) | Burst | | ---- | ---- | | 6 | 12 |  The `x-amzn-RateLimit-Limit` response hea
-		/// er returns the usage plan rate limits that are applied to the requested operation when available. The precedin
-		/// table indicates the default rate and burst values for this operation. Selling partners whose business demands
-		/// require higher throughput may have higher rate and burst values than those shown here. For more information, r
-		/// fer to [Usage Plans and Rate Limits in the SP-API](https://developer-docs.amazon.com/sp-api/docs/usage-plans-a
-		/// d-rate-limits-in-the-sp-api).
+		/// Returns a list of shipping service offers that satisfy the specified shipment request details.  **Usage
+		/// Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 6 | 12 |  The `x-amzn-RateLimit-Limit`
+		/// response header returns the usage plan rate limits that are applied to the requested operation when available.
+		/// The preceding table indicates the default rate and burst values for this operation. Selling partners
+		/// whose business demands require higher throughput may have higher rate and burst values than those shown
+		/// here. For more information, refer to [Usage Plans and Rate Limits in the SP-API](https://developer-d
+		/// ocs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetEligibleShipmentServicesPostResponse> GetEligibleShipmentServicesAsync(GetEligibleShipmentServicesPostRequest request)
 		    => await this.SendAsync<GetEligibleShipmentServicesPostResponse>(request);
 
 		/// <summary>
-		/// Cancel the shipment indicated by the specified shipment identifier.  **Usage Plan:**  | Rate (requests per sec
-		/// nd) | Burst | | ---- | ---- | | 1 | 1 |  The `x-amzn-RateLimit-Limit` response header returns the usage plan r
-		/// te limits that are applied to the requested operation when available. The preceding table indicates the defaul
-		/// rate and burst values for this operation. Selling partners whose business demands require higher throughput m
-		/// y have higher rate and burst values than those shown here. For more information, refer to [Usage Plans and Rat
-		/// Limits in the SP-API](https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api
-		/// .
+		/// Cancel the shipment indicated by the specified shipment identifier.  **Usage Plan:**  | Rate (requests
+		/// per second) | Burst | | ---- | ---- | | 1 | 1 |  The `x-amzn-RateLimit-Limit` response header returns
+		/// the usage plan rate limits that are applied to the requested operation when available. The preceding
+		/// table indicates the default rate and burst values for this operation. Selling partners whose business
+		/// demands require higher throughput may have higher rate and burst values than those shown here. For more
+		/// information, refer to [Usage Plans and Rate Limits in the SP-API](https://developer-docs.amazon.com/
+		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CancelShipmentDeleteResponse> CancelShipmentAsync(CancelShipmentDeleteRequest request)
 		    => await this.SendAsync<CancelShipmentDeleteResponse>(request);
 
 		/// <summary>
-		/// Returns the shipment information for an existing shipment.  **Usage Plan:**  | Rate (requests per second) | Bu
-		/// st | | ---- | ---- | | 1 | 1 |  The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limit
-		/// that are applied to the requested operation when available. The preceding table indicates the default rate an
-		/// burst values for this operation. Selling partners whose business demands require higher throughput may have h
-		/// gher rate and burst values than those shown here. For more information, refer to [Usage Plans and Rate Limits
-		/// n the SP-API](https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
+		/// Returns the shipment information for an existing shipment.  **Usage Plan:**  | Rate (requests per second)
+		/// | Burst | | ---- | ---- | | 1 | 1 |  The `x-amzn-RateLimit-Limit` response header returns the usage plan
+		/// rate limits that are applied to the requested operation when available. The preceding table indicates
+		/// the default rate and burst values for this operation. Selling partners whose business demands require
+		/// higher throughput may have higher rate and burst values than those shown here. For more information,
+		/// refer to [Usage Plans and Rate Limits in the SP-API](https://developer-docs.amazon.com/sp-api/docs/u
+		/// sage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetShipmentGetResponse> GetShipmentAsync(GetShipmentGetRequest request)
 		    => await this.SendAsync<GetShipmentGetResponse>(request);
 
 		/// <summary>
-		/// Create a shipment with the information provided.  **Usage Plan:**  | Rate (requests per second) | Burst | | --
-		/// - | ---- | | 2 | 2 |  The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits that are
-		/// applied to the requested operation when available. The preceding table indicates the default rate and burst va
-		/// ues for this operation. Selling partners whose business demands require higher throughput may have higher rate
-		/// and burst values than those shown here. For more information, refer to [Usage Plans and Rate Limits in the SP-
-		/// PI](https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
+		/// Create a shipment with the information provided.  **Usage Plan:**  | Rate (requests per second) | Burst
+		/// | | ---- | ---- | | 2 | 2 |  The `x-amzn-RateLimit-Limit` response header returns the usage plan rate
+		/// limits that are applied to the requested operation when available. The preceding table indicates the
+		/// default rate and burst values for this operation. Selling partners whose business demands require higher
+		/// throughput may have higher rate and burst values than those shown here. For more information, refer to
+		/// [Usage Plans and Rate Limits in the SP-API](https://developer-docs.amazon.com/sp-api/docs/usage-plan
+		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateShipmentPostResponse> CreateShipmentAsync(CreateShipmentPostRequest request)
 		    => await this.SendAsync<CreateShipmentPostResponse>(request);
 
 		/// <summary>
-		/// Gets a list of additional seller inputs required for a ship method. This is generally used for international s
-		/// ipping.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 1 | 1 |  The `x-amzn-RateLi
-		/// it-Limit` response header returns the usage plan rate limits that are applied to the requested operation when
-		/// vailable. The preceding table indicates the default rate and burst values for this operation. Selling partners
-		/// whose business demands require higher throughput may have higher rate and burst values than those shown here.
-		/// or more information, refer to [Usage Plans and Rate Limits in the SP-API](https://developer-docs.amazon.com/sp
-		/// api/docs/usage-plans-and-rate-limits-in-the-sp-api).
+		/// Gets a list of additional seller inputs required for a ship method. This is generally used for international
+		/// shipping.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 1 | 1 |  The `x-amzn-RateLimit-Limit`
+		/// response header returns the usage plan rate limits that are applied to the requested operation when available.
+		/// The preceding table indicates the default rate and burst values for this operation. Selling partners
+		/// whose business demands require higher throughput may have higher rate and burst values than those shown
+		/// here. For more information, refer to [Usage Plans and Rate Limits in the SP-API](https://developer-d
+		/// ocs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetAdditionalSellerInputsPostResponse> GetAdditionalSellerInputsAsync(GetAdditionalSellerInputsPostRequest request)
 		    => await this.SendAsync<GetAdditionalSellerInputsPostResponse>(request);

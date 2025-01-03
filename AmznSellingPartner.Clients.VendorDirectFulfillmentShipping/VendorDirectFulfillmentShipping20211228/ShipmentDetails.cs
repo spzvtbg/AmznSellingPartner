@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	{
 		/// <summary>
 		/// The date of the shipment's departure from vendor's location. Vendors send ASNs within 30 minutes of departure
-		/// rom their warehouse/distribution center or six hours prior to the appointment time at the Amazon destination w
-		/// rehouse. The shipped date mentioned in the shipment confirmation cannot be in the future.
+		/// from their warehouse/distribution center or six hours prior to the appointment time at the Amazon destination
+		/// warehouse. The shipped date mentioned in the shipment confirmation cannot be in the future.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shippedDate")]
@@ -40,9 +40,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string VendorOrderNumber { get; set; }
 
 		/// <summary>
-		/// The date on which the shipment is expected to reach the buyer's warehouse. The date is estimated based on the
-		/// verage transit time between the ship-from location and the destination. Usually, the exact appointment time is
-		/// unknown when creating the shipment confirmation and is later provided by the buyer.
+		/// The date on which the shipment is expected to reach the buyer's warehouse. The date is estimated based
+		/// on the average transit time between the ship-from location and the destination. Usually, the exact appointment
+		/// time is unknown when creating the shipment confirmation and is later provided by the buyer.
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDate")]
 		public DateTime EstimatedDeliveryDate { get; set; }

@@ -30,8 +30,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string TrackingNumber { get; set; }
 
 		/// <summary>
-		/// The estimated arrival date and time of the package. Must be in <a href='https://developer-docs.amazon.com/sp-a
-		/// i/docs/iso-8601'>ISO 8601</a> format.
+		/// The estimated arrival date and time of the package. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> format.
 		/// </summary>
 		[JsonProperty("estimatedArrivalDate")]
 		public Timestamp EstimatedArrivalDate { get; set; }
@@ -43,7 +43,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public LockerDetails LockerDetails { get; set; }
 
 		/// <summary>
-		/// The delivery information for the package. This information is available after the package is delivered.
+		/// The delivery information for the package. This information is available after the package is deliver
+		/// ed.
 		/// </summary>
 		[JsonProperty("deliveryInformation")]
 		public DeliveryInformation DeliveryInformation { get; set; }

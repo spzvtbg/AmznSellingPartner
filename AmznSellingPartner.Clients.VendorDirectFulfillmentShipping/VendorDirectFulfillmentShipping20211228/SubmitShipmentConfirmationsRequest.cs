@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class SubmitShipmentConfirmationsRequest : BaseClass
 	{
 		/// <summary>
-		/// Array of `ShipmentConfirmation` objects. Each `ShipmentConfirmation` object represents the confirmation detail
-		/// for a specific shipment.
+		/// Array of `ShipmentConfirmation` objects. Each `ShipmentConfirmation` object represents the confirmation
+		/// details for a specific shipment.
 		/// </summary>
 		[JsonProperty("shipmentConfirmations")]
 		public List<ShipmentConfirmation> ShipmentConfirmations { get; set; }

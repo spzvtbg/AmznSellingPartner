@@ -16,9 +16,9 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public CreateFulfillmentReturnRequest Body { get; set; }
 
 		/// <summary>
-		/// An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses thei
-		/// own records to find the correct `SellerFulfillmentOrderId` value based on the buyer's request to return items
-		/// 
+		/// An identifier assigned by the seller to the fulfillment order at the time it was created. The seller
+		/// uses their own records to find the correct `SellerFulfillmentOrderId` value based on the buyer's request
+		/// to return items.
 		/// </summary>
 		[InPath("sellerFulfillmentOrderId")]
 		[IsRequired]

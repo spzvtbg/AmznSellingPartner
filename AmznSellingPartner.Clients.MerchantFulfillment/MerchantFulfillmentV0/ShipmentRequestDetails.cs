@@ -48,16 +48,16 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public Weight Weight { get; set; }
 
 		/// <summary>
-		/// The date by which the package must arrive to keep the promise to the customer, in [ISO 8601](https://developer
-		/// docs.amazon.com/sp-api/docs/iso-8601) date-time format. If `MustArriveByDate` is specified, only shipping serv
-		/// ce offers that can be delivered by that date are returned.
+		/// The date by which the package must arrive to keep the promise to the customer, in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format. If `MustArriveByDate` is specified, only shipping service offers that can be delivered
+		/// by that date are returned.
 		/// </summary>
 		[JsonProperty("MustArriveByDate")]
 		public Timestamp MustArriveByDate { get; set; }
 
 		/// <summary>
-		/// When used in a request, this is the date and time that the seller wants to ship the package. When used in a re
-		/// ponse, this is the date and time that the package can be shipped by the indicated method.
+		/// When used in a request, this is the date and time that the seller wants to ship the package. When used
+		/// in a response, this is the date and time that the package can be shipped by the indicated method.
 		/// </summary>
 		[JsonProperty("ShipDate")]
 		public Timestamp ShipDate { get; set; }

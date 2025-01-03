@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 	public class InitiatePayoutResponse : BaseClass
 	{
 		/// <summary>
-		/// The financial event group ID for a successfully initiated payout. You can use this ID to track payout informat
-		/// on.
+		/// The financial event group ID for a successfully initiated payout. You can use this ID to track payout
+		/// information.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("payoutReferenceId")]

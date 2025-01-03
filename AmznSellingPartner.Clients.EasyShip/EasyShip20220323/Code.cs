@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// An error code that identifies the type of error that occurred. The error codes listed below are specific to th
-	/// Easy Ship section.
+	/// An error code that identifies the type of error that occurred. The error codes listed below are specific
+	/// to the Easy Ship section.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum Code
@@ -31,35 +31,36 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		ScheduledPackageAlreadyExists,
 
 		/// <summary>
-		/// HTTP status code 400. The selected time slot has expired. Try calling `listHandoverSlots` again to get a new t
-		/// me slot.
+		/// HTTP status code 400. The selected time slot has expired. Try calling `listHandoverSlots` again to get
+		/// a new time slot.
 		/// </summary>
 		[EnumMember(Value = "ScheduleWindowExpired")]
 		ScheduleWindowExpired,
 
 		/// <summary>
-		/// HTTP status code 400. Order scheduling has failed because of an issue with the selected time slot. If you see
-		/// his error, request a new time slot and try to schedule again.
+		/// HTTP status code 400. Order scheduling has failed because of an issue with the selected time slot. If
+		/// you see this error, request a new time slot and try to schedule again.
 		/// </summary>
 		[EnumMember(Value = "RetryableAfterGettingNewSlots")]
 		RetryableAfterGettingNewSlots,
 
 		/// <summary>
-		/// HTTP status code 404. No time slot is available due to various factors such as: invalid weight and dimension p
-		/// rameters, or the available slots are only available after the expected cancellation date.
+		/// HTTP status code 404. No time slot is available due to various factors such as: invalid weight and dimension
+		/// parameters, or the available slots are only available after the expected cancellation date.
 		/// </summary>
 		[EnumMember(Value = "TimeSlotNotAvailable")]
 		TimeSlotNotAvailable,
 
 		/// <summary>
-		/// HTTP status code 404. The specified resource (for example, `amazonOrderId` or `marketplaceId`) does not exist.
+		/// HTTP status code 404. The specified resource (for example, `amazonOrderId` or `marketplaceId`) does not
+		/// exist.
 		/// </summary>
 		[EnumMember(Value = "ResourceNotFound")]
 		ResourceNotFound,
 
 		/// <summary>
-		/// HTTP status code 404. The request cannot be applied to the order in its current state. For example, you cannot
-		/// cancel an order which has not yet been scheduled or which has already been canceled.
+		/// HTTP status code 404. The request cannot be applied to the order in its current state. For example, you
+		/// cannot cancel an order which has not yet been scheduled or which has already been canceled.
 		/// </summary>
 		[EnumMember(Value = "InvalidOrderState")]
 		InvalidOrderState,

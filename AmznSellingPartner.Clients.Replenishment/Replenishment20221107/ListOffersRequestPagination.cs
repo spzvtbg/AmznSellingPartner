@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		public long Limit { get; set; }
 
 		/// <summary>
-		/// The offset from which to retrieve the number of results specified by the `limit` value. The first result is at
-		/// offset 0.
+		/// The offset from which to retrieve the number of results specified by the `limit` value. The first result
+		/// is at offset 0.
 		/// </summary>
 		[IsRequired]
 		[Minimum(0)]

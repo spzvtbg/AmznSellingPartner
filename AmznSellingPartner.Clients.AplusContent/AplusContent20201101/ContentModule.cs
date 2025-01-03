@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An A+ Content module. An A+ Content document is composed of content modules. The contentModuleType property se
-	/// ects which content module types to use.
+	/// An A+ Content module. An A+ Content document is composed of content modules. The contentModuleType property
+	/// selects which content module types to use.
 	/// </summary>
 	public class ContentModule : BaseClass
 	{

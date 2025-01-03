@@ -44,12 +44,14 @@
         {
             var line = description?.Replace('\n', ' ');
             var summary = new List<string>();
-            var maxLenght = 110;
+            var maxLenght = 100;
 
             while (line.Length > maxLenght)
             {
-                summary.Add(line[..maxLenght].Trim());
-                line = line[(maxLenght + 1)..];
+                var ix = line.IndexOf(' ', maxLenght);
+                ix = Math.Max(ix, maxLenght);
+                summary.Add(line[..ix].Trim());
+                line = line[ix..].Trim();
             }
 
             summary.Add(line.Trim());

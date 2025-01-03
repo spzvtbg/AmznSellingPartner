@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 	public class CreateRestrictedDataTokenResponse : BaseClass
 	{
 		/// <summary>
-		/// A Restricted Data Token (RDT). This is a short-lived access token that authorizes calls to restricted operatio
-		/// s. Pass this value with the x-amz-access-token header when making subsequent calls to these restricted resourc
-		/// s.
+		/// A Restricted Data Token (RDT). This is a short-lived access token that authorizes calls to restricted
+		/// operations. Pass this value with the x-amz-access-token header when making subsequent calls to these
+		/// restricted resources.
 		/// </summary>
 		[JsonProperty("restrictedDataToken")]
 		public string RestrictedDataToken { get; set; }

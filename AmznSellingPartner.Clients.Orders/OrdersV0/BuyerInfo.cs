@@ -26,15 +26,16 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string BuyerCounty { get; set; }
 
 		/// <summary>
-		/// Tax information about the buyer. Sellers can use this data to issue electronic invoices for business orders.
-		/// *Note**: This attribute is only available for business orders in the Brazil, Mexico and India marketplaces.
+		/// Tax information about the buyer. Sellers can use this data to issue electronic invoices for business
+		/// orders.  **Note**: This attribute is only available for business orders in the Brazil, Mexico and India
+		/// marketplaces.
 		/// </summary>
 		[JsonProperty("BuyerTaxInfo")]
 		public BuyerTaxInfo BuyerTaxInfo { get; set; }
 
 		/// <summary>
-		/// The purchase order (PO) number entered by the buyer at checkout. Only returned for orders where the buyer ente
-		/// ed a PO number at checkout.
+		/// The purchase order (PO) number entered by the buyer at checkout. Only returned for orders where the buyer
+		/// entered a PO number at checkout.
 		/// </summary>
 		[JsonProperty("PurchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; }

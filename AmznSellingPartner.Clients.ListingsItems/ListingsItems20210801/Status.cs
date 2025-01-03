@@ -21,27 +21,27 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		DISCOVERABLE,
 
 		/// <summary>
-		/// This status is assigned to a product listing when it has been exempted from the listed enforcement actions. In
-		/// cases of `EXEMPT`, Amazon acknowledges the existence of enforcement actions but ensures the user that these ac
-		/// ions will not be applied to the listing. The user is advised to consider addressing the issue, although enforc
-		/// ment actions will not be taken.
+		/// This status is assigned to a product listing when it has been exempted from the listed enforcement actions.
+		/// In cases of `EXEMPT`, Amazon acknowledges the existence of enforcement actions but ensures the user that
+		/// these actions will not be applied to the listing. The user is advised to consider addressing the issue,
+		/// although enforcement actions will not be taken.
 		/// </summary>
 		[EnumMember(Value = "EXEMPT")]
 		EXEMPT,
 
 		/// <summary>
-		/// This status indicates that a product listing has been granted a temporary exemption from the listed enforcemen
-		/// actions. The exemption will remain in effect until a specified expiry date. After this date, Amazon will enfo
-		/// ce the listed actions. The `expiryDate` field provides the timestamp indicating when the temporary exemption w
-		/// ll end, adhering to the ISO 8601 format
+		/// This status indicates that a product listing has been granted a temporary exemption from the listed enforcement
+		/// actions. The exemption will remain in effect until a specified expiry date. After this date, Amazon will
+		/// enforce the listed actions. The `expiryDate` field provides the timestamp indicating when the temporary
+		/// exemption will end, adhering to the ISO 8601 format
 		/// </summary>
 		[EnumMember(Value = "EXEMPT_UNTIL_EXPIRY_DATE")]
 		EXEMPT_UNTIL_EXPIRY_DATE,
 
 		/// <summary>
-		/// This status is assigned to a product listing when it has no exemptions from the listed enforcement actions. Wh
-		/// n the status is `NOT_EXEMPT`, it signifies that Amazon has already taken the specified enforcement actions. Th
-		/// re is no exemption in place, and the listed actions are actively enforced
+		/// This status is assigned to a product listing when it has no exemptions from the listed enforcement actions.
+		/// When the status is `NOT_EXEMPT`, it signifies that Amazon has already taken the specified enforcement
+		/// actions. There is no exemption in place, and the listed actions are actively enforced
 		/// </summary>
 		[EnumMember(Value = "NOT_EXEMPT")]
 		NOT_EXEMPT,

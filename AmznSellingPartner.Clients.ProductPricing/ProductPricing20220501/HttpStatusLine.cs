@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The HTTP status line associated with the response for an individual request within a batch. For more informati
-	/// n, refer to [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html).
+	/// The HTTP status line associated with the response for an individual request within a batch. For more
+	/// information, refer to [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html).
 	/// </summary>
 	public class HttpStatusLine : BaseClass
 	{

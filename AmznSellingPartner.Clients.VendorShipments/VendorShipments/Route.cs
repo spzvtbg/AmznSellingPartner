@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class Route : BaseClass
 	{
 		/// <summary>
-		/// The port or location involved in transporting the cargo, as specified in transportation contracts or operation
-		/// l plans.
+		/// The port or location involved in transporting the cargo, as specified in transportation contracts or
+		/// operational plans.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("stops")]

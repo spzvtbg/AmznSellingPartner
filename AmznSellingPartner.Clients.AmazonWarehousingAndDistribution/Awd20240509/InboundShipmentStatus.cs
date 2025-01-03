@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		RECEIVING,
 
 		/// <summary>
-		/// The shipment has reached the destination node and has been delivered to the facility yard. The shipment receiv
-		/// process at the warehouse will start soon.
+		/// The shipment has reached the destination node and has been delivered to the facility yard. The shipment
+		/// receive process at the warehouse will start soon.
 		/// </summary>
 		[EnumMember(Value = "DELIVERED")]
 		DELIVERED,

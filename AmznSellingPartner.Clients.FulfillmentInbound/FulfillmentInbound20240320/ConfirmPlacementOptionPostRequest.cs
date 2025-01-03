@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// The identifier of a placement option. A placement option represents the shipment splits and destinations of SK
-		/// s.
+		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
+		/// of SKUs.
 		/// </summary>
 		[InPath("placementOptionId")]
 		[IsRequired]

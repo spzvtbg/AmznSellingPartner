@@ -23,8 +23,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		public string SellerId { get; set; }
 
 		/// <summary>
-		/// The seller SKU of the item. This will only be present for the target offer, which belongs to the requesting se
-		/// ler.
+		/// The seller SKU of the item. This will only be present for the target offer, which belongs to the requesting
+		/// seller.
 		/// </summary>
 		[JsonProperty("sku")]
 		public string Sku { get; set; }

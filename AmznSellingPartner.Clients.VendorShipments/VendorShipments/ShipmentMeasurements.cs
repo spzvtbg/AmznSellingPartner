@@ -20,7 +20,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public Volume ShipmentVolume { get; set; }
 
 		/// <summary>
-		/// Number of cartons present in the shipment. Provide the cartonCount only for non-palletized shipments.
+		/// Number of cartons present in the shipment. Provide the cartonCount only for non-palletized shipments
+		/// .
 		/// </summary>
 		[JsonProperty("cartonCount")]
 		public int CartonCount { get; set; }

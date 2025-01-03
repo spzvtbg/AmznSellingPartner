@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Represents the confirmation details of a shipment, including the purchase order number and other shipment deta
-	/// ls.
+	/// Represents the confirmation details of a shipment, including the purchase order number and other shipment
+	/// details.
 	/// </summary>
 	public class ShipmentConfirmation : BaseClass
 	{
@@ -42,16 +42,16 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
-		/// Provide the details of the items in this shipment. If any of the item details field is common at a package or
-		/// pallet level, then provide them at the corresponding package.
+		/// Provide the details of the items in this shipment. If any of the item details field is common at a package
+		/// or a pallet level, then provide them at the corresponding package.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("items")]
 		public List<Item> Items { get; set; }
 
 		/// <summary>
-		/// Provide the details of the items in this shipment. If any of the item details field is common at a package or
-		/// pallet level, then provide them at the corresponding package.
+		/// Provide the details of the items in this shipment. If any of the item details field is common at a package
+		/// or a pallet level, then provide them at the corresponding package.
 		/// </summary>
 		[JsonProperty("containers")]
 		public List<Container> Containers { get; set; }

@@ -18,7 +18,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		DRAFT,
 
 		/// <summary>
-		/// The order is in this state while being updated. Once updated, the order will enter the updated state.
+		/// The order is in this state while being updated. Once updated, the order will enter the updated state
+		/// .
 		/// </summary>
 		[EnumMember(Value = "VALIDATING")]
 		VALIDATING,

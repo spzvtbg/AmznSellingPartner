@@ -18,19 +18,19 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// The earliest export creation date and time for exports that you want to include in the response. Values are in
-		/// [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default is 30 days ag
-		/// .
+		/// The earliest export creation date and time for exports that you want to include in the response. Values
+		/// are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default
+		/// is 30 days ago.
 		/// </summary>
 		[InQuery("dateStart")]
 		[JsonProperty("dateStart")]
 		public DateTime DateStart { get; set; }
 
 		/// <summary>
-		/// The response includes `nextToken` when the number of results exceeds the specified `pageSize` value. To get th
-		/// next page of results, call the operation with this token and include the same arguments as the call that prod
-		/// ced the token. To get a complete list, call this operation until `nextToken` is null. Note that this operation
-		/// can return empty pages.
+		/// The response includes `nextToken` when the number of results exceeds the specified `pageSize` value.
+		/// To get the next page of results, call the operation with this token and include the same arguments as
+		/// the call that produced the token. To get a complete list, call this operation until `nextToken` is null.
+		/// Note that this operation can return empty pages.
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]
@@ -44,9 +44,9 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public int PageSize { get; set; }
 
 		/// <summary>
-		/// The latest export creation date and time for exports that you want to include in the response. Values are in [
-		/// SO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default value is the ti
-		/// e of the request.
+		/// The latest export creation date and time for exports that you want to include in the response. Values
+		/// are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default
+		/// value is the time of the request.
 		/// </summary>
 		[InQuery("dateEnd")]
 		[JsonProperty("dateEnd")]

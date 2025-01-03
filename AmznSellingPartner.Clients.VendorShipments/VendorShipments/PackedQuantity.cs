@@ -10,8 +10,9 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class PackedQuantity : BaseClass
 	{
 		/// <summary>
-		/// Amount of units shipped for a specific item at a shipment level. If the item is present only in certain carton
-		/// or pallets within the shipment, please provide this at the appropriate carton or pallet level.
+		/// Amount of units shipped for a specific item at a shipment level. If the item is present only in certain
+		/// cartons or pallets within the shipment, please provide this at the appropriate carton or pallet leve
+		/// l.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("amount")]

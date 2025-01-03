@@ -24,9 +24,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		MANUAL_PROCESS,
 
 		/// <summary>
-		/// Box contents information is provided by a barcode on the shipment. For more information, refer to [Using 2D ba
-		/// codes for box content information](https://sellercentral.amazon.com/help/hub/reference/GJWALJCN6JKWJX5A) on Se
-		/// ler Central.
+		/// Box contents information is provided by a barcode on the shipment. For more information, refer to [Using
+		/// 2D barcodes for box content information](https://sellercentral.amazon.com/help/hub/reference/GJWALJCN6JKWJX5A)
+		/// on Seller Central.
 		/// </summary>
 		[EnumMember(Value = "BARCODE_2D")]
 		BARCODE_2D,

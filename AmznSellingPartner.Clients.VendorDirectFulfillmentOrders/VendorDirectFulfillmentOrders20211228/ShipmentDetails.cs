@@ -36,9 +36,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public bool IsGift { get; set; }
 
 		/// <summary>
-		/// Ship method to be used for shipping the order. Amazon defines ship method codes indicating the shipping carrie
-		/// and shipment service level. To see the full list of ship methods in use, including both the code and the frie
-		/// dly name, search the 'Help' section on Vendor Central for 'ship methods'.
+		/// Ship method to be used for shipping the order. Amazon defines ship method codes indicating the shipping
+		/// carrier and shipment service level. To see the full list of ship methods in use, including both the code
+		/// and the friendly name, search the 'Help' section on Vendor Central for 'ship methods'.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipMethod")]

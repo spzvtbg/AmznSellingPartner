@@ -37,8 +37,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public List<ProductQuantity> EligibleProductsToOutbound { get; set; }
 
 		/// <summary>
-		/// Execution errors associated with the outbound order. This field will be populated if the order failed validati
-		/// n.
+		/// Execution errors associated with the outbound order. This field will be populated if the order failed
+		/// validation.
 		/// </summary>
 		[JsonProperty("executionErrors")]
 		public List<OutboundExecutionError> ExecutionErrors { get; set; }

@@ -39,9 +39,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShipmentId { get; set; }
 
 		/// <summary>
-		/// Mode of shipment transportation that this option will provide.  Possible values: `GROUND_SMALL_PARCEL`, `FREIG
-		/// T_LTL`, `FREIGHT_FTL_PALLET`, `FREIGHT_FTL_NONPALLET`, `OCEAN_LCL`, `OCEAN_FCL`, `AIR_SMALL_PARCEL`, `AIR_SMAL
-		/// _PARCEL_EXPRESS`.
+		/// Mode of shipment transportation that this option will provide.  Possible values: `GROUND_SMALL_PARCEL`,
+		/// `FREIGHT_LTL`, `FREIGHT_FTL_PALLET`, `FREIGHT_FTL_NONPALLET`, `OCEAN_LCL`, `OCEAN_FCL`, `AIR_SMALL_PARCEL`,
+		/// `AIR_SMALL_PARCEL_EXPRESS`.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -50,7 +50,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShippingMode { get; set; }
 
 		/// <summary>
-		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`.
+		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`
+		/// .
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -59,8 +60,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShippingSolution { get; set; }
 
 		/// <summary>
-		/// Identifier of a transportation option. A transportation option represent one option for how to send a shipment
-		/// 
+		/// Identifier of a transportation option. A transportation option represent one option for how to send a
+		/// shipment.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]

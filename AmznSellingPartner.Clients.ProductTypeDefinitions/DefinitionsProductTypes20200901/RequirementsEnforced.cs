@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public enum RequirementsEnforced
 	{
 		/// <summary>
-		/// Request schema with required and conditionally required attributes enforced (used for full payload validation)
-		/// 
+		/// Request schema with required and conditionally required attributes enforced (used for full payload v
+		/// alidation).
 		/// </summary>
 		[EnumMember(Value = "ENFORCED")]
 		ENFORCED,
 
 		/// <summary>
-		/// Request schema with required and conditionally required attributes not enforced (used for partial payload vali
-		/// ation, such as for single attributes).
+		/// Request schema with required and conditionally required attributes not enforced (used for partial payload
+		/// validation, such as for single attributes).
 		/// </summary>
 		[EnumMember(Value = "NOT_ENFORCED")]
 		NOT_ENFORCED,

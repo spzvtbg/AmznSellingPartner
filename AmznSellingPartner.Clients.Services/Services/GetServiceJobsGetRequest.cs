@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string PageToken { get; set; }
 
 		/// <summary>
-		/// A non-negative integer that indicates the maximum number of jobs to return in the list, Value must be 1 - 20.
-		/// efault 20.
+		/// A non-negative integer that indicates the maximum number of jobs to return in the list, Value must be
+		/// 1 - 20. Default 20.
 		/// </summary>
 		[InQuery("pageSize")]
 		[Minimum(1)]
@@ -56,8 +56,9 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// A date used for selecting jobs created at or after a specified time. Must be in ISO 8601 format. Required if `
-		/// astUpdatedAfter` is not specified. Specifying both `CreatedAfter` and `LastUpdatedAfter` returns an error.
+		/// A date used for selecting jobs created at or after a specified time. Must be in ISO 8601 format. Required
+		/// if `LastUpdatedAfter` is not specified. Specifying both `CreatedAfter` and `LastUpdatedAfter` returns
+		/// an error.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[JsonProperty("createdAfter")]
@@ -71,8 +72,9 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string CreatedBefore { get; set; }
 
 		/// <summary>
-		/// A date used for selecting jobs updated at or after a specified time. Must be in ISO 8601 format. Required if `
-		/// reatedAfter` is not specified. Specifying both `CreatedAfter` and `LastUpdatedAfter` returns an error.
+		/// A date used for selecting jobs updated at or after a specified time. Must be in ISO 8601 format. Required
+		/// if `createdAfter` is not specified. Specifying both `CreatedAfter` and `LastUpdatedAfter` returns an
+		/// error.
 		/// </summary>
 		[InQuery("lastUpdatedAfter")]
 		[JsonProperty("lastUpdatedAfter")]
@@ -86,16 +88,16 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string LastUpdatedBefore { get; set; }
 
 		/// <summary>
-		/// A date used for filtering jobs schedules at or after a specified time. Must be in ISO 8601 format. Schedule en
-		/// date should not be earlier than schedule start date.
+		/// A date used for filtering jobs schedules at or after a specified time. Must be in ISO 8601 format. Schedule
+		/// end date should not be earlier than schedule start date.
 		/// </summary>
 		[InQuery("scheduleStartDate")]
 		[JsonProperty("scheduleStartDate")]
 		public string ScheduleStartDate { get; set; }
 
 		/// <summary>
-		/// A date used for filtering jobs schedules at or before a specified time. Must be in ISO 8601 format. Schedule e
-		/// d date should not be earlier than schedule start date.
+		/// A date used for filtering jobs schedules at or before a specified time. Must be in ISO 8601 format. Schedule
+		/// end date should not be earlier than schedule start date.
 		/// </summary>
 		[InQuery("scheduleEndDate")]
 		[JsonProperty("scheduleEndDate")]
@@ -120,8 +122,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public CsvValue<string> Asins { get; set; }
 
 		/// <summary>
-		/// A defined set of related knowledge, skills, experience, tools, materials, and work processes common to service
-		/// delivery for a set of products and/or service scenarios. Max values supported is 20.
+		/// A defined set of related knowledge, skills, experience, tools, materials, and work processes common to
+		/// service delivery for a set of products and/or service scenarios. Max values supported is 20.
 		/// </summary>
 		[InQuery("requiredSkills")]
 		[MinItems(1)]

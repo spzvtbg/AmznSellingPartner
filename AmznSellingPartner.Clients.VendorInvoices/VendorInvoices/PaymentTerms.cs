@@ -26,7 +26,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public double DiscountDueDays { get; set; }
 
 		/// <summary>
-		/// The number of calendar days from the base date (invoice date) until the total amount on the invoice is due.
+		/// The number of calendar days from the base date (invoice date) until the total amount on the invoice is
+		/// due.
 		/// </summary>
 		[JsonProperty("netDueDays")]
 		public double NetDueDays { get; set; }

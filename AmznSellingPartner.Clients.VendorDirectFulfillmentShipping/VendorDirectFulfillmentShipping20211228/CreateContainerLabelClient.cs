@@ -6,13 +6,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class CreateContainerLabelClient(Uri baseAddress) : BaseHttpClient((baseAddress))
 	{
 		/// <summary>
-		/// Creates a container (pallet) label for the associated shipment package.  **Usage Plan:**  | Rate (requests per
-		/// second) | Burst | | ---- | ---- | | 10 | 10 |  The `x-amzn-RateLimit-Limit` response header returns the usage
-		/// lan rate limits that were applied to the requested operation, when available. The preceding table contains the
-		/// default rate and burst values for this operation. Selling partners whose business demands require higher throu
-		/// hput may have higher rate and burst values than those shown here. For more information, refer to [Usage Plans
-		/// nd Rate Limits in the Selling Partner API](https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-
-		/// imits-in-the-sp-api).
+		/// Creates a container (pallet) label for the associated shipment package.  **Usage Plan:**  | Rate (requests
+		/// per second) | Burst | | ---- | ---- | | 10 | 10 |  The `x-amzn-RateLimit-Limit` response header returns
+		/// the usage plan rate limits that were applied to the requested operation, when available. The preceding
+		/// table contains the default rate and burst values for this operation. Selling partners whose business
+		/// demands require higher throughput may have higher rate and burst values than those shown here. For more
+		/// information, refer to [Usage Plans and Rate Limits in the Selling Partner API](https://developer-doc
+		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateContainerLabelPostResponse> CreateContainerLabelAsync(CreateContainerLabelPostRequest request)
 		    => await this.SendAsync<CreateContainerLabelPostResponse>(request);

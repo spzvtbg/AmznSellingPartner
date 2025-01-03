@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		public string XAmznRequestId { get; set; }
 
 		/// <summary>
-		/// Returns hypermedia links under the _links.actions key that specify which messaging actions are allowed for the
-		/// order.
+		/// Returns hypermedia links under the _links.actions key that specify which messaging actions are allowed
+		/// for the order.
 		/// </summary>
 		[JsonProperty("Value200")]
 		public GetMessagingActionsForOrderResponse Value200 { get; set; }
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expi
-		/// ed Token, or Invalid Signature.
+		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized,
+		/// Expired Token, or Invalid Signature.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public GetMessagingActionsForOrderResponse Value403 { get; set; }

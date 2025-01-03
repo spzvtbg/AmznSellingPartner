@@ -49,8 +49,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public ServiceJobProvider ServiceJobProvider { get; set; }
 
 		/// <summary>
-		/// A list of appointment windows preferred by the buyer. Included only if the buyer selected appointment windows
-		/// hen creating the order.
+		/// A list of appointment windows preferred by the buyer. Included only if the buyer selected appointment
+		/// windows when creating the order.
 		/// </summary>
 		[JsonProperty("preferredAppointmentTimes")]
 		public List<AppointmentTime> PreferredAppointmentTimes { get; set; }

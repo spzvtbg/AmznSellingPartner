@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	public class Transaction : BaseClass
 	{
 		/// <summary>
-		/// The unique identifier returned in the 'transactionId' field in response to the post request of a specific tran
-		/// action.
+		/// The unique identifier returned in the 'transactionId' field in response to the post request of a specific
+		/// transaction.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("transactionId")]

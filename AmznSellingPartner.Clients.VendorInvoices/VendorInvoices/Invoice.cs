@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Represents an invoice or credit note document with details about the transaction, parties involved, and line i
-	/// ems.
+	/// Represents an invoice or credit note document with details about the transaction, parties involved, and
+	/// line items.
 	/// </summary>
 	public class Invoice : BaseClass
 	{
@@ -20,9 +20,9 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public InvoiceType InvoiceType { get; set; }
 
 		/// <summary>
-		/// Unique number relating to the charges defined in this document. This will be invoice number if the document ty
-		/// e is Invoice or CreditNote number if the document type is Credit Note. Failure to provide this reference will
-		/// esult in a rejection.
+		/// Unique number relating to the charges defined in this document. This will be invoice number if the document
+		/// type is Invoice or CreditNote number if the document type is Credit Note. Failure to provide this reference
+		/// will result in a rejection.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("id")]
@@ -35,8 +35,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public string ReferenceNumber { get; set; }
 
 		/// <summary>
-		/// Date when the invoice/credit note information was generated in the origin's accounting system. The invoice dat
-		/// should be on or after the purchase order creation date.
+		/// Date when the invoice/credit note information was generated in the origin's accounting system. The invoice
+		/// date should be on or after the purchase order creation date.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("date")]
@@ -74,9 +74,9 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public PaymentTerms PaymentTerms { get; set; }
 
 		/// <summary>
-		/// Total monetary amount charged in the invoice or full value of credit note to be paid including all relevant ta
-		/// es. It is the total amount of invoice (including charges, less allowances) before terms discount (if discount
-		/// s applicable).
+		/// Total monetary amount charged in the invoice or full value of credit note to be paid including all relevant
+		/// taxes. It is the total amount of invoice (including charges, less allowances) before terms discount (if
+		/// discount is applicable).
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("invoiceTotal")]

@@ -73,9 +73,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public Money TotalPrice { get; set; }
 
 		/// <summary>
-		/// The buyer information for products the vendor has configured as customizable, specifying the types of customiz
-		/// tions or configurations along with types and ranges for their product. This provides the ability for buyers to
-		/// customize multiple aspects of the products according to what the vendor allows.
+		/// The buyer information for products the vendor has configured as customizable, specifying the types of
+		/// customizations or configurations along with types and ranges for their product. This provides the ability
+		/// for buyers to customize multiple aspects of the products according to what the vendor allows.
 		/// </summary>
 		[JsonProperty("buyerCustomizedInfo")]
 		public BuyerCustomizedInfoDetail BuyerCustomizedInfo { get; set; }

@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	public class CreateConfirmCustomizationDetailsRequest : BaseClass
 	{
 		/// <summary>
-		/// The text to be sent to the buyer. Only links related to customization details are allowed. Do not include HTML
-		/// or email addresses. The text must be written in the buyer's language of preference, which can be retrieved fro
-		/// the GetAttributes operation.
+		/// The text to be sent to the buyer. Only links related to customization details are allowed. Do not include
+		/// HTML or email addresses. The text must be written in the buyer's language of preference, which can be
+		/// retrieved from the GetAttributes operation.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(800)]

@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string ResourceId { get; set; }
 
 		/// <summary>
-		/// The duration of each slot which is returned. This value will be a multiple of 5 and fall in the following rang
-		/// : 5 <= `slotDuration` <= 360.
+		/// The duration of each slot which is returned. This value will be a multiple of 5 and fall in the following
+		/// range: 5 <= `slotDuration` <= 360.
 		/// </summary>
 		[JsonProperty("slotDuration")]
 		public int SlotDuration { get; set; }

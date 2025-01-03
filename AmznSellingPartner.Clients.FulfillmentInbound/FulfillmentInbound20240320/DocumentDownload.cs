@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string DownloadType { get; set; }
 
 		/// <summary>
-		/// The URI's expiration time. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) datetime form
-		/// t with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
+		/// The URI's expiration time. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) datetime
+		/// format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
 		public DateTime Expiration { get; set; }

@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public bool Is200 { get; set; }
 
 		/// <summary>
-		/// Your rate limit (requests per second) for this operation. _Note:_ For this status code, the rate limit header
-		/// s deprecated and no longer returned.
+		/// Your rate limit (requests per second) for this operation. _Note:_ For this status code, the rate limit
+		/// header is deprecated and no longer returned.
 		/// </summary>
 		[JsonProperty("x-amzn-RateLimit-Limit")]
 		public string XAmznRateLimitLimit { get; set; }
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expi
-		/// ed Token, or Invalid Signature.
+		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized,
+		/// Expired Token, or Invalid Signature.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public ErrorList Value403 { get; set; }

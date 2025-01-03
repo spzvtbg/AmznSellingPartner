@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public string XAmznRequestId { get; set; }
 
 		/// <summary>
-		/// Successfully understood the request to create or fully-update a listings item. See the response to determine i
-		/// the submission has been accepted.
+		/// Successfully understood the request to create or fully-update a listings item. See the response to determine
+		/// if the submission has been accepted.
 		/// </summary>
 		[JsonProperty("Value200")]
 		public ListingsItemSubmissionResponse Value200 { get; set; }
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expi
-		/// ed Token, or Invalid Signature.
+		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized,
+		/// Expired Token, or Invalid Signature.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public ErrorList Value403 { get; set; }

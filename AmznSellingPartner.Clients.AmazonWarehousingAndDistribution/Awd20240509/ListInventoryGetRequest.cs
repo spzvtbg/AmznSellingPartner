@@ -22,18 +22,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// Set to `SHOW` to return summaries with additional inventory details. Defaults to `HIDE,` which returns only in
-		/// entory summary totals.
+		/// Set to `SHOW` to return summaries with additional inventory details. Defaults to `HIDE,` which returns
+		/// only inventory summary totals.
 		/// </summary>
 		[InQuery("details")]
 		[JsonProperty("details")]
 		public Details Details { get; set; }
 
 		/// <summary>
-		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the number o
-		/// results exceeds the specified `maxResults` value. To get the next page of results, call the operation with th
-		/// s token and include the same arguments as the call that produced the token. To get a complete list, call this
-		/// peration until `nextToken` is null. Note that this operation can return empty pages.
+		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the
+		/// number of results exceeds the specified `maxResults` value. To get the next page of results, call the
+		/// operation with this token and include the same arguments as the call that produced the token. To get
+		/// a complete list, call this operation until `nextToken` is null. Note that this operation can return empty
+		/// pages.
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]

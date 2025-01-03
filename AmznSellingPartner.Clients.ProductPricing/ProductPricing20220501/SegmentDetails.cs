@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class SegmentDetails : BaseClass
 	{
 		/// <summary>
-		/// The glance view weighted percentage for this segment, which is the glance views for this segment as a percenta
-		/// e of total glance views across all segments for the ASIN. A higher percentage indicates that more Amazon custo
-		/// ers receive this offer as the Featured Offer.
+		/// The glance view weighted percentage for this segment, which is the glance views for this segment as a
+		/// percentage of total glance views across all segments for the ASIN. A higher percentage indicates that
+		/// more Amazon customers receive this offer as the Featured Offer.
 		/// </summary>
 		[JsonProperty("glanceViewWeightPercentage")]
 		public double GlanceViewWeightPercentage { get; set; }

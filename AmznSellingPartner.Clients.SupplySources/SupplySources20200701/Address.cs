@@ -61,8 +61,8 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		public string StateOrRegion { get; set; }
 
 		/// <summary>
-		/// The postal code of that address. It conatins a series of letters or digits or both, sometimes including spaces
-		/// or punctuation.
+		/// The postal code of that address. It conatins a series of letters or digits or both, sometimes including
+		/// spaces or punctuation.
 		/// </summary>
 		[JsonProperty("postalCode")]
 		public string PostalCode { get; set; }

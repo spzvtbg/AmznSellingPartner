@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Shipping label information for an order, including the purchase order number, selling party, ship from party,
-	/// abel format, and package details.
+	/// Shipping label information for an order, including the purchase order number, selling party, ship from
+	/// party, label format, and package details.
 	/// </summary>
 	public class ShippingLabel : BaseClass
 	{

@@ -29,8 +29,8 @@ namespace AmznSellingPartner.Clients.ApplicationManagement.Application20231130
 		public bool Is400 { get; set; }
 
 		/// <summary>
-		/// Application is not enrolled for rotation notification. Please update application notification preference in De
-		/// eloper console.
+		/// Application is not enrolled for rotation notification. Please update application notification preference
+		/// in Developer console.
 		/// </summary>
 		[JsonProperty("Value400")]
 		public ErrorList Value400 { get; set; }
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.ApplicationManagement.Application20231130
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expi
-		/// ed Token, or Invalid Signature.
+		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized,
+		/// Expired Token, or Invalid Signature.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public ErrorList Value403 { get; set; }

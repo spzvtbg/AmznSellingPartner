@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class InboundPlanSummary : BaseClass
 	{
 		/// <summary>
-		/// The time at which the inbound plan was created. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/is
-		/// -8601) datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
+		/// The time at which the inbound plan was created. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("createdAt")]
@@ -31,8 +31,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// The time at which the inbound plan was last updated. In [ISO 8601](https://developer-docs.amazon.com/sp-api/do
-		/// s/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
+		/// The time at which the inbound plan was last updated. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("lastUpdatedAt")]

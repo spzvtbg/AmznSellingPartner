@@ -15,15 +15,15 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		sku,
 
 		/// <summary>
-		/// The date when the listing item was created. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/
-		/// ocs/iso-8601) date-time format.
+		/// The date when the listing item was created. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format.
 		/// </summary>
 		[EnumMember(Value = "createdDate")]
 		createdDate,
 
 		/// <summary>
-		/// The date when the listing item was last updated. Values are in [ISO 8601](https://developer-docs.amazon.com/sp
-		/// api/docs/iso-8601) date-time format.
+		/// The date when the listing item was last updated. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format.
 		/// </summary>
 		[EnumMember(Value = "lastUpdatedDate")]
 		lastUpdatedDate,

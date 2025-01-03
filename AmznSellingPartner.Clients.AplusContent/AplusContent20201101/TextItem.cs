@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class TextItem : BaseClass
 	{
 		/// <summary>
-		/// The rank or index of this text item within the collection. Different items cannot occupy the same position wit
-		/// in a single collection.
+		/// The rank or index of this text item within the collection. Different items cannot occupy the same position
+		/// within a single collection.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]

@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The preparation details for a product. This contains the prep category, prep owner, and label owner. Prep inst
-	/// uctions are generated based on the specified category.
+	/// The preparation details for a product. This contains the prep category, prep owner, and label owner.
+	/// Prep instructions are generated based on the specified category.
 	/// </summary>
 	public class PrepDetails : BaseClass
 	{
@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public string PrepCategory { get; set; }
 
 		/// <summary>
-		/// Information that pertains to the preparation of inbound products. This is generated based on the specified cat
-		/// gory.
+		/// Information that pertains to the preparation of inbound products. This is generated based on the specified
+		/// category.
 		/// </summary>
 		[JsonProperty("prepInstructions")]
 		public List<PrepInstruction> PrepInstructions { get; set; }

@@ -13,7 +13,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public class InboundEligibility : BaseClass
 	{
 		/// <summary>
-		/// If there are order level eligibility issues, then this list will contain those error codes and descriptions.
+		/// If there are order level eligibility issues, then this list will contain those error codes and descr
+		/// iptions.
 		/// </summary>
 		[JsonProperty("ineligibilityReasons")]
 		public List<OrderIneligibilityReason> IneligibilityReasons { get; set; }

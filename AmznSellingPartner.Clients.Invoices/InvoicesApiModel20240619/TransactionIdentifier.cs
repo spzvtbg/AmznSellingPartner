@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class TransactionIdentifier : BaseClass
 	{
 		/// <summary>
-		/// The transaction identifier name. Use the `getInvoicesAttributes` operation to check `transactionIdentifierName
+		/// The transaction identifier name. Use the `getInvoicesAttributes` operation to check `transactionIdentifierName`
 		/// options.
 		/// </summary>
 		[JsonProperty("name")]

@@ -9,14 +9,15 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum PaymentMethod
 	{
 		/// <summary>
-		/// An invoice payment is submitted by a business to pay for products and services purchased from vendors.
+		/// An invoice payment is submitted by a business to pay for products and services purchased from vendor
+		/// s.
 		/// </summary>
 		[EnumMember(Value = "Invoice")]
 		Invoice,
 
 		/// <summary>
-		/// A retail merchandiser acts as a consignor for goods supplied by the consignee. The consignor pays the consigne
-		/// after the sale and keeps a percentage of the proceeds
+		/// A retail merchandiser acts as a consignor for goods supplied by the consignee. The consignor pays the
+		/// consignee after the sale and keeps a percentage of the proceeds
 		/// </summary>
 		[EnumMember(Value = "Consignment")]
 		Consignment,

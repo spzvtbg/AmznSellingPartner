@@ -6,7 +6,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Enum to specify if returned summaries should include additional summarized inventory details and quantities.
+	/// Enum to specify if returned summaries should include additional summarized inventory details and qua
+	/// ntities.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum InventoryDetailsVisibility

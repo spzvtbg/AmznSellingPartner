@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		DRAFT,
 
 		/// <summary>
-		/// The content has been rejected in moderation and needs to be revised and resubmitted based on the rejection rea
-		/// ons provided.
+		/// The content has been rejected in moderation and needs to be revised and resubmitted based on the rejection
+		/// reasons provided.
 		/// </summary>
 		[EnumMember(Value = "REJECTED")]
 		REJECTED,

@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	public class SearchCatalogItemsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A comma-delimited list of product identifiers to search the Amazon catalog for. **Note:** Cannot be used with
-		/// keywords`.
+		/// A comma-delimited list of product identifiers to search the Amazon catalog for. **Note:** Cannot be used
+		/// with `keywords`.
 		/// </summary>
 		[InQuery("identifiers")]
 		[MaxItems(20)]
@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public CsvValue<string> Identifiers { get; set; }
 
 		/// <summary>
-		/// Type of product identifiers to search the Amazon catalog for. **Note:** Required when `identifiers` are provid
-		/// d.
+		/// Type of product identifiers to search the Amazon catalog for. **Note:** Required when `identifiers` are
+		/// provided.
 		/// </summary>
 		[InQuery("identifiersType")]
 		[JsonProperty("identifiersType")]
@@ -49,15 +49,16 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string Locale { get; set; }
 
 		/// <summary>
-		/// A selling partner identifier, such as a seller account or vendor code. **Note:** Required when `identifiersTyp
-		/// ` is `SKU`.
+		/// A selling partner identifier, such as a seller account or vendor code. **Note:** Required when `identifiersType`
+		/// is `SKU`.
 		/// </summary>
 		[InQuery("sellerId")]
 		[JsonProperty("sellerId")]
 		public string SellerId { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of words to search the Amazon catalog for. **Note:** Cannot be used with `identifiers`.
+		/// A comma-delimited list of words to search the Amazon catalog for. **Note:** Cannot be used with `ide
+		/// ntifiers`.
 		/// </summary>
 		[InQuery("keywords")]
 		[MaxItems(20)]
@@ -65,16 +66,16 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public CsvValue<string> Keywords { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of brand names to limit the search for `keywords`-based queries. **Note:** Cannot be us
-		/// d with `identifiers`.
+		/// A comma-delimited list of brand names to limit the search for `keywords`-based queries. **Note:** Cannot
+		/// be used with `identifiers`.
 		/// </summary>
 		[InQuery("brandNames")]
 		[JsonProperty("brandNames")]
 		public CsvValue<string> BrandNames { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of classification identifiers to limit the search for `keywords`-based queries. **Note:
-		/// * Cannot be used with `identifiers`.
+		/// A comma-delimited list of classification identifiers to limit the search for `keywords`-based queries.
+		/// **Note:** Cannot be used with `identifiers`.
 		/// </summary>
 		[InQuery("classificationIds")]
 		[JsonProperty("classificationIds")]
@@ -96,8 +97,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string PageToken { get; set; }
 
 		/// <summary>
-		/// The language of the keywords provided for `keywords`-based queries. Defaults to the primary locale of the mark
-		/// tplace. **Note:** Cannot be used with `identifiers`.
+		/// The language of the keywords provided for `keywords`-based queries. Defaults to the primary locale of
+		/// the marketplace. **Note:** Cannot be used with `identifiers`.
 		/// </summary>
 		[InQuery("keywordsLocale")]
 		[JsonProperty("keywordsLocale")]

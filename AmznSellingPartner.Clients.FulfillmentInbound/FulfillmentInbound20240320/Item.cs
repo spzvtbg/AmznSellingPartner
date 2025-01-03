@@ -21,15 +21,17 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Asin { get; set; }
 
 		/// <summary>
-		/// The expiration date of the MSKU. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) datetim
-		/// format with pattern`YYYY-MM-DD`. The same MSKU with different expiration dates cannot go into the same box.
+		/// The expiration date of the MSKU. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern`YYYY-MM-DD`. The same MSKU with different expiration dates cannot go into
+		/// the same box.
 		/// </summary>
 		[Pattern("^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])")]
 		[JsonProperty("expiration")]
 		public string Expiration { get; set; }
 
 		/// <summary>
-		/// A unique identifier assigned by Amazon to products stored in and fulfilled from an Amazon fulfillment center.
+		/// A unique identifier assigned by Amazon to products stored in and fulfilled from an Amazon fulfillment
+		/// center.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

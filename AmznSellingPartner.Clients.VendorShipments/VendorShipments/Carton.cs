@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public List<ContainerIdentification> CartonIdentifiers { get; set; }
 
 		/// <summary>
-		/// Carton sequence number for the carton. The first carton will be 001, the second 002, and so on. This number is
-		/// used as a reference to refer to this carton from the pallet level.
+		/// Carton sequence number for the carton. The first carton will be 001, the second 002, and so on. This
+		/// number is used as a reference to refer to this carton from the pallet level.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("cartonSequenceNumber")]

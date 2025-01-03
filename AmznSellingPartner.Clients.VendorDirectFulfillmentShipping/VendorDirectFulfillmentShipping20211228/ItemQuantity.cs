@@ -10,8 +10,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class ItemQuantity : BaseClass
 	{
 		/// <summary>
-		/// Quantity of units shipped for a specific item at a shipment level. If the item is present only in certain pack
-		/// ges or pallets within the shipment, please provide this at the appropriate package or pallet level.
+		/// Quantity of units shipped for a specific item at a shipment level. If the item is present only in certain
+		/// packages or pallets within the shipment, please provide this at the appropriate package or pallet le
+		/// vel.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("amount")]

@@ -74,8 +74,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string Manufacturer { get; set; }
 
 		/// <summary>
-		/// Identifies an Amazon catalog item is memorabilia valued for its connection with historical events, culture, or
-		/// entertainment.
+		/// Identifies an Amazon catalog item is memorabilia valued for its connection with historical events, culture,
+		/// or entertainment.
 		/// </summary>
 		[JsonProperty("memorabilia")]
 		public bool Memorabilia { get; set; }

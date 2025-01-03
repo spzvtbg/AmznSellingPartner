@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public Money Payment { get; set; }
 
 		/// <summary>
-		/// A sub-payment method for a COD order.  **Possible values**: * `COD`: Cash on delivery  * `GC`: Gift card  * `P
-		/// intsAccount`: Amazon Points * `Invoice`: Invoice
+		/// A sub-payment method for a COD order.  **Possible values**: * `COD`: Cash on delivery  * `GC`: Gift card
+		/// * `PointsAccount`: Amazon Points * `Invoice`: Invoice
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("PaymentMethod")]

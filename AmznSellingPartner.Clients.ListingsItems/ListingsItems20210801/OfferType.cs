@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public enum OfferType
 	{
 		/// <summary>
-		/// The offer on this listings item is available for Business to Consumer purchase, meaning that it is available t
-		/// shoppers on Amazon retail sites.
+		/// The offer on this listings item is available for Business to Consumer purchase, meaning that it is available
+		/// to shoppers on Amazon retail sites.
 		/// </summary>
 		[EnumMember(Value = "B2C")]
 		B2C,

@@ -23,8 +23,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string BuyerCompanyName { get; set; }
 
 		/// <summary>
-		/// The shipping address for the order.  **Note**: `ShippingAddress` is only available for orders with the followi
-		/// g status values: `Unshipped`, `PartiallyShipped`, `Shipped`, and `InvoiceUnconfirmed`.
+		/// The shipping address for the order.  **Note**: `ShippingAddress` is only available for orders with the
+		/// following status values: `Unshipped`, `PartiallyShipped`, `Shipped`, and `InvoiceUnconfirmed`.
 		/// </summary>
 		[JsonProperty("ShippingAddress")]
 		public Address ShippingAddress { get; set; }

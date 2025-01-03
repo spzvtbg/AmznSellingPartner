@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A field where the selling party can provide additional information for tax-related or any other purposes.
+	/// A field where the selling party can provide additional information for tax-related or any other purp
+	/// oses.
 	/// </summary>
 	public class AdditionalDetails : BaseClass
 	{

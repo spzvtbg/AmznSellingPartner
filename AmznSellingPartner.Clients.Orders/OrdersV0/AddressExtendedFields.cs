@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The container for address extended fields (such as `street name` and `street number`). Currently only availabl
-	/// with Brazil shipping addresses.
+	/// The container for address extended fields (such as `street name` and `street number`). Currently only
+	/// available with Brazil shipping addresses.
 	/// </summary>
 	public class AddressExtendedFields : BaseClass
 	{

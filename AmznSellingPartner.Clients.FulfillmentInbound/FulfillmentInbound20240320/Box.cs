@@ -7,14 +7,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Contains information about a box that is used in the inbound plan. The box is a container that holds multiple
-	/// tems.
+	/// Contains information about a box that is used in the inbound plan. The box is a container that holds
+	/// multiple items.
 	/// </summary>
 	public class Box : BaseClass
 	{
 		/// <summary>
-		/// The ID provided by Amazon that identifies a given box. This ID is comprised of the external shipment ID (which
-		/// is generated after transportation has been confirmed) and the index of the box.
+		/// The ID provided by Amazon that identifies a given box. This ID is comprised of the external shipment
+		/// ID (which is generated after transportation has been confirmed) and the index of the box.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]

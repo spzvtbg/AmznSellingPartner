@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public Link Link { get; set; }
 
 		/// <summary>
-		/// Checksum hash of the schema (Base64 MD5). Can be used to verify schema contents, identify changes between sche
-		/// a versions, and for caching.
+		/// Checksum hash of the schema (Base64 MD5). Can be used to verify schema contents, identify changes between
+		/// schema versions, and for caching.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("checksum")]

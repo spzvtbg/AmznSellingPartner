@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class BatchRequest : BaseClass
 	{
 		/// <summary>
-		/// The URI associated with an individual request within a batch. For `FeaturedOfferExpectedPrice`, this is `/prod
-		/// cts/pricing/2022-05-01/offer/featuredOfferExpectedPrice`.
+		/// The URI associated with an individual request within a batch. For `FeaturedOfferExpectedPrice`, this
+		/// is `/products/pricing/2022-05-01/offer/featuredOfferExpectedPrice`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("uri")]

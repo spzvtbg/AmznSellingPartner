@@ -7,7 +7,8 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A listing restriction, optionally qualified by a condition, with a list of reasons for the restriction.
+	/// A listing restriction, optionally qualified by a condition, with a list of reasons for the restricti
+	/// on.
 	/// </summary>
 	public class Restriction : BaseClass
 	{

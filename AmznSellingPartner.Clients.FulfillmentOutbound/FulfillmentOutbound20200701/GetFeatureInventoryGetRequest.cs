@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class GetFeatureInventoryGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The marketplace for which to return a list of the inventory that is eligible for the specified feature.
+		/// The marketplace for which to return a list of the inventory that is eligible for the specified featu
+		/// re.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
@@ -26,17 +27,17 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string FeatureName { get; set; }
 
 		/// <summary>
-		/// A string token returned in the response to your previous request that is used to return the next response page
-		/// A value of null will return the first page.
+		/// A string token returned in the response to your previous request that is used to return the next response
+		/// page. A value of null will return the first page.
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// A date that you can use to select inventory that has been updated since a specified date. An update is defined
-		/// as any change in feature-enabled inventory availability. The date must be in the format yyyy-MM-ddTHH:mm:ss.ss
-		/// Z
+		/// A date that you can use to select inventory that has been updated since a specified date. An update is
+		/// defined as any change in feature-enabled inventory availability. The date must be in the format yyyy
+		/// -MM-ddTHH:mm:ss.sssZ
 		/// </summary>
 		[InQuery("queryStartDate")]
 		[JsonProperty("queryStartDate")]

@@ -13,17 +13,17 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class ExportInvoicesRequest : BaseClass
 	{
 		/// <summary>
-		/// The latest invoice creation date for invoices that you want to include in the response. Dates are in [ISO 8601
-		/// (https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default is the time of the requ
-		/// st.
+		/// The latest invoice creation date for invoices that you want to include in the response. Dates are in
+		/// [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default is the
+		/// time of the request.
 		/// </summary>
 		[JsonProperty("dateEnd")]
 		public DateTime DateEnd { get; set; }
 
 		/// <summary>
-		/// The earliest invoice creation date for invoices that you want to include in the response. Dates are in [ISO 86
-		/// 1](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default is 24 hours prior to
-		/// he time of the request.
+		/// The earliest invoice creation date for invoices that you want to include in the response. Dates are in
+		/// [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format. The default is 24
+		/// hours prior to the time of the request.
 		/// </summary>
 		[JsonProperty("dateStart")]
 		public DateTime DateStart { get; set; }
@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public FileFormat FileFormat { get; set; }
 
 		/// <summary>
-		/// The marketplace-specific classification of the invoice type. Use the `getInvoicesAttributes` operation to chec
-		/// `invoiceType` options.
+		/// The marketplace-specific classification of the invoice type. Use the `getInvoicesAttributes` operation
+		/// to check `invoiceType` options.
 		/// </summary>
 		[JsonProperty("invoiceType")]
 		public string InvoiceType { get; set; }
@@ -58,8 +58,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public string Series { get; set; }
 
 		/// <summary>
-		/// A list of statuses that you can use to filter invoices. Use the `getInvoicesAttributes` operation to check inv
-		/// ice status options.  Min count: 1
+		/// A list of statuses that you can use to filter invoices. Use the `getInvoicesAttributes` operation to
+		/// check invoice status options.  Min count: 1
 		/// </summary>
 		[MinItems(1)]
 		[JsonProperty("statuses")]
@@ -69,8 +69,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public TransactionIdentifier TransactionIdentifier { get; set; }
 
 		/// <summary>
-		/// The marketplace-specific classification of the transaction type for which the invoice was created. Use the `ge
-		/// InvoicesAttributes` operation to check `transactionType` options
+		/// The marketplace-specific classification of the transaction type for which the invoice was created. Use
+		/// the `getInvoicesAttributes` operation to check `transactionType` options
 		/// </summary>
 		[JsonProperty("transactionType")]
 		public string TransactionType { get; set; }

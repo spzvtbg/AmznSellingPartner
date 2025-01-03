@@ -10,16 +10,16 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	public class GetOrdersGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The vendor warehouse identifier for the fulfillment warehouse. If not specified, the result will contain order
-		/// for all warehouses.
+		/// The vendor warehouse identifier for the fulfillment warehouse. If not specified, the result will contain
+		/// orders for all warehouses.
 		/// </summary>
 		[InQuery("shipFromPartyId")]
 		[JsonProperty("shipFromPartyId")]
 		public string ShipFromPartyId { get; set; }
 
 		/// <summary>
-		/// Returns only the purchase orders that match the specified status. If not specified, the result will contain or
-		/// ers that match any status.
+		/// Returns only the purchase orders that match the specified status. If not specified, the result will contain
+		/// orders that match any status.
 		/// </summary>
 		[InQuery("status")]
 		[JsonProperty("status")]
@@ -35,8 +35,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public long Limit { get; set; }
 
 		/// <summary>
-		/// Purchase orders that became available after this date and time will be included in the result. Must be in ISO-
-		/// 601 date/time format.
+		/// Purchase orders that became available after this date and time will be included in the result. Must be
+		/// in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[IsRequired]
@@ -44,8 +44,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
-		/// Purchase orders that became available before this date and time will be included in the result. Must be in ISO
-		/// 8601 date/time format.
+		/// Purchase orders that became available before this date and time will be included in the result. Must
+		/// be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdBefore")]
 		[IsRequired]
@@ -60,15 +60,16 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// Used for pagination when there are more orders than the specified result size limit. The token value is return
-		/// d in the previous API call.
+		/// Used for pagination when there are more orders than the specified result size limit. The token value
+		/// is returned in the previous API call.
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// When true, returns the complete purchase order details. Otherwise, only purchase order numbers are returned.
+		/// When true, returns the complete purchase order details. Otherwise, only purchase order numbers are r
+		/// eturned.
 		/// </summary>
 		[InQuery("includeDetails")]
 		[JsonProperty("includeDetails")]

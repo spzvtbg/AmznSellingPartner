@@ -9,7 +9,8 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public class SearchDefinitionsProductTypesGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A comma-delimited list of keywords to search product types. **Note:** Cannot be used with `itemName`.
+		/// A comma-delimited list of keywords to search product types. **Note:** Cannot be used with `itemName`
+		/// .
 		/// </summary>
 		[InQuery("keywords")]
 		[JsonProperty("keywords")]
@@ -24,7 +25,8 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// The title of the ASIN to get the product type recommendation. **Note:** Cannot be used with `keywords`.
+		/// The title of the ASIN to get the product type recommendation. **Note:** Cannot be used with `keyword
+		/// s`.
 		/// </summary>
 		[InQuery("itemName")]
 		[JsonProperty("itemName")]
@@ -38,8 +40,8 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public string Locale { get; set; }
 
 		/// <summary>
-		/// The locale used for the `keywords` and `itemName` parameters. Defaults to the primary locale of the marketplac
-		/// .
+		/// The locale used for the `keywords` and `itemName` parameters. Defaults to the primary locale of the
+		/// marketplace.
 		/// </summary>
 		[InQuery("searchLocale")]
 		[JsonProperty("searchLocale")]

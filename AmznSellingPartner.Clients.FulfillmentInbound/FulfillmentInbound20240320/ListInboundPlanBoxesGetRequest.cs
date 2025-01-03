@@ -28,9 +28,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public int PageSize { get; set; }
 
 		/// <summary>
-		/// A token to fetch a certain page when there are multiple pages worth of results. The value of this token is fet
-		/// hed from the `pagination` returned in the API response. In the absence of the token value from the query param
-		/// ter the API returns the first page of the result.
+		/// A token to fetch a certain page when there are multiple pages worth of results. The value of this token
+		/// is fetched from the `pagination` returned in the API response. In the absence of the token value from
+		/// the query parameter the API returns the first page of the result.
 		/// </summary>
 		[InQuery("paginationToken")]
 		[MinLength(0)]

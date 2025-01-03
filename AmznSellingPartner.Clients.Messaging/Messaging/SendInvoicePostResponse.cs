@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// 403 can be caused for reasons like Access Denied, Unauthorized, Expired Token, Invalid Signature or Resource N
-		/// t Found.
+		/// 403 can be caused for reasons like Access Denied, Unauthorized, Expired Token, Invalid Signature or Resource
+		/// Not Found.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public InvoiceResponse Value403 { get; set; }

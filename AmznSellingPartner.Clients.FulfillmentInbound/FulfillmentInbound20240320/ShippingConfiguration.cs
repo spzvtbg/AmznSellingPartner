@@ -5,16 +5,17 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The shipping configurations supported for the packing option. Available modes are ground small parcel, freight
-	/// less-than-truckload (LTL), freight full-truckload (FTL) palletized, freight FTL non-palletized, ocean less-tha
-	/// -container-load (LCL), ocean full-container load (FCL), air small parcel, and air small parcel express.
+	/// The shipping configurations supported for the packing option. Available modes are ground small parcel,
+	/// freight less-than-truckload (LTL), freight full-truckload (FTL) palletized, freight FTL non-palletized,
+	/// ocean less-than-container-load (LCL), ocean full-container load (FCL), air small parcel, and air small
+	/// parcel express.
 	/// </summary>
 	public class ShippingConfiguration : BaseClass
 	{
 		/// <summary>
-		/// Mode of shipment transportation that this option will provide.  Possible values: `GROUND_SMALL_PARCEL`, `FREIG
-		/// T_LTL`, `FREIGHT_FTL_PALLET`, `FREIGHT_FTL_NONPALLET`, `OCEAN_LCL`, `OCEAN_FCL`, `AIR_SMALL_PARCEL`, `AIR_SMAL
-		/// _PARCEL_EXPRESS`.
+		/// Mode of shipment transportation that this option will provide.  Possible values: `GROUND_SMALL_PARCEL`,
+		/// `FREIGHT_LTL`, `FREIGHT_FTL_PALLET`, `FREIGHT_FTL_NONPALLET`, `OCEAN_LCL`, `OCEAN_FCL`, `AIR_SMALL_PARCEL`,
+		/// `AIR_SMALL_PARCEL_EXPRESS`.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -22,7 +23,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShippingMode { get; set; }
 
 		/// <summary>
-		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`.
+		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`
+		/// .
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]

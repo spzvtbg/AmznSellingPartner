@@ -48,9 +48,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public AvailableValueAddedServiceGroupList AvailableValueAddedServiceGroups { get; set; }
 
 		/// <summary>
-		/// When true, indicates that additional inputs are required to purchase this shipment service. You must then call
-		/// the getAdditionalInputs operation to return the JSON schema to use when providing the additional inputs to the
-		/// purchaseShipment operation.
+		/// When true, indicates that additional inputs are required to purchase this shipment service. You must
+		/// then call the getAdditionalInputs operation to return the JSON schema to use when providing the additional
+		/// inputs to the purchaseShipment operation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("requiresAdditionalInputs")]

@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System;
 
 	/// <summary>
-	/// The expiration details of the inventory. This object will only appear if the details parameter in the request
-	/// s set to `SHOW`.
+	/// The expiration details of the inventory. This object will only appear if the details parameter in the
+	/// request is set to `SHOW`.
 	/// </summary>
 	public class ExpirationDetails : BaseClass
 	{

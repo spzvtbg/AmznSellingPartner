@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// This field represents weight unit of measure of items that are ordered by cases and supporting priced by weigh
-	/// .
+	/// This field represents weight unit of measure of items that are ordered by cases and supporting priced
+	/// by weight.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum NetCostUnitOfMeasure

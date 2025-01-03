@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System;
 
 	/// <summary>
-	/// Information about the prescription that is used to verify a regulated product. This must be provided once per
-	/// rder and reflect the seller’s own records. Only approved orders can have prescriptions.
+	/// Information about the prescription that is used to verify a regulated product. This must be provided
+	/// once per order and reflect the seller’s own records. Only approved orders can have prescriptions.
 	/// </summary>
 	public class PrescriptionDetail : BaseClass
 	{
@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string PrescriptionId { get; set; }
 
 		/// <summary>
-		/// The expiration date of the prescription used to verify the regulated product, in [ISO 8601](https://developer-
-		/// ocs.amazon.com/sp-api/docs/iso-8601) date time format.
+		/// The expiration date of the prescription used to verify the regulated product, in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date time format.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("expirationDate")]
@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public int WrittenQuantity { get; set; }
 
 		/// <summary>
-		/// The total number of refills written in the original prescription used to verify the regulated product. If a pr
-		/// scription originally had no refills, this value must be 0.
+		/// The total number of refills written in the original prescription used to verify the regulated product.
+		/// If a prescription originally had no refills, this value must be 0.
 		/// </summary>
 		[IsRequired]
 		[Minimum(0)]
@@ -45,9 +45,9 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public int TotalRefillsAuthorized { get; set; }
 
 		/// <summary>
-		/// The number of refills remaining for the prescription used to verify the regulated product. If a prescription o
-		/// iginally had 10 total refills, this value must be `10` for the first order, `9` for the second order, and `0`
-		/// or the eleventh order. If a prescription originally had no refills, this value must be 0.
+		/// The number of refills remaining for the prescription used to verify the regulated product. If a prescription
+		/// originally had 10 total refills, this value must be `10` for the first order, `9` for the second order,
+		/// and `0` for the eleventh order. If a prescription originally had no refills, this value must be 0.
 		/// </summary>
 		[IsRequired]
 		[Minimum(0)]

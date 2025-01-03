@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Information about the Seller's business. These fields may be omitted if the Seller is registered as an individ
-	/// al.
+	/// Information about the Seller's business. These fields may be omitted if the Seller is registered as an
+	/// individual.
 	/// </summary>
 	public class Business : BaseClass
 	{
@@ -25,15 +25,15 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		public Address RegisteredBusinessAddress { get; set; }
 
 		/// <summary>
-		/// The seller's company registration number, if applicable. This field will be absent for individual sellers and
-		/// ole proprietorships.
+		/// The seller's company registration number, if applicable. This field will be absent for individual sellers
+		/// and sole proprietorships.
 		/// </summary>
 		[JsonProperty("companyRegistrationNumber")]
 		public string CompanyRegistrationNumber { get; set; }
 
 		/// <summary>
-		/// The seller's company tax identification number, if applicable. This field will be present for certain business
-		/// types only, such as sole proprietorships.
+		/// The seller's company tax identification number, if applicable. This field will be present for certain
+		/// business types only, such as sole proprietorships.
 		/// </summary>
 		[JsonProperty("companyTaxIdentificationNumber")]
 		public string CompanyTaxIdentificationNumber { get; set; }

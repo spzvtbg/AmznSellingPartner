@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired T
-		/// ken, Invalid Signature or Resource Not Found.
+		/// Indicates access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized,
+		/// Expired Token, Invalid Signature or Resource Not Found.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public CreateInventoryItemResponse Value403 { get; set; }

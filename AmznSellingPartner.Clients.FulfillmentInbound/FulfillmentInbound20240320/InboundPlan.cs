@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class InboundPlan : BaseClass
 	{
 		/// <summary>
-		/// The time at which the inbound plan was created. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/is
-		/// -8601) datetime with pattern `yyyy-MM-ddTHH:mm:ssZ`.
+		/// The time at which the inbound plan was created. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime with pattern `yyyy-MM-ddTHH:mm:ssZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("createdAt")]
@@ -31,8 +31,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// The time at which the inbound plan was last updated. In [ISO 8601](https://developer-docs.amazon.com/sp-api/do
-		/// s/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
+		/// The time at which the inbound plan was last updated. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("lastUpdatedAt")]
@@ -53,26 +53,26 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Name { get; set; }
 
 		/// <summary>
-		/// Packing options for the inbound plan. This property will be populated when it has been generated via the corre
-		/// ponding operation. If there is a chosen placement option, only packing options for that placement option will
-		/// e returned. If there are confirmed shipments, only packing options for those shipments will be returned. Query
-		/// the packing option for more details.
+		/// Packing options for the inbound plan. This property will be populated when it has been generated via
+		/// the corresponding operation. If there is a chosen placement option, only packing options for that placement
+		/// option will be returned. If there are confirmed shipments, only packing options for those shipments will
+		/// be returned. Query the packing option for more details.
 		/// </summary>
 		[JsonProperty("packingOptions")]
 		public List<PackingOptionSummary> PackingOptions { get; set; }
 
 		/// <summary>
-		/// Placement options for the inbound plan. This property will be populated when it has been generated via the cor
-		/// esponding operation. If there is a chosen placement option, that will be the only returned option. Query the p
-		/// acement option for more details.
+		/// Placement options for the inbound plan. This property will be populated when it has been generated via
+		/// the corresponding operation. If there is a chosen placement option, that will be the only returned option.
+		/// Query the placement option for more details.
 		/// </summary>
 		[JsonProperty("placementOptions")]
 		public List<PlacementOptionSummary> PlacementOptions { get; set; }
 
 		/// <summary>
-		/// A list of shipment IDs for the inbound plan. This property is populated when it has been generated with the `c
-		/// nfirmPlacementOptions` operation. Only shipments from the chosen placement option are returned. Query the ship
-		/// ent for more details.
+		/// A list of shipment IDs for the inbound plan. This property is populated when it has been generated with
+		/// the `confirmPlacementOptions` operation. Only shipments from the chosen placement option are returned.
+		/// Query the shipment for more details.
 		/// </summary>
 		[JsonProperty("shipments")]
 		public List<ShipmentSummary> Shipments { get; set; }

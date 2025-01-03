@@ -16,9 +16,10 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public PackageReferenceId PackageReferenceId { get; set; }
 
 		/// <summary>
-		/// Identifies the carrier that will deliver the package. This field is required for all marketplaces. For more in
-		/// ormation, refer to the [`CarrierCode` announcement](https://developer-docs.amazon.com/sp-api/changelog/carrier
-		/// ode-value-required-in-shipment-confirmations-for-br-mx-ca-sg-au-in-jp-marketplaces).
+		/// Identifies the carrier that will deliver the package. This field is required for all marketplaces. For
+		/// more information, refer to the [`CarrierCode` announcement](https://developer-docs.amazon.com/sp-api
+		/// /changelog/carriercode-value-required-in-shipment-confirmations-for-br-mx-ca-sg-au-in-jp-marketplace
+		/// s).
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("carrierCode")]
@@ -44,8 +45,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string TrackingNumber { get; set; }
 
 		/// <summary>
-		/// The shipping date for the package. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'
-		/// ISO 8601</a> date/time format.
+		/// The shipping date for the package. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> date/time format.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipDate")]

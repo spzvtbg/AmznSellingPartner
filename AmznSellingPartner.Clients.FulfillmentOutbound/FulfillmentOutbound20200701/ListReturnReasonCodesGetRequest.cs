@@ -23,16 +23,16 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// The identifier assigned to the item by the seller when the fulfillment order was created. The service uses thi
-		/// value to determine the marketplace for which the seller wants return reason codes.
+		/// The identifier assigned to the item by the seller when the fulfillment order was created. The service
+		/// uses this value to determine the marketplace for which the seller wants return reason codes.
 		/// </summary>
 		[InQuery("sellerFulfillmentOrderId")]
 		[JsonProperty("sellerFulfillmentOrderId")]
 		public string SellerFulfillmentOrderId { get; set; }
 
 		/// <summary>
-		/// The language that the `TranslatedDescription` property of the `ReasonCodeDetails` response object should be tr
-		/// nslated into.
+		/// The language that the `TranslatedDescription` property of the `ReasonCodeDetails` response object should
+		/// be translated into.
 		/// </summary>
 		[InQuery("language")]
 		[JsonProperty("language")]

@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class ListAllFulfillmentOrdersResult : BaseClass
 	{
 		/// <summary>
-		/// When present and not empty, pass this string token in the next request to return the next response page.
+		/// When present and not empty, pass this string token in the next request to return the next response p
+		/// age.
 		/// </summary>
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }

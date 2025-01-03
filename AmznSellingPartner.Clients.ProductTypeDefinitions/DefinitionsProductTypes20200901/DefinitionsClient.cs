@@ -6,23 +6,23 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public class DefinitionsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
 	{
 		/// <summary>
-		/// Search for and return a list of Amazon product types that have definitions available.  **Usage Plans:**  | Pla
-		/// type | Rate (requests per second) | Burst | | ---- | ---- | ---- | |Default| 5 | 10 | |Selling partner specif
-		/// c| Variable | Variable |  The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that w
-		/// re applied to the requested operation. Rate limits for some selling partners will vary from the default rate a
-		/// d burst shown in the table above. For more information, see [Usage Plans and Rate Limits in the Selling Partne
-		/// API](doc:usage-plans-and-rate-limits-in-the-sp-api).
+		/// Search for and return a list of Amazon product types that have definitions available.  **Usage Plans:**
+		/// | Plan type | Rate (requests per second) | Burst | | ---- | ---- | ---- | |Default| 5 | 10 | |Selling
+		/// partner specific| Variable | Variable |  The x-amzn-RateLimit-Limit response header returns the usage
+		/// plan rate limits that were applied to the requested operation. Rate limits for some selling partners
+		/// will vary from the default rate and burst shown in the table above. For more information, see [Usage
+		/// Plans and Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SearchDefinitionsProductTypesGetResponse> SearchDefinitionsProductTypesAsync(SearchDefinitionsProductTypesGetRequest request)
 		    => await this.SendAsync<SearchDefinitionsProductTypesGetResponse>(request);
 
 		/// <summary>
-		/// Retrieve an Amazon product type definition.  **Usage Plans:**  | Plan type | Rate (requests per second) | Burs
-		/// | | ---- | ---- | ---- | |Default| 5 | 10 | |Selling partner specific| Variable | Variable |  The x-amzn-Rate
-		/// imit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Ra
-		/// e limits for some selling partners will vary from the default rate and burst shown in the table above. For mor
-		/// information, see [Usage Plans and Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-
-		/// he-sp-api).
+		/// Retrieve an Amazon product type definition.  **Usage Plans:**  | Plan type | Rate (requests per second)
+		/// | Burst | | ---- | ---- | ---- | |Default| 5 | 10 | |Selling partner specific| Variable | Variable |
+		/// The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the
+		/// requested operation. Rate limits for some selling partners will vary from the default rate and burst
+		/// shown in the table above. For more information, see [Usage Plans and Rate Limits in the Selling Partner
+		/// API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetDefinitionsProductTypeGetResponse> GetDefinitionsProductTypeAsync(GetDefinitionsProductTypeGetRequest request)
 		    => await this.SendAsync<GetDefinitionsProductTypeGetResponse>(request);

@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		Preorder,
 
 		/// <summary>
-		/// An order that contains items that already have been released in the market but are currently out of stock and
-		/// ill be available in the future.
+		/// An order that contains items that already have been released in the market but are currently out of stock
+		/// and will be available in the future.
 		/// </summary>
 		[EnumMember(Value = "BackOrder")]
 		BackOrder,

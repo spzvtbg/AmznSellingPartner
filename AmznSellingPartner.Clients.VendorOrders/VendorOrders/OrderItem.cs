@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents an individual item in an order, including item details, quantities, pricing, and backorder informat
-	/// on.
+	/// Represents an individual item in an order, including item details, quantities, pricing, and backorder
+	/// information.
 	/// </summary>
 	public class OrderItem : BaseClass
 	{

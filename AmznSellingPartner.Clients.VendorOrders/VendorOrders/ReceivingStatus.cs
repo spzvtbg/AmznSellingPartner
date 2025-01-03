@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public ItemQuantity ReceivedQuantity { get; set; }
 
 		/// <summary>
-		/// The date when the most recent item was received at the buyer's warehouse. Must be in ISO-8601 date/time format
-		/// 
+		/// The date when the most recent item was received at the buyer's warehouse. Must be in ISO-8601 date/time
+		/// format.
 		/// </summary>
 		[JsonProperty("lastReceiveDate")]
 		public DateTime LastReceiveDate { get; set; }

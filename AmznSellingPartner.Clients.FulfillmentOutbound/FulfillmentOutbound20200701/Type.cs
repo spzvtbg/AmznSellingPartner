@@ -45,8 +45,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		RECEPTIONIST,
 
 		/// <summary>
-		/// Indicates delivery preferred with a designated neighbor if the recipient is not available at the destination a
-		/// dress.
+		/// Indicates delivery preferred with a designated neighbor if the recipient is not available at the destination
+		/// address.
 		/// </summary>
 		[EnumMember(Value = "FALLBACK_NEIGHBOR_DELIVERY")]
 		FALLBACK_NEIGHBOR_DELIVERY,

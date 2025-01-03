@@ -20,9 +20,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string XAmznIdempotencyKey { get; set; }
 
 		/// <summary>
-		/// The IETF Language Tag. Note that this only supports the primary language subtag with one secondary language su
-		/// tag (i.e. en-US, fr-CA). The secondary language subtag is almost always a regional designation. This does not
-		/// upport additional subtags beyond the primary and secondary language subtags.
+		/// The IETF Language Tag. Note that this only supports the primary language subtag with one secondary language
+		/// subtag (i.e. en-US, fr-CA). The secondary language subtag is almost always a regional designation. This
+		/// does not support additional subtags beyond the primary and secondary language subtags.
 		/// </summary>
 		[InHeader("locale")]
 		[JsonProperty("locale")]

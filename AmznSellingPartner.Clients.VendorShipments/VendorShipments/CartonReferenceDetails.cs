@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public int CartonCount { get; set; }
 
 		/// <summary>
-		/// Array of reference numbers for the carton that are part of this pallet/shipment. Please provide the cartonSequ
-		/// nceNumber from the 'cartons' segment to refer to that carton's details here.
+		/// Array of reference numbers for the carton that are part of this pallet/shipment. Please provide the cartonSequenceNumber
+		/// from the 'cartons' segment to refer to that carton's details here.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("cartonReferenceNumbers")]

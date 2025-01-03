@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	public class GetTransactionGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The GUID provided by Amazon in the 'transactionId' field in response to the post request of a specific transac
-		/// ion.
+		/// The GUID provided by Amazon in the 'transactionId' field in response to the post request of a specific
+		/// transaction.
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]

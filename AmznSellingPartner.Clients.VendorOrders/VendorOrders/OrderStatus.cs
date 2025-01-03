@@ -46,9 +46,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
-		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses for a region on
-		/// the [Resources page of Amazon Vendor Central](https://vendorcentral.amazon.com/hz/vendor/members/support/help/
-		/// ode/GPZ88XH8HQM97ZV6).
+		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses for a
+		/// region on the [Resources page of Amazon Vendor Central](https://vendorcentral.amazon.com/hz/vendor/m
+		/// embers/support/help/node/GPZ88XH8HQM97ZV6).
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipToParty")]

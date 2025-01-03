@@ -24,7 +24,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		RECEIVED,
 
 		/// <summary>
-		/// The buyer has received some of the item and is expecting to receive the rest of the confirmed quantity.
+		/// The buyer has received some of the item and is expecting to receive the rest of the confirmed quanti
+		/// ty.
 		/// </summary>
 		[EnumMember(Value = "PARTIALLY_RECEIVE")]
 		PARTIALLY_RECEIVE,

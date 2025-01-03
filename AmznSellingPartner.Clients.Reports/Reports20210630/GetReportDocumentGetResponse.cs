@@ -47,8 +47,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired T
-		/// ken, or Invalid Signature.
+		/// Indicates access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized,
+		/// Expired Token, or Invalid Signature.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public ErrorList Value403 { get; set; }

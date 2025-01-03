@@ -16,32 +16,32 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public ReportOptions ReportOptions { get; set; }
 
 		/// <summary>
-		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-value
-		/// ) for more information.
+		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
+		/// for more information.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("reportType")]
 		public string ReportType { get; set; }
 
 		/// <summary>
-		/// The start of a date and time range, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 86
-		/// 1</a> date time format, used for selecting the data to report. The default is now. The value must be prior to
-		/// r equal to the current date and time. Not all report types make use of this.
+		/// The start of a date and time range, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> date time format, used for selecting the data to report. The default is now. The value must
+		/// be prior to or equal to the current date and time. Not all report types make use of this.
 		/// </summary>
 		[JsonProperty("dataStartTime")]
 		public DateTime DataStartTime { get; set; }
 
 		/// <summary>
-		/// The end of a date and time range, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601
-		/// /a> date time format, used for selecting the data to report. The default is now. The value must be prior to or
-		/// equal to the current date and time. Not all report types make use of this.
+		/// The end of a date and time range, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> date time format, used for selecting the data to report. The default is now. The value must
+		/// be prior to or equal to the current date and time. Not all report types make use of this.
 		/// </summary>
 		[JsonProperty("dataEndTime")]
 		public DateTime DataEndTime { get; set; }
 
 		/// <summary>
-		/// A list of marketplace identifiers. The report document's contents will contain data for all of the specified m
-		/// rketplaces, unless the report type indicates otherwise.
+		/// A list of marketplace identifiers. The report document's contents will contain data for all of the specified
+		/// marketplaces, unless the report type indicates otherwise.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

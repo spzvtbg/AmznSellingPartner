@@ -28,9 +28,9 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// A locale that is used to localize issues. When not provided, the default language code of the first marketplac
-		/// is used. Examples: "en_US", "fr_CA", "fr_FR". When a localization is not available in the specified locale, l
-		/// calized messages default to "en_US".
+		/// A locale that is used to localize issues. When not provided, the default language code of the first marketplace
+		/// is used. Examples: "en_US", "fr_CA", "fr_FR". When a localization is not available in the specified locale,
+		/// localized messages default to "en_US".
 		/// </summary>
 		[InQuery("issueLocale")]
 		[JsonProperty("issueLocale")]
@@ -44,9 +44,9 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public CsvValue<IncludedData> IncludedData { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of product identifiers that you can use to search for listings items.   **Note**:  1. T
-		/// is is required when you specify `identifiersType`. 2. You cannot use 'identifiers' if you specify `variationPa
-		/// entSku` or `packageHierarchySku`.
+		/// A comma-delimited list of product identifiers that you can use to search for listings items.   **Note**:
+		/// 1. This is required when you specify `identifiersType`. 2. You cannot use 'identifiers' if you specify
+		/// `variationParentSku` or `packageHierarchySku`.
 		/// </summary>
 		[InQuery("identifiers")]
 		[MaxItems(20)]
@@ -54,68 +54,70 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public CsvValue<string> Identifiers { get; set; }
 
 		/// <summary>
-		/// A type of product identifiers that you can use to search for listings items.   **Note**:  This is required whe
-		/// `identifiers` is provided.
+		/// A type of product identifiers that you can use to search for listings items.   **Note**:  This is required
+		/// when `identifiers` is provided.
 		/// </summary>
 		[InQuery("identifiersType")]
 		[JsonProperty("identifiersType")]
 		public IdentifiersType IdentifiersType { get; set; }
 
 		/// <summary>
-		/// Filters results to include listing items that are variation children of the specified SKU.   **Note**: You can
-		/// ot use `variationParentSku` if you include `identifiers` or `packageHierarchySku` in your request.
+		/// Filters results to include listing items that are variation children of the specified SKU.   **Note**:
+		/// You cannot use `variationParentSku` if you include `identifiers` or `packageHierarchySku` in your re
+		/// quest.
 		/// </summary>
 		[InQuery("variationParentSku")]
 		[JsonProperty("variationParentSku")]
 		public string VariationParentSku { get; set; }
 
 		/// <summary>
-		/// Filter results to include listing items that contain or are contained by the specified SKU.   **Note**: You ca
-		/// not use `packageHierarchySku` if you include `identifiers` or `variationParentSku` in your request.
+		/// Filter results to include listing items that contain or are contained by the specified SKU.   **Note**:
+		/// You cannot use `packageHierarchySku` if you include `identifiers` or `variationParentSku` in your re
+		/// quest.
 		/// </summary>
 		[InQuery("packageHierarchySku")]
 		[JsonProperty("packageHierarchySku")]
 		public string PackageHierarchySku { get; set; }
 
 		/// <summary>
-		/// A date-time that is used to filter listing items. The response includes listings items that were created at or
-		/// after this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time fo
-		/// mat.
+		/// A date-time that is used to filter listing items. The response includes listings items that were created
+		/// at or after this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
-		/// A date-time that is used to filter listing items. The response includes listings items that were created at or
-		/// before this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time f
-		/// rmat.
+		/// A date-time that is used to filter listing items. The response includes listings items that were created
+		/// at or before this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format.
 		/// </summary>
 		[InQuery("createdBefore")]
 		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
-		/// A date-time that is used to filter listing items. The response includes listings items that were last updated
-		/// t or after this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-ti
-		/// e format.
+		/// A date-time that is used to filter listing items. The response includes listings items that were last
+		/// updated at or after this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format.
 		/// </summary>
 		[InQuery("lastUpdatedAfter")]
 		[JsonProperty("lastUpdatedAfter")]
 		public DateTime LastUpdatedAfter { get; set; }
 
 		/// <summary>
-		/// A date-time that is used to filter listing items. The response includes listings items that were last updated
-		/// t or before this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-t
-		/// me format.
+		/// A date-time that is used to filter listing items. The response includes listings items that were last
+		/// updated at or before this time. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// date-time format.
 		/// </summary>
 		[InQuery("lastUpdatedBefore")]
 		[JsonProperty("lastUpdatedBefore")]
 		public DateTime LastUpdatedBefore { get; set; }
 
 		/// <summary>
-		/// Filter results to include only listing items that have issues that match one or more of the specified severity
-		/// levels.
+		/// Filter results to include only listing items that have issues that match one or more of the specified
+		/// severity levels.
 		/// </summary>
 		[InQuery("withIssueSeverity")]
 		[JsonProperty("withIssueSeverity")]

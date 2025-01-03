@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	public enum ReasonCode
 	{
 		/// <summary>
-		/// Approval is required to create a listing for the specified ASIN. A path forward link will be provided that may
-		/// allow Selling Partners to remove the restriction.
+		/// Approval is required to create a listing for the specified ASIN. A path forward link will be provided
+		/// that may allow Selling Partners to remove the restriction.
 		/// </summary>
 		[EnumMember(Value = "APPROVAL_REQUIRED")]
 		APPROVAL_REQUIRED,
@@ -22,8 +22,8 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		ASIN_NOT_FOUND,
 
 		/// <summary>
-		/// Not eligible to create a listing for the specified ASIN. No path forward link will be provided to remove the r
-		/// striction.
+		/// Not eligible to create a listing for the specified ASIN. No path forward link will be provided to remove
+		/// the restriction.
 		/// </summary>
 		[EnumMember(Value = "NOT_ELIGIBLE")]
 		NOT_ELIGIBLE,

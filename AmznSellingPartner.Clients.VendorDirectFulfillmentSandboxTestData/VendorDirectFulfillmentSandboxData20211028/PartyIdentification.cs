@@ -5,14 +5,14 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The identification object for the party information. For example, warehouse code or vendor code. Please refer
-	/// o specific party for more details.
+	/// The identification object for the party information. For example, warehouse code or vendor code. Please
+	/// refer to specific party for more details.
 	/// </summary>
 	public class PartyIdentification : BaseClass
 	{
 		/// <summary>
-		/// Assigned identification for the party. For example, warehouse code or vendor code. Please refer to specific pa
-		/// ty for more details.
+		/// Assigned identification for the party. For example, warehouse code or vendor code. Please refer to specific
+		/// party for more details.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("partyId")]

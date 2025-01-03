@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System;
 
 	/// <summary>
-	/// Contains details for a transportation carrier appointment. This appointment is vended out by Amazon and is an
-	/// ndicator for when a transportation carrier is accepting shipments to be picked up.
+	/// Contains details for a transportation carrier appointment. This appointment is vended out by Amazon and
+	/// is an indicator for when a transportation carrier is accepting shipments to be picked up.
 	/// </summary>
 	public class CarrierAppointment : BaseClass
 	{

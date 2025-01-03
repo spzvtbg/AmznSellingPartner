@@ -4,6 +4,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 
 	/// <summary>
 	/// Rate Item for shipping (base cost, transaction fee, confirmation, insurance, etc.) Data source definition:
+	/// 
 	/// </summary>
 	public class RateItem : BaseClass
 	{

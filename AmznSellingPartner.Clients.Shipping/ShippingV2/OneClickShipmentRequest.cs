@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System;
 
 	/// <summary>
-	/// The request schema for the OneClickShipment operation. When the channelType is not Amazon, shipTo is required
-	/// nd when channelType is Amazon shipTo is ignored.
+	/// The request schema for the OneClickShipment operation. When the channelType is not Amazon, shipTo is
+	/// required and when channelType is Amazon shipTo is ignored.
 	/// </summary>
 	public class OneClickShipmentRequest : BaseClass
 	{

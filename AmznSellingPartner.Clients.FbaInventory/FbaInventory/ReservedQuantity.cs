@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	public class ReservedQuantity : BaseClass
 	{
 		/// <summary>
-		/// The total number of units in Amazon's fulfillment network that are currently being picked, packed, and shipped
-		/// or are sidelined for measurement, sampling, or other internal processes.
+		/// The total number of units in Amazon's fulfillment network that are currently being picked, packed, and
+		/// shipped; or are sidelined for measurement, sampling, or other internal processes.
 		/// </summary>
 		[JsonProperty("totalReservedQuantity")]
 		public int TotalReservedQuantity { get; set; }

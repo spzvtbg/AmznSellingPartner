@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string Asin { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of Amazon marketplace identifiers. Data sets in the response contain data only for the
-		/// pecified marketplaces.
+		/// A comma-delimited list of Amazon marketplace identifiers. Data sets in the response contain data only
+		/// for the specified marketplaces.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]

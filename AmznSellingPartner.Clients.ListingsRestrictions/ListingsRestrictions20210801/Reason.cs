@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A reason for the restriction, including path forward links that may allow Selling Partners to remove the restr
-	/// ction, if available.
+	/// A reason for the restriction, including path forward links that may allow Selling Partners to remove
+	/// the restriction, if available.
 	/// </summary>
 	public class Reason : BaseClass
 	{

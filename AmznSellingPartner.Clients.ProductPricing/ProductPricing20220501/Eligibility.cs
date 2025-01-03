@@ -15,7 +15,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		NATIONAL,
 
 		/// <summary>
-		/// Indicates that this offer has Amazon Prime eligibility in some (but not all) regions within the marketplace.
+		/// Indicates that this offer has Amazon Prime eligibility in some (but not all) regions within the mark
+		/// etplace.
 		/// </summary>
 		[EnumMember(Value = "REGIONAL")]
 		REGIONAL,

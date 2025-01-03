@@ -36,34 +36,36 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		EXECUTING,
 
 		/// <summary>
-		/// If any of the shipment reports fail, or if a shipment doesn't reach its destination, the order status is marke
-		/// as failed.
+		/// If any of the shipment reports fail, or if a shipment doesn't reach its destination, the order status
+		/// is marked as failed.
 		/// </summary>
 		[EnumMember(Value = "FAILURE")]
 		FAILURE,
 
 		/// <summary>
-		/// In this state, a validation errors field is provided. This field shows the order errors and provides guidance
-		/// n fixing them.
+		/// In this state, a validation errors field is provided. This field shows the order errors and provides
+		/// guidance on fixing them.
 		/// </summary>
 		[EnumMember(Value = "INELIGIBLE")]
 		INELIGIBLE,
 
 		/// <summary>
-		/// The order is complete and awaits inventory movement. In this status, the shipments for an order will be visibl
-		/// .
+		/// The order is complete and awaits inventory movement. In this status, the shipments for an order will
+		/// be visible.
 		/// </summary>
 		[EnumMember(Value = "INVENTORY_OUTBOUND")]
 		INVENTORY_OUTBOUND,
 
 		/// <summary>
-		/// If all the shipments are successfully received at the destination channel, the order is marked successful.
+		/// If all the shipments are successfully received at the destination channel, the order is marked succe
+		/// ssful.
 		/// </summary>
 		[EnumMember(Value = "SUCCESS")]
 		SUCCESS,
 
 		/// <summary>
-		/// The order is being validated asynchronously. The order will be in this state after every item update.
+		/// The order is being validated asynchronously. The order will be in this state after every item update
+		/// .
 		/// </summary>
 		[EnumMember(Value = "VALIDATING")]
 		VALIDATING,

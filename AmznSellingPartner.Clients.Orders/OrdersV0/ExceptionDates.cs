@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public class ExceptionDates : BaseClass
 	{
 		/// <summary>
-		/// Date when the business is closed, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601
-		/// /a> date format.
+		/// Date when the business is closed, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> date format.
 		/// </summary>
 		[JsonProperty("ExceptionDate")]
 		public string ExceptionDate { get; set; }

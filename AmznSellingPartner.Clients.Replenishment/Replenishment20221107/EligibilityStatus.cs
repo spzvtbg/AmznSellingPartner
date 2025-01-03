@@ -30,8 +30,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		SUSPENDED,
 
 		/// <summary>
-		/// The offer will not be able to add new subscriptions but existing subscriptions will be fulfilled. This eligibi
-		/// ity status also blocks one-time purchases to preserve inventory for existing subscriptions.
+		/// The offer will not be able to add new subscriptions but existing subscriptions will be fulfilled. This
+		/// eligibility status also blocks one-time purchases to preserve inventory for existing subscriptions.
 		/// </summary>
 		[EnumMember(Value = "REPLENISHMENT_ONLY_ORDERING")]
 		REPLENISHMENT_ONLY_ORDERING,

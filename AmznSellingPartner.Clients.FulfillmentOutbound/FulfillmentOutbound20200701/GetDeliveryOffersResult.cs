@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A list of delivery offers, including offer expiration, earliest and latest date and time range, and the delive
-	/// y offer policy.
+	/// A list of delivery offers, including offer expiration, earliest and latest date and time range, and the
+	/// delivery offer policy.
 	/// </summary>
 	public class GetDeliveryOffersResult : BaseClass
 	{

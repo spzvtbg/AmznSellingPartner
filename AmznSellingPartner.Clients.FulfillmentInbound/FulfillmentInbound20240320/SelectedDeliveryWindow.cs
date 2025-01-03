@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string AvailabilityType { get; set; }
 
 		/// <summary>
-		/// Identifier of a delivery window option. A delivery window option represent one option for when a shipment is e
-		/// pected to be delivered.
+		/// Identifier of a delivery window option. A delivery window option represent one option for when a shipment
+		/// is expected to be delivered.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]

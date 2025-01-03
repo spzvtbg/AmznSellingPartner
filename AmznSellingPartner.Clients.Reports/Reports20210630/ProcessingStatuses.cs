@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public enum ProcessingStatuses
 	{
 		/// <summary>
-		/// The report was cancelled. There are two ways a report can be cancelled: an explicit cancellation request befor
-		/// the report starts processing, or an automatic cancellation if there is no data to return.
+		/// The report was cancelled. There are two ways a report can be cancelled: an explicit cancellation request
+		/// before the report starts processing, or an automatic cancellation if there is no data to return.
 		/// </summary>
 		[EnumMember(Value = "CANCELLED")]
 		CANCELLED,

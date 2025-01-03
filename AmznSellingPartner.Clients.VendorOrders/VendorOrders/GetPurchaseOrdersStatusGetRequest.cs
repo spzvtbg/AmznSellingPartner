@@ -33,32 +33,32 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// Purchase orders that became available after this timestamp will be included in the result. Must be in ISO-8601
-		/// date/time format.
+		/// Purchase orders that became available after this timestamp will be included in the result. Must be in
+		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
-		/// Purchase orders that became available before this timestamp will be included in the result. Must be in ISO-860
-		/// date/time format.
+		/// Purchase orders that became available before this timestamp will be included in the result. Must be in
+		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdBefore")]
 		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
-		/// Purchase orders for which the last purchase order update happened after this timestamp will be included in the
-		/// result. Must be in ISO-8601 date/time format.
+		/// Purchase orders for which the last purchase order update happened after this timestamp will be included
+		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedAfter")]
 		[JsonProperty("updatedAfter")]
 		public DateTime UpdatedAfter { get; set; }
 
 		/// <summary>
-		/// Purchase orders for which the last purchase order update happened before this timestamp will be included in th
-		/// result. Must be in ISO-8601 date/time format.
+		/// Purchase orders for which the last purchase order update happened before this timestamp will be included
+		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedBefore")]
 		[JsonProperty("updatedBefore")]
@@ -72,42 +72,43 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
-		/// Filters purchase orders based on the specified purchase order status. If not included in filter, this will ret
-		/// rn purchase orders for all statuses.
+		/// Filters purchase orders based on the specified purchase order status. If not included in filter, this
+		/// will return purchase orders for all statuses.
 		/// </summary>
 		[InQuery("purchaseOrderStatus")]
 		[JsonProperty("purchaseOrderStatus")]
 		public PurchaseOrderStatus PurchaseOrderStatus { get; set; }
 
 		/// <summary>
-		/// Filters purchase orders based on their item confirmation status. If the item confirmation status is not includ
-		/// d in the filter, purchase orders for all confirmation statuses are included.
+		/// Filters purchase orders based on their item confirmation status. If the item confirmation status is not
+		/// included in the filter, purchase orders for all confirmation statuses are included.
 		/// </summary>
 		[InQuery("itemConfirmationStatus")]
 		[JsonProperty("itemConfirmationStatus")]
 		public ItemConfirmationStatus ItemConfirmationStatus { get; set; }
 
 		/// <summary>
-		/// Filters purchase orders based on the purchase order's item receive status. If the item receive status is not i
-		/// cluded in the filter, purchase orders for all receive statuses are included.
+		/// Filters purchase orders based on the purchase order's item receive status. If the item receive status
+		/// is not included in the filter, purchase orders for all receive statuses are included.
 		/// </summary>
 		[InQuery("itemReceiveStatus")]
 		[JsonProperty("itemReceiveStatus")]
 		public ItemReceiveStatus ItemReceiveStatus { get; set; }
 
 		/// <summary>
-		/// Filters purchase orders based on the specified ordering vendor code. This value should be same as 'sellingPart
-		/// .partyId' in the purchase order. If not included in filter, all purchase orders for all the vendor codes that
-		/// xist in the vendor group used to authorize API client application are returned.
+		/// Filters purchase orders based on the specified ordering vendor code. This value should be same as 'sellingParty.partyId'
+		/// in the purchase order. If not included in filter, all purchase orders for all the vendor codes that exist
+		/// in the vendor group used to authorize API client application are returned.
 		/// </summary>
 		[InQuery("orderingVendorCode")]
 		[JsonProperty("orderingVendorCode")]
 		public string OrderingVendorCode { get; set; }
 
 		/// <summary>
-		/// Filters purchase orders for a specific buyer's Fulfillment Center/warehouse by providing ship to location id h
-		/// re. This value should be same as 'shipToParty.partyId' in the purchase order. If not included in filter, this
-		/// ill return purchase orders for all the buyer's warehouses used for vendor group purchase orders.
+		/// Filters purchase orders for a specific buyer's Fulfillment Center/warehouse by providing ship to location
+		/// id here. This value should be same as 'shipToParty.partyId' in the purchase order. If not included in
+		/// filter, this will return purchase orders for all the buyer's warehouses used for vendor group purchase
+		/// orders.
 		/// </summary>
 		[InQuery("shipToPartyId")]
 		[JsonProperty("shipToPartyId")]

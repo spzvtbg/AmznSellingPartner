@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string SellerSku { get; set; }
 
 		/// <summary>
-		/// The fulfillment order item identifier that the seller created and submitted with a call to the `createFulfillm
-		/// ntOrder` operation.
+		/// The fulfillment order item identifier that the seller created and submitted with a call to the `createFulfillmentOrder`
+		/// operation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sellerFulfillmentOrderItemId")]

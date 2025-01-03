@@ -10,8 +10,9 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class ListAllFulfillmentOrdersGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A date used to select fulfillment orders that were last updated after (or at) a specified time. An update is d
-		/// fined as any change in fulfillment order status, including the creation of a new fulfillment order.
+		/// A date used to select fulfillment orders that were last updated after (or at) a specified time. An update
+		/// is defined as any change in fulfillment order status, including the creation of a new fulfillment or
+		/// der.
 		/// </summary>
 		[InQuery("queryStartDate")]
 		[JsonProperty("queryStartDate")]

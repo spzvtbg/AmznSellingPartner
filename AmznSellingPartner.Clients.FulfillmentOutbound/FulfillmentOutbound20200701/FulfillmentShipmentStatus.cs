@@ -21,9 +21,9 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		SHIPPED,
 
 		/// <summary>
-		/// The Amazon fulfillment center could not fulfill the shipment as planned. This might be because the inventory w
-		/// s not at the expected location in the fulfillment center. After cancelling the fulfillment order, Amazon immed
-		/// ately creates a new fulfillment shipment and again attempts to fulfill the order.
+		/// The Amazon fulfillment center could not fulfill the shipment as planned. This might be because the inventory
+		/// was not at the expected location in the fulfillment center. After cancelling the fulfillment order, Amazon
+		/// immediately creates a new fulfillment shipment and again attempts to fulfill the order.
 		/// </summary>
 		[EnumMember(Value = "CANCELLED_BY_FULFILLER")]
 		CANCELLED_BY_FULFILLER,

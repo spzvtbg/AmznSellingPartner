@@ -50,10 +50,10 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public Weight Weight { get; set; }
 
 		/// <summary>
-		/// If you specify `DeclaredValue` in a previous call to the `createShipment` operation, then `Insurance` indicate
-		/// the shipment insurance amount that the carrier uses. If `DeclaredValue` isn't with a previous call to the `cr
-		/// ateShipment` operation, then the shipment is insured for the carrier's minimum insurance amount, or the combin
-		/// d sale prices that the items are listed for in the shipment.
+		/// If you specify `DeclaredValue` in a previous call to the `createShipment` operation, then `Insurance`
+		/// indicates the shipment insurance amount that the carrier uses. If `DeclaredValue` isn't with a previous
+		/// call to the `createShipment` operation, then the shipment is insured for the carrier's minimum insurance
+		/// amount, or the combined sale prices that the items are listed for in the shipment.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Insurance")]
@@ -64,8 +64,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public ShippingService ShippingService { get; set; }
 
 		/// <summary>
-		/// Data for creating a shipping label and dimensions for printing the label. If the shipment is canceled, an empt
-		/// label is returned.
+		/// Data for creating a shipping label and dimensions for printing the label. If the shipment is canceled,
+		/// an empty label is returned.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Label")]

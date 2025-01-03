@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		MwSt_,
 
 		/// <summary>
-		/// A provincial sales tax (PST) is imposed on consumers of goods and particular services in many Canadian provinc
-		/// s.
+		/// A provincial sales tax (PST) is imposed on consumers of goods and particular services in many Canadian
+		/// provinces.
 		/// </summary>
 		[EnumMember(Value = "PST")]
 		PST,

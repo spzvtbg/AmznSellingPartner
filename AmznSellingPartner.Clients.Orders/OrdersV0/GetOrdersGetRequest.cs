@@ -10,65 +10,68 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	{
 		/// <summary>
 		/// Use this date to select orders created after (or at) a specified time. Only orders placed after the specified
-		/// ime are returned. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) forma
-		/// .  **Note**: Either the `CreatedAfter` parameter or the `LastUpdatedAfter` parameter is required. Both cannot
-		/// e empty. `LastUpdatedAfter` and `LastUpdatedBefore` cannot be set when `CreatedAfter` is set.
+		/// time are returned. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// format.  **Note**: Either the `CreatedAfter` parameter or the `LastUpdatedAfter` parameter is required.
+		/// Both cannot be empty. `LastUpdatedAfter` and `LastUpdatedBefore` cannot be set when `CreatedAfter` is
+		/// set.
 		/// </summary>
 		[InQuery("CreatedAfter")]
 		[JsonProperty("CreatedAfter")]
 		public string CreatedAfter { get; set; }
 
 		/// <summary>
-		/// Use this date to select orders created before (or at) a specified time. Only orders placed before the specifie
-		/// time are returned. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) for
-		/// at.  **Note**: `CreatedBefore` is optional when `CreatedAfter` is set. If specified, `CreatedBefore` must be e
-		/// ual to or after the `CreatedAfter` date and at least two minutes before current time.
+		/// Use this date to select orders created before (or at) a specified time. Only orders placed before the
+		/// specified time are returned. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// format.  **Note**: `CreatedBefore` is optional when `CreatedAfter` is set. If specified, `CreatedBefore`
+		/// must be equal to or after the `CreatedAfter` date and at least two minutes before current time.
 		/// </summary>
 		[InQuery("CreatedBefore")]
 		[JsonProperty("CreatedBefore")]
 		public string CreatedBefore { get; set; }
 
 		/// <summary>
-		/// Use this date to select orders that were last updated after (or at) a specified time. An update is defined as
-		/// ny change in order status, including the creation of a new order. Includes updates made by Amazon and by the s
-		/// ller. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.  **Note**
-		/// Either the `CreatedAfter` parameter or the `LastUpdatedAfter` parameter is required. Both cannot be empty. `C
-		/// eatedAfter` or `CreatedBefore` cannot be set when `LastUpdatedAfter` is set.
+		/// Use this date to select orders that were last updated after (or at) a specified time. An update is defined
+		/// as any change in order status, including the creation of a new order. Includes updates made by Amazon
+		/// and by the seller. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// format.  **Note**: Either the `CreatedAfter` parameter or the `LastUpdatedAfter` parameter is required.
+		/// Both cannot be empty. `CreatedAfter` or `CreatedBefore` cannot be set when `LastUpdatedAfter` is set
+		/// .
 		/// </summary>
 		[InQuery("LastUpdatedAfter")]
 		[JsonProperty("LastUpdatedAfter")]
 		public string LastUpdatedAfter { get; set; }
 
 		/// <summary>
-		/// Use this date to select orders that were last updated before (or at) a specified time. An update is defined as
-		/// any change in order status, including the creation of a new order. Includes updates made by Amazon and by the
-		/// eller. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.  **Note*
-		/// : `LastUpdatedBefore` is optional when `LastUpdatedAfter` is set. But if specified, `LastUpdatedBefore` must b
-		/// equal to or after the `LastUpdatedAfter` date and at least two minutes before current time.
+		/// Use this date to select orders that were last updated before (or at) a specified time. An update is defined
+		/// as any change in order status, including the creation of a new order. Includes updates made by Amazon
+		/// and by the seller. The date must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// format.  **Note**: `LastUpdatedBefore` is optional when `LastUpdatedAfter` is set. But if specified,
+		/// `LastUpdatedBefore` must be equal to or after the `LastUpdatedAfter` date and at least two minutes before
+		/// current time.
 		/// </summary>
 		[InQuery("LastUpdatedBefore")]
 		[JsonProperty("LastUpdatedBefore")]
 		public string LastUpdatedBefore { get; set; }
 
 		/// <summary>
-		/// A list of `OrderStatus` values used to filter the results.  **Possible values:** - `PendingAvailability` (This
-		/// status is available for pre-orders only. The order has been placed, payment has not been authorized, and the r
-		/// lease date of the item is in the future.) - `Pending` (The order has been placed but payment has not been auth
-		/// rized.) - `Unshipped` (Payment has been authorized and the order is ready for shipment, but no items in the or
-		/// er have been shipped.) - `PartiallyShipped` (One or more, but not all, items in the order have been shipped.)
-		/// `Shipped` (All items in the order have been shipped.) - `InvoiceUnconfirmed` (All items in the order have bee
-		/// shipped. The seller has not yet given confirmation to Amazon that the invoice has been shipped to the buyer.)
-		/// - `Canceled` (The order has been canceled.) - `Unfulfillable` (The order cannot be fulfilled. This state appli
-		/// s only to Multi-Channel Fulfillment orders.)
+		/// A list of `OrderStatus` values used to filter the results.  **Possible values:** - `PendingAvailability`
+		/// (This status is available for pre-orders only. The order has been placed, payment has not been authorized,
+		/// and the release date of the item is in the future.) - `Pending` (The order has been placed but payment
+		/// has not been authorized.) - `Unshipped` (Payment has been authorized and the order is ready for shipment,
+		/// but no items in the order have been shipped.) - `PartiallyShipped` (One or more, but not all, items in
+		/// the order have been shipped.) - `Shipped` (All items in the order have been shipped.) - `InvoiceUnconfirmed`
+		/// (All items in the order have been shipped. The seller has not yet given confirmation to Amazon that the
+		/// invoice has been shipped to the buyer.) - `Canceled` (The order has been canceled.) - `Unfulfillable`
+		/// (The order cannot be fulfilled. This state applies only to Multi-Channel Fulfillment orders.)
 		/// </summary>
 		[InQuery("OrderStatuses")]
 		[JsonProperty("OrderStatuses")]
 		public CsvValue<string> OrderStatuses { get; set; }
 
 		/// <summary>
-		/// A list of `MarketplaceId` values. Used to select orders that were placed in the specified marketplaces.  Refer
-		/// to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) for a complete list of `ma
-		/// ketplaceId` values.
+		/// A list of `MarketplaceId` values. Used to select orders that were placed in the specified marketplaces.
+		/// Refer to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) for a complete
+		/// list of `marketplaceId` values.
 		/// </summary>
 		[InQuery("MarketplaceIds")]
 		[IsRequired]
@@ -77,17 +80,17 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// A list that indicates how an order was fulfilled. Filters the results by fulfillment channel.   **Possible val
-		/// es**: `AFN` (fulfilled by Amazon), `MFN` (fulfilled by seller).
+		/// A list that indicates how an order was fulfilled. Filters the results by fulfillment channel.   **Possible
+		/// values**: `AFN` (fulfilled by Amazon), `MFN` (fulfilled by seller).
 		/// </summary>
 		[InQuery("FulfillmentChannels")]
 		[JsonProperty("FulfillmentChannels")]
 		public CsvValue<string> FulfillmentChannels { get; set; }
 
 		/// <summary>
-		/// A list of payment method values. Use this field to select orders that were paid with the specified payment met
-		/// ods.  **Possible values**: `COD` (cash on delivery), `CVS` (convenience store), `Other` (Any payment method ot
-		/// er than COD or CVS).
+		/// A list of payment method values. Use this field to select orders that were paid with the specified payment
+		/// methods.  **Possible values**: `COD` (cash on delivery), `CVS` (convenience store), `Other` (Any payment
+		/// method other than COD or CVS).
 		/// </summary>
 		[InQuery("PaymentMethods")]
 		[JsonProperty("PaymentMethods")]
@@ -101,46 +104,48 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string BuyerEmail { get; set; }
 
 		/// <summary>
-		/// An order identifier that is specified by the seller. Used to select only the orders that match the order ident
-		/// fier. If `SellerOrderId` is specified, then `FulfillmentChannels`, `OrderStatuses`, `PaymentMethod`, `LastUpda
-		/// edAfter`, LastUpdatedBefore, and `BuyerEmail` cannot be specified.
+		/// An order identifier that is specified by the seller. Used to select only the orders that match the order
+		/// identifier. If `SellerOrderId` is specified, then `FulfillmentChannels`, `OrderStatuses`, `PaymentMethod`,
+		/// `LastUpdatedAfter`, LastUpdatedBefore, and `BuyerEmail` cannot be specified.
 		/// </summary>
 		[InQuery("SellerOrderId")]
 		[JsonProperty("SellerOrderId")]
 		public string SellerOrderId { get; set; }
 
 		/// <summary>
-		/// A number that indicates the maximum number of orders that can be returned per page. Value must be 1 - 100. Def
-		/// ult 100.
+		/// A number that indicates the maximum number of orders that can be returned per page. Value must be 1 -
+		/// 100. Default 100.
 		/// </summary>
 		[InQuery("MaxResultsPerPage")]
 		[JsonProperty("MaxResultsPerPage")]
 		public int MaxResultsPerPage { get; set; }
 
 		/// <summary>
-		/// A list of `EasyShipShipmentStatus` values. Used to select Easy Ship orders with statuses that match the specif
-		/// ed values. If `EasyShipShipmentStatus` is specified, only Amazon Easy Ship orders are returned.  **Possible va
-		/// ues:** - `PendingSchedule` (The package is awaiting the schedule for pick-up.) - `PendingPickUp` (Amazon has n
-		/// t yet picked up the package from the seller.) - `PendingDropOff` (The seller will deliver the package to the c
-		/// rrier.) - `LabelCanceled` (The seller canceled the pickup.) - `PickedUp` (Amazon has picked up the package fro
-		/// the seller.) - `DroppedOff` (The package is delivered to the carrier by the seller.) - `AtOriginFC` (The pack
-		/// ged is at the origin fulfillment center.) - `AtDestinationFC` (The package is at the destination fulfillment c
-		/// nter.) - `Delivered` (The package has been delivered.) - `RejectedByBuyer` (The package has been rejected by t
-		/// e buyer.) - `Undeliverable` (The package cannot be delivered.) - `ReturningToSeller` (The package was not deli
-		/// ered and is being returned to the seller.) - `ReturnedToSeller` (The package was not delivered and was returne
-		/// to the seller.) - `Lost` (The package is lost.) - `OutForDelivery` (The package is out for delivery.) - `Dama
-		/// ed` (The package was damaged by the carrier.)
+		/// A list of `EasyShipShipmentStatus` values. Used to select Easy Ship orders with statuses that match the
+		/// specified values. If `EasyShipShipmentStatus` is specified, only Amazon Easy Ship orders are returned.
+		/// **Possible values:** - `PendingSchedule` (The package is awaiting the schedule for pick-up.) - `PendingPickUp`
+		/// (Amazon has not yet picked up the package from the seller.) - `PendingDropOff` (The seller will deliver
+		/// the package to the carrier.) - `LabelCanceled` (The seller canceled the pickup.) - `PickedUp` (Amazon
+		/// has picked up the package from the seller.) - `DroppedOff` (The package is delivered to the carrier by
+		/// the seller.) - `AtOriginFC` (The packaged is at the origin fulfillment center.) - `AtDestinationFC` (The
+		/// package is at the destination fulfillment center.) - `Delivered` (The package has been delivered.) -
+		/// `RejectedByBuyer` (The package has been rejected by the buyer.) - `Undeliverable` (The package cannot
+		/// be delivered.) - `ReturningToSeller` (The package was not delivered and is being returned to the seller.)
+		/// - `ReturnedToSeller` (The package was not delivered and was returned to the seller.) - `Lost` (The package
+		/// is lost.) - `OutForDelivery` (The package is out for delivery.) - `Damaged` (The package was damaged
+		/// by the carrier.)
 		/// </summary>
 		[InQuery("EasyShipShipmentStatuses")]
 		[JsonProperty("EasyShipShipmentStatuses")]
 		public CsvValue<string> EasyShipShipmentStatuses { get; set; }
 
 		/// <summary>
-		/// A list of `ElectronicInvoiceStatus` values. Used to select orders with electronic invoice statuses that match
-		/// he specified values.  **Possible values:** - `NotRequired` (Electronic invoice submission is not required for
-		/// his order.) - `NotFound` (The electronic invoice was not submitted for this order.) - `Processing` (The electr
-		/// nic invoice is being processed for this order.) - `Errored` (The last submitted electronic invoice was rejecte
-		/// for this order.) - `Accepted` (The last submitted electronic invoice was submitted and accepted.)
+		/// A list of `ElectronicInvoiceStatus` values. Used to select orders with electronic invoice statuses that
+		/// match the specified values.  **Possible values:** - `NotRequired` (Electronic invoice submission is not
+		/// required for this order.) - `NotFound` (The electronic invoice was not submitted for this order.) - `Processing`
+		/// (The electronic invoice is being processed for this order.) - `Errored` (The last submitted electronic
+		/// invoice was rejected for this order.) - `Accepted` (The last submitted electronic invoice was submitted
+		/// and accepted.)
 		/// </summary>
 		[InQuery("ElectronicInvoiceStatuses")]
 		[JsonProperty("ElectronicInvoiceStatuses")]
@@ -154,7 +159,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// A list of `AmazonOrderId` values. An `AmazonOrderId` is an Amazon-defined order identifier, in 3-7-7 format.
+		/// A list of `AmazonOrderId` values. An `AmazonOrderId` is an Amazon-defined order identifier, in 3-7-7
+		/// format.
 		/// </summary>
 		[InQuery("AmazonOrderIds")]
 		[MaxItems(50)]
@@ -183,32 +189,32 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string StoreChainStoreId { get; set; }
 
 		/// <summary>
-		/// Use this date to select orders with a earliest delivery date before (or at) a specified time. The date must be
-		/// in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
+		/// Use this date to select orders with a earliest delivery date before (or at) a specified time. The date
+		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("EarliestDeliveryDateBefore")]
 		[JsonProperty("EarliestDeliveryDateBefore")]
 		public string EarliestDeliveryDateBefore { get; set; }
 
 		/// <summary>
-		/// Use this date to select orders with a earliest delivery date after (or at) a specified time. The date must be
-		/// n [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
+		/// Use this date to select orders with a earliest delivery date after (or at) a specified time. The date
+		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("EarliestDeliveryDateAfter")]
 		[JsonProperty("EarliestDeliveryDateAfter")]
 		public string EarliestDeliveryDateAfter { get; set; }
 
 		/// <summary>
-		/// Use this date to select orders with a latest delivery date before (or at) a specified time. The date must be i
-		/// [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
+		/// Use this date to select orders with a latest delivery date before (or at) a specified time. The date
+		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("LatestDeliveryDateBefore")]
 		[JsonProperty("LatestDeliveryDateBefore")]
 		public string LatestDeliveryDateBefore { get; set; }
 
 		/// <summary>
-		/// Use this date to select orders with a latest delivery date after (or at) a specified time. The date must be in
-		/// [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
+		/// Use this date to select orders with a latest delivery date after (or at) a specified time. The date must
+		/// be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("LatestDeliveryDateAfter")]
 		[JsonProperty("LatestDeliveryDateAfter")]

@@ -9,9 +9,9 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	public enum IncludedData
 	{
 		/// <summary>
-		/// A JSON object containing structured item attribute data keyed by attribute name. Catalog item attributes confo
-		/// m to the related Amazon product type definitions available in the Selling Partner API for Product Type Definit
-		/// ons.
+		/// A JSON object containing structured item attribute data keyed by attribute name. Catalog item attributes
+		/// conform to the related Amazon product type definitions available in the Selling Partner API for Product
+		/// Type Definitions.
 		/// </summary>
 		[EnumMember(Value = "attributes")]
 		attributes,
@@ -59,8 +59,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		salesRanks,
 
 		/// <summary>
-		/// Summary details of an Amazon catalog item. Refer to the "attributes" of an Amazon catalog item for more detail
-		/// .
+		/// Summary details of an Amazon catalog item. Refer to the "attributes" of an Amazon catalog item for more
+		/// details.
 		/// </summary>
 		[EnumMember(Value = "summaries")]
 		summaries,

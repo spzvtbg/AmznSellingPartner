@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class PartyIdentification : BaseClass
 	{
 		/// <summary>
-		/// Assigned identification for the party. For example, warehouse code or vendor code. Please refer to specific pa
-		/// ty for more details.
+		/// Assigned identification for the party. For example, warehouse code or vendor code. Please refer to specific
+		/// party for more details.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("partyId")]

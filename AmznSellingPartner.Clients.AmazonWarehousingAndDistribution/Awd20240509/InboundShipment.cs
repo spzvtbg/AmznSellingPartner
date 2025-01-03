@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public CarrierCode CarrierCode { get; set; }
 
 		/// <summary>
-		/// Timestamp when the shipment was created. The date is returned in <a href='https://developer-docs.amazon.com/sp
-		/// api/docs/iso-8601'>ISO 8601</a> format.
+		/// Timestamp when the shipment was created. The date is returned in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> format.
 		/// </summary>
 		[JsonProperty("createdAt")]
 		public DateTime CreatedAt { get; set; }
@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public Address DestinationAddress { get; set; }
 
 		/// <summary>
-		/// Client-provided reference ID that can correlate this shipment to client resources. For example, to map this sh
-		/// pment to an internal bookkeeping order record.
+		/// Client-provided reference ID that can correlate this shipment to client resources. For example, to map
+		/// this shipment to an internal bookkeeping order record.
 		/// </summary>
 		[JsonProperty("externalReferenceId")]
 		public string ExternalReferenceId { get; set; }
@@ -82,15 +82,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public string ShipmentId { get; set; }
 
 		/// <summary>
-		/// Quantity details at SKU level for the shipment. This attribute will only appear if the skuQuantities parameter
-		/// in the request is set to SHOW.
+		/// Quantity details at SKU level for the shipment. This attribute will only appear if the skuQuantities
+		/// parameter in the request is set to SHOW.
 		/// </summary>
 		[JsonProperty("shipmentSkuQuantities")]
 		public List<SkuQuantity> ShipmentSkuQuantities { get; set; }
 
 		/// <summary>
-		/// Assigned region where the order will be shipped. This can differ from what was passed as preference. AWD curre
-		/// tly supports following region IDs: [us-west, us-east]
+		/// Assigned region where the order will be shipped. This can differ from what was passed as preference.
+		/// AWD currently supports following region IDs: [us-west, us-east]
 		/// </summary>
 		[JsonProperty("destinationRegion")]
 		public string DestinationRegion { get; set; }
@@ -110,15 +110,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public string TrackingId { get; set; }
 
 		/// <summary>
-		/// Timestamp when the shipment was updated. The date is returned in <a href='https://developer-docs.amazon.com/sp
-		/// api/docs/iso-8601'>ISO 8601</a> format.
+		/// Timestamp when the shipment was updated. The date is returned in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> format.
 		/// </summary>
 		[JsonProperty("updatedAt")]
 		public DateTime UpdatedAt { get; set; }
 
 		/// <summary>
-		/// An AWD-provided reference ID that you can use to interact with the warehouse. For example, a carrier appointme
-		/// t booking.
+		/// An AWD-provided reference ID that you can use to interact with the warehouse. For example, a carrier
+		/// appointment booking.
 		/// </summary>
 		[JsonProperty("warehouseReferenceId")]
 		public string WarehouseReferenceId { get; set; }

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class CreateInboundPlanRequest : BaseClass
 	{
 		/// <summary>
-		/// Marketplaces where the items need to be shipped to. Currently only one marketplace can be selected in this req
-		/// est.
+		/// Marketplaces where the items need to be shipped to. Currently only one marketplace can be selected in
+		/// this request.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

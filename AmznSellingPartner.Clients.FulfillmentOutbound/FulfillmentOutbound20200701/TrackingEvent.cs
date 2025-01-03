@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class TrackingEvent : BaseClass
 	{
 		/// <summary>
-		/// The date and time that the delivery event took place. Must be in <a href='https://developer-docs.amazon.com/sp
-		/// api/docs/iso-8601'>ISO 8601</a> format.
+		/// The date and time that the delivery event took place. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> format.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("eventDate")]

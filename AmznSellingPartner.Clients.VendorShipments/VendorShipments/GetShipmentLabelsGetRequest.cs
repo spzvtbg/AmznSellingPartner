@@ -26,26 +26,27 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the number o
-		/// results exceeds the specified `pageSize` value. To get the next page of results, call the operation with this
-		/// token and include the same arguments as the call that produced the token. To get a complete list, call this op
-		/// ration until `nextToken` is null. Note that this operation can return empty pages.
+		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the
+		/// number of results exceeds the specified `pageSize` value. To get the next page of results, call the operation
+		/// with this token and include the same arguments as the call that produced the token. To get a complete
+		/// list, call this operation until `nextToken` is null. Note that this operation can return empty pages
+		/// .
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// Shipment labels created after this time will be included in the result. This field must be in [ISO 8601](https
-		/// //developer-docs.amazon.com/sp-api/docs/iso-8601) datetime format.
+		/// Shipment labels created after this time will be included in the result. This field must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedAfter")]
 		[JsonProperty("labelCreatedAfter")]
 		public DateTime LabelCreatedAfter { get; set; }
 
 		/// <summary>
-		/// Shipment labels created before this time will be included in the result. This field must be in [ISO 8601](http
-		/// ://developer-docs.amazon.com/sp-api/docs/iso-8601) datetime format.
+		/// Shipment labels created before this time will be included in the result. This field must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedBefore")]
 		[JsonProperty("labelCreatedBefore")]
@@ -66,8 +67,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public string VendorShipmentIdentifier { get; set; }
 
 		/// <summary>
-		/// Get Shipping labels based on vendor warehouse code. This value must be same as the `sellingParty.partyId` in t
-		/// e shipment.
+		/// Get Shipping labels based on vendor warehouse code. This value must be same as the `sellingParty.partyId`
+		/// in the shipment.
 		/// </summary>
 		[InQuery("sellerWarehouseCode")]
 		[JsonProperty("sellerWarehouseCode")]

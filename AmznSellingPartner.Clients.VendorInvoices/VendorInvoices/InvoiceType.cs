@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	public enum InvoiceType
 	{
 		/// <summary>
-		/// A commercial document issued by a seller to a buyer, relating to a sale transaction and indicating the product
-		/// , quantities, and agreed prices for products or services the seller had provided the buyer.
+		/// A commercial document issued by a seller to a buyer, relating to a sale transaction and indicating the
+		/// products, quantities, and agreed prices for products or services the seller had provided the buyer.
 		/// </summary>
 		[EnumMember(Value = "Invoice")]
 		Invoice,

@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string AddressLine3 { get; set; }
 
 		/// <summary>
-		/// The city where the person, business, or institution is located. This property is required in all countries exc
-		/// pt Japan. It should not be used in Japan.
+		/// The city where the person, business, or institution is located. This property is required in all countries
+		/// except Japan. It should not be used in Japan.
 		/// </summary>
 		[JsonProperty("city")]
 		public string City { get; set; }

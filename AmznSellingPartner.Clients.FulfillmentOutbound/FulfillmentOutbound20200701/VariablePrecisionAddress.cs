@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A physical address with varying degrees of precision. A more precise address can provide more accurate results
-	/// than country code and postal code alone.
+	/// A physical address with varying degrees of precision. A more precise address can provide more accurate
+	/// results than country code and postal code alone.
 	/// </summary>
 	public class VariablePrecisionAddress : BaseClass
 	{
@@ -29,7 +29,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string AddressLine3 { get; set; }
 
 		/// <summary>
-		/// The city where the person, business, or institution is located. This property should not be used in Japan.
+		/// The city where the person, business, or institution is located. This property should not be used in
+		/// Japan.
 		/// </summary>
 		[JsonProperty("city")]
 		public string City { get; set; }

@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string AvailabilityType { get; set; }
 
 		/// <summary>
-		/// Identifier of a delivery window option. A delivery window option represent one option for when a shipment is e
-		/// pected to be delivered.
+		/// Identifier of a delivery window option. A delivery window option represent one option for when a shipment
+		/// is expected to be delivered.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -30,24 +30,24 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string DeliveryWindowOptionId { get; set; }
 
 		/// <summary>
-		/// The time at which this delivery window option ends. In [ISO 8601](https://developer-docs.amazon.com/sp-api/doc
-		/// /iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mmZ`.
+		/// The time at which this delivery window option ends. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern `yyyy-MM-ddTHH:mmZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("endDate")]
 		public DateTime EndDate { get; set; }
 
 		/// <summary>
-		/// The time at which this delivery window option starts. In [ISO 8601](https://developer-docs.amazon.com/sp-api/d
-		/// cs/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mmZ`.
+		/// The time at which this delivery window option starts. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern `yyyy-MM-ddTHH:mmZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("startDate")]
 		public DateTime StartDate { get; set; }
 
 		/// <summary>
-		/// The time at which this window delivery option is no longer valid. In [ISO 8601](https://developer-docs.amazon.
-		/// om/sp-api/docs/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mmZ`.
+		/// The time at which this window delivery option is no longer valid. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
+		/// datetime format with pattern `yyyy-MM-ddTHH:mmZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("validUntil")]

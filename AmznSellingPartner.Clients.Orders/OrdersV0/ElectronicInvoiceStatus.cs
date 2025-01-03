@@ -6,7 +6,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The status of the electronic invoice. Only available for Easy Ship orders and orders in the BR marketplace.
+	/// The status of the electronic invoice. Only available for Easy Ship orders and orders in the BR marke
+	/// tplace.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ElectronicInvoiceStatus

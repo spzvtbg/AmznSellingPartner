@@ -16,7 +16,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string RequestToken { get; set; }
 
 		/// <summary>
-		/// The rate identifier for the shipping offering (rate) returned in the response to the getRates operation.
+		/// The rate identifier for the shipping offering (rate) returned in the response to the getRates operat
+		/// ion.
 		/// </summary>
 		[InQuery("rateId")]
 		[IsRequired]

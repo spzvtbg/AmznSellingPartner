@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public class Audience : BaseClass
 	{
 		/// <summary>
-		/// Name of the audience an offer is applicable to.   Common values:   * 'ALL' - Standard offer audience for buyer
-		/// on Amazon retail websites.   * 'B2B' - Offer audience for Amazon Business website buyers.
+		/// Name of the audience an offer is applicable to.   Common values:   * 'ALL' - Standard offer audience
+		/// for buyers on Amazon retail websites.   * 'B2B' - Offer audience for Amazon Business website buyers.
 		/// </summary>
 		[JsonProperty("value")]
 		public string Value { get; set; }

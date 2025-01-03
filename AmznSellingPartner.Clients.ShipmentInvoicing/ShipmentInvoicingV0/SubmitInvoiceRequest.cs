@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// MD5 sum for validating the invoice data. For more information about calculating this value, see [Working with
-		/// ontent-MD5 Checksums](https://docs.developer.amazonservices.com/en_US/dev_guide/DG_MD5.html).
+		/// MD5 sum for validating the invoice data. For more information about calculating this value, see [Working
+		/// with Content-MD5 Checksums](https://docs.developer.amazonservices.com/en_US/dev_guide/DG_MD5.html).
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("ContentMD5Value")]

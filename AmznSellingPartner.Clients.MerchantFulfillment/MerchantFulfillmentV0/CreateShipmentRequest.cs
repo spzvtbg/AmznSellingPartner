@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public string ShippingServiceOfferId { get; set; }
 
 		/// <summary>
-		/// Hazardous materials options for a package. Consult the terms and conditions for each carrier for more informat
-		/// on about hazardous materials.
+		/// Hazardous materials options for a package. Consult the terms and conditions for each carrier for more
+		/// information about hazardous materials.
 		/// </summary>
 		[JsonProperty("HazmatType")]
 		public HazmatType HazmatType { get; set; }

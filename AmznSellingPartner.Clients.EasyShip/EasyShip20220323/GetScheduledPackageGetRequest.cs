@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class GetScheduledPackageGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon-defined order identifier. Identifies the order that the seller wants to deliver using Amazon Easy Sh
-		/// p.
+		/// An Amazon-defined order identifier. Identifies the order that the seller wants to deliver using Amazon
+		/// Easy Ship.
 		/// </summary>
 		[InQuery("amazonOrderId")]
 		[IsRequired]

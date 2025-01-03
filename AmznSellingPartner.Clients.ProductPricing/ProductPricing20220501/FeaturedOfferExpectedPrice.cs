@@ -5,13 +5,13 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The item price at or below which the target offer may be featured
+	/// The item price at or below which the target offer may be featured.
 	/// </summary>
 	public class FeaturedOfferExpectedPrice : BaseClass
 	{
 		/// <summary>
 		/// A computed listing price at or below which a seller can expect to become the featured offer (before applicable
-		/// promotions)
+		/// promotions).
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("listingPrice")]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 
 		/// <summary>
 		/// The number of Amazon Points that are offered with the purchase of an item and the monetary value of these poin
-		/// s
+		/// s.
 		/// </summary>
 		[JsonProperty("points")]
 		public Points Points { get; set; }

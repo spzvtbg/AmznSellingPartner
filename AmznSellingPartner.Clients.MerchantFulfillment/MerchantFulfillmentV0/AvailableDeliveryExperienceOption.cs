@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The available delivery confirmation options, and the fee charged, if any
+	/// The available delivery confirmation options, and the fee charged, if any.
 	/// </summary>
 	public class AvailableDeliveryExperienceOption : BaseClass
 	{

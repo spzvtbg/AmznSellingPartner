@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public enum Standard
 	{
 		/// <summary>
-		/// The Advanced Encryption Standard (AES)
+		/// The Advanced Encryption Standard (AES).
 		/// </summary>
 		[EnumMember(Value = "AES")]
 		AES,

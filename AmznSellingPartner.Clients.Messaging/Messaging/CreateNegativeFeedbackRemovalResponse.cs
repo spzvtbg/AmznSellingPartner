@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the createNegativeFeedbackRemoval operation
+	/// The response schema for the createNegativeFeedbackRemoval operation.
 	/// </summary>
 	public class CreateNegativeFeedbackRemovalResponse : BaseClass
 	{

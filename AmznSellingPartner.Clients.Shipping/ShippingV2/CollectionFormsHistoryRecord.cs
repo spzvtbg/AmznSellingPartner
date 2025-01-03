@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public CarrierName CarrierName { get; set; }
 
 		/// <summary>
-		/// Creation Time for this account
+		/// Creation Time for this account.
 		/// </summary>
 		[JsonProperty("creationDate")]
 		public DateTime CreationDate { get; set; }

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class GeneratePackingOptionsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]

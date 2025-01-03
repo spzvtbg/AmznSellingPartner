@@ -24,8 +24,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public CsvValue<string> PostalCode { get; set; }
 
 		/// <summary>
-		/// Amazon shipping business to assume for this request
-		/// The default is AmazonShipping_UK
+		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
 		[JsonProperty("x-amzn-shipping-business-id")]

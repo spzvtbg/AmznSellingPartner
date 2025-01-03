@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class SubmitAcknowledgementPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Submits acknowledgements for one or more purchase orders from a vendor
+		/// Submits acknowledgements for one or more purchase orders from a vendor.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

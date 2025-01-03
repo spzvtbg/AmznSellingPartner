@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	public class GenerateOrderScenariosPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request payload containing parameters for generating test order data scenarios
+		/// The request payload containing parameters for generating test order data scenarios.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

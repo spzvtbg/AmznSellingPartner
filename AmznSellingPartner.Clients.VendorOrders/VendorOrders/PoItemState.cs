@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum PoItemState
 	{
 		/// <summary>
-		/// Status for order items cancelled by vendors
+		/// Status for order items cancelled by vendors.
 		/// </summary>
 		[EnumMember(Value = "Cancelled")]
 		Cancelled,

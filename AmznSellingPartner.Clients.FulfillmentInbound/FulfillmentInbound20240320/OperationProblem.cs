@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A problem with additional properties persisted to an operation
+	/// A problem with additional properties persisted to an operation.
 	/// </summary>
 	public class OperationProblem : BaseClass
 	{
 		/// <summary>
-		/// An error code that identifies the type of error that occurred
+		/// An error code that identifies the type of error that occurred.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Code { get; set; }
 
 		/// <summary>
-		/// Additional details that can help the caller understand or fix the issue
+		/// Additional details that can help the caller understand or fix the issue.
 		/// </summary>
 		[MinLength(0)]
 		[MaxLength(8192)]
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Details { get; set; }
 
 		/// <summary>
-		/// A message that describes the error condition
+		/// A message that describes the error condition.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -36,8 +36,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Message { get; set; }
 
 		/// <summary>
-		/// The severity of the problem
-		/// Possible values: `WARNING`, `ERROR`
+		/// The severity of the problem. Possible values: `WARNING`, `ERROR`.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

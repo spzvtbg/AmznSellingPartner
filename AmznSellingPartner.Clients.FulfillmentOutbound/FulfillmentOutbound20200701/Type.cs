@@ -9,50 +9,50 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public enum Type
 	{
 		/// <summary>
-		/// Indicates delivery preferred to front door
+		/// Indicates delivery preferred to front door.
 		/// </summary>
 		[EnumMember(Value = "FRONT_DOOR")]
 		FRONT_DOOR,
 
 		/// <summary>
-		/// Indicates delivery preferred to a delivery box
+		/// Indicates delivery preferred to a delivery box.
 		/// </summary>
 		[EnumMember(Value = "DELIVERY_BOX")]
 		DELIVERY_BOX,
 
 		/// <summary>
-		/// Indicates delivery preferred to a gas meter box
+		/// Indicates delivery preferred to a gas meter box.
 		/// </summary>
 		[EnumMember(Value = "GAS_METER_BOX")]
 		GAS_METER_BOX,
 
 		/// <summary>
-		/// Indicates delivery preferred to a bicycle basket
+		/// Indicates delivery preferred to a bicycle basket.
 		/// </summary>
 		[EnumMember(Value = "BICYCLE_BASKET")]
 		BICYCLE_BASKET,
 
 		/// <summary>
-		/// Indicates delivery preferred to a garage
+		/// Indicates delivery preferred to a garage.
 		/// </summary>
 		[EnumMember(Value = "GARAGE")]
 		GARAGE,
 
 		/// <summary>
-		/// Indicates delivery preferred with a receptionist
+		/// Indicates delivery preferred with a receptionist.
 		/// </summary>
 		[EnumMember(Value = "RECEPTIONIST")]
 		RECEPTIONIST,
 
 		/// <summary>
 		/// Indicates delivery preferred with a designated neighbor if the recipient is not available at the destination a
-		/// dress
+		/// dress.
 		/// </summary>
 		[EnumMember(Value = "FALLBACK_NEIGHBOR_DELIVERY")]
 		FALLBACK_NEIGHBOR_DELIVERY,
 
 		/// <summary>
-		/// Indicates delivery preferred as attended
+		/// Indicates delivery preferred as attended.
 		/// </summary>
 		[EnumMember(Value = "DO_NOT_LEAVE_UNATTENDED")]
 		DO_NOT_LEAVE_UNATTENDED,

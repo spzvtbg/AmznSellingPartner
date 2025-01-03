@@ -5,27 +5,26 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Name, address and tax details of a party
+	/// Name, address and tax details of a party.
 	/// </summary>
 	public class PartyIdentification : BaseClass
 	{
 		/// <summary>
-		/// Assigned identification for the party
-		/// For example, warehouse code or vendor code
-		/// Please refer to specific party for more details
+		/// Assigned identification for the party. For example, warehouse code or vendor code. Please refer to specific pa
+		/// ty for more details.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("partyId")]
 		public string PartyId { get; set; }
 
 		/// <summary>
-		/// Address details of the party
+		/// Address details of the party.
 		/// </summary>
 		[JsonProperty("address")]
 		public Address Address { get; set; }
 
 		/// <summary>
-		/// Tax registration details of the entity
+		/// Tax registration details of the entity.
 		/// </summary>
 		[JsonProperty("taxInfo")]
 		public TaxRegistrationDetails TaxInfo { get; set; }

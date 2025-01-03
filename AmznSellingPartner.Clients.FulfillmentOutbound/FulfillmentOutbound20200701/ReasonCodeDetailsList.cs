@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of return reason code details
+	/// An array of return reason code details.
 	/// </summary>
 	public class ReasonCodeDetailsList : List<ReasonCodeDetails>
 	{

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class ActiveAccount : BaseClass
 	{
 		/// <summary>
-		/// Account Id associated with this account
+		/// Account Id associated with this account.
 		/// </summary>
 		[JsonProperty("accountId")]
 		public string AccountId { get; set; }

@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 
 	/// <summary>
 	/// A pre-signed URL for the zip document containing the shipping labels and the documents enabled for your market
-	/// lace
+	/// lace.
 	/// </summary>
 	public class URL : StringValue
 	{

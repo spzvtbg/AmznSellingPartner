@@ -4,27 +4,27 @@ namespace AmznSellingPartner.Clients.Services.Services
 
 	/// <summary>
 	/// Response schema for the `addAppointmentForServiceJobByServiceJobId` and `rescheduleAppointmentForServiceJobByS
-	/// rviceJobId` operations
+	/// rviceJobId` operations.
 	/// </summary>
 	public class SetAppointmentResponse : BaseClass
 	{
 		/// <summary>
 		/// New appointment identifier generated during the `addAppointmentForServiceJobByServiceJobId` or `rescheduleAppo
-		/// ntmentForServiceJobByServiceJobId` operations
+		/// ntmentForServiceJobByServiceJobId` operations.
 		/// </summary>
 		[JsonProperty("appointmentId")]
 		public AppointmentId AppointmentId { get; set; }
 
 		/// <summary>
 		/// Warnings generated during the `addAppointmentForServiceJobByServiceJobId` or `rescheduleAppointmentForServiceJ
-		/// bByServiceJobId` operations
+		/// bByServiceJobId` operations.
 		/// </summary>
 		[JsonProperty("warnings")]
 		public WarningList Warnings { get; set; }
 
 		/// <summary>
 		/// Errors occurred during during the `addAppointmentForServiceJobByServiceJobId` or `rescheduleAppointmentForServ
-		/// ceJobByServiceJobId` operations
+		/// ceJobByServiceJobId` operations.
 		/// </summary>
 		[JsonProperty("errors")]
 		public ErrorList Errors { get; set; }

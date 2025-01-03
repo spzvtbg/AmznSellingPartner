@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum AddressType
 	{
 		/// <summary>
-		/// The shipping address is a residential address
+		/// The shipping address is a residential address.
 		/// </summary>
 		[EnumMember(Value = "Residential")]
 		Residential,
 
 		/// <summary>
-		/// The shipping address is a commercial address
+		/// The shipping address is a commercial address.
 		/// </summary>
 		[EnumMember(Value = "Commercial")]
 		Commercial,

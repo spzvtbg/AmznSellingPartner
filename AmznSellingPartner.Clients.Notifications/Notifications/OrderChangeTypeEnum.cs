@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The supported order change type of ORDER_CHANGE notification
+	/// The supported order change type of ORDER_CHANGE notification.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum OrderChangeTypeEnum

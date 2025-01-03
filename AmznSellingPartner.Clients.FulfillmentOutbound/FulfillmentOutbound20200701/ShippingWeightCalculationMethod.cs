@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public enum ShippingWeightCalculationMethod
 	{
 		/// <summary>
-		/// Based on the actual weight of the items
+		/// Based on the actual weight of the items.
 		/// </summary>
 		[EnumMember(Value = "Package")]
 		Package,
 
 		/// <summary>
-		/// Based on the cubic space that the items occupy
+		/// Based on the cubic space that the items occupy.
 		/// </summary>
 		[EnumMember(Value = "Dimensional")]
 		Dimensional,

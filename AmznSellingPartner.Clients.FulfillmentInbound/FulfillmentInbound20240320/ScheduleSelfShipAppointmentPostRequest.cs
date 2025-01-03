@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ScheduleSelfShipAppointmentPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,8 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// Identifier of a shipment
-		/// A shipment contains the boxes and units being inbounded
+		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]
@@ -31,7 +30,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShipmentId { get; set; }
 
 		/// <summary>
-		/// An identifier to a self-ship appointment slot
+		/// An identifier to a self-ship appointment slot.
 		/// </summary>
 		[InPath("slotId")]
 		[IsRequired]
@@ -42,7 +41,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string SlotId { get; set; }
 
 		/// <summary>
-		/// The body of the request to `scheduleSelfShipAppointment`
+		/// The body of the request to `scheduleSelfShipAppointment`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

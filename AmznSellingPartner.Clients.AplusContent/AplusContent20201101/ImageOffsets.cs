@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The top left corner of the cropped image, specified in the original image's coordinate space
+	/// The top left corner of the cropped image, specified in the original image's coordinate space.
 	/// </summary>
 	public class ImageOffsets : BaseClass
 	{

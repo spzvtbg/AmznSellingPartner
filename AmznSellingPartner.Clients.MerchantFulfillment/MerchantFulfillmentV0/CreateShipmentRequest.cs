@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Request schema
+	/// Request schema.
 	/// </summary>
 	public class CreateShipmentRequest : BaseClass
 	{
 		/// <summary>
-		/// Shipment information required to create a shipment
+		/// Shipment information required to create a shipment.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("ShipmentRequestDetails")]
@@ -21,14 +21,14 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public ShippingServiceIdentifier ShippingServiceId { get; set; }
 
 		/// <summary>
-		/// Identifies a shipping service order made by a carrier
+		/// Identifies a shipping service order made by a carrier.
 		/// </summary>
 		[JsonProperty("ShippingServiceOfferId")]
 		public string ShippingServiceOfferId { get; set; }
 
 		/// <summary>
-		/// Hazardous materials options for a package
-		/// Consult the terms and conditions for each carrier for more information about hazardous materials
+		/// Hazardous materials options for a package. Consult the terms and conditions for each carrier for more informat
+		/// on about hazardous materials.
 		/// </summary>
 		[JsonProperty("HazmatType")]
 		public HazmatType HazmatType { get; set; }
@@ -37,7 +37,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public LabelFormatOptionRequest LabelFormatOption { get; set; }
 
 		/// <summary>
-		/// A list of additional seller inputs required to ship this shipment
+		/// A list of additional seller inputs required to ship this shipment.
 		/// </summary>
 		[JsonProperty("ShipmentLevelSellerInputsList")]
 		public AdditionalSellerInputsList ShipmentLevelSellerInputsList { get; set; }

@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Success
+	/// Success.
 	/// </summary>
 	public class ExportInvoicesResponse : BaseClass
 	{
 		/// <summary>
-		/// The export identifier
+		/// The export identifier.
 		/// </summary>
 		[JsonProperty("exportId")]
 		public string ExportId { get; set; }

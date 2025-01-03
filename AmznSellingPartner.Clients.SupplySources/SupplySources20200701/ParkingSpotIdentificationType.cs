@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The type of parking spot identification
+	/// The type of parking spot identification.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ParkingSpotIdentificationType

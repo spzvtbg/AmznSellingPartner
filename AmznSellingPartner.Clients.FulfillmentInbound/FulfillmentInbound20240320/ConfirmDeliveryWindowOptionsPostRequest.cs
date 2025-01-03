@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ConfirmDeliveryWindowOptionsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// The shipment to confirm the delivery window option for
+		/// The shipment to confirm the delivery window option for.
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShipmentId { get; set; }
 
 		/// <summary>
-		/// The id of the delivery window option to be confirmed
+		/// The id of the delivery window option to be confirmed.
 		/// </summary>
 		[InPath("deliveryWindowOptionId")]
 		[IsRequired]

@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The standard company logo image
+	/// The standard company logo image.
 	/// </summary>
 	public class StandardCompanyLogoModule : BaseClass
 	{

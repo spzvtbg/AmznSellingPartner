@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Indicates whether the additional seller input is at the item or shipment level
+	/// Indicates whether the additional seller input is at the item or shipment level.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum InputTargetType
 	{
 		/// <summary>
-		/// The additional seller input is at the shipment level
+		/// The additional seller input is at the shipment level.
 		/// </summary>
 		[EnumMember(Value = "SHIPMENT_LEVEL")]
 		SHIPMENT_LEVEL,
 
 		/// <summary>
-		/// The additional seller input is at the item level
+		/// The additional seller input is at the item level.
 		/// </summary>
 		[EnumMember(Value = "ITEM_LEVEL")]
 		ITEM_LEVEL,

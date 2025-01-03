@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class SubmitAcknowledgementResponse : BaseClass
 	{
 		/// <summary>
-		/// The payload for the submitAcknowledgement operation
+		/// The payload for the submitAcknowledgement operation.
 		/// </summary>
 		[JsonProperty("payload")]
 		public TransactionId Payload { get; set; }

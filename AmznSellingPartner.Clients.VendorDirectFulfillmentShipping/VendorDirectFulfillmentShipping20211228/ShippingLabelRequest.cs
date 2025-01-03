@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 
 	/// <summary>
 	/// Represents the request payload for creating a shipping label, containing the purchase order number, selling pa
-	/// ty, ship from party, and a list of containers or packages in the shipment
+	/// ty, ship from party, and a list of containers or packages in the shipment.
 	/// </summary>
 	public class ShippingLabelRequest : BaseClass
 	{
 		/// <summary>
-		/// The purchase order number of the order for which to create a shipping label
+		/// The purchase order number of the order for which to create a shipping label.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
@@ -21,21 +21,21 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
-		/// The ID of the selling party or vendor
+		/// The ID of the selling party or vendor.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sellingParty")]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
-		/// The warehouse code of the vendor
+		/// The warehouse code of the vendor.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipFromParty")]
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
-		/// A list of the packages in this shipment
+		/// A list of the packages in this shipment.
 		/// </summary>
 		[JsonProperty("containers")]
 		public List<Container> Containers { get; set; }

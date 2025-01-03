@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetTrackingGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A carrier-generated tracking identifier originally returned by the purchaseShipment operation
+		/// A carrier-generated tracking identifier originally returned by the purchaseShipment operation.
 		/// </summary>
 		[InQuery("trackingId")]
 		[IsRequired]
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string TrackingId { get; set; }
 
 		/// <summary>
-		/// A carrier identifier originally returned by the getRates operation for the selected rate
+		/// A carrier identifier originally returned by the getRates operation for the selected rate.
 		/// </summary>
 		[InQuery("carrierId")]
 		[IsRequired]
@@ -24,8 +24,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string CarrierId { get; set; }
 
 		/// <summary>
-		/// Amazon shipping business to assume for this request
-		/// The default is AmazonShipping_UK
+		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
 		[JsonProperty("x-amzn-shipping-business-id")]

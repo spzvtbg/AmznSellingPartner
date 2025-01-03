@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 	public class GetTransactionStatusGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Previously returned in the response to the POST request of a specific transaction
+		/// Previously returned in the response to the POST request of a specific transaction.
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]

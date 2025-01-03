@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The request body for the generateOrderScenarios operation
+	/// The request body for the generateOrderScenarios operation.
 	/// </summary>
 	public class GenerateOrderScenarioRequest : BaseClass
 	{
 		/// <summary>
-		/// The list of test orders requested as indicated by party identifiers
+		/// The list of test orders requested as indicated by party identifiers.
 		/// </summary>
 		[JsonProperty("orders")]
 		public List<OrderScenarioRequest> Orders { get; set; }

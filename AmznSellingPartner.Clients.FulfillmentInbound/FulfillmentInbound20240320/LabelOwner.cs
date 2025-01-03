@@ -6,26 +6,25 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Specifies who will label the items
-	/// Options include `AMAZON`, `SELLER` or `NONE`
+	/// Specifies who will label the items. Options include `AMAZON`, `SELLER` or `NONE`.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum LabelOwner
 	{
 		/// <summary>
-		/// Amazon provides the information
+		/// Amazon provides the information.
 		/// </summary>
 		[EnumMember(Value = "AMAZON")]
 		AMAZON,
 
 		/// <summary>
-		/// Seller provides the information
+		/// Seller provides the information.
 		/// </summary>
 		[EnumMember(Value = "SELLER")]
 		SELLER,
 
 		/// <summary>
-		/// No owner is required for the labelling
+		/// No owner is required for the labelling.
 		/// </summary>
 		[EnumMember(Value = "NONE")]
 		NONE,

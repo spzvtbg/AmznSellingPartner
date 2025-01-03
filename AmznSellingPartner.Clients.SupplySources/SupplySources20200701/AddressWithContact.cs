@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The address and contact details
+	/// The address and contact details.
 	/// </summary>
 	public class AddressWithContact : BaseClass
 	{

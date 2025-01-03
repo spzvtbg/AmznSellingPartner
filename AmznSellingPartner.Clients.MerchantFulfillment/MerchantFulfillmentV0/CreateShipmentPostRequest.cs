@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class CreateShipmentPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request schema for the `CreateShipment` operation
+		/// The request schema for the `CreateShipment` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

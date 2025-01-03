@@ -11,11 +11,11 @@
         public BaseHttpClient(Uri baseAddress) 
             => httpClient.BaseAddress = baseAddress;
 
-        protected async Task<T> SendAsync<T>(BaseHttpRequest request) where T : BaseHttpResponse<T>
+        protected async Task<T> SendAsync<T>(BaseHttpRequest request)
         {
-            var response = await httpClient.SendAsync(request);
+            BaseHttpResponse<T> response = await httpClient.SendAsync(request);
 
-            throw new NotImplementedException();
+            return response.Value;
         }
     }
 }

@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Packing information for the inbound plan
+	/// Packing information for the inbound plan.
 	/// </summary>
 	public class PackageGroupingInput : BaseClass
 	{
 		/// <summary>
-		/// Box level information being provided
+		/// Box level information being provided.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]
@@ -21,10 +21,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public List<BoxInput> Boxes { get; set; }
 
 		/// <summary>
-		/// The ID of the `packingGroup` that packages are grouped according to
-		/// The `PackingGroupId` can only be provided before placement confirmation, and it must belong to the confirmed
-		/// PackingOption`
-		/// One of `ShipmentId` or `PackingGroupId` must be provided with every request
+		/// The ID of the `packingGroup` that packages are grouped according to. The `PackingGroupId` can only be provided
+		/// before placement confirmation, and it must belong to the confirmed `PackingOption`. One of `ShipmentId` or `Pa
+		/// kingGroupId` must be provided with every request.
 		/// </summary>
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
@@ -33,10 +32,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackingGroupId { get; set; }
 
 		/// <summary>
-		/// The ID of the shipment that packages are grouped according to
-		/// The `ShipmentId` can only be provided after placement confirmation, and the shipment must belong to the confi
-		/// med placement option
-		/// One of `ShipmentId` or `PackingGroupId` must be provided with every request
+		/// The ID of the shipment that packages are grouped according to. The `ShipmentId` can only be provided after pla
+		/// ement confirmation, and the shipment must belong to the confirmed placement option. One of `ShipmentId` or `Pa
+		/// kingGroupId` must be provided with every request.
 		/// </summary>
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]

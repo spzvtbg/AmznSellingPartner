@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `listShipmentPallets` response
+	/// The `listShipmentPallets` response.
 	/// </summary>
 	public class ListShipmentPalletsResponse : BaseClass
 	{
@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Pagination Pagination { get; set; }
 
 		/// <summary>
-		/// The pallets in a shipment
+		/// The pallets in a shipment.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("pallets")]

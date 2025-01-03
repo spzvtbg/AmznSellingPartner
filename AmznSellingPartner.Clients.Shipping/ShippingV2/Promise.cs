@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The time windows promised for pickup and delivery events
+	/// The time windows promised for pickup and delivery events.
 	/// </summary>
 	public class Promise : BaseClass
 	{

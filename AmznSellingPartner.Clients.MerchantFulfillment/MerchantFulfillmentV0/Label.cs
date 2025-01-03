@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Data for creating a shipping label and dimensions for printing the label
+	/// Data for creating a shipping label and dimensions for printing the label.
 	/// </summary>
 	public class Label : BaseClass
 	{

@@ -9,25 +9,25 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum ConfirmationStatus
 	{
 		/// <summary>
-		/// Status for orders accepted by vendors
+		/// Status for orders accepted by vendors.
 		/// </summary>
 		[EnumMember(Value = "ACCEPTED")]
 		ACCEPTED,
 
 		/// <summary>
-		/// Status for orders that are partially accepted by vendors
+		/// Status for orders that are partially accepted by vendors.
 		/// </summary>
 		[EnumMember(Value = "PARTIALLY_ACCEPTED")]
 		PARTIALLY_ACCEPTED,
 
 		/// <summary>
-		/// Status for orders that are rejected by vendors
+		/// Status for orders that are rejected by vendors.
 		/// </summary>
 		[EnumMember(Value = "REJECTED")]
 		REJECTED,
 
 		/// <summary>
-		/// Status for orders that are yet to be confirmed by vendors
+		/// Status for orders that are yet to be confirmed by vendors.
 		/// </summary>
 		[EnumMember(Value = "UNCONFIRMED")]
 		UNCONFIRMED,

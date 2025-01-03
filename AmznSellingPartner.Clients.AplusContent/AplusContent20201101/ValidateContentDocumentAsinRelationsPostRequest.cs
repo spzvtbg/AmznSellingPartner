@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class ValidateContentDocumentAsinRelationsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the marketplace where the A+ Content is published
+		/// The identifier for the marketplace where the A+ Content is published.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// The set of ASINs
+		/// The set of ASINs.
 		/// </summary>
 		[InQuery("asinSet")]
 		[UniqueItems]
@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public CsvValue<string> AsinSet { get; set; }
 
 		/// <summary>
-		/// The content document request details
+		/// The content document request details.
 		/// </summary>
 		[InBody("postContentDocumentRequest")]
 		[IsRequired]

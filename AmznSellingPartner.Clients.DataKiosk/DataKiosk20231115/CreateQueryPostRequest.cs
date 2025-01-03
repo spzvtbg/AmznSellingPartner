@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	public class CreateQueryPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The body of the request
+		/// The body of the request.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

@@ -9,14 +9,13 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public enum WithStatus
 	{
 		/// <summary>
-		/// The listings item can be purchased by shoppers
-		/// This status does not apply to vendor listings
+		/// The listings item can be purchased by shoppers. This status does not apply to vendor listings.
 		/// </summary>
 		[EnumMember(Value = "BUYABLE")]
 		BUYABLE,
 
 		/// <summary>
-		/// The listings item is visible to shoppers
+		/// The listings item is visible to shoppers.
 		/// </summary>
 		[EnumMember(Value = "DISCOVERABLE")]
 		DISCOVERABLE,

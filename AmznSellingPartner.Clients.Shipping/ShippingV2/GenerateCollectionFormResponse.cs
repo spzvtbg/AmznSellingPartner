@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The Response  for the GenerateCollectionFormResponse operation
+	/// The Response  for the GenerateCollectionFormResponse operation.
 	/// </summary>
 	public class GenerateCollectionFormResponse : BaseClass
 	{

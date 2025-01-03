@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the getTransaction operation
+	/// The response schema for the getTransaction operation.
 	/// </summary>
 	public class GetTransactionResponse : BaseClass
 	{
 		/// <summary>
-		/// The response payload for the getTransaction operation
+		/// The response payload for the getTransaction operation.
 		/// </summary>
 		[JsonProperty("payload")]
 		public TransactionStatus Payload { get; set; }

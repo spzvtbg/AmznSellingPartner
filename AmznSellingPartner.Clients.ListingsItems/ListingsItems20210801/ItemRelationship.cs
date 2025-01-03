@@ -7,31 +7,31 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// the relationship details for a listing item
+	/// the relationship details for a listing item.
 	/// </summary>
 	public class ItemRelationship : BaseClass
 	{
 		/// <summary>
-		/// Identifiers (SKUs) of the related items that are children of this listing item
+		/// Identifiers (SKUs) of the related items that are children of this listing item.
 		/// </summary>
 		[JsonProperty("childSkus")]
 		public List<string> ChildSkus { get; set; }
 
 		/// <summary>
-		/// Identifiers (SKUs) of the related items that are parents of this listing item
+		/// Identifiers (SKUs) of the related items that are parents of this listing item.
 		/// </summary>
 		[JsonProperty("parentSkus")]
 		public List<string> ParentSkus { get; set; }
 
 		/// <summary>
 		/// For `VARIATION` relationships, the variation theme is the combination of listing item attributes that define t
-		/// e variation family
+		/// e variation family.
 		/// </summary>
 		[JsonProperty("variationTheme")]
 		public ItemVariationTheme VariationTheme { get; set; }
 
 		/// <summary>
-		/// The type of relationship
+		/// The type of relationship.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("type")]

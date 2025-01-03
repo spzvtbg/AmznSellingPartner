@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class CreateServiceDocumentUploadDestinationPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Upload document operation input details
+		/// Upload document operation input details.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

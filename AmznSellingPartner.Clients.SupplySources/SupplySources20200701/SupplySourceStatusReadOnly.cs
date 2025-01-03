@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The `SupplySource` status
+	/// The `SupplySource` status.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum SupplySourceStatusReadOnly

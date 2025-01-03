@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request schema Call to generate the collection form
+	/// The request schema Call to generate the collection form.
 	/// </summary>
 	public class GenerateCollectionFormRequest : BaseClass
 	{

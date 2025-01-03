@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class UnlinkCarrierAccountPutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// carrier Id to unlink with merchant
+		/// carrier Id to unlink with merchant.
 		/// </summary>
 		[InPath("carrierId")]
 		[IsRequired]
@@ -21,8 +21,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public UnlinkCarrierAccountRequest Body { get; set; }
 
 		/// <summary>
-		/// Amazon shipping business to assume for this request
-		/// The default is AmazonShipping_UK
+		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
 		[JsonProperty("x-amzn-shipping-business-id")]

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The address
+	/// The address.
 	/// </summary>
 	public class Address : BaseClass
 	{
 		/// <summary>
-		/// The name of the person, business or institution at the address
+		/// The name of the person, business or institution at the address.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string Name { get; set; }
 
 		/// <summary>
-		/// The first line of the address
+		/// The first line of the address.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
-		/// Additional address information, if required
+		/// Additional address information, if required.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(60)]
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string AddressLine2 { get; set; }
 
 		/// <summary>
-		/// Additional address information, if required
+		/// Additional address information, if required.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(60)]
@@ -44,7 +44,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string AddressLine3 { get; set; }
 
 		/// <summary>
-		/// The name of the business or institution associated with the address
+		/// The name of the business or institution associated with the address.
 		/// </summary>
 		[JsonProperty("companyName")]
 		public string CompanyName { get; set; }
@@ -66,7 +66,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public PostalCode PostalCode { get; set; }
 
 		/// <summary>
-		/// The email address of the contact associated with the address
+		/// The email address of the contact associated with the address.
 		/// </summary>
 		[MaxLength(64)]
 		[JsonProperty("email")]
@@ -74,7 +74,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 
 		/// <summary>
 		/// The phone number of the person, business or institution located at that address, including the country calling
-		/// code
+		/// code.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(20)]

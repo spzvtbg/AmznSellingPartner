@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public enum LabelFormat
 	{
 		/// <summary>
-		/// Portable Network Graphics (png) format
+		/// Portable Network Graphics (png) format.
 		/// </summary>
 		[EnumMember(Value = "PNG")]
 		PNG,
 
 		/// <summary>
-		/// Zebra Programming Language (zpl) format
+		/// Zebra Programming Language (zpl) format.
 		/// </summary>
 		[EnumMember(Value = "ZPL")]
 		ZPL,

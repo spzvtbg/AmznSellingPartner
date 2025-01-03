@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Shipment source channel related information
+	/// Shipment source channel related information.
 	/// </summary>
 	public class ChannelDetails : BaseClass
 	{

@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Unit of linear measure
+	/// Unit of linear measure.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum UnitOfMeasurement
 	{
 		/// <summary>
-		/// Inches
+		/// Inches.
 		/// </summary>
 		[EnumMember(Value = "IN")]
 		IN,
 
 		/// <summary>
-		/// Centimeters
+		/// Centimeters.
 		/// </summary>
 		[EnumMember(Value = "CM")]
 		CM,

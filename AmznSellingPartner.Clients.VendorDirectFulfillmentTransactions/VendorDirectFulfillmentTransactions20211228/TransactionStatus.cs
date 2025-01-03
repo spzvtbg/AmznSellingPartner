@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the getTransactionStatus operation
+	/// The payload for the getTransactionStatus operation.
 	/// </summary>
 	public class TransactionStatus : BaseClass
 	{

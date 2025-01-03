@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class UpdateInboundPlanNamePutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// The body of the request to `updateInboundPlanName`
+		/// The body of the request to `updateInboundPlanName`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

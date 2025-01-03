@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class GetInvoicesDocumentGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The export document identifier
+		/// The export document identifier.
 		/// </summary>
 		[InPath("invoicesDocumentId")]
 		[IsRequired]

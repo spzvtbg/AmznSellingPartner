@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the createConfirmDeliveryDetails operation
+	/// The response schema for the createConfirmDeliveryDetails operation.
 	/// </summary>
 	public class CreateConfirmDeliveryDetailsResponse : BaseClass
 	{

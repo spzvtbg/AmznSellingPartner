@@ -9,37 +9,37 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum UnitOfMeasure
 	{
 		/// <summary>
-		/// Priced per Pound
+		/// Priced per Pound.
 		/// </summary>
 		[EnumMember(Value = "POUNDS")]
 		POUNDS,
 
 		/// <summary>
-		/// Priced per Ounce
+		/// Priced per Ounce.
 		/// </summary>
 		[EnumMember(Value = "OUNCES")]
 		OUNCES,
 
 		/// <summary>
-		/// Priced per Gram
+		/// Priced per Gram.
 		/// </summary>
 		[EnumMember(Value = "GRAMS")]
 		GRAMS,
 
 		/// <summary>
-		/// Priced per Kilogram
+		/// Priced per Kilogram.
 		/// </summary>
 		[EnumMember(Value = "KILOGRAMS")]
 		KILOGRAMS,
 
 		/// <summary>
-		/// Packing of individual items into a case
+		/// Packing of individual items into a case.
 		/// </summary>
 		[EnumMember(Value = "Cases")]
 		Cases,
 
 		/// <summary>
-		/// Individual items
+		/// Individual items.
 		/// </summary>
 		[EnumMember(Value = "Eaches")]
 		Eaches,

@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of restrictions for the specified Amazon catalog item
+	/// A list of restrictions for the specified Amazon catalog item.
 	/// </summary>
 	public class RestrictionList : BaseClass
 	{

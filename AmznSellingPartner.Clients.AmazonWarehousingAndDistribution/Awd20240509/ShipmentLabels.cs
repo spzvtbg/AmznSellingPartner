@@ -5,18 +5,18 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Shipment labels
+	/// Shipment labels.
 	/// </summary>
 	public class ShipmentLabels : BaseClass
 	{
 		/// <summary>
-		/// URL to download generated labels
+		/// URL to download generated labels.
 		/// </summary>
 		[JsonProperty("labelDownloadURL")]
 		public string LabelDownloadURL { get; set; }
 
 		/// <summary>
-		/// Status of label generation
+		/// Status of label generation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("labelStatus")]

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The version details for an Amazon product type
+	/// The version details for an Amazon product type.
 	/// </summary>
 	public class ProductTypeVersion : BaseClass
 	{
 		/// <summary>
-		/// Version identifier
+		/// Version identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("version")]
@@ -18,6 +18,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 
 		/// <summary>
 		/// When true, the version indicated by the version identifier is the latest available for the Amazon product type
+		/// 
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("latest")]
@@ -25,7 +26,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 
 		/// <summary>
 		/// When true, the version indicated by the version identifier is the prerelease (release candidate) for the Amazo
-		/// product type
+		/// product type.
 		/// </summary>
 		[JsonProperty("releaseCandidate")]
 		public bool ReleaseCandidate { get; set; }

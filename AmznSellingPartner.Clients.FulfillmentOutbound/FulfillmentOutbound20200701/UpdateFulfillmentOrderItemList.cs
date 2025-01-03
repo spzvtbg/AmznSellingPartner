@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of fulfillment order item information for updating a fulfillment order
+	/// An array of fulfillment order item information for updating a fulfillment order.
 	/// </summary>
 	public class UpdateFulfillmentOrderItemList : List<UpdateFulfillmentOrderItem>
 	{

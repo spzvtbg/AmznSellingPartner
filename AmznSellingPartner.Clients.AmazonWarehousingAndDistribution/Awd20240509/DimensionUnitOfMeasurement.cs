@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Unit of measurement for package dimensions
+	/// Unit of measurement for package dimensions.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum DimensionUnitOfMeasurement
 	{
 		/// <summary>
-		/// Denotes package dimensions in inches
+		/// Denotes package dimensions in inches.
 		/// </summary>
 		[EnumMember(Value = "INCHES")]
 		INCHES,
 
 		/// <summary>
-		/// Denotes package dimensions in centimeters
+		/// Denotes package dimensions in centimeters.
 		/// </summary>
 		[EnumMember(Value = "CENTIMETERS")]
 		CENTIMETERS,

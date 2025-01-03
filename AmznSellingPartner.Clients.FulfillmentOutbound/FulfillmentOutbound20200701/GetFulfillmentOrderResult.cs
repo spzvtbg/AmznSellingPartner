@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request for the getFulfillmentOrder operation
+	/// The request for the getFulfillmentOrder operation.
 	/// </summary>
 	public class GetFulfillmentOrderResult : BaseClass
 	{

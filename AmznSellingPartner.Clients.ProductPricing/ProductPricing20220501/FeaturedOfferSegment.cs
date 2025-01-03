@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Describes the segment in which the offer is featured
+	/// Describes the segment in which the offer is featured.
 	/// </summary>
 	public class FeaturedOfferSegment : BaseClass
 	{
@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		public CustomerMembership CustomerMembership { get; set; }
 
 		/// <summary>
-		/// The details about the segment
+		/// The details about the segment.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("segmentDetails")]

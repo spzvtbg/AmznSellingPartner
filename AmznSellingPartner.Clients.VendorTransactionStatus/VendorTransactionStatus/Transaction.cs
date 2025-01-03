@@ -5,20 +5,20 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The transaction status
+	/// The transaction status.
 	/// </summary>
 	public class Transaction : BaseClass
 	{
 		/// <summary>
 		/// The unique identifier returned in the 'transactionId' field in response to the post request of a specific tran
-		/// action
+		/// action.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("transactionId")]
 		public string TransactionId { get; set; }
 
 		/// <summary>
-		/// Current processing status of the transaction
+		/// Current processing status of the transaction.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("status")]

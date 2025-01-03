@@ -5,13 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The carrier for the inbound shipment
+	/// The carrier for the inbound shipment.
 	/// </summary>
 	public class Carrier : BaseClass
 	{
 		/// <summary>
-		/// The carrier code
-		/// For example, USPS or DHLEX
+		/// The carrier code. For example, USPS or DHLEX.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -19,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string AlphaCode { get; set; }
 
 		/// <summary>
-		/// The name of the carrier
+		/// The name of the carrier.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]

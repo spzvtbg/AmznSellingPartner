@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 
 	/// <summary>
 	/// Classifications (browse nodes) associated with the item in the Amazon catalog for the indicated Amazon marketp
-	/// ace
+	/// ace.
 	/// </summary>
 	public class ItemBrowseClassificationsByMarketplace : BaseClass
 	{
 		/// <summary>
-		/// Amazon marketplace identifier
+		/// Amazon marketplace identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceId")]
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 
 		/// <summary>
 		/// Classifications (browse nodes) associated with the item in the Amazon catalog for the indicated Amazon marketp
-		/// ace
+		/// ace.
 		/// </summary>
 		[JsonProperty("classifications")]
 		public List<ItemBrowseClassification> Classifications { get; set; }

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request for the listReturnReasonCodes operation
+	/// The request for the listReturnReasonCodes operation.
 	/// </summary>
 	public class ListReturnReasonCodesResult : BaseClass
 	{

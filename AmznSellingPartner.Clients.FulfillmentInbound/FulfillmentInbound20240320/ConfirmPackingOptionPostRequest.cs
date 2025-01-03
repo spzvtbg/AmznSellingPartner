@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ConfirmPackingOptionPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// Identifier of a packing option
+		/// Identifier of a packing option.
 		/// </summary>
 		[InPath("packingOptionId")]
 		[IsRequired]

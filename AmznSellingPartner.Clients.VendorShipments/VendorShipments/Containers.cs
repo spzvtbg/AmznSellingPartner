@@ -7,34 +7,33 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of the items in this transportation and their associated inner container details
-	/// If any of the item detail fields are common at a carton or a pallet level, provide them at the corresponding
-	/// arton or pallet level
+	/// A list of the items in this transportation and their associated inner container details. If any of the item de
+	/// ail fields are common at a carton or a pallet level, provide them at the corresponding carton or pallet level.
 	/// </summary>
 	public class Containers : BaseClass
 	{
 		/// <summary>
-		/// The type of container
+		/// The type of container.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("containerType")]
 		public ContainerType ContainerType { get; set; }
 
 		/// <summary>
-		/// An integer that must be submitted for multi-box shipments only, where one item may come in separate packages
+		/// An integer that must be submitted for multi-box shipments only, where one item may come in separate packages.
 		/// </summary>
 		[JsonProperty("containerSequenceNumber")]
 		public string ContainerSequenceNumber { get; set; }
 
 		/// <summary>
-		/// A list of carton identifiers
+		/// A list of carton identifiers.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("containerIdentifiers")]
 		public List<ContainerIdentification> ContainerIdentifiers { get; set; }
 
 		/// <summary>
-		/// The tracking number used for identifying the shipment
+		/// The tracking number used for identifying the shipment.
 		/// </summary>
 		[JsonProperty("trackingNumber")]
 		public string TrackingNumber { get; set; }
@@ -46,13 +45,13 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public Weight Weight { get; set; }
 
 		/// <summary>
-		/// Number of layers per pallet
+		/// Number of layers per pallet.
 		/// </summary>
 		[JsonProperty("tier")]
 		public int Tier { get; set; }
 
 		/// <summary>
-		/// Number of cartons per layer on the pallet
+		/// Number of cartons per layer on the pallet.
 		/// </summary>
 		[JsonProperty("block")]
 		public int Block { get; set; }
@@ -61,7 +60,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public InnerContainersDetails InnerContainersDetails { get; set; }
 
 		/// <summary>
-		/// A list of packed items
+		/// A list of packed items.
 		/// </summary>
 		[JsonProperty("packedItems")]
 		public List<PackedItems> PackedItems { get; set; }

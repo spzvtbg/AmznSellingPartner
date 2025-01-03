@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Error response returned when the request is unsuccessful
+	/// Error response returned when the request is unsuccessful.
 	/// </summary>
 	public class TestOrder : BaseClass
 	{
 		/// <summary>
-		/// An error code that identifies the type of error that occurred
+		/// An error code that identifies the type of error that occurred.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("orderId")]

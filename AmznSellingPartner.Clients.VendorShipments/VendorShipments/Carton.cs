@@ -7,20 +7,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Details of the carton/package being shipped
+	/// Details of the carton/package being shipped.
 	/// </summary>
 	public class Carton : BaseClass
 	{
 		/// <summary>
-		/// A list of carton identifiers
+		/// A list of carton identifiers.
 		/// </summary>
 		[JsonProperty("cartonIdentifiers")]
 		public List<ContainerIdentification> CartonIdentifiers { get; set; }
 
 		/// <summary>
-		/// Carton sequence number for the carton
-		/// The first carton will be 001, the second 002, and so on
-		/// This number is used as a reference to refer to this carton from the pallet level
+		/// Carton sequence number for the carton. The first carton will be 001, the second 002, and so on. This number is
+		/// used as a reference to refer to this carton from the pallet level.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("cartonSequenceNumber")]
@@ -33,13 +32,13 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public Weight Weight { get; set; }
 
 		/// <summary>
-		/// This is required to be provided for every carton in the small parcel shipments
+		/// This is required to be provided for every carton in the small parcel shipments.
 		/// </summary>
 		[JsonProperty("trackingNumber")]
 		public string TrackingNumber { get; set; }
 
 		/// <summary>
-		/// A list of container item details
+		/// A list of container item details.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("items")]

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Contains tokens to fetch from a certain page
+	/// Contains tokens to fetch from a certain page.
 	/// </summary>
 	public class Pagination : BaseClass
 	{
 		/// <summary>
-		/// When present, pass this string token in the next request to return the next response page
+		/// When present, pass this string token in the next request to return the next response page.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]

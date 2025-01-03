@@ -8,13 +8,13 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class OperatingHour : BaseClass
 	{
 		/// <summary>
-		/// The opening time, ISO 8601 formatted timestamp without date, HH:mm
+		/// The opening time, ISO 8601 formatted timestamp without date, HH:mm.
 		/// </summary>
 		[JsonProperty("startTime")]
 		public string StartTime { get; set; }
 
 		/// <summary>
-		/// The closing time, ISO 8601 formatted timestamp without date, HH:mm
+		/// The closing time, ISO 8601 formatted timestamp without date, HH:mm.
 		/// </summary>
 		[JsonProperty("endTime")]
 		public string EndTime { get; set; }

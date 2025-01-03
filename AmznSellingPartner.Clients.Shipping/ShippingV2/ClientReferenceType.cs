@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public enum ClientReferenceType
 	{
 		/// <summary>
-		/// The unique identifier assigned to a 3P seller by the shipping integrator
+		/// The unique identifier assigned to a 3P seller by the shipping integrator.
 		/// </summary>
 		[EnumMember(Value = "IntegratorShipperId")]
 		IntegratorShipperId,
 
 		/// <summary>
-		/// The unique identifier assigned to a 3P shipping integrator by Amazon
+		/// The unique identifier assigned to a 3P shipping integrator by Amazon.
 		/// </summary>
 		[EnumMember(Value = "IntegratorMerchantId")]
 		IntegratorMerchantId,

@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public CreateReservationRequest Body { get; set; }
 
 		/// <summary>
-		/// An identifier for the marketplace in which the resource operates
+		/// An identifier for the marketplace in which the resource operates.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]

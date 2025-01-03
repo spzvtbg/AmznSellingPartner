@@ -5,8 +5,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Package details
-	/// Includes `packageItems`, `packageTimeSlot`, and `packageIdentifier`
+	/// Package details. Includes `packageItems`, `packageTimeSlot`, and `packageIdentifier`.
 	/// </summary>
 	public class PackageDetails : BaseClass
 	{

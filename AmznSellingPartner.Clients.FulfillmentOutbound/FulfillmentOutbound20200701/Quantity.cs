@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using AmznSellingPartner.Clients.Values;
 
 	/// <summary>
-	/// The item quantity
+	/// The item quantity.
 	/// </summary>
 	public class Quantity : IntValue
 	{

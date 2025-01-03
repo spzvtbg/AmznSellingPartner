@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public enum CurrentShipmentStatus
 	{
 		/// <summary>
-		/// Shipment request was received by buyer
+		/// Shipment request was received by buyer.
 		/// </summary>
 		[EnumMember(Value = "Created")]
 		Created,
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		CarrierAssigned,
 
 		/// <summary>
-		/// Shipment sent to buyer warehouse
+		/// Shipment sent to buyer warehouse.
 		/// </summary>
 		[EnumMember(Value = "Shipped")]
 		Shipped,
@@ -33,7 +33,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		Transportation_requested,
 
 		/// <summary>
-		/// Shipment is assigned to a carrier for pickup from vendor warehouse to Buyer FC / Warehouse
+		/// Shipment is assigned to a carrier for pickup from vendor warehouse to Buyer FC / Warehouse.
 		/// </summary>
 		[EnumMember(Value = "Carrier assigned")]
 		Carrier_assigned,

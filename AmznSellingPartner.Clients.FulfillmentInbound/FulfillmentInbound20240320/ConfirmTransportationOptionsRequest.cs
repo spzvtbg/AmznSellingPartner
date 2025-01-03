@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `confirmTransportationOptions` request
+	/// The `confirmTransportationOptions` request.
 	/// </summary>
 	public class ConfirmTransportationOptionsRequest : BaseClass
 	{
 		/// <summary>
-		/// Information needed to confirm one of the available transportation options
+		/// Information needed to confirm one of the available transportation options.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

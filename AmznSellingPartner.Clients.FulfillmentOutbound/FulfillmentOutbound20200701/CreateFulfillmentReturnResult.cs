@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The result for the createFulfillmentReturn operation
+	/// The result for the createFulfillmentReturn operation.
 	/// </summary>
 	public class CreateFulfillmentReturnResult : BaseClass
 	{

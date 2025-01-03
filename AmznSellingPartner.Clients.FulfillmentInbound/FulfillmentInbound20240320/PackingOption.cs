@@ -9,43 +9,40 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 
 	/// <summary>
 	/// A packing option contains a set of pack groups plus additional information about the packing option, such as a
-	/// y discounts or fees if it's selected
+	/// y discounts or fees if it's selected.
 	/// </summary>
 	public class PackingOption : BaseClass
 	{
 		/// <summary>
-		/// Discount for the offered option
+		/// Discount for the offered option.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("discounts")]
 		public List<Incentive> Discounts { get; set; }
 
 		/// <summary>
-		/// The time at which this packing option is no longer valid
-		/// In [ISO 8601](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mm:ss
-		/// sssZ`
+		/// The time at which this packing option is no longer valid. In [ISO 8601](https://developer-docs.amazon.com/sp-a
+		/// i/docs/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
 		public DateTime Expiration { get; set; }
 
 		/// <summary>
-		/// Fee for the offered option
+		/// Fee for the offered option.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("fees")]
 		public List<Incentive> Fees { get; set; }
 
 		/// <summary>
-		/// Packing group IDs
+		/// Packing group IDs.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("packingGroups")]
 		public List<string> PackingGroups { get; set; }
 
 		/// <summary>
-		/// Identifier of a packing option
+		/// Identifier of a packing option.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -55,8 +52,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackingOptionId { get; set; }
 
 		/// <summary>
-		/// The status of the packing option
-		/// Possible values: `OFFERED`, `ACCEPTED`, `EXPIRED`
+		/// The status of the packing option. Possible values: `OFFERED`, `ACCEPTED`, `EXPIRED`.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -65,7 +61,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Status { get; set; }
 
 		/// <summary>
-		/// List of supported shipping modes
+		/// List of supported shipping modes.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("supportedShippingConfigurations")]

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class GetFeatureSKUGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The marketplace for which to return the count
+		/// The marketplace for which to return the count.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// The name of the feature
+		/// The name of the feature.
 		/// </summary>
 		[InPath("featureName")]
 		[IsRequired]
@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string FeatureName { get; set; }
 
 		/// <summary>
-		/// Used to identify an item in the given marketplace
-		/// `SellerSKU` is qualified by the seller's `SellerId`, which is included with every operation that you submit
+		/// Used to identify an item in the given marketplace. `SellerSKU` is qualified by the seller's `SellerId`, which
+		/// s included with every operation that you submit.
 		/// </summary>
 		[InPath("sellerSku")]
 		[IsRequired]

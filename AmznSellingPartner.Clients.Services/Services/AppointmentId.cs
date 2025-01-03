@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using AmznSellingPartner.Clients.Values;
 
 	/// <summary>
-	/// The appointment identifier
+	/// The appointment identifier.
 	/// </summary>
 	[MinLength(5)]
 	[MaxLength(100)]

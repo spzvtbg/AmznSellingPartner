@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	public class DeleteDestinationDeleteRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the destination that you want to delete
+		/// The identifier for the destination that you want to delete.
 		/// </summary>
 		[InPath("destinationId")]
 		[IsRequired]

@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of error responses returned when a request is unsuccessful
+	/// A list of error responses returned when a request is unsuccessful.
 	/// </summary>
 	public class ErrorList : BaseClass
 	{
 		/// <summary>
-		/// An array of Error objects representing individual errors encountered during the request
+		/// An array of Error objects representing individual errors encountered during the request.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("errors")]

@@ -9,14 +9,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum BuyerInvoicePreference
 	{
 		/// <summary>
-		/// Issues an individual invoice to the buyer
+		/// Issues an individual invoice to the buyer.
 		/// </summary>
 		[EnumMember(Value = "INDIVIDUAL")]
 		INDIVIDUAL,
 
 		/// <summary>
-		/// Issues a business invoice to the buyer
-		/// Tax information is available in `BuyerTaxInformation`
+		/// Issues a business invoice to the buyer. Tax information is available in `BuyerTaxInformation`.
 		/// </summary>
 		[EnumMember(Value = "BUSINESS")]
 		BUSINESS,

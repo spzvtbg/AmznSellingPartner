@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	public enum DeletionReason
 	{
 		/// <summary>
-		/// The notification's content is recognized to be incorrect
+		/// The notification's content is recognized to be incorrect.
 		/// </summary>
 		[EnumMember(Value = "INCORRECT_CONTENT")]
 		INCORRECT_CONTENT,
 
 		/// <summary>
-		/// The notification was sent to incorrect seller
+		/// The notification was sent to incorrect seller.
 		/// </summary>
 		[EnumMember(Value = "INCORRECT_RECIPIENT")]
 		INCORRECT_RECIPIENT,

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class RescheduleAppointmentForServiceJobByServiceJobIdPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon defined service job identifier
+		/// An Amazon defined service job identifier.
 		/// </summary>
 		[InPath("serviceJobId")]
 		[IsRequired]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string ServiceJobId { get; set; }
 
 		/// <summary>
-		/// An existing appointment identifier for the Service Job
+		/// An existing appointment identifier for the Service Job.
 		/// </summary>
 		[InPath("appointmentId")]
 		[IsRequired]
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string AppointmentId { get; set; }
 
 		/// <summary>
-		/// Reschedule appointment operation input details
+		/// Reschedule appointment operation input details.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

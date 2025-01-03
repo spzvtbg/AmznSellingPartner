@@ -5,26 +5,26 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Schema for `currentFeaturedOffer` or `competingFeaturedOffer`
+	/// Schema for `currentFeaturedOffer` or `competingFeaturedOffer`.
 	/// </summary>
 	public class FeaturedOffer : BaseClass
 	{
 		/// <summary>
-		/// An offer identifier used to identify the merchant of the featured offer
-		/// Since this may not belong to the requester, the SKU field is omitted
+		/// An offer identifier used to identify the merchant of the featured offer. Since this may not belong to the requ
+		/// ster, the SKU field is omitted.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("offerIdentifier")]
 		public OfferIdentifier OfferIdentifier { get; set; }
 
 		/// <summary>
-		/// The item condition
+		/// The item condition.
 		/// </summary>
 		[JsonProperty("condition")]
 		public Condition Condition { get; set; }
 
 		/// <summary>
-		/// The current active price of the offer
+		/// The current active price of the offer.
 		/// </summary>
 		[JsonProperty("price")]
 		public Price Price { get; set; }

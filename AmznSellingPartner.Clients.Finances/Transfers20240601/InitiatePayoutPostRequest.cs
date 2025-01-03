@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 	public class InitiatePayoutPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body for the `initiatePayout` operation
+		/// The request body for the `initiatePayout` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

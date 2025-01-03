@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class CreateMarketplaceItemLabelsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The body of the request to `createMarketplaceItemLabels`
+		/// The body of the request to `createMarketplaceItemLabels`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

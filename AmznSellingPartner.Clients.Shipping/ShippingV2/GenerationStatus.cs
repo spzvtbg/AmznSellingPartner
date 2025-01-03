@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Generation Status
+	/// Generation Status.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum GenerationStatus
 	{
 		/// <summary>
-		/// Genertaion is succesfully completed
+		/// Genertaion is succesfully completed .
 		/// </summary>
 		[EnumMember(Value = "Completed")]
 		Completed,
 
 		/// <summary>
-		/// Genertaion is in Progress
+		/// Genertaion is in Progress.
 		/// </summary>
 		[EnumMember(Value = "InProgress")]
 		InProgress,

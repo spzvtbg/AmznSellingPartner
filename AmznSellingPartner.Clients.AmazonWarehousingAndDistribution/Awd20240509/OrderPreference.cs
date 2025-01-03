@@ -6,13 +6,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Supported preferences for the distribution order
+	/// Supported preferences for the distribution order.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum OrderPreference
 	{
 		/// <summary>
-		/// Represents a partial order case
+		/// Represents a partial order case.
 		/// </summary>
 		[EnumMember(Value = "PARTIAL_ORDER")]
 		PARTIAL_ORDER,

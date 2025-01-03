@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the getPurchaseOrder operation
+	/// The response schema for the getPurchaseOrder operation.
 	/// </summary>
 	public class GetPurchaseOrderResponse : BaseClass
 	{

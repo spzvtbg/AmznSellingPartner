@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Specific details to identify a place
+	/// Specific details to identify a place.
 	/// </summary>
 	public class Address : BaseClass
 	{
 		/// <summary>
-		/// Street address information
+		/// Street address information.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
-		/// Additional street address information
+		/// Additional street address information.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(60)]
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string AddressLine2 { get; set; }
 
 		/// <summary>
-		/// The city
+		/// The city.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string City { get; set; }
 
 		/// <summary>
-		/// The name of the business
+		/// The name of the business.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(50)]
@@ -44,7 +44,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string CompanyName { get; set; }
 
 		/// <summary>
-		/// The country code in two-character ISO 3166-1 alpha-2 format
+		/// The country code in two-character ISO 3166-1 alpha-2 format.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[A-Z]{2}")]
@@ -54,7 +54,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string CountryCode { get; set; }
 
 		/// <summary>
-		/// The email address
+		/// The email address.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -62,7 +62,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Email { get; set; }
 
 		/// <summary>
-		/// The name of the individual who is the primary contact
+		/// The name of the individual who is the primary contact.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -71,7 +71,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Name { get; set; }
 
 		/// <summary>
-		/// The phone number
+		/// The phone number.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(20)]
@@ -79,7 +79,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PhoneNumber { get; set; }
 
 		/// <summary>
-		/// The postal code
+		/// The postal code.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -88,7 +88,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PostalCode { get; set; }
 
 		/// <summary>
-		/// The state or province code
+		/// The state or province code.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(64)]

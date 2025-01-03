@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Summary information about a packing option
+	/// Summary information about a packing option.
 	/// </summary>
 	public class PackingOptionSummary : BaseClass
 	{
 		/// <summary>
-		/// Identifier of a packing option
+		/// Identifier of a packing option.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -20,8 +20,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackingOptionId { get; set; }
 
 		/// <summary>
-		/// The status of a packing option
-		/// Possible values: 'OFFERED', 'ACCEPTED', 'EXPIRED'
+		/// The status of a packing option. Possible values: 'OFFERED', 'ACCEPTED', 'EXPIRED'.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

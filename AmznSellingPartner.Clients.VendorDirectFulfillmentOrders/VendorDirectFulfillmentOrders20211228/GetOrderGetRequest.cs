@@ -8,8 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	public class GetOrderGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The order identifier for the purchase order that you want
-		/// Formatting Notes: alpha-numeric code
+		/// The order identifier for the purchase order that you want. Formatting Notes: alpha-numeric code.
 		/// </summary>
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]

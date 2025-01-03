@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public class PatchListingsItemPatchRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A selling partner identifier, such as a merchant account or vendor code
+		/// A selling partner identifier, such as a merchant account or vendor code.
 		/// </summary>
 		[InPath("sellerId")]
 		[IsRequired]
@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public string SellerId { get; set; }
 
 		/// <summary>
-		/// A selling partner provided identifier for an Amazon listing
+		/// A selling partner provided identifier for an Amazon listing.
 		/// </summary>
 		[InPath("sku")]
 		[IsRequired]
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public string Sku { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of Amazon marketplace identifiers for the request
+		/// A comma-delimited list of Amazon marketplace identifiers for the request.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
@@ -34,32 +34,30 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of data sets to include in the response
-		/// Default: `issues`
+		/// A comma-delimited list of data sets to include in the response. Default: `issues`.
 		/// </summary>
 		[InQuery("includedData")]
 		[JsonProperty("includedData")]
 		public CsvValue<IncludedData> IncludedData { get; set; }
 
 		/// <summary>
-		/// The mode of operation for the request
+		/// The mode of operation for the request.
 		/// </summary>
 		[InQuery("mode")]
 		[JsonProperty("mode")]
 		public Mode Mode { get; set; }
 
 		/// <summary>
-		/// A locale for localization of issues
-		/// When not provided, the default language code of the first marketplace is used
-		/// Examples: `en_US`, `fr_CA`, `fr_FR`
-		/// Localized messages default to `en_US` when a localization is not available in the specified locale
+		/// A locale for localization of issues. When not provided, the default language code of the first marketplace is
+		/// sed. Examples: `en_US`, `fr_CA`, `fr_FR`. Localized messages default to `en_US` when a localization is not ava
+		/// lable in the specified locale.
 		/// </summary>
 		[InQuery("issueLocale")]
 		[JsonProperty("issueLocale")]
 		public string IssueLocale { get; set; }
 
 		/// <summary>
-		/// The request body schema for the `patchListingsItem` operation
+		/// The request body schema for the `patchListingsItem` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

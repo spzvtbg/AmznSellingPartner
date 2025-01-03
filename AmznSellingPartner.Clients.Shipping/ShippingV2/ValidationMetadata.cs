@@ -8,19 +8,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class ValidationMetadata : BaseClass
 	{
 		/// <summary>
-		/// errorMessage for the error
+		/// errorMessage for the error.
 		/// </summary>
 		[JsonProperty("errorMessage")]
 		public string ErrorMessage { get; set; }
 
 		/// <summary>
-		/// validationStrategy for the error
+		/// validationStrategy for the error.
 		/// </summary>
 		[JsonProperty("validationStrategy")]
 		public string ValidationStrategy { get; set; }
 
 		/// <summary>
-		/// Value
+		/// Value.
 		/// </summary>
 		[JsonProperty("value")]
 		public string Value { get; set; }

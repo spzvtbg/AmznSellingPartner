@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public enum AppointmentStatus
 	{
 		/// <summary>
-		/// Indicates that an appointment is scheduled
+		/// Indicates that an appointment is scheduled.
 		/// </summary>
 		[EnumMember(Value = "ACTIVE")]
 		ACTIVE,
 
 		/// <summary>
-		/// Indicates that the appointment is cancelled
+		/// Indicates that the appointment is cancelled.
 		/// </summary>
 		[EnumMember(Value = "CANCELLED")]
 		CANCELLED,
 
 		/// <summary>
-		/// Indicates that the appointment is completed
+		/// Indicates that the appointment is completed.
 		/// </summary>
 		[EnumMember(Value = "COMPLETED")]
 		COMPLETED,

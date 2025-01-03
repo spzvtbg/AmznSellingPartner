@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 	public class SubmitInventoryUpdatePostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body containing the inventory update data to submit
+		/// The request body containing the inventory update data to submit.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		public SubmitInventoryUpdateRequest Body { get; set; }
 
 		/// <summary>
-		/// Identifier for the warehouse for which to update inventory
+		/// Identifier for the warehouse for which to update inventory.
 		/// </summary>
 		[InPath("warehouseId")]
 		[IsRequired]

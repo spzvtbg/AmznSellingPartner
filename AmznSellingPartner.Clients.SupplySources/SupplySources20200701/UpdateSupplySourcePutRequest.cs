@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class UpdateSupplySourcePutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The unique identitier of a supply source
+		/// The unique identitier of a supply source.
 		/// </summary>
 		[InPath("supplySourceId")]
 		[IsRequired]

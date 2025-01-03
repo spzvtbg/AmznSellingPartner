@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum PurchaseOrderStatus
 	{
 		/// <summary>
-		/// Buyer has not yet received all of the items in the purchase order
+		/// Buyer has not yet received all of the items in the purchase order.
 		/// </summary>
 		[EnumMember(Value = "OPEN")]
 		OPEN,
 
 		/// <summary>
-		/// Buyer has received all of the items in the purchase order
+		/// Buyer has received all of the items in the purchase order.
 		/// </summary>
 		[EnumMember(Value = "CLOSED")]
 		CLOSED,

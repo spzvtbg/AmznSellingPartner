@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	{
 		/// <summary>
 		/// The GUID provided by Amazon in the 'transactionId' field in response to the post request of a specific transac
-		/// ion
+		/// ion.
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]

@@ -42,24 +42,17 @@
 
         public static IEnumerable<string> SplitToLines(this string description)
         {
-            var lines = description?.Replace('\n', ' ')
-                                   ?.Split('.', StringSplitOptions.RemoveEmptyEntries)
-                                   ?? [];
+            var line = description?.Replace('\n', ' ');
             var summary = new List<string>();
             var maxLenght = 110;
 
-            for (var i = 0; i < lines.Length; i++)
+            while (line.Length > maxLenght)
             {
-                var line = lines[i];
-
-                while (line.Length > maxLenght)
-                {
-                    summary.Add(line[..maxLenght].Trim());
-                    line = line[(maxLenght + 1)..];
-                }
-
-                summary.Add(line.Trim());
+                summary.Add(line[..maxLenght].Trim());
+                line = line[(maxLenght + 1)..];
             }
+
+            summary.Add(line.Trim());
 
             return summary;
         }

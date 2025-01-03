@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `listDeliveryWindowOptions` response
+	/// The `listDeliveryWindowOptions` response.
 	/// </summary>
 	public class ListDeliveryWindowOptionsResponse : BaseClass
 	{
 		/// <summary>
-		/// Delivery window options generated for the placement option
+		/// Delivery window options generated for the placement option.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("deliveryWindowOptions")]

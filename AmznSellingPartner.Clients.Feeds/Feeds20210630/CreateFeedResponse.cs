@@ -5,13 +5,12 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Response schema
+	/// Response schema.
 	/// </summary>
 	public class CreateFeedResponse : BaseClass
 	{
 		/// <summary>
-		/// The identifier for the feed
-		/// This identifier is unique only in combination with a seller ID
+		/// The identifier for the feed. This identifier is unique only in combination with a seller ID.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("feedId")]

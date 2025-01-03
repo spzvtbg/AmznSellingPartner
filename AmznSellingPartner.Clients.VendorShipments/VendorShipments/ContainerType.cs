@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		carton,
 
 		/// <summary>
-		/// A flat transport structure which supports goods in a stable fashion while being lifted by a forklift
+		/// A flat transport structure which supports goods in a stable fashion while being lifted by a forklift.
 		/// </summary>
 		[EnumMember(Value = "pallet")]
 		pallet,

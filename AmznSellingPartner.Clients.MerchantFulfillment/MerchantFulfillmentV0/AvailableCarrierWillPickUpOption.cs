@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Indicates whether the carrier will pick up the package, and what fee is charged, if any
+	/// Indicates whether the carrier will pick up the package, and what fee is charged, if any.
 	/// </summary>
 	public class AvailableCarrierWillPickUpOption : BaseClass
 	{
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public CarrierWillPickUpOption CarrierWillPickUpOption { get; set; }
 
 		/// <summary>
-		/// The fee charged
+		/// The fee charged.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Charge")]

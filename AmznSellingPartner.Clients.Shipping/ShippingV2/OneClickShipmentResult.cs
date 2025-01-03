@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the OneClickShipment API
+	/// The payload for the OneClickShipment API.
 	/// </summary>
 	public class OneClickShipmentResult : BaseClass
 	{

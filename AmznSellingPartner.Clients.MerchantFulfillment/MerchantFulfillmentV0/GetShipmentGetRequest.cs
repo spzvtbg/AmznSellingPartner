@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class GetShipmentGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The Amazon-defined shipment identifier for the shipment
+		/// The Amazon-defined shipment identifier for the shipment.
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]

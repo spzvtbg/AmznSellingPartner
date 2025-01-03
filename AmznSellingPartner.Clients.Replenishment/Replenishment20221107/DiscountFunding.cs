@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The discount funding on the offer
+	/// The discount funding on the offer.
 	/// </summary>
 	public class DiscountFunding : BaseClass
 	{
 		/// <summary>
-		/// Filters the results to only include offers with the percentage specified
+		/// Filters the results to only include offers with the percentage specified.
 		/// </summary>
 		[MinItems(1)]
 		[MaxItems(10)]

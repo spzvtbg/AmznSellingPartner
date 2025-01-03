@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Input information for a given box
+	/// Input information for a given box.
 	/// </summary>
 	public class BoxInput : BaseClass
 	{
@@ -20,14 +20,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Dimensions Dimensions { get; set; }
 
 		/// <summary>
-		/// The items and their quantity in the box
-		/// This must be empty if the box `contentInformationSource` is `BARCODE_2D` or `MANUAL_PROCESS`
+		/// The items and their quantity in the box. This must be empty if the box `contentInformationSource` is `BARCODE_
+		/// D` or `MANUAL_PROCESS`.
 		/// </summary>
 		[JsonProperty("items")]
 		public List<ItemInput> Items { get; set; }
 
 		/// <summary>
-		/// The number of containers where all other properties like weight or dimensions are identical
+		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]

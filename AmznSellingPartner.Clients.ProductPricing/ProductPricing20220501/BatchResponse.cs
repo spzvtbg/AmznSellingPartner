@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The common properties for responses to individual requests within a batch
+	/// The common properties for responses to individual requests within a batch.
 	/// </summary>
 	public class BatchResponse : BaseClass
 	{

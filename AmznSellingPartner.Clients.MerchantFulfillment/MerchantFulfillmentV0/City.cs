@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using AmznSellingPartner.Clients.Values;
 
 	/// <summary>
-	/// The city
+	/// The city.
 	/// </summary>
 	[MaxLength(30)]
 	public class City : StringValue

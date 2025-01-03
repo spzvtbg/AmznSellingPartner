@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Indicates the type of print type for a given label
+	/// Indicates the type of print type for a given label.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum LabelPrintType

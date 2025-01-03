@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `CancelSelfShipAppointment` response
+	/// The `CancelSelfShipAppointment` response.
 	/// </summary>
 	public class CancelSelfShipAppointmentResponse : BaseClass
 	{
 		/// <summary>
-		/// UUID for the given operation
+		/// UUID for the given operation.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]

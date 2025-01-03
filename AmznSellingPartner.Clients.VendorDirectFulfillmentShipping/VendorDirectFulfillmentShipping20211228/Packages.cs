@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of package objects in a container
+	/// An array of package objects in a container.
 	/// </summary>
 	public class Packages : List<Package>
 	{

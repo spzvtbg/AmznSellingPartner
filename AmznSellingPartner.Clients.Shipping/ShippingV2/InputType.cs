@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Type of Input
+	/// Type of Input.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum InputType
 	{
 		/// <summary>
-		/// Input Type is Textbox
+		/// Input Type is Textbox.
 		/// </summary>
 		[EnumMember(Value = "TEXTBOX")]
 		TEXTBOX,
 
 		/// <summary>
-		/// Input Type is Password
+		/// Input Type is Password.
 		/// </summary>
 		[EnumMember(Value = "PASSWORD")]
 		PASSWORD,

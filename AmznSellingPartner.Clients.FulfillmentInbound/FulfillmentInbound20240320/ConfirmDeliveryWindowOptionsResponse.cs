@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `confirmDeliveryWindowOptions` response
+	/// The `confirmDeliveryWindowOptions` response.
 	/// </summary>
 	public class ConfirmDeliveryWindowOptionsResponse : BaseClass
 	{
 		/// <summary>
-		/// UUID for the given operation
+		/// UUID for the given operation.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]

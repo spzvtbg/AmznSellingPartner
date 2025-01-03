@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The destination for the delivery offer
+	/// The destination for the delivery offer.
 	/// </summary>
 	public class Destination : BaseClass
 	{
@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public VariablePrecisionAddress DeliveryAddress { get; set; }
 
 		/// <summary>
-		/// The IP address of the customer
+		/// The IP address of the customer.
 		/// </summary>
 		[JsonProperty("ipAddress")]
 		public IpAddress IpAddress { get; set; }

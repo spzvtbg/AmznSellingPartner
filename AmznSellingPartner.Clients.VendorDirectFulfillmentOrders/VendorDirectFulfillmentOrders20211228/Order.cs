@@ -5,20 +5,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents a purchase order
+	/// Represents a purchase order.
 	/// </summary>
 	public class Order : BaseClass
 	{
 		/// <summary>
-		/// The purchase order number for this order
-		/// Formatting Notes: alpha-numeric code
+		/// The purchase order number for this order. Formatting Notes: alpha-numeric code.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("purchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
-		/// Purchase order details
+		/// Purchase order details.
 		/// </summary>
 		[JsonProperty("orderDetails")]
 		public OrderDetails OrderDetails { get; set; }

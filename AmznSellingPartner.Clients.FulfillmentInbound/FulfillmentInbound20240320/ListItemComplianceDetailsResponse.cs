@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `listItemComplianceDetails` response
+	/// The `listItemComplianceDetails` response.
 	/// </summary>
 	public class ListItemComplianceDetailsResponse : BaseClass
 	{
 		/// <summary>
-		/// List of compliance details
+		/// List of compliance details.
 		/// </summary>
 		[JsonProperty("complianceDetails")]
 		public List<ComplianceDetail> ComplianceDetails { get; set; }

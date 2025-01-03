@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	public class Pagination : BaseClass
 	{
 		/// <summary>
-		/// A token that can be used to fetch the next page of results
+		/// A token that can be used to fetch the next page of results.
 		/// </summary>
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request body schema for the `submitFulfillmentOrderStatusUpdate` operation
+	/// The request body schema for the `submitFulfillmentOrderStatusUpdate` operation.
 	/// </summary>
 	public class SubmitFulfillmentOrderStatusUpdateRequest : BaseClass
 	{

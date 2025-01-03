@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The standard product comparison table
+	/// The standard product comparison table.
 	/// </summary>
 	public class StandardComparisonTableModule : BaseClass
 	{

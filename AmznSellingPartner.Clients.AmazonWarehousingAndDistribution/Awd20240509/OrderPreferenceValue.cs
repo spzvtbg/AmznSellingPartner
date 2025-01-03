@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Value for the order preference
+	/// Value for the order preference.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum OrderPreferenceValue
 	{
 		/// <summary>
-		/// Sets the order preference
+		/// Sets the order preference.
 		/// </summary>
 		[EnumMember(Value = "SET")]
 		SET,
 
 		/// <summary>
-		/// Unsets the order preference
+		/// Unsets the order preference.
 		/// </summary>
 		[EnumMember(Value = "UNSET")]
 		UNSET,

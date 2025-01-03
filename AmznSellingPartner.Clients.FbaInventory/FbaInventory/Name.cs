@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	public enum Name
 	{
 		/// <summary>
-		/// Short Term for 1-10 days
+		/// Short Term for 1-10 days.
 		/// </summary>
 		[EnumMember(Value = "researchingQuantityInShortTerm")]
 		researchingQuantityInShortTerm,
 
 		/// <summary>
-		/// Mid Term for 11-20 days
+		/// Mid Term for 11-20 days.
 		/// </summary>
 		[EnumMember(Value = "researchingQuantityInMidTerm")]
 		researchingQuantityInMidTerm,
 
 		/// <summary>
-		/// Long Term for 21 days or longer
+		/// Long Term for 21 days or longer.
 		/// </summary>
 		[EnumMember(Value = "researchingQuantityInLongTerm")]
 		researchingQuantityInLongTerm,

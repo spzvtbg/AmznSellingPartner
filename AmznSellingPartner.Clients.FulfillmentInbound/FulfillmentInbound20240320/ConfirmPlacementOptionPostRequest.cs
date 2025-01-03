@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ConfirmPlacementOptionPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// The identifier of a placement option
-		/// A placement option represents the shipment splits and destinations of SKUs
+		/// The identifier of a placement option. A placement option represents the shipment splits and destinations of SK
+		/// s.
 		/// </summary>
 		[InPath("placementOptionId")]
 		[IsRequired]

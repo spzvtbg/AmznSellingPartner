@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The Response  for the GetUnmanifestedShipmentsResponse operation
+	/// The Response  for the GetUnmanifestedShipmentsResponse operation.
 	/// </summary>
 	public class GetUnmanifestedShipmentsResponse : BaseClass
 	{

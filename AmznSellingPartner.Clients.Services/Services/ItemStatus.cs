@@ -9,25 +9,25 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public enum ItemStatus
 	{
 		/// <summary>
-		/// Indicates the item is yet to be shipped
+		/// Indicates the item is yet to be shipped.
 		/// </summary>
 		[EnumMember(Value = "ACTIVE")]
 		ACTIVE,
 
 		/// <summary>
-		/// Indicates the item has been cancelled
+		/// Indicates the item has been cancelled.
 		/// </summary>
 		[EnumMember(Value = "CANCELLED")]
 		CANCELLED,
 
 		/// <summary>
-		/// Indicates the item is shipped but not delivered
+		/// Indicates the item is shipped but not delivered.
 		/// </summary>
 		[EnumMember(Value = "SHIPPED")]
 		SHIPPED,
 
 		/// <summary>
-		/// Indicates the item is delivered
+		/// Indicates the item is delivered.
 		/// </summary>
 		[EnumMember(Value = "DELIVERED")]
 		DELIVERED,

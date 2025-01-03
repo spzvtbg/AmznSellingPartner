@@ -10,14 +10,14 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	{
 		/// <summary>
 		/// The listing item in the request is a variation parent or variation child of the related listing items, indicat
-		/// d by SKU
+		/// d by SKU.
 		/// </summary>
 		[EnumMember(Value = "VARIATION")]
 		VARIATION,
 
 		/// <summary>
 		/// The listing item in the request is a package container or is contained by the related listing items, indicated
-		/// by SKU
+		/// by SKU.
 		/// </summary>
 		[EnumMember(Value = "PACKAGE_HIERARCHY")]
 		PACKAGE_HIERARCHY,

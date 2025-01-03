@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Request schema for the `assignAppointmentResources` operation
+	/// Request schema for the `assignAppointmentResources` operation.
 	/// </summary>
 	public class AssignAppointmentResourcesRequest : BaseClass
 	{
 		/// <summary>
-		/// List of resource objects to be assigned
+		/// List of resource objects to be assigned.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("resources")]

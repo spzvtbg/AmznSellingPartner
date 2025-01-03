@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		KG,
 
 		/// <summary>
-		/// Pounds (Libra for Latin)
+		/// Pounds (Libra for Latin).
 		/// </summary>
 		[EnumMember(Value = "LB")]
 		LB,

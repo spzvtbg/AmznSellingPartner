@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Custom text for shipping labels
+	/// Custom text for shipping labels.
 	/// </summary>
 	public class LabelCustomization : BaseClass
 	{

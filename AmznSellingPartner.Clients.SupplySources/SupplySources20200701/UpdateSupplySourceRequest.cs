@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A request to update the configuration and capabilities of a supply source
+	/// A request to update the configuration and capabilities of a supply source.
 	/// </summary>
 	public class UpdateSupplySourceRequest : BaseClass
 	{

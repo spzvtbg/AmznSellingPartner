@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetCollectionFormGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// collection form Id to reprint a collection
+		/// collection form Id to reprint a collection.
 		/// </summary>
 		[InPath("collectionFormId")]
 		[IsRequired]
@@ -16,8 +16,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public string CollectionFormId { get; set; }
 
 		/// <summary>
-		/// Amazon shipping business to assume for this request
-		/// The default is AmazonShipping_UK
+		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
 		[JsonProperty("x-amzn-shipping-business-id")]

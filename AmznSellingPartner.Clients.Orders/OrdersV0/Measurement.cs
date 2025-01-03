@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Measurement information for an order item
+	/// Measurement information for an order item.
 	/// </summary>
 	public class Measurement : BaseClass
 	{
 		/// <summary>
-		/// The unit of measure
+		/// The unit of measure.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Unit")]
 		public Unit Unit { get; set; }
 
 		/// <summary>
-		/// The measurement value
+		/// The measurement value.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Value")]

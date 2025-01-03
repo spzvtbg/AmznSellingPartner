@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the getRates operation
+	/// The payload for the getRates operation.
 	/// </summary>
 	public class GetRatesResult : BaseClass
 	{

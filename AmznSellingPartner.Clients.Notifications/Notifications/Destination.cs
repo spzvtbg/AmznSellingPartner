@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Information about the destination created when you call the `createDestination` operation
+	/// Information about the destination created when you call the `createDestination` operation.
 	/// </summary>
 	public class Destination : BaseClass
 	{
 		/// <summary>
-		/// The developer-defined name for this destination
+		/// The developer-defined name for this destination.
 		/// </summary>
 		[IsRequired]
 		[MaxLength(256)]
@@ -18,14 +18,14 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		public string Name { get; set; }
 
 		/// <summary>
-		/// The destination identifier generated when you created the destination
+		/// The destination identifier generated when you created the destination.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("destinationId")]
 		public string DestinationId { get; set; }
 
 		/// <summary>
-		/// The resource that will receive notifications associated with this destination
+		/// The resource that will receive notifications associated with this destination.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("resource")]

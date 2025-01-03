@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Four standard images with text, presented on a grid of four quadrants
+	/// Four standard images with text, presented on a grid of four quadrants.
 	/// </summary>
 	public class StandardFourImageTextQuadrantModule : BaseClass
 	{

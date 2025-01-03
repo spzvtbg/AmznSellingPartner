@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the getTracking operation
+	/// The response schema for the getTracking operation.
 	/// </summary>
 	public class GetTrackingResponse : BaseClass
 	{

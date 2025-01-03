@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents an MSKU and the related quantity
+	/// Represents an MSKU and the related quantity.
 	/// </summary>
 	public class MskuQuantity : BaseClass
 	{
 		/// <summary>
-		/// The merchant SKU, a merchant-supplied identifier for a specific SKU
+		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Msku { get; set; }
 
 		/// <summary>
-		/// A positive integer
+		/// A positive integer.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]

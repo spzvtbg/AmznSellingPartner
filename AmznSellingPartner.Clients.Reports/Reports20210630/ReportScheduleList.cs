@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of report schedules
+	/// A list of report schedules.
 	/// </summary>
 	public class ReportScheduleList : BaseClass
 	{
 		/// <summary>
-		/// Detailed information about a report schedule
+		/// Detailed information about a report schedule.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("reportSchedules")]

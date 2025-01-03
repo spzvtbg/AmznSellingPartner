@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the `getFeatureSKU` operation
+	/// The response schema for the `getFeatureSKU` operation.
 	/// </summary>
 	public class GetFeatureSkuResponse : BaseClass
 	{

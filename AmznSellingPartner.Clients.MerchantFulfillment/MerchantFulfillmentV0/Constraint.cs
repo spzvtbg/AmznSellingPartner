@@ -5,18 +5,18 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A validation constraint
+	/// A validation constraint.
 	/// </summary>
 	public class Constraint : BaseClass
 	{
 		/// <summary>
-		/// A regular expression
+		/// A regular expression.
 		/// </summary>
 		[JsonProperty("ValidationRegEx")]
 		public string ValidationRegEx { get; set; }
 
 		/// <summary>
-		/// A validation string
+		/// A validation string.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("ValidationString")]

@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System;
 
 	/// <summary>
-	/// Preview of the changes that will be applied to the shipment
+	/// Preview of the changes that will be applied to the shipment.
 	/// </summary>
 	public class ContentUpdatePreview : BaseClass
 	{
 		/// <summary>
-		/// Identifier of a content update preview
+		/// Identifier of a content update preview.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -22,11 +22,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ContentUpdatePreviewId { get; set; }
 
 		/// <summary>
-		/// The time at which the content update expires
-		/// In [ISO 8601](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601) datetime format with pattern `yyyy-MM-ddTHH:mm:ss
-		/// sssZ`
+		/// The time at which the content update expires. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-
+		/// 601) datetime format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("expiration")]

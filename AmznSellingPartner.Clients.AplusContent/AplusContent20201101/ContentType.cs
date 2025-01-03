@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The A+ Content document type
+	/// The A+ Content document type.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ContentType
 	{
 		/// <summary>
-		/// A+ Content published through the A+ Content Manager in Seller Central
+		/// A+ Content published through the A+ Content Manager in Seller Central.
 		/// </summary>
 		[EnumMember(Value = "EBC")]
 		EBC,
 
 		/// <summary>
-		/// A+ Content published through the A+ Content Manager in Vendor Central
+		/// A+ Content published through the A+ Content Manager in Vendor Central.
 		/// </summary>
 		[EnumMember(Value = "EMC")]
 		EMC,

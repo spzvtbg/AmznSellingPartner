@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	public class ListOfferMetricsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body for the `listOfferMetrics` operation
+		/// The request body for the `listOfferMetrics` operation.
 		/// </summary>
 		[InBody("body")]
 		[JsonProperty("body")]

@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class GetScheduledPackageGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon-defined order identifier
-		/// Identifies the order that the seller wants to deliver using Amazon Easy Ship
+		/// An Amazon-defined order identifier. Identifies the order that the seller wants to deliver using Amazon Easy Sh
+		/// p.
 		/// </summary>
 		[InQuery("amazonOrderId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
-		/// An identifier for the marketplace in which the seller is selling
+		/// An identifier for the marketplace in which the seller is selling.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]

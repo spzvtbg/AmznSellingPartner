@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of error responses returned when a request is unsuccessful
+	/// A list of error responses returned when a request is unsuccessful.
 	/// </summary>
 	public class ErrorList : BaseClass
 	{
 		/// <summary>
-		/// A list of error responses returned when a request is unsuccessful
+		/// A list of error responses returned when a request is unsuccessful.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("errors")]

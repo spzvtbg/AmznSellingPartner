@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A standard headline and body text
+	/// A standard headline and body text.
 	/// </summary>
 	public class StandardTextModule : BaseClass
 	{

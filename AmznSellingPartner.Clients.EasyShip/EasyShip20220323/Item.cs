@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Item identifier and serial number information
+	/// Item identifier and serial number information.
 	/// </summary>
 	public class Item : BaseClass
 	{

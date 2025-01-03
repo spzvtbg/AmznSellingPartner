@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A value-added service to be applied to a shipping service purchase
+	/// A value-added service to be applied to a shipping service purchase.
 	/// </summary>
 	public class OneClickShipmentValueAddedService : BaseClass
 	{
 		/// <summary>
-		/// The identifier of the selected value-added service
+		/// The identifier of the selected value-added service.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("id")]

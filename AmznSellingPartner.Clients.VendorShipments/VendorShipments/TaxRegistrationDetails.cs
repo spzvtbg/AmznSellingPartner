@@ -5,20 +5,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Tax registration details of the entity
+	/// Tax registration details of the entity.
 	/// </summary>
 	public class TaxRegistrationDetails : BaseClass
 	{
 		/// <summary>
-		/// Tax registration type for the entity
+		/// Tax registration type for the entity.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("taxRegistrationType")]
 		public TaxRegistrationType TaxRegistrationType { get; set; }
 
 		/// <summary>
-		/// Tax registration number for the entity
-		/// For example, VAT ID
+		/// Tax registration number for the entity. For example, VAT ID.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("taxRegistrationNumber")]

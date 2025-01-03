@@ -7,19 +7,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System;
 
 	/// <summary>
-	/// An appointment slot time with start and end
+	/// An appointment slot time with start and end.
 	/// </summary>
 	public class AppointmentSlotTime : BaseClass
 	{
 		/// <summary>
-		/// The end timestamp of the appointment in UTC
+		/// The end timestamp of the appointment in UTC.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("endTime")]
 		public DateTime EndTime { get; set; }
 
 		/// <summary>
-		/// The start timestamp of the appointment in UTC
+		/// The start timestamp of the appointment in UTC.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("startTime")]

@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class GetRangeSlotCapacityPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Resource Identifier
+		/// Resource Identifier.
 		/// </summary>
 		[InPath("resourceId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string ResourceId { get; set; }
 
 		/// <summary>
-		/// Request body
+		/// Request body.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public RangeSlotCapacityQuery Body { get; set; }
 
 		/// <summary>
-		/// An identifier for the marketplace in which the resource operates
+		/// An identifier for the marketplace in which the resource operates.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// Next page token returned in the response of your previous request
+		/// Next page token returned in the response of your previous request.
 		/// </summary>
 		[InQuery("nextPageToken")]
 		[JsonProperty("nextPageToken")]

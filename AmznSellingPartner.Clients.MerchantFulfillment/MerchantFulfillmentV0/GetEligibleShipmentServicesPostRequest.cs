@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class GetEligibleShipmentServicesPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request schema for the `GetEligibleShipmentServices` operation
+		/// The request schema for the `GetEligibleShipmentServices` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

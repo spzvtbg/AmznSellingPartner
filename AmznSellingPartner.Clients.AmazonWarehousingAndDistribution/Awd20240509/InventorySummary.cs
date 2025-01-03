@@ -7,13 +7,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Summary of inventory per SKU
+	/// Summary of inventory per SKU.
 	/// </summary>
 	public class InventorySummary : BaseClass
 	{
 		/// <summary>
-		/// The expiration details of the inventory
-		/// This object will only appear if the `details` parameter in the request is set to `SHOW`
+		/// The expiration details of the inventory. This object will only appear if the `details` parameter in the reques
+		/// is set to `SHOW`.
 		/// </summary>
 		[JsonProperty("expirationDetails")]
 		public List<ExpirationDetails> ExpirationDetails { get; set; }
@@ -22,7 +22,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public InventoryDetails InventoryDetails { get; set; }
 
 		/// <summary>
-		/// The seller or merchant SKU
+		/// The seller or merchant SKU.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sku")]
@@ -35,7 +35,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public long TotalInboundQuantity { get; set; }
 
 		/// <summary>
-		/// Total quantity that is present in AWD distribution centers
+		/// Total quantity that is present in AWD distribution centers.
 		/// </summary>
 		[JsonProperty("totalOnhandQuantity")]
 		public long TotalOnhandQuantity { get; set; }

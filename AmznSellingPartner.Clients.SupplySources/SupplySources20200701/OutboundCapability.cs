@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The outbound capability of a supply source
+	/// The outbound capability of a supply source.
 	/// </summary>
 	public class OutboundCapability : BaseClass
 	{

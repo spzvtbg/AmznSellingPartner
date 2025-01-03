@@ -8,6 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 
 	/// <summary>
 	/// Information about a fulfillment order preview, including delivery and fee information based on shipping method
+	/// 
 	/// </summary>
 	public class FulfillmentPreview : BaseClass
 	{
@@ -19,28 +20,28 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public ScheduledDeliveryInfo ScheduledDeliveryInfo { get; set; }
 
 		/// <summary>
-		/// When true, this fulfillment order preview is fulfillable
+		/// When true, this fulfillment order preview is fulfillable.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("isFulfillable")]
 		public bool IsFulfillable { get; set; }
 
 		/// <summary>
-		/// When true, this fulfillment order preview is for COD (Cash On Delivery)
+		/// When true, this fulfillment order preview is for COD (Cash On Delivery).
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("isCODCapable")]
 		public bool IsCODCapable { get; set; }
 
 		/// <summary>
-		/// Estimated shipping weight for this fulfillment order preview
+		/// Estimated shipping weight for this fulfillment order preview.
 		/// </summary>
 		[JsonProperty("estimatedShippingWeight")]
 		public Weight EstimatedShippingWeight { get; set; }
 
 		/// <summary>
-		/// The estimated fulfillment fees for this fulfillment order preview, if applicable
-		/// The fees data will not be available for IN marketplace orders
+		/// The estimated fulfillment fees for this fulfillment order preview, if applicable. The fees data will not be av
+		/// ilable for IN marketplace orders.
 		/// </summary>
 		[JsonProperty("estimatedFees")]
 		public FeeList EstimatedFees { get; set; }
@@ -52,21 +53,21 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public UnfulfillablePreviewItemList UnfulfillablePreviewItems { get; set; }
 
 		/// <summary>
-		/// Error codes associated with the fulfillment order preview that indicate why the order is not fulfillable
-		/// Error code examples:  `DeliverySLAUnavailable` `InvalidDestinationAddress`
+		/// Error codes associated with the fulfillment order preview that indicate why the order is not fulfillable.  Err
+		/// r code examples:  `DeliverySLAUnavailable` `InvalidDestinationAddress`
 		/// </summary>
 		[JsonProperty("orderUnfulfillableReasons")]
 		public StringList OrderUnfulfillableReasons { get; set; }
 
 		/// <summary>
-		/// The marketplace the fulfillment order is placed against
+		/// The marketplace the fulfillment order is placed against.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// A list of features and their fulfillment policies to apply to the order
+		/// A list of features and their fulfillment policies to apply to the order.
 		/// </summary>
 		[JsonProperty("featureConstraints")]
 		public List<FeatureSettings> FeatureConstraints { get; set; }

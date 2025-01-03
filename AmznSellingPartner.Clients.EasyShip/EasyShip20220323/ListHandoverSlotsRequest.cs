@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request schema for the `listHandoverSlots` operation
+	/// The request schema for the `listHandoverSlots` operation.
 	/// </summary>
 	public class ListHandoverSlotsRequest : BaseClass
 	{

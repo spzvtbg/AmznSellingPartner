@@ -9,26 +9,25 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public enum Name
 	{
 		/// <summary>
-		/// Estimated fee for each unit in the fulfillment order
+		/// Estimated fee for each unit in the fulfillment order.
 		/// </summary>
 		[EnumMember(Value = "FBAPerUnitFulfillmentFee")]
 		FBAPerUnitFulfillmentFee,
 
 		/// <summary>
-		/// Estimated order-level fee
+		/// Estimated order-level fee.
 		/// </summary>
 		[EnumMember(Value = "FBAPerOrderFulfillmentFee")]
 		FBAPerOrderFulfillmentFee,
 
 		/// <summary>
-		/// Estimated shipping fee
+		/// Estimated shipping fee.
 		/// </summary>
 		[EnumMember(Value = "FBATransportationFee")]
 		FBATransportationFee,
 
 		/// <summary>
-		/// Estimated COD (Cash On Delivery) fee
-		/// This fee applies only to fulfillment order previews for COD
+		/// Estimated COD (Cash On Delivery) fee. This fee applies only to fulfillment order previews for COD.
 		/// </summary>
 		[EnumMember(Value = "FBAFulfillmentCODFee")]
 		FBAFulfillmentCODFee,

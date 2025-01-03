@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Four standard images with text, presented across a single row
+	/// Four standard images with text, presented across a single row.
 	/// </summary>
 	public class StandardFourImageTextModule : BaseClass
 	{

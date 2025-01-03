@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of various payment attributes related to this fulfillment order
+	/// An array of various payment attributes related to this fulfillment order.
 	/// </summary>
 	public class PaymentInformationList : List<PaymentInformation>
 	{

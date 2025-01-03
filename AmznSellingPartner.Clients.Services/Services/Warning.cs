@@ -6,26 +6,26 @@ namespace AmznSellingPartner.Clients.Services.Services
 
 	/// <summary>
 	/// Warning returned when the request is successful, but there are important callouts based on which API clients s
-	/// ould take defined actions
+	/// ould take defined actions.
 	/// </summary>
 	public class Warning : BaseClass
 	{
 		/// <summary>
-		/// An warning code that identifies the type of warning that occurred
+		/// An warning code that identifies the type of warning that occurred.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("code")]
 		public string Code { get; set; }
 
 		/// <summary>
-		/// A message that describes the warning condition in a human-readable form
+		/// A message that describes the warning condition in a human-readable form.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("message")]
 		public string Message { get; set; }
 
 		/// <summary>
-		/// Additional details that can help the caller understand or address the warning
+		/// Additional details that can help the caller understand or address the warning.
 		/// </summary>
 		[JsonProperty("details")]
 		public string Details { get; set; }

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the `createContainerLabel` operation
+	/// The response schema for the `createContainerLabel` operation.
 	/// </summary>
 	public class CreateContainerLabelResponse : BaseClass
 	{
 		/// <summary>
-		/// The label data for the container label
+		/// The label data for the container label.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("containerLabel")]

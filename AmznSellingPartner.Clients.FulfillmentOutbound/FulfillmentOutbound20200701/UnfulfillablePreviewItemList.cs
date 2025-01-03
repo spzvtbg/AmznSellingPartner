@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of unfulfillable preview item information
+	/// An array of unfulfillable preview item information.
 	/// </summary>
 	public class UnfulfillablePreviewItemList : List<UnfulfillablePreviewItem>
 	{

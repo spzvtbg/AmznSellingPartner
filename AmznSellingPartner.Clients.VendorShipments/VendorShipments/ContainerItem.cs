@@ -5,20 +5,20 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Carton/Pallet level details for the item
+	/// Carton/Pallet level details for the item.
 	/// </summary>
 	public class ContainerItem : BaseClass
 	{
 		/// <summary>
-		/// The reference number for the item
-		/// Please provide the itemSequenceNumber from the 'items' segment to refer to that item's details here
+		/// The reference number for the item. Please provide the itemSequenceNumber from the 'items' segment to refer to
+		/// hat item's details here.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("itemReference")]
 		public string ItemReference { get; set; }
 
 		/// <summary>
-		/// Total item quantity shipped in this carton/pallet
+		/// Total item quantity shipped in this carton/pallet.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shippedQuantity")]

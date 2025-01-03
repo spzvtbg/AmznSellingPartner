@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class GetPackageTrackingDetailsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The unencrypted package identifier returned by the `getFulfillmentOrder` operation
+		/// The unencrypted package identifier returned by the `getFulfillmentOrder` operation.
 		/// </summary>
 		[InQuery("packageNumber")]
 		[IsRequired]

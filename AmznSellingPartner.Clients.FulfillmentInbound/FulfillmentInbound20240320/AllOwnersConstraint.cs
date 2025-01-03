@@ -6,14 +6,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// A constraint that applies to all owners
-	/// If no constraint is specified, defer to any individual owner constraints
+	/// A constraint that applies to all owners. If no constraint is specified, defer to any individual owner constrai
+	/// ts.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum AllOwnersConstraint
 	{
 		/// <summary>
-		/// All owners must match
+		/// All owners must match.
 		/// </summary>
 		[EnumMember(Value = "MUST_MATCH")]
 		MUST_MATCH,

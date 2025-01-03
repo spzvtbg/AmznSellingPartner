@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The A+ Content standard fixed length list of text, usually presented as bullet points
+	/// The A+ Content standard fixed length list of text, usually presented as bullet points.
 	/// </summary>
 	public class StandardTextListBlock : BaseClass
 	{

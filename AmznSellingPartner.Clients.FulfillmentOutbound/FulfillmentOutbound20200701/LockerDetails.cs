@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The locker details, which you can use to access the locker delivery box
+	/// The locker details, which you can use to access the locker delivery box.
 	/// </summary>
 	public class LockerDetails : BaseClass
 	{

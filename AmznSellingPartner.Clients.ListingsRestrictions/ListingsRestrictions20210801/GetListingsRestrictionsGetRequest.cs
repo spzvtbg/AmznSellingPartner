@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	public class GetListingsRestrictionsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The Amazon Standard Identification Number (ASIN) of the item
+		/// The Amazon Standard Identification Number (ASIN) of the item.
 		/// </summary>
 		[InQuery("asin")]
 		[IsRequired]
@@ -17,14 +17,14 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		public string Asin { get; set; }
 
 		/// <summary>
-		/// The condition used to filter restrictions
+		/// The condition used to filter restrictions.
 		/// </summary>
 		[InQuery("conditionType")]
 		[JsonProperty("conditionType")]
 		public ConditionType ConditionType { get; set; }
 
 		/// <summary>
-		/// A selling partner identifier, such as a merchant account
+		/// A selling partner identifier, such as a merchant account.
 		/// </summary>
 		[InQuery("sellerId")]
 		[IsRequired]
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		public string SellerId { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of Amazon marketplace identifiers for the request
+		/// A comma-delimited list of Amazon marketplace identifiers for the request.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
@@ -40,10 +40,9 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// A locale for reason text localization
-		/// When not provided, the default language code of the first marketplace is used
-		/// Examples: "en_US", "fr_CA", "fr_FR"
-		/// Localized messages default to "en_US" when a localization is not available in the specified locale
+		/// A locale for reason text localization. When not provided, the default language code of the first marketplace i
+		/// used. Examples: "en_US", "fr_CA", "fr_FR". Localized messages default to "en_US" when a localization is not a
+		/// ailable in the specified locale.
 		/// </summary>
 		[InQuery("reasonLocale")]
 		[JsonProperty("reasonLocale")]

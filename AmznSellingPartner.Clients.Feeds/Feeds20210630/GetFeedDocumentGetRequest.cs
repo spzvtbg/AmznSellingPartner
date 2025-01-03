@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	public class GetFeedDocumentGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier of the feed document
+		/// The identifier of the feed document.
 		/// </summary>
 		[InPath("feedDocumentId")]
 		[IsRequired]

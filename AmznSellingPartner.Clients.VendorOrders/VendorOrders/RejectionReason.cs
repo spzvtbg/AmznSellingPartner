@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum RejectionReason
 	{
 		/// <summary>
-		/// Items are currently not available
+		/// Items are currently not available.
 		/// </summary>
 		[EnumMember(Value = "TemporarilyUnavailable")]
 		TemporarilyUnavailable,
 
 		/// <summary>
-		/// Item cannot be found with the provided identifier
+		/// Item cannot be found with the provided identifier.
 		/// </summary>
 		[EnumMember(Value = "InvalidProductIdentifier")]
 		InvalidProductIdentifier,
 
 		/// <summary>
-		/// Item is no longer sold
+		/// Item is no longer sold.
 		/// </summary>
 		[EnumMember(Value = "ObsoleteProduct")]
 		ObsoleteProduct,

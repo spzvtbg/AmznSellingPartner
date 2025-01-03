@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the `getFeatures` operation
+	/// The payload for the `getFeatures` operation.
 	/// </summary>
 	public class GetFeaturesResult : BaseClass
 	{

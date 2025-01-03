@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of features
+	/// An array of features.
 	/// </summary>
 	public class Features : List<Feature>
 	{

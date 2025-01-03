@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload schema for the getInventorySummaries operation
+	/// The payload schema for the getInventorySummaries operation.
 	/// </summary>
 	public class GetInventorySummariesResult : BaseClass
 	{

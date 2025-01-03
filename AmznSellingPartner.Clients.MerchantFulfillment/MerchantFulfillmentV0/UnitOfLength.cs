@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The unit of length
+	/// The unit of length.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum UnitOfLength
 	{
 		/// <summary>
-		/// The unit of length is inches
+		/// The unit of length is inches.
 		/// </summary>
 		[EnumMember(Value = "inches")]
 		inches,
 
 		/// <summary>
-		/// The unit of length is centimeters
+		/// The unit of length is centimeters.
 		/// </summary>
 		[EnumMember(Value = "centimeters")]
 		centimeters,

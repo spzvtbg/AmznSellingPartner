@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public enum PackingGroup
 	{
 		/// <summary>
-		/// Packing group I indicates great danger
+		/// Packing group I indicates great danger.
 		/// </summary>
 		[EnumMember(Value = "I")]
 		I,
 
 		/// <summary>
-		/// Packing group II indicates medium danger
+		/// Packing group II indicates medium danger.
 		/// </summary>
 		[EnumMember(Value = "II")]
 		II,
 
 		/// <summary>
-		/// Packing group III indicates minor danger
+		/// Packing group III indicates minor danger.
 		/// </summary>
 		[EnumMember(Value = "III")]
 		III,

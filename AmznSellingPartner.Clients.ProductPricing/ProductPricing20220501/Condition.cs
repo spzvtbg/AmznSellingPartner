@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The condition of the item
+	/// The condition of the item.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum Condition

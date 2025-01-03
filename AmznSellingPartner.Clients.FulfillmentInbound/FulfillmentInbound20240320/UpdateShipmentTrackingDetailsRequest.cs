@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `updateShipmentTrackingDetails` request
+	/// The `updateShipmentTrackingDetails` request.
 	/// </summary>
 	public class UpdateShipmentTrackingDetailsRequest : BaseClass
 	{

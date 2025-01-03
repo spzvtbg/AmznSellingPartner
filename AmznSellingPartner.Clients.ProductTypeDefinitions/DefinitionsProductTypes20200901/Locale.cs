@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public enum Locale
 	{
 		/// <summary>
-		/// Default locale of the requested Amazon marketplace
+		/// Default locale of the requested Amazon marketplace.
 		/// </summary>
 		[EnumMember(Value = "DEFAULT")]
 		DEFAULT,
@@ -21,10 +21,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		ar,
 
 		/// <summary>
-		/// Arabic (U
-		/// A
-		/// E
-		/// )
+		/// Arabic (U.A.E.)
 		/// </summary>
 		[EnumMember(Value = "ar_AE")]
 		ar_AE,
@@ -48,10 +45,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		en,
 
 		/// <summary>
-		/// English (U
-		/// A
-		/// E
-		/// )
+		/// English (U.A.E.)
 		/// </summary>
 		[EnumMember(Value = "en_AE")]
 		en_AE,

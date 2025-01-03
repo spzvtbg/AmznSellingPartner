@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The shipper instruction
+	/// The shipper instruction.
 	/// </summary>
 	public class ShipperInstruction : BaseClass
 	{

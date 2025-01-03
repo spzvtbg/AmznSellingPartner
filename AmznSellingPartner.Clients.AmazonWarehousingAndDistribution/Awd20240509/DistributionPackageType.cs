@@ -6,20 +6,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Type of distribution packages
+	/// Type of distribution packages.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum DistributionPackageType
 	{
 		/// <summary>
-		/// Package type `CASE`
+		/// Package type `CASE`.
 		/// </summary>
 		[EnumMember(Value = "CASE")]
 		CASE,
 
 		/// <summary>
-		/// Package type `PALLET`
-		/// Currently, the `PALLET` package type is not supported
+		/// Package type `PALLET`. Currently, the `PALLET` package type is not supported.
 		/// </summary>
 		[EnumMember(Value = "PALLET")]
 		PALLET,

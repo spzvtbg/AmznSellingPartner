@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the `getAccount` operation
+	/// The response schema for the `getAccount` operation.
 	/// </summary>
 	public class Account : BaseClass
 	{
@@ -14,14 +14,14 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		public MarketplaceParticipationList MarketplaceParticipationList { get; set; }
 
 		/// <summary>
-		/// The type of business registered for the seller account
+		/// The type of business registered for the seller account.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("businessType")]
 		public BusinessType BusinessType { get; set; }
 
 		/// <summary>
-		/// The selling plan details
+		/// The selling plan details.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sellingPlan")]

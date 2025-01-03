@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class SubmitShippingLabelRequestPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body that contains the shipping labels data
+		/// The request body that contains the shipping labels data.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

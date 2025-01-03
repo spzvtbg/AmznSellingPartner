@@ -8,20 +8,20 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is204 { get; set; }
 
 		/// <summary>
-		/// Your rate limit (requests per second) for this operation
-		/// **Note:** For this status code, the rate limit header is deprecated and no longer returned
+		/// Your rate limit (requests per second) for this operation. **Note:** For this status code, the rate limit heade
+		/// is deprecated and no longer returned.
 		/// </summary>
 		[JsonProperty("x-amzn-RateLimit-Limit")]
 		public string XAmznRateLimitLimit { get; set; }
 
 		/// <summary>
-		/// Unique request reference id
+		/// Unique request reference id.
 		/// </summary>
 		[JsonProperty("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; }
 
 		/// <summary>
-		/// Success response
+		/// Success response.
 		/// </summary>
 		[JsonProperty("Value204")]
 		public CancelReservationResponse Value204 { get; set; }
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is400 { get; set; }
 
 		/// <summary>
-		/// Request has missing or invalid parameters and cannot be parsed
+		/// Request has missing or invalid parameters and cannot be parsed.
 		/// </summary>
 		[JsonProperty("Value400")]
 		public CancelReservationResponse Value400 { get; set; }
@@ -40,7 +40,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 
 		/// <summary>
 		/// 403 can be caused for reasons like Access Denied, Unauthorized, Expired Token, Invalid Signature or Resource N
-		/// t Found
+		/// t Found.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public CancelReservationResponse Value403 { get; set; }
@@ -49,7 +49,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is404 { get; set; }
 
 		/// <summary>
-		/// The reservation specified does not exist
+		/// The reservation specified does not exist.
 		/// </summary>
 		[JsonProperty("Value404")]
 		public CancelReservationResponse Value404 { get; set; }
@@ -58,7 +58,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is413 { get; set; }
 
 		/// <summary>
-		/// The request size exceeded the maximum accepted size
+		/// The request size exceeded the maximum accepted size.
 		/// </summary>
 		[JsonProperty("Value413")]
 		public CancelReservationResponse Value413 { get; set; }
@@ -67,7 +67,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is415 { get; set; }
 
 		/// <summary>
-		/// The entity of the request is in a format not supported by the requested resource
+		/// The entity of the request is in a format not supported by the requested resource.
 		/// </summary>
 		[JsonProperty("Value415")]
 		public CancelReservationResponse Value415 { get; set; }
@@ -76,7 +76,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is429 { get; set; }
 
 		/// <summary>
-		/// The frequency of requests was greater than allowed
+		/// The frequency of requests was greater than allowed.
 		/// </summary>
 		[JsonProperty("Value429")]
 		public CancelReservationResponse Value429 { get; set; }
@@ -85,7 +85,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is500 { get; set; }
 
 		/// <summary>
-		/// Encountered an unexpected condition which prevented the server from fulfilling the request
+		/// Encountered an unexpected condition which prevented the server from fulfilling the request.
 		/// </summary>
 		[JsonProperty("Value500")]
 		public CancelReservationResponse Value500 { get; set; }
@@ -94,7 +94,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is503 { get; set; }
 
 		/// <summary>
-		/// Temporary overloading or maintenance of the server
+		/// Temporary overloading or maintenance of the server.
 		/// </summary>
 		[JsonProperty("Value503")]
 		public CancelReservationResponse Value503 { get; set; }

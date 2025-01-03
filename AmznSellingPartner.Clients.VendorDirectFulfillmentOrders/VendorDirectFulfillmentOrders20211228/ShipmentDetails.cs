@@ -5,42 +5,40 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Shipment details required for the shipment
+	/// Shipment details required for the shipment.
 	/// </summary>
 	public class ShipmentDetails : BaseClass
 	{
 		/// <summary>
-		/// When true, this is a priority shipment
+		/// When true, this is a priority shipment.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("isPriorityShipment")]
 		public bool IsPriorityShipment { get; set; }
 
 		/// <summary>
-		/// When true, this order is part of a scheduled delivery program
+		/// When true, this order is part of a scheduled delivery program.
 		/// </summary>
 		[JsonProperty("isScheduledDeliveryShipment")]
 		public bool IsScheduledDeliveryShipment { get; set; }
 
 		/// <summary>
-		/// When true, a packing slip is required to be sent to the customer
+		/// When true, a packing slip is required to be sent to the customer.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("isPslipRequired")]
 		public bool IsPslipRequired { get; set; }
 
 		/// <summary>
-		/// When true, the order contain a gift
-		/// Include the gift message and gift wrap information
+		/// When true, the order contain a gift. Include the gift message and gift wrap information.
 		/// </summary>
 		[JsonProperty("isGift")]
 		public bool IsGift { get; set; }
 
 		/// <summary>
-		/// Ship method to be used for shipping the order
-		/// Amazon defines ship method codes indicating the shipping carrier and shipment service level
-		/// To see the full list of ship methods in use, including both the code and the friendly name, search the 'Help'
-		/// section on Vendor Central for 'ship methods'
+		/// Ship method to be used for shipping the order. Amazon defines ship method codes indicating the shipping carrie
+		/// and shipment service level. To see the full list of ship methods in use, including both the code and the frie
+		/// dly name, search the 'Help' section on Vendor Central for 'ship methods'.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipMethod")]
@@ -51,7 +49,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public ShipmentDates ShipmentDates { get; set; }
 
 		/// <summary>
-		/// Message to customer for order status
+		/// Message to customer for order status.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("messageToCustomer")]

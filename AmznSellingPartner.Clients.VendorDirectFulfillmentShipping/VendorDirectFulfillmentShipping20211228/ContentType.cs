@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public enum ContentType
 	{
 		/// <summary>
-		/// Portable Document Format (pdf)
+		/// Portable Document Format (pdf).
 		/// </summary>
 		[EnumMember(Value = "application/pdf")]
 		application_pdf,

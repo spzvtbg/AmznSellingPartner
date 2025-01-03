@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class ListHandoverSlotsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request schema for the `listHandoverSlots` operation
+		/// The request schema for the `listHandoverSlots` operation.
 		/// </summary>
 		[InBody("ListHandoverSlotsRequest")]
 		[JsonProperty("ListHandoverSlotsRequest")]

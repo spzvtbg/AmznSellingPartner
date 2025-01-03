@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public enum OfferType
 	{
 		/// <summary>
-		/// An offer that is available to all Amazon customers
+		/// An offer that is available to all Amazon customers.
 		/// </summary>
 		[EnumMember(Value = "CONSUMER")]
 		CONSUMER,

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request schema to get query collections form history API
+	/// The request schema to get query collections form history API .
 	/// </summary>
 	public class GetCollectionFormHistoryRequest : BaseClass
 	{
@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public ClientReferenceDetails ClientReferenceDetails { get; set; }
 
 		/// <summary>
-		/// max Number of Results for query
+		/// max Number of Results for query .
 		/// </summary>
 		[JsonProperty("maxResults")]
 		public int MaxResults { get; set; }

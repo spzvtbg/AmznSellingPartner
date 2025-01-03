@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 
 	/// <summary>
 	/// Indicates the tax specifications associated with the shipment for customs compliance purposes in certain regio
-	/// s
+	/// s.
 	/// </summary>
 	public class TaxDetail : BaseClass
 	{
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 
 		/// <summary>
 		/// The shipper's tax registration number associated with the shipment for customs compliance purposes in certain
-		/// egions
+		/// egions.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("taxRegistrationNumber")]

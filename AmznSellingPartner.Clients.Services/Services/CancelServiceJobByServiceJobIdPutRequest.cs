@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class CancelServiceJobByServiceJobIdPutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon defined service job identifier
+		/// An Amazon defined service job identifier.
 		/// </summary>
 		[InPath("serviceJobId")]
 		[IsRequired]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string ServiceJobId { get; set; }
 
 		/// <summary>
-		/// A cancel reason code that specifies the reason for cancelling a service job
+		/// A cancel reason code that specifies the reason for cancelling a service job.
 		/// </summary>
 		[InQuery("cancellationReasonCode")]
 		[IsRequired]

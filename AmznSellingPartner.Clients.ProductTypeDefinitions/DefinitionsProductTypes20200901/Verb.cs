@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public enum Verb
 	{
 		/// <summary>
-		/// The provided resource is accessed with the HTTP GET method
+		/// The provided resource is accessed with the HTTP GET method.
 		/// </summary>
 		[EnumMember(Value = "GET")]
 		GET,

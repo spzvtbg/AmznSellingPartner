@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class GetAdditionalSellerInputsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request schema for the `GetAdditionalSellerInputs` operation
+		/// The request schema for the `GetAdditionalSellerInputs` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

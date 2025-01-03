@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ListPackingGroupItemsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// Identifier of a packing group
+		/// Identifier of a packing group.
 		/// </summary>
 		[InPath("packingGroupId")]
 		[IsRequired]
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackingGroupId { get; set; }
 
 		/// <summary>
-		/// The number of packing group items to return in the response matching the given query
+		/// The number of packing group items to return in the response matching the given query.
 		/// </summary>
 		[InQuery("pageSize")]
 		[Minimum(1)]
@@ -39,9 +39,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public int PageSize { get; set; }
 
 		/// <summary>
-		/// A token to fetch a certain page when there are multiple pages worth of results
-		/// The value of this token is fetched from the `pagination` returned in the API response
-		/// In the absence of the token value from the query parameter the API returns the first page of the result
+		/// A token to fetch a certain page when there are multiple pages worth of results. The value of this token is fet
+		/// hed from the `pagination` returned in the API response. In the absence of the token value from the query param
+		/// ter the API returns the first page of the result.
 		/// </summary>
 		[InQuery("paginationToken")]
 		[MinLength(0)]

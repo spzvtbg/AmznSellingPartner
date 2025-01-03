@@ -7,9 +7,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The document specifications requested
-	/// For calls to the purchaseShipment operation, the shipment purchase fails if the specified document specificat
-	/// ons are not among those returned in the response to the getRates operation
+	/// The document specifications requested. For calls to the purchaseShipment operation, the shipment purchase fail
+	/// if the specified document specifications are not among those returned in the response to the getRates operati
+	/// n.
 	/// </summary>
 	public class RequestedDocumentSpecification : BaseClass
 	{
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public NeedFileJoining NeedFileJoining { get; set; }
 
 		/// <summary>
-		/// A list of the document types requested
+		/// A list of the document types requested.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("requestedDocumentTypes")]

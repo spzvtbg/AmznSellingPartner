@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Amazon Prime details
+	/// Amazon Prime details.
 	/// </summary>
 	public class PrimeDetails : BaseClass
 	{
 		/// <summary>
-		/// Indicates whether the offer is an Amazon Prime offer
+		/// Indicates whether the offer is an Amazon Prime offer.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("eligibility")]

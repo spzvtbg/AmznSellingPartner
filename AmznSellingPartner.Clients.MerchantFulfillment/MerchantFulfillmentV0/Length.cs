@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The length
+	/// The length.
 	/// </summary>
 	public class Length : BaseClass
 	{
 		/// <summary>
-		/// The value in units
+		/// The value in units.
 		/// </summary>
 		[JsonProperty("value")]
 		public double Value { get; set; }

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request body for the `updateVerificationStatus` operation
+	/// The request body for the `updateVerificationStatus` operation.
 	/// </summary>
 	public class UpdateVerificationStatusRequest : BaseClass
 	{
 		/// <summary>
-		/// The updated values of the `VerificationStatus` field
+		/// The updated values of the `VerificationStatus` field.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("regulatedOrderVerificationStatus")]

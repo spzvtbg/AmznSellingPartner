@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The reason why a shipping service offering is ineligible
+	/// The reason why a shipping service offering is ineligible.
 	/// </summary>
 	public class IneligibilityReason : BaseClass
 	{
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public IneligibilityReasonCode Code { get; set; }
 
 		/// <summary>
-		/// The ineligibility reason
+		/// The ineligibility reason.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("message")]

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	public class CreateFeedPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Information required to create the feed
+		/// Information required to create the feed.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

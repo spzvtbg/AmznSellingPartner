@@ -5,18 +5,18 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Business days and hours when the destination is open for deliveries
+	/// Business days and hours when the destination is open for deliveries.
 	/// </summary>
 	public class BusinessHours : BaseClass
 	{
 		/// <summary>
-		/// Day of the week
+		/// Day of the week.
 		/// </summary>
 		[JsonProperty("DayOfWeek")]
 		public DayOfWeek DayOfWeek { get; set; }
 
 		/// <summary>
-		/// Time window during the day when the business is open
+		/// Time window during the day when the business is open.
 		/// </summary>
 		[JsonProperty("OpenIntervals")]
 		public List<OpenInterval> OpenIntervals { get; set; }

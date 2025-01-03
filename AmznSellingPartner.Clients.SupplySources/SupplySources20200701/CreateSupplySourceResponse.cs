@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The result of creating a new supply source
+	/// The result of creating a new supply source.
 	/// </summary>
 	public class CreateSupplySourceResponse : BaseClass
 	{

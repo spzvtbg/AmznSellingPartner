@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The fulfillment availability details for the listings item
+	/// The fulfillment availability details for the listings item.
 	/// </summary>
 	public class FulfillmentAvailability : BaseClass
 	{
 		/// <summary>
-		/// The code of the fulfillment network that will be used
+		/// The code of the fulfillment network that will be used.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("fulfillmentChannelCode")]
 		public string FulfillmentChannelCode { get; set; }
 
 		/// <summary>
-		/// The quantity of the item you are making available for sale
+		/// The quantity of the item you are making available for sale.
 		/// </summary>
 		[Minimum(0)]
 		[JsonProperty("quantity")]

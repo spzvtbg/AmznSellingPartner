@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	public class CreateNotificationPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body for the `createNotification` operation
+		/// The request body for the `createNotification` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

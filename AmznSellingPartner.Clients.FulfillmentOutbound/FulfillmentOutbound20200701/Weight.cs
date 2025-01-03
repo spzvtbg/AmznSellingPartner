@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The weight
+	/// The weight.
 	/// </summary>
 	public class Weight : BaseClass
 	{
 		/// <summary>
-		/// The unit of weight
+		/// The unit of weight.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("unit")]
 		public Unit Unit { get; set; }
 
 		/// <summary>
-		/// The weight value
+		/// The weight value.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("value")]

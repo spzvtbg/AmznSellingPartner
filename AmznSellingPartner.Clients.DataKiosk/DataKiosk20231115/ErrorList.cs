@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of error responses returned when a request is unsuccessful
+	/// A list of error responses returned when a request is unsuccessful.
 	/// </summary>
 	public class ErrorList : BaseClass
 	{
 		/// <summary>
-		/// Error response returned when the request is unsuccessful
+		/// Error response returned when the request is unsuccessful.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("errors")]

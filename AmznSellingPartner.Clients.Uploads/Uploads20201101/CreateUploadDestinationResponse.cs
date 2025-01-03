@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the createUploadDestination operation
+	/// The response schema for the createUploadDestination operation.
 	/// </summary>
 	public class CreateUploadDestinationResponse : BaseClass
 	{

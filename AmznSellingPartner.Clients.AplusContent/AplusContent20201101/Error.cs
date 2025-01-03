@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Error response returned when the request is unsuccessful
+	/// Error response returned when the request is unsuccessful.
 	/// </summary>
 	public class Error : BaseClass
 	{
 		/// <summary>
-		/// The code that identifies the type of error condition
+		/// The code that identifies the type of error condition.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public string Code { get; set; }
 
 		/// <summary>
-		/// A human readable description of the error condition
+		/// A human readable description of the error condition.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public string Message { get; set; }
 
 		/// <summary>
-		/// Additional information, if available, to clarify the error condition
+		/// Additional information, if available, to clarify the error condition.
 		/// </summary>
 		[MinLength(1)]
 		[JsonProperty("details")]

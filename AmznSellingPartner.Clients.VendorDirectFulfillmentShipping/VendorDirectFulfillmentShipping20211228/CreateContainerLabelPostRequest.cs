@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class CreateContainerLabelPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Request body containing the container label data
+		/// Request body containing the container label data.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

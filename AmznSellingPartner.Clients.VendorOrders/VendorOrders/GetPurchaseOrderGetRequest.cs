@@ -8,8 +8,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class GetPurchaseOrderGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The purchase order identifier for the order that you want
-		/// Formatting Notes: 8-character alpha-numeric code
+		/// The purchase order identifier for the order that you want. Formatting Notes: 8-character alpha-numeric code.
 		/// </summary>
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]

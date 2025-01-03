@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public enum ContainerType
 	{
 		/// <summary>
-		/// A packing container type that is typically used for drinks or food
+		/// A packing container type that is typically used for drinks or food.
 		/// </summary>
 		[EnumMember(Value = "Carton")]
 		Carton,
 
 		/// <summary>
-		/// A flat transport structure which supports goods in a stable fashion while being lifted by a forklift
+		/// A flat transport structure which supports goods in a stable fashion while being lifted by a forklift.
 		/// </summary>
 		[EnumMember(Value = "Pallet")]
 		Pallet,

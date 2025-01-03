@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An Amazon order item identifier and a quantity
+	/// An Amazon order item identifier and a quantity.
 	/// </summary>
 	public class Item : BaseClass
 	{
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public TransparencyCodeList TransparencyCodeList { get; set; }
 
 		/// <summary>
-		/// A list of additional seller inputs required to ship this item using the chosen shipping service
+		/// A list of additional seller inputs required to ship this item using the chosen shipping service.
 		/// </summary>
 		[JsonProperty("ItemLevelSellerInputsList")]
 		public AdditionalSellerInputsList ItemLevelSellerInputsList { get; set; }
@@ -36,8 +36,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public LiquidVolume LiquidVolume { get; set; }
 
 		/// <summary>
-		/// When true, the item qualifies as hazardous materials (hazmat)
-		/// Defaults to false
+		/// When true, the item qualifies as hazardous materials (hazmat). Defaults to false.
 		/// </summary>
 		[JsonProperty("IsHazmat")]
 		public bool IsHazmat { get; set; }

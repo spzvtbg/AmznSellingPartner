@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	public class GetOrderScenariosGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The transaction identifier returned in the response to the generateOrderScenarios operation
+		/// The transaction identifier returned in the response to the generateOrderScenarios operation.
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]

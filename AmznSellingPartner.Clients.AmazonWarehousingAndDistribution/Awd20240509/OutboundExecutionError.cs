@@ -7,27 +7,27 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Execution errors associated with the outbound order
-	/// This field will be populated if the order failed validation
+	/// Execution errors associated with the outbound order. This field will be populated if the order failed validati
+	/// n.
 	/// </summary>
 	public class OutboundExecutionError : BaseClass
 	{
 		/// <summary>
-		/// Failure code details for the error
+		/// Failure code details for the error.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("failureCode")]
 		public string FailureCode { get; set; }
 
 		/// <summary>
-		/// Failure reasons for the error
+		/// Failure reasons for the error.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("failureReasons")]
 		public List<string> FailureReasons { get; set; }
 
 		/// <summary>
-		/// MSKU associated with the error
+		/// MSKU associated with the error.
 		/// </summary>
 		[JsonProperty("sku")]
 		public string Sku { get; set; }

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Response schema for the `cancelReservation` operation
+	/// Response schema for the `cancelReservation` operation.
 	/// </summary>
 	public class CancelReservationResponse : BaseClass
 	{

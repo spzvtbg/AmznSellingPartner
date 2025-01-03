@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Object representing an excluded benefit that is excluded for an ShippingOffering/Rate
+	/// Object representing an excluded benefit that is excluded for an ShippingOffering/Rate.
 	/// </summary>
 	public class ExcludedBenefit : BaseClass
 	{

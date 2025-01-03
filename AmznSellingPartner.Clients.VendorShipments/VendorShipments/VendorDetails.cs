@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Vendor Details as part of Label response
+	/// Vendor Details as part of Label response.
 	/// </summary>
 	public class VendorDetails : BaseClass
 	{
 		/// <summary>
-		/// Name/Address and tax details of the selling party
+		/// Name/Address and tax details of the selling party.
 		/// </summary>
 		[JsonProperty("sellingParty")]
 		public PartyIdentification SellingParty { get; set; }

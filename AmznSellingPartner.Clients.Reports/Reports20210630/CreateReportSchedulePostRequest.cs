@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public class CreateReportSchedulePostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Information required to create the report schedule
+		/// Information required to create the report schedule.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

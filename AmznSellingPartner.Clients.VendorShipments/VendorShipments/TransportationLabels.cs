@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The request schema for the GetShipmentLabels operation
+	/// The request schema for the GetShipmentLabels operation.
 	/// </summary>
 	public class TransportationLabels : BaseClass
 	{
@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public Pagination Pagination { get; set; }
 
 		/// <summary>
-		/// A list of one or more ShipmentLabels
+		/// A list of one or more ShipmentLabels.
 		/// </summary>
 		[JsonProperty("transportLabels")]
 		public List<TransportLabel> TransportLabels { get; set; }

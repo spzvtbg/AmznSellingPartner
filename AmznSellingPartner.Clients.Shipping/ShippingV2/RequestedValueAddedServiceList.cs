@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The value-added services to be added to a shipping service purchase
+	/// The value-added services to be added to a shipping service purchase.
 	/// </summary>
 	public class RequestedValueAddedServiceList : List<RequestedValueAddedService>
 	{

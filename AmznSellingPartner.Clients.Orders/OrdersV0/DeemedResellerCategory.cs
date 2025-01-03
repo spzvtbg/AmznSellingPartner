@@ -9,15 +9,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum DeemedResellerCategory
 	{
 		/// <summary>
-		/// Import one stop shop
-		/// The item being purchased is not held in the EU for shipment
+		/// Import one stop shop. The item being purchased is not held in the EU for shipment.
 		/// </summary>
 		[EnumMember(Value = "IOSS")]
 		IOSS,
 
 		/// <summary>
-		/// Union one stop shop
-		/// The item being purchased is held in the EU for shipment
+		/// Union one stop shop. The item being purchased is held in the EU for shipment.
 		/// </summary>
 		[EnumMember(Value = "UOSS")]
 		UOSS,

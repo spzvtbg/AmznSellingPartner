@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The weight
+	/// The weight.
 	/// </summary>
 	public class Weight : BaseClass
 	{

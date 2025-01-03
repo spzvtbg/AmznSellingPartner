@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Request schema
+	/// Request schema.
 	/// </summary>
 	public class GetAdditionalSellerInputsRequest : BaseClass
 	{
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public ShippingServiceIdentifier ShippingServiceId { get; set; }
 
 		/// <summary>
-		/// The address from which to ship
+		/// The address from which to ship.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("ShipFromAddress")]

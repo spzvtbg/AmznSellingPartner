@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	public enum FeedbackActionCode
 	{
 		/// <summary>
-		/// The seller completed the action attached to the posted notification
+		/// The seller completed the action attached to the posted notification.
 		/// </summary>
 		[EnumMember(Value = "SELLER_ACTION_COMPLETED")]
 		SELLER_ACTION_COMPLETED,

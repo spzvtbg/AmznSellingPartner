@@ -6,20 +6,16 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 	public class TokensClient(Uri baseAddress) : BaseHttpClient((baseAddress))
 	{
 		/// <summary>
-		/// Returns a Restricted Data Token (RDT) for one or more restricted resources that you specify
-		/// A restricted resource is the HTTP method and path from a restricted operation that returns Personally Identif
-		/// able Information (PII), plus a dataElements value that indicates the type of PII requested
-		/// See the Tokens API Use Case Guide for a list of restricted operations
-		/// Use the RDT returned here as the access token in subsequent calls to the corresponding restricted operations
-		/// **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 1 | 10 |  The `x-amzn-RateLimit-Li
-		/// it` response header returns the usage plan rate limits that were applied to the requested operation, when avai
-		/// able
-		/// The table above indicates the default rate and burst values for this operation
-		/// Selling partners whose business demands require higher throughput may see higher rate and burst values than t
-		/// ose shown here
-		/// For more information, see [Usage Plans and Rate Limits in the Selling Partner API](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api)
+		/// Returns a Restricted Data Token (RDT) for one or more restricted resources that you specify. A restricted reso
+		/// rce is the HTTP method and path from a restricted operation that returns Personally Identifiable Information (
+		/// II), plus a dataElements value that indicates the type of PII requested. See the Tokens API Use Case Guide for
+		/// a list of restricted operations. Use the RDT returned here as the access token in subsequent calls to the corr
+		/// sponding restricted operations.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 1 |
+		/// 10 |  The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits that were applied to the
+		/// requested operation, when available. The table above indicates the default rate and burst values for this oper
+		/// tion. Selling partners whose business demands require higher throughput may see higher rate and burst values t
+		/// an those shown here. For more information, see [Usage Plans and Rate Limits in the Selling Partner API](https:
+		/// /developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateRestrictedDataTokenPostResponse> CreateRestrictedDataTokenAsync(CreateRestrictedDataTokenPostRequest request)
 		    => await this.SendAsync<CreateRestrictedDataTokenPostResponse>(request);

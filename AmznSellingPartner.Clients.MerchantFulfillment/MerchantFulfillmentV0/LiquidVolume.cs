@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Liquid volume
+	/// Liquid volume.
 	/// </summary>
 	public class LiquidVolume : BaseClass
 	{
 		/// <summary>
-		/// The unit of measurement
+		/// The unit of measurement.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Unit")]
 		public Unit Unit { get; set; }
 
 		/// <summary>
-		/// The measurement value
+		/// The measurement value.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Value")]

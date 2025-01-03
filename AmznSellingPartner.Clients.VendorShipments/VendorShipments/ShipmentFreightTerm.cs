@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public enum ShipmentFreightTerm
 	{
 		/// <summary>
-		/// Buyer Pays / We Pay for the the transportation
-		/// Buyer pays for the shipment and provides Vendor and picks up shipment from vendor warehouse / location
+		/// Buyer Pays / We Pay for the the transportation. Buyer pays for the shipment and provides Vendor and picks up s
+		/// ipment from vendor warehouse / location
 		/// </summary>
 		[EnumMember(Value = "Collect")]
 		Collect,
 
 		/// <summary>
-		/// Vendor pays / They Pay for the transportation
-		/// Vendor pays for the shipment and ships the goods to buyer warehouse / location
+		/// Vendor pays / They Pay for the transportation. Vendor pays for the shipment and ships the goods to buyer wareh
+		/// use / location
 		/// </summary>
 		[EnumMember(Value = "Prepaid")]
 		Prepaid,

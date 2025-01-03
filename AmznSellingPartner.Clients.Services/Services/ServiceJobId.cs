@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using AmznSellingPartner.Clients.Values;
 
 	/// <summary>
-	/// Amazon identifier for the service job
+	/// Amazon identifier for the service job.
 	/// </summary>
 	[MinLength(1)]
 	[MaxLength(100)]

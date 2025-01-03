@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The request schema for the SubmitShipmentConfirmations operation
+	/// The request schema for the SubmitShipmentConfirmations operation.
 	/// </summary>
 	public class SubmitShipmentConfirmationsRequest : BaseClass
 	{
 		/// <summary>
-		/// A list of one or more shipment confirmations
+		/// A list of one or more shipment confirmations.
 		/// </summary>
 		[JsonProperty("shipmentConfirmations")]
 		public List<ShipmentConfirmation> ShipmentConfirmations { get; set; }

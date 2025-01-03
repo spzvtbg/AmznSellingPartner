@@ -6,24 +6,24 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 
 	/// <summary>
 	/// A property group represents a logical grouping of schema properties that can be used for display or informatio
-	/// al purposes
+	/// al purposes.
 	/// </summary>
 	public class PropertyGroup : BaseClass
 	{
 		/// <summary>
-		/// The display label of the property group
+		/// The display label of the property group.
 		/// </summary>
 		[JsonProperty("title")]
 		public string Title { get; set; }
 
 		/// <summary>
-		/// The description of the property group
+		/// The description of the property group.
 		/// </summary>
 		[JsonProperty("description")]
 		public string Description { get; set; }
 
 		/// <summary>
-		/// The names of the schema properties for the property group
+		/// The names of the schema properties for the property group.
 		/// </summary>
 		[JsonProperty("propertyNames")]
 		public List<string> PropertyNames { get; set; }

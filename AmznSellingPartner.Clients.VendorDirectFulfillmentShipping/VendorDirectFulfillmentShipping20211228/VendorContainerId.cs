@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using AmznSellingPartner.Clients.Values;
 
 	/// <summary>
-	/// The unique, vendor-provided identifier for the container
+	/// The unique, vendor-provided identifier for the container.
 	/// </summary>
 	public class VendorContainerId : StringValue
 	{

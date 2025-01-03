@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class SearchContentDocumentsResponse : BaseClass
 	{
 		/// <summary>
-		/// The content metadata records
+		/// The content metadata records.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("contentMetadataRecords")]

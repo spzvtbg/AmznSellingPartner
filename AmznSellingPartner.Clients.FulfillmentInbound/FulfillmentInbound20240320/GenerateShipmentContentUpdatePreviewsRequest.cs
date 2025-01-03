@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `GenerateShipmentContentUpdatePreviews` request
+	/// The `GenerateShipmentContentUpdatePreviews` request.
 	/// </summary>
 	public class GenerateShipmentContentUpdatePreviewsRequest : BaseClass
 	{
 		/// <summary>
-		/// A list of boxes that will be present in the shipment after the update
+		/// A list of boxes that will be present in the shipment after the update.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public List<BoxUpdateInput> Boxes { get; set; }
 
 		/// <summary>
-		/// A list of all items that will be present in the shipment after the update
+		/// A list of all items that will be present in the shipment after the update.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

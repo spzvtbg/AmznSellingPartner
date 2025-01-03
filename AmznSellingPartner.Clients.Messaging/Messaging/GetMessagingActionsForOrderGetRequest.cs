@@ -9,8 +9,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	public class GetMessagingActionsForOrderGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon order identifier
-		/// This specifies the order for which you want a list of available message types
+		/// An Amazon order identifier. This specifies the order for which you want a list of available message types.
 		/// </summary>
 		[InPath("amazonOrderId")]
 		[IsRequired]
@@ -18,9 +17,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
-		/// A marketplace identifier
-		/// This identifies the marketplace in which the order was placed
-		/// You can only specify one marketplace
+		/// A marketplace identifier. This identifies the marketplace in which the order was placed. You can only specify
+		/// ne marketplace.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]

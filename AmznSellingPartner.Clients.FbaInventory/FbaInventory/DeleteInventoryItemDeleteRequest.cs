@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	public class DeleteInventoryItemDeleteRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A single seller SKU used for querying the specified seller SKU inventory summaries
+		/// A single seller SKU used for querying the specified seller SKU inventory summaries.
 		/// </summary>
 		[InPath("sellerSku")]
 		[IsRequired]
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		public string SellerSku { get; set; }
 
 		/// <summary>
-		/// The marketplace ID for the marketplace for which the sellerSku is to be deleted
+		/// The marketplace ID for the marketplace for which the sellerSku is to be deleted.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]

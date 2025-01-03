@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class GetServiceJobByServiceJobIdGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A service job identifier
+		/// A service job identifier.
 		/// </summary>
 		[InPath("serviceJobId")]
 		[IsRequired]

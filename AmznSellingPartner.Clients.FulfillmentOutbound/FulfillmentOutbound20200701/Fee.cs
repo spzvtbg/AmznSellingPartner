@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Fee type and cost
+	/// Fee type and cost.
 	/// </summary>
 	public class Fee : BaseClass
 	{
 		/// <summary>
-		/// The type of fee
+		/// The type of fee.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("name")]
 		public Name Name { get; set; }
 
 		/// <summary>
-		/// The amount of the fee
+		/// The amount of the fee.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("amount")]

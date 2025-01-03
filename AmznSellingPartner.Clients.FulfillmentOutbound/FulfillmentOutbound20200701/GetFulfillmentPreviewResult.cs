@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 
 	/// <summary>
 	/// A list of fulfillment order previews, including estimated shipping weights, estimated shipping fees, and estim
-	/// ted ship dates and arrival dates
+	/// ted ship dates and arrival dates.
 	/// </summary>
 	public class GetFulfillmentPreviewResult : BaseClass
 	{

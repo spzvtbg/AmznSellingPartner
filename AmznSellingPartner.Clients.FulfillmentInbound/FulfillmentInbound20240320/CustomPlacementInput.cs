@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Provide units going to the warehouse
+	/// Provide units going to the warehouse.
 	/// </summary>
 	public class CustomPlacementInput : BaseClass
 	{
 		/// <summary>
-		/// Items included while creating Inbound Plan
+		/// Items included while creating Inbound Plan.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public List<ItemInput> Items { get; set; }
 
 		/// <summary>
-		/// Warehouse Id
+		/// Warehouse Id.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

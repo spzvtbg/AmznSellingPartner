@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public enum TaxRegistrationType
 	{
 		/// <summary>
-		/// Value-added tax
+		/// Value-added tax.
 		/// </summary>
 		[EnumMember(Value = "VAT")]
 		VAT,
 
 		/// <summary>
-		/// Goods and Services Tax (GST)
+		/// Goods and Services Tax (GST).
 		/// </summary>
 		[EnumMember(Value = "GST")]
 		GST,

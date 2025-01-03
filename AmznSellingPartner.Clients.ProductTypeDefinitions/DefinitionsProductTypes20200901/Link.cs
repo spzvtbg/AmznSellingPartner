@@ -7,14 +7,14 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public class Link : BaseClass
 	{
 		/// <summary>
-		/// URI resource for the link
+		/// URI resource for the link.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("resource")]
 		public string Resource { get; set; }
 
 		/// <summary>
-		/// HTTP method for the link operation
+		/// HTTP method for the link operation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("verb")]

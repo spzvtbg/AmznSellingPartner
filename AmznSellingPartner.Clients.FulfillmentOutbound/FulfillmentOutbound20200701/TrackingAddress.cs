@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Address information for tracking the package
+	/// Address information for tracking the package.
 	/// </summary>
 	public class TrackingAddress : BaseClass
 	{
 		/// <summary>
-		/// The city
+		/// The city.
 		/// </summary>
 		[IsRequired]
 		[MaxLength(150)]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string City { get; set; }
 
 		/// <summary>
-		/// The state
+		/// The state.
 		/// </summary>
 		[IsRequired]
 		[MaxLength(150)]
@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string State { get; set; }
 
 		/// <summary>
-		/// The country
+		/// The country.
 		/// </summary>
 		[IsRequired]
 		[MaxLength(6)]

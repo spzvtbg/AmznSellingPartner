@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A listings item
+	/// A listings item.
 	/// </summary>
 	public class Item : BaseClass
 	{
 		/// <summary>
-		/// A selling partner provided identifier for an Amazon listing
+		/// A selling partner provided identifier for an Amazon listing.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sku")]
@@ -31,13 +31,13 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public ItemOffers Offers { get; set; }
 
 		/// <summary>
-		/// The fulfillment availability for the listings item
+		/// The fulfillment availability for the listings item.
 		/// </summary>
 		[JsonProperty("fulfillmentAvailability")]
 		public List<FulfillmentAvailability> FulfillmentAvailability { get; set; }
 
 		/// <summary>
-		/// The vendor procurement information for the listings item
+		/// The vendor procurement information for the listings item.
 		/// </summary>
 		[JsonProperty("procurement")]
 		public List<ItemProcurement> Procurement { get; set; }

@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public enum FunctionCode
 	{
 		/// <summary>
-		/// Port of Discharge is a place where a vessel discharges or unloads some or all of its shipments
+		/// Port of Discharge is a place where a vessel discharges or unloads some or all of its shipments.
 		/// </summary>
 		[EnumMember(Value = "PortOfDischarge")]
 		PortOfDischarge,
 
 		/// <summary>
-		/// Place where the payment for the freight is made
+		/// Place where the payment for the freight is made.
 		/// </summary>
 		[EnumMember(Value = "FreightPayableAt")]
 		FreightPayableAt,
 
 		/// <summary>
-		/// The port where goods are put on a ship
+		/// The port where goods are put on a ship.
 		/// </summary>
 		[EnumMember(Value = "PortOfLoading")]
 		PortOfLoading,

@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum FulfillmentChannel
 	{
 		/// <summary>
-		/// Fulfilled by the seller
+		/// Fulfilled by the seller.
 		/// </summary>
 		[EnumMember(Value = "MFN")]
 		MFN,
 
 		/// <summary>
-		/// Fulfilled by Amazon
+		/// Fulfilled by Amazon.
 		/// </summary>
 		[EnumMember(Value = "AFN")]
 		AFN,

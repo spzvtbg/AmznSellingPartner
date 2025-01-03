@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// This object contains all the details of the scheduled Easy Ship package
+	/// This object contains all the details of the scheduled Easy Ship package.
 	/// </summary>
 	public class Package : BaseClass
 	{

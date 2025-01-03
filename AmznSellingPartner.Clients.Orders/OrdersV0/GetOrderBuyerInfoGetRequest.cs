@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public class GetOrderBuyerInfoGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An `orderId` is an Amazon-defined order identifier, in 3-7-7 format
+		/// An `orderId` is an Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
 		[InPath("orderId")]
 		[IsRequired]

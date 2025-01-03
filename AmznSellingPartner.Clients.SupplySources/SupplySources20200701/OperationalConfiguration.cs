@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The operational configuration of `supplySources`
+	/// The operational configuration of `supplySources`.
 	/// </summary>
 	public class OperationalConfiguration : BaseClass
 	{

@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The shipping address type
+	/// The shipping address type.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum AddressTypeEnum
 	{
 		/// <summary>
-		/// The address type is residential
+		/// The address type is residential.
 		/// </summary>
 		[EnumMember(Value = "Residential")]
 		Residential,
 
 		/// <summary>
-		/// The address type is commercial
+		/// The address type is commercial.
 		/// </summary>
 		[EnumMember(Value = "Commercial")]
 		Commercial,

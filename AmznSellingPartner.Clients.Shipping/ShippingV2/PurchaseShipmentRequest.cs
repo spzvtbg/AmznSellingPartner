@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request schema for the purchaseShipment operation
+	/// The request schema for the purchaseShipment operation.
 	/// </summary>
 	public class PurchaseShipmentRequest : BaseClass
 	{
@@ -25,11 +25,10 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public RequestedValueAddedServiceList RequestedValueAddedServices { get; set; }
 
 		/// <summary>
-		/// The additional inputs required to purchase a shipping offering, in JSON format
-		/// The JSON provided here must adhere to the JSON schema that is returned in the response to the getAdditionalIn
-		/// uts operation
-		/// Additional inputs are only required when indicated by the requiresAdditionalInputs property in the response
-		/// o the getRates operation
+		/// The additional inputs required to purchase a shipping offering, in JSON format. The JSON provided here must ad
+		/// ere to the JSON schema that is returned in the response to the getAdditionalInputs operation.  Additional inpu
+		/// s are only required when indicated by the requiresAdditionalInputs property in the response to the getRates op
+		/// ration.
 		/// </summary>
 		[JsonProperty("additionalInputs")]
 		public AdditionalInputs AdditionalInputs { get; set; }

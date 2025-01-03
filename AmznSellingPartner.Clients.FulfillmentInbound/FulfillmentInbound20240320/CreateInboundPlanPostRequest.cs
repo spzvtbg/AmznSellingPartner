@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class CreateInboundPlanPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The body of the request to `createInboundPlan`
+		/// The body of the request to `createInboundPlan`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

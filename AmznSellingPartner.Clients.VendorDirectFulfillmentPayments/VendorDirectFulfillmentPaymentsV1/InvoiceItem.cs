@@ -7,73 +7,70 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Provides the details of the items in this invoice
+	/// Provides the details of the items in this invoice.
 	/// </summary>
 	public class InvoiceItem : BaseClass
 	{
 		/// <summary>
-		/// Numbering of the item on the purchase order
-		/// The first item will be 1, the second 2, and so on
+		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
 		public string ItemSequenceNumber { get; set; }
 
 		/// <summary>
-		/// Buyer's standard identification number (ASIN) of an item
+		/// Buyer's standard identification number (ASIN) of an item.
 		/// </summary>
 		[JsonProperty("buyerProductIdentifier")]
 		public string BuyerProductIdentifier { get; set; }
 
 		/// <summary>
-		/// The vendor selected product identification of the item
+		/// The vendor selected product identification of the item.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
 		public string VendorProductIdentifier { get; set; }
 
 		/// <summary>
-		/// Item quantity invoiced
+		/// Item quantity invoiced.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("invoicedQuantity")]
 		public ItemQuantity InvoicedQuantity { get; set; }
 
 		/// <summary>
-		/// Net price (before tax) to vendor with currency details
+		/// Net price (before tax) to vendor with currency details.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("netCost")]
 		public Money NetCost { get; set; }
 
 		/// <summary>
-		/// The purchase order number for this order
-		/// Formatting Notes: 8-character alpha-numeric code
+		/// The purchase order number for this order. Formatting Notes: 8-character alpha-numeric code.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("purchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
-		/// The vendor's order number for this order
+		/// The vendor's order number for this order.
 		/// </summary>
 		[JsonProperty("vendorOrderNumber")]
 		public string VendorOrderNumber { get; set; }
 
 		/// <summary>
-		/// Harmonized System of Nomenclature (HSN) tax code
-		/// The HSN number cannot contain alphabets
+		/// Harmonized System of Nomenclature (HSN) tax code. The HSN number cannot contain alphabets.
 		/// </summary>
 		[JsonProperty("hsnCode")]
 		public string HsnCode { get; set; }
 
 		/// <summary>
-		/// Individual tax details per line item
+		/// Individual tax details per line item.
 		/// </summary>
 		[JsonProperty("taxDetails")]
 		public List<TaxDetail> TaxDetails { get; set; }
 
 		/// <summary>
-		/// Individual charge details per line item
+		/// Individual charge details per line item.
 		/// </summary>
 		[JsonProperty("chargeDetails")]
 		public List<ChargeDetails> ChargeDetails { get; set; }

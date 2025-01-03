@@ -9,15 +9,14 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public class SearchDefinitionsProductTypesGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A comma-delimited list of keywords to search product types
-		/// **Note:** Cannot be used with `itemName`
+		/// A comma-delimited list of keywords to search product types. **Note:** Cannot be used with `itemName`.
 		/// </summary>
 		[InQuery("keywords")]
 		[JsonProperty("keywords")]
 		public CsvValue<string> Keywords { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of Amazon marketplace identifiers for the request
+		/// A comma-delimited list of Amazon marketplace identifiers for the request.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
@@ -25,24 +24,22 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// The title of the ASIN to get the product type recommendation
-		/// **Note:** Cannot be used with `keywords`
+		/// The title of the ASIN to get the product type recommendation. **Note:** Cannot be used with `keywords`.
 		/// </summary>
 		[InQuery("itemName")]
 		[JsonProperty("itemName")]
 		public string ItemName { get; set; }
 
 		/// <summary>
-		/// The locale for the display names in the response
-		/// Defaults to the primary locale of the marketplace
+		/// The locale for the display names in the response. Defaults to the primary locale of the marketplace.
 		/// </summary>
 		[InQuery("locale")]
 		[JsonProperty("locale")]
 		public string Locale { get; set; }
 
 		/// <summary>
-		/// The locale used for the `keywords` and `itemName` parameters
-		/// Defaults to the primary locale of the marketplace
+		/// The locale used for the `keywords` and `itemName` parameters. Defaults to the primary locale of the marketplac
+		/// .
 		/// </summary>
 		[InQuery("searchLocale")]
 		[JsonProperty("searchLocale")]

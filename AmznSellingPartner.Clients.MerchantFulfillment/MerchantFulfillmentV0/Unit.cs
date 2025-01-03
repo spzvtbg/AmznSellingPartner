@@ -9,43 +9,43 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public enum Unit
 	{
 		/// <summary>
-		/// Milliliter - Metric unit of volume
+		/// Milliliter - Metric unit of volume.
 		/// </summary>
 		[EnumMember(Value = "ML")]
 		ML,
 
 		/// <summary>
-		/// Liter - Metric unit of volume
+		/// Liter - Metric unit of volume.
 		/// </summary>
 		[EnumMember(Value = "L")]
 		L,
 
 		/// <summary>
-		/// Fluid ounce - Imperial unit of volume
+		/// Fluid ounce - Imperial unit of volume.
 		/// </summary>
 		[EnumMember(Value = "FL_OZ")]
 		FL_OZ,
 
 		/// <summary>
-		/// Gallon - Imperial unit of volume
+		/// Gallon - Imperial unit of volume.
 		/// </summary>
 		[EnumMember(Value = "GAL")]
 		GAL,
 
 		/// <summary>
-		/// Pint - Imperial unit of volume
+		/// Pint - Imperial unit of volume.
 		/// </summary>
 		[EnumMember(Value = "PT")]
 		PT,
 
 		/// <summary>
-		/// Quart - Imperial unit of volume
+		/// Quart - Imperial unit of volume.
 		/// </summary>
 		[EnumMember(Value = "QT")]
 		QT,
 
 		/// <summary>
-		/// Cup - Imperial unit of volume
+		/// Cup - Imperial unit of volume.
 		/// </summary>
 		[EnumMember(Value = "C")]
 		C,

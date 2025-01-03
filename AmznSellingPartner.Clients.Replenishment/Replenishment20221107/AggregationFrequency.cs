@@ -6,32 +6,32 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The time period used to group data in the response
-	/// Note that this is only valid for the `PERFORMANCE` time period type
+	/// The time period used to group data in the response. Note that this is only valid for the `PERFORMANCE` time pe
+	/// iod type.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum AggregationFrequency
 	{
 		/// <summary>
-		/// ISO Calendar Week
+		/// ISO Calendar Week.
 		/// </summary>
 		[EnumMember(Value = "WEEK")]
 		WEEK,
 
 		/// <summary>
-		/// ISO Calendar Month
+		/// ISO Calendar Month.
 		/// </summary>
 		[EnumMember(Value = "MONTH")]
 		MONTH,
 
 		/// <summary>
-		/// ISO Calendar Quarter
+		/// ISO Calendar Quarter.
 		/// </summary>
 		[EnumMember(Value = "QUARTER")]
 		QUARTER,
 
 		/// <summary>
-		/// ISO Calendar Year
+		/// ISO Calendar Year.
 		/// </summary>
 		[EnumMember(Value = "YEAR")]
 		YEAR,

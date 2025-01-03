@@ -10,8 +10,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class GetPurchaseOrdersGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The limit to the number of records returned
-		/// Default value is 100 records
+		/// The limit to the number of records returned. Default value is 100 records.
 		/// </summary>
 		[InQuery("limit")]
 		[Minimum(1)]
@@ -20,93 +19,88 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public long Limit { get; set; }
 
 		/// <summary>
-		/// Purchase orders that became available after this time will be included in the result
-		/// Must be in ISO-8601 date/time format
+		/// Purchase orders that became available after this time will be included in the result. Must be in ISO-8601 date
+		/// time format.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
-		/// Purchase orders that became available before this time will be included in the result
-		/// Must be in ISO-8601 date/time format
+		/// Purchase orders that became available before this time will be included in the result. Must be in ISO-8601 dat
+		/// /time format.
 		/// </summary>
 		[InQuery("createdBefore")]
 		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
-		/// Sort in ascending or descending order by purchase order creation date
+		/// Sort in ascending or descending order by purchase order creation date.
 		/// </summary>
 		[InQuery("sortOrder")]
 		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// Used for pagination when there is more purchase orders than the specified result size limit
-		/// The token value is returned in the previous API call
+		/// Used for pagination when there is more purchase orders than the specified result size limit. The token value i
+		/// returned in the previous API call
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// When true, returns purchase orders with complete details
-		/// Otherwise, only purchase order numbers are returned
-		/// Default value is true
+		/// When true, returns purchase orders with complete details. Otherwise, only purchase order numbers are returned.
+		/// Default value is true.
 		/// </summary>
 		[InQuery("includeDetails")]
 		[JsonProperty("includeDetails")]
 		public bool IncludeDetails { get; set; }
 
 		/// <summary>
-		/// Purchase orders that changed after this timestamp will be included in the result
-		/// Must be in ISO-8601 date/time format
+		/// Purchase orders that changed after this timestamp will be included in the result. Must be in ISO-8601 date/tim
+		/// format.
 		/// </summary>
 		[InQuery("changedAfter")]
 		[JsonProperty("changedAfter")]
 		public DateTime ChangedAfter { get; set; }
 
 		/// <summary>
-		/// Purchase orders that changed before this timestamp will be included in the result
-		/// Must be in ISO-8601 date/time format
+		/// Purchase orders that changed before this timestamp will be included in the result. Must be in ISO-8601 date/ti
+		/// e format.
 		/// </summary>
 		[InQuery("changedBefore")]
 		[JsonProperty("changedBefore")]
 		public DateTime ChangedBefore { get; set; }
 
 		/// <summary>
-		/// Current state of the purchase order item
-		/// If this value is Cancelled, this API will return purchase orders which have one or more items cancelled by Am
-		/// zon with updated item quantity as zero
+		/// Current state of the purchase order item. If this value is Cancelled, this API will return purchase orders whi
+		/// h have one or more items cancelled by Amazon with updated item quantity as zero.
 		/// </summary>
 		[InQuery("poItemState")]
 		[JsonProperty("poItemState")]
 		public PoItemState PoItemState { get; set; }
 
 		/// <summary>
-		/// When true, returns purchase orders which were modified after the order was placed
-		/// Vendors are required to pull the changed purchase order and fulfill the updated purchase order and not the or
-		/// ginal one
-		/// Default value is false
+		/// When true, returns purchase orders which were modified after the order was placed. Vendors are required to pul
+		/// the changed purchase order and fulfill the updated purchase order and not the original one. Default value is
+		/// alse.
 		/// </summary>
 		[InQuery("isPOChanged")]
 		[JsonProperty("isPOChanged")]
 		public bool IsPOChanged { get; set; }
 
 		/// <summary>
-		/// Filters purchase orders based on the purchase order state
+		/// Filters purchase orders based on the purchase order state.
 		/// </summary>
 		[InQuery("purchaseOrderState")]
 		[JsonProperty("purchaseOrderState")]
 		public PurchaseOrderState PurchaseOrderState { get; set; }
 
 		/// <summary>
-		/// Filters purchase orders based on the specified ordering vendor code
-		/// This value should be same as 'sellingParty
-		/// partyId' in the purchase order
-		/// If not included in the filter, all purchase orders for all of the vendor codes that exist in the vendor group
-		/// used to authorize the API client application are returned
+		/// Filters purchase orders based on the specified ordering vendor code. This value should be same as 'sellingPart
+		/// .partyId' in the purchase order. If not included in the filter, all purchase orders for all of the vendor code
+		/// that exist in the vendor group used to authorize the API client application are returned.
 		/// </summary>
 		[InQuery("orderingVendorCode")]
 		[JsonProperty("orderingVendorCode")]

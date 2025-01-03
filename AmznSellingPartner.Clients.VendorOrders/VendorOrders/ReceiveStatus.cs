@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum ReceiveStatus
 	{
 		/// <summary>
-		/// The buyer has not received any of the item
+		/// The buyer has not received any of the item.
 		/// </summary>
 		[EnumMember(Value = "NOT_RECEIVED")]
 		NOT_RECEIVED,
@@ -18,14 +18,13 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		PARTIALLY_RECEIVED,
 
 		/// <summary>
-		/// Receiving is complete
-		/// The buyer has received all confirmed items
+		/// Receiving is complete. The buyer has received all confirmed items.
 		/// </summary>
 		[EnumMember(Value = "RECEIVED")]
 		RECEIVED,
 
 		/// <summary>
-		/// The buyer has received some of the item and is expecting to receive the rest of the confirmed quantity
+		/// The buyer has received some of the item and is expecting to receive the rest of the confirmed quantity.
 		/// </summary>
 		[EnumMember(Value = "PARTIALLY_RECEIVE")]
 		PARTIALLY_RECEIVE,

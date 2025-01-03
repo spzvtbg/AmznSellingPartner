@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `UpdateShipmentSourceAddress` request
+	/// The `UpdateShipmentSourceAddress` request.
 	/// </summary>
 	public class UpdateShipmentSourceAddressRequest : BaseClass
 	{

@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the GetAccessPoints API
+	/// The payload for the GetAccessPoints API.
 	/// </summary>
 	public class GetAccessPointsResult : BaseClass
 	{

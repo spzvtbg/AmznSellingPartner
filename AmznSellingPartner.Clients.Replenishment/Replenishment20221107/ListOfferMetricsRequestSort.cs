@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Use these parameters to sort the response
+	/// Use these parameters to sort the response.
 	/// </summary>
 	public class ListOfferMetricsRequestSort : BaseClass
 	{
 		/// <summary>
-		/// The sort order
+		/// The sort order.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("order")]

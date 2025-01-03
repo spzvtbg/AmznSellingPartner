@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	public class SubmitInvoicesPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body containing the invoice data to submit
+		/// The request body containing the invoice data to submit.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

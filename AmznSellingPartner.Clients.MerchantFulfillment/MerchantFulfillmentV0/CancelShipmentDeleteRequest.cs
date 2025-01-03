@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class CancelShipmentDeleteRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The Amazon-defined shipment identifier for the shipment to cancel
+		/// The Amazon-defined shipment identifier for the shipment to cancel.
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]

@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Offer details of a listings item for an Amazon marketplace
+	/// Offer details of a listings item for an Amazon marketplace.
 	/// </summary>
 	public class ItemOfferByMarketplace : BaseClass
 	{
 		/// <summary>
-		/// The Amazon marketplace identifier
+		/// The Amazon marketplace identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// Type of offer for the listings item
+		/// Type of offer for the listings item.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("offerType")]
@@ -34,7 +34,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public Points Points { get; set; }
 
 		/// <summary>
-		/// Buyer segment or program this offer is applicable to
+		/// Buyer segment or program this offer is applicable to.
 		/// </summary>
 		[JsonProperty("audience")]
 		public Audience Audience { get; set; }

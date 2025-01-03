@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Information used to determine the tax compliance
+	/// Information used to determine the tax compliance.
 	/// </summary>
 	public class TaxDetails : BaseClass
 	{
@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Currency DeclaredValue { get; set; }
 
 		/// <summary>
-		/// Harmonized System of Nomenclature code
+		/// Harmonized System of Nomenclature code.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string HsnCode { get; set; }
 
 		/// <summary>
-		/// List of tax rates
+		/// List of tax rates.
 		/// </summary>
 		[JsonProperty("taxRates")]
 		public List<TaxRate> TaxRates { get; set; }

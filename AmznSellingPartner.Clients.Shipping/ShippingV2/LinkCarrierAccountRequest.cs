@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request schema for verify and add the merchant's account with a certain carrier
+	/// The request schema for verify and add the merchant's account with a certain carrier.
 	/// </summary>
 	public class LinkCarrierAccountRequest : BaseClass
 	{

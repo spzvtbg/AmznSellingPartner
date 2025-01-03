@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	public class GetMyFeesEstimateResponse : BaseClass
 	{
 		/// <summary>
-		/// The payload for the operation
+		/// The payload for the operation.
 		/// </summary>
 		[JsonProperty("payload")]
 		public GetMyFeesEstimateResult Payload { get; set; }

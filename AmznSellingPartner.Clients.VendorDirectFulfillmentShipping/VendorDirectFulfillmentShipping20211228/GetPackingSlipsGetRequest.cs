@@ -10,15 +10,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class GetPackingSlipsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The vendor `warehouseId` for order fulfillment
-		/// If not specified, the result contains orders for all warehouses
+		/// The vendor `warehouseId` for order fulfillment. If not specified, the result contains orders for all warehouse
+		/// .
 		/// </summary>
 		[InQuery("shipFromPartyId")]
 		[JsonProperty("shipFromPartyId")]
 		public string ShipFromPartyId { get; set; }
 
 		/// <summary>
-		/// The maximum number of records to return
+		/// The maximum number of records to return.
 		/// </summary>
 		[InQuery("limit")]
 		[Minimum(1)]
@@ -27,10 +27,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public int Limit { get; set; }
 
 		/// <summary>
-		/// Packing slips that become available after this date and time will be included in the result
-		/// Values are in [ISO 8601](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601) date-time format
+		/// Packing slips that become available after this date and time will be included in the result. Values are in [IS
+		/// 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[IsRequired]
@@ -38,10 +36,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
-		/// Packing slips that became available before this date and time will be included in the result
-		/// Values are in [ISO 8601](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601) date-time format
+		/// Packing slips that became available before this date and time will be included in the result. Values are in [I
+		/// O 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date-time format.
 		/// </summary>
 		[InQuery("createdBefore")]
 		[IsRequired]
@@ -49,15 +45,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
-		/// The packing slip creation dates, which are sorted by ascending or descending order
+		/// The packing slip creation dates, which are sorted by ascending or descending order.
 		/// </summary>
 		[InQuery("sortOrder")]
 		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// Used for pagination when there are more packing slips than the specified result size limit
-		/// The token value is returned in the previous API call
+		/// Used for pagination when there are more packing slips than the specified result size limit. The token value is
+		/// returned in the previous API call.
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]

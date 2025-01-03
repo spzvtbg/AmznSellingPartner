@@ -8,8 +8,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	public class CancelFeedDeleteRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the feed
-		/// This identifier is unique only in combination with a seller ID
+		/// The identifier for the feed. This identifier is unique only in combination with a seller ID.
 		/// </summary>
 		[InPath("feedId")]
 		[IsRequired]

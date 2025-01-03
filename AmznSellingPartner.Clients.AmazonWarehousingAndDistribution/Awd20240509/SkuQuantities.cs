@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public enum SkuQuantities
 	{
 		/// <summary>
-		/// Show the additional SKU quantity details
+		/// Show the additional SKU quantity details.
 		/// </summary>
 		[EnumMember(Value = "SHOW")]
 		SHOW,
 
 		/// <summary>
-		/// Hide the additional SKU quantity details
+		/// Hide the additional SKU quantity details.
 		/// </summary>
 		[EnumMember(Value = "HIDE")]
 		HIDE,

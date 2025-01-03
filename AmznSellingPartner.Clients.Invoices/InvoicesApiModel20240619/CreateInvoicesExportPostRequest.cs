@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class CreateInvoicesExportPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Information required to create the export request
+		/// Information required to create the export request.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

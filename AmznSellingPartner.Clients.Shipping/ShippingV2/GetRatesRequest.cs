@@ -7,39 +7,38 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System;
 
 	/// <summary>
-	/// The request schema for the getRates operation
-	/// When the channelType is Amazon, the shipTo address is not required and will be ignored
+	/// The request schema for the getRates operation. When the channelType is Amazon, the shipTo address is not requi
+	/// ed and will be ignored.
 	/// </summary>
 	public class GetRatesRequest : BaseClass
 	{
 		/// <summary>
-		/// The ship to address
+		/// The ship to address.
 		/// </summary>
 		[JsonProperty("shipTo")]
 		public Address ShipTo { get; set; }
 
 		/// <summary>
-		/// The ship from address
+		/// The ship from address.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipFrom")]
 		public Address ShipFrom { get; set; }
 
 		/// <summary>
-		/// The return to address
+		/// The return to address.
 		/// </summary>
 		[JsonProperty("returnTo")]
 		public Address ReturnTo { get; set; }
 
 		/// <summary>
-		/// The ship date and time (the requested pickup)
-		/// This defaults to the current date and time
+		/// The ship date and time (the requested pickup). This defaults to the current date and time.
 		/// </summary>
 		[JsonProperty("shipDate")]
 		public DateTime ShipDate { get; set; }
 
 		/// <summary>
-		/// This field describe shipper instruction
+		/// This field describe shipper instruction.
 		/// </summary>
 		[JsonProperty("shipperInstruction")]
 		public ShipperInstruction ShipperInstruction { get; set; }

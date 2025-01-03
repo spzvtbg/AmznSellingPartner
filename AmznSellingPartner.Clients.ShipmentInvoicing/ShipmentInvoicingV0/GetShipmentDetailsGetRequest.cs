@@ -8,10 +8,9 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 	public class GetShipmentDetailsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the shipment
-		/// Get this value from the FBAOutboundShipmentStatus notification
-		/// For information about subscribing to notifications, see the [Notifications API Use Case Guide](doc:notificati
-		/// ns-api-v1-use-case-guide)
+		/// The identifier for the shipment. Get this value from the FBAOutboundShipmentStatus notification. For informati
+		/// n about subscribing to notifications, see the [Notifications API Use Case Guide](doc:notifications-api-v1-use-
+		/// ase-guide).
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]

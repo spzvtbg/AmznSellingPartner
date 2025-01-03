@@ -33,25 +33,25 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		Yard,
 
 		/// <summary>
-		/// Cubic feet
+		/// Cubic feet.
 		/// </summary>
 		[EnumMember(Value = "CuFt")]
 		CuFt,
 
 		/// <summary>
-		/// Cubic inches
+		/// Cubic inches.
 		/// </summary>
 		[EnumMember(Value = "CuIn")]
 		CuIn,
 
 		/// <summary>
-		/// Cubic meter
+		/// Cubic meter.
 		/// </summary>
 		[EnumMember(Value = "CuM")]
 		CuM,
 
 		/// <summary>
-		/// Cubic yard
+		/// Cubic yard.
 		/// </summary>
 		[EnumMember(Value = "CuY")]
 		CuY,
@@ -81,37 +81,37 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		Lb,
 
 		/// <summary>
-		/// Packing of individual items into a case
+		/// Packing of individual items into a case.
 		/// </summary>
 		[EnumMember(Value = "Cases")]
 		Cases,
 
 		/// <summary>
-		/// Individual items
+		/// Individual items.
 		/// </summary>
 		[EnumMember(Value = "Eaches")]
 		Eaches,
 
 		/// <summary>
-		/// The weight is measured in pounds
+		/// The weight is measured in pounds.
 		/// </summary>
 		[EnumMember(Value = "POUNDS")]
 		POUNDS,
 
 		/// <summary>
-		/// The weight is measured in ounces
+		/// The weight is measured in ounces.
 		/// </summary>
 		[EnumMember(Value = "OUNCES")]
 		OUNCES,
 
 		/// <summary>
-		/// The weight is measured in grams
+		/// The weight is measured in grams.
 		/// </summary>
 		[EnumMember(Value = "GRAMS")]
 		GRAMS,
 
 		/// <summary>
-		/// The weight is measured in kilograms
+		/// The weight is measured in kilograms.
 		/// </summary>
 		[EnumMember(Value = "KILOGRAMS")]
 		KILOGRAMS,

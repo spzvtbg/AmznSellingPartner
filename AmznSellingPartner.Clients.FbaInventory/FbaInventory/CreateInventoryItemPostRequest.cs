@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	public class CreateInventoryItemPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// CreateInventoryItem Request Body Parameter
+		/// CreateInventoryItem Request Body Parameter.
 		/// </summary>
 		[InBody("createInventoryItemRequestBody")]
 		[IsRequired]

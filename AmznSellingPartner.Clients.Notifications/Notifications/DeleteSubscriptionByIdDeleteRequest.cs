@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	public class DeleteSubscriptionByIdDeleteRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the subscription that you want to delete
+		/// The identifier for the subscription that you want to delete.
 		/// </summary>
 		[InPath("subscriptionId")]
 		[IsRequired]
@@ -16,12 +16,11 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		public string SubscriptionId { get; set; }
 
 		/// <summary>
-		/// The type of notification
-		/// For more information about notification types, refer to [Notification Type Values](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/notification-type-values)
+		/// The type of notification.   For more information about notification types, refer to [Notification Type Values]
+		/// https://developer-docs.amazon.com/sp-api/docs/notification-type-values).
 		/// </summary>
 		[InPath("notificationType")]
+		[IsRequired]
 		[JsonProperty("notificationType")]
 		public NotificationType NotificationType { get; set; }
 	}

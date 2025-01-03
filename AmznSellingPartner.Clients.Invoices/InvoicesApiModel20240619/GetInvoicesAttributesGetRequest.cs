@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class GetInvoicesAttributesGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The marketplace identifier
+		/// The marketplace identifier.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]

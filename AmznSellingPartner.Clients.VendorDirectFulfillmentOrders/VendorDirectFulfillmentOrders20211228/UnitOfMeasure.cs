@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	public enum UnitOfMeasure
 	{
 		/// <summary>
-		/// Unit of measure to represent individual piece
+		/// Unit of measure to represent individual piece.
 		/// </summary>
 		[EnumMember(Value = "Each")]
 		Each,

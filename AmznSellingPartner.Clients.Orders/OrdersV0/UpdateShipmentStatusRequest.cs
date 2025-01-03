@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request body for the `updateShipmentStatus` operation
+	/// The request body for the `updateShipmentStatus` operation.
 	/// </summary>
 	public class UpdateShipmentStatusRequest : BaseClass
 	{

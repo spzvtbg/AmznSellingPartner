@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The reason that the item is invalid for return
+	/// The reason that the item is invalid for return.
 	/// </summary>
 	public class InvalidItemReason : BaseClass
 	{
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public InvalidItemReasonCode InvalidItemReasonCode { get; set; }
 
 		/// <summary>
-		/// A human readable description of the invalid item reason code
+		/// A human readable description of the invalid item reason code.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("description")]

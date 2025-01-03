@@ -9,25 +9,25 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 	public enum Method
 	{
 		/// <summary>
-		/// The GET method
+		/// The GET method.
 		/// </summary>
 		[EnumMember(Value = "GET")]
 		GET,
 
 		/// <summary>
-		/// The PUT method
+		/// The PUT method.
 		/// </summary>
 		[EnumMember(Value = "PUT")]
 		PUT,
 
 		/// <summary>
-		/// The POST method
+		/// The POST method.
 		/// </summary>
 		[EnumMember(Value = "POST")]
 		POST,
 
 		/// <summary>
-		/// The DELETE method
+		/// The DELETE method.
 		/// </summary>
 		[EnumMember(Value = "DELETE")]
 		DELETE,

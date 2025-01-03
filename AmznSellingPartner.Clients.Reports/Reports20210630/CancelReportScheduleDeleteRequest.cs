@@ -8,8 +8,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public class CancelReportScheduleDeleteRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the report schedule
-		/// This identifier is unique only in combination with a seller ID
+		/// The identifier for the report schedule. This identifier is unique only in combination with a seller ID.
 		/// </summary>
 		[InPath("reportScheduleId")]
 		[IsRequired]

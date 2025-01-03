@@ -7,13 +7,13 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The A+ Content standard comparison product block
+	/// The A+ Content standard comparison product block.
 	/// </summary>
 	public class StandardComparisonProductBlock : BaseClass
 	{
 		/// <summary>
-		/// The rank or index of this comparison product block within the module
-		/// Different blocks cannot occupy the same position within a single module
+		/// The rank or index of this comparison product block within the module. Different blocks cannot occupy the same
+		/// osition within a single module.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public ImageComponent Image { get; set; }
 
 		/// <summary>
-		/// The comparison product title
+		/// The comparison product title.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(80)]
@@ -36,13 +36,13 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public Asin Asin { get; set; }
 
 		/// <summary>
-		/// Determines whether this block of content is visually highlighted
+		/// Determines whether this block of content is visually highlighted.
 		/// </summary>
 		[JsonProperty("highlight")]
 		public bool Highlight { get; set; }
 
 		/// <summary>
-		/// Comparison metrics for the product
+		/// Comparison metrics for the product.
 		/// </summary>
 		[MinItems(0)]
 		[MaxItems(10)]

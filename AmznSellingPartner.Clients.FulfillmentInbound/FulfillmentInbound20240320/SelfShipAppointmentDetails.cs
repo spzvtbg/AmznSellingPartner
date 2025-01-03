@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Appointment details for carrier pickup or fulfillment center appointments
+	/// Appointment details for carrier pickup or fulfillment center appointments.
 	/// </summary>
 	public class SelfShipAppointmentDetails : BaseClass
 	{
 		/// <summary>
-		/// Identifier for appointment
+		/// Identifier for appointment.
 		/// </summary>
 		[JsonProperty("appointmentId")]
 		public double AppointmentId { get; set; }
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public AppointmentSlotTime AppointmentSlotTime { get; set; }
 
 		/// <summary>
-		/// Status of the appointment
+		/// Status of the appointment.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]

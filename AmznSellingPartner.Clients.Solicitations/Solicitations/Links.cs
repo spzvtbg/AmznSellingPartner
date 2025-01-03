@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		public LinkObject Self { get; set; }
 
 		/// <summary>
-		/// Eligible actions for the specified amazonOrderId
+		/// Eligible actions for the specified amazonOrderId.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("actions")]

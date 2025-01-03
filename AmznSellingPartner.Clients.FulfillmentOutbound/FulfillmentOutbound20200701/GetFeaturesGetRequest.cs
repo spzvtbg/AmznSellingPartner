@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class GetFeaturesGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The marketplace for which to return the list of features
+		/// The marketplace for which to return the list of features.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]

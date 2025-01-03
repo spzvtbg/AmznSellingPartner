@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The dynamic parameters required by the notification templated specified by `templateId`
+	/// The dynamic parameters required by the notification templated specified by `templateId`.
 	/// </summary>
 	public class NotificationParameters : BaseClass
 	{

@@ -6,32 +6,31 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The delivery confirmation level
+	/// The delivery confirmation level.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum DeliveryExperienceType
 	{
 		/// <summary>
-		/// Delivery confirmation with an adult signature
+		/// Delivery confirmation with an adult signature.
 		/// </summary>
 		[EnumMember(Value = "DeliveryConfirmationWithAdultSignature")]
 		DeliveryConfirmationWithAdultSignature,
 
 		/// <summary>
-		/// Delivery confirmation with a signature
-		/// Required for DPD (UK)
+		/// Delivery confirmation with a signature. Required for DPD (UK).
 		/// </summary>
 		[EnumMember(Value = "DeliveryConfirmationWithSignature")]
 		DeliveryConfirmationWithSignature,
 
 		/// <summary>
-		/// Delivery confirmation without a signature
+		/// Delivery confirmation without a signature.
 		/// </summary>
 		[EnumMember(Value = "DeliveryConfirmationWithoutSignature")]
 		DeliveryConfirmationWithoutSignature,
 
 		/// <summary>
-		/// No delivery confirmation
+		/// No delivery confirmation.
 		/// </summary>
 		[EnumMember(Value = "NoTracking")]
 		NoTracking,

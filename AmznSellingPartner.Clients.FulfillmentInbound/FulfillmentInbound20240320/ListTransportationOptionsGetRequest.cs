@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ListTransportationOptionsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// The number of transportation options to return in the response matching the given query
+		/// The number of transportation options to return in the response matching the given query.
 		/// </summary>
 		[InQuery("pageSize")]
 		[Minimum(1)]
@@ -28,9 +28,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public int PageSize { get; set; }
 
 		/// <summary>
-		/// A token to fetch a certain page when there are multiple pages worth of results
-		/// The value of this token is fetched from the `pagination` returned in the API response
-		/// In the absence of the token value from the query parameter the API returns the first page of the result
+		/// A token to fetch a certain page when there are multiple pages worth of results. The value of this token is fet
+		/// hed from the `pagination` returned in the API response. In the absence of the token value from the query param
+		/// ter the API returns the first page of the result.
 		/// </summary>
 		[InQuery("paginationToken")]
 		[MinLength(0)]
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PaginationToken { get; set; }
 
 		/// <summary>
-		/// The placement option to get transportation options for
-		/// Either `placementOptionId` or `shipmentId` must be specified
+		/// The placement option to get transportation options for. Either `placementOptionId` or `shipmentId` must be spe
+		/// ified.
 		/// </summary>
 		[InQuery("placementOptionId")]
 		[MinLength(38)]
@@ -50,8 +50,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PlacementOptionId { get; set; }
 
 		/// <summary>
-		/// The shipment to get transportation options for
-		/// Either `placementOptionId` or `shipmentId` must be specified
+		/// The shipment to get transportation options for. Either `placementOptionId` or `shipmentId` must be specified.
 		/// </summary>
 		[InQuery("shipmentId")]
 		[MinLength(38)]

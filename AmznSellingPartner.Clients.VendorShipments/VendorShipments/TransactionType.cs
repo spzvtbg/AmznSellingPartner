@@ -9,26 +9,25 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public enum TransactionType
 	{
 		/// <summary>
-		/// Initial shipment Request
+		/// Initial shipment Request.
 		/// </summary>
 		[EnumMember(Value = "New")]
 		New,
 
 		/// <summary>
-		/// Cancel existing shipment Request message
-		/// should be used only to cancel Shipment request
+		/// Cancel existing shipment Request message. should be used only to cancel Shipment request
 		/// </summary>
 		[EnumMember(Value = "Cancel")]
 		Cancel,
 
 		/// <summary>
-		/// Confirm the original Transport Request confirmation message
+		/// Confirm the original Transport Request confirmation message.
 		/// </summary>
 		[EnumMember(Value = "Confirm")]
 		Confirm,
 
 		/// <summary>
-		/// Label request the original Transport Request confirmation message
+		/// Label request the original Transport Request confirmation message.
 		/// </summary>
 		[EnumMember(Value = "PackageLabelRequest")]
 		PackageLabelRequest,

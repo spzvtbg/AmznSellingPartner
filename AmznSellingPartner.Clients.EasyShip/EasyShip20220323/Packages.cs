@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of packages
+	/// A list of packages.
 	/// </summary>
 	public class Packages : BaseClass
 	{
 		/// <summary>
-		/// A list of packages
+		/// A list of packages.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

@@ -8,20 +8,20 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is200 { get; set; }
 
 		/// <summary>
-		/// Your rate limit (requests per second) for this operation
-		/// **Note:** For this status code, the rate limit header is deprecated and no longer returned
+		/// Your rate limit (requests per second) for this operation. **Note:** For this status code, the rate limit heade
+		/// is deprecated and no longer returned.
 		/// </summary>
 		[JsonProperty("x-amzn-RateLimit-Limit")]
 		public string XAmznRateLimitLimit { get; set; }
 
 		/// <summary>
-		/// Unique request reference id
+		/// Unique request reference id.
 		/// </summary>
 		[JsonProperty("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; }
 
 		/// <summary>
-		/// Successfully created an upload destination for the given resource
+		/// Successfully created an upload destination for the given resource.
 		/// </summary>
 		[JsonProperty("Value200")]
 		public CreateServiceDocumentUploadDestination Value200 { get; set; }
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is400 { get; set; }
 
 		/// <summary>
-		/// Request has missing or invalid parameters and cannot be parsed
+		/// Request has missing or invalid parameters and cannot be parsed.
 		/// </summary>
 		[JsonProperty("Value400")]
 		public CreateServiceDocumentUploadDestination Value400 { get; set; }
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is403 { get; set; }
 
 		/// <summary>
-		/// Indicates that access to the resource is forbidden
-		/// Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature
+		/// Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expi
+		/// ed Token, or Invalid Signature.
 		/// </summary>
 		[JsonProperty("Value403")]
 		public CreateServiceDocumentUploadDestination Value403 { get; set; }
@@ -49,7 +49,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is404 { get; set; }
 
 		/// <summary>
-		/// The resource specified does not exist
+		/// The resource specified does not exist.
 		/// </summary>
 		[JsonProperty("Value404")]
 		public CreateServiceDocumentUploadDestination Value404 { get; set; }
@@ -58,7 +58,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is413 { get; set; }
 
 		/// <summary>
-		/// The request size exceeded the maximum accepted size
+		/// The request size exceeded the maximum accepted size.
 		/// </summary>
 		[JsonProperty("Value413")]
 		public CreateServiceDocumentUploadDestination Value413 { get; set; }
@@ -67,7 +67,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is415 { get; set; }
 
 		/// <summary>
-		/// The request's Content-Type header is invalid
+		/// The request's Content-Type header is invalid.
 		/// </summary>
 		[JsonProperty("Value415")]
 		public CreateServiceDocumentUploadDestination Value415 { get; set; }
@@ -76,8 +76,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is422 { get; set; }
 
 		/// <summary>
-		/// Unprocessable Entity
-		/// Unable to process the contained instructions
+		/// Unprocessable Entity. Unable to process the contained instructions.
 		/// </summary>
 		[JsonProperty("Value422")]
 		public CreateServiceDocumentUploadDestination Value422 { get; set; }
@@ -86,7 +85,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is429 { get; set; }
 
 		/// <summary>
-		/// The frequency of requests was greater than allowed
+		/// The frequency of requests was greater than allowed.
 		/// </summary>
 		[JsonProperty("Value429")]
 		public CreateServiceDocumentUploadDestination Value429 { get; set; }
@@ -95,7 +94,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is500 { get; set; }
 
 		/// <summary>
-		/// An unexpected condition occurred that prevented the server from fulfilling the request
+		/// An unexpected condition occurred that prevented the server from fulfilling the request.
 		/// </summary>
 		[JsonProperty("Value500")]
 		public CreateServiceDocumentUploadDestination Value500 { get; set; }
@@ -104,7 +103,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public bool Is503 { get; set; }
 
 		/// <summary>
-		/// Temporary overloading or maintenance of the server
+		/// Temporary overloading or maintenance of the server.
 		/// </summary>
 		[JsonProperty("Value503")]
 		public CreateServiceDocumentUploadDestination Value503 { get; set; }

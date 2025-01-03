@@ -5,8 +5,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A order which we couldn't schedule on your behalf
-	/// It contains its id, and information on the error
+	/// A order which we couldn't schedule on your behalf. It contains its id, and information on the error.
 	/// </summary>
 	public class RejectedOrder : BaseClass
 	{

@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum PaymentMethod
 	{
 		/// <summary>
-		/// Cash on delivery
+		/// Cash on delivery.
 		/// </summary>
 		[EnumMember(Value = "COD")]
 		COD,
 
 		/// <summary>
-		/// Convenience store
+		/// Convenience store.
 		/// </summary>
 		[EnumMember(Value = "CVS")]
 		CVS,
 
 		/// <summary>
-		/// A payment method other than COD and CVS
+		/// A payment method other than COD and CVS.
 		/// </summary>
 		[EnumMember(Value = "Other")]
 		Other,

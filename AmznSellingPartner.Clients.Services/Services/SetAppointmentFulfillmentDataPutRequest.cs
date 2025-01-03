@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class SetAppointmentFulfillmentDataPutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon-defined service job identifier
-		/// Get this value by calling the `getServiceJobs` operation of the Services API
+		/// An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Serv
+		/// ces API.
 		/// </summary>
 		[InPath("serviceJobId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string ServiceJobId { get; set; }
 
 		/// <summary>
-		/// An Amazon-defined identifier of active service job appointment
+		/// An Amazon-defined identifier of active service job appointment.
 		/// </summary>
 		[InPath("appointmentId")]
 		[IsRequired]
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string AppointmentId { get; set; }
 
 		/// <summary>
-		/// Appointment fulfillment data collection details
+		/// Appointment fulfillment data collection details.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

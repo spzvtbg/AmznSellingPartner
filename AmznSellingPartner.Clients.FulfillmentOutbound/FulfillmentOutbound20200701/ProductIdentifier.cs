@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Product identifier input that locates a product for MCF
+	/// Product identifier input that locates a product for MCF.
 	/// </summary>
 	public class ProductIdentifier : BaseClass
 	{
 		/// <summary>
-		/// The merchant SKU for the product
+		/// The merchant SKU for the product.
 		/// </summary>
 		[IsRequired]
 		[MaxLength(50)]

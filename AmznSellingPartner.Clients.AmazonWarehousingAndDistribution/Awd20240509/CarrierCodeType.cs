@@ -6,17 +6,14 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Denotes the type for the carrier
+	/// Denotes the type for the carrier.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum CarrierCodeType
 	{
 		/// <summary>
-		/// Standard Carrier Alpha Code
-		/// Refer to [What is a Standard Carrier Alpha Code](https://www
-		/// help
-		/// cbp
-		/// gov/s/article/Article-1420?language=en_US) for more information
+		/// Standard Carrier Alpha Code. Refer to [What is a Standard Carrier Alpha Code](https://www.help.cbp.gov/s/artic
+		/// e/Article-1420?language=en_US) for more information.
 		/// </summary>
 		[EnumMember(Value = "SCAC")]
 		SCAC,

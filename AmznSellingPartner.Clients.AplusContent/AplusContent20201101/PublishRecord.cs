@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The full context for an A+ Content publishing event
+	/// The full context for an A+ Content publishing event.
 	/// </summary>
 	public class PublishRecord : BaseClass
 	{

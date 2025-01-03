@@ -9,25 +9,25 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public enum Unit
 	{
 		/// <summary>
-		/// Kilograms
+		/// Kilograms.
 		/// </summary>
 		[EnumMember(Value = "KG")]
 		KG,
 
 		/// <summary>
-		/// Kilograms
+		/// Kilograms.
 		/// </summary>
 		[EnumMember(Value = "KILOGRAMS")]
 		KILOGRAMS,
 
 		/// <summary>
-		/// Pounds
+		/// Pounds.
 		/// </summary>
 		[EnumMember(Value = "LB")]
 		LB,
 
 		/// <summary>
-		/// Pounds
+		/// Pounds.
 		/// </summary>
 		[EnumMember(Value = "POUNDS")]
 		POUNDS,

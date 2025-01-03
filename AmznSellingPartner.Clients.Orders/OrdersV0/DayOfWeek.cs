@@ -9,43 +9,43 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum DayOfWeek
 	{
 		/// <summary>
-		/// Sunday - Day of the week
+		/// Sunday - Day of the week.
 		/// </summary>
 		[EnumMember(Value = "SUN")]
 		SUN,
 
 		/// <summary>
-		/// Monday - Day of the week
+		/// Monday - Day of the week.
 		/// </summary>
 		[EnumMember(Value = "MON")]
 		MON,
 
 		/// <summary>
-		/// Tuesday - Day of the week
+		/// Tuesday - Day of the week.
 		/// </summary>
 		[EnumMember(Value = "TUE")]
 		TUE,
 
 		/// <summary>
-		/// Wednesday - Day of the week
+		/// Wednesday - Day of the week.
 		/// </summary>
 		[EnumMember(Value = "WED")]
 		WED,
 
 		/// <summary>
-		/// Thursday - Day of the week
+		/// Thursday - Day of the week.
 		/// </summary>
 		[EnumMember(Value = "THU")]
 		THU,
 
 		/// <summary>
-		/// Friday - Day of the week
+		/// Friday - Day of the week.
 		/// </summary>
 		[EnumMember(Value = "FRI")]
 		FRI,
 
 		/// <summary>
-		/// Saturday - Day of the week
+		/// Saturday - Day of the week.
 		/// </summary>
 		[EnumMember(Value = "SAT")]
 		SAT,

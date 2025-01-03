@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum ResponsibleParty
 	{
 		/// <summary>
-		/// The `MarketplaceFacilitator` entity for the US marketplace
+		/// The `MarketplaceFacilitator` entity for the US marketplace.
 		/// </summary>
 		[EnumMember(Value = "Amazon Services, Inc.")]
 		Amazon_Services__Inc_,

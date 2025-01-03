@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Container sequence numbers that are involved in this shipment
+	/// Container sequence numbers that are involved in this shipment.
 	/// </summary>
 	public class ContainerSequenceNumbers : BaseClass
 	{

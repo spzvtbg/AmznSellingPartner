@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An item in a package
+	/// An item in a package.
 	/// </summary>
 	public class Item : BaseClass
 	{
@@ -15,20 +15,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public Currency ItemValue { get; set; }
 
 		/// <summary>
-		/// The product description of the item
+		/// The product description of the item.
 		/// </summary>
 		[JsonProperty("description")]
 		public string Description { get; set; }
 
 		/// <summary>
-		/// A unique identifier for an item provided by the client
+		/// A unique identifier for an item provided by the client.
 		/// </summary>
 		[JsonProperty("itemIdentifier")]
 		public string ItemIdentifier { get; set; }
 
 		/// <summary>
-		/// The number of units
-		/// This value is required
+		/// The number of units. This value is required.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("quantity")]
@@ -41,8 +40,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public LiquidVolume LiquidVolume { get; set; }
 
 		/// <summary>
-		/// When true, the item qualifies as hazardous materials (hazmat)
-		/// Defaults to false
+		/// When true, the item qualifies as hazardous materials (hazmat). Defaults to false.
 		/// </summary>
 		[JsonProperty("isHazmat")]
 		public bool IsHazmat { get; set; }
@@ -51,7 +49,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public DangerousGoodsDetails DangerousGoodsDetails { get; set; }
 
 		/// <summary>
-		/// The product type of the item
+		/// The product type of the item.
 		/// </summary>
 		[JsonProperty("productType")]
 		public string ProductType { get; set; }
@@ -60,9 +58,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public InvoiceDetails InvoiceDetails { get; set; }
 
 		/// <summary>
-		/// A list of unique serial numbers in an Amazon package that can be used to guarantee non-fraudulent items
-		/// The number of serial numbers in the list must be less than or equal to the quantity of items being shipped
-		/// Only applicable when channel source is Amazon
+		/// A list of unique serial numbers in an Amazon package that can be used to guarantee non-fraudulent items. The n
+		/// mber of serial numbers in the list must be less than or equal to the quantity of items being shipped. Only app
+		/// icable when channel source is Amazon.
 		/// </summary>
 		[JsonProperty("serialNumbers")]
 		public List<string> SerialNumbers { get; set; }

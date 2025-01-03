@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A simple object containing the name of the template
+	/// A simple object containing the name of the template.
 	/// </summary>
 	public class SolicitationsAction : BaseClass
 	{

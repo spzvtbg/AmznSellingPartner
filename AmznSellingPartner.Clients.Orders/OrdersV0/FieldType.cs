@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum FieldType
 	{
 		/// <summary>
-		/// This field is a text representation of the response collected from the regulatory form
+		/// This field is a text representation of the response collected from the regulatory form.
 		/// </summary>
 		[EnumMember(Value = "Text")]
 		Text,
 
 		/// <summary>
-		/// This field contains a link to an attachment collected from the regulatory form
+		/// This field contains a link to an attachment collected from the regulatory form.
 		/// </summary>
 		[EnumMember(Value = "FileAttachment")]
 		FileAttachment,

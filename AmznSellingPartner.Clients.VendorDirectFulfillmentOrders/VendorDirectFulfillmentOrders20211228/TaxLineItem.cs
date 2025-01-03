@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of tax line items
+	/// A list of tax line items.
 	/// </summary>
 	public class TaxLineItem : List<TaxDetails>
 	{

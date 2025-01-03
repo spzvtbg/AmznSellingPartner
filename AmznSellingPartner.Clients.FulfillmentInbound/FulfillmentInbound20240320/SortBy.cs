@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public enum SortBy
 	{
 		/// <summary>
-		/// Last updated time of the inbound plan
+		/// Last updated time of the inbound plan.
 		/// </summary>
 		[EnumMember(Value = "LAST_UPDATED_TIME")]
 		LAST_UPDATED_TIME,
 
 		/// <summary>
-		/// Inbound plan creation time
+		/// Inbound plan creation time.
 		/// </summary>
 		[EnumMember(Value = "CREATION_TIME")]
 		CREATION_TIME,

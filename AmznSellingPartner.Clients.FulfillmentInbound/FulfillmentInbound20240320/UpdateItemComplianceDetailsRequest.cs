@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `updateItemComplianceDetails` request
+	/// The `updateItemComplianceDetails` request.
 	/// </summary>
 	public class UpdateItemComplianceDetailsRequest : BaseClass
 	{
 		/// <summary>
-		/// The merchant SKU, a merchant-supplied identifier for a specific SKU
+		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

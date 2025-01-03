@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An event filter to customize your subscription to send notifications for only the specified `marketplaceId`s
+	/// An event filter to customize your subscription to send notifications for only the specified `marketplaceId`s.
 	/// </summary>
 	public class MarketplaceFilter : BaseClass
 	{

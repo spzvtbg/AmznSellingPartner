@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System;
 
 	/// <summary>
-	/// The metadata of an A+ Content document
+	/// The metadata of an A+ Content document.
 	/// </summary>
 	public class ContentMetadata : BaseClass
 	{
 		/// <summary>
-		/// The A+ Content document name
+		/// The A+ Content document name.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -33,7 +33,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public ContentBadgeSet BadgeSet { get; set; }
 
 		/// <summary>
-		/// The approximate age of the A+ Content document and metadata
+		/// The approximate age of the A+ Content document and metadata.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("updateTime")]

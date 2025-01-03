@@ -7,19 +7,19 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Relationship details for the listing item in the specified marketplace
+	/// Relationship details for the listing item in the specified marketplace.
 	/// </summary>
 	public class ItemRelationshipsByMarketplace : BaseClass
 	{
 		/// <summary>
-		/// Amazon marketplace identifier
+		/// Amazon marketplace identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// Relationships for the listing item
+		/// Relationships for the listing item.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("relationships")]

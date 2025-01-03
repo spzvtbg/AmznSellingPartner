@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An MSKU and its related prep details
+	/// An MSKU and its related prep details.
 	/// </summary>
 	public class MskuPrepDetail : BaseClass
 	{
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public OwnerConstraint LabelOwnerConstraint { get; set; }
 
 		/// <summary>
-		/// The merchant SKU, a merchant-supplied identifier for a specific SKU
+		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -34,7 +34,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public OwnerConstraint PrepOwnerConstraint { get; set; }
 
 		/// <summary>
-		/// A list of preparation types associated with a preparation category
+		/// A list of preparation types associated with a preparation category.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("prepTypes")]

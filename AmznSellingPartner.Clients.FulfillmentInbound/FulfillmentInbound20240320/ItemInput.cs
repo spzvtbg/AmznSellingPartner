@@ -5,16 +5,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Defines an item's input parameters
+	/// Defines an item's input parameters.
 	/// </summary>
 	public class ItemInput : BaseClass
 	{
 		/// <summary>
-		/// The expiration date of the MSKU
-		/// In [ISO 8601](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601) datetime format with pattern `YYYY-MM-DD`
-		/// Items with the same MSKU but different expiration dates cannot go into the same box
+		/// The expiration date of the MSKU. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) datetim
+		/// format with pattern `YYYY-MM-DD`. Items with the same MSKU but different expiration dates cannot go into the
+		/// ame box.
 		/// </summary>
 		[Pattern("^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])")]
 		[JsonProperty("expiration")]
@@ -25,7 +23,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public LabelOwner LabelOwner { get; set; }
 
 		/// <summary>
-		/// The manufacturing lot code
+		/// The manufacturing lot code.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(256)]
@@ -33,7 +31,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ManufacturingLotCode { get; set; }
 
 		/// <summary>
-		/// The merchant SKU, a merchant-supplied identifier of a specific SKU
+		/// The merchant SKU, a merchant-supplied identifier of a specific SKU.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -46,7 +44,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public PrepOwner PrepOwner { get; set; }
 
 		/// <summary>
-		/// The number of units of the specified MSKU that will be shipped
+		/// The number of units of the specified MSKU that will be shipped.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]

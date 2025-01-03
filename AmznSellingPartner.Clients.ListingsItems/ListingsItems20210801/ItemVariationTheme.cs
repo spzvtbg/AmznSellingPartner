@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A variation theme that indicates the combination of listing item attributes that define the variation family
+	/// A variation theme that indicates the combination of listing item attributes that define the variation family.
 	/// </summary>
 	public class ItemVariationTheme : BaseClass
 	{
 		/// <summary>
-		/// The names of the listing item attributes that are associated with the variation theme
+		/// The names of the listing item attributes that are associated with the variation theme.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("attributes")]
@@ -20,6 +20,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 
 		/// <summary>
 		/// The variation theme that indicates the combination of listing item attributes that define the variation family
+		/// 
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("theme")]

@@ -8,8 +8,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	public class CancelQueryDeleteRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the query
-		/// This identifier is unique only in combination with a selling partner account ID
+		/// The identifier for the query. This identifier is unique only in combination with a selling partner account ID.
 		/// </summary>
 		[InPath("queryId")]
 		[IsRequired]

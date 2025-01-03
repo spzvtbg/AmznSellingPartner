@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Response payload with the list of shipping labels
+	/// Response payload with the list of shipping labels.
 	/// </summary>
 	public class ShippingLabelList : BaseClass
 	{
@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public Pagination Pagination { get; set; }
 
 		/// <summary>
-		/// An array containing the details of the generated shipping labels
+		/// An array containing the details of the generated shipping labels.
 		/// </summary>
 		[JsonProperty("shippingLabels")]
 		public List<ShippingLabel> ShippingLabels { get; set; }

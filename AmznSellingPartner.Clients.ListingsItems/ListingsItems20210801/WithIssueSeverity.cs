@@ -10,14 +10,14 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	{
 		/// <summary>
 		/// Indicates an issue has occurred that should be reviewed, but it has not prevented the submission from processi
-		/// g
+		/// g.
 		/// </summary>
 		[EnumMember(Value = "WARNING")]
 		WARNING,
 
 		/// <summary>
-		/// Indicates that an issue has occurred, which prevented the submission from processing
-		/// For example, a validation error
+		/// Indicates that an issue has occurred, which prevented the submission from processing. For example, a validatio
+		/// error.
 		/// </summary>
 		[EnumMember(Value = "ERROR")]
 		ERROR,

@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The product details for the delivery offer
+	/// The product details for the delivery offer.
 	/// </summary>
 	public class GetDeliveryOffersProduct : BaseClass
 	{
 		/// <summary>
-		/// Product identifier input that locates a product for MCF
+		/// Product identifier input that locates a product for MCF.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("productIdentifier")]
 		public ProductIdentifier ProductIdentifier { get; set; }
 
 		/// <summary>
-		/// The amount of the requested product
+		/// The amount of the requested product.
 		/// </summary>
 		[JsonProperty("amount")]
 		public Amount Amount { get; set; }

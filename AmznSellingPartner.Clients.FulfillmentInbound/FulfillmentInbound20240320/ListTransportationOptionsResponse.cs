@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `listTransportationOptions` response
+	/// The `listTransportationOptions` response.
 	/// </summary>
 	public class ListTransportationOptionsResponse : BaseClass
 	{
@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Pagination Pagination { get; set; }
 
 		/// <summary>
-		/// Transportation options generated for the placement option
+		/// Transportation options generated for the placement option.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("transportationOptions")]

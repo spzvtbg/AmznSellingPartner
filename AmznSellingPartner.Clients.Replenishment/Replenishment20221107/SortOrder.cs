@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The sort order
+	/// The sort order.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum SortOrder
 	{
 		/// <summary>
-		/// Sort the results in ascending order
+		/// Sort the results in ascending order.
 		/// </summary>
 		[EnumMember(Value = "ASC")]
 		ASC,
 
 		/// <summary>
-		/// Sort the results in descending order
+		/// Sort the results in descending order.
 		/// </summary>
 		[EnumMember(Value = "DESC")]
 		DESC,

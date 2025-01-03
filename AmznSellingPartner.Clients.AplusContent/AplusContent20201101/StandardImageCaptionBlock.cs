@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The A+ Content standard image and caption block
+	/// The A+ Content standard image and caption block.
 	/// </summary>
 	public class StandardImageCaptionBlock : BaseClass
 	{

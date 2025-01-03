@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The post-purchase details of a package that will be shipped using a shipping service
+	/// The post-purchase details of a package that will be shipped using a shipping service.
 	/// </summary>
 	public class PackageDocumentDetail : BaseClass
 	{

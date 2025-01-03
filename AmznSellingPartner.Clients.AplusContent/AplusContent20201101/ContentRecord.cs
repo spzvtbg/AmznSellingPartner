@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A content document with additional information for content management
+	/// A content document with additional information for content management.
 	/// </summary>
 	public class ContentRecord : BaseClass
 	{

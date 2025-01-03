@@ -5,27 +5,26 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Reservation object reduces the capacity of a resource
+	/// Reservation object reduces the capacity of a resource.
 	/// </summary>
 	public class Reservation : BaseClass
 	{
 		/// <summary>
-		/// Unique identifier for a reservation
-		/// If present, it is treated as an update reservation request and will update the corresponding reservation
-		/// Otherwise, it is treated as a new create reservation request
+		/// Unique identifier for a reservation. If present, it is treated as an update reservation request and will updat
+		/// the corresponding reservation. Otherwise, it is treated as a new create reservation request.
 		/// </summary>
 		[JsonProperty("reservationId")]
 		public string ReservationId { get; set; }
 
 		/// <summary>
-		/// Type of reservation
+		/// Type of reservation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("type")]
 		public Type Type { get; set; }
 
 		/// <summary>
-		/// `AvailabilityRecord` to represent the capacity of a resource over a time range
+		/// `AvailabilityRecord` to represent the capacity of a resource over a time range.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("availability")]

@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The format of the container label
+	/// The format of the container label.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ContainerLabelFormat
 	{
 		/// <summary>
-		/// Portable Network Graphics (png) format
+		/// Portable Network Graphics (png) format.
 		/// </summary>
 		[EnumMember(Value = "PNG")]
 		PNG,
 
 		/// <summary>
-		/// Zebra Programming Language (zpl) format
+		/// Zebra Programming Language (zpl) format.
 		/// </summary>
 		[EnumMember(Value = "ZPL")]
 		ZPL,

@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A single order item's buyer information list with the order ID
+	/// A single order item's buyer information list with the order ID.
 	/// </summary>
 	public class OrderItemsBuyerInfoList : BaseClass
 	{
@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public OrderItemBuyerInfoList OrderItems { get; set; }
 
 		/// <summary>
-		/// When present and not empty, pass this string token in the next request to return the next response page
+		/// When present and not empty, pass this string token in the next request to return the next response page.
 		/// </summary>
 		[JsonProperty("NextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// An Amazon-defined order identifier, in 3-7-7 format
+		/// An Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("AmazonOrderId")]

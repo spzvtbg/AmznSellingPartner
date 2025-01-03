@@ -9,14 +9,14 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public enum ShipmentStatus
 	{
 		/// <summary>
-		/// Orders that have left the warehouse have shipped status
+		/// Orders that have left the warehouse have shipped status.
 		/// </summary>
 		[EnumMember(Value = "SHIPPED")]
 		SHIPPED,
 
 		/// <summary>
 		/// Status for orders rejected due to quality issues with products on the floor, or the physical and virtual inven
-		/// ory do not match
+		/// ory do not match.
 		/// </summary>
 		[EnumMember(Value = "FLOOR_DENIAL")]
 		FLOOR_DENIAL,

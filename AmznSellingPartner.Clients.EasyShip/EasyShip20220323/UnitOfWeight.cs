@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The unit of measurement used to measure the weight
+	/// The unit of measurement used to measure the weight.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum UnitOfWeight

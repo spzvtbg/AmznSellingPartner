@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class GetPackingSlipGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The `purchaseOrderNumber` for the packing slip that you want
+		/// The `purchaseOrderNumber` for the packing slip that you want.
 		/// </summary>
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]

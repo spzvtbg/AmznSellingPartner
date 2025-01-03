@@ -10,8 +10,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class GetShipmentDetailsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The limit to the number of records returned
-		/// Default value is 50 records
+		/// The limit to the number of records returned. Default value is 50 records.
 		/// </summary>
 		[InQuery("limit")]
 		[Minimum(1)]
@@ -20,181 +19,149 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public long Limit { get; set; }
 
 		/// <summary>
-		/// Sort in ascending or descending order by purchase order creation date
+		/// Sort in ascending or descending order by purchase order creation date.
 		/// </summary>
 		[InQuery("sortOrder")]
 		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
-		/// Used for pagination when there are more shipments than the specified result size limit
+		/// Used for pagination when there are more shipments than the specified result size limit.
 		/// </summary>
 		[InQuery("nextToken")]
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details that became available after this timestamp will be included in the result
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details that became available after this timestamp will be included in the result. Must be in <a
+		/// ref='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("createdAfter")]
 		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details that became available before this timestamp will be included in the result
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details that became available before this timestamp will be included in the result. Must be in <a
+		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("createdBefore")]
 		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Shipment confirmed create Date Before
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Shipment confirmed create Date Before. Must be in <a href='https://developer-d
+		/// cs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentConfirmedBefore")]
 		[JsonProperty("shipmentConfirmedBefore")]
 		public DateTime ShipmentConfirmedBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Shipment confirmed create Date After
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Shipment confirmed create Date After. Must be in <a href='https://developer-do
+		/// s.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentConfirmedAfter")]
 		[JsonProperty("shipmentConfirmedAfter")]
 		public DateTime ShipmentConfirmedAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Package label create Date by buyer
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Package label create Date by buyer. Must be in <a href='https://developer-docs
+		/// amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("packageLabelCreatedBefore")]
 		[JsonProperty("packageLabelCreatedBefore")]
 		public DateTime PackageLabelCreatedBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Package label create Date After by buyer
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Package label create Date After by buyer. Must be in <a href='https://develope
+		/// -docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("packageLabelCreatedAfter")]
 		[JsonProperty("packageLabelCreatedAfter")]
 		public DateTime PackageLabelCreatedAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Shipped Date Before
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Shipped Date Before. Must be in <a href='https://developer-docs.amazon.com/sp-
+		/// pi/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("shippedBefore")]
 		[JsonProperty("shippedBefore")]
 		public DateTime ShippedBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Shipped Date After
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Shipped Date After. Must be in <a href='https://developer-docs.amazon.com/sp-a
+		/// i/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("shippedAfter")]
 		[JsonProperty("shippedAfter")]
 		public DateTime ShippedAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Estimated Delivery Date Before
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Estimated Delivery Date Before. Must be in <a href='https://developer-docs.ama
+		/// on.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("estimatedDeliveryBefore")]
 		[JsonProperty("estimatedDeliveryBefore")]
 		public DateTime EstimatedDeliveryBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Estimated Delivery Date Before
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Estimated Delivery Date Before. Must be in <a href='https://developer-docs.ama
+		/// on.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("estimatedDeliveryAfter")]
 		[JsonProperty("estimatedDeliveryAfter")]
 		public DateTime EstimatedDeliveryAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Shipment Delivery Date Before
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Shipment Delivery Date Before. Must be in <a href='https://developer-docs.amaz
+		/// n.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentDeliveryBefore")]
 		[JsonProperty("shipmentDeliveryBefore")]
 		public DateTime ShipmentDeliveryBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Shipment Delivery Date After
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Shipment Delivery Date After. Must be in <a href='https://developer-docs.amazo
+		/// .com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentDeliveryAfter")]
 		[JsonProperty("shipmentDeliveryAfter")]
 		public DateTime ShipmentDeliveryAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Before Requested pickup date
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Before Requested pickup date. Must be in <a href='https://developer-docs.amazo
+		/// .com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("requestedPickUpBefore")]
 		[JsonProperty("requestedPickUpBefore")]
 		public DateTime RequestedPickUpBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing After Requested pickup date
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing After Requested pickup date. Must be in <a href='https://developer-docs.amazon
+		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("requestedPickUpAfter")]
 		[JsonProperty("requestedPickUpAfter")]
 		public DateTime RequestedPickUpAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Before scheduled pickup date
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing Before scheduled pickup date. Must be in <a href='https://developer-docs.amazo
+		/// .com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("scheduledPickUpBefore")]
 		[JsonProperty("scheduledPickUpBefore")]
 		public DateTime ScheduledPickUpBefore { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing After Scheduled pickup date
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// Get Shipment Details by passing After Scheduled pickup date. Must be in <a href='https://developer-docs.amazon
+		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("scheduledPickUpAfter")]
 		[JsonProperty("scheduledPickUpAfter")]
 		public DateTime ScheduledPickUpAfter { get; set; }
 
 		/// <summary>
-		/// Get Shipment Details by passing Current shipment status
+		/// Get Shipment Details by passing Current shipment status.
 		/// </summary>
 		[InQuery("currentShipmentStatus")]
 		[JsonProperty("currentShipmentStatus")]
@@ -215,18 +182,16 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public string BuyerReferenceNumber { get; set; }
 
 		/// <summary>
-		/// Get Shipping Details based on buyer warehouse code
-		/// This value should be same as 'shipToParty
-		/// partyId' in the Shipment
+		/// Get Shipping Details based on buyer warehouse code. This value should be same as 'shipToParty.partyId' in the
+		/// hipment.
 		/// </summary>
 		[InQuery("buyerWarehouseCode")]
 		[JsonProperty("buyerWarehouseCode")]
 		public string BuyerWarehouseCode { get; set; }
 
 		/// <summary>
-		/// Get Shipping Details based on vendor warehouse code
-		/// This value should be same as 'sellingParty
-		/// partyId' in the Shipment
+		/// Get Shipping Details based on vendor warehouse code. This value should be same as 'sellingParty.partyId' in th
+		/// Shipment.
 		/// </summary>
 		[InQuery("sellerWarehouseCode")]
 		[JsonProperty("sellerWarehouseCode")]

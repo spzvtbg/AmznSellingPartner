@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Consists of the order preference and corresponding preference value
+	/// Consists of the order preference and corresponding preference value.
 	/// </summary>
 	public class OrderAttribute : BaseClass
 	{
 		/// <summary>
-		/// Preference for the distribution order
+		/// Preference for the distribution order.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("orderPreference")]
 		public OrderPreference OrderPreference { get; set; }
 
 		/// <summary>
-		/// Value for the order preference
+		/// Value for the order preference.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("orderPreferenceValue")]

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents the status of a transaction
+	/// Represents the status of a transaction.
 	/// </summary>
 	public class TransactionStatus : BaseClass
 	{

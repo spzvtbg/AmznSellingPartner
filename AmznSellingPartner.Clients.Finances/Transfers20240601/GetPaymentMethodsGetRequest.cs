@@ -9,10 +9,9 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 	public class GetPaymentMethodsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier of the marketplace from which you want to retrieve payment methods
-		/// For the list of possible marketplace identifiers, refer to [Marketplace IDs](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/marketplace-ids)
+		/// The identifier of the marketplace from which you want to retrieve payment methods. For the list of possible ma
+		/// ketplace identifiers, refer to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids
+		/// .
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
@@ -20,7 +19,7 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// A comma-separated list of the payment method types you want to include in the response
+		/// A comma-separated list of the payment method types you want to include in the response.
 		/// </summary>
 		[InQuery("paymentMethodTypes")]
 		[MinItems(1)]

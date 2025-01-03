@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public enum SortOrder
 	{
 		/// <summary>
-		/// Ascending order
+		/// Ascending order.
 		/// </summary>
 		[EnumMember(Value = "ASC")]
 		ASC,
 
 		/// <summary>
-		/// Descending order
+		/// Descending order.
 		/// </summary>
 		[EnumMember(Value = "DESC")]
 		DESC,

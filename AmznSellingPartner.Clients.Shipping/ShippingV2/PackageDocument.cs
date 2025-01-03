@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A document related to a package
+	/// A document related to a package.
 	/// </summary>
 	public class PackageDocument : BaseClass
 	{

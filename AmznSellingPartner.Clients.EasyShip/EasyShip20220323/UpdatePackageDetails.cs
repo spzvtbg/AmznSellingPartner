@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Request to update the time slot of a package
+	/// Request to update the time slot of a package.
 	/// </summary>
 	public class UpdatePackageDetails : BaseClass
 	{

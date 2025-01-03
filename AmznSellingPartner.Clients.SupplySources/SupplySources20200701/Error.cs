@@ -5,26 +5,26 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An error response returned when the request is unsuccessful
+	/// An error response returned when the request is unsuccessful.
 	/// </summary>
 	public class Error : BaseClass
 	{
 		/// <summary>
-		/// An error code that identifies the type of error that occured
+		/// An error code that identifies the type of error that occured.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("code")]
 		public string Code { get; set; }
 
 		/// <summary>
-		/// A message that describes the error condition in a human-readable form
+		/// A message that describes the error condition in a human-readable form.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("message")]
 		public string Message { get; set; }
 
 		/// <summary>
-		/// The additional details that can help the caller understand or fix the issue
+		/// The additional details that can help the caller understand or fix the issue.
 		/// </summary>
 		[JsonProperty("details")]
 		public string Details { get; set; }

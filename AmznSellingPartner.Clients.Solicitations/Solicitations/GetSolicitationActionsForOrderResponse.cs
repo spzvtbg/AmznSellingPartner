@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the getSolicitationActionsForOrder operation
+	/// The response schema for the getSolicitationActionsForOrder operation.
 	/// </summary>
 	public class GetSolicitationActionsForOrderResponse : BaseClass
 	{

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A promotional percentage discount applied to the offer
+	/// A promotional percentage discount applied to the offer.
 	/// </summary>
 	public class OfferProgramConfigurationPromotionsDiscountFunding : BaseClass
 	{
 		/// <summary>
-		/// The percentage discount on the offer
+		/// The percentage discount on the offer.
 		/// </summary>
 		[Minimum(0)]
 		[Maximum(100)]

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	public class RecordActionFeedbackPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A `notificationId` uniquely identifies a notification
+		/// A `notificationId` uniquely identifies a notification.
 		/// </summary>
 		[InPath("notificationId")]
 		[IsRequired]
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		public string NotificationId { get; set; }
 
 		/// <summary>
-		/// The request body for the `recordActionFeedback` operation
+		/// The request body for the `recordActionFeedback` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

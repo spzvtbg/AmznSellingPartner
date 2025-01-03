@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Contains input information about a pallet to be used in the inbound plan
+	/// Contains input information about a pallet to be used in the inbound plan.
 	/// </summary>
 	public class PalletInput : BaseClass
 	{
@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Dimensions Dimensions { get; set; }
 
 		/// <summary>
-		/// The number of containers where all other properties like weight or dimensions are identical
+		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]

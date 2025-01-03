@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The transportation option selected to confirm
+	/// The transportation option selected to confirm.
 	/// </summary>
 	public class TransportationSelection : BaseClass
 	{
@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public ContactInformation ContactInformation { get; set; }
 
 		/// <summary>
-		/// Shipment ID that the transportation Option is for
+		/// Shipment ID that the transportation Option is for.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShipmentId { get; set; }
 
 		/// <summary>
-		/// Transportation option being selected for the provided shipment
+		/// Transportation option being selected for the provided shipment.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]

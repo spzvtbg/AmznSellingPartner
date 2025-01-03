@@ -3,18 +3,18 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Filter for use when requesting eligible shipping services
+	/// Filter for use when requesting eligible shipping services.
 	/// </summary>
 	public class ShippingOfferingFilter : BaseClass
 	{
 		/// <summary>
-		/// When true, include a packing slip with the label
+		/// When true, include a packing slip with the label.
 		/// </summary>
 		[JsonProperty("IncludePackingSlipWithLabel")]
 		public bool IncludePackingSlipWithLabel { get; set; }
 
 		/// <summary>
-		/// When true, include complex shipping options
+		/// When true, include complex shipping options.
 		/// </summary>
 		[JsonProperty("IncludeComplexShippingOptions")]
 		public bool IncludeComplexShippingOptions { get; set; }

@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The available shipping service options
+	/// The available shipping service options.
 	/// </summary>
 	public class AvailableShippingServiceOptions : BaseClass
 	{

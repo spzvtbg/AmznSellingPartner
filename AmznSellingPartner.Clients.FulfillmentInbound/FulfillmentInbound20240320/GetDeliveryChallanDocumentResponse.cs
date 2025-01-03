@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `getDeliveryChallanDocumentResponse` response
+	/// The `getDeliveryChallanDocumentResponse` response.
 	/// </summary>
 	public class GetDeliveryChallanDocumentResponse : BaseClass
 	{

@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The error response for when a request is unsuccessful
+	/// The error response for when a request is unsuccessful.
 	/// </summary>
 	public class ErrorList : BaseClass
 	{
 		/// <summary>
-		/// A list of error responses returned when a request is unsuccessful
+		/// A list of error responses returned when a request is unsuccessful.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("errors")]

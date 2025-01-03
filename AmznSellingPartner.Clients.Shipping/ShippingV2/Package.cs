@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A package to be shipped through a shipping service offering
+	/// A package to be shipped through a shipping service offering.
 	/// </summary>
 	public class Package : BaseClass
 	{
@@ -22,14 +22,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public Currency InsuredValue { get; set; }
 
 		/// <summary>
-		/// When true, the package contains hazardous materials
-		/// Defaults to false
+		/// When true, the package contains hazardous materials. Defaults to false.
 		/// </summary>
 		[JsonProperty("isHazmat")]
 		public bool IsHazmat { get; set; }
 
 		/// <summary>
-		/// The seller name displayed on the label
+		/// The seller name displayed on the label.
 		/// </summary>
 		[JsonProperty("sellerDisplayName")]
 		public string SellerDisplayName { get; set; }

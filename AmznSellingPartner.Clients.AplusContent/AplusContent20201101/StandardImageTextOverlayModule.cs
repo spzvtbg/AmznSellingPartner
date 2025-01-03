@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A standard background image with a floating text box
+	/// A standard background image with a floating text box.
 	/// </summary>
 	public class StandardImageTextOverlayModule : BaseClass
 	{

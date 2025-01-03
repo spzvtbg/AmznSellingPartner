@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A set of messages to the user, such as warnings or comments
+	/// A set of messages to the user, such as warnings or comments.
 	/// </summary>
 	[UniqueItems]
 	public class MessageSet : List<Error>

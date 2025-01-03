@@ -3,13 +3,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Response containing the transaction ID
+	/// Response containing the transaction ID.
 	/// </summary>
 	public class TransactionId : BaseClass
 	{
 		/// <summary>
-		/// GUID assigned by Amazon to identify this transaction
-		/// This value can be used with the Transaction Status API to return the status of this transaction
+		/// GUID assigned by Amazon to identify this transaction. This value can be used with the Transaction Status API t
+		/// return the status of this transaction.
 		/// </summary>
 		[JsonProperty("transactionIdValue")]
 		public string TransactionIdValue { get; set; }

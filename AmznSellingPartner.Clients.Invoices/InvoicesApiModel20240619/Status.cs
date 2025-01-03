@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public enum Status
 	{
 		/// <summary>
-		/// The export request was created, but has not started yet
+		/// The export request was created, but has not started yet.
 		/// </summary>
 		[EnumMember(Value = "REQUESTED")]
 		REQUESTED,
@@ -21,15 +21,13 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		PROCESSING,
 
 		/// <summary>
-		/// The export request is finished with success
-		/// Use the document IDs to download the output documents
+		/// The export request is finished with success. Use the document IDs to download the output documents.
 		/// </summary>
 		[EnumMember(Value = "DONE")]
 		DONE,
 
 		/// <summary>
-		/// The export request resulted in an error
-		/// Check the `errorMessage` attribute for more details
+		/// The export request resulted in an error. Check the `errorMessage` attribute for more details.
 		/// </summary>
 		[EnumMember(Value = "ERROR")]
 		ERROR,

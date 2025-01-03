@@ -9,55 +9,55 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public enum IdentifiersType
 	{
 		/// <summary>
-		/// Amazon Standard Identification Number
+		/// Amazon Standard Identification Number.
 		/// </summary>
 		[EnumMember(Value = "ASIN")]
 		ASIN,
 
 		/// <summary>
-		/// European Article Number
+		/// European Article Number.
 		/// </summary>
 		[EnumMember(Value = "EAN")]
 		EAN,
 
 		/// <summary>
-		/// Fulfillment Network Stock Keeping Unit
+		/// Fulfillment Network Stock Keeping Unit.
 		/// </summary>
 		[EnumMember(Value = "FNSKU")]
 		FNSKU,
 
 		/// <summary>
-		/// Global Trade Item Number
+		/// Global Trade Item Number.
 		/// </summary>
 		[EnumMember(Value = "GTIN")]
 		GTIN,
 
 		/// <summary>
-		/// International Standard Book Number
+		/// International Standard Book Number.
 		/// </summary>
 		[EnumMember(Value = "ISBN")]
 		ISBN,
 
 		/// <summary>
-		/// Japanese Article Number
+		/// Japanese Article Number.
 		/// </summary>
 		[EnumMember(Value = "JAN")]
 		JAN,
 
 		/// <summary>
-		/// Minsan Code
+		/// Minsan Code.
 		/// </summary>
 		[EnumMember(Value = "MINSAN")]
 		MINSAN,
 
 		/// <summary>
-		/// Stock Keeping Unit (SKU): A seller-specified identifier for an Amazon listing
+		/// Stock Keeping Unit (SKU): A seller-specified identifier for an Amazon listing.
 		/// </summary>
 		[EnumMember(Value = "SKU")]
 		SKU,
 
 		/// <summary>
-		/// Universal Product Code
+		/// Universal Product Code.
 		/// </summary>
 		[EnumMember(Value = "UPC")]
 		UPC,

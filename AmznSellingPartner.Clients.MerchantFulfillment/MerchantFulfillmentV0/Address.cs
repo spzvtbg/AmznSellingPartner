@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The postal address information
+	/// The postal address information.
 	/// </summary>
 	public class Address : BaseClass
 	{

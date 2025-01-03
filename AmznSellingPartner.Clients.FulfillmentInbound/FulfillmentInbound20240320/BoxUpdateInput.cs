@@ -20,17 +20,16 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Dimensions Dimensions { get; set; }
 
 		/// <summary>
-		/// The items and their quantity in the box
-		/// This must be empty if the box `contentInformationSource` is `BARCODE_2D` or `MANUAL_PROCESS`
+		/// The items and their quantity in the box. This must be empty if the box `contentInformationSource` is `BARCODE_
+		/// D` or `MANUAL_PROCESS`.
 		/// </summary>
 		[JsonProperty("items")]
 		public List<ItemInput> Items { get; set; }
 
 		/// <summary>
-		/// Primary key to uniquely identify a Box Package
-		/// PackageId must be provided if the intent is to update an existing box
-		/// Adding a new box will not require providing this value
-		/// Any existing PackageIds not provided will be treated as to-be-removed
+		/// Primary key to uniquely identify a Box Package. PackageId must be provided if the intent is to update an exist
+		/// ng box. Adding a new box will not require providing this value. Any existing PackageIds not provided will be t
+		/// eated as to-be-removed
 		/// </summary>
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
@@ -39,7 +38,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackageId { get; set; }
 
 		/// <summary>
-		/// The number of containers where all other properties like weight or dimensions are identical
+		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]

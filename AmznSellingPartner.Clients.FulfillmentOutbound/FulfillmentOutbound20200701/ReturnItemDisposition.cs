@@ -6,37 +6,37 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The condition of the return item when received by an Amazon fulfillment center
+	/// The condition of the return item when received by an Amazon fulfillment center.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ReturnItemDisposition
 	{
 		/// <summary>
-		/// Item is in sellable condition
+		/// Item is in sellable condition.
 		/// </summary>
 		[EnumMember(Value = "Sellable")]
 		Sellable,
 
 		/// <summary>
-		/// Item is defective
+		/// Item is defective.
 		/// </summary>
 		[EnumMember(Value = "Defective")]
 		Defective,
 
 		/// <summary>
-		/// Item was damaged by the buyer or the seller
+		/// Item was damaged by the buyer or the seller.
 		/// </summary>
 		[EnumMember(Value = "CustomerDamaged")]
 		CustomerDamaged,
 
 		/// <summary>
-		/// Item was damaged by the carrier
+		/// Item was damaged by the carrier.
 		/// </summary>
 		[EnumMember(Value = "CarrierDamaged")]
 		CarrierDamaged,
 
 		/// <summary>
-		/// Item was damaged by Amazon
+		/// Item was damaged by Amazon.
 		/// </summary>
 		[EnumMember(Value = "FulfillerDamaged")]
 		FulfillerDamaged,

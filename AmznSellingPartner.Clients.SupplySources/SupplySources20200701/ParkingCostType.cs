@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The parking cost type
+	/// The parking cost type.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ParkingCostType

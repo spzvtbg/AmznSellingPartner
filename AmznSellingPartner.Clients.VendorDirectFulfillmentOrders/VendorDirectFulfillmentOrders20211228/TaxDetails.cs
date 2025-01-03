@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The tax details related to the order
+	/// The tax details related to the order.
 	/// </summary>
 	public class TaxDetails : BaseClass
 	{
@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public Money TaxableAmount { get; set; }
 
 		/// <summary>
-		/// Tax type
+		/// Tax type.
 		/// </summary>
 		[JsonProperty("type")]
 		public Type Type { get; set; }

@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The response to the `listPrepDetails` operation
+	/// The response to the `listPrepDetails` operation.
 	/// </summary>
 	public class ListPrepDetailsResponse : BaseClass
 	{
 		/// <summary>
-		/// A list of MSKUs and related prep details
+		/// A list of MSKUs and related prep details.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("mskuPrepDetails")]

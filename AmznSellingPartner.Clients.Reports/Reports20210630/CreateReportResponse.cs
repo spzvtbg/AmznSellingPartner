@@ -5,13 +5,12 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema
+	/// The response schema.
 	/// </summary>
 	public class CreateReportResponse : BaseClass
 	{
 		/// <summary>
-		/// The identifier for the report
-		/// This identifier is unique only in combination with a seller ID
+		/// The identifier for the report. This identifier is unique only in combination with a seller ID.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("reportId")]

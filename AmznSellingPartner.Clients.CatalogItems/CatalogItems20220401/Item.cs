@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An item in the Amazon catalog
+	/// An item in the Amazon catalog.
 	/// </summary>
 	public class Item : BaseClass
 	{

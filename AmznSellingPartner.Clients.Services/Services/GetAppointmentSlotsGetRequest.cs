@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class GetAppointmentSlotsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// ASIN associated with the service
+		/// ASIN associated with the service.
 		/// </summary>
 		[InQuery("asin")]
 		[IsRequired]
@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string Asin { get; set; }
 
 		/// <summary>
-		/// Store identifier defining the region scope to retrive appointment slots
+		/// Store identifier defining the region scope to retrive appointment slots.
 		/// </summary>
 		[InQuery("storeId")]
 		[IsRequired]
@@ -36,21 +36,17 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// A time from which the appointment slots will be retrieved
-		/// The specified time must be in ISO 8601 format
-		/// If `startTime` is provided, `endTime` should also be provided
-		/// Default value is as per business configuration
+		/// A time from which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `
+		/// tartTime` is provided, `endTime` should also be provided. Default value is as per business configuration.
 		/// </summary>
 		[InQuery("startTime")]
 		[JsonProperty("startTime")]
 		public string StartTime { get; set; }
 
 		/// <summary>
-		/// A time up to which the appointment slots will be retrieved
-		/// The specified time must be in ISO 8601 format
-		/// If `endTime` is provided, `startTime` should also be provided
-		/// Default value is as per business configuration
-		/// Maximum range of appointment slots can be 90 days
+		/// A time up to which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If
+		/// endTime` is provided, `startTime` should also be provided. Default value is as per business configuration. Max
+		/// mum range of appointment slots can be 90 days.
 		/// </summary>
 		[InQuery("endTime")]
 		[JsonProperty("endTime")]

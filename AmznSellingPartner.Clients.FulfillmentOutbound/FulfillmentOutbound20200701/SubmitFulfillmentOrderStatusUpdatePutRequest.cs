@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class SubmitFulfillmentOrderStatusUpdatePutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier assigned to the item by the seller when the fulfillment order was created
+		/// The identifier assigned to the item by the seller when the fulfillment order was created.
 		/// </summary>
 		[InPath("sellerFulfillmentOrderId")]
 		[IsRequired]
@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string SellerFulfillmentOrderId { get; set; }
 
 		/// <summary>
-		/// The identifier assigned to the item by the seller when the fulfillment order was created
+		/// The identifier assigned to the item by the seller when the fulfillment order was created.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

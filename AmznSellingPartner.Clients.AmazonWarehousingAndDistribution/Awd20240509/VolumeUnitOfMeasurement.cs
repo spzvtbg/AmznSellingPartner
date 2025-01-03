@@ -6,25 +6,25 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Unit of measurement for the package volume
+	/// Unit of measurement for the package volume.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum VolumeUnitOfMeasurement
 	{
 		/// <summary>
-		/// Denotes volume measurement in cubic inches
+		/// Denotes volume measurement in cubic inches.
 		/// </summary>
 		[EnumMember(Value = "CU_IN")]
 		CU_IN,
 
 		/// <summary>
-		/// Denotes volume measurement in cubic meters
+		/// Denotes volume measurement in cubic meters.
 		/// </summary>
 		[EnumMember(Value = "CBM")]
 		CBM,
 
 		/// <summary>
-		/// Denotes volume measurement in cubic centimeters
+		/// Denotes volume measurement in cubic centimeters.
 		/// </summary>
 		[EnumMember(Value = "CC")]
 		CC,

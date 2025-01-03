@@ -7,13 +7,13 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class OrderedQuantity : BaseClass
 	{
 		/// <summary>
-		/// Item quantity ordered
+		/// Item quantity ordered.
 		/// </summary>
 		[JsonProperty("orderedQuantityValue")]
 		public ItemQuantity OrderedQuantityValue { get; set; }
 
 		/// <summary>
-		/// Details of item quantity ordered
+		/// Details of item quantity ordered.
 		/// </summary>
 		[JsonProperty("orderedQuantityDetails")]
 		public List<OrderedQuantityDetails> OrderedQuantityDetails { get; set; }

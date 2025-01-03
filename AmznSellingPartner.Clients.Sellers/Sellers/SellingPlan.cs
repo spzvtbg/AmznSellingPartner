@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 	public enum SellingPlan
 	{
 		/// <summary>
-		/// The seller has a professional selling plan
+		/// The seller has a professional selling plan.
 		/// </summary>
 		[EnumMember(Value = "PROFESSIONAL")]
 		PROFESSIONAL,
 
 		/// <summary>
-		/// The seller has an individual selling plan
+		/// The seller has an individual selling plan.
 		/// </summary>
 		[EnumMember(Value = "INDIVIDUAL")]
 		INDIVIDUAL,

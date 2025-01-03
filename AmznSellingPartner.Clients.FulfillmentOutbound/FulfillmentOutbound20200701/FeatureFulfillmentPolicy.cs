@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public enum FeatureFulfillmentPolicy
 	{
 		/// <summary>
-		/// If the offer can't be shipped with the selected feature, reject the order
+		/// If the offer can't be shipped with the selected feature, reject the order.
 		/// </summary>
 		[EnumMember(Value = "Required")]
 		Required,
 
 		/// <summary>
-		/// The feature is not required for shipping
+		/// The feature is not required for shipping.
 		/// </summary>
 		[EnumMember(Value = "NotRequired")]
 		NotRequired,

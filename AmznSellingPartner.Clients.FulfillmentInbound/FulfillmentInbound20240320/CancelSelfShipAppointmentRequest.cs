@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `cancelSelfShipAppointment` request
+	/// The `cancelSelfShipAppointment` request.
 	/// </summary>
 	public class CancelSelfShipAppointmentRequest : BaseClass
 	{

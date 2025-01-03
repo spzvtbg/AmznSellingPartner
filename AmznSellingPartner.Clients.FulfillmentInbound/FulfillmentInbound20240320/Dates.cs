@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Specifies the date that the seller expects their shipment will be shipped
+	/// Specifies the date that the seller expects their shipment will be shipped.
 	/// </summary>
 	public class Dates : BaseClass
 	{

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	public class GetDestinationGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier generated when you created the destination
+		/// The identifier generated when you created the destination.
 		/// </summary>
 		[InPath("destinationId")]
 		[IsRequired]

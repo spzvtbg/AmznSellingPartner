@@ -9,20 +9,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public enum Status
 	{
 		/// <summary>
-		/// An inbound plan that is being worked on
+		/// An inbound plan that is being worked on.
 		/// </summary>
 		[EnumMember(Value = "ACTIVE")]
 		ACTIVE,
 
 		/// <summary>
-		/// An inbound plan with all shipment cancelled and can no longer be modified
+		/// An inbound plan with all shipment cancelled and can no longer be modified.
 		/// </summary>
 		[EnumMember(Value = "VOIDED")]
 		VOIDED,
 
 		/// <summary>
-		/// A completed inbound plan
-		/// Only minor modifications can be made at this time
+		/// A completed inbound plan. Only minor modifications can be made at this time.
 		/// </summary>
 		[EnumMember(Value = "SHIPPED")]
 		SHIPPED,

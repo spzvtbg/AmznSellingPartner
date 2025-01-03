@@ -3,18 +3,18 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Response schema for the `getServiceJobs` operation
+	/// Response schema for the `getServiceJobs` operation.
 	/// </summary>
 	public class GetServiceJobsResponse : BaseClass
 	{
 		/// <summary>
-		/// The payload for the `getServiceJobs` operation
+		/// The payload for the `getServiceJobs` operation.
 		/// </summary>
 		[JsonProperty("payload")]
 		public JobListing Payload { get; set; }
 
 		/// <summary>
-		/// An unexpected condition occurred during the `getServiceJobs` operation
+		/// An unexpected condition occurred during the `getServiceJobs` operation.
 		/// </summary>
 		[JsonProperty("errors")]
 		public ErrorList Errors { get; set; }

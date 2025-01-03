@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Shipment type
+	/// Shipment type.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ShipmentType
 	{
 		/// <summary>
-		/// The identifier for forward request
+		/// The identifier for forward request.
 		/// </summary>
 		[EnumMember(Value = "FORWARD")]
 		FORWARD,
 
 		/// <summary>
-		/// The identifier for return request
+		/// The identifier for return request.
 		/// </summary>
 		[EnumMember(Value = "RETURNS")]
 		RETURNS,

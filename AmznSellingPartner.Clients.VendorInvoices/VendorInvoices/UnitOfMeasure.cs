@@ -9,37 +9,37 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	public enum UnitOfMeasure
 	{
 		/// <summary>
-		/// Packing of individual items into a case
+		/// Packing of individual items into a case.
 		/// </summary>
 		[EnumMember(Value = "Cases")]
 		Cases,
 
 		/// <summary>
-		/// Individual items
+		/// Individual items.
 		/// </summary>
 		[EnumMember(Value = "Eaches")]
 		Eaches,
 
 		/// <summary>
-		/// Weight in Pound
+		/// Weight in Pound.
 		/// </summary>
 		[EnumMember(Value = "POUNDS")]
 		POUNDS,
 
 		/// <summary>
-		/// Weight in Ounce
+		/// Weight in Ounce.
 		/// </summary>
 		[EnumMember(Value = "OUNCES")]
 		OUNCES,
 
 		/// <summary>
-		/// Weight in Gram
+		/// Weight in Gram.
 		/// </summary>
 		[EnumMember(Value = "GRAMS")]
 		GRAMS,
 
 		/// <summary>
-		/// Weight in Kilogram
+		/// Weight in Kilogram.
 		/// </summary>
 		[EnumMember(Value = "KILOGRAMS")]
 		KILOGRAMS,

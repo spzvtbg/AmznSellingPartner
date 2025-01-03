@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A set of content reference keys
+	/// A set of content reference keys.
 	/// </summary>
 	[UniqueItems]
 	public class ContentReferenceKeySet : List<ContentReferenceKey>

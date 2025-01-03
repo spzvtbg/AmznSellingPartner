@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request for the `recordActionFeedback` operation
+	/// The request for the `recordActionFeedback` operation.
 	/// </summary>
 	public class RecordActionFeedbackRequest : BaseClass
 	{
 		/// <summary>
-		/// The unique identifier for each notification status
+		/// The unique identifier for each notification status.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("feedbackActionCode")]

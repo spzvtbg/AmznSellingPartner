@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System;
 
 	/// <summary>
-	/// Shipment Status details
+	/// Shipment Status details.
 	/// </summary>
 	public class ShipmentStatusDetails : BaseClass
 	{
 		/// <summary>
-		/// Current status of the shipment on whether it is picked up or scheduled
+		/// Current status of the shipment on whether it is picked up or scheduled.
 		/// </summary>
 		[JsonProperty("shipmentStatus")]
 		public ShipmentStatus ShipmentStatus { get; set; }

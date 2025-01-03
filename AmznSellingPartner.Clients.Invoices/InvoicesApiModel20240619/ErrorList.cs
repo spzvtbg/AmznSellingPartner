@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of error responses that are returned when a request is unsuccessful
+	/// A list of error responses that are returned when a request is unsuccessful.
 	/// </summary>
 	public class ErrorList : BaseClass
 	{
 		/// <summary>
-		/// List of errors
+		/// List of errors.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("errors")]

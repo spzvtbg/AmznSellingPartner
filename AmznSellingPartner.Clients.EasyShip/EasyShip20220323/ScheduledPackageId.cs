@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Identifies the scheduled package to be updated
+	/// Identifies the scheduled package to be updated.
 	/// </summary>
 	public class ScheduledPackageId : BaseClass
 	{

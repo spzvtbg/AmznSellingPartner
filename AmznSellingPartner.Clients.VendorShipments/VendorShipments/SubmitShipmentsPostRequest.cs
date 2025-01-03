@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class SubmitShipmentsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A request to submit shipment request
+		/// A request to submit shipment request.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request body schema for the getDeliveryOffers operation
+	/// The request body schema for the getDeliveryOffers operation.
 	/// </summary>
 	public class GetDeliveryOffersRequest : BaseClass
 	{
 		/// <summary>
-		/// The product details for the delivery offer
+		/// The product details for the delivery offer.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("product")]
 		public GetDeliveryOffersProduct Product { get; set; }
 
 		/// <summary>
-		/// The terms for the delivery offer
+		/// The terms for the delivery offer.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("terms")]

@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 
 	/// <summary>
 	/// Optional seller-created identifier that is printed on the shipping label to help the seller identify the packa
-	/// e
+	/// e.
 	/// </summary>
 	public class PackageIdentifier : StringValue
 	{

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `competitiveSummary` batch request data
+	/// The `competitiveSummary` batch request data.
 	/// </summary>
 	public class CompetitiveSummaryBatchRequest : BaseClass
 	{
 		/// <summary>
-		/// A batched list of `competitiveSummary` requests
+		/// A batched list of `competitiveSummary` requests.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("requests")]

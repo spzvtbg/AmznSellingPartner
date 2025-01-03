@@ -7,15 +7,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `setPrepDetails` request
+	/// The `setPrepDetails` request.
 	/// </summary>
 	public class SetPrepDetailsRequest : BaseClass
 	{
 		/// <summary>
-		/// The marketplace ID
-		/// For a list of possible values, refer to [Marketplace IDs](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/marketplace-ids)
+		/// The marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs.amazon.co
+		/// /sp-api/docs/marketplace-ids).
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -24,7 +22,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// A list of MSKUs and related prep details
+		/// A list of MSKUs and related prep details.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

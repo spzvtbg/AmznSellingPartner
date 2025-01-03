@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A GUID assigned by Amazon to identify this transaction
+	/// A GUID assigned by Amazon to identify this transaction.
 	/// </summary>
 	public class TransactionReference : BaseClass
 	{
 		/// <summary>
-		/// A GUID (Globally Unique Identifier) assigned by Amazon to uniquely identify the transaction
+		/// A GUID (Globally Unique Identifier) assigned by Amazon to uniquely identify the transaction.
 		/// </summary>
 		[JsonProperty("transactionId")]
 		public string TransactionId { get; set; }

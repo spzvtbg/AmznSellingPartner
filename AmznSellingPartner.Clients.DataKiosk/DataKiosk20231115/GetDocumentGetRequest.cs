@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	public class GetDocumentGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the Data Kiosk document
+		/// The identifier for the Data Kiosk document.
 		/// </summary>
 		[InPath("documentId")]
 		[IsRequired]

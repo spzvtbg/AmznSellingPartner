@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The amount to collect on delivery
+	/// The amount to collect on delivery.
 	/// </summary>
 	public class CollectOnDelivery : BaseClass
 	{

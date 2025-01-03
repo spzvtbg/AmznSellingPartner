@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public enum SortField
 	{
 		/// <summary>
-		/// Sort on job date
+		/// Sort on job date.
 		/// </summary>
 		[EnumMember(Value = "JOB_DATE")]
 		JOB_DATE,
 
 		/// <summary>
-		/// Sort on job status
+		/// Sort on job status.
 		/// </summary>
 		[EnumMember(Value = "JOB_STATUS")]
 		JOB_STATUS,

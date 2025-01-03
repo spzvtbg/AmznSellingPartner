@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of fulfillment preview information
+	/// An array of fulfillment preview information.
 	/// </summary>
 	public class FulfillmentPreviewList : List<FulfillmentPreview>
 	{

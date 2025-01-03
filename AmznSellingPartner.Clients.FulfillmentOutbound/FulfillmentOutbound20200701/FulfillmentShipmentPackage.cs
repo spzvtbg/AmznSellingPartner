@@ -5,48 +5,45 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Package information for a shipment in a fulfillment order
+	/// Package information for a shipment in a fulfillment order.
 	/// </summary>
 	public class FulfillmentShipmentPackage : BaseClass
 	{
 		/// <summary>
-		/// Identifies a package in a shipment
+		/// Identifies a package in a shipment.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("packageNumber")]
 		public int PackageNumber { get; set; }
 
 		/// <summary>
-		/// Identifies the carrier who will deliver the shipment to the recipient
+		/// Identifies the carrier who will deliver the shipment to the recipient.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("carrierCode")]
 		public string CarrierCode { get; set; }
 
 		/// <summary>
-		/// The tracking number, if provided, can be used to obtain tracking and delivery information
+		/// The tracking number, if provided, can be used to obtain tracking and delivery information.
 		/// </summary>
 		[JsonProperty("trackingNumber")]
 		public string TrackingNumber { get; set; }
 
 		/// <summary>
-		/// The estimated arrival date and time of the package
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// The estimated arrival date and time of the package. Must be in <a href='https://developer-docs.amazon.com/sp-a
+		/// i/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[JsonProperty("estimatedArrivalDate")]
 		public Timestamp EstimatedArrivalDate { get; set; }
 
 		/// <summary>
-		/// The locker details, if provided can be used to access locker delivery box
+		/// The locker details, if provided can be used to access locker delivery box.
 		/// </summary>
 		[JsonProperty("lockerDetails")]
 		public LockerDetails LockerDetails { get; set; }
 
 		/// <summary>
-		/// The delivery information for the package
-		/// This information is available after the package is delivered
+		/// The delivery information for the package. This information is available after the package is delivered.
 		/// </summary>
 		[JsonProperty("deliveryInformation")]
 		public DeliveryInformation DeliveryInformation { get; set; }

@@ -7,27 +7,25 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Details of the Pallet/Tare being shipped
+	/// Details of the Pallet/Tare being shipped.
 	/// </summary>
 	public class Pallet : BaseClass
 	{
 		/// <summary>
-		/// A list of pallet identifiers
+		/// A list of pallet identifiers.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("palletIdentifiers")]
 		public List<ContainerIdentification> PalletIdentifiers { get; set; }
 
 		/// <summary>
-		/// Number of layers per pallet
-		/// Only applicable to container type Pallet
+		/// Number of layers per pallet. Only applicable to container type Pallet.
 		/// </summary>
 		[JsonProperty("tier")]
 		public int Tier { get; set; }
 
 		/// <summary>
-		/// Number of cartons per layer on the pallet
-		/// Only applicable to container type Pallet
+		/// Number of cartons per layer on the pallet. Only applicable to container type Pallet.
 		/// </summary>
 		[JsonProperty("block")]
 		public int Block { get; set; }
@@ -39,13 +37,13 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public Weight Weight { get; set; }
 
 		/// <summary>
-		/// Carton reference details
+		/// Carton reference details.
 		/// </summary>
 		[JsonProperty("cartonReferenceDetails")]
 		public CartonReferenceDetails CartonReferenceDetails { get; set; }
 
 		/// <summary>
-		/// A list of container item details
+		/// A list of container item details.
 		/// </summary>
 		[JsonProperty("items")]
 		public List<ContainerItem> Items { get; set; }

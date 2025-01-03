@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class Payload : BaseClass
 	{
 		/// <summary>
-		/// Warnings generated during the `assignAppointmentResources` operation
+		/// Warnings generated during the `assignAppointmentResources` operation.
 		/// </summary>
 		[JsonProperty("warnings")]
 		public WarningList Warnings { get; set; }

@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class AssignAppointmentResourcesPutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon-defined service job identifier
-		/// Get this value by calling the `getServiceJobs` operation of the Services API
+		/// An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Serv
+		/// ces API.
 		/// </summary>
 		[InPath("serviceJobId")]
 		[IsRequired]
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public string ServiceJobId { get; set; }
 
 		/// <summary>
-		/// An Amazon-defined identifier of active service job appointment
+		/// An Amazon-defined identifier of active service job appointment.
 		/// </summary>
 		[InPath("appointmentId")]
 		[IsRequired]

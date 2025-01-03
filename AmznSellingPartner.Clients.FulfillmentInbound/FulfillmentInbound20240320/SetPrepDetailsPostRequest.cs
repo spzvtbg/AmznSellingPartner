@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class SetPrepDetailsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The body of the request to `setPrepDetails`
+		/// The body of the request to `setPrepDetails`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

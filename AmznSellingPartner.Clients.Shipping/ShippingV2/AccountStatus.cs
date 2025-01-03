@@ -6,31 +6,31 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Account Status
+	/// Account Status.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum AccountStatus
 	{
 		/// <summary>
-		/// Seller Account is Active
+		/// Seller Account is Active.
 		/// </summary>
 		[EnumMember(Value = "ACTIVE")]
 		ACTIVE,
 
 		/// <summary>
-		/// Seller Account is InActive
+		/// Seller Account is InActive.
 		/// </summary>
 		[EnumMember(Value = "INACTIVE")]
 		INACTIVE,
 
 		/// <summary>
-		/// Seller Account is Pending
+		/// Seller Account is Pending.
 		/// </summary>
 		[EnumMember(Value = "PENDING")]
 		PENDING,
 
 		/// <summary>
-		/// Seller Account is Suspended
+		/// Seller Account is Suspended.
 		/// </summary>
 		[EnumMember(Value = "SUSPENDED")]
 		SUSPENDED,

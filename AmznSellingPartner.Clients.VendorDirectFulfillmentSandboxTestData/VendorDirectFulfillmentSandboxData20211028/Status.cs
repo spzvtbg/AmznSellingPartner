@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	public enum Status
 	{
 		/// <summary>
-		/// Transaction has failed
+		/// Transaction has failed.
 		/// </summary>
 		[EnumMember(Value = "FAILURE")]
 		FAILURE,
 
 		/// <summary>
-		/// Transaction is in process
+		/// Transaction is in process.
 		/// </summary>
 		[EnumMember(Value = "PROCESSING")]
 		PROCESSING,
 
 		/// <summary>
-		/// Transaction has completed successfully
+		/// Transaction has completed successfully.
 		/// </summary>
 		[EnumMember(Value = "SUCCESS")]
 		SUCCESS,

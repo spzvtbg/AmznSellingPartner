@@ -3,9 +3,8 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Describes a solicitation action that can be taken for an order
-	/// Provides a JSON Hypertext Application Language (HAL) link to the JSON schema document that describes the expe
-	/// ted input
+	/// Describes a solicitation action that can be taken for an order. Provides a JSON Hypertext Application Language
+	/// (HAL) link to the JSON schema document that describes the expected input.
 	/// </summary>
 	public class GetSolicitationActionResponse : BaseClass
 	{

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	public class CreateFeedDocumentPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Specifies the content type for the createFeedDocument operation
+		/// Specifies the content type for the createFeedDocument operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

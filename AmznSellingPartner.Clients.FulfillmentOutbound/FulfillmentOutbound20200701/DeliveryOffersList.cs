@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of delivery offer information
+	/// An array of delivery offer information.
 	/// </summary>
 	public class DeliveryOffersList : List<DeliveryOffer>
 	{

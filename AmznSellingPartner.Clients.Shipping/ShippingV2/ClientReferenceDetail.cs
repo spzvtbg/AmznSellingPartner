@@ -10,14 +10,14 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class ClientReferenceDetail : BaseClass
 	{
 		/// <summary>
-		/// Client Reference type
+		/// Client Reference type.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("clientReferenceType")]
 		public ClientReferenceType ClientReferenceType { get; set; }
 
 		/// <summary>
-		/// The Client Reference Id
+		/// The Client Reference Id.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("clientReferenceId")]

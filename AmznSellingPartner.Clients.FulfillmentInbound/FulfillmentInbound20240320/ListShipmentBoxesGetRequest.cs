@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ListShipmentBoxesGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an inbound plan
+		/// Identifier of an inbound plan.
 		/// </summary>
 		[InPath("inboundPlanId")]
 		[IsRequired]
@@ -19,8 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
-		/// Identifier of a shipment
-		/// A shipment contains the boxes and units being inbounded
+		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]
@@ -31,7 +30,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShipmentId { get; set; }
 
 		/// <summary>
-		/// The number of boxes to return in the response matching the given query
+		/// The number of boxes to return in the response matching the given query.
 		/// </summary>
 		[InQuery("pageSize")]
 		[Minimum(1)]
@@ -40,9 +39,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public int PageSize { get; set; }
 
 		/// <summary>
-		/// A token to fetch a certain page when there are multiple pages worth of results
-		/// The value of this token is fetched from the `pagination` returned in the API response
-		/// In the absence of the token value from the query parameter the API returns the first page of the result
+		/// A token to fetch a certain page when there are multiple pages worth of results. The value of this token is fet
+		/// hed from the `pagination` returned in the API response. In the absence of the token value from the query param
+		/// ter the API returns the first page of the result.
 		/// </summary>
 		[InQuery("paginationToken")]
 		[MinLength(0)]

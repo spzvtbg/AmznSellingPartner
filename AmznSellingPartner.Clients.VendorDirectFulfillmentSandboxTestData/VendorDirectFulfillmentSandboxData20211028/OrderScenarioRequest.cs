@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The party identifiers required to generate the test data
+	/// The party identifiers required to generate the test data.
 	/// </summary>
 	public class OrderScenarioRequest : BaseClass
 	{
 		/// <summary>
-		/// The identifier of the selling party or vendor
+		/// The identifier of the selling party or vendor.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sellingParty")]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
-		/// The warehouse code of the vendor
+		/// The warehouse code of the vendor.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipFromParty")]

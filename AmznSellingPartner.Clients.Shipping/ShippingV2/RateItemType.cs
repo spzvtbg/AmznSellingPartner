@@ -6,25 +6,25 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Type of the rateItem
+	/// Type of the rateItem.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum RateItemType
 	{
 		/// <summary>
-		/// Rate Item is mandatory
+		/// Rate Item is mandatory.
 		/// </summary>
 		[EnumMember(Value = "MANDATORY")]
 		MANDATORY,
 
 		/// <summary>
-		/// Rate Item is Optional
+		/// Rate Item is Optional.
 		/// </summary>
 		[EnumMember(Value = "OPTIONAL")]
 		OPTIONAL,
 
 		/// <summary>
-		/// Rate Item is included
+		/// Rate Item is included.
 		/// </summary>
 		[EnumMember(Value = "INCLUDED")]
 		INCLUDED,

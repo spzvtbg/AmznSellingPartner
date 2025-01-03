@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Indicates if the return item has been processed by a fulfillment center
+	/// Indicates if the return item has been processed by a fulfillment center.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum FulfillmentReturnItemStatus
 	{
 		/// <summary>
-		/// The return item has not yet been processed by a fulfillment center
+		/// The return item has not yet been processed by a fulfillment center.
 		/// </summary>
 		[EnumMember(Value = "New")]
 		New,
 
 		/// <summary>
-		/// The return item has been processed by a fulfillment center
+		/// The return item has been processed by a fulfillment center.
 		/// </summary>
 		[EnumMember(Value = "Processed")]
 		Processed,

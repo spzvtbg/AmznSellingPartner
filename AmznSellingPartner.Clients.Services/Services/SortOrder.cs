@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public enum SortOrder
 	{
 		/// <summary>
-		/// Sort in ascending order
+		/// Sort in ascending order.
 		/// </summary>
 		[EnumMember(Value = "ASC")]
 		ASC,
 
 		/// <summary>
-		/// Sort in descending order
+		/// Sort in descending order.
 		/// </summary>
 		[EnumMember(Value = "DESC")]
 		DESC,

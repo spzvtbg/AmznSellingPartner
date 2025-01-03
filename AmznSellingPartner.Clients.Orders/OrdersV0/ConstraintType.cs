@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum ConstraintType
 	{
 		/// <summary>
-		/// Item must follow the constraint to ensure order is met with buyer's delivery requirements
+		/// Item must follow the constraint to ensure order is met with buyer's delivery requirements.
 		/// </summary>
 		[EnumMember(Value = "MANDATORY")]
 		MANDATORY,

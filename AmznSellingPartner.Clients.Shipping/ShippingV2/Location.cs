@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The location where the person, business or institution is located
+	/// The location where the person, business or institution is located.
 	/// </summary>
 	public class Location : BaseClass
 	{

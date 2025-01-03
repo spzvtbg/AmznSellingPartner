@@ -6,13 +6,13 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The type of standard identifier to print on the label
+	/// The type of standard identifier to print on the label.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum StandardIdForLabel
 	{
 		/// <summary>
-		/// An Amazon-defined order identifier in 3-7-7 format
+		/// An Amazon-defined order identifier in 3-7-7 format.
 		/// </summary>
 		[EnumMember(Value = "AmazonOrderId")]
 		AmazonOrderId,

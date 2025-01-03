@@ -6,39 +6,38 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The verification status of the order
+	/// The verification status of the order.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum VerificationStatus
 	{
 		/// <summary>
-		/// The order is pending approval
-		/// Note that the approval might be needed from someone other than the merchant as determined by the `RequiresMer
-		/// hantAction` property
+		/// The order is pending approval. Note that the approval might be needed from someone other than the merchant as
+		/// etermined by the `RequiresMerchantAction` property.
 		/// </summary>
 		[EnumMember(Value = "Pending")]
 		Pending,
 
 		/// <summary>
-		/// The order's regulated information has been reviewed and approved
+		/// The order's regulated information has been reviewed and approved.
 		/// </summary>
 		[EnumMember(Value = "Approved")]
 		Approved,
 
 		/// <summary>
-		/// The order's regulated information has been reviewed and rejected
+		/// The order's regulated information has been reviewed and rejected.
 		/// </summary>
 		[EnumMember(Value = "Rejected")]
 		Rejected,
 
 		/// <summary>
-		/// The time to review the order's regulated information has expired
+		/// The time to review the order's regulated information has expired.
 		/// </summary>
 		[EnumMember(Value = "Expired")]
 		Expired,
 
 		/// <summary>
-		/// The order was cancelled by the purchaser
+		/// The order was cancelled by the purchaser.
 		/// </summary>
 		[EnumMember(Value = "Cancelled")]
 		Cancelled,

@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public enum CompressionAlgorithm
 	{
 		/// <summary>
-		/// The gzip compression algorithm
+		/// The gzip compression algorithm.
 		/// </summary>
 		[EnumMember(Value = "GZIP")]
 		GZIP,

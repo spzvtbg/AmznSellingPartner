@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the submitAcknowledgement operation
+	/// The response schema for the submitAcknowledgement operation.
 	/// </summary>
 	public class SubmitAcknowledgementResponse : BaseClass
 	{
 		/// <summary>
-		/// The payload for the submitAcknowledgement operation
+		/// The payload for the submitAcknowledgement operation.
 		/// </summary>
 		[JsonProperty("payload")]
 		public TransactionId Payload { get; set; }

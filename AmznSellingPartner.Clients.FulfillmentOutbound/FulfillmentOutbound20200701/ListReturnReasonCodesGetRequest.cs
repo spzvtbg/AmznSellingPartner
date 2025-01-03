@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class ListReturnReasonCodesGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The seller SKU for which return reason codes are required
+		/// The seller SKU for which return reason codes are required.
 		/// </summary>
 		[InQuery("sellerSku")]
 		[IsRequired]
@@ -16,15 +16,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string SellerSku { get; set; }
 
 		/// <summary>
-		/// The marketplace for which the seller wants return reason codes
+		/// The marketplace for which the seller wants return reason codes.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// The identifier assigned to the item by the seller when the fulfillment order was created
-		/// The service uses this value to determine the marketplace for which the seller wants return reason codes
+		/// The identifier assigned to the item by the seller when the fulfillment order was created. The service uses thi
+		/// value to determine the marketplace for which the seller wants return reason codes.
 		/// </summary>
 		[InQuery("sellerFulfillmentOrderId")]
 		[JsonProperty("sellerFulfillmentOrderId")]
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 
 		/// <summary>
 		/// The language that the `TranslatedDescription` property of the `ReasonCodeDetails` response object should be tr
-		/// nslated into
+		/// nslated into.
 		/// </summary>
 		[InQuery("language")]
 		[JsonProperty("language")]

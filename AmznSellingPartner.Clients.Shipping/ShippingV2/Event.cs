@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System;
 
 	/// <summary>
-	/// A tracking event
+	/// A tracking event.
 	/// </summary>
 	public class Event : BaseClass
 	{
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public Location Location { get; set; }
 
 		/// <summary>
-		/// The ISO 8601 formatted timestamp of the event
+		/// The ISO 8601 formatted timestamp of the event.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("eventTime")]

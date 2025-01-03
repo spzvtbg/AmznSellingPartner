@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A package status summary
+	/// A package status summary.
 	/// </summary>
 	public class TrackingSummary : BaseClass
 	{

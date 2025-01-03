@@ -9,37 +9,37 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public enum ContentType
 	{
 		/// <summary>
-		/// To be uploaded POA is of type image/tiff
+		/// To be uploaded POA is of type image/tiff.
 		/// </summary>
 		[EnumMember(Value = "TIFF")]
 		TIFF,
 
 		/// <summary>
-		/// To be uploaded POA is of type image/jpg
+		/// To be uploaded POA is of type image/jpg.
 		/// </summary>
 		[EnumMember(Value = "JPG")]
 		JPG,
 
 		/// <summary>
-		/// To be uploaded POA is of type image/png
+		/// To be uploaded POA is of type image/png.
 		/// </summary>
 		[EnumMember(Value = "PNG")]
 		PNG,
 
 		/// <summary>
-		/// To be uploaded POA is of type image/jpeg
+		/// To be uploaded POA is of type image/jpeg.
 		/// </summary>
 		[EnumMember(Value = "JPEG")]
 		JPEG,
 
 		/// <summary>
-		/// To be uploaded POA is of type image/gif
+		/// To be uploaded POA is of type image/gif.
 		/// </summary>
 		[EnumMember(Value = "GIF")]
 		GIF,
 
 		/// <summary>
-		/// To be uploaded POA is of type application/pdf
+		/// To be uploaded POA is of type application/pdf.
 		/// </summary>
 		[EnumMember(Value = "PDF")]
 		PDF,

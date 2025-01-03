@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `listPlacementOptions` response
+	/// The `listPlacementOptions` response.
 	/// </summary>
 	public class ListPackingOptionsResponse : BaseClass
 	{
 		/// <summary>
-		/// List of packing options
+		/// List of packing options.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("packingOptions")]

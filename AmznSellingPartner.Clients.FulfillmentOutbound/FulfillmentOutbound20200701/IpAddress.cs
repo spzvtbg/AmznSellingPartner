@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using AmznSellingPartner.Clients.Values;
 
 	/// <summary>
-	/// An IP Address
+	/// An IP Address.
 	/// </summary>
 	public class IpAddress : StringValue
 	{

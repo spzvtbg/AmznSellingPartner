@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class GetCustomerInvoiceGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Purchase order number of the shipment for which to return the invoice
+		/// Purchase order number of the shipment for which to return the invoice.
 		/// </summary>
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]

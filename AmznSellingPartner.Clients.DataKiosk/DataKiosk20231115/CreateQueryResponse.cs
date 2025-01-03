@@ -5,13 +5,12 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response for the `createQuery` operation
+	/// The response for the `createQuery` operation.
 	/// </summary>
 	public class CreateQueryResponse : BaseClass
 	{
 		/// <summary>
-		/// The identifier for the query
-		/// This identifier is unique only in combination with a selling partner account ID
+		/// The identifier for the query. This identifier is unique only in combination with a selling partner account ID.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("queryId")]

@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the purchaseShipment operation
+	/// The payload for the purchaseShipment operation.
 	/// </summary>
 	public class PurchaseShipmentResult : BaseClass
 	{

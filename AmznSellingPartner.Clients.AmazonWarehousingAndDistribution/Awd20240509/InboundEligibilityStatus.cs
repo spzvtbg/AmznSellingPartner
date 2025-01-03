@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Enum denoting the package inbound eligibility
+	/// Enum denoting the package inbound eligibility.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum InboundEligibilityStatus
 	{
 		/// <summary>
-		/// Eligible to inbound
+		/// Eligible to inbound.
 		/// </summary>
 		[EnumMember(Value = "ELIGIBLE")]
 		ELIGIBLE,
 
 		/// <summary>
-		/// Ineligible to inbound
+		/// Ineligible to inbound.
 		/// </summary>
 		[EnumMember(Value = "INELIGIBLE")]
 		INELIGIBLE,

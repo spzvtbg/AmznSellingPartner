@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `setPackingInformation` request
+	/// The `setPackingInformation` request.
 	/// </summary>
 	public class SetPackingInformationRequest : BaseClass
 	{
 		/// <summary>
-		/// List of packing information for the inbound plan
+		/// List of packing information for the inbound plan.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

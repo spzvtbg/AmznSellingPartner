@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Standard product description text
+	/// Standard product description text.
 	/// </summary>
 	public class StandardProductDescriptionModule : BaseClass
 	{

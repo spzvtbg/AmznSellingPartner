@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Success
+	/// Success.
 	/// </summary>
 	public class GetInvoicesExportResponse : BaseClass
 	{

@@ -6,25 +6,25 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The supported data types in the `getCompetitiveSummary` API
+	/// The supported data types in the `getCompetitiveSummary` API.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum CompetitiveSummaryIncludedData
 	{
 		/// <summary>
-		/// Describes the current segmented featured offer information for the item
+		/// Describes the current segmented featured offer information for the item.
 		/// </summary>
 		[EnumMember(Value = "featuredBuyingOptions")]
 		featuredBuyingOptions,
 
 		/// <summary>
-		/// Provides reference price points for the item, such as the Competitive Price Threshold
+		/// Provides reference price points for the item, such as the Competitive Price Threshold.
 		/// </summary>
 		[EnumMember(Value = "referencePrices")]
 		referencePrices,
 
 		/// <summary>
-		/// The lowest-priced standard offers that are available for the item in the Amazon store
+		/// The lowest-priced standard offers that are available for the item in the Amazon store.
 		/// </summary>
 		[EnumMember(Value = "lowestPricedOffers")]
 		lowestPricedOffers,

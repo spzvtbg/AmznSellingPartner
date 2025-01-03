@@ -6,49 +6,49 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The day of the week
+	/// The day of the week.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum DayOfWeek
 	{
 		/// <summary>
-		/// Monday
+		/// Monday.
 		/// </summary>
 		[EnumMember(Value = "MONDAY")]
 		MONDAY,
 
 		/// <summary>
-		/// Tuesday
+		/// Tuesday.
 		/// </summary>
 		[EnumMember(Value = "TUESDAY")]
 		TUESDAY,
 
 		/// <summary>
-		/// Wednesday
+		/// Wednesday.
 		/// </summary>
 		[EnumMember(Value = "WEDNESDAY")]
 		WEDNESDAY,
 
 		/// <summary>
-		/// Thursday
+		/// Thursday.
 		/// </summary>
 		[EnumMember(Value = "THURSDAY")]
 		THURSDAY,
 
 		/// <summary>
-		/// Friday
+		/// Friday.
 		/// </summary>
 		[EnumMember(Value = "FRIDAY")]
 		FRIDAY,
 
 		/// <summary>
-		/// Saturday
+		/// Saturday.
 		/// </summary>
 		[EnumMember(Value = "SATURDAY")]
 		SATURDAY,
 
 		/// <summary>
-		/// Sunday
+		/// Sunday.
 		/// </summary>
 		[EnumMember(Value = "SUNDAY")]
 		SUNDAY,

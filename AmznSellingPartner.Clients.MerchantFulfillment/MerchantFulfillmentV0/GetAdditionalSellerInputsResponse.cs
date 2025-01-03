@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Response schema
+	/// Response schema.
 	/// </summary>
 	public class GetAdditionalSellerInputsResponse : BaseClass
 	{

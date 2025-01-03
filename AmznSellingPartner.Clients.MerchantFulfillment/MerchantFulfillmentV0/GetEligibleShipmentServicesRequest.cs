@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Request schema
+	/// Request schema.
 	/// </summary>
 	public class GetEligibleShipmentServicesRequest : BaseClass
 	{
 		/// <summary>
-		/// Shipment information required for requesting shipping service offers
+		/// Shipment information required for requesting shipping service offers.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("ShipmentRequestDetails")]

@@ -7,16 +7,14 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The request schema for the `createDigitalAccessKey` operation
+	/// The request schema for the `createDigitalAccessKey` operation.
 	/// </summary>
 	public class CreateDigitalAccessKeyRequest : BaseClass
 	{
 		/// <summary>
-		/// The text that is sent to the buyer
-		/// Only links that are related to the digital access key are allowed
-		/// Do not include HTML or email addresses
-		/// The text must be written in the buyer's preferred language, which you can retrieve from the `GetAttributes` o
-		/// eration
+		/// The text that is sent to the buyer. Only links that are related to the digital access key are allowed. Do not
+		/// nclude HTML or email addresses. The text must be written in the buyer's preferred language, which you can retr
+		/// eve from the `GetAttributes` operation.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(400)]
@@ -24,7 +22,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		public string Text { get; set; }
 
 		/// <summary>
-		/// Attachments that you want to include in the message to the buyer
+		/// Attachments that you want to include in the message to the buyer.
 		/// </summary>
 		[MaxLength(5)]
 		[JsonProperty("attachments")]

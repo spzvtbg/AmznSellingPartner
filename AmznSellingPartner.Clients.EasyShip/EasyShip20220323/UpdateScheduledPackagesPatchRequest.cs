@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class UpdateScheduledPackagesPatchRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request schema for the `updateScheduledPackages` operation
+		/// The request schema for the `updateScheduledPackages` operation.
 		/// </summary>
 		[InBody("UpdateScheduledPackagesRequest")]
 		[JsonProperty("UpdateScheduledPackagesRequest")]

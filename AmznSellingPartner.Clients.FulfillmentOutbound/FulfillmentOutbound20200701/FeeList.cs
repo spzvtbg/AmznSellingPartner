@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An array of fee type and cost pairs
+	/// An array of fee type and cost pairs.
 	/// </summary>
 	public class FeeList : List<Fee>
 	{

@@ -7,43 +7,43 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// General information about a fulfillment order, including its status
+	/// General information about a fulfillment order, including its status.
 	/// </summary>
 	public class FulfillmentOrder : BaseClass
 	{
 		/// <summary>
-		/// The fulfillment order identifier submitted with the `createFulfillmentOrder` operation
+		/// The fulfillment order identifier submitted with the `createFulfillmentOrder` operation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("sellerFulfillmentOrderId")]
 		public string SellerFulfillmentOrderId { get; set; }
 
 		/// <summary>
-		/// The identifier for the marketplace the fulfillment order is placed against
+		/// The identifier for the marketplace the fulfillment order is placed against.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// A fulfillment order identifier submitted with the `createFulfillmentOrder` operation
-		/// Displays as the order identifier in recipient-facing materials such as the packing slip
+		/// A fulfillment order identifier submitted with the `createFulfillmentOrder` operation. Displays as the order id
+		/// ntifier in recipient-facing materials such as the packing slip.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("displayableOrderId")]
 		public string DisplayableOrderId { get; set; }
 
 		/// <summary>
-		/// A date and time submitted with the `createFulfillmentOrder` operation
-		/// Displays as the order date in recipient-facing materials such as the packing slip
+		/// A date and time submitted with the `createFulfillmentOrder` operation. Displays as the order date in recipient
+		/// facing materials such as the packing slip.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("displayableOrderDate")]
 		public Timestamp DisplayableOrderDate { get; set; }
 
 		/// <summary>
-		/// A text block submitted with the `createFulfillmentOrder` operation
-		/// Displays in recipient-facing materials such as the packing slip
+		/// A text block submitted with the `createFulfillmentOrder` operation. Displays in recipient-facing materials suc
+		/// as the packing slip.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("displayableOrderComment")]
@@ -57,7 +57,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public DeliveryWindow DeliveryWindow { get; set; }
 
 		/// <summary>
-		/// The destination address submitted with the `createFulfillmentOrder` operation
+		/// The destination address submitted with the `createFulfillmentOrder` operation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("destinationAddress")]
@@ -73,7 +73,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public CODSettings CodSettings { get; set; }
 
 		/// <summary>
-		/// The date and time that the fulfillment order was received by an Amazon fulfillment center
+		/// The date and time that the fulfillment order was received by an Amazon fulfillment center.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("receivedDate")]
@@ -84,10 +84,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public FulfillmentOrderStatus FulfillmentOrderStatus { get; set; }
 
 		/// <summary>
-		/// The date and time that the status of the fulfillment order last changed
-		/// Must be in <a href='https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// The date and time that the status of the fulfillment order last changed. Must be in <a href='https://developer
+		/// docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("statusUpdatedDate")]
@@ -97,7 +95,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public NotificationEmailList NotificationEmails { get; set; }
 
 		/// <summary>
-		/// A list of features and their fulfillment policies to apply to the order
+		/// A list of features and their fulfillment policies to apply to the order.
 		/// </summary>
 		[JsonProperty("featureConstraints")]
 		public List<FeatureSettings> FeatureConstraints { get; set; }

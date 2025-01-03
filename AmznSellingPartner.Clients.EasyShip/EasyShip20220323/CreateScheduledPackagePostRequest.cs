@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class CreateScheduledPackagePostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request schema for the `createScheduledPackage` operation
+		/// The request schema for the `createScheduledPackage` operation.
 		/// </summary>
 		[InBody("CreateScheduledPackageRequest")]
 		[IsRequired]

@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The HTTP method associated with an individual request within a batch
+	/// The HTTP method associated with an individual request within a batch.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum HttpMethod

@@ -7,19 +7,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using System;
 
 	/// <summary>
-	/// Shipment dates
+	/// Shipment dates.
 	/// </summary>
 	public class ShipmentDates : BaseClass
 	{
 		/// <summary>
-		/// Time by which the vendor is required to ship the order
+		/// Time by which the vendor is required to ship the order.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("requiredShipDate")]
 		public DateTime RequiredShipDate { get; set; }
 
 		/// <summary>
-		/// Delivery date promised to the Amazon customer
+		/// Delivery date promised to the Amazon customer.
 		/// </summary>
 		[JsonProperty("promisedDeliveryDate")]
 		public DateTime PromisedDeliveryDate { get; set; }

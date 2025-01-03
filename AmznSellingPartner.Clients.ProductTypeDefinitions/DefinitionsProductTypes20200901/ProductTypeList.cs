@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of Amazon product types with definitions available
+	/// A list of Amazon product types with definitions available.
 	/// </summary>
 	public class ProductTypeList : BaseClass
 	{
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		public List<ProductType> ProductTypes { get; set; }
 
 		/// <summary>
-		/// Amazon product type version identifier
+		/// Amazon product type version identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("productTypeVersion")]

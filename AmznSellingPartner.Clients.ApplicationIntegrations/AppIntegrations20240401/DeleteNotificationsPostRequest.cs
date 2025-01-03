@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	public class DeleteNotificationsPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body for the `deleteNotifications` operation
+		/// The request body for the `deleteNotifications` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

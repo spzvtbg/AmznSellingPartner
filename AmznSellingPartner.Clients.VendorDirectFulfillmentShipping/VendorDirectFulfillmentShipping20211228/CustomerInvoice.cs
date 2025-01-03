@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents a customer invoice associated with a purchase order
+	/// Represents a customer invoice associated with a purchase order.
 	/// </summary>
 	public class CustomerInvoice : BaseClass
 	{
 		/// <summary>
-		/// The purchase order number for this order
+		/// The purchase order number for this order.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
-		/// The Base64encoded customer invoice
+		/// The Base64encoded customer invoice.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("content")]

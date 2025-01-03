@@ -6,20 +6,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Sort order for a collection of items
-	/// For example, order or shipment
+	/// Sort order for a collection of items. For example, order or shipment.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum SortOrder
 	{
 		/// <summary>
-		/// Sorts the collection in ascending order
+		/// Sorts the collection in ascending order.
 		/// </summary>
 		[EnumMember(Value = "ASCENDING")]
 		ASCENDING,
 
 		/// <summary>
-		/// Sorts the collection in descending order
+		/// Sorts the collection in descending order.
 		/// </summary>
 		[EnumMember(Value = "DESCENDING")]
 		DESCENDING,

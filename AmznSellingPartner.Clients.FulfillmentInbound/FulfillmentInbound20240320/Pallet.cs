@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Contains information about a pallet that is used in the inbound plan
-	/// The pallet is a container that holds multiple items or boxes
+	/// Contains information about a pallet that is used in the inbound plan. The pallet is a container that holds mul
+	/// iple items or boxes.
 	/// </summary>
 	public class Pallet : BaseClass
 	{
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Dimensions Dimensions { get; set; }
 
 		/// <summary>
-		/// Primary key to uniquely identify a Package (Box or Pallet)
+		/// Primary key to uniquely identify a Package (Box or Pallet).
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -24,7 +24,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackageId { get; set; }
 
 		/// <summary>
-		/// The number of containers where all other properties like weight or dimensions are identical
+		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
 		[Minimum(1)]
 		[Maximum(10000)]

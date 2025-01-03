@@ -6,30 +6,30 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Availability information as per the service context queried
+	/// Availability information as per the service context queried.
 	/// </summary>
 	public class AppointmentSlotReport : BaseClass
 	{
 		/// <summary>
-		/// Defines the type of slots
+		/// Defines the type of slots.
 		/// </summary>
 		[JsonProperty("schedulingType")]
 		public SchedulingType SchedulingType { get; set; }
 
 		/// <summary>
-		/// Start Time from which the appointment slots are generated in ISO 8601 format
+		/// Start Time from which the appointment slots are generated in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("startTime")]
 		public DateTime StartTime { get; set; }
 
 		/// <summary>
-		/// End Time up to which the appointment slots are generated in ISO 8601 format
+		/// End Time up to which the appointment slots are generated in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("endTime")]
 		public DateTime EndTime { get; set; }
 
 		/// <summary>
-		/// A list of time windows along with associated capacity in which the service can be performed
+		/// A list of time windows along with associated capacity in which the service can be performed.
 		/// </summary>
 		[JsonProperty("appointmentSlots")]
 		public List<AppointmentSlot> AppointmentSlots { get; set; }

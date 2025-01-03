@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Request schema for the `updateReservation` operation
+	/// Request schema for the `updateReservation` operation.
 	/// </summary>
 	public class UpdateReservationRequest : BaseClass
 	{
 		/// <summary>
-		/// Resource (store) identifier
+		/// Resource (store) identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("resourceId")]
 		public string ResourceId { get; set; }
 
 		/// <summary>
-		/// `Reservation` object to reduce the capacity of a resource
+		/// `Reservation` object to reduce the capacity of a resource.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("reservation")]

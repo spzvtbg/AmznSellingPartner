@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Specifies whether the fulfillment order should ship now or have an order hold put on it
+	/// Specifies whether the fulfillment order should ship now or have an order hold put on it.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum FulfillmentAction
 	{
 		/// <summary>
-		/// The fulfillment order ships now
+		/// The fulfillment order ships now.
 		/// </summary>
 		[EnumMember(Value = "Ship")]
 		Ship,
 
 		/// <summary>
-		/// An order hold is put on the fulfillment order
+		/// An order hold is put on the fulfillment order.
 		/// </summary>
 		[EnumMember(Value = "Hold")]
 		Hold,

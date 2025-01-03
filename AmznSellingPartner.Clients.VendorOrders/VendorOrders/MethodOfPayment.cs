@@ -9,37 +9,37 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public enum MethodOfPayment
 	{
 		/// <summary>
-		/// Buyer pays for shipping
+		/// Buyer pays for shipping.
 		/// </summary>
 		[EnumMember(Value = "PaidByBuyer")]
 		PaidByBuyer,
 
 		/// <summary>
-		/// Buyer pays for shipping on delivery
+		/// Buyer pays for shipping on delivery.
 		/// </summary>
 		[EnumMember(Value = "CollectOnDelivery")]
 		CollectOnDelivery,
 
 		/// <summary>
-		/// Shipping costs paid as agreed upon between buyer and seller
+		/// Shipping costs paid as agreed upon between buyer and seller.
 		/// </summary>
 		[EnumMember(Value = "DefinedByBuyerAndSeller")]
 		DefinedByBuyerAndSeller,
 
 		/// <summary>
-		/// Seller pays for transportation including loading and shipping
+		/// Seller pays for transportation including loading and shipping.
 		/// </summary>
 		[EnumMember(Value = "FOBPortOfCall")]
 		FOBPortOfCall,
 
 		/// <summary>
-		/// Seller prepays for shipping
+		/// Seller prepays for shipping.
 		/// </summary>
 		[EnumMember(Value = "PrepaidBySeller")]
 		PrepaidBySeller,
 
 		/// <summary>
-		/// Seller pays for shipping
+		/// Seller pays for shipping.
 		/// </summary>
 		[EnumMember(Value = "PaidBySeller")]
 		PaidBySeller,

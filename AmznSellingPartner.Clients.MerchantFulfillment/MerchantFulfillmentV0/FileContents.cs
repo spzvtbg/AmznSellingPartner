@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The document data and checksum
+	/// The document data and checksum.
 	/// </summary>
 	public class FileContents : BaseClass
 	{
 		/// <summary>
-		/// Data for printing labels encoded into a Base64, GZip-compressed string
+		/// Data for printing labels encoded into a Base64, GZip-compressed string.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Contents")]
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public FileType FileType { get; set; }
 
 		/// <summary>
-		/// An MD5 hash to validate the PDF document data, in the form of a Base64 string
+		/// An MD5 hash to validate the PDF document data, in the form of a Base64 string.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Checksum")]

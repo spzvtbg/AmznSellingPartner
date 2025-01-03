@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// GetInboundOperationStatus response
+	/// GetInboundOperationStatus response.
 	/// </summary>
 	public class InboundOperationStatus : BaseClass
 	{
 		/// <summary>
-		/// The name of the operation in the asynchronous API call
+		/// The name of the operation in the asynchronous API call.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Operation { get; set; }
 
 		/// <summary>
-		/// The operation ID returned by the asynchronous API call
+		/// The operation ID returned by the asynchronous API call.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string OperationId { get; set; }
 
 		/// <summary>
-		/// The problems in the processing of the asynchronous operation
+		/// The problems in the processing of the asynchronous operation.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("operationProblems")]

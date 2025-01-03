@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The payload for the getTracking operation
+	/// The payload for the getTracking operation.
 	/// </summary>
 	public class GetTrackingResult : BaseClass
 	{
@@ -21,14 +21,14 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public AlternateLegTrackingId AlternateLegTrackingId { get; set; }
 
 		/// <summary>
-		/// A list of tracking events
+		/// A list of tracking events.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("eventHistory")]
 		public List<Event> EventHistory { get; set; }
 
 		/// <summary>
-		/// The date and time by which the shipment is promised to be delivered
+		/// The date and time by which the shipment is promised to be delivered.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("promisedDeliveryDate")]

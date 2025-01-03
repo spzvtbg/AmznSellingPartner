@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 	public enum Status
 	{
 		/// <summary>
-		/// Transaction has failed
+		/// Transaction has failed.
 		/// </summary>
 		[EnumMember(Value = "Failure")]
 		Failure,
 
 		/// <summary>
-		/// Transaction is in process
+		/// Transaction is in process.
 		/// </summary>
 		[EnumMember(Value = "Processing")]
 		Processing,
 
 		/// <summary>
-		/// Transaction has completed successfully
+		/// Transaction has completed successfully.
 		/// </summary>
 		[EnumMember(Value = "Success")]
 		Success,

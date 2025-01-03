@@ -7,13 +7,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The request schema for the `submitShipmentStatusUpdates` operation
+	/// The request schema for the `submitShipmentStatusUpdates` operation.
 	/// </summary>
 	public class SubmitShipmentStatusUpdatesRequest : BaseClass
 	{
 		/// <summary>
-		/// Contains a list of one or more `ShipmentStatusUpdate` objects
-		/// Each `ShipmentStatusUpdate` object represents an update to the status of a specific shipment
+		/// Contains a list of one or more `ShipmentStatusUpdate` objects. Each `ShipmentStatusUpdate` object represents a
+		/// update to the status of a specific shipment.
 		/// </summary>
 		[MinItems(1)]
 		[JsonProperty("shipmentStatusUpdates")]

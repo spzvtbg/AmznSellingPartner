@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Schema for an individual FOEP response
+	/// Schema for an individual FOEP response.
 	/// </summary>
 	public class FeaturedOfferExpectedPriceResponse : BaseClass
 	{
 		/// <summary>
-		/// Use these request parameters to map the response back to the request
+		/// Use these request parameters to map the response back to the request.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("request")]

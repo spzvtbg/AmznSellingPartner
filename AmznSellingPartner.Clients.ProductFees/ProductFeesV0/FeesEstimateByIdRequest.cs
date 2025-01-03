@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A product, marketplace, and proposed price used to request estimated fees
+	/// A product, marketplace, and proposed price used to request estimated fees.
 	/// </summary>
 	public class FeesEstimateByIdRequest : BaseClass
 	{
@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		public IdType IdType { get; set; }
 
 		/// <summary>
-		/// The item identifier
+		/// The item identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("IdValue")]

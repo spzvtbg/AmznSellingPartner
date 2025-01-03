@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An additional set of seller inputs required to purchase shipping
+	/// An additional set of seller inputs required to purchase shipping.
 	/// </summary>
 	public class AdditionalSellerInputs : BaseClass
 	{
 		/// <summary>
-		/// The name of the additional input field
+		/// The name of the additional input field.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("AdditionalInputFieldName")]

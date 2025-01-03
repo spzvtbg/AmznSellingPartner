@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the GetShipmentLabels operation
+	/// The response schema for the GetShipmentLabels operation.
 	/// </summary>
 	public class GetShipmentLabels : BaseClass
 	{

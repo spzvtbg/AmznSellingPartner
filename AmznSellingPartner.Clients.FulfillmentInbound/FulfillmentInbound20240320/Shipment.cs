@@ -7,13 +7,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Contains information pertaining to a shipment in an inbound plan
+	/// Contains information pertaining to a shipment in an inbound plan.
 	/// </summary>
 	public class Shipment : BaseClass
 	{
 		/// <summary>
 		/// A unique identifier created by Amazon that identifies this Amazon-partnered, Less Than Truckload/Full Truckloa
-		/// (LTL/FTL) shipment
+		/// (LTL/FTL) shipment.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -34,14 +34,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public FreightInformation FreightInformation { get; set; }
 
 		/// <summary>
-		/// The name of the shipment
+		/// The name of the shipment.
 		/// </summary>
 		[JsonProperty("name")]
 		public string Name { get; set; }
 
 		/// <summary>
-		/// The identifier of a placement option
-		/// A placement option represents the shipment splits and destinations of SKUs
+		/// The identifier of a placement option. A placement option represents the shipment splits and destinations of SK
+		/// s.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -54,8 +54,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public SelectedDeliveryWindow SelectedDeliveryWindow { get; set; }
 
 		/// <summary>
-		/// Identifier of a transportation option
-		/// A transportation option represent one option for how to send a shipment
+		/// Identifier of a transportation option. A transportation option represent one option for how to send a shipment
+		/// 
 		/// </summary>
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
@@ -64,13 +64,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string SelectedTransportationOptionId { get; set; }
 
 		/// <summary>
-		/// List of self ship appointment details
+		/// List of self ship appointment details.
 		/// </summary>
 		[JsonProperty("selfShipAppointmentDetails")]
 		public List<SelfShipAppointmentDetails> SelfShipAppointmentDetails { get; set; }
 
 		/// <summary>
-		/// The confirmed shipment ID which shows up on labels (for example, `FBA1234ABCD`)
+		/// The confirmed shipment ID which shows up on labels (for example, `FBA1234ABCD`).
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -78,8 +78,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShipmentConfirmationId { get; set; }
 
 		/// <summary>
-		/// Identifier of a shipment
-		/// A shipment contains the boxes and units being inbounded
+		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -93,11 +92,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public ShipmentSource Source { get; set; }
 
 		/// <summary>
-		/// The status of a shipment
-		/// The state of the shipment will typically start as `UNCONFIRMED`, then transition to `WORKING` after a placeme
-		/// t option has been confirmed, and then to `READY_TO_SHIP` once labels are generated
-		/// Possible values: `ABANDONED`, `CANCELLED`, `CHECKED_IN`, `CLOSED`, `DELETED`, `DELIVERED`, `IN_TRANSIT`, `MI
-		/// ED`, `READY_TO_SHIP`, `RECEIVING`, `SHIPPED`, `UNCONFIRMED`, `WORKING`
+		/// The status of a shipment. The state of the shipment will typically start as `UNCONFIRMED`, then transition to
+		/// WORKING` after a placement option has been confirmed, and then to `READY_TO_SHIP` once labels are generated.
+		/// ossible values: `ABANDONED`, `CANCELLED`, `CHECKED_IN`, `CLOSED`, `DELETED`, `DELIVERED`, `IN_TRANSIT`, `MIXED
+		/// , `READY_TO_SHIP`, `RECEIVING`, `SHIPPED`, `UNCONFIRMED`, `WORKING`
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]

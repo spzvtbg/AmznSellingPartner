@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public Address Address { get; set; }
 
 		/// <summary>
-		/// Its Last Manifest Date
+		/// Its Last Manifest Date.
 		/// </summary>
 		[JsonProperty("lastManifestDate")]
 		public DateTime LastManifestDate { get; set; }

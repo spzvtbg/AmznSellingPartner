@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public enum SortOrder
 	{
 		/// <summary>
-		/// Sort in ascending order by packing slip creation date
+		/// Sort in ascending order by packing slip creation date.
 		/// </summary>
 		[EnumMember(Value = "ASC")]
 		ASC,
 
 		/// <summary>
-		/// Sort in descending order by packing slip creation date
+		/// Sort in descending order by packing slip creation date.
 		/// </summary>
 		[EnumMember(Value = "DESC")]
 		DESC,

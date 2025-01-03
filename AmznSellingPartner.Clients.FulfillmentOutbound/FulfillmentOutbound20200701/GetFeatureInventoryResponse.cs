@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The breakdown of eligibility inventory by feature
+	/// The breakdown of eligibility inventory by feature.
 	/// </summary>
 	public class GetFeatureInventoryResponse : BaseClass
 	{
@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public GetFeatureInventoryResult Payload { get; set; }
 
 		/// <summary>
-		/// One or more unexpected errors occurred during the `getFeatureInventory` operation
+		/// One or more unexpected errors occurred during the `getFeatureInventory` operation.
 		/// </summary>
 		[JsonProperty("errors")]
 		public ErrorList Errors { get; set; }

@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The type and amount of currency
+	/// The type and amount of currency.
 	/// </summary>
 	public class Currency : BaseClass
 	{
 		/// <summary>
-		/// Decimal value of the currency
+		/// Decimal value of the currency.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("amount")]
 		public double Amount { get; set; }
 
 		/// <summary>
-		/// ISO 4217 standard of a currency code
+		/// ISO 4217 standard of a currency code.
 		/// </summary>
 		[IsRequired]
 		[MinLength(3)]

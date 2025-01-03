@@ -6,12 +6,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of one or more ShipmentLabels
+	/// A list of one or more ShipmentLabels.
 	/// </summary>
 	public class TransportLabel : BaseClass
 	{
 		/// <summary>
-		/// Date on which label is created
+		/// Date on which label is created.
 		/// </summary>
 		[JsonProperty("labelCreateDateTime")]
 		public DateTime LabelCreateDateTime { get; set; }
@@ -24,7 +24,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public ShipmentInformation ShipmentInformation { get; set; }
 
 		/// <summary>
-		/// Indicates the label data,format and type associated
+		/// Indicates the label data,format and type associated .
 		/// </summary>
 		[JsonProperty("labelData")]
 		public List<LabelData> LabelData { get; set; }

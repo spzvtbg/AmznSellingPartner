@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Tracking information for Less-Than-Truckload (LTL) and Small Parcel Delivery (SPD) shipments
+	/// Tracking information for Less-Than-Truckload (LTL) and Small Parcel Delivery (SPD) shipments.
 	/// </summary>
 	public class TrackingDetails : BaseClass
 	{

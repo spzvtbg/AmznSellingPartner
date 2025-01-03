@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the `updateFulfillmentOrder` operation
+	/// The response schema for the `updateFulfillmentOrder` operation.
 	/// </summary>
 	public class UpdateFulfillmentOrderResponse : BaseClass
 	{
 		/// <summary>
-		/// One or more unexpected errors occurred during the `updateFulfillmentOrder` operation
+		/// One or more unexpected errors occurred during the `updateFulfillmentOrder` operation.
 		/// </summary>
 		[JsonProperty("errors")]
 		public ErrorList Errors { get; set; }

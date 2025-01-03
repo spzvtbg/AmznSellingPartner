@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the SubmitShipmentConfirmations operation
+	/// The response schema for the SubmitShipmentConfirmations operation.
 	/// </summary>
 	public class SubmitShipmentConfirmationsResponse : BaseClass
 	{
 		/// <summary>
-		/// The response payload for the SubmitShipmentConfirmations operation
+		/// The response payload for the SubmitShipmentConfirmations operation.
 		/// </summary>
 		[JsonProperty("payload")]
 		public TransactionReference Payload { get; set; }

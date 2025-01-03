@@ -5,33 +5,32 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Details of tax amount applied
+	/// Details of tax amount applied.
 	/// </summary>
 	public class TaxDetails : BaseClass
 	{
 		/// <summary>
-		/// Type of the tax applied
+		/// Type of the tax applied.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("taxType")]
 		public TaxType TaxType { get; set; }
 
 		/// <summary>
-		/// Tax percentage applied
-		/// Percentage must be expressed in decimal
+		/// Tax percentage applied. Percentage must be expressed in decimal.
 		/// </summary>
 		[JsonProperty("taxRate")]
 		public Decimal TaxRate { get; set; }
 
 		/// <summary>
-		/// Total tax amount applied on invoice total or an item total
+		/// Total tax amount applied on invoice total or an item total.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("taxAmount")]
 		public Money TaxAmount { get; set; }
 
 		/// <summary>
-		/// The invoice amount that is taxable at the rate specified in the tax rate field
+		/// The invoice amount that is taxable at the rate specified in the tax rate field.
 		/// </summary>
 		[JsonProperty("taxableAmount")]
 		public Money TaxableAmount { get; set; }

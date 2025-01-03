@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	public class GetQueryGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The query identifier
+		/// The query identifier.
 		/// </summary>
 		[InPath("queryId")]
 		[IsRequired]

@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Currency type and amount
+	/// Currency type and amount.
 	/// </summary>
 	public class CurrencyAmount : BaseClass
 	{
 		/// <summary>
-		/// Three-digit currency code in ISO 4217 format
+		/// Three-digit currency code in ISO 4217 format.
 		/// </summary>
 		[IsRequired]
 		[MaxLength(3)]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public string CurrencyCode { get; set; }
 
 		/// <summary>
-		/// The currency amount
+		/// The currency amount.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("Amount")]

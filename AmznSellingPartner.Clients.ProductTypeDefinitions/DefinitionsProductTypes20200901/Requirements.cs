@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public enum Requirements
 	{
 		/// <summary>
-		/// Request schema containing product facts and sales terms
+		/// Request schema containing product facts and sales terms.
 		/// </summary>
 		[EnumMember(Value = "LISTING")]
 		LISTING,
 
 		/// <summary>
-		/// Request schema containing product facts only
+		/// Request schema containing product facts only.
 		/// </summary>
 		[EnumMember(Value = "LISTING_PRODUCT_ONLY")]
 		LISTING_PRODUCT_ONLY,
 
 		/// <summary>
-		/// Request schema containing sales terms only
+		/// Request schema containing sales terms only.
 		/// </summary>
 		[EnumMember(Value = "LISTING_OFFER_ONLY")]
 		LISTING_OFFER_ONLY,

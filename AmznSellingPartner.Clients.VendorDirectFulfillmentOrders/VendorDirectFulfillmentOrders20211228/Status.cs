@@ -9,25 +9,25 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	public enum Status
 	{
 		/// <summary>
-		/// Status for newly created purchase orders
+		/// Status for newly created purchase orders.
 		/// </summary>
 		[EnumMember(Value = "NEW")]
 		NEW,
 
 		/// <summary>
-		/// Status for purchase orders that are already shipped
+		/// Status for purchase orders that are already shipped.
 		/// </summary>
 		[EnumMember(Value = "SHIPPED")]
 		SHIPPED,
 
 		/// <summary>
-		/// Status for purchase orders accepted by vendors
+		/// Status for purchase orders accepted by vendors.
 		/// </summary>
 		[EnumMember(Value = "ACCEPTED")]
 		ACCEPTED,
 
 		/// <summary>
-		/// Status for cancelled purchase orders
+		/// Status for cancelled purchase orders.
 		/// </summary>
 		[EnumMember(Value = "CANCELLED")]
 		CANCELLED,

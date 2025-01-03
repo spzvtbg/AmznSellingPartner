@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class CancelFulfillmentOrderPutRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier assigned to the item by the seller when the fulfillment order was created
+		/// The identifier assigned to the item by the seller when the fulfillment order was created.
 		/// </summary>
 		[InPath("sellerFulfillmentOrderId")]
 		[IsRequired]

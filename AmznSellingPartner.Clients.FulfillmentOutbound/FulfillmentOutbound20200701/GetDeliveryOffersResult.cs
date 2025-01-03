@@ -4,12 +4,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 
 	/// <summary>
 	/// A list of delivery offers, including offer expiration, earliest and latest date and time range, and the delive
-	/// y offer policy
+	/// y offer policy.
 	/// </summary>
 	public class GetDeliveryOffersResult : BaseClass
 	{
 		/// <summary>
-		/// An array of delivery offers
+		/// An array of delivery offers.
 		/// </summary>
 		[JsonProperty("deliveryOffers")]
 		public DeliveryOffersList DeliveryOffers { get; set; }

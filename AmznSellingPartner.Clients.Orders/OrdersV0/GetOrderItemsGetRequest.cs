@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public class GetOrderItemsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon-defined order identifier, in 3-7-7 format
+		/// An Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
 		[InPath("orderId")]
 		[IsRequired]
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string OrderId { get; set; }
 
 		/// <summary>
-		/// A string token returned in the response of your previous request
+		/// A string token returned in the response of your previous request.
 		/// </summary>
 		[InQuery("NextToken")]
 		[JsonProperty("NextToken")]

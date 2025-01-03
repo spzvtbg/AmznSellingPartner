@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public class UpdateVerificationStatusPatchRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// An Amazon-defined order identifier, in 3-7-7 format
+		/// An Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
 		[InPath("orderId")]
 		[IsRequired]
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string OrderId { get; set; }
 
 		/// <summary>
-		/// The request body for the `updateVerificationStatus` operation
+		/// The request body for the `updateVerificationStatus` operation.
 		/// </summary>
 		[InBody("payload")]
 		[IsRequired]

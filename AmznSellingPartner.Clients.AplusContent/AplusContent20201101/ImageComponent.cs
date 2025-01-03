@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A reference to an image, hosted in the A+ Content media library
+	/// A reference to an image, hosted in the A+ Content media library.
 	/// </summary>
 	public class ImageComponent : BaseClass
 	{
 		/// <summary>
-		/// This identifier is provided by the Selling Partner API for Uploads
+		/// This identifier is provided by the Selling Partner API for Uploads.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -22,7 +22,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public ImageCropSpecification ImageCropSpecification { get; set; }
 
 		/// <summary>
-		/// The alternative text for the image
+		/// The alternative text for the image.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

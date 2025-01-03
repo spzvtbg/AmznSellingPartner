@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Rich text content
+	/// Rich text content.
 	/// </summary>
 	public class TextComponent : BaseClass
 	{
 		/// <summary>
-		/// The actual plain text
+		/// The actual plain text.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

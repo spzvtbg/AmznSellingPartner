@@ -3,41 +3,37 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Transportation details for this shipment
+	/// Transportation details for this shipment.
 	/// </summary>
 	public class TransportationDetailsForShipmentConfirmation : BaseClass
 	{
 		/// <summary>
-		/// Code that identifies the carrier for the shipment
-		/// The Standard Carrier Alpha Code (SCAC) is a unique two to four letter code used to identify a carrier
-		/// Carrier SCAC codes are assigned and maintained by the NMFTA (National Motor Freight Association)
-		/// This field is mandatory for US, CA, MX shipment confirmations
+		/// Code that identifies the carrier for the shipment. The Standard Carrier Alpha Code (SCAC) is a unique two to f
+		/// ur letter code used to identify a carrier. Carrier SCAC codes are assigned and maintained by the NMFTA (Nation
+		/// l Motor Freight Association). This field is mandatory for US, CA, MX shipment confirmations.
 		/// </summary>
 		[JsonProperty("carrierScac")]
 		public string CarrierScac { get; set; }
 
 		/// <summary>
-		/// The field also known as PRO number is a unique number assigned by the carrier
-		/// It is used to identify and track the shipment that goes out for delivery
-		/// This field is mandatory for UA, CA, MX shipment confirmations
+		/// The field also known as PRO number is a unique number assigned by the carrier. It is used to identify and trac
+		/// the shipment that goes out for delivery. This field is mandatory for UA, CA, MX shipment confirmations.
 		/// </summary>
 		[JsonProperty("carrierShipmentReferenceNumber")]
 		public string CarrierShipmentReferenceNumber { get; set; }
 
 		/// <summary>
-		/// The mode of transportation for this shipment
+		/// The mode of transportation for this shipment.
 		/// </summary>
 		[JsonProperty("transportationMode")]
 		public TransportationMode TransportationMode { get; set; }
 
 		/// <summary>
 		/// The Bill of Lading (BOL) number is a unique number assigned to each shipment of goods by the vendor or shipper
-		/// during the creation of the Bill of Lading
-		/// This number must be unique for every shipment and cannot be a date/time or single character
-		/// The BOL numer is mandatory in Shipment Confirmation message for FTL and LTL shipments, and must match the pap
-		/// r BOL provided with the shipment
-		/// Instead of BOL, an alternative reference number (like Delivery Note Number) for the shipment can also be sent
-		/// in this field
+		/// during the creation of the Bill of Lading. This number must be unique for every shipment and cannot be a date/
+		/// ime or single character. The BOL numer is mandatory in Shipment Confirmation message for FTL and LTL shipments
+		/// and must match the paper BOL provided with the shipment. Instead of BOL, an alternative reference number (lik
+		/// Delivery Note Number) for the shipment can also be sent in this field.
 		/// </summary>
 		[JsonProperty("billOfLadingNumber")]
 		public string BillOfLadingNumber { get; set; }

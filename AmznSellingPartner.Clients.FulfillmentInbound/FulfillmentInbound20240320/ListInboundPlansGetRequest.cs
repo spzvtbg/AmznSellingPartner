@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ListInboundPlansGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The number of inbound plans to return in the response matching the given query
+		/// The number of inbound plans to return in the response matching the given query.
 		/// </summary>
 		[InQuery("pageSize")]
 		[Minimum(1)]
@@ -17,9 +17,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public int PageSize { get; set; }
 
 		/// <summary>
-		/// A token to fetch a certain page when there are multiple pages worth of results
-		/// The value of this token is fetched from the `pagination` returned in the API response
-		/// In the absence of the token value from the query parameter the API returns the first page of the result
+		/// A token to fetch a certain page when there are multiple pages worth of results. The value of this token is fet
+		/// hed from the `pagination` returned in the API response. In the absence of the token value from the query param
+		/// ter the API returns the first page of the result.
 		/// </summary>
 		[InQuery("paginationToken")]
 		[MinLength(0)]
@@ -28,21 +28,21 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PaginationToken { get; set; }
 
 		/// <summary>
-		/// The status of an inbound plan
+		/// The status of an inbound plan.
 		/// </summary>
 		[InQuery("status")]
 		[JsonProperty("status")]
 		public Status Status { get; set; }
 
 		/// <summary>
-		/// Sort by field
+		/// Sort by field.
 		/// </summary>
 		[InQuery("sortBy")]
 		[JsonProperty("sortBy")]
 		public SortBy SortBy { get; set; }
 
 		/// <summary>
-		/// The sort order
+		/// The sort order.
 		/// </summary>
 		[InQuery("sortOrder")]
 		[JsonProperty("sortOrder")]

@@ -5,13 +5,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `generatePlacementOptions` request
+	/// The `generatePlacementOptions` request.
 	/// </summary>
 	public class GeneratePlacementOptionsRequest : BaseClass
 	{
 		/// <summary>
-		/// Custom placement options you want to add to the plan
-		/// This is only used for the India (IN - A21TJRUUN4KGV) marketplace
+		/// Custom placement options you want to add to the plan. This is only used for the India (IN - A21TJRUUN4KGV) mar
+		/// etplace.
 		/// </summary>
 		[JsonProperty("customPlacement")]
 		public List<CustomPlacementInput> CustomPlacement { get; set; }

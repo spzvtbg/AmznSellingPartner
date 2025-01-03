@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Details of the innerContainersDetails
+	/// Details of the innerContainersDetails.
 	/// </summary>
 	public class InnerContainersDetails : BaseClass
 	{
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public int ContainerCount { get; set; }
 
 		/// <summary>
-		/// Container sequence numbers that are involved in this shipment
+		/// Container sequence numbers that are involved in this shipment.
 		/// </summary>
 		[JsonProperty("containerSequenceNumbers")]
 		public List<ContainerSequenceNumbers> ContainerSequenceNumbers { get; set; }

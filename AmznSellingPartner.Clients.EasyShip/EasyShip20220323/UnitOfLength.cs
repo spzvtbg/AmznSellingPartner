@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The unit of measurement used to measure the length
+	/// The unit of measurement used to measure the length.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum UnitOfLength

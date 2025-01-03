@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `getSelfShipAppointmentSlots` response
+	/// The `getSelfShipAppointmentSlots` response.
 	/// </summary>
 	public class GetSelfShipAppointmentSlotsResponse : BaseClass
 	{

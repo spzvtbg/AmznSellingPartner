@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Service Selection Criteria
+	/// Service Selection Criteria.
 	/// </summary>
 	public class ServiceSelection : BaseClass
 	{

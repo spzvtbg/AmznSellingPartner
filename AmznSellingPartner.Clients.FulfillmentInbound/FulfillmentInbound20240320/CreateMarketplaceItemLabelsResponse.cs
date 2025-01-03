@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `createMarketplaceItemLabels` response
+	/// The `createMarketplaceItemLabels` response.
 	/// </summary>
 	public class CreateMarketplaceItemLabelsResponse : BaseClass
 	{
 		/// <summary>
-		/// Resources to download the requested document
+		/// Resources to download the requested document.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("documentDownloads")]

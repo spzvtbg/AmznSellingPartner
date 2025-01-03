@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The throughput configuration
+	/// The throughput configuration.
 	/// </summary>
 	public class ThroughputConfig : BaseClass
 	{

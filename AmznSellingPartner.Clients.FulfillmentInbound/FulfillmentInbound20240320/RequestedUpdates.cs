@@ -5,18 +5,18 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Objects that were included in the update request
+	/// Objects that were included in the update request.
 	/// </summary>
 	public class RequestedUpdates : BaseClass
 	{
 		/// <summary>
-		/// A list of boxes that will be present in the shipment after the update
+		/// A list of boxes that will be present in the shipment after the update.
 		/// </summary>
 		[JsonProperty("boxes")]
 		public List<BoxUpdateInput> Boxes { get; set; }
 
 		/// <summary>
-		/// A list of all items that will be present in the shipment after the update
+		/// A list of all items that will be present in the shipment after the update.
 		/// </summary>
 		[JsonProperty("items")]
 		public List<ItemInput> Items { get; set; }

@@ -9,44 +9,44 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	public enum Type
 	{
 		/// <summary>
-		/// Tax levied on consumption spending on goods and services
+		/// Tax levied on consumption spending on goods and services.
 		/// </summary>
 		[EnumMember(Value = "CONSUMPTION")]
 		CONSUMPTION,
 
 		/// <summary>
-		/// Tax levied on most goods and services sold for domestic consumption
+		/// Tax levied on most goods and services sold for domestic consumption.
 		/// </summary>
 		[EnumMember(Value = "GST")]
 		GST,
 
 		/// <summary>
-		/// Mehrwertsteuer, MwSt, is German for value-added tax
+		/// Mehrwertsteuer, MwSt, is German for value-added tax.
 		/// </summary>
 		[EnumMember(Value = "MwSt.")]
 		MwSt_,
 
 		/// <summary>
 		/// A provincial sales tax (PST) is imposed on consumers of goods and particular services in many Canadian provinc
-		/// s
+		/// s.
 		/// </summary>
 		[EnumMember(Value = "PST")]
 		PST,
 
 		/// <summary>
-		/// Combined total of all the applicable taxes
+		/// Combined total of all the applicable taxes.
 		/// </summary>
 		[EnumMember(Value = "TOTAL")]
 		TOTAL,
 
 		/// <summary>
-		/// Taxe sur la Valeur Ajout&#233;e (TVA) is French for value-added tax
+		/// Taxe sur la Valeur Ajout&#233;e (TVA) is French for value-added tax.
 		/// </summary>
 		[EnumMember(Value = "TVA")]
 		TVA,
 
 		/// <summary>
-		/// Value-added tax
+		/// Value-added tax.
 		/// </summary>
 		[EnumMember(Value = "VAT")]
 		VAT,

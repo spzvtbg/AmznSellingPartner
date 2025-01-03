@@ -5,8 +5,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Standard images with text, presented one at a time
-	/// The user clicks on thumbnails to view each block
+	/// Standard images with text, presented one at a time. The user clicks on thumbnails to view each block.
 	/// </summary>
 	public class StandardMultipleImageTextModule : BaseClass
 	{

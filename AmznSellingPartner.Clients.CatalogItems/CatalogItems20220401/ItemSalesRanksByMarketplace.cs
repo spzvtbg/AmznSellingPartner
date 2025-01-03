@@ -7,25 +7,25 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Sales ranks of an Amazon catalog item for the indicated Amazon marketplace
+	/// Sales ranks of an Amazon catalog item for the indicated Amazon marketplace.
 	/// </summary>
 	public class ItemSalesRanksByMarketplace : BaseClass
 	{
 		/// <summary>
-		/// Amazon marketplace identifier
+		/// Amazon marketplace identifier.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// Sales ranks of an Amazon catalog item for an Amazon marketplace by classification
+		/// Sales ranks of an Amazon catalog item for an Amazon marketplace by classification.
 		/// </summary>
 		[JsonProperty("classificationRanks")]
 		public List<ItemClassificationSalesRank> ClassificationRanks { get; set; }
 
 		/// <summary>
-		/// Sales ranks of an Amazon catalog item for an Amazon marketplace by website display group
+		/// Sales ranks of an Amazon catalog item for an Amazon marketplace by website display group.
 		/// </summary>
 		[JsonProperty("displayGroupRanks")]
 		public List<ItemDisplayGroupSalesRank> DisplayGroupRanks { get; set; }

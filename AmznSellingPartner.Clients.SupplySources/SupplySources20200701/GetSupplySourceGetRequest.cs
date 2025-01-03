@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class GetSupplySourceGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The unique identifier of a supply source
+		/// The unique identifier of a supply source.
 		/// </summary>
 		[InPath("supplySourceId")]
 		[IsRequired]

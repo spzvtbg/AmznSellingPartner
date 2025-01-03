@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public enum UnitOfMeasure
 	{
 		/// <summary>
-		/// Specifies an integer count of units
+		/// Specifies an integer count of units.
 		/// </summary>
 		[EnumMember(Value = "Eaches")]
 		Eaches,

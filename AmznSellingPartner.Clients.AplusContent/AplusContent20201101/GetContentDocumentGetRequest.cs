@@ -9,9 +9,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class GetContentDocumentGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The unique reference key for the A+ Content document
-		/// A content reference key cannot form a permalink and may change in the future
-		/// A content reference key is not guaranteed to match any A+ Content identifier
+		/// The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may
+		/// hange in the future. A content reference key is not guaranteed to match any A+ Content identifier.
 		/// </summary>
 		[InPath("contentReferenceKey")]
 		[IsRequired]
@@ -20,7 +19,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public string ContentReferenceKey { get; set; }
 
 		/// <summary>
-		/// The identifier for the marketplace where the A+ Content is published
+		/// The identifier for the marketplace where the A+ Content is published.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
@@ -29,7 +28,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// The set of A+ Content data types to include in the response
+		/// The set of A+ Content data types to include in the response.
 		/// </summary>
 		[InQuery("includedDataSet")]
 		[IsRequired]

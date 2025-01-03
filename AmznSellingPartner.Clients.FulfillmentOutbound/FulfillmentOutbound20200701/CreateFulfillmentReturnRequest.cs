@@ -6,9 +6,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 
 	/// <summary>
 	/// The `createFulfillmentReturn` operation creates a fulfillment return for items that were fulfilled using the `
-	/// reateFulfillmentOrder` operation
-	/// For calls to `createFulfillmentReturn`, you must include `ReturnReasonCode` values returned by a previous cal
-	/// to the `listReturnReasonCodes` operation
+	/// reateFulfillmentOrder` operation. For calls to `createFulfillmentReturn`, you must include `ReturnReasonCode`
+	/// alues returned by a previous call to the `listReturnReasonCodes` operation.
 	/// </summary>
 	public class CreateFulfillmentReturnRequest : BaseClass
 	{

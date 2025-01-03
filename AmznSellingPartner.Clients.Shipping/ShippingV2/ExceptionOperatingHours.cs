@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Defines exceptions to standard operating hours for certain date ranges
+	/// Defines exceptions to standard operating hours for certain date ranges.
 	/// </summary>
 	public class ExceptionOperatingHours : BaseClass
 	{

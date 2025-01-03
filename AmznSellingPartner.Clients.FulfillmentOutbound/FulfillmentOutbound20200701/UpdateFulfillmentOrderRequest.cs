@@ -7,37 +7,36 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The request body schema for the `updateFulfillmentOrder` operation
+	/// The request body schema for the `updateFulfillmentOrder` operation.
 	/// </summary>
 	public class UpdateFulfillmentOrderRequest : BaseClass
 	{
 		/// <summary>
-		/// The marketplace the fulfillment order is placed against
+		/// The marketplace the fulfillment order is placed against.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// A fulfillment order identifier that the seller creates
-		/// This value displays as the order identifier in recipient-facing materials such as the outbound shipment packi
-		/// g slip
-		/// The value of `DisplayableOrderId` should match the order identifier that the seller provides to the recipient
-		/// The seller can use the `SellerFulfillmentOrderId` for this value or they can specify an alternate value if th
-		/// y want the recipient to reference an alternate order identifier
+		/// A fulfillment order identifier that the seller creates. This value displays as the order identifier in recipie
+		/// t-facing materials such as the outbound shipment packing slip. The value of `DisplayableOrderId` should match
+		/// he order identifier that the seller provides to the recipient. The seller can use the `SellerFulfillmentOrderI
+		/// ` for this value or they can specify an alternate value if they want the recipient to reference an alternate o
+		/// der identifier.
 		/// </summary>
 		[MaxLength(40)]
 		[JsonProperty("displayableOrderId")]
 		public string DisplayableOrderId { get; set; }
 
 		/// <summary>
-		/// The date and time of the fulfillment order
-		/// Displays as the order date in recipient-facing materials such as the outbound shipment packing slip
+		/// The date and time of the fulfillment order. Displays as the order date in recipient-facing materials such as t
+		/// e outbound shipment packing slip.
 		/// </summary>
 		[JsonProperty("displayableOrderDate")]
 		public Timestamp DisplayableOrderDate { get; set; }
 
 		/// <summary>
-		/// Order-specific text that appears in recipient-facing materials such as the outbound shipment packing slip
+		/// Order-specific text that appears in recipient-facing materials such as the outbound shipment packing slip.
 		/// </summary>
 		[MaxLength(750)]
 		[JsonProperty("displayableOrderComment")]
@@ -47,7 +46,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public ShippingSpeedCategory ShippingSpeedCategory { get; set; }
 
 		/// <summary>
-		/// The destination address for the fulfillment order
+		/// The destination address for the fulfillment order.
 		/// </summary>
 		[JsonProperty("destinationAddress")]
 		public Address DestinationAddress { get; set; }
@@ -59,8 +58,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public FulfillmentPolicy FulfillmentPolicy { get; set; }
 
 		/// <summary>
-		/// The two-character country code for the country from which the fulfillment order ships
-		/// Must be in ISO 3166-1 alpha-2 format
+		/// The two-character country code for the country from which the fulfillment order ships. Must be in ISO 3166-1 a
+		/// pha-2 format.
 		/// </summary>
 		[JsonProperty("shipFromCountryCode")]
 		public string ShipFromCountryCode { get; set; }
@@ -69,13 +68,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public NotificationEmailList NotificationEmails { get; set; }
 
 		/// <summary>
-		/// A list of features and their fulfillment policies to apply to the order
+		/// A list of features and their fulfillment policies to apply to the order.
 		/// </summary>
 		[JsonProperty("featureConstraints")]
 		public List<FeatureSettings> FeatureConstraints { get; set; }
 
 		/// <summary>
-		/// A list of items to include in the fulfillment order preview, including quantity
+		/// A list of items to include in the fulfillment order preview, including quantity.
 		/// </summary>
 		[JsonProperty("items")]
 		public UpdateFulfillmentOrderItemList Items { get; set; }

@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The Response  for the GetCarrierAccountsResponse operation
+	/// The Response  for the GetCarrierAccountsResponse operation.
 	/// </summary>
 	public class GetCarrierAccountsResponse : BaseClass
 	{

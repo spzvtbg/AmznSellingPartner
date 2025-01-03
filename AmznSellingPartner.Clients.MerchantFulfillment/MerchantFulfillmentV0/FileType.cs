@@ -6,25 +6,25 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The file type for a label
+	/// The file type for a label.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum FileType
 	{
 		/// <summary>
-		/// A Portable Document Format (pdf) file
+		/// A Portable Document Format (pdf) file.
 		/// </summary>
 		[EnumMember(Value = "application/pdf")]
 		application_pdf,
 
 		/// <summary>
-		/// A Zebra Programming Language (zpl) file
+		/// A Zebra Programming Language (zpl) file.
 		/// </summary>
 		[EnumMember(Value = "application/zpl")]
 		application_zpl,
 
 		/// <summary>
-		/// A Portable Network Graphics (png) file
+		/// A Portable Network Graphics (png) file.
 		/// </summary>
 		[EnumMember(Value = "image/png")]
 		image_png,

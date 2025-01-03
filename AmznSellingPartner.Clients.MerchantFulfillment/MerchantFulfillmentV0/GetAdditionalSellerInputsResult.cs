@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the `getAdditionalSellerInputs` operation
+	/// The payload for the `getAdditionalSellerInputs` operation.
 	/// </summary>
 	public class GetAdditionalSellerInputsResult : BaseClass
 	{

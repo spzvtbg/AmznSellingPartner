@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A Link object
+	/// A Link object.
 	/// </summary>
 	public class LinkObject : BaseClass
 	{
 		/// <summary>
-		/// A URI for this object
+		/// A URI for this object.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("href")]
 		public string Href { get; set; }
 
 		/// <summary>
-		/// An identifier for this object
+		/// An identifier for this object.
 		/// </summary>
 		[JsonProperty("name")]
 		public string Name { get; set; }

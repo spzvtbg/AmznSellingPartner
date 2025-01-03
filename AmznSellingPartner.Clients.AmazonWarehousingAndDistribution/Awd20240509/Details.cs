@@ -9,13 +9,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public enum Details
 	{
 		/// <summary>
-		/// Show the additional summarized inventory details
+		/// Show the additional summarized inventory details.
 		/// </summary>
 		[EnumMember(Value = "SHOW")]
 		SHOW,
 
 		/// <summary>
-		/// Hide the additional summarized inventory details
+		/// Hide the additional summarized inventory details.
 		/// </summary>
 		[EnumMember(Value = "HIDE")]
 		HIDE,

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 	public class GetInvoiceStatusGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The shipment identifier for the shipment
+		/// The shipment identifier for the shipment.
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]

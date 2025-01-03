@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class CreateSupplySourcePostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A request to create a supply source
+		/// A request to create a supply source.
 		/// </summary>
 		[InBody("payload")]
 		[IsRequired]

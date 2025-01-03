@@ -5,20 +5,20 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request schema for the `createDestination` operation
+	/// The request schema for the `createDestination` operation.
 	/// </summary>
 	public class CreateDestinationRequest : BaseClass
 	{
 		/// <summary>
-		/// The information required to create a destination resource
-		/// Applications should use one resource type (sqs or eventBridge) per destination
+		/// The information required to create a destination resource. Applications should use one resource type (sqs or e
+		/// entBridge) per destination.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("resourceSpecification")]
 		public DestinationResourceSpecification ResourceSpecification { get; set; }
 
 		/// <summary>
-		/// A developer-defined name to help identify this destination
+		/// A developer-defined name to help identify this destination.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("name")]

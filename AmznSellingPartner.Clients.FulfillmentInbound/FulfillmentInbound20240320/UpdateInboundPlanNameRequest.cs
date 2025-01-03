@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The `updateInboundPlanName` request
+	/// The `updateInboundPlanName` request.
 	/// </summary>
 	public class UpdateInboundPlanNameRequest : BaseClass
 	{
 		/// <summary>
-		/// A human-readable name to update the inbound plan name to
+		/// A human-readable name to update the inbound plan name to.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

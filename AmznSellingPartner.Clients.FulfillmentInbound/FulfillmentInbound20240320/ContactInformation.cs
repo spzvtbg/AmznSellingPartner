@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The seller's contact information
+	/// The seller's contact information.
 	/// </summary>
 	public class ContactInformation : BaseClass
 	{
 		/// <summary>
-		/// The email address
+		/// The email address.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Email { get; set; }
 
 		/// <summary>
-		/// The contact's name
+		/// The contact's name.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Name { get; set; }
 
 		/// <summary>
-		/// The phone number
+		/// The phone number.
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]

@@ -7,26 +7,26 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// An Amazon product type with a definition available
+	/// An Amazon product type with a definition available.
 	/// </summary>
 	public class ProductType : BaseClass
 	{
 		/// <summary>
-		/// The name of the Amazon product type
+		/// The name of the Amazon product type.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("name")]
 		public string Name { get; set; }
 
 		/// <summary>
-		/// The human-readable and localized description of the Amazon product type
+		/// The human-readable and localized description of the Amazon product type.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("displayName")]
 		public string DisplayName { get; set; }
 
 		/// <summary>
-		/// The Amazon marketplace identifiers for which the product type definition is available
+		/// The Amazon marketplace identifiers for which the product type definition is available.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("marketplaceIds")]

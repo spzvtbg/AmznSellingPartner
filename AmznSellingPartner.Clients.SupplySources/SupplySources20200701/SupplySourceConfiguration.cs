@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Includes configuration and timezone of a supply source
+	/// Includes configuration and timezone of a supply source.
 	/// </summary>
 	public class SupplySourceConfiguration : BaseClass
 	{
@@ -11,10 +11,8 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		public OperationalConfiguration OperationalConfiguration { get; set; }
 
 		/// <summary>
-		/// Please see RFC 6557, should be a canonical time zone ID as listed here: https://www
-		/// joda
-		/// org/joda-time/timezones
-		/// html
+		/// Please see RFC 6557, should be a canonical time zone ID as listed here: https://www.joda.org/joda-time/timezon
+		/// s.html.
 		/// </summary>
 		[JsonProperty("timezone")]
 		public string Timezone { get; set; }

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class GetFeaturedOfferExpectedPriceBatchPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The batch of `getFeaturedOfferExpectedPrice` requests
+		/// The batch of `getFeaturedOfferExpectedPrice` requests.
 		/// </summary>
 		[InBody("getFeaturedOfferExpectedPriceBatchRequestBody")]
 		[IsRequired]

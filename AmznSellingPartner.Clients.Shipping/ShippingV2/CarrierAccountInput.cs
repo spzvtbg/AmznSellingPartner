@@ -8,19 +8,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class CarrierAccountInput : BaseClass
 	{
 		/// <summary>
-		/// descriptionLocalizationKey value
+		/// descriptionLocalizationKey value .
 		/// </summary>
 		[JsonProperty("descriptionLocalizationKey")]
 		public string DescriptionLocalizationKey { get; set; }
 
 		/// <summary>
-		/// name value
+		/// name value .
 		/// </summary>
 		[JsonProperty("name")]
 		public string Name { get; set; }
 
 		/// <summary>
-		/// groupName value
+		/// groupName value .
 		/// </summary>
 		[JsonProperty("groupName")]
 		public string GroupName { get; set; }
@@ -29,19 +29,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public InputType InputType { get; set; }
 
 		/// <summary>
-		/// mandatory or not  value
+		/// mandatory or not  value .
 		/// </summary>
 		[JsonProperty("isMandatory")]
 		public bool IsMandatory { get; set; }
 
 		/// <summary>
-		/// is value is Confidential
+		/// is value is Confidential .
 		/// </summary>
 		[JsonProperty("isConfidential")]
 		public bool IsConfidential { get; set; }
 
 		/// <summary>
-		/// is value is hidden
+		/// is value is hidden .
 		/// </summary>
 		[JsonProperty("isHidden")]
 		public bool IsHidden { get; set; }

@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of error responses returned when a request is unsuccessful
+	/// A list of error responses returned when a request is unsuccessful.
 	/// </summary>
 	public class ErrorList : BaseClass
 	{
 		/// <summary>
-		/// List of errors
+		/// List of errors.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("errors")]

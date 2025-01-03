@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class GetCompetitiveSummaryPostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The batch of `getCompetitiveSummary` requests
+		/// The batch of `getCompetitiveSummary` requests.
 		/// </summary>
 		[InBody("requests")]
 		[IsRequired]

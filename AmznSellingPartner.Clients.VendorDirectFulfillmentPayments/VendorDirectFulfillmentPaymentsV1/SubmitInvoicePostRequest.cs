@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	public class SubmitInvoicePostRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The request body containing one or more invoices for vendor orders
+		/// The request body containing one or more invoices for vendor orders.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]

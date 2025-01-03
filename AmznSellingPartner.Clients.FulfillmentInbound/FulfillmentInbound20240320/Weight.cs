@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The weight of a package
+	/// The weight of a package.
 	/// </summary>
 	public class Weight : BaseClass
 	{
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public UnitOfWeight Unit { get; set; }
 
 		/// <summary>
-		/// Value of a weight
+		/// Value of a weight.
 		/// </summary>
 		[IsRequired]
 		[Minimum(0)]

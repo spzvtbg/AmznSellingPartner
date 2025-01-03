@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Use these parameters to paginate through the response
+	/// Use these parameters to paginate through the response.
 	/// </summary>
 	public class ListOfferMetricsRequestPagination : BaseClass
 	{
 		/// <summary>
-		/// The maximum number of results to return in the response
+		/// The maximum number of results to return in the response.
 		/// </summary>
 		[IsRequired]
 		[Minimum(1)]
@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		public long Limit { get; set; }
 
 		/// <summary>
-		/// The offset from which to retrieve the number of results specified by the `limit` value
-		/// The first result is at offset 0
+		/// The offset from which to retrieve the number of results specified by the `limit` value. The first result is at
+		/// offset 0.
 		/// </summary>
 		[IsRequired]
 		[Minimum(0)]

@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of time slots
+	/// A list of time slots.
 	/// </summary>
 	[MinItems(1)]
 	[MaxItems(500)]

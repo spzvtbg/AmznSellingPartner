@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the `createServiceDocumentUploadDestination` operation
+	/// The response schema for the `createServiceDocumentUploadDestination` operation.
 	/// </summary>
 	public class CreateServiceDocumentUploadDestination : BaseClass
 	{

@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The entity that labels the products
+	/// The entity that labels the products.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum LabelOwner
 	{
 		/// <summary>
-		/// Amazon labels the products
+		/// Amazon labels the products.
 		/// </summary>
 		[EnumMember(Value = "AMAZON")]
 		AMAZON,
 
 		/// <summary>
-		/// The seller labels the products
+		/// The seller labels the products.
 		/// </summary>
 		[EnumMember(Value = "SELF")]
 		SELF,

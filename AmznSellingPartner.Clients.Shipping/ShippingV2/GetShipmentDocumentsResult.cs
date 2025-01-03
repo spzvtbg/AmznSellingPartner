@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The payload for the getShipmentDocuments operation
+	/// The payload for the getShipmentDocuments operation.
 	/// </summary>
 	public class GetShipmentDocumentsResult : BaseClass
 	{

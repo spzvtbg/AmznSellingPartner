@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		public Participation Participation { get; set; }
 
 		/// <summary>
-		/// The name of the seller's store as displayed in the marketplace
+		/// The name of the seller's store as displayed in the marketplace.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("storeName")]

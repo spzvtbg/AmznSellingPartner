@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A standard image with paragraphs and a bulleted list, and extra space for technical details
+	/// A standard image with paragraphs and a bulleted list, and extra space for technical details.
 	/// </summary>
 	public class StandardSingleImageSpecsDetailModule : BaseClass
 	{

@@ -10,25 +10,25 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	{
 		/// <summary>
 		/// A package weighing 150 pounds or less and measuring greater than 130 inches in length and girth is classified
-		/// s an oversized package
+		/// s an oversized package.
 		/// </summary>
 		[EnumMember(Value = "Oversized")]
 		Oversized,
 
 		/// <summary>
-		/// A package containing easily breakable items
+		/// A package containing easily breakable items.
 		/// </summary>
 		[EnumMember(Value = "Fragile")]
 		Fragile,
 
 		/// <summary>
-		/// A package containing edible items
+		/// A package containing edible items.
 		/// </summary>
 		[EnumMember(Value = "Food")]
 		Food,
 
 		/// <summary>
-		/// A package containing fragile or dangerous items
+		/// A package containing fragile or dangerous items.
 		/// </summary>
 		[EnumMember(Value = "HandleWithCare")]
 		HandleWithCare,

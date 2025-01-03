@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Item information for updating a fulfillment order
+	/// Item information for updating a fulfillment order.
 	/// </summary>
 	public class UpdateFulfillmentOrderItem : BaseClass
 	{
 		/// <summary>
-		/// The seller SKU of the item
+		/// The seller SKU of the item.
 		/// </summary>
 		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; }
 
 		/// <summary>
-		/// Identifies the fulfillment order item to update
-		/// Created with a previous call to the `createFulfillmentOrder` operation
+		/// Identifies the fulfillment order item to update. Created with a previous call to the `createFulfillmentOrder`
+		/// peration.
 		/// </summary>
 		[IsRequired]
 		[MaxLength(50)]
@@ -29,46 +29,45 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public Quantity Quantity { get; set; }
 
 		/// <summary>
-		/// A message to the gift recipient, if applicable
+		/// A message to the gift recipient, if applicable.
 		/// </summary>
 		[MaxLength(512)]
 		[JsonProperty("giftMessage")]
 		public string GiftMessage { get; set; }
 
 		/// <summary>
-		/// Item-specific text that displays in recipient-facing materials such as the outbound shipment packing slip
+		/// Item-specific text that displays in recipient-facing materials such as the outbound shipment packing slip.
 		/// </summary>
 		[MaxLength(250)]
 		[JsonProperty("displayableComment")]
 		public string DisplayableComment { get; set; }
 
 		/// <summary>
-		/// Amazon's fulfillment network SKU of the item
+		/// Amazon's fulfillment network SKU of the item.
 		/// </summary>
 		[JsonProperty("fulfillmentNetworkSku")]
 		public string FulfillmentNetworkSku { get; set; }
 
 		/// <summary>
-		/// Indicates whether the item is sellable or unsellable
+		/// Indicates whether the item is sellable or unsellable.
 		/// </summary>
 		[JsonProperty("orderItemDisposition")]
 		public string OrderItemDisposition { get; set; }
 
 		/// <summary>
-		/// The monetary value assigned by the seller to this item
-		/// This is a required field for India MCF orders
+		/// The monetary value assigned by the seller to this item. This is a required field for India MCF orders.
 		/// </summary>
 		[JsonProperty("perUnitDeclaredValue")]
 		public Money PerUnitDeclaredValue { get; set; }
 
 		/// <summary>
-		/// The amount to be collected from the recipient for this item in a COD (Cash On Delivery) order
+		/// The amount to be collected from the recipient for this item in a COD (Cash On Delivery) order.
 		/// </summary>
 		[JsonProperty("perUnitPrice")]
 		public Money PerUnitPrice { get; set; }
 
 		/// <summary>
-		/// The tax on the amount to be collected from the recipient for this item in a COD (Cash On Delivery) order
+		/// The tax on the amount to be collected from the recipient for this item in a COD (Cash On Delivery) order.
 		/// </summary>
 		[JsonProperty("perUnitTax")]
 		public Money PerUnitTax { get; set; }

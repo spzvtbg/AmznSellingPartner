@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Document specification that is supported for a service offering
+	/// Document specification that is supported for a service offering.
 	/// </summary>
 	public class SupportedDocumentSpecification : BaseClass
 	{

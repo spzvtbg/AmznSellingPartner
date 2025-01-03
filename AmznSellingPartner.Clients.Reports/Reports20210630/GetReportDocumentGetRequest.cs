@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public class GetReportDocumentGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The identifier for the report document
+		/// The identifier for the report document.
 		/// </summary>
 		[InPath("reportDocumentId")]
 		[IsRequired]

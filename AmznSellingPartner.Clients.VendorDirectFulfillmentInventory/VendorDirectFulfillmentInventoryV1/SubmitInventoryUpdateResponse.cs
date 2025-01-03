@@ -3,12 +3,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The response schema for the submitInventoryUpdate operation
+	/// The response schema for the submitInventoryUpdate operation.
 	/// </summary>
 	public class SubmitInventoryUpdateResponse : BaseClass
 	{
 		/// <summary>
-		/// The response payload for the submitInventoryUpdate operation
+		/// The response payload for the submitInventoryUpdate operation.
 		/// </summary>
 		[JsonProperty("payload")]
 		public TransactionReference Payload { get; set; }

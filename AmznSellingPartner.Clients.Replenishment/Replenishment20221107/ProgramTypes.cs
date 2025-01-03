@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of replenishment program types
+	/// A list of replenishment program types.
 	/// </summary>
 	[MinItems(1)]
 	[UniqueItems]

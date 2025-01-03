@@ -8,8 +8,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetCarrierAccountFormInputsGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Amazon shipping business to assume for this request
-		/// The default is AmazonShipping_UK
+		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
 		[JsonProperty("x-amzn-shipping-business-id")]

@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Contains input information to update Small Parcel Delivery (SPD) tracking information
+	/// Contains input information to update Small Parcel Delivery (SPD) tracking information.
 	/// </summary>
 	public class SpdTrackingDetailInput : BaseClass
 	{
 		/// <summary>
-		/// List of Small Parcel Delivery (SPD) tracking items input
+		/// List of Small Parcel Delivery (SPD) tracking items input.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("spdTrackingItems")]

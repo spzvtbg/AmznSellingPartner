@@ -8,19 +8,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class CarrierAccountAttribute : BaseClass
 	{
 		/// <summary>
-		/// Attribute Name
+		/// Attribute Name .
 		/// </summary>
 		[JsonProperty("attributeName")]
 		public string AttributeName { get; set; }
 
 		/// <summary>
-		/// Property Group
+		/// Property Group.
 		/// </summary>
 		[JsonProperty("propertyGroup")]
 		public string PropertyGroup { get; set; }
 
 		/// <summary>
-		/// Value
+		/// Value .
 		/// </summary>
 		[JsonProperty("value")]
 		public string Value { get; set; }

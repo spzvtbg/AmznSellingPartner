@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class GetInboundOperationStatusGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// Identifier of an asynchronous operation
+		/// Identifier of an asynchronous operation.
 		/// </summary>
 		[InPath("operationId")]
 		[IsRequired]

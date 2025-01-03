@@ -5,13 +5,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The origin for the delivery offer
+	/// The origin for the delivery offer.
 	/// </summary>
 	public class Origin : BaseClass
 	{
 		/// <summary>
-		/// The two digit country code the items should ship from
-		/// In ISO 3166-1 alpha-2 format
+		/// The two digit country code the items should ship from. In ISO 3166-1 alpha-2 format.
 		/// </summary>
 		[IsRequired]
 		[MinLength(2)]

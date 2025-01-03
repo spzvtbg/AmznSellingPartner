@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Detailed information for an ineligible shipping service offering
+	/// Detailed information for an ineligible shipping service offering.
 	/// </summary>
 	public class IneligibleRate : BaseClass
 	{
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public CarrierId CarrierId { get; set; }
 
 		/// <summary>
-		/// A list of reasons why a shipping service offering is ineligible
+		/// A list of reasons why a shipping service offering is ineligible.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("ineligibilityReasons")]

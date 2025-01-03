@@ -57,6 +57,7 @@
                 this.Name = parameter.Name;
                 this.In = parameter.In;
                 this.Description = parameter.Description;
+                this.IsRequired = parameter.IsRequired;
 
                 var json = JsonConvert.SerializeObject(parameter);
                 var def = JsonConvert.DeserializeObject<AmznDefinition>(json, AmznConverter.Settings);

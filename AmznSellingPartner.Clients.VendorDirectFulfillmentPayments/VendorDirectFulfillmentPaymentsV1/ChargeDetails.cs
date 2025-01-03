@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Monetary and tax details of the charge
+	/// Monetary and tax details of the charge.
 	/// </summary>
 	public class ChargeDetails : BaseClass
 	{
 		/// <summary>
-		/// Type of charge applied
+		/// Type of charge applied.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("type")]
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		public Money ChargeAmount { get; set; }
 
 		/// <summary>
-		/// Individual tax details per line item
+		/// Individual tax details per line item.
 		/// </summary>
 		[JsonProperty("taxDetails")]
 		public List<TaxDetail> TaxDetails { get; set; }

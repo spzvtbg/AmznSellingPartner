@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The request schema for the `sendInvoice` operation
+	/// The request schema for the `sendInvoice` operation.
 	/// </summary>
 	public class InvoiceRequest : BaseClass
 	{
 		/// <summary>
-		/// Attachments to include in the message to the buyer
+		/// Attachments to include in the message to the buyer.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(5)]

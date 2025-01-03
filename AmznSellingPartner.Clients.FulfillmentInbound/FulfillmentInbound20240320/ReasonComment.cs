@@ -6,7 +6,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Reason for cancelling or rescheduling a self-ship appointment
+	/// Reason for cancelling or rescheduling a self-ship appointment.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum ReasonComment

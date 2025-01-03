@@ -9,10 +9,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public class GetReportSchedulesGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// A list of report types used to filter report schedules
-		/// Refer to [Report Type Values](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/report-type-values) for more information
+		/// A list of report types used to filter report schedules. Refer to [Report Type Values](https://developer-docs.a
+		/// azon.com/sp-api/docs/report-type-values) for more information.
 		/// </summary>
 		[InQuery("reportTypes")]
 		[IsRequired]

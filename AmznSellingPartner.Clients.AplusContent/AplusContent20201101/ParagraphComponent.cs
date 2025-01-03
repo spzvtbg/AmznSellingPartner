@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of rich text content, usually presented in a text box
+	/// A list of rich text content, usually presented in a text box.
 	/// </summary>
 	public class ParagraphComponent : BaseClass
 	{

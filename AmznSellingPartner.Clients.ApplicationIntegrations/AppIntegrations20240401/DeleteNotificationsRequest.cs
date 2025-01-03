@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The request for the `deleteNotifications` operation
+	/// The request for the `deleteNotifications` operation.
 	/// </summary>
 	public class DeleteNotificationsRequest : BaseClass
 	{
 		/// <summary>
-		/// The unique identifier of the notification template you used to onboard your application
+		/// The unique identifier of the notification template you used to onboard your application.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("templateId")]
 		public string TemplateId { get; set; }
 
 		/// <summary>
-		/// The unique identifier that maps each notification status to a reason code
+		/// The unique identifier that maps each notification status to a reason code.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("deletionReason")]

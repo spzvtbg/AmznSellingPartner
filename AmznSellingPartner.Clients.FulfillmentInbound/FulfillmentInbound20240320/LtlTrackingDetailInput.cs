@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Contains input information to update Less-Than-Truckload (LTL) tracking information
+	/// Contains input information to update Less-Than-Truckload (LTL) tracking information.
 	/// </summary>
 	public class LtlTrackingDetailInput : BaseClass
 	{
 		/// <summary>
-		/// The number of the carrier shipment acknowledgement document
+		/// The number of the carrier shipment acknowledgement document.
 		/// </summary>
 		[MinLength(1)]
 		[MaxLength(1024)]
@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string BillOfLadingNumber { get; set; }
 
 		/// <summary>
-		/// Number associated with the freight bill
+		/// Number associated with the freight bill.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]

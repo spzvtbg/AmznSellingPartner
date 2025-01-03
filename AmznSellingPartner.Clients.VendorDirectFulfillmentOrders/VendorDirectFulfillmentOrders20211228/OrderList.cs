@@ -5,18 +5,18 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A list of purchase orders
+	/// A list of purchase orders.
 	/// </summary>
 	public class OrderList : BaseClass
 	{
 		/// <summary>
-		/// The pagination elements required to retrieve the remaining data
+		/// The pagination elements required to retrieve the remaining data.
 		/// </summary>
 		[JsonProperty("pagination")]
 		public Pagination Pagination { get; set; }
 
 		/// <summary>
-		/// Represents a purchase order within the OrderList
+		/// Represents a purchase order within the OrderList.
 		/// </summary>
 		[JsonProperty("orders")]
 		public List<Order> Orders { get; set; }

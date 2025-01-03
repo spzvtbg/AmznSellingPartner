@@ -7,20 +7,20 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class ReceivingStatus : BaseClass
 	{
 		/// <summary>
-		/// Receive status of the line item
+		/// Receive status of the line item.
 		/// </summary>
 		[JsonProperty("receiveStatus")]
 		public ReceiveStatus ReceiveStatus { get; set; }
 
 		/// <summary>
-		/// The total item quantity received by the buyer so far
+		/// The total item quantity received by the buyer so far.
 		/// </summary>
 		[JsonProperty("receivedQuantity")]
 		public ItemQuantity ReceivedQuantity { get; set; }
 
 		/// <summary>
-		/// The date when the most recent item was received at the buyer's warehouse
-		/// Must be in ISO-8601 date/time format
+		/// The date when the most recent item was received at the buyer's warehouse. Must be in ISO-8601 date/time format
+		/// 
 		/// </summary>
 		[JsonProperty("lastReceiveDate")]
 		public DateTime LastReceiveDate { get; set; }

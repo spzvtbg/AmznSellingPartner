@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System;
 
 	/// <summary>
-	/// The expiration details of the inventory
-	/// This object will only appear if the details parameter in the request is set to `SHOW`
+	/// The expiration details of the inventory. This object will only appear if the details parameter in the request
+	/// s set to `SHOW`.
 	/// </summary>
 	public class ExpirationDetails : BaseClass
 	{
 		/// <summary>
-		/// The expiration date of the SKU
+		/// The expiration date of the SKU.
 		/// </summary>
 		[JsonProperty("expiration")]
 		public DateTime Expiration { get; set; }
 
 		/// <summary>
-		/// The quantity that is present in AWD
+		/// The quantity that is present in AWD.
 		/// </summary>
 		[JsonProperty("onhandQuantity")]
 		public long OnhandQuantity { get; set; }

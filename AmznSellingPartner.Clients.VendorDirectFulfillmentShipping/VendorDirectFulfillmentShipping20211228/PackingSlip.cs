@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Packing slip information
+	/// Packing slip information.
 	/// </summary>
 	public class PackingSlip : BaseClass
 	{
 		/// <summary>
-		/// Purchase order number of the shipment that the packing slip is for
+		/// Purchase order number of the shipment that the packing slip is for.
 		/// </summary>
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
@@ -18,14 +18,14 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
-		/// A Base64encoded string of the packing slip PDF
+		/// A Base64encoded string of the packing slip PDF.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("content")]
 		public string Content { get; set; }
 
 		/// <summary>
-		/// The format of the file such as PDF, JPEG etc
+		/// The format of the file such as PDF, JPEG etc.
 		/// </summary>
 		[JsonProperty("contentType")]
 		public ContentType ContentType { get; set; }

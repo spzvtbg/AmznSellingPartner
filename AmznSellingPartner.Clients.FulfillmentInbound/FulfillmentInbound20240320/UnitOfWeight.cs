@@ -6,19 +6,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Unit of the weight being measured
+	/// Unit of the weight being measured.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum UnitOfWeight
 	{
 		/// <summary>
-		/// Pounds
+		/// Pounds.
 		/// </summary>
 		[EnumMember(Value = "LB")]
 		LB,
 
 		/// <summary>
-		/// Kilograms
+		/// Kilograms.
 		/// </summary>
 		[EnumMember(Value = "KG")]
 		KG,

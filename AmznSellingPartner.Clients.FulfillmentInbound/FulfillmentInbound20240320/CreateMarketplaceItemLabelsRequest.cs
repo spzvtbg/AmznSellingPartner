@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The `createMarketplaceItemLabels` request
+	/// The `createMarketplaceItemLabels` request.
 	/// </summary>
 	public class CreateMarketplaceItemLabelsRequest : BaseClass
 	{
 		/// <summary>
-		/// The height of the item label
+		/// The height of the item label.
 		/// </summary>
 		[Minimum(25)]
 		[Maximum(100)]
@@ -25,17 +25,15 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 
 		/// <summary>
 		/// The locale code constructed from ISO 639 language code and ISO 3166-1 alpha-2 standard of country codes separa
-		/// ed by an underscore character
+		/// ed by an underscore character.
 		/// </summary>
 		[Pattern("^[a-z]{2}_[A-Z]{2}")]
 		[JsonProperty("localeCode")]
 		public string LocaleCode { get; set; }
 
 		/// <summary>
-		/// The Marketplace ID
-		/// For a list of possible values, refer to [Marketplace IDs](https://developer-docs
-		/// amazon
-		/// com/sp-api/docs/marketplace-ids)
+		/// The Marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs.amazon.co
+		/// /sp-api/docs/marketplace-ids).
 		/// </summary>
 		[IsRequired]
 		[MinLength(1)]
@@ -44,7 +42,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
-		/// Represents the quantity of an MSKU to print item labels for
+		/// Represents the quantity of an MSKU to print item labels for.
 		/// </summary>
 		[IsRequired]
 		[MinItems(1)]
@@ -56,7 +54,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public ItemLabelPageType PageType { get; set; }
 
 		/// <summary>
-		/// The width of the item label
+		/// The width of the item label.
 		/// </summary>
 		[Minimum(25)]
 		[Maximum(100)]

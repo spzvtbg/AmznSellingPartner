@@ -5,7 +5,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Information about a sub-payment method used to pay for a COD order
+	/// Information about a sub-payment method used to pay for a COD order.
 	/// </summary>
 	public class PaymentExecutionDetailItem : BaseClass
 	{
@@ -14,9 +14,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public Money Payment { get; set; }
 
 		/// <summary>
-		/// A sub-payment method for a COD order
-		/// **Possible values**: * `COD`: Cash on delivery  * `GC`: Gift card  * `PointsAccount`: Amazon Points * `Invoi
-		/// e`: Invoice
+		/// A sub-payment method for a COD order.  **Possible values**: * `COD`: Cash on delivery  * `GC`: Gift card  * `P
+		/// intsAccount`: Amazon Points * `Invoice`: Invoice
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("PaymentMethod")]

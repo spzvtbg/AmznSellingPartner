@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The time range within which something (for example, a delivery) will occur
+	/// The time range within which something (for example, a delivery) will occur.
 	/// </summary>
 	public class DateRange : BaseClass
 	{
 		/// <summary>
-		/// The earliest point in a date range
+		/// The earliest point in a date range.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("earliest")]
 		public Timestamp Earliest { get; set; }
 
 		/// <summary>
-		/// The latest point in a date range
+		/// The latest point in a date range.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("latest")]

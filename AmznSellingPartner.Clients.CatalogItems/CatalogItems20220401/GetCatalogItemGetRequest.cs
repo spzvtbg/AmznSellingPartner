@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	public class GetCatalogItemGetRequest : BaseHttpRequest
 	{
 		/// <summary>
-		/// The Amazon Standard Identification Number (ASIN) of the item
+		/// The Amazon Standard Identification Number (ASIN) of the item.
 		/// </summary>
 		[InPath("asin")]
 		[IsRequired]
@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string Asin { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of Amazon marketplace identifiers
-		/// Data sets in the response contain data only for the specified marketplaces
+		/// A comma-delimited list of Amazon marketplace identifiers. Data sets in the response contain data only for the
+		/// pecified marketplaces.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
@@ -26,16 +26,14 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
-		/// A comma-delimited list of data sets to include in the response
-		/// Default: `summaries`
+		/// A comma-delimited list of data sets to include in the response. Default: `summaries`.
 		/// </summary>
 		[InQuery("includedData")]
 		[JsonProperty("includedData")]
 		public CsvValue<IncludedData> IncludedData { get; set; }
 
 		/// <summary>
-		/// Locale for retrieving localized summaries
-		/// Defaults to the primary locale of the marketplace
+		/// Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace.
 		/// </summary>
 		[InQuery("locale")]
 		[JsonProperty("locale")]

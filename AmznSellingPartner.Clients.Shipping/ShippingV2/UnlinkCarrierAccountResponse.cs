@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The Response  for the UnlinkCarrierAccountResponse operation
+	/// The Response  for the UnlinkCarrierAccountResponse operation.
 	/// </summary>
 	public class UnlinkCarrierAccountResponse : BaseClass
 	{

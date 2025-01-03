@@ -5,13 +5,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Amazon shipment information
+	/// Amazon shipment information.
 	/// </summary>
 	public class AmazonShipmentDetails : BaseClass
 	{
 		/// <summary>
-		/// This attribute is required only for a Direct Fulfillment shipment
-		/// This is the encrypted shipment ID
+		/// This attribute is required only for a Direct Fulfillment shipment. This is the encrypted shipment ID.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("shipmentId")]

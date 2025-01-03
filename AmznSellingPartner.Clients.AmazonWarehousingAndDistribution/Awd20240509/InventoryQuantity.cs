@@ -5,19 +5,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Quantity of inventory with an associated measurement unit context
+	/// Quantity of inventory with an associated measurement unit context.
 	/// </summary>
 	public class InventoryQuantity : BaseClass
 	{
 		/// <summary>
-		/// Quantity of the respective inventory
+		/// Quantity of the respective inventory.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("quantity")]
 		public double Quantity { get; set; }
 
 		/// <summary>
-		/// Unit of measurement for the inventory
+		/// Unit of measurement for the inventory.
 		/// </summary>
 		[IsRequired]
 		[JsonProperty("unitOfMeasurement")]

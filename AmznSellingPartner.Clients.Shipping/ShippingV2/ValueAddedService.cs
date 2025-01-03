@@ -1,0 +1,33 @@
+namespace AmznSellingPartner.Clients.Shipping.ShippingV2
+{
+	using AmznSellingPartner.Clients.Attributes;
+
+	using Newtonsoft.Json;
+
+	/// <summary>
+	/// A value-added service available for purchase with a shipment service offering
+	/// </summary>
+	public class ValueAddedService : BaseClass
+	{
+		/// <summary>
+		/// The identifier for the value-added service
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("id")]
+		public string Id { get; set; }
+
+		/// <summary>
+		/// The name of the value-added service
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("name")]
+		public string Name { get; set; }
+
+		/// <summary>
+		/// The cost of the value-added service
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("cost")]
+		public Currency Cost { get; set; }
+	}
+}

@@ -1,0 +1,16 @@
+namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound20200701
+{
+	using AmznSellingPartner.Clients.Attributes;
+
+	using Newtonsoft.Json;
+
+	/// <summary>
+	/// The payload for the `getFeatures` operation
+	/// </summary>
+	public class GetFeaturesResult : BaseClass
+	{
+		[IsRequired]
+		[JsonProperty("features")]
+		public Features Features { get; set; }
+	}
+}

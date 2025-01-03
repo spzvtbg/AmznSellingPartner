@@ -1,0 +1,19 @@
+{
+  "AmznDefinitionString": {
+    "In": [
+      "path"
+    ],
+    "x-amazon-spds-greedy-path-parameter": [
+      null
+    ],
+    "required": [
+      true
+    ],
+    "Name": [
+      "notificationType"
+    ],
+    "Default": [
+      null
+    ]
+  }
+}

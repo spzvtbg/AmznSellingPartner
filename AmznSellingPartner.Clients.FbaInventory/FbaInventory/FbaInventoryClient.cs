@@ -1,0 +1,71 @@
+namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
+{
+	using System;
+	using System.Threading.Tasks;
+
+	public class FbaInventoryClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	{
+		/// <summary>
+		/// Returns a list of inventory summaries
+		/// The summaries returned depend on the presence or absence of the startDateTime, sellerSkus and sellerSku param
+		/// ters:  - All inventory summaries with available details are returned when the startDateTime, sellerSkus and se
+		/// lerSku parameters are omitted
+		/// - When startDateTime is provided, the operation returns inventory summaries that have had changes after the d
+		/// te and time specified
+		/// The sellerSkus and sellerSku parameters are ignored
+		/// Important: To avoid errors, use both startDateTime and nextToken to get the next page of inventory summaries
+		/// hat have changed after the date and time specified
+		/// - When the sellerSkus parameter is provided, the operation returns inventory summaries for only the specified
+		/// sellerSkus
+		/// The sellerSku parameter is ignored
+		/// - When the sellerSku parameter is provided, the operation returns inventory summaries for only the specified
+		/// ellerSku
+		/// Note: The parameters associated with this operation may contain special characters that must be encoded to s
+		/// ccessfully call the API
+		/// To avoid errors with SKUs when encoding URLs, refer to [URL Encoding](https://developer-docs
+		/// amazon
+		/// com/sp-api/docs/url-encoding)
+		/// Usage Plan:  | Rate (requests per second) | Burst | | ---- | ---- | | 2 | 2 |  The x-amzn-RateLimit-Limit re
+		/// ponse header returns the usage plan rate limits that were applied to the requested operation, when available
+		/// The table above indicates the default rate and burst values for this operation
+		/// Selling partners whose business demands require higher throughput may see higher rate and burst values than t
+		/// ose shown here
+		/// For more information, see [Usage Plans and Rate Limits in the Selling Partner API](https://developer-docs
+		/// amazon
+		/// com/sp-api/docs/usage-plans-and-rate-limits)
+		/// </summary>
+		public async Task<GetInventorySummariesGetResponse> GetInventorySummariesAsync(GetInventorySummariesGetRequest request)
+		    => await this.SendAsync<GetInventorySummariesGetResponse>(request);
+
+		/// <summary>
+		/// Requests that Amazon create product-details in the Sandbox Inventory in the sandbox environment
+		/// This is a sandbox-only operation and must be directed to a sandbox endpoint
+		/// Refer to [Selling Partner API sandbox](https://developer-docs
+		/// amazon
+		/// com/sp-api/docs/the-selling-partner-api-sandbox) for more information
+		/// </summary>
+		public async Task<CreateInventoryItemPostResponse> CreateInventoryItemAsync(CreateInventoryItemPostRequest request)
+		    => await this.SendAsync<CreateInventoryItemPostResponse>(request);
+
+		/// <summary>
+		/// Requests that Amazon Deletes an item from the Sandbox Inventory in the sandbox environment
+		/// This is a sandbox-only operation and must be directed to a sandbox endpoint
+		/// Refer to [Selling Partner API sandbox](https://developer-docs
+		/// amazon
+		/// com/sp-api/docs/the-selling-partner-api-sandbox) for more information
+		/// </summary>
+		public async Task<DeleteInventoryItemDeleteResponse> DeleteInventoryItemAsync(DeleteInventoryItemDeleteRequest request)
+		    => await this.SendAsync<DeleteInventoryItemDeleteResponse>(request);
+
+		/// <summary>
+		/// Requests that Amazon add items to the Sandbox Inventory with desired amount of quantity in the sandbox environ
+		/// ent
+		/// This is a sandbox-only operation and must be directed to a sandbox endpoint
+		/// Refer to [Selling Partner API sandbox](https://developer-docs
+		/// amazon
+		/// com/sp-api/docs/the-selling-partner-api-sandbox) for more information
+		/// </summary>
+		public async Task<AddInventoryPostResponse> AddInventoryAsync(AddInventoryPostRequest request)
+		    => await this.SendAsync<AddInventoryPostResponse>(request);
+	}
+}

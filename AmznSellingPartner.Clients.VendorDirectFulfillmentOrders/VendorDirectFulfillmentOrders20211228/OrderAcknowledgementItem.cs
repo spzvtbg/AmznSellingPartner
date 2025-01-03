@@ -1,0 +1,66 @@
+namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectFulfillmentOrders20211228
+{
+	using AmznSellingPartner.Clients.Attributes;
+
+	using Newtonsoft.Json;
+
+	using System;
+	using System.Collections.Generic;
+
+	/// <summary>
+	/// Details of an individual order being acknowledged
+	/// </summary>
+	public class OrderAcknowledgementItem : BaseClass
+	{
+		/// <summary>
+		/// The purchase order number for this order
+		/// Formatting Notes: alpha-numeric code
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("purchaseOrderNumber")]
+		public string PurchaseOrderNumber { get; set; }
+
+		/// <summary>
+		/// The vendor's order number for this order
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("vendorOrderNumber")]
+		public string VendorOrderNumber { get; set; }
+
+		/// <summary>
+		/// The date and time when the order is acknowledged, in ISO-8601 date/time format
+		/// For example: 2018-07-16T23:00:00Z / 2018-07-16T23:00:00-05:00 / 2018-07-16T23:00:00-08:00
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("acknowledgementDate")]
+		public DateTime AcknowledgementDate { get; set; }
+
+		/// <summary>
+		/// Status of acknowledgement
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("acknowledgementStatus")]
+		public AcknowledgementStatus AcknowledgementStatus { get; set; }
+
+		/// <summary>
+		/// PartyID as vendor code
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("sellingParty")]
+		public PartyIdentification SellingParty { get; set; }
+
+		/// <summary>
+		/// PartyID as the vendor's warehouseId
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("shipFromParty")]
+		public PartyIdentification ShipFromParty { get; set; }
+
+		/// <summary>
+		/// Item details including acknowledged quantity
+		/// </summary>
+		[IsRequired]
+		[JsonProperty("itemAcknowledgements")]
+		public List<OrderItemAcknowledgement> ItemAcknowledgements { get; set; }
+	}
+}

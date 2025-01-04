@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFeedsGetResponse> GetFeedsAsync(GetFeedsGetRequest request)
-		    => await this.SendAsync<GetFeedsGetResponse>(request);
+		    => await SendAsync<GetFeedsGetResponse>(request);
 
 		/// <summary>
 		/// Creates a feed. Upload the contents of the feed document before calling this operation.  **Usage Plan:**
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// in-bulk-using-the-json_listings_feed-or-individually-with-the-listings-items-api).
 		/// </summary>
 		public async Task<CreateFeedPostResponse> CreateFeedAsync(CreateFeedPostRequest request)
-		    => await this.SendAsync<CreateFeedPostResponse>(request);
+		    => await SendAsync<CreateFeedPostResponse>(request);
 
 		/// <summary>
 		/// Cancels the feed that you specify. Only feeds with `processingStatus=IN_QUEUE` can be cancelled. Cancelled
@@ -47,7 +47,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<CancelFeedDeleteResponse> CancelFeedAsync(CancelFeedDeleteRequest request)
-		    => await this.SendAsync<CancelFeedDeleteResponse>(request);
+		    => await SendAsync<CancelFeedDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns feed details (including the `resultDocumentId`, if available) for the feed that you specify.
@@ -59,7 +59,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// API](https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFeedGetResponse> GetFeedAsync(GetFeedGetRequest request)
-		    => await this.SendAsync<GetFeedGetResponse>(request);
+		    => await SendAsync<GetFeedGetResponse>(request);
 
 		/// <summary>
 		/// Creates a feed document for the feed type that you specify. This operation returns a presigned URL for
@@ -74,7 +74,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateFeedDocumentPostResponse> CreateFeedDocumentAsync(CreateFeedDocumentPostRequest request)
-		    => await this.SendAsync<CreateFeedDocumentPostResponse>(request);
+		    => await SendAsync<CreateFeedDocumentPostResponse>(request);
 
 		/// <summary>
 		/// Returns the information required for retrieving a feed document's contents.  **Usage Plan:**  | Rate
@@ -86,6 +86,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFeedDocumentGetResponse> GetFeedDocumentAsync(GetFeedDocumentGetRequest request)
-		    => await this.SendAsync<GetFeedDocumentGetResponse>(request);
+		    => await SendAsync<GetFeedDocumentGetResponse>(request);
 	}
 }

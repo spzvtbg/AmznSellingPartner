@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class SubmitInventoryUpdatePostResponse : BaseHttpResponse<SubmitInventoryUpdatePostResponse>
+	public class SubmitInventoryUpdatePostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

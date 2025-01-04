@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetMyFeesEstimateForSKUPostResponse> GetMyFeesEstimateForSKUAsync(GetMyFeesEstimateForSKUPostRequest request)
-		    => await this.SendAsync<GetMyFeesEstimateForSKUPostResponse>(request);
+		    => await SendAsync<GetMyFeesEstimateForSKUPostResponse>(request);
 
 		/// <summary>
 		/// Returns the estimated fees for the item indicated by the specified ASIN in the marketplace specified
@@ -45,7 +45,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetMyFeesEstimateForASINPostResponse> GetMyFeesEstimateForASINAsync(GetMyFeesEstimateForASINPostRequest request)
-		    => await this.SendAsync<GetMyFeesEstimateForASINPostResponse>(request);
+		    => await SendAsync<GetMyFeesEstimateForASINPostResponse>(request);
 
 		/// <summary>
 		/// Returns the estimated fees for a list of products.  **Usage Plan:**  | Rate (requests per second) | Burst
@@ -56,6 +56,6 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetMyFeesEstimatesPostResponse> GetMyFeesEstimatesAsync(GetMyFeesEstimatesPostRequest request)
-		    => await this.SendAsync<GetMyFeesEstimatesPostResponse>(request);
+		    => await SendAsync<GetMyFeesEstimatesPostResponse>(request);
 	}
 }

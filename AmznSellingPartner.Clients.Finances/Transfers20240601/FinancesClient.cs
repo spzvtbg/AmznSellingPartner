@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// mits](https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<InitiatePayoutPostResponse> InitiatePayoutAsync(InitiatePayoutPostRequest request)
-		    => await this.SendAsync<InitiatePayoutPostResponse>(request);
+		    => await SendAsync<InitiatePayoutPostResponse>(request);
 
 		/// <summary>
 		/// Returns the list of payment methods for the seller, which can be filtered by method type.  **Usage Plan:**
@@ -28,6 +28,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// -rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetPaymentMethodsGetResponse> GetPaymentMethodsAsync(GetPaymentMethodsGetRequest request)
-		    => await this.SendAsync<GetPaymentMethodsGetResponse>(request);
+		    => await SendAsync<GetPaymentMethodsGetResponse>(request);
 	}
 }

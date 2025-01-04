@@ -18,222 +18,222 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// Arabic
 		/// </summary>
 		[EnumMember(Value = "ar")]
-		ar,
+		Ar,
 
 		/// <summary>
 		/// Arabic (U.A.E.)
 		/// </summary>
 		[EnumMember(Value = "ar_AE")]
-		ar_AE,
+		Ar_AE,
 
 		/// <summary>
 		/// German
 		/// </summary>
 		[EnumMember(Value = "de")]
-		de,
+		De,
 
 		/// <summary>
 		/// German (Germany)
 		/// </summary>
 		[EnumMember(Value = "de_DE")]
-		de_DE,
+		De_DE,
 
 		/// <summary>
 		/// English
 		/// </summary>
 		[EnumMember(Value = "en")]
-		en,
+		En,
 
 		/// <summary>
 		/// English (U.A.E.)
 		/// </summary>
 		[EnumMember(Value = "en_AE")]
-		en_AE,
+		En_AE,
 
 		/// <summary>
 		/// English (Australia)
 		/// </summary>
 		[EnumMember(Value = "en_AU")]
-		en_AU,
+		En_AU,
 
 		/// <summary>
 		/// English (Canada)
 		/// </summary>
 		[EnumMember(Value = "en_CA")]
-		en_CA,
+		En_CA,
 
 		/// <summary>
 		/// English (United Kingdom)
 		/// </summary>
 		[EnumMember(Value = "en_GB")]
-		en_GB,
+		En_GB,
 
 		/// <summary>
 		/// English (India)
 		/// </summary>
 		[EnumMember(Value = "en_IN")]
-		en_IN,
+		En_IN,
 
 		/// <summary>
 		/// English (Singapore)
 		/// </summary>
 		[EnumMember(Value = "en_SG")]
-		en_SG,
+		En_SG,
 
 		/// <summary>
 		/// English (United States)
 		/// </summary>
 		[EnumMember(Value = "en_US")]
-		en_US,
+		En_US,
 
 		/// <summary>
 		/// Spanish
 		/// </summary>
 		[EnumMember(Value = "es")]
-		es,
+		Es,
 
 		/// <summary>
 		/// Spanish (Spain)
 		/// </summary>
 		[EnumMember(Value = "es_ES")]
-		es_ES,
+		Es_ES,
 
 		/// <summary>
 		/// Spanish (Mexico)
 		/// </summary>
 		[EnumMember(Value = "es_MX")]
-		es_MX,
+		Es_MX,
 
 		/// <summary>
 		/// Spanish (United States)
 		/// </summary>
 		[EnumMember(Value = "es_US")]
-		es_US,
+		Es_US,
 
 		/// <summary>
 		/// French
 		/// </summary>
 		[EnumMember(Value = "fr")]
-		fr,
+		Fr,
 
 		/// <summary>
 		/// French (Canada)
 		/// </summary>
 		[EnumMember(Value = "fr_CA")]
-		fr_CA,
+		Fr_CA,
 
 		/// <summary>
 		/// French (France)
 		/// </summary>
 		[EnumMember(Value = "fr_FR")]
-		fr_FR,
+		Fr_FR,
 
 		/// <summary>
 		/// Italian
 		/// </summary>
 		[EnumMember(Value = "it")]
-		it,
+		It,
 
 		/// <summary>
 		/// Italian (Italy)
 		/// </summary>
 		[EnumMember(Value = "it_IT")]
-		it_IT,
+		It_IT,
 
 		/// <summary>
 		/// Japanese
 		/// </summary>
 		[EnumMember(Value = "ja")]
-		ja,
+		Ja,
 
 		/// <summary>
 		/// Japanese (Japan)
 		/// </summary>
 		[EnumMember(Value = "ja_JP")]
-		ja_JP,
+		Ja_JP,
 
 		/// <summary>
 		/// Dutch
 		/// </summary>
 		[EnumMember(Value = "nl")]
-		nl,
+		Nl,
 
 		/// <summary>
 		/// Dutch (Netherlands)
 		/// </summary>
 		[EnumMember(Value = "nl_NL")]
-		nl_NL,
+		Nl_NL,
 
 		/// <summary>
 		/// Polish
 		/// </summary>
 		[EnumMember(Value = "pl")]
-		pl,
+		Pl,
 
 		/// <summary>
 		/// Polish (Poland)
 		/// </summary>
 		[EnumMember(Value = "pl_PL")]
-		pl_PL,
+		Pl_PL,
 
 		/// <summary>
 		/// Portuguese
 		/// </summary>
 		[EnumMember(Value = "pt")]
-		pt,
+		Pt,
 
 		/// <summary>
 		/// Portuguese (Brazil)
 		/// </summary>
 		[EnumMember(Value = "pt_BR")]
-		pt_BR,
+		Pt_BR,
 
 		/// <summary>
 		/// Portuguese (Portugal)
 		/// </summary>
 		[EnumMember(Value = "pt_PT")]
-		pt_PT,
+		Pt_PT,
 
 		/// <summary>
 		/// Swedish
 		/// </summary>
 		[EnumMember(Value = "sv")]
-		sv,
+		Sv,
 
 		/// <summary>
 		/// Swedish (Sweden)
 		/// </summary>
 		[EnumMember(Value = "sv_SE")]
-		sv_SE,
+		Sv_SE,
 
 		/// <summary>
 		/// Turkish
 		/// </summary>
 		[EnumMember(Value = "tr")]
-		tr,
+		Tr,
 
 		/// <summary>
 		/// Turkish (Turkey)
 		/// </summary>
 		[EnumMember(Value = "tr_TR")]
-		tr_TR,
+		Tr_TR,
 
 		/// <summary>
 		/// Chinese
 		/// </summary>
 		[EnumMember(Value = "zh")]
-		zh,
+		Zh,
 
 		/// <summary>
 		/// Chinese (Simplified)
 		/// </summary>
 		[EnumMember(Value = "zh_CN")]
-		zh_CN,
+		Zh_CN,
 
 		/// <summary>
 		/// Chinese (Traditional)
 		/// </summary>
 		[EnumMember(Value = "zh_TW")]
-		zh_TW,
+		Zh_TW,
 	}
 }

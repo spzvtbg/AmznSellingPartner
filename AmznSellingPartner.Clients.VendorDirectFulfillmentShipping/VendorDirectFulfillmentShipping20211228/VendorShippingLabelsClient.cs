@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// cs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<GetShippingLabelsGetResponse> GetShippingLabelsAsync(GetShippingLabelsGetRequest request)
-		    => await this.SendAsync<GetShippingLabelsGetResponse>(request);
+		    => await SendAsync<GetShippingLabelsGetResponse>(request);
 
 		/// <summary>
 		/// Creates a shipping label for a purchase order and returns a `transactionId` for reference.  **Usage Plan:**
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<SubmitShippingLabelRequestPostResponse> SubmitShippingLabelRequestAsync(SubmitShippingLabelRequestPostRequest request)
-		    => await this.SendAsync<SubmitShippingLabelRequestPostResponse>(request);
+		    => await SendAsync<SubmitShippingLabelRequestPostResponse>(request);
 
 		/// <summary>
 		/// Returns a shipping label for the `purchaseOrderNumber` that you specify.  **Usage Plan:**  | Rate (requests
@@ -41,7 +41,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<GetShippingLabelGetResponse> GetShippingLabelAsync(GetShippingLabelGetRequest request)
-		    => await this.SendAsync<GetShippingLabelGetResponse>(request);
+		    => await SendAsync<GetShippingLabelGetResponse>(request);
 
 		/// <summary>
 		/// Creates shipping labels for a purchase order and returns the labels.  **Usage Plan:**  | Rate (requests
@@ -53,6 +53,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<CreateShippingLabelsPostResponse> CreateShippingLabelsAsync(CreateShippingLabelsPostRequest request)
-		    => await this.SendAsync<CreateShippingLabelsPostResponse>(request);
+		    => await SendAsync<CreateShippingLabelsPostResponse>(request);
 	}
 }

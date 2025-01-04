@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetReportsGetResponse> GetReportsAsync(GetReportsGetRequest request)
-		    => await this.SendAsync<GetReportsGetResponse>(request);
+		    => await SendAsync<GetReportsGetResponse>(request);
 
 		/// <summary>
 		/// Creates a report.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 0.0167 |
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateReportPostResponse> CreateReportAsync(CreateReportPostRequest request)
-		    => await this.SendAsync<CreateReportPostResponse>(request);
+		    => await SendAsync<CreateReportPostResponse>(request);
 
 		/// <summary>
 		/// Cancels the report that you specify. Only reports with `processingStatus=IN_QUEUE` can be cancelled.
@@ -40,7 +40,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CancelReportDeleteResponse> CancelReportAsync(CancelReportDeleteRequest request)
-		    => await this.SendAsync<CancelReportDeleteResponse>(request);
+		    => await SendAsync<CancelReportDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns report details (including the `reportDocumentId`, if available) for the report that you specify.
@@ -52,7 +52,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetReportGetResponse> GetReportAsync(GetReportGetRequest request)
-		    => await this.SendAsync<GetReportGetResponse>(request);
+		    => await SendAsync<GetReportGetResponse>(request);
 
 		/// <summary>
 		/// Returns report schedule details that match the filters that you specify.  **Usage Plan:**  | Rate (requests
@@ -64,7 +64,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetReportSchedulesGetResponse> GetReportSchedulesAsync(GetReportSchedulesGetRequest request)
-		    => await this.SendAsync<GetReportSchedulesGetResponse>(request);
+		    => await SendAsync<GetReportSchedulesGetResponse>(request);
 
 		/// <summary>
 		/// Creates a report schedule. If a report schedule with the same report type and marketplace IDs already
@@ -77,7 +77,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// /docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateReportSchedulePostResponse> CreateReportScheduleAsync(CreateReportSchedulePostRequest request)
-		    => await this.SendAsync<CreateReportSchedulePostResponse>(request);
+		    => await SendAsync<CreateReportSchedulePostResponse>(request);
 
 		/// <summary>
 		/// Cancels the report schedule that you specify.  **Usage Plan:**  | Rate (requests per second) | Burst
@@ -89,7 +89,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// cs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CancelReportScheduleDeleteResponse> CancelReportScheduleAsync(CancelReportScheduleDeleteRequest request)
-		    => await this.SendAsync<CancelReportScheduleDeleteResponse>(request);
+		    => await SendAsync<CancelReportScheduleDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns report schedule details for the report schedule that you specify.  **Usage Plan:**  | Rate (requests
@@ -101,7 +101,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetReportScheduleGetResponse> GetReportScheduleAsync(GetReportScheduleGetRequest request)
-		    => await this.SendAsync<GetReportScheduleGetResponse>(request);
+		    => await SendAsync<GetReportScheduleGetResponse>(request);
 
 		/// <summary>
 		/// Returns the information required for retrieving a report document's contents.  **Usage Plan:**  | Rate
@@ -113,6 +113,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetReportDocumentGetResponse> GetReportDocumentAsync(GetReportDocumentGetRequest request)
-		    => await this.SendAsync<GetReportDocumentGetResponse>(request);
+		    => await SendAsync<GetReportDocumentGetResponse>(request);
 	}
 }

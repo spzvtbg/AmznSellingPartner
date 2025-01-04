@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class SubmitShipmentConfirmationsPostResponse : BaseHttpResponse<SubmitShipmentConfirmationsPostResponse>
+	public class SubmitShipmentConfirmationsPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

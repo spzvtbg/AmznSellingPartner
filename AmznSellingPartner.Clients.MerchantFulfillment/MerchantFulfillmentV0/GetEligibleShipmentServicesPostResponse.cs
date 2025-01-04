@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetEligibleShipmentServicesPostResponse : BaseHttpResponse<GetEligibleShipmentServicesPostResponse>
+	public class GetEligibleShipmentServicesPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

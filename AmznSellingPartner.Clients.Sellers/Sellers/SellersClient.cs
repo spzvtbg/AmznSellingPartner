@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// e-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetMarketplaceParticipationsGetResponse> GetMarketplaceParticipationsAsync(GetMarketplaceParticipationsGetRequest request)
-		    => await this.SendAsync<GetMarketplaceParticipationsGetResponse>(request);
+		    => await SendAsync<GetMarketplaceParticipationsGetResponse>(request);
 
 		/// <summary>
 		/// Returns information about a seller account and its marketplaces.  **Usage Plan:**  | Rate (requests per
@@ -28,6 +28,6 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// i/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetAccountGetResponse> GetAccountAsync(GetAccountGetRequest request)
-		    => await this.SendAsync<GetAccountGetResponse>(request);
+		    => await SendAsync<GetAccountGetResponse>(request);
 	}
 }

@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrdersGetResponse> GetOrdersAsync(GetOrdersGetRequest request)
-		    => await this.SendAsync<GetOrdersGetResponse>(request);
+		    => await SendAsync<GetOrdersGetResponse>(request);
 
 		/// <summary>
 		/// Returns purchase order information for the purchaseOrderNumber that you specify.  **Usage Plan:**  |
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// nd-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrderGetResponse> GetOrderAsync(GetOrderGetRequest request)
-		    => await this.SendAsync<GetOrderGetResponse>(request);
+		    => await SendAsync<GetOrderGetResponse>(request);
 
 		/// <summary>
 		/// Submits acknowledgements for one or more purchase orders.  **Usage Plan:**  | Rate (requests per second)
@@ -42,6 +42,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// pi).
 		/// </summary>
 		public async Task<SubmitAcknowledgementPostResponse> SubmitAcknowledgementAsync(SubmitAcknowledgementPostRequest request)
-		    => await this.SendAsync<SubmitAcknowledgementPostResponse>(request);
+		    => await SendAsync<SubmitAcknowledgementPostResponse>(request);
 	}
 }

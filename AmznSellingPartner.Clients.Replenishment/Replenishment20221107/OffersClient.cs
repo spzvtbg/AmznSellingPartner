@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// -docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<ListOfferMetricsPostResponse> ListOfferMetricsAsync(ListOfferMetricsPostRequest request)
-		    => await this.SendAsync<ListOfferMetricsPostResponse>(request);
+		    => await SendAsync<ListOfferMetricsPostResponse>(request);
 
 		/// <summary>
 		/// Returns the details of a selling partner's replenishment program offers.  **Usage Plan:**  | Rate (requests
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// i/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<ListOffersPostResponse> ListOffersAsync(ListOffersPostRequest request)
-		    => await this.SendAsync<ListOffersPostResponse>(request);
+		    => await SendAsync<ListOffersPostResponse>(request);
 	}
 }

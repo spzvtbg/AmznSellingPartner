@@ -11,11 +11,24 @@
         public BaseHttpClient(Uri baseAddress) 
             => httpClient.BaseAddress = baseAddress;
 
-        protected async Task<T> SendAsync<T>(BaseHttpRequest request)
+        protected static async Task<T> SendAsync<T>(BaseHttpRequest request) where T : BaseHttpResponse
         {
-            BaseHttpResponse<T> response = await httpClient.SendAsync(request);
+            if (!request.Validate(out var errors))
+            {
+                return errors as T;
+            }
 
-            return response.Value;
+            var response = default(T);
+
+            using (HttpRequestMessage httpRequestMessage = request)
+            {
+                using (var httpResponseMessage = await httpClient.SendAsync(request))
+                {
+                    response = (T)httpResponseMessage;
+                }
+            }
+
+            return response;
         }
     }
 }

@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// Plans and Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SearchDefinitionsProductTypesGetResponse> SearchDefinitionsProductTypesAsync(SearchDefinitionsProductTypesGetRequest request)
-		    => await this.SendAsync<SearchDefinitionsProductTypesGetResponse>(request);
+		    => await SendAsync<SearchDefinitionsProductTypesGetResponse>(request);
 
 		/// <summary>
 		/// Retrieve an Amazon product type definition.  **Usage Plans:**  | Plan type | Rate (requests per second)
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetDefinitionsProductTypeGetResponse> GetDefinitionsProductTypeAsync(GetDefinitionsProductTypeGetRequest request)
-		    => await this.SendAsync<GetDefinitionsProductTypeGetResponse>(request);
+		    => await SendAsync<GetDefinitionsProductTypeGetResponse>(request);
 	}
 }

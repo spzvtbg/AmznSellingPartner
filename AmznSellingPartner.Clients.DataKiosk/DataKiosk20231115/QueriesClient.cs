@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetQueriesGetResponse> GetQueriesAsync(GetQueriesGetRequest request)
-		    => await this.SendAsync<GetQueriesGetResponse>(request);
+		    => await SendAsync<GetQueriesGetResponse>(request);
 
 		/// <summary>
 		/// Creates a Data Kiosk query request.  **Note:** The retention of a query varies based on the fields requested.
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// d-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateQueryPostResponse> CreateQueryAsync(CreateQueryPostRequest request)
-		    => await this.SendAsync<CreateQueryPostResponse>(request);
+		    => await SendAsync<CreateQueryPostResponse>(request);
 
 		/// <summary>
 		/// Cancels the query specified by the `queryId` parameter. Only queries with a non-terminal `processingStatus`
@@ -47,7 +47,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<CancelQueryDeleteResponse> CancelQueryAsync(CancelQueryDeleteRequest request)
-		    => await this.SendAsync<CancelQueryDeleteResponse>(request);
+		    => await SendAsync<CancelQueryDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns query details for the query specified by the `queryId` parameter. See the `createQuery` operation
@@ -60,7 +60,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetQueryGetResponse> GetQueryAsync(GetQueryGetRequest request)
-		    => await this.SendAsync<GetQueryGetResponse>(request);
+		    => await SendAsync<GetQueryGetResponse>(request);
 
 		/// <summary>
 		/// Returns the information required for retrieving a Data Kiosk document's contents. See the `createQuery`
@@ -73,6 +73,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// cs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetDocumentGetResponse> GetDocumentAsync(GetDocumentGetRequest request)
-		    => await this.SendAsync<GetDocumentGetResponse>(request);
+		    => await SendAsync<GetDocumentGetResponse>(request);
 	}
 }

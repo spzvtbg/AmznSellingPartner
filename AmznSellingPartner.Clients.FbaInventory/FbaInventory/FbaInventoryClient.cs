@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// eloper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<GetInventorySummariesGetResponse> GetInventorySummariesAsync(GetInventorySummariesGetRequest request)
-		    => await this.SendAsync<GetInventorySummariesGetResponse>(request);
+		    => await SendAsync<GetInventorySummariesGetResponse>(request);
 
 		/// <summary>
 		/// Requests that Amazon create product-details in the Sandbox Inventory in the sandbox environment. This
@@ -34,7 +34,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// ormation.
 		/// </summary>
 		public async Task<CreateInventoryItemPostResponse> CreateInventoryItemAsync(CreateInventoryItemPostRequest request)
-		    => await this.SendAsync<CreateInventoryItemPostResponse>(request);
+		    => await SendAsync<CreateInventoryItemPostResponse>(request);
 
 		/// <summary>
 		/// Requests that Amazon Deletes an item from the Sandbox Inventory in the sandbox environment. This is a
@@ -42,7 +42,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// for more information.
 		/// </summary>
 		public async Task<DeleteInventoryItemDeleteResponse> DeleteInventoryItemAsync(DeleteInventoryItemDeleteRequest request)
-		    => await this.SendAsync<DeleteInventoryItemDeleteResponse>(request);
+		    => await SendAsync<DeleteInventoryItemDeleteResponse>(request);
 
 		/// <summary>
 		/// Requests that Amazon add items to the Sandbox Inventory with desired amount of quantity in the sandbox
@@ -51,6 +51,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// more information.
 		/// </summary>
 		public async Task<AddInventoryPostResponse> AddInventoryAsync(AddInventoryPostRequest request)
-		    => await this.SendAsync<AddInventoryPostResponse>(request);
+		    => await SendAsync<AddInventoryPostResponse>(request);
 	}
 }

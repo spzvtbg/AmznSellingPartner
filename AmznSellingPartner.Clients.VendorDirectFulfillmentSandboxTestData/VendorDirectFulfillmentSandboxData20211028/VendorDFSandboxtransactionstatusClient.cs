@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// successful, also returns the requested test order data.
 		/// </summary>
 		public async Task<GetOrderScenariosGetResponse> GetOrderScenariosAsync(GetOrderScenariosGetRequest request)
-		    => await this.SendAsync<GetOrderScenariosGetResponse>(request);
+		    => await SendAsync<GetOrderScenariosGetResponse>(request);
 	}
 }

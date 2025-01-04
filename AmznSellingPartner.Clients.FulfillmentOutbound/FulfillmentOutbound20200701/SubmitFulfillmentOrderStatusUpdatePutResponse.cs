@@ -2,15 +2,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class SubmitFulfillmentOrderStatusUpdatePutResponse : BaseHttpResponse<SubmitFulfillmentOrderStatusUpdatePutResponse>
+	public class SubmitFulfillmentOrderStatusUpdatePutResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

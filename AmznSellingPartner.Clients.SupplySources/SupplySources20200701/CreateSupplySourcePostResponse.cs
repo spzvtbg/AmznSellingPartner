@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class CreateSupplySourcePostResponse : BaseHttpResponse<CreateSupplySourcePostResponse>
+	public class CreateSupplySourcePostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation. _Note:_ For this status code, the rate limit
@@ -16,8 +16,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

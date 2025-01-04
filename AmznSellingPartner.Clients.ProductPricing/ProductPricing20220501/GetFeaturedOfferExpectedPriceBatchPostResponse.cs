@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetFeaturedOfferExpectedPriceBatchPostResponse : BaseHttpResponse<GetFeaturedOfferExpectedPriceBatchPostResponse>
+	public class GetFeaturedOfferExpectedPriceBatchPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

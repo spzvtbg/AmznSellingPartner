@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// Portable Document Format (pdf).
 		/// </summary>
 		[EnumMember(Value = "application/pdf")]
-		application_pdf,
+		Application_pdf,
 	}
 }

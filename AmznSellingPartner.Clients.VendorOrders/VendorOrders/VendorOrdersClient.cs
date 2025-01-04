@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetPurchaseOrdersGetResponse> GetPurchaseOrdersAsync(GetPurchaseOrdersGetRequest request)
-		    => await this.SendAsync<GetPurchaseOrdersGetResponse>(request);
+		    => await SendAsync<GetPurchaseOrdersGetResponse>(request);
 
 		/// <summary>
 		/// Returns a purchase order based on the `purchaseOrderNumber` value that you specify.  **Usage Plan:**
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetPurchaseOrderGetResponse> GetPurchaseOrderAsync(GetPurchaseOrderGetRequest request)
-		    => await this.SendAsync<GetPurchaseOrderGetResponse>(request);
+		    => await SendAsync<GetPurchaseOrderGetResponse>(request);
 
 		/// <summary>
 		/// Submits acknowledgements for one or more purchase orders.  **Usage Plan:**  | Rate (requests per second)
@@ -43,7 +43,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SubmitAcknowledgementPostResponse> SubmitAcknowledgementAsync(SubmitAcknowledgementPostRequest request)
-		    => await this.SendAsync<SubmitAcknowledgementPostResponse>(request);
+		    => await SendAsync<SubmitAcknowledgementPostResponse>(request);
 
 		/// <summary>
 		/// Returns purchase order statuses based on the filters that you specify. Date range to search must not
@@ -57,6 +57,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetPurchaseOrdersStatusGetResponse> GetPurchaseOrdersStatusAsync(GetPurchaseOrdersStatusGetRequest request)
-		    => await this.SendAsync<GetPurchaseOrdersStatusGetResponse>(request);
+		    => await SendAsync<GetPurchaseOrdersStatusGetResponse>(request);
 	}
 }

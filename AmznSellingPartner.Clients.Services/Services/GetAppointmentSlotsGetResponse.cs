@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetAppointmentSlotsGetResponse : BaseHttpResponse<GetAppointmentSlotsGetResponse>
+	public class GetAppointmentSlotsGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success response.

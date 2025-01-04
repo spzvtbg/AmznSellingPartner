@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<GetSubscriptionGetResponse> GetSubscriptionAsync(GetSubscriptionGetRequest request)
-		    => await this.SendAsync<GetSubscriptionGetResponse>(request);
+		    => await SendAsync<GetSubscriptionGetResponse>(request);
 
 		/// <summary>
 		/// Creates a subscription for the specified notification type to be delivered to the specified destination.
@@ -34,7 +34,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateSubscriptionPostResponse> CreateSubscriptionAsync(CreateSubscriptionPostRequest request)
-		    => await this.SendAsync<CreateSubscriptionPostResponse>(request);
+		    => await SendAsync<CreateSubscriptionPostResponse>(request);
 
 		/// <summary>
 		/// Deletes the subscription indicated by the subscription identifier and notification type that you specify.
@@ -49,7 +49,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<DeleteSubscriptionByIdDeleteResponse> DeleteSubscriptionByIdAsync(DeleteSubscriptionByIdDeleteRequest request)
-		    => await this.SendAsync<DeleteSubscriptionByIdDeleteResponse>(request);
+		    => await SendAsync<DeleteSubscriptionByIdDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns information about a subscription for the specified notification type. The `getSubscriptionById`
@@ -62,7 +62,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetSubscriptionByIdGetResponse> GetSubscriptionByIdAsync(GetSubscriptionByIdGetRequest request)
-		    => await this.SendAsync<GetSubscriptionByIdGetResponse>(request);
+		    => await SendAsync<GetSubscriptionByIdGetResponse>(request);
 
 		/// <summary>
 		/// Returns information about all destinations. The `getDestinations` operation is grantless. For more information,
@@ -75,7 +75,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetDestinationsGetResponse> GetDestinationsAsync(GetDestinationsGetRequest request)
-		    => await this.SendAsync<GetDestinationsGetResponse>(request);
+		    => await SendAsync<GetDestinationsGetResponse>(request);
 
 		/// <summary>
 		/// Creates a destination resource to receive notifications. The `createDestination` operation is grantless.
@@ -88,7 +88,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateDestinationPostResponse> CreateDestinationAsync(CreateDestinationPostRequest request)
-		    => await this.SendAsync<CreateDestinationPostResponse>(request);
+		    => await SendAsync<CreateDestinationPostResponse>(request);
 
 		/// <summary>
 		/// Deletes the destination that you specify. The `deleteDestination` operation is grantless. For more information,
@@ -101,7 +101,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<DeleteDestinationDeleteResponse> DeleteDestinationAsync(DeleteDestinationDeleteRequest request)
-		    => await this.SendAsync<DeleteDestinationDeleteResponse>(request);
+		    => await SendAsync<DeleteDestinationDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns information about the destination that you specify. The `getDestination` operation is grantless.
@@ -114,6 +114,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetDestinationGetResponse> GetDestinationAsync(GetDestinationGetRequest request)
-		    => await this.SendAsync<GetDestinationGetResponse>(request);
+		    => await SendAsync<GetDestinationGetResponse>(request);
 	}
 }

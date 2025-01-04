@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 		/// cs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetTransactionGetResponse> GetTransactionAsync(GetTransactionGetRequest request)
-		    => await this.SendAsync<GetTransactionGetResponse>(request);
+		    => await SendAsync<GetTransactionGetResponse>(request);
 	}
 }

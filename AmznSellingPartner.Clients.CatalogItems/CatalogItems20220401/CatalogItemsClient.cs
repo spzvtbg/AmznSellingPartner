@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SearchCatalogItemsGetResponse> SearchCatalogItemsAsync(SearchCatalogItemsGetRequest request)
-		    => await this.SendAsync<SearchCatalogItemsGetResponse>(request);
+		    => await SendAsync<SearchCatalogItemsGetResponse>(request);
 
 		/// <summary>
 		/// Retrieves details for an item in the Amazon catalog.  **Usage Plan:**  | Rate (requests per second) |
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// he-sp-api).
 		/// </summary>
 		public async Task<GetCatalogItemGetResponse> GetCatalogItemAsync(GetCatalogItemGetRequest request)
-		    => await this.SendAsync<GetCatalogItemGetResponse>(request);
+		    => await SendAsync<GetCatalogItemGetResponse>(request);
 	}
 }

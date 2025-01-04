@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetSolicitationActionsForOrderGetResponse : BaseHttpResponse<GetSolicitationActionsForOrderGetResponse>
+	public class GetSolicitationActionsForOrderGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation. _Note:_ For this status code, the rate limit
@@ -16,8 +16,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Returns hypermedia links under the _links.actions key that specify which solicitation actions are allowed

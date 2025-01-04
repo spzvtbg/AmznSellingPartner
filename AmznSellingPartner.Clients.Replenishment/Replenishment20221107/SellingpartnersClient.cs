@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// i/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetSellingPartnerMetricsPostResponse> GetSellingPartnerMetricsAsync(GetSellingPartnerMetricsPostRequest request)
-		    => await this.SendAsync<GetSellingPartnerMetricsPostResponse>(request);
+		    => await SendAsync<GetSellingPartnerMetricsPostResponse>(request);
 	}
 }

@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetInventorySummariesGetResponse : BaseHttpResponse<GetInventorySummariesGetResponse>
+	public class GetInventorySummariesGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// OK

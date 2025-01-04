@@ -12,20 +12,20 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// Stock Keeping Unit, a seller-specified identifier for an Amazon listing.
 		/// </summary>
 		[EnumMember(Value = "sku")]
-		sku,
+		Sku,
 
 		/// <summary>
 		/// The date when the listing item was created. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// date-time format.
 		/// </summary>
 		[EnumMember(Value = "createdDate")]
-		createdDate,
+		CreatedDate,
 
 		/// <summary>
 		/// The date when the listing item was last updated. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// date-time format.
 		/// </summary>
 		[EnumMember(Value = "lastUpdatedDate")]
-		lastUpdatedDate,
+		LastUpdatedDate,
 	}
 }

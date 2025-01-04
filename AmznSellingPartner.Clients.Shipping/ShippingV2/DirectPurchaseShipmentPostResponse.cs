@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class DirectPurchaseShipmentPostResponse : BaseHttpResponse<DirectPurchaseShipmentPostResponse>
+	public class DirectPurchaseShipmentPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation. _Note:_ For this status code, the rate limit
@@ -22,8 +22,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[FromHeader("x-amzn-IdempotencyKey")]
 		public string XAmznIdempotencyKey { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success

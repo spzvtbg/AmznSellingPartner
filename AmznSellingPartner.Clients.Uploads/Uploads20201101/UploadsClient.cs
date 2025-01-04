@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 		/// d-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateUploadDestinationForResourcePostResponse> CreateUploadDestinationForResourceAsync(CreateUploadDestinationForResourcePostRequest request)
-		    => await this.SendAsync<CreateUploadDestinationForResourcePostResponse>(request);
+		    => await SendAsync<CreateUploadDestinationForResourcePostResponse>(request);
 	}
 }

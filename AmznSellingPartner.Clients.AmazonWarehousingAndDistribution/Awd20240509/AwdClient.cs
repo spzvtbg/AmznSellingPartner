@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// d-rate-limits-in-the-sp-api)
 		/// </summary>
 		public async Task<GetInboundShipmentGetResponse> GetInboundShipmentAsync(GetInboundShipmentGetRequest request)
-		    => await this.SendAsync<GetInboundShipmentGetResponse>(request);
+		    => await SendAsync<GetInboundShipmentGetResponse>(request);
 
 		/// <summary>
 		/// Retrieves a summary of all the inbound AWD shipments associated with a merchant, with the ability to
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<ListInboundShipmentsGetResponse> ListInboundShipmentsAsync(ListInboundShipmentsGetRequest request)
-		    => await this.SendAsync<ListInboundShipmentsGetResponse>(request);
+		    => await SendAsync<ListInboundShipmentsGetResponse>(request);
 
 		/// <summary>
 		/// Lists AWD inventory associated with a merchant with the ability to apply optional filters.  **Usage Plan:**
@@ -40,6 +40,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<ListInventoryGetResponse> ListInventoryAsync(ListInventoryGetRequest request)
-		    => await this.SendAsync<ListInventoryGetResponse>(request);
+		    => await SendAsync<ListInventoryGetResponse>(request);
 	}
 }

@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<SubmitShipmentConfirmationsPostResponse> SubmitShipmentConfirmationsAsync(SubmitShipmentConfirmationsPostRequest request)
-		    => await this.SendAsync<SubmitShipmentConfirmationsPostResponse>(request);
+		    => await SendAsync<SubmitShipmentConfirmationsPostResponse>(request);
 
 		/// <summary>
 		/// This operation is only to be used by Vendor-Own-Carrier (VOC) vendors. Calling this API submits a shipment
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<SubmitShipmentStatusUpdatesPostResponse> SubmitShipmentStatusUpdatesAsync(SubmitShipmentStatusUpdatesPostRequest request)
-		    => await this.SendAsync<SubmitShipmentStatusUpdatesPostResponse>(request);
+		    => await SendAsync<SubmitShipmentStatusUpdatesPostResponse>(request);
 
 		/// <summary>
 		/// Returns a list of packing slips for the purchase orders that match the criteria specified. Date range
@@ -42,7 +42,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// s-and-rate-limits).
 		/// </summary>
 		public async Task<GetPackingSlipsGetResponse> GetPackingSlipsAsync(GetPackingSlipsGetRequest request)
-		    => await this.SendAsync<GetPackingSlipsGetResponse>(request);
+		    => await SendAsync<GetPackingSlipsGetResponse>(request);
 
 		/// <summary>
 		/// Returns a packing slip based on the purchaseOrderNumber that you specify.  **Usage Plan:**  | Rate (requests
@@ -54,6 +54,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<GetPackingSlipGetResponse> GetPackingSlipAsync(GetPackingSlipGetRequest request)
-		    => await this.SendAsync<GetPackingSlipGetResponse>(request);
+		    => await SendAsync<GetPackingSlipGetResponse>(request);
 	}
 }

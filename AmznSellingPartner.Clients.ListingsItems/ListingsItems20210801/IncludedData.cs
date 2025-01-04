@@ -12,55 +12,55 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// Summary details for the listing item.
 		/// </summary>
 		[EnumMember(Value = "summaries")]
-		summaries,
+		Summaries,
 
 		/// <summary>
 		/// A JSON object that contains structured listing item attribute data, keyed by attribute name.
 		/// </summary>
 		[EnumMember(Value = "attributes")]
-		attributes,
+		Attributes,
 
 		/// <summary>
 		/// Issues that are associated with the listing item.
 		/// </summary>
 		[EnumMember(Value = "issues")]
-		issues,
+		Issues,
 
 		/// <summary>
 		/// Current offers for the listing item.
 		/// </summary>
 		[EnumMember(Value = "offers")]
-		offers,
+		Offers,
 
 		/// <summary>
 		/// Fulfillment availability details for the listing item.
 		/// </summary>
 		[EnumMember(Value = "fulfillmentAvailability")]
-		fulfillmentAvailability,
+		FulfillmentAvailability,
 
 		/// <summary>
 		/// Vendor procurement details for the listing item.
 		/// </summary>
 		[EnumMember(Value = "procurement")]
-		procurement,
+		Procurement,
 
 		/// <summary>
 		/// Relationship details for a listing item (for example, variations).
 		/// </summary>
 		[EnumMember(Value = "relationships")]
-		relationships,
+		Relationships,
 
 		/// <summary>
 		/// Product types associated with a listing item.
 		/// </summary>
 		[EnumMember(Value = "productTypes")]
-		productTypes,
+		ProductTypes,
 
 		/// <summary>
 		/// Identifiers associated with the item in the Amazon catalog, such as Amazon Standard Identification Number
 		/// (ASIN). Can only be requested when `mode` is `VALIDATION_PREVIEW`.
 		/// </summary>
 		[EnumMember(Value = "identifiers")]
-		identifiers,
+		Identifiers,
 	}
 }

@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 		/// imits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetTransactionStatusGetResponse> GetTransactionStatusAsync(GetTransactionStatusGetRequest request)
-		    => await this.SendAsync<GetTransactionStatusGetResponse>(request);
+		    => await SendAsync<GetTransactionStatusGetResponse>(request);
 	}
 }

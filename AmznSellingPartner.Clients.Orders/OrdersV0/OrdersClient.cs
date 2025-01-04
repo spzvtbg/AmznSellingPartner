@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<GetOrdersGetResponse> GetOrdersAsync(GetOrdersGetRequest request)
-		    => await this.SendAsync<GetOrdersGetResponse>(request);
+		    => await SendAsync<GetOrdersGetResponse>(request);
 
 		/// <summary>
 		/// Returns the order that you specify.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- |
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// the-sp-api).
 		/// </summary>
 		public async Task<GetOrderGetResponse> GetOrderAsync(GetOrderGetRequest request)
-		    => await this.SendAsync<GetOrderGetResponse>(request);
+		    => await SendAsync<GetOrderGetResponse>(request);
 
 		/// <summary>
 		/// Returns buyer information for the order that you specify.  **Usage Plan:**  | Rate (requests per second)
@@ -41,7 +41,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// -rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrderBuyerInfoGetResponse> GetOrderBuyerInfoAsync(GetOrderBuyerInfoGetRequest request)
-		    => await this.SendAsync<GetOrderBuyerInfoGetResponse>(request);
+		    => await SendAsync<GetOrderBuyerInfoGetResponse>(request);
 
 		/// <summary>
 		/// Returns the shipping address for the order that you specify.  **Usage Plan:**  | Rate (requests per second)
@@ -53,7 +53,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// -rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrderAddressGetResponse> GetOrderAddressAsync(GetOrderAddressGetRequest request)
-		    => await this.SendAsync<GetOrderAddressGetResponse>(request);
+		    => await SendAsync<GetOrderAddressGetResponse>(request);
 
 		/// <summary>
 		/// Returns detailed order item information for the order that you specify. If `NextToken` is provided, it's
@@ -71,7 +71,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrderItemsGetResponse> GetOrderItemsAsync(GetOrderItemsGetRequest request)
-		    => await this.SendAsync<GetOrderItemsGetResponse>(request);
+		    => await SendAsync<GetOrderItemsGetResponse>(request);
 
 		/// <summary>
 		/// Returns buyer information for the order items in the order that you specify.  **Usage Plan:**  | Rate
@@ -83,7 +83,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// /sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrderItemsBuyerInfoGetResponse> GetOrderItemsBuyerInfoAsync(GetOrderItemsBuyerInfoGetRequest request)
-		    => await this.SendAsync<GetOrderItemsBuyerInfoGetResponse>(request);
+		    => await SendAsync<GetOrderItemsBuyerInfoGetResponse>(request);
 
 		/// <summary>
 		/// Update the shipment status for an order that you specify.  **Usage Plan:**  | Rate (requests per second)
@@ -95,7 +95,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// -rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<UpdateShipmentStatusPostResponse> UpdateShipmentStatusAsync(UpdateShipmentStatusPostRequest request)
-		    => await this.SendAsync<UpdateShipmentStatusPostResponse>(request);
+		    => await SendAsync<UpdateShipmentStatusPostResponse>(request);
 
 		/// <summary>
 		/// Returns regulated information for the order that you specify.  **Usage Plan:**  | Rate (requests per
@@ -107,7 +107,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// cs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrderRegulatedInfoGetResponse> GetOrderRegulatedInfoAsync(GetOrderRegulatedInfoGetRequest request)
-		    => await this.SendAsync<GetOrderRegulatedInfoGetResponse>(request);
+		    => await SendAsync<GetOrderRegulatedInfoGetResponse>(request);
 
 		/// <summary>
 		/// Updates (approves or rejects) the verification status of an order containing regulated products.  **Usage
@@ -119,7 +119,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<UpdateVerificationStatusPatchResponse> UpdateVerificationStatusAsync(UpdateVerificationStatusPatchRequest request)
-		    => await this.SendAsync<UpdateVerificationStatusPatchResponse>(request);
+		    => await SendAsync<UpdateVerificationStatusPatchResponse>(request);
 
 		/// <summary>
 		/// Updates the shipment confirmation status for a specified order.  **Usage Plan:**  | Rate (requests per
@@ -131,6 +131,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// -rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<ConfirmShipmentPostResponse> ConfirmShipmentAsync(ConfirmShipmentPostRequest request)
-		    => await this.SendAsync<ConfirmShipmentPostResponse>(request);
+		    => await SendAsync<ConfirmShipmentPostResponse>(request);
 	}
 }

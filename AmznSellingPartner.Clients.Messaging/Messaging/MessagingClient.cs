@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// (https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetMessagingActionsForOrderGetResponse> GetMessagingActionsForOrderAsync(GetMessagingActionsForOrderGetRequest request)
-		    => await this.SendAsync<GetMessagingActionsForOrderGetResponse>(request);
+		    => await SendAsync<GetMessagingActionsForOrderGetResponse>(request);
 
 		/// <summary>
 		/// Sends a message asking a buyer to provide or verify customization details such as name spelling, images,
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<ConfirmCustomizationDetailsPostResponse> ConfirmCustomizationDetailsAsync(ConfirmCustomizationDetailsPostRequest request)
-		    => await this.SendAsync<ConfirmCustomizationDetailsPostResponse>(request);
+		    => await SendAsync<ConfirmCustomizationDetailsPostResponse>(request);
 
 		/// <summary>
 		/// Sends a message to a buyer to arrange a delivery or to confirm contact information for making a delivery.
@@ -40,7 +40,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// cs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateConfirmDeliveryDetailsPostResponse> CreateConfirmDeliveryDetailsAsync(CreateConfirmDeliveryDetailsPostRequest request)
-		    => await this.SendAsync<CreateConfirmDeliveryDetailsPostResponse>(request);
+		    => await SendAsync<CreateConfirmDeliveryDetailsPostResponse>(request);
 
 		/// <summary>
 		/// Sends a critical message that contains documents that a seller is legally obligated to provide to the
@@ -53,7 +53,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// -rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateLegalDisclosurePostResponse> CreateLegalDisclosureAsync(CreateLegalDisclosurePostRequest request)
-		    => await this.SendAsync<CreateLegalDisclosurePostResponse>(request);
+		    => await SendAsync<CreateLegalDisclosurePostResponse>(request);
 
 		/// <summary>
 		/// Sends a non-critical message that asks a buyer to remove their negative feedback. This message should
@@ -66,7 +66,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// the-sp-api).
 		/// </summary>
 		public async Task<CreateNegativeFeedbackRemovalPostResponse> CreateNegativeFeedbackRemovalAsync(CreateNegativeFeedbackRemovalPostRequest request)
-		    => await this.SendAsync<CreateNegativeFeedbackRemovalPostResponse>(request);
+		    => await SendAsync<CreateNegativeFeedbackRemovalPostResponse>(request);
 
 		/// <summary>
 		/// Sends a message to ask a buyer an order-related question prior to shipping their order.  **Usage Plan:**
@@ -78,7 +78,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// -rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateConfirmOrderDetailsPostResponse> CreateConfirmOrderDetailsAsync(CreateConfirmOrderDetailsPostRequest request)
-		    => await this.SendAsync<CreateConfirmOrderDetailsPostResponse>(request);
+		    => await SendAsync<CreateConfirmOrderDetailsPostResponse>(request);
 
 		/// <summary>
 		/// Sends a message to contact a Home Service customer to arrange a service call or to gather information
@@ -90,7 +90,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateConfirmServiceDetailsPostResponse> CreateConfirmServiceDetailsAsync(CreateConfirmServiceDetailsPostRequest request)
-		    => await this.SendAsync<CreateConfirmServiceDetailsPostResponse>(request);
+		    => await SendAsync<CreateConfirmServiceDetailsPostResponse>(request);
 
 		/// <summary>
 		/// Sends a message to a buyer to provide details about an Amazon Motors order. This message can only be
@@ -102,7 +102,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// r-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateAmazonMotorsPostResponse> CreateAmazonMotorsAsync(CreateAmazonMotorsPostRequest request)
-		    => await this.SendAsync<CreateAmazonMotorsPostResponse>(request);
+		    => await SendAsync<CreateAmazonMotorsPostResponse>(request);
 
 		/// <summary>
 		/// Sends a message to a buyer to provide details about warranty information on a purchase in their order.
@@ -114,14 +114,14 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// cs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateWarrantyPostResponse> CreateWarrantyAsync(CreateWarrantyPostRequest request)
-		    => await this.SendAsync<CreateWarrantyPostResponse>(request);
+		    => await SendAsync<CreateWarrantyPostResponse>(request);
 
 		/// <summary>
 		/// Returns a response containing attributes related to an order. This includes buyer preferences.  **Usage
 		/// Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 1 | 5 |
 		/// </summary>
 		public async Task<GetAttributesGetResponse> GetAttributesAsync(GetAttributesGetRequest request)
-		    => await this.SendAsync<GetAttributesGetResponse>(request);
+		    => await SendAsync<GetAttributesGetResponse>(request);
 
 		/// <summary>
 		/// Sends a buyer a message to share a digital access key that is required to utilize digital content in
@@ -133,7 +133,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateDigitalAccessKeyPostResponse> CreateDigitalAccessKeyAsync(CreateDigitalAccessKeyPostRequest request)
-		    => await this.SendAsync<CreateDigitalAccessKeyPostResponse>(request);
+		    => await SendAsync<CreateDigitalAccessKeyPostResponse>(request);
 
 		/// <summary>
 		/// Sends a critical message to a buyer that an unexpected problem was encountered affecting the completion
@@ -145,12 +145,12 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateUnexpectedProblemPostResponse> CreateUnexpectedProblemAsync(CreateUnexpectedProblemPostRequest request)
-		    => await this.SendAsync<CreateUnexpectedProblemPostResponse>(request);
+		    => await SendAsync<CreateUnexpectedProblemPostResponse>(request);
 
 		/// <summary>
 		/// Sends a message providing the buyer an invoice
 		/// </summary>
 		public async Task<SendInvoicePostResponse> SendInvoiceAsync(SendInvoicePostRequest request)
-		    => await this.SendAsync<SendInvoicePostResponse>(request);
+		    => await SendAsync<SendInvoicePostResponse>(request);
 	}
 }

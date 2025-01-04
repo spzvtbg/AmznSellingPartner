@@ -19,6 +19,6 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// i/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateRestrictedDataTokenPostResponse> CreateRestrictedDataTokenAsync(CreateRestrictedDataTokenPostRequest request)
-		    => await this.SendAsync<CreateRestrictedDataTokenPostResponse>(request);
+		    => await SendAsync<CreateRestrictedDataTokenPostResponse>(request);
 	}
 }

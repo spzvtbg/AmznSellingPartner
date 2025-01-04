@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<GetSolicitationActionsForOrderGetResponse> GetSolicitationActionsForOrderAsync(GetSolicitationActionsForOrderGetRequest request)
-		    => await this.SendAsync<GetSolicitationActionsForOrderGetResponse>(request);
+		    => await SendAsync<GetSolicitationActionsForOrderGetResponse>(request);
 
 		/// <summary>
 		/// Sends a solicitation to a buyer asking for seller feedback and a product review for the specified order.
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		/// -docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateProductReviewAndSellerFeedbackSolicitationPostResponse> CreateProductReviewAndSellerFeedbackSolicitationAsync(CreateProductReviewAndSellerFeedbackSolicitationPostRequest request)
-		    => await this.SendAsync<CreateProductReviewAndSellerFeedbackSolicitationPostResponse>(request);
+		    => await SendAsync<CreateProductReviewAndSellerFeedbackSolicitationPostResponse>(request);
 	}
 }

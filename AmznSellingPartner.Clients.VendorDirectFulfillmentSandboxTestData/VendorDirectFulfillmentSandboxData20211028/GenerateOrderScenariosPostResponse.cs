@@ -2,15 +2,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GenerateOrderScenariosPostResponse : BaseHttpResponse<GenerateOrderScenariosPostResponse>
+	public class GenerateOrderScenariosPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

@@ -15,18 +15,18 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// A Portable Document Format (pdf) file.
 		/// </summary>
 		[EnumMember(Value = "application/pdf")]
-		application_pdf,
+		Application_pdf,
 
 		/// <summary>
 		/// A Zebra Programming Language (zpl) file.
 		/// </summary>
 		[EnumMember(Value = "application/zpl")]
-		application_zpl,
+		Application_zpl,
 
 		/// <summary>
 		/// A Portable Network Graphics (png) file.
 		/// </summary>
 		[EnumMember(Value = "image/png")]
-		image_png,
+		Image_png,
 	}
 }

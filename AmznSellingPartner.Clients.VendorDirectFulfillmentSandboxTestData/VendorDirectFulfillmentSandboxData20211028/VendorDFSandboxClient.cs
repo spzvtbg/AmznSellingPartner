@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// Submits a request to generate test order data for Vendor Direct Fulfillment API entities.
 		/// </summary>
 		public async Task<GenerateOrderScenariosPostResponse> GenerateOrderScenariosAsync(GenerateOrderScenariosPostRequest request)
-		    => await this.SendAsync<GenerateOrderScenariosPostResponse>(request);
+		    => await SendAsync<GenerateOrderScenariosPostResponse>(request);
 	}
 }

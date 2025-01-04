@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// For more information, see "Usage Plans and Rate Limits" in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<SearchContentDocumentsGetResponse> SearchContentDocumentsAsync(SearchContentDocumentsGetRequest request)
-		    => await this.SendAsync<SearchContentDocumentsGetResponse>(request);
+		    => await SendAsync<SearchContentDocumentsGetResponse>(request);
 
 		/// <summary>
 		/// Creates a new A+ Content document.  **Usage Plans:**  | Plan type | Rate (requests per second) | Burst
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// For more information, see "Usage Plans and Rate Limits" in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<CreateContentDocumentPostResponse> CreateContentDocumentAsync(CreateContentDocumentPostRequest request)
-		    => await this.SendAsync<CreateContentDocumentPostResponse>(request);
+		    => await SendAsync<CreateContentDocumentPostResponse>(request);
 
 		/// <summary>
 		/// Returns an A+ Content document, if available.  **Usage Plans:**  | Plan type | Rate (requests per second)
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// API documentation.
 		/// </summary>
 		public async Task<GetContentDocumentGetResponse> GetContentDocumentAsync(GetContentDocumentGetRequest request)
-		    => await this.SendAsync<GetContentDocumentGetResponse>(request);
+		    => await SendAsync<GetContentDocumentGetResponse>(request);
 
 		/// <summary>
 		/// Updates an existing A+ Content document.  **Usage Plans:**  | Plan type | Rate (requests per second)
@@ -47,7 +47,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// API documentation.
 		/// </summary>
 		public async Task<UpdateContentDocumentPostResponse> UpdateContentDocumentAsync(UpdateContentDocumentPostRequest request)
-		    => await this.SendAsync<UpdateContentDocumentPostResponse>(request);
+		    => await SendAsync<UpdateContentDocumentPostResponse>(request);
 
 		/// <summary>
 		/// Returns a list of ASINs related to the specified A+ Content document, if available. If you do not include
@@ -59,7 +59,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// Plans and Rate Limits" in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<ListContentDocumentAsinRelationsGetResponse> ListContentDocumentAsinRelationsAsync(ListContentDocumentAsinRelationsGetRequest request)
-		    => await this.SendAsync<ListContentDocumentAsinRelationsGetResponse>(request);
+		    => await SendAsync<ListContentDocumentAsinRelationsGetResponse>(request);
 
 		/// <summary>
 		/// Replaces all ASINs related to the specified A+ Content document, if available. This may add or remove
@@ -71,7 +71,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// For more information, see "Usage Plans and Rate Limits" in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<PostContentDocumentAsinRelationsPostResponse> PostContentDocumentAsinRelationsAsync(PostContentDocumentAsinRelationsPostRequest request)
-		    => await this.SendAsync<PostContentDocumentAsinRelationsPostResponse>(request);
+		    => await SendAsync<PostContentDocumentAsinRelationsPostResponse>(request);
 
 		/// <summary>
 		/// Checks if the A+ Content document is valid for use on a set of ASINs.  **Usage Plans:**  | Plan type
@@ -82,7 +82,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<ValidateContentDocumentAsinRelationsPostResponse> ValidateContentDocumentAsinRelationsAsync(ValidateContentDocumentAsinRelationsPostRequest request)
-		    => await this.SendAsync<ValidateContentDocumentAsinRelationsPostResponse>(request);
+		    => await SendAsync<ValidateContentDocumentAsinRelationsPostResponse>(request);
 
 		/// <summary>
 		/// Searches for A+ Content publishing records, if available.  **Usage Plans:**  | Plan type | Rate (requests
@@ -93,7 +93,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// Selling Partner API documentation.
 		/// </summary>
 		public async Task<SearchContentPublishRecordsGetResponse> SearchContentPublishRecordsAsync(SearchContentPublishRecordsGetRequest request)
-		    => await this.SendAsync<SearchContentPublishRecordsGetResponse>(request);
+		    => await SendAsync<SearchContentPublishRecordsGetResponse>(request);
 
 		/// <summary>
 		/// Submits an A+ Content document for review, approval, and publishing.  **Usage Plans:**  | Plan type |
@@ -104,7 +104,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<PostContentDocumentApprovalSubmissionPostResponse> PostContentDocumentApprovalSubmissionAsync(PostContentDocumentApprovalSubmissionPostRequest request)
-		    => await this.SendAsync<PostContentDocumentApprovalSubmissionPostResponse>(request);
+		    => await SendAsync<PostContentDocumentApprovalSubmissionPostResponse>(request);
 
 		/// <summary>
 		/// Submits a request to suspend visible A+ Content. This neither deletes the content document nor the ASIN
@@ -115,6 +115,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// see "Usage Plans and Rate Limits" in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<PostContentDocumentSuspendSubmissionPostResponse> PostContentDocumentSuspendSubmissionAsync(PostContentDocumentSuspendSubmissionPostRequest request)
-		    => await this.SendAsync<PostContentDocumentSuspendSubmissionPostResponse>(request);
+		    => await SendAsync<PostContentDocumentSuspendSubmissionPostResponse>(request);
 	}
 }

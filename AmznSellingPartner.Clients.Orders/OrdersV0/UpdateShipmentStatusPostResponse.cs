@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class UpdateShipmentStatusPostResponse : BaseHttpResponse<UpdateShipmentStatusPostResponse>
+	public class UpdateShipmentStatusPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

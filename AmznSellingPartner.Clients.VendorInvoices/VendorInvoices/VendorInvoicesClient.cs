@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<SubmitInvoicesPostResponse> SubmitInvoicesAsync(SubmitInvoicesPostRequest request)
-		    => await this.SendAsync<SubmitInvoicesPostResponse>(request);
+		    => await SendAsync<SubmitInvoicesPostResponse>(request);
 	}
 }

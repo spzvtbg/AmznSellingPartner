@@ -12,19 +12,19 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// The `add` operation adds or replaces the target property.
 		/// </summary>
 		[EnumMember(Value = "add")]
-		add,
+		Add,
 
 		/// <summary>
 		/// The `replace` operation adds or replaces the target property.
 		/// </summary>
 		[EnumMember(Value = "replace")]
-		replace,
+		Replace,
 
 		/// <summary>
 		/// The `delete` operation removes the target property. Not supported for vendors (vendors will receive an
 		/// HTTP status code 400 response).
 		/// </summary>
 		[EnumMember(Value = "delete")]
-		delete,
+		Delete,
 	}
 }

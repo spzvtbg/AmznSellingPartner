@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// nd-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetShipmentDetailsGetResponse> GetShipmentDetailsAsync(GetShipmentDetailsGetRequest request)
-		    => await this.SendAsync<GetShipmentDetailsGetResponse>(request);
+		    => await SendAsync<GetShipmentDetailsGetResponse>(request);
 
 		/// <summary>
 		/// Submits a shipment invoice document for a given shipment.  **Usage Plan:**  | Rate (requests per second)
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// pi).
 		/// </summary>
 		public async Task<SubmitInvoicePostResponse> SubmitInvoiceAsync(SubmitInvoicePostRequest request)
-		    => await this.SendAsync<SubmitInvoicePostResponse>(request);
+		    => await SendAsync<SubmitInvoicePostResponse>(request);
 
 		/// <summary>
 		/// Returns the invoice status for the shipment you specify.  **Usage Plan:**  | Rate (requests per second)
@@ -39,6 +39,6 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// pi).
 		/// </summary>
 		public async Task<GetInvoiceStatusGetResponse> GetInvoiceStatusAsync(GetInvoiceStatusGetRequest request)
-		    => await this.SendAsync<GetInvoiceStatusGetResponse>(request);
+		    => await SendAsync<GetInvoiceStatusGetResponse>(request);
 	}
 }

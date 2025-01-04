@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class ConfirmPackingOptionPostResponse : BaseHttpResponse<ConfirmPackingOptionPostResponse>
+	public class ConfirmPackingOptionPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Unique request reference identifier.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[FromHeader("x-amzn-RateLimit-Limit")]
 		public string XAmznRateLimitLimit { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// ConfirmPackingOption 202 response

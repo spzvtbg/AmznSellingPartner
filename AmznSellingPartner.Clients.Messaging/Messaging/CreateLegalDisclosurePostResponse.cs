@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class CreateLegalDisclosurePostResponse : BaseHttpResponse<CreateLegalDisclosurePostResponse>
+	public class CreateLegalDisclosurePostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// The legal disclosure message was created for the order.

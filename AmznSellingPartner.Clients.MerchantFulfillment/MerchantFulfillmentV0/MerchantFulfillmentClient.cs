@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// ocs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetEligibleShipmentServicesPostResponse> GetEligibleShipmentServicesAsync(GetEligibleShipmentServicesPostRequest request)
-		    => await this.SendAsync<GetEligibleShipmentServicesPostResponse>(request);
+		    => await SendAsync<GetEligibleShipmentServicesPostResponse>(request);
 
 		/// <summary>
 		/// Cancel the shipment indicated by the specified shipment identifier.  **Usage Plan:**  | Rate (requests
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CancelShipmentDeleteResponse> CancelShipmentAsync(CancelShipmentDeleteRequest request)
-		    => await this.SendAsync<CancelShipmentDeleteResponse>(request);
+		    => await SendAsync<CancelShipmentDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns the shipment information for an existing shipment.  **Usage Plan:**  | Rate (requests per second)
@@ -39,7 +39,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// sage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetShipmentGetResponse> GetShipmentAsync(GetShipmentGetRequest request)
-		    => await this.SendAsync<GetShipmentGetResponse>(request);
+		    => await SendAsync<GetShipmentGetResponse>(request);
 
 		/// <summary>
 		/// Create a shipment with the information provided.  **Usage Plan:**  | Rate (requests per second) | Burst
@@ -51,7 +51,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateShipmentPostResponse> CreateShipmentAsync(CreateShipmentPostRequest request)
-		    => await this.SendAsync<CreateShipmentPostResponse>(request);
+		    => await SendAsync<CreateShipmentPostResponse>(request);
 
 		/// <summary>
 		/// Gets a list of additional seller inputs required for a ship method. This is generally used for international
@@ -63,6 +63,6 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// ocs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetAdditionalSellerInputsPostResponse> GetAdditionalSellerInputsAsync(GetAdditionalSellerInputsPostRequest request)
-		    => await this.SendAsync<GetAdditionalSellerInputsPostResponse>(request);
+		    => await SendAsync<GetAdditionalSellerInputsPostResponse>(request);
 	}
 }

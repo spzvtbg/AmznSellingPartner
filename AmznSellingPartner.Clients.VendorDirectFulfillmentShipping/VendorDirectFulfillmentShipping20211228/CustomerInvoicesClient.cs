@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// cs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<GetCustomerInvoicesGetResponse> GetCustomerInvoicesAsync(GetCustomerInvoicesGetRequest request)
-		    => await this.SendAsync<GetCustomerInvoicesGetResponse>(request);
+		    => await SendAsync<GetCustomerInvoicesGetResponse>(request);
 
 		/// <summary>
 		/// Returns a customer invoice based on the purchaseOrderNumber that you specify.  **Usage Plan:**  | Rate
@@ -29,6 +29,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits).
 		/// </summary>
 		public async Task<GetCustomerInvoiceGetResponse> GetCustomerInvoiceAsync(GetCustomerInvoiceGetRequest request)
-		    => await this.SendAsync<GetCustomerInvoiceGetResponse>(request);
+		    => await SendAsync<GetCustomerInvoiceGetResponse>(request);
 	}
 }

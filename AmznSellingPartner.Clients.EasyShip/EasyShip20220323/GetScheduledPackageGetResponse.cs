@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetScheduledPackageGetResponse : BaseHttpResponse<GetScheduledPackageGetResponse>
+	public class GetScheduledPackageGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

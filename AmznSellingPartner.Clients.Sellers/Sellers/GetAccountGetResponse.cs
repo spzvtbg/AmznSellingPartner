@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetAccountGetResponse : BaseHttpResponse<GetAccountGetResponse>
+	public class GetAccountGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

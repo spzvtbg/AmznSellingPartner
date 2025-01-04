@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// eloper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<DeleteListingsItemDeleteResponse> DeleteListingsItemAsync(DeleteListingsItemDeleteRequest request)
-		    => await this.SendAsync<DeleteListingsItemDeleteResponse>(request);
+		    => await SendAsync<DeleteListingsItemDeleteResponse>(request);
 
 		/// <summary>
 		/// Returns details about a listings item for a selling partner.  **Note:** The parameters associated with
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// eloper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetListingsItemGetResponse> GetListingsItemAsync(GetListingsItemGetRequest request)
-		    => await this.SendAsync<GetListingsItemGetResponse>(request);
+		    => await SendAsync<GetListingsItemGetResponse>(request);
 
 		/// <summary>
 		/// Partially update (patch) a listings item for a selling partner. Only top-level listings item attributes
@@ -44,7 +44,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// in the Selling Partner API documentation.
 		/// </summary>
 		public async Task<PatchListingsItemPatchResponse> PatchListingsItemAsync(PatchListingsItemPatchRequest request)
-		    => await this.SendAsync<PatchListingsItemPatchResponse>(request);
+		    => await SendAsync<PatchListingsItemPatchResponse>(request);
 
 		/// <summary>
 		/// Creates or fully updates an existing listings item for a selling partner.  **Note:** This operation has
@@ -59,7 +59,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// eloper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<PutListingsItemPutResponse> PutListingsItemAsync(PutListingsItemPutRequest request)
-		    => await this.SendAsync<PutListingsItemPutResponse>(request);
+		    => await SendAsync<PutListingsItemPutResponse>(request);
 
 		/// <summary>
 		/// Search for and return a list of selling partner listings items and their respective details.  **Usage
@@ -71,6 +71,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SearchListingsItemsGetResponse> SearchListingsItemsAsync(SearchListingsItemsGetRequest request)
-		    => await this.SendAsync<SearchListingsItemsGetResponse>(request);
+		    => await SendAsync<SearchListingsItemsGetResponse>(request);
 	}
 }

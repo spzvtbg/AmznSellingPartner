@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// in the Selling Partner API.
 		/// </summary>
 		public async Task<GetFeaturedOfferExpectedPriceBatchPostResponse> GetFeaturedOfferExpectedPriceBatchAsync(GetFeaturedOfferExpectedPriceBatchPostRequest request)
-		    => await this.SendAsync<GetFeaturedOfferExpectedPriceBatchPostResponse>(request);
+		    => await SendAsync<GetFeaturedOfferExpectedPriceBatchPostResponse>(request);
 
 		/// <summary>
 		/// Returns the competitive summary response, including featured buying options for the ASIN and `marketplaceId`
@@ -32,6 +32,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// in the Selling Partner API.
 		/// </summary>
 		public async Task<GetCompetitiveSummaryPostResponse> GetCompetitiveSummaryAsync(GetCompetitiveSummaryPostRequest request)
-		    => await this.SendAsync<GetCompetitiveSummaryPostResponse>(request);
+		    => await SendAsync<GetCompetitiveSummaryPostResponse>(request);
 	}
 }

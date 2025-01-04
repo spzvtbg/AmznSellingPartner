@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// lans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<ListHandoverSlotsPostResponse> ListHandoverSlotsAsync(ListHandoverSlotsPostRequest request)
-		    => await this.SendAsync<ListHandoverSlotsPostResponse>(request);
+		    => await SendAsync<ListHandoverSlotsPostResponse>(request);
 
 		/// <summary>
 		/// Returns information about a package, including dimensions, weight, time slot information for handover,
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetScheduledPackageGetResponse> GetScheduledPackageAsync(GetScheduledPackageGetRequest request)
-		    => await this.SendAsync<GetScheduledPackageGetResponse>(request);
+		    => await SendAsync<GetScheduledPackageGetResponse>(request);
 
 		/// <summary>
 		/// Updates the time slot for handing over the package indicated by the specified `scheduledPackageId`. You
@@ -45,7 +45,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// Plans and Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<UpdateScheduledPackagesPatchResponse> UpdateScheduledPackagesAsync(UpdateScheduledPackagesPatchRequest request)
-		    => await this.SendAsync<UpdateScheduledPackagesPatchResponse>(request);
+		    => await SendAsync<UpdateScheduledPackagesPatchResponse>(request);
 
 		/// <summary>
 		/// Schedules an Easy Ship order and returns the scheduled package information.  This operation does the
@@ -64,7 +64,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// Plans and Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateScheduledPackagePostResponse> CreateScheduledPackageAsync(CreateScheduledPackagePostRequest request)
-		    => await this.SendAsync<CreateScheduledPackagePostResponse>(request);
+		    => await SendAsync<CreateScheduledPackagePostResponse>(request);
 
 		/// <summary>
 		/// This operation automatically schedules a time slot for all specified `amazonOrderId` values and generates
@@ -88,6 +88,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateScheduledPackageBulkPostResponse> CreateScheduledPackageBulkAsync(CreateScheduledPackageBulkPostRequest request)
-		    => await this.SendAsync<CreateScheduledPackageBulkPostResponse>(request);
+		    => await SendAsync<CreateScheduledPackageBulkPostResponse>(request);
 	}
 }

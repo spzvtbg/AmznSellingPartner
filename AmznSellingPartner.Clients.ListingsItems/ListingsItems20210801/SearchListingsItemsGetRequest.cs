@@ -124,7 +124,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// An attribute by which to sort the returned listing items.
 		/// </summary>
 		[InQuery("sortBy")]
-		public SortBy SortBy { get; set; } = SortBy.lastUpdatedDate;
+		public SortBy SortBy { get; set; } = SortBy.LastUpdatedDate;
 
 		/// <summary>
 		/// The order in which to sort the result items.

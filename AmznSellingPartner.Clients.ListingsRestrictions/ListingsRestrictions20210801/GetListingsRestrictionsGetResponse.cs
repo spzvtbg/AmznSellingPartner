@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetListingsRestrictionsGetResponse : BaseHttpResponse<GetListingsRestrictionsGetResponse>
+	public class GetListingsRestrictionsGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Successfully retrieved the listings restrictions.

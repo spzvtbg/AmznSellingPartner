@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// eloper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SubmitInventoryUpdatePostResponse> SubmitInventoryUpdateAsync(SubmitInventoryUpdatePostRequest request)
-		    => await this.SendAsync<SubmitInventoryUpdatePostResponse>(request);
+		    => await SendAsync<SubmitInventoryUpdatePostResponse>(request);
 	}
 }

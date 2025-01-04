@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// sp-api).
 		/// </summary>
 		public async Task<GetServiceJobByServiceJobIdGetResponse> GetServiceJobByServiceJobIdAsync(GetServiceJobByServiceJobIdGetRequest request)
-		    => await this.SendAsync<GetServiceJobByServiceJobIdGetResponse>(request);
+		    => await SendAsync<GetServiceJobByServiceJobIdGetResponse>(request);
 
 		/// <summary>
 		/// Cancels the service job indicated by the service job identifier specified.  **Usage Plan:**  | Rate (requests
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// sp-api).
 		/// </summary>
 		public async Task<CancelServiceJobByServiceJobIdPutResponse> CancelServiceJobByServiceJobIdAsync(CancelServiceJobByServiceJobIdPutRequest request)
-		    => await this.SendAsync<CancelServiceJobByServiceJobIdPutResponse>(request);
+		    => await SendAsync<CancelServiceJobByServiceJobIdPutResponse>(request);
 
 		/// <summary>
 		/// Completes the service job indicated by the service job identifier specified.  **Usage Plan:**  | Rate
@@ -39,7 +39,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// imits-in-the-sp-api).
 		/// </summary>
 		public async Task<CompleteServiceJobByServiceJobIdPutResponse> CompleteServiceJobByServiceJobIdAsync(CompleteServiceJobByServiceJobIdPutRequest request)
-		    => await this.SendAsync<CompleteServiceJobByServiceJobIdPutResponse>(request);
+		    => await SendAsync<CompleteServiceJobByServiceJobIdPutResponse>(request);
 
 		/// <summary>
 		/// Gets service job details for the specified filter query.  **Usage Plan:**  | Rate (requests per second)
@@ -51,7 +51,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// pi).
 		/// </summary>
 		public async Task<GetServiceJobsGetResponse> GetServiceJobsAsync(GetServiceJobsGetRequest request)
-		    => await this.SendAsync<GetServiceJobsGetResponse>(request);
+		    => await SendAsync<GetServiceJobsGetResponse>(request);
 
 		/// <summary>
 		/// Adds an appointment to the service job indicated by the service job identifier specified.  **Usage Plan:**
@@ -63,7 +63,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// nd-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<AddAppointmentForServiceJobByServiceJobIdPostResponse> AddAppointmentForServiceJobByServiceJobIdAsync(AddAppointmentForServiceJobByServiceJobIdPostRequest request)
-		    => await this.SendAsync<AddAppointmentForServiceJobByServiceJobIdPostResponse>(request);
+		    => await SendAsync<AddAppointmentForServiceJobByServiceJobIdPostResponse>(request);
 
 		/// <summary>
 		/// Reschedules an appointment for the service job indicated by the service job identifier specified.  **Usage
@@ -75,7 +75,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// lans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<RescheduleAppointmentForServiceJobByServiceJobIdPostResponse> RescheduleAppointmentForServiceJobByServiceJobIdAsync(RescheduleAppointmentForServiceJobByServiceJobIdPostRequest request)
-		    => await this.SendAsync<RescheduleAppointmentForServiceJobByServiceJobIdPostResponse>(request);
+		    => await SendAsync<RescheduleAppointmentForServiceJobByServiceJobIdPostResponse>(request);
 
 		/// <summary>
 		/// Assigns new resource(s) or overwrite/update the existing one(s) to a service job appointment.  **Usage
@@ -87,7 +87,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// lans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<AssignAppointmentResourcesPutResponse> AssignAppointmentResourcesAsync(AssignAppointmentResourcesPutRequest request)
-		    => await this.SendAsync<AssignAppointmentResourcesPutResponse>(request);
+		    => await SendAsync<AssignAppointmentResourcesPutResponse>(request);
 
 		/// <summary>
 		/// Updates the appointment fulfillment data related to a given `jobID` and `appointmentID`.  **Usage Plan:**
@@ -99,7 +99,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// nd-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SetAppointmentFulfillmentDataPutResponse> SetAppointmentFulfillmentDataAsync(SetAppointmentFulfillmentDataPutRequest request)
-		    => await this.SendAsync<SetAppointmentFulfillmentDataPutResponse>(request);
+		    => await SendAsync<SetAppointmentFulfillmentDataPutResponse>(request);
 
 		/// <summary>
 		/// Provides capacity slots in a format similar to availability records.  **Usage Plan:**  | Rate (requests
@@ -111,7 +111,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// sp-api).
 		/// </summary>
 		public async Task<GetRangeSlotCapacityPostResponse> GetRangeSlotCapacityAsync(GetRangeSlotCapacityPostRequest request)
-		    => await this.SendAsync<GetRangeSlotCapacityPostResponse>(request);
+		    => await SendAsync<GetRangeSlotCapacityPostResponse>(request);
 
 		/// <summary>
 		/// Provides capacity in fixed-size slots.   **Usage Plan:**  | Rate (requests per second) | Burst | | ----
@@ -122,7 +122,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFixedSlotCapacityPostResponse> GetFixedSlotCapacityAsync(GetFixedSlotCapacityPostRequest request)
-		    => await this.SendAsync<GetFixedSlotCapacityPostResponse>(request);
+		    => await SendAsync<GetFixedSlotCapacityPostResponse>(request);
 
 		/// <summary>
 		/// Update the schedule of the given resource.  **Usage Plan:**  | Rate (requests per second) | Burst | |
@@ -133,7 +133,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Rate Limits in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<UpdateSchedulePutResponse> UpdateScheduleAsync(UpdateSchedulePutRequest request)
-		    => await this.SendAsync<UpdateSchedulePutResponse>(request);
+		    => await SendAsync<UpdateSchedulePutResponse>(request);
 
 		/// <summary>
 		/// Create a reservation.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 5 |
@@ -144,7 +144,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateReservationPostResponse> CreateReservationAsync(CreateReservationPostRequest request)
-		    => await this.SendAsync<CreateReservationPostResponse>(request);
+		    => await SendAsync<CreateReservationPostResponse>(request);
 
 		/// <summary>
 		/// Cancel a reservation.   **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 5 |
@@ -155,7 +155,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CancelReservationDeleteResponse> CancelReservationAsync(CancelReservationDeleteRequest request)
-		    => await this.SendAsync<CancelReservationDeleteResponse>(request);
+		    => await SendAsync<CancelReservationDeleteResponse>(request);
 
 		/// <summary>
 		/// Update a reservation.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ---- | | 5 |
@@ -166,7 +166,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<UpdateReservationPutResponse> UpdateReservationAsync(UpdateReservationPutRequest request)
-		    => await this.SendAsync<UpdateReservationPutResponse>(request);
+		    => await SendAsync<UpdateReservationPutResponse>(request);
 
 		/// <summary>
 		/// Gets appointment slots for the service associated with the service job id specified.  **Usage Plan:**
@@ -178,7 +178,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// nd-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetAppointmmentSlotsByJobIdGetResponse> GetAppointmmentSlotsByJobIdAsync(GetAppointmmentSlotsByJobIdGetRequest request)
-		    => await this.SendAsync<GetAppointmmentSlotsByJobIdGetResponse>(request);
+		    => await SendAsync<GetAppointmmentSlotsByJobIdGetResponse>(request);
 
 		/// <summary>
 		/// Gets appointment slots as per the service context specified.  **Usage Plan:**  | Rate (requests per second)
@@ -190,7 +190,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// pi).
 		/// </summary>
 		public async Task<GetAppointmentSlotsGetResponse> GetAppointmentSlotsAsync(GetAppointmentSlotsGetRequest request)
-		    => await this.SendAsync<GetAppointmentSlotsGetResponse>(request);
+		    => await SendAsync<GetAppointmentSlotsGetResponse>(request);
 
 		/// <summary>
 		/// Creates an upload destination.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ----
@@ -201,6 +201,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// in the Selling Partner API](doc:usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateServiceDocumentUploadDestinationPostResponse> CreateServiceDocumentUploadDestinationAsync(CreateServiceDocumentUploadDestinationPostRequest request)
-		    => await this.SendAsync<CreateServiceDocumentUploadDestinationPostResponse>(request);
+		    => await SendAsync<CreateServiceDocumentUploadDestinationPostResponse>(request);
 	}
 }

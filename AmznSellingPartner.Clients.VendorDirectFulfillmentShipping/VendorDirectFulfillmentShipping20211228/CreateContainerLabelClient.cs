@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateContainerLabelPostResponse> CreateContainerLabelAsync(CreateContainerLabelPostRequest request)
-		    => await this.SendAsync<CreateContainerLabelPostResponse>(request);
+		    => await SendAsync<CreateContainerLabelPostResponse>(request);
 	}
 }

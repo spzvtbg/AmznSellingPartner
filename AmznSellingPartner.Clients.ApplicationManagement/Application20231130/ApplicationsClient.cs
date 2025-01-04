@@ -18,6 +18,6 @@ namespace AmznSellingPartner.Clients.ApplicationManagement.Application20231130
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<RotateApplicationClientSecretPostResponse> RotateApplicationClientSecretAsync(RotateApplicationClientSecretPostRequest request)
-		    => await this.SendAsync<RotateApplicationClientSecretPostResponse>(request);
+		    => await SendAsync<RotateApplicationClientSecretPostResponse>(request);
 	}
 }

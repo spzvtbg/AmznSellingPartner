@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateNotificationPostResponse> CreateNotificationAsync(CreateNotificationPostRequest request)
-		    => await this.SendAsync<CreateNotificationPostResponse>(request);
+		    => await SendAsync<CreateNotificationPostResponse>(request);
 
 		/// <summary>
 		/// Remove your application's notifications from the Appstore notifications dashboard.  **Usage Plan:**
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// s.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<DeleteNotificationsPostResponse> DeleteNotificationsAsync(DeleteNotificationsPostRequest request)
-		    => await this.SendAsync<DeleteNotificationsPostResponse>(request);
+		    => await SendAsync<DeleteNotificationsPostResponse>(request);
 
 		/// <summary>
 		/// Records the seller's response to a notification.  **Usage Plan:**  | Rate (requests per second) | Burst
@@ -39,6 +39,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<RecordActionFeedbackPostResponse> RecordActionFeedbackAsync(RecordActionFeedbackPostRequest request)
-		    => await this.SendAsync<RecordActionFeedbackPostResponse>(request);
+		    => await SendAsync<RecordActionFeedbackPostResponse>(request);
 	}
 }

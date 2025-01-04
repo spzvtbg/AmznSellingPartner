@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// i/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SubmitShipmentConfirmationsPostResponse> SubmitShipmentConfirmationsAsync(SubmitShipmentConfirmationsPostRequest request)
-		    => await this.SendAsync<SubmitShipmentConfirmationsPostResponse>(request);
+		    => await SendAsync<SubmitShipmentConfirmationsPostResponse>(request);
 
 		/// <summary>
 		/// Returns the Details about Shipment, Carrier Details,  status of the shipment, container details and other
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// -docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetShipmentDetailsGetResponse> GetShipmentDetailsAsync(GetShipmentDetailsGetRequest request)
-		    => await this.SendAsync<GetShipmentDetailsGetResponse>(request);
+		    => await SendAsync<GetShipmentDetailsGetResponse>(request);
 
 		/// <summary>
 		/// Submits one or more shipment request for vendor Orders.  **Usage Plan:**  | Rate (requests per second)
@@ -40,7 +40,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// cs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SubmitShipmentsPostResponse> SubmitShipmentsAsync(SubmitShipmentsPostRequest request)
-		    => await this.SendAsync<SubmitShipmentsPostResponse>(request);
+		    => await SendAsync<SubmitShipmentsPostResponse>(request);
 
 		/// <summary>
 		/// Returns small parcel shipment labels based on the filters that you specify.  **Usage Plan:**  | Rate
@@ -52,6 +52,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetShipmentLabelsGetResponse> GetShipmentLabelsAsync(GetShipmentLabelsGetRequest request)
-		    => await this.SendAsync<GetShipmentLabelsGetResponse>(request);
+		    => await SendAsync<GetShipmentLabelsGetResponse>(request);
 	}
 }

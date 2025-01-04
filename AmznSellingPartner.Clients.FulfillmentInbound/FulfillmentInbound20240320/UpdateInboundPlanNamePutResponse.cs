@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class UpdateInboundPlanNamePutResponse : BaseHttpResponse<UpdateInboundPlanNamePutResponse>
+	public class UpdateInboundPlanNamePutResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Unique request reference identifier.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[FromHeader("x-amzn-RateLimit-Limit")]
 		public string XAmznRateLimitLimit { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// UpdateInboundPlanName 204 response

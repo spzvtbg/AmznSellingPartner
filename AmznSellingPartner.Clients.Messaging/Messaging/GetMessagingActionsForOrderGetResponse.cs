@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetMessagingActionsForOrderGetResponse : BaseHttpResponse<GetMessagingActionsForOrderGetResponse>
+	public class GetMessagingActionsForOrderGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Returns hypermedia links under the _links.actions key that specify which messaging actions are allowed

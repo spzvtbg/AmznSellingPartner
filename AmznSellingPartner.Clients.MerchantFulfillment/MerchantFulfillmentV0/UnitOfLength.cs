@@ -15,12 +15,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// The unit of length is inches.
 		/// </summary>
 		[EnumMember(Value = "inches")]
-		inches,
+		Inches,
 
 		/// <summary>
 		/// The unit of length is centimeters.
 		/// </summary>
 		[EnumMember(Value = "centimeters")]
-		centimeters,
+		Centimeters,
 	}
 }

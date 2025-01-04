@@ -15,12 +15,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// The unit of weight is ounces.
 		/// </summary>
 		[EnumMember(Value = "oz")]
-		oz,
+		Oz,
 
 		/// <summary>
 		/// The unit of weight is grams.
 		/// </summary>
 		[EnumMember(Value = "g")]
-		g,
+		G,
 	}
 }

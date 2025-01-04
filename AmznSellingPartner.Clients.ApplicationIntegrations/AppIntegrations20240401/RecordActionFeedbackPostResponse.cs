@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class RecordActionFeedbackPostResponse : BaseHttpResponse<RecordActionFeedbackPostResponse>
+	public class RecordActionFeedbackPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Successfully processed the recordActionFeedback request.

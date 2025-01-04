@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetInvoicesGetResponse : BaseHttpResponse<GetInvoicesGetResponse>
+	public class GetInvoicesGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class CancelQueryDeleteResponse : BaseHttpResponse<CancelQueryDeleteResponse>
+	public class CancelQueryDeleteResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

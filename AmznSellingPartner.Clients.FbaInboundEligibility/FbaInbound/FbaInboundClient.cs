@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 		/// i/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetItemEligibilityPreviewGetResponse> GetItemEligibilityPreviewAsync(GetItemEligibilityPreviewGetRequest request)
-		    => await this.SendAsync<GetItemEligibilityPreviewGetResponse>(request);
+		    => await SendAsync<GetItemEligibilityPreviewGetResponse>(request);
 	}
 }

@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// lans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetOrderMetricsGetResponse> GetOrderMetricsAsync(GetOrderMetricsGetRequest request)
-		    => await this.SendAsync<GetOrderMetricsGetResponse>(request);
+		    => await SendAsync<GetOrderMetricsGetResponse>(request);
 	}
 }

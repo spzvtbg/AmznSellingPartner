@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class InitiatePayoutPostResponse : BaseHttpResponse<InitiatePayoutPostResponse>
+	public class InitiatePayoutPostResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

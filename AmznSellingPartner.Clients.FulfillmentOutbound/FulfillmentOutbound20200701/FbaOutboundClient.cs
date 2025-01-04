@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFulfillmentPreviewPostResponse> GetFulfillmentPreviewAsync(GetFulfillmentPreviewPostRequest request)
-		    => await this.SendAsync<GetFulfillmentPreviewPostResponse>(request);
+		    => await SendAsync<GetFulfillmentPreviewPostResponse>(request);
 
 		/// <summary>
 		/// Returns delivery options that include an estimated delivery date and offer expiration, based on criteria
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// s-in-the-sp-api).
 		/// </summary>
 		public async Task<DeliveryOffersPostResponse> DeliveryOffersAsync(DeliveryOffersPostRequest request)
-		    => await this.SendAsync<DeliveryOffersPostResponse>(request);
+		    => await SendAsync<DeliveryOffersPostResponse>(request);
 
 		/// <summary>
 		/// Returns a list of fulfillment orders fulfilled after (or at) a specified date-time, or indicated by the
@@ -41,7 +41,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// s-in-the-sp-api)
 		/// </summary>
 		public async Task<ListAllFulfillmentOrdersGetResponse> ListAllFulfillmentOrdersAsync(ListAllFulfillmentOrdersGetRequest request)
-		    => await this.SendAsync<ListAllFulfillmentOrdersGetResponse>(request);
+		    => await SendAsync<ListAllFulfillmentOrdersGetResponse>(request);
 
 		/// <summary>
 		/// Requests that Amazon ship items from the seller's inventory in Amazon's fulfillment network to a destination
@@ -53,7 +53,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api)
 		/// </summary>
 		public async Task<CreateFulfillmentOrderPostResponse> CreateFulfillmentOrderAsync(CreateFulfillmentOrderPostRequest request)
-		    => await this.SendAsync<CreateFulfillmentOrderPostResponse>(request);
+		    => await SendAsync<CreateFulfillmentOrderPostResponse>(request);
 
 		/// <summary>
 		/// Returns delivery tracking information for a package in an outbound shipment for a Multi-Channel Fulfillment
@@ -65,7 +65,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetPackageTrackingDetailsGetResponse> GetPackageTrackingDetailsAsync(GetPackageTrackingDetailsGetRequest request)
-		    => await this.SendAsync<GetPackageTrackingDetailsGetResponse>(request);
+		    => await SendAsync<GetPackageTrackingDetailsGetResponse>(request);
 
 		/// <summary>
 		/// Returns a list of return reason codes for a seller SKU in a given marketplace. The parameters for this
@@ -79,7 +79,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<ListReturnReasonCodesGetResponse> ListReturnReasonCodesAsync(ListReturnReasonCodesGetRequest request)
-		    => await this.SendAsync<ListReturnReasonCodesGetResponse>(request);
+		    => await SendAsync<ListReturnReasonCodesGetResponse>(request);
 
 		/// <summary>
 		/// Creates a fulfillment return.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ----
@@ -91,7 +91,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// e-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateFulfillmentReturnPutResponse> CreateFulfillmentReturnAsync(CreateFulfillmentReturnPutRequest request)
-		    => await this.SendAsync<CreateFulfillmentReturnPutResponse>(request);
+		    => await SendAsync<CreateFulfillmentReturnPutResponse>(request);
 
 		/// <summary>
 		/// Returns the fulfillment order indicated by the specified order identifier.  **Usage Plan:**  | Rate (requests
@@ -103,7 +103,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFulfillmentOrderGetResponse> GetFulfillmentOrderAsync(GetFulfillmentOrderGetRequest request)
-		    => await this.SendAsync<GetFulfillmentOrderGetResponse>(request);
+		    => await SendAsync<GetFulfillmentOrderGetResponse>(request);
 
 		/// <summary>
 		/// Updates and/or requests shipment for a fulfillment order with an order hold on it.  **Usage Plan:**
@@ -115,7 +115,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<UpdateFulfillmentOrderPutResponse> UpdateFulfillmentOrderAsync(UpdateFulfillmentOrderPutRequest request)
-		    => await this.SendAsync<UpdateFulfillmentOrderPutResponse>(request);
+		    => await SendAsync<UpdateFulfillmentOrderPutResponse>(request);
 
 		/// <summary>
 		/// Requests that Amazon stop attempting to fulfill the fulfillment order indicated by the specified order
@@ -128,7 +128,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// n-the-sp-api).
 		/// </summary>
 		public async Task<CancelFulfillmentOrderPutResponse> CancelFulfillmentOrderAsync(CancelFulfillmentOrderPutRequest request)
-		    => await this.SendAsync<CancelFulfillmentOrderPutResponse>(request);
+		    => await SendAsync<CancelFulfillmentOrderPutResponse>(request);
 
 		/// <summary>
 		/// Requests that Amazon update the status of an order in the sandbox testing environment. This is a sandbox-only
@@ -138,7 +138,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// for more information.
 		/// </summary>
 		public async Task<SubmitFulfillmentOrderStatusUpdatePutResponse> SubmitFulfillmentOrderStatusUpdateAsync(SubmitFulfillmentOrderStatusUpdatePutRequest request)
-		    => await this.SendAsync<SubmitFulfillmentOrderStatusUpdatePutResponse>(request);
+		    => await SendAsync<SubmitFulfillmentOrderStatusUpdatePutResponse>(request);
 
 		/// <summary>
 		/// Returns a list of features available for Multi-Channel Fulfillment orders in the marketplace you specify,
@@ -151,7 +151,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// loper-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFeaturesGetResponse> GetFeaturesAsync(GetFeaturesGetRequest request)
-		    => await this.SendAsync<GetFeaturesGetResponse>(request);
+		    => await SendAsync<GetFeaturesGetResponse>(request);
 
 		/// <summary>
 		/// Returns a list of inventory items that are eligible for the fulfillment feature you specify.  **Usage
@@ -163,7 +163,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api)..
 		/// </summary>
 		public async Task<GetFeatureInventoryGetResponse> GetFeatureInventoryAsync(GetFeatureInventoryGetRequest request)
-		    => await this.SendAsync<GetFeatureInventoryGetResponse>(request);
+		    => await SendAsync<GetFeatureInventoryGetResponse>(request);
 
 		/// <summary>
 		/// Returns the number of items with the sellerSKU you specify that can have orders fulfilled using the specified
@@ -178,6 +178,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetFeatureSKUGetResponse> GetFeatureSKUAsync(GetFeatureSKUGetRequest request)
-		    => await this.SendAsync<GetFeatureSKUGetResponse>(request);
+		    => await SendAsync<GetFeatureSKUGetResponse>(request);
 	}
 }

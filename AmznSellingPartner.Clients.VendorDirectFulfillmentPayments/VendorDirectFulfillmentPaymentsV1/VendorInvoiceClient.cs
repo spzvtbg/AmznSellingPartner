@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// i/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<SubmitInvoicePostResponse> SubmitInvoiceAsync(SubmitInvoicePostRequest request)
-		    => await this.SendAsync<SubmitInvoicePostResponse>(request);
+		    => await SendAsync<SubmitInvoicePostResponse>(request);
 	}
 }

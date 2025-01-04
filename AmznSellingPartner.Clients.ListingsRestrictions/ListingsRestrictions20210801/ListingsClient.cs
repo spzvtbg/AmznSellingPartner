@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// sp-api).
 		/// </summary>
 		public async Task<GetListingsRestrictionsGetResponse> GetListingsRestrictionsAsync(GetListingsRestrictionsGetRequest request)
-		    => await this.SendAsync<GetListingsRestrictionsGetResponse>(request);
+		    => await SendAsync<GetListingsRestrictionsGetResponse>(request);
 	}
 }

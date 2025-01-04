@@ -2,7 +2,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	public class GetReportsGetResponse : BaseHttpResponse<GetReportsGetResponse>
+	public class GetReportsGetResponse : BaseHttpResponse
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
@@ -15,8 +15,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
 		public string XAmznRequestId { get; set; } 
-
-		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.

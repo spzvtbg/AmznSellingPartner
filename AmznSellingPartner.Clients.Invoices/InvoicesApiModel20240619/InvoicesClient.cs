@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetInvoicesAttributesGetResponse> GetInvoicesAttributesAsync(GetInvoicesAttributesGetRequest request)
-		    => await this.SendAsync<GetInvoicesAttributesGetResponse>(request);
+		    => await SendAsync<GetInvoicesAttributesGetResponse>(request);
 
 		/// <summary>
 		/// Returns the invoice document's ID and URL. Use the URL to download the ZIP file, which contains the invoices
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetInvoicesDocumentGetResponse> GetInvoicesDocumentAsync(GetInvoicesDocumentGetRequest request)
-		    => await this.SendAsync<GetInvoicesDocumentGetResponse>(request);
+		    => await SendAsync<GetInvoicesDocumentGetResponse>(request);
 
 		/// <summary>
 		/// Returns invoice exports details for exports that match the filters that you specify.  **Usage Plan:**
@@ -40,7 +40,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetInvoicesExportsGetResponse> GetInvoicesExportsAsync(GetInvoicesExportsGetRequest request)
-		    => await this.SendAsync<GetInvoicesExportsGetResponse>(request);
+		    => await SendAsync<GetInvoicesExportsGetResponse>(request);
 
 		/// <summary>
 		/// Creates an invoice export request.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- |
@@ -52,7 +52,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// s-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<CreateInvoicesExportPostResponse> CreateInvoicesExportAsync(CreateInvoicesExportPostRequest request)
-		    => await this.SendAsync<CreateInvoicesExportPostResponse>(request);
+		    => await SendAsync<CreateInvoicesExportPostResponse>(request);
 
 		/// <summary>
 		/// Returns invoice export details (including the `exportDocumentId`, if available) for the export that you
@@ -64,7 +64,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// API](https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetInvoicesExportGetResponse> GetInvoicesExportAsync(GetInvoicesExportGetRequest request)
-		    => await this.SendAsync<GetInvoicesExportGetResponse>(request);
+		    => await SendAsync<GetInvoicesExportGetResponse>(request);
 
 		/// <summary>
 		/// Returns invoice details for the invoices that match the filters that you specify.  **Usage Plan:**  |
@@ -76,7 +76,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// //developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetInvoicesGetResponse> GetInvoicesAsync(GetInvoicesGetRequest request)
-		    => await this.SendAsync<GetInvoicesGetResponse>(request);
+		    => await SendAsync<GetInvoicesGetResponse>(request);
 
 		/// <summary>
 		/// Returns invoice data for the specified invoice. This operation returns only a subset of the invoices
@@ -90,6 +90,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api).
 		/// </summary>
 		public async Task<GetInvoiceGetResponse> GetInvoiceAsync(GetInvoiceGetRequest request)
-		    => await this.SendAsync<GetInvoiceGetResponse>(request);
+		    => await SendAsync<GetInvoiceGetResponse>(request);
 	}
 }

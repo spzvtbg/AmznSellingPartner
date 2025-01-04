@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("publishRecordList")]
 		[IsRequired]
-		public PublishRecordList PublishRecordList { get; set; }
+		public PublishRecordList PublishRecordList { get; set; } 
 	}
 }

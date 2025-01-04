@@ -17,65 +17,65 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Amazon Standard Identification Number (ASIN) of the listings item.
 		/// </summary>
 		[JsonProperty("asin")]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The Amazon product type of the listings item.
 		/// </summary>
 		[JsonProperty("productType")]
 		[IsRequired]
-		public string ProductType { get; set; }
+		public string ProductType { get; set; } 
 
 		/// <summary>
 		/// Identifies the condition of the listings item.
 		/// </summary>
 		[JsonProperty("conditionType")]
-		public ConditionType ConditionType { get; set; }
+		public ConditionType ConditionType { get; set; } 
 
 		/// <summary>
 		/// Statuses that apply to the listings item.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public List<Status> Status { get; set; }
+		public List<Status> Status { get; set; } 
 
 		/// <summary>
 		/// The fulfillment network stock keeping unit is an identifier used by Amazon fulfillment centers to identify
 		/// each unique item.
 		/// </summary>
 		[JsonProperty("fnSku")]
-		public string FnSku { get; set; }
+		public string FnSku { get; set; } 
 
 		/// <summary>
 		/// The name or title associated with an Amazon catalog item.
 		/// </summary>
 		[JsonProperty("itemName")]
-		public string ItemName { get; set; }
+		public string ItemName { get; set; } 
 
 		/// <summary>
 		/// The date the listings item was created in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("createdDate")]
 		[IsRequired]
-		public DateTime CreatedDate { get; set; }
+		public DateTime CreatedDate { get; set; } 
 
 		/// <summary>
 		/// The date the listings item was last updated in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("lastUpdatedDate")]
 		[IsRequired]
-		public DateTime LastUpdatedDate { get; set; }
+		public DateTime LastUpdatedDate { get; set; } 
 
 		/// <summary>
 		/// The main image for the listings item.
 		/// </summary>
 		[JsonProperty("mainImage")]
-		public ItemImage MainImage { get; set; }
+		public ItemImage MainImage { get; set; } 
 	}
 }

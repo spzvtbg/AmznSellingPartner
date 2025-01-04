@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		[InPath("shipmentId")]
 		[IsRequired]
 		[Pattern("[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}")]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 	}
 }

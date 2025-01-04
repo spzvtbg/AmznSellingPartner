@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("id")]
 		[IsRequired]
-		public string Id { get; set; }
+		public string Id { get; set; } 
 	}
 }

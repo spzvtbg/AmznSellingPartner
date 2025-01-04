@@ -12,13 +12,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ListTransportationOptionsResponse : BaseClass
 	{
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// Transportation options generated for the placement option.
 		/// </summary>
 		[JsonProperty("transportationOptions")]
 		[IsRequired]
-		public List<TransportationOption> TransportationOptions { get; set; }
+		public List<TransportationOption> TransportationOptions { get; set; } 
 	}
 }

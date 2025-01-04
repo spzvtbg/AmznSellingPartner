@@ -12,51 +12,51 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("contentModuleType")]
 		[IsRequired]
-		public ContentModuleType ContentModuleType { get; set; }
+		public ContentModuleType ContentModuleType { get; set; } 
 
 		[JsonProperty("standardCompanyLogo")]
-		public StandardCompanyLogoModule StandardCompanyLogo { get; set; }
+		public StandardCompanyLogoModule StandardCompanyLogo { get; set; } 
 
 		[JsonProperty("standardComparisonTable")]
-		public StandardComparisonTableModule StandardComparisonTable { get; set; }
+		public StandardComparisonTableModule StandardComparisonTable { get; set; } 
 
 		[JsonProperty("standardFourImageText")]
-		public StandardFourImageTextModule StandardFourImageText { get; set; }
+		public StandardFourImageTextModule StandardFourImageText { get; set; } 
 
 		[JsonProperty("standardFourImageTextQuadrant")]
-		public StandardFourImageTextQuadrantModule StandardFourImageTextQuadrant { get; set; }
+		public StandardFourImageTextQuadrantModule StandardFourImageTextQuadrant { get; set; } 
 
 		[JsonProperty("standardHeaderImageText")]
-		public StandardHeaderImageTextModule StandardHeaderImageText { get; set; }
+		public StandardHeaderImageTextModule StandardHeaderImageText { get; set; } 
 
 		[JsonProperty("standardImageSidebar")]
-		public StandardImageSidebarModule StandardImageSidebar { get; set; }
+		public StandardImageSidebarModule StandardImageSidebar { get; set; } 
 
 		[JsonProperty("standardImageTextOverlay")]
-		public StandardImageTextOverlayModule StandardImageTextOverlay { get; set; }
+		public StandardImageTextOverlayModule StandardImageTextOverlay { get; set; } 
 
 		[JsonProperty("standardMultipleImageText")]
-		public StandardMultipleImageTextModule StandardMultipleImageText { get; set; }
+		public StandardMultipleImageTextModule StandardMultipleImageText { get; set; } 
 
 		[JsonProperty("standardProductDescription")]
-		public StandardProductDescriptionModule StandardProductDescription { get; set; }
+		public StandardProductDescriptionModule StandardProductDescription { get; set; } 
 
 		[JsonProperty("standardSingleImageHighlights")]
-		public StandardSingleImageHighlightsModule StandardSingleImageHighlights { get; set; }
+		public StandardSingleImageHighlightsModule StandardSingleImageHighlights { get; set; } 
 
 		[JsonProperty("standardSingleImageSpecsDetail")]
-		public StandardSingleImageSpecsDetailModule StandardSingleImageSpecsDetail { get; set; }
+		public StandardSingleImageSpecsDetailModule StandardSingleImageSpecsDetail { get; set; } 
 
 		[JsonProperty("standardSingleSideImage")]
-		public StandardSingleSideImageModule StandardSingleSideImage { get; set; }
+		public StandardSingleSideImageModule StandardSingleSideImage { get; set; } 
 
 		[JsonProperty("standardTechSpecs")]
-		public StandardTechSpecsModule StandardTechSpecs { get; set; }
+		public StandardTechSpecsModule StandardTechSpecs { get; set; } 
 
 		[JsonProperty("standardText")]
-		public StandardTextModule StandardText { get; set; }
+		public StandardTextModule StandardText { get; set; } 
 
 		[JsonProperty("standardThreeImageText")]
-		public StandardThreeImageTextModule StandardThreeImageText { get; set; }
+		public StandardThreeImageTextModule StandardThreeImageText { get; set; } 
 	}
 }

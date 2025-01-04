@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	using System;
 	using System.Threading.Tasks;
 
-	public class FeedsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class FeedsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns feed details for the feeds that match the filters that you specify.  **Usage Plan:**  | Rate

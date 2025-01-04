@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// options.
 		/// </summary>
 		[JsonProperty("name")]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The transaction identifier.
 		/// </summary>
 		[JsonProperty("id")]
-		public string Id { get; set; }
+		public string Id { get; set; } 
 	}
 }

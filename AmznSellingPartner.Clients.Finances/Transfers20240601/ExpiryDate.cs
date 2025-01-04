@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// The month the card expires expressed as a number from `1` to `12`.
 		/// </summary>
 		[JsonProperty("month")]
-		public string Month { get; set; }
+		public string Month { get; set; } 
 
 		/// <summary>
 		/// Year
 		/// </summary>
 		[JsonProperty("year")]
-		public string Year { get; set; }
+		public string Year { get; set; } 
 	}
 }

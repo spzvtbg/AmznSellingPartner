@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetCarrierAccountFormInputsResponse : BaseClass
 	{
 		[JsonProperty("linkableCarriersList")]
-		public LinkableCarriersList LinkableCarriersList { get; set; }
+		public LinkableCarriersList LinkableCarriersList { get; set; } 
 	}
 }

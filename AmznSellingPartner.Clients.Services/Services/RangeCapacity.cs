@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Capacity type corresponding to the slots.
 		/// </summary>
 		[JsonProperty("capacityType")]
-		public CapacityType CapacityType { get; set; }
+		public CapacityType CapacityType { get; set; } 
 
 		/// <summary>
 		/// Array of capacity slots in range slot format.
 		/// </summary>
 		[JsonProperty("slots")]
-		public List<RangeSlot> Slots { get; set; }
+		public List<RangeSlot> Slots { get; set; } 
 	}
 }

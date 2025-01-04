@@ -16,9 +16,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("deliveryWindowOptions")]
 		[IsRequired]
-		public List<DeliveryWindowOption> DeliveryWindowOptions { get; set; }
+		public List<DeliveryWindowOption> DeliveryWindowOptions { get; set; } 
 
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 	}
 }

@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// A marketplace identifier. Identifies the Amazon marketplace for the listings item.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Amazon Standard Identification Number (ASIN) of the listings item.
 		/// </summary>
 		[JsonProperty("asin")]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 	}
 }

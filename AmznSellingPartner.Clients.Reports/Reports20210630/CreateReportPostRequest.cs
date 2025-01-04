@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateReportSpecification Body { get; set; }
+		public CreateReportSpecification Body { get; set; } 
 	}
 }

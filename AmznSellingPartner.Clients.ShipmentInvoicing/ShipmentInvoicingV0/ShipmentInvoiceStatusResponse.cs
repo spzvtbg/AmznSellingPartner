@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 	public class ShipmentInvoiceStatusResponse : BaseClass
 	{
 		[JsonProperty("Shipments")]
-		public ShipmentInvoiceStatusInfo Shipments { get; set; }
+		public ShipmentInvoiceStatusInfo Shipments { get; set; } 
 	}
 }

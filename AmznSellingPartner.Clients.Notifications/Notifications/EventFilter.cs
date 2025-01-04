@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[JsonProperty("eventFilterType")]
 		[IsRequired]
-		public EventFilterType EventFilterType { get; set; }
+		public EventFilterType EventFilterType { get; set; } 
 	}
 }

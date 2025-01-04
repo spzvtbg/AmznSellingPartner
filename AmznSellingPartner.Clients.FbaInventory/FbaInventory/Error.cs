@@ -14,18 +14,18 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[JsonProperty("code")]
 		[IsRequired]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// A message that describes the error condition in a human-readable form.
 		/// </summary>
 		[JsonProperty("message")]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		/// <summary>
 		/// Additional information that can help the caller understand or fix the issue.
 		/// </summary>
 		[JsonProperty("details")]
-		public string Details { get; set; }
+		public string Details { get; set; } 
 	}
 }

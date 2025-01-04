@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class SupplySourceCapabilities : BaseClass
 	{
 		[JsonProperty("outbound")]
-		public OutboundCapability Outbound { get; set; }
+		public OutboundCapability Outbound { get; set; } 
 
 		[JsonProperty("services")]
-		public ServicesCapability Services { get; set; }
+		public ServicesCapability Services { get; set; } 
 	}
 }

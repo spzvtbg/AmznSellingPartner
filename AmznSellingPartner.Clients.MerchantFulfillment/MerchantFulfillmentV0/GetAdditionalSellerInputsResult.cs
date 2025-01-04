@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class GetAdditionalSellerInputsResult : BaseClass
 	{
 		[JsonProperty("ShipmentLevelFields")]
-		public AdditionalInputsList ShipmentLevelFields { get; set; }
+		public AdditionalInputsList ShipmentLevelFields { get; set; } 
 
 		[JsonProperty("ItemLevelFieldsList")]
-		public ItemLevelFieldsList ItemLevelFieldsList { get; set; }
+		public ItemLevelFieldsList ItemLevelFieldsList { get; set; } 
 	}
 }

@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("marketplaceId")]
 		[IsRequired]
 		[MinLength(1)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A page token from the nextPageToken response element returned by your previous call to this operation.
@@ -22,6 +22,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// </summary>
 		[InQuery("pageToken")]
 		[MinLength(1)]
-		public string PageToken { get; set; }
+		public string PageToken { get; set; } 
 	}
 }

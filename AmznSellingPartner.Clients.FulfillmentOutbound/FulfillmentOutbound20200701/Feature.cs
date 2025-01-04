@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("featureName")]
 		[IsRequired]
-		public string FeatureName { get; set; }
+		public string FeatureName { get; set; } 
 
 		/// <summary>
 		/// The feature description.
 		/// </summary>
 		[JsonProperty("featureDescription")]
 		[IsRequired]
-		public string FeatureDescription { get; set; }
+		public string FeatureDescription { get; set; } 
 
 		/// <summary>
 		/// When true, indicates that the seller is eligible to use the feature.
 		/// </summary>
 		[JsonProperty("sellerEligible")]
-		public bool SellerEligible { get; set; }
+		public bool SellerEligible { get; set; } 
 	}
 }

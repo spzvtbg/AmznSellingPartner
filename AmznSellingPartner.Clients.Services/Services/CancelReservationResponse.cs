@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Errors encountered, if any
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

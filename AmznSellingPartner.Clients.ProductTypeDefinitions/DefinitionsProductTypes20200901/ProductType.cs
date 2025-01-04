@@ -16,20 +16,20 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The human-readable and localized description of the Amazon product type.
 		/// </summary>
 		[JsonProperty("displayName")]
 		[IsRequired]
-		public string DisplayName { get; set; }
+		public string DisplayName { get; set; } 
 
 		/// <summary>
 		/// The Amazon marketplace identifiers for which the product type definition is available.
 		/// </summary>
 		[JsonProperty("marketplaceIds")]
 		[IsRequired]
-		public List<string> MarketplaceIds { get; set; }
+		public List<string> MarketplaceIds { get; set; } 
 	}
 }

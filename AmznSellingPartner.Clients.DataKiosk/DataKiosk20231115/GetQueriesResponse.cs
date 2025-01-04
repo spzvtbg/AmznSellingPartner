@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[JsonProperty("queries")]
 		[IsRequired]
-		public QueryList Queries { get; set; }
+		public QueryList Queries { get; set; } 
 
 		/// <summary>
 		/// When a request has results that are not included in this response, pagination occurs. This means the
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// field will be absent.
 		/// </summary>
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 	}
 }

@@ -18,53 +18,53 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("containerType")]
 		[IsRequired]
-		public ContainerType ContainerType { get; set; }
+		public ContainerType ContainerType { get; set; } 
 
 		/// <summary>
 		/// An integer that must be submitted for multi-box shipments only, where one item may come in separate
 		/// packages.
 		/// </summary>
 		[JsonProperty("containerSequenceNumber")]
-		public string ContainerSequenceNumber { get; set; }
+		public string ContainerSequenceNumber { get; set; } 
 
 		/// <summary>
 		/// A list of carton identifiers.
 		/// </summary>
 		[JsonProperty("containerIdentifiers")]
 		[IsRequired]
-		public List<ContainerIdentification> ContainerIdentifiers { get; set; }
+		public List<ContainerIdentification> ContainerIdentifiers { get; set; } 
 
 		/// <summary>
 		/// The tracking number used for identifying the shipment.
 		/// </summary>
 		[JsonProperty("trackingNumber")]
-		public string TrackingNumber { get; set; }
+		public string TrackingNumber { get; set; } 
 
 		[JsonProperty("dimensions")]
-		public Dimensions Dimensions { get; set; }
+		public Dimensions Dimensions { get; set; } 
 
 		[JsonProperty("weight")]
-		public Weight Weight { get; set; }
+		public Weight Weight { get; set; } 
 
 		/// <summary>
 		/// Number of layers per pallet.
 		/// </summary>
 		[JsonProperty("tier")]
-		public int Tier { get; set; }
+		public int Tier { get; set; } 
 
 		/// <summary>
 		/// Number of cartons per layer on the pallet.
 		/// </summary>
 		[JsonProperty("block")]
-		public int Block { get; set; }
+		public int Block { get; set; } 
 
 		[JsonProperty("innerContainersDetails")]
-		public InnerContainersDetails InnerContainersDetails { get; set; }
+		public InnerContainersDetails InnerContainersDetails { get; set; } 
 
 		/// <summary>
 		/// A list of packed items.
 		/// </summary>
 		[JsonProperty("packedItems")]
-		public List<PackedItems> PackedItems { get; set; }
+		public List<PackedItems> PackedItems { get; set; } 
 	}
 }

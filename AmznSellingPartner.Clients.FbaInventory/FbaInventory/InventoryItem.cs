@@ -14,20 +14,20 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[JsonProperty("sellerSku")]
 		[IsRequired]
-		public string SellerSku { get; set; }
+		public string SellerSku { get; set; } 
 
 		/// <summary>
 		/// The marketplaceId.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The quantity of item to add.
 		/// </summary>
 		[JsonProperty("quantity")]
 		[IsRequired]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 	}
 }

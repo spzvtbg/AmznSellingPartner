@@ -9,21 +9,21 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardImageSidebarModule : BaseClass
 	{
 		[JsonProperty("headline")]
-		public TextComponent Headline { get; set; }
+		public TextComponent Headline { get; set; } 
 
 		[JsonProperty("imageCaptionBlock")]
-		public StandardImageCaptionBlock ImageCaptionBlock { get; set; }
+		public StandardImageCaptionBlock ImageCaptionBlock { get; set; } 
 
 		[JsonProperty("descriptionTextBlock")]
-		public StandardTextBlock DescriptionTextBlock { get; set; }
+		public StandardTextBlock DescriptionTextBlock { get; set; } 
 
 		[JsonProperty("descriptionListBlock")]
-		public StandardTextListBlock DescriptionListBlock { get; set; }
+		public StandardTextListBlock DescriptionListBlock { get; set; } 
 
 		[JsonProperty("sidebarImageTextBlock")]
-		public StandardImageTextBlock SidebarImageTextBlock { get; set; }
+		public StandardImageTextBlock SidebarImageTextBlock { get; set; } 
 
 		[JsonProperty("sidebarListBlock")]
-		public StandardTextListBlock SidebarListBlock { get; set; }
+		public StandardTextListBlock SidebarListBlock { get; set; } 
 	}
 }

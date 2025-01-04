@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// An MD5 hash of the content to be submitted to the upload destination. This value is used to determine
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 		/// </summary>
 		[InQuery("contentMD5")]
 		[IsRequired]
-		public string ContentMD5 { get; set; }
+		public string ContentMD5 { get; set; } 
 
 		/// <summary>
 		/// The resource for the upload destination that you are creating. For example, if you are creating an upload
@@ -32,12 +32,12 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 		/// </summary>
 		[InPath("resource")]
 		[IsRequired]
-		public string Resource { get; set; }
+		public string Resource { get; set; } 
 
 		/// <summary>
 		/// The content type of the file to be uploaded.
 		/// </summary>
 		[InQuery("contentType")]
-		public string ContentType { get; set; }
+		public string ContentType { get; set; } 
 	}
 }

@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// Inventory details required to update some or all items for the requested warehouse.
 		/// </summary>
 		[JsonProperty("inventory")]
-		public InventoryUpdate Inventory { get; set; }
+		public InventoryUpdate Inventory { get; set; } 
 	}
 }

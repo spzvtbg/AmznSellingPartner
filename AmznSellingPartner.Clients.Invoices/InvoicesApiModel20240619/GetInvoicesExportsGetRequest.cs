@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The earliest export creation date and time for exports that you want to include in the response. Values
@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// is 30 days ago.
 		/// </summary>
 		[InQuery("dateStart")]
-		public DateTime DateStart { get; set; }
+		public DateTime DateStart { get; set; } 
 
 		/// <summary>
 		/// The response includes `nextToken` when the number of results exceeds the specified `pageSize` value.
@@ -29,13 +29,13 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// Note that this operation can return empty pages.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// The maximum number of invoices to return in a single call.  Minimum: 1  Maximum: 100
 		/// </summary>
 		[InQuery("pageSize")]
-		public int PageSize { get; set; }
+		public int PageSize { get; set; } 
 
 		/// <summary>
 		/// The latest export creation date and time for exports that you want to include in the response. Values
@@ -43,12 +43,12 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// value is the time of the request.
 		/// </summary>
 		[InQuery("dateEnd")]
-		public DateTime DateEnd { get; set; }
+		public DateTime DateEnd { get; set; } 
 
 		/// <summary>
 		/// Return exports matching the status specified.
 		/// </summary>
 		[InQuery("status")]
-		public Status Status { get; set; }
+		public Status Status { get; set; } 
 	}
 }

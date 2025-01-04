@@ -16,34 +16,34 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// The status of the buyer's purchase order for this order.
 		/// </summary>
 		[JsonProperty("purchaseOrderStatus")]
 		[IsRequired]
-		public PurchaseOrderStatus PurchaseOrderStatus { get; set; }
+		public PurchaseOrderStatus PurchaseOrderStatus { get; set; } 
 
 		/// <summary>
 		/// The date the purchase order was placed. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("purchaseOrderDate")]
 		[IsRequired]
-		public DateTime PurchaseOrderDate { get; set; }
+		public DateTime PurchaseOrderDate { get; set; } 
 
 		/// <summary>
 		/// The date when the purchase order was last updated. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("lastUpdatedDate")]
-		public DateTime LastUpdatedDate { get; set; }
+		public DateTime LastUpdatedDate { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the selling party.
 		/// </summary>
 		[JsonProperty("sellingParty")]
 		[IsRequired]
-		public PartyIdentification SellingParty { get; set; }
+		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses for a
@@ -52,13 +52,13 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("shipToParty")]
 		[IsRequired]
-		public PartyIdentification ShipToParty { get; set; }
+		public PartyIdentification ShipToParty { get; set; } 
 
 		/// <summary>
 		/// Detailed order status.
 		/// </summary>
 		[JsonProperty("itemStatus")]
 		[IsRequired]
-		public ItemStatus ItemStatus { get; set; }
+		public ItemStatus ItemStatus { get; set; } 
 	}
 }

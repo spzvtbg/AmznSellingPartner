@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[InPath("reportId")]
 		[IsRequired]
-		public string ReportId { get; set; }
+		public string ReportId { get; set; } 
 	}
 }

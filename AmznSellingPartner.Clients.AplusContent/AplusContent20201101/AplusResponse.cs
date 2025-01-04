@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class AplusResponse : BaseClass
 	{
 		[JsonProperty("warnings")]
-		public MessageSet Warnings { get; set; }
+		public MessageSet Warnings { get; set; } 
 	}
 }

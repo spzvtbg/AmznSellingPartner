@@ -16,37 +16,37 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("asin")]
 		[IsRequired]
-		public Asin Asin { get; set; }
+		public Asin Asin { get; set; } 
 
 		/// <summary>
 		/// A marketplace identifier.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A list of featured buying options for the specified ASIN `marketplaceId` combination.
 		/// </summary>
 		[JsonProperty("featuredBuyingOptions")]
-		public List<FeaturedBuyingOption> FeaturedBuyingOptions { get; set; }
+		public List<FeaturedBuyingOption> FeaturedBuyingOptions { get; set; } 
 
 		/// <summary>
 		/// A list of lowest priced offers for the specified ASIN `marketplaceId` combination.
 		/// </summary>
 		[JsonProperty("lowestPricedOffers")]
-		public List<LowestPricedOffer> LowestPricedOffers { get; set; }
+		public List<LowestPricedOffer> LowestPricedOffers { get; set; } 
 
 		/// <summary>
 		/// A list of reference prices for the specified ASIN `marketplaceId` combination.
 		/// </summary>
 		[JsonProperty("referencePrices")]
-		public List<ReferencePrice> ReferencePrices { get; set; }
+		public List<ReferencePrice> ReferencePrices { get; set; } 
 
 		/// <summary>
 		/// A list of errors
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

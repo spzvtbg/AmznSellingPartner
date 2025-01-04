@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// marketplace.
 		/// </summary>
 		[JsonProperty("customPlacement")]
-		public List<CustomPlacementInput> CustomPlacement { get; set; }
+		public List<CustomPlacementInput> CustomPlacement { get; set; } 
 	}
 }

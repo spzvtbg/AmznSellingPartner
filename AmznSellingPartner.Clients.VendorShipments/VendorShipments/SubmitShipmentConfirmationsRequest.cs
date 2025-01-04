@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// A list of one or more shipment confirmations.
 		/// </summary>
 		[JsonProperty("shipmentConfirmations")]
-		public List<ShipmentConfirmation> ShipmentConfirmations { get; set; }
+		public List<ShipmentConfirmation> ShipmentConfirmations { get; set; } 
 	}
 }

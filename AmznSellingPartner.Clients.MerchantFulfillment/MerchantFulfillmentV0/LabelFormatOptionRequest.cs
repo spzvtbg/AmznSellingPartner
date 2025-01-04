@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// When true, include a packing slip with the label.
 		/// </summary>
 		[JsonProperty("IncludePackingSlipWithLabel")]
-		public bool IncludePackingSlipWithLabel { get; set; }
+		public bool IncludePackingSlipWithLabel { get; set; } 
 	}
 }

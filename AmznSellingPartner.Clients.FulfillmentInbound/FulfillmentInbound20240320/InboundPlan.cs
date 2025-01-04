@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("createdAt")]
 		[IsRequired]
-		public DateTime CreatedAt { get; set; }
+		public DateTime CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Identifier of an inbound plan.
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string InboundPlanId { get; set; }
+		public string InboundPlanId { get; set; } 
 
 		/// <summary>
 		/// The time at which the inbound plan was last updated. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -36,21 +36,21 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("lastUpdatedAt")]
 		[IsRequired]
-		public DateTime LastUpdatedAt { get; set; }
+		public DateTime LastUpdatedAt { get; set; } 
 
 		/// <summary>
 		/// A list of marketplace IDs.
 		/// </summary>
 		[JsonProperty("marketplaceIds")]
 		[IsRequired]
-		public List<string> MarketplaceIds { get; set; }
+		public List<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// Human-readable name of the inbound plan.
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// Packing options for the inbound plan. This property will be populated when it has been generated via
@@ -59,7 +59,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// be returned. Query the packing option for more details.
 		/// </summary>
 		[JsonProperty("packingOptions")]
-		public List<PackingOptionSummary> PackingOptions { get; set; }
+		public List<PackingOptionSummary> PackingOptions { get; set; } 
 
 		/// <summary>
 		/// Placement options for the inbound plan. This property will be populated when it has been generated via
@@ -67,7 +67,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// Query the placement option for more details.
 		/// </summary>
 		[JsonProperty("placementOptions")]
-		public List<PlacementOptionSummary> PlacementOptions { get; set; }
+		public List<PlacementOptionSummary> PlacementOptions { get; set; } 
 
 		/// <summary>
 		/// A list of shipment IDs for the inbound plan. This property is populated when it has been generated with
@@ -75,11 +75,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// Query the shipment for more details.
 		/// </summary>
 		[JsonProperty("shipments")]
-		public List<ShipmentSummary> Shipments { get; set; }
+		public List<ShipmentSummary> Shipments { get; set; } 
 
 		[JsonProperty("sourceAddress")]
 		[IsRequired]
-		public Address SourceAddress { get; set; }
+		public Address SourceAddress { get; set; } 
 
 		/// <summary>
 		/// Current status of the inbound plan. Possible values: `ACTIVE`, `VOIDED`, `SHIPPED`, `ERRORED`.
@@ -88,6 +88,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Status { get; set; }
+		public string Status { get; set; } 
 	}
 }

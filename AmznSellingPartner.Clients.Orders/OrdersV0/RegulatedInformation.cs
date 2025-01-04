@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("Fields")]
 		[IsRequired]
-		public List<RegulatedInformationField> Fields { get; set; }
+		public List<RegulatedInformationField> Fields { get; set; } 
 	}
 }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class DirectPurchaseResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public DirectPurchaseResult Payload { get; set; }
+		public DirectPurchaseResult Payload { get; set; } 
 	}
 }

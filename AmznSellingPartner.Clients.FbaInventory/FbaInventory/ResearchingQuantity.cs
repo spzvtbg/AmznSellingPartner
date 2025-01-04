@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// The total number of units currently being researched in Amazon's fulfillment network.
 		/// </summary>
 		[JsonProperty("totalResearchingQuantity")]
-		public int TotalResearchingQuantity { get; set; }
+		public int TotalResearchingQuantity { get; set; } 
 
 		/// <summary>
 		/// A list of quantity details for items currently being researched.
 		/// </summary>
 		[JsonProperty("researchingQuantityBreakdown")]
-		public List<ResearchingQuantityEntry> ResearchingQuantityBreakdown { get; set; }
+		public List<ResearchingQuantityEntry> ResearchingQuantityBreakdown { get; set; } 
 	}
 }

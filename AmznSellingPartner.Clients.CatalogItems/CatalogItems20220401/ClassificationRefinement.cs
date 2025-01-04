@@ -14,20 +14,20 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("numberOfResults")]
 		[IsRequired]
-		public int NumberOfResults { get; set; }
+		public int NumberOfResults { get; set; } 
 
 		/// <summary>
 		/// Display name for the classification.
 		/// </summary>
 		[JsonProperty("displayName")]
 		[IsRequired]
-		public string DisplayName { get; set; }
+		public string DisplayName { get; set; } 
 
 		/// <summary>
 		/// Identifier for the classification that can be used for search refinement purposes.
 		/// </summary>
 		[JsonProperty("classificationId")]
 		[IsRequired]
-		public string ClassificationId { get; set; }
+		public string ClassificationId { get; set; } 
 	}
 }

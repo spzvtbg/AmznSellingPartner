@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class LinkCarrierAccountResponse : BaseClass
 	{
 		[JsonProperty("registrationStatus")]
-		public AccountStatus RegistrationStatus { get; set; }
+		public AccountStatus RegistrationStatus { get; set; } 
 	}
 }

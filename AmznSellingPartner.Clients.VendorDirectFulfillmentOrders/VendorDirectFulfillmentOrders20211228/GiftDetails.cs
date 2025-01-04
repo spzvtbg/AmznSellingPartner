@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// Gift message to be printed in shipment.
 		/// </summary>
 		[JsonProperty("giftMessage")]
-		public string GiftMessage { get; set; }
+		public string GiftMessage { get; set; } 
 
 		/// <summary>
 		/// Gift wrap identifier for the gift wrapping, if any.
 		/// </summary>
 		[JsonProperty("giftWrapId")]
-		public string GiftWrapId { get; set; }
+		public string GiftWrapId { get; set; } 
 	}
 }

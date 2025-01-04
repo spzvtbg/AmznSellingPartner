@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string ServiceJobId { get; set; }
+		public string ServiceJobId { get; set; } 
 	}
 }

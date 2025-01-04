@@ -10,7 +10,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ShipmentSource : BaseClass
 	{
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		/// <summary>
 		/// The type of source for this shipment. Possible values: `SELLER_FACILITY`.
@@ -19,6 +19,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string SourceType { get; set; }
+		public string SourceType { get; set; } 
 	}
 }

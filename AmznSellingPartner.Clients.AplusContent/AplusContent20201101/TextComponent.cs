@@ -16,9 +16,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(10000)]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 
 		[JsonProperty("decoratorSet")]
-		public DecoratorSet DecoratorSet { get; set; }
+		public DecoratorSet DecoratorSet { get; set; } 
 	}
 }

@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// One or more unexpected errors occurred during the AddInventory operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

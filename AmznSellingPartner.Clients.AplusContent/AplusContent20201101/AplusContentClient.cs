@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using System;
 	using System.Threading.Tasks;
 
-	public class AplusContentClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class AplusContentClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of all A+ Content documents assigned to a selling partner. This operation returns only

@@ -16,29 +16,29 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// request is set to `SHOW`.
 		/// </summary>
 		[JsonProperty("expirationDetails")]
-		public List<ExpirationDetails> ExpirationDetails { get; set; }
+		public List<ExpirationDetails> ExpirationDetails { get; set; } 
 
 		[JsonProperty("inventoryDetails")]
-		public InventoryDetails InventoryDetails { get; set; }
+		public InventoryDetails InventoryDetails { get; set; } 
 
 		/// <summary>
 		/// The seller or merchant SKU.
 		/// </summary>
 		[JsonProperty("sku")]
 		[IsRequired]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 
 		/// <summary>
 		/// Total quantity that is in-transit from the seller and has not yet been received at an AWD Distribution
 		/// Center
 		/// </summary>
 		[JsonProperty("totalInboundQuantity")]
-		public long TotalInboundQuantity { get; set; }
+		public long TotalInboundQuantity { get; set; } 
 
 		/// <summary>
 		/// Total quantity that is present in AWD distribution centers.
 		/// </summary>
 		[JsonProperty("totalOnhandQuantity")]
-		public long TotalOnhandQuantity { get; set; }
+		public long TotalOnhandQuantity { get; set; } 
 	}
 }

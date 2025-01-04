@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[JsonProperty("errors")]
 		[IsRequired]
-		public List<Error> Errors { get; set; }
+		public List<Error> Errors { get; set; } 
 	}
 }

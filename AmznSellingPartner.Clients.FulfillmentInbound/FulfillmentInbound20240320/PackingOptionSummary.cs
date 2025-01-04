@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PackingOptionId { get; set; }
+		public string PackingOptionId { get; set; } 
 
 		/// <summary>
 		/// The status of a packing option. Possible values: 'OFFERED', 'ACCEPTED', 'EXPIRED'.
@@ -26,6 +26,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Status { get; set; }
+		public string Status { get; set; } 
 	}
 }

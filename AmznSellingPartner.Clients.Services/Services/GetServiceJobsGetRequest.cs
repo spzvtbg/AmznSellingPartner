@@ -12,19 +12,19 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("serviceOrderIds")]
 		[MinItems(1)]
 		[MaxItems(20)]
-		public CsvValue<string> ServiceOrderIds { get; set; }
+		public CsvValue<string> ServiceOrderIds { get; set; } 
 
 		/// <summary>
 		/// A list of one or more job status by which to filter the list of jobs.
 		/// </summary>
 		[InQuery("serviceJobStatus")]
-		public CsvValue<ServiceJobStatus> ServiceJobStatus { get; set; }
+		public CsvValue<ServiceJobStatus> ServiceJobStatus { get; set; } 
 
 		/// <summary>
 		/// String returned in the response of your previous request.
 		/// </summary>
 		[InQuery("pageToken")]
-		public string PageToken { get; set; }
+		public string PageToken { get; set; } 
 
 		/// <summary>
 		/// A non-negative integer that indicates the maximum number of jobs to return in the list, Value must be
@@ -33,19 +33,19 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("pageSize")]
 		[Minimum(1)]
 		[Maximum(20)]
-		public int PageSize { get; set; }
+		public int PageSize { get; set; } = 20;
 
 		/// <summary>
 		/// Sort fields on which you want to sort the output.
 		/// </summary>
 		[InQuery("sortField")]
-		public SortField SortField { get; set; }
+		public SortField SortField { get; set; } 
 
 		/// <summary>
 		/// Sort order for the query you want to perform.
 		/// </summary>
 		[InQuery("sortOrder")]
-		public SortOrder SortOrder { get; set; }
+		public SortOrder SortOrder { get; set; } 
 
 		/// <summary>
 		/// A date used for selecting jobs created at or after a specified time. Must be in ISO 8601 format. Required
@@ -53,13 +53,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// an error.
 		/// </summary>
 		[InQuery("createdAfter")]
-		public string CreatedAfter { get; set; }
+		public string CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// A date used for selecting jobs created at or before a specified time. Must be in ISO 8601 format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		public string CreatedBefore { get; set; }
+		public string CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// A date used for selecting jobs updated at or after a specified time. Must be in ISO 8601 format. Required
@@ -67,27 +67,27 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// error.
 		/// </summary>
 		[InQuery("lastUpdatedAfter")]
-		public string LastUpdatedAfter { get; set; }
+		public string LastUpdatedAfter { get; set; } 
 
 		/// <summary>
 		/// A date used for selecting jobs updated at or before a specified time. Must be in ISO 8601 format.
 		/// </summary>
 		[InQuery("lastUpdatedBefore")]
-		public string LastUpdatedBefore { get; set; }
+		public string LastUpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// A date used for filtering jobs schedules at or after a specified time. Must be in ISO 8601 format. Schedule
 		/// end date should not be earlier than schedule start date.
 		/// </summary>
 		[InQuery("scheduleStartDate")]
-		public string ScheduleStartDate { get; set; }
+		public string ScheduleStartDate { get; set; } 
 
 		/// <summary>
 		/// A date used for filtering jobs schedules at or before a specified time. Must be in ISO 8601 format. Schedule
 		/// end date should not be earlier than schedule start date.
 		/// </summary>
 		[InQuery("scheduleEndDate")]
-		public string ScheduleEndDate { get; set; }
+		public string ScheduleEndDate { get; set; } 
 
 		/// <summary>
 		/// Used to select jobs that were placed in the specified marketplaces.
@@ -95,7 +95,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// List of Amazon Standard Identification Numbers (ASIN) of the items. Max values supported is 20.
@@ -103,7 +103,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("asins")]
 		[MinItems(1)]
 		[MaxItems(20)]
-		public CsvValue<string> Asins { get; set; }
+		public CsvValue<string> Asins { get; set; } 
 
 		/// <summary>
 		/// A defined set of related knowledge, skills, experience, tools, materials, and work processes common to
@@ -112,7 +112,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("requiredSkills")]
 		[MinItems(1)]
 		[MaxItems(20)]
-		public CsvValue<string> RequiredSkills { get; set; }
+		public CsvValue<string> RequiredSkills { get; set; } 
 
 		/// <summary>
 		/// List of Amazon-defined identifiers for the region scope. Max values supported is 50.
@@ -120,6 +120,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("storeIds")]
 		[MinItems(1)]
 		[MaxItems(50)]
-		public CsvValue<string> StoreIds { get; set; }
+		public CsvValue<string> StoreIds { get; set; } 
 	}
 }

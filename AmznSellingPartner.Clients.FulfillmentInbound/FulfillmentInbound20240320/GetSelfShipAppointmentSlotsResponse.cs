@@ -10,10 +10,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class GetSelfShipAppointmentSlotsResponse : BaseClass
 	{
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		[JsonProperty("selfShipAppointmentSlotsAvailability")]
 		[IsRequired]
-		public SelfShipAppointmentSlotsAvailability SelfShipAppointmentSlotsAvailability { get; set; }
+		public SelfShipAppointmentSlotsAvailability SelfShipAppointmentSlotsAvailability { get; set; } 
 	}
 }

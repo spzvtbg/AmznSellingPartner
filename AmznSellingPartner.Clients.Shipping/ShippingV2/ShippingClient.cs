@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System;
 	using System.Threading.Tasks;
 
-	public class ShippingClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ShippingClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns the available shipping service offerings.  **Usage Plan:**  | Rate (requests per second) | Burst

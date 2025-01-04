@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class ContactDetails : BaseClass
 	{
 		[JsonProperty("primary")]
-		public Primary Primary { get; set; }
+		public Primary Primary { get; set; } 
 	}
 }

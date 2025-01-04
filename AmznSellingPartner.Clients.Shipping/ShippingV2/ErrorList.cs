@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("errors")]
 		[IsRequired]
-		public List<Error> Errors { get; set; }
+		public List<Error> Errors { get; set; } 
 	}
 }

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 	using System;
 	using System.Threading.Tasks;
 
-	public class TokensClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class TokensClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a Restricted Data Token (RDT) for one or more restricted resources that you specify. A restricted

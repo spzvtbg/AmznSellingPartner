@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// Amazon marketplace identifier.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Name of the product type associated with the Amazon catalog item.
 		/// </summary>
 		[JsonProperty("productType")]
-		public string ProductType { get; set; }
+		public string ProductType { get; set; } 
 	}
 }

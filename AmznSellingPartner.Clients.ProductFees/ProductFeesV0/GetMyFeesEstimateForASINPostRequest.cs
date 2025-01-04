@@ -7,13 +7,13 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	{
 		[InBody("body")]
 		[IsRequired]
-		public GetMyFeesEstimateRequest Body { get; set; }
+		public GetMyFeesEstimateRequest Body { get; set; } 
 
 		/// <summary>
 		/// The Amazon Standard Identification Number (ASIN) of the item.
 		/// </summary>
 		[InPath("Asin")]
 		[IsRequired]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 	}
 }

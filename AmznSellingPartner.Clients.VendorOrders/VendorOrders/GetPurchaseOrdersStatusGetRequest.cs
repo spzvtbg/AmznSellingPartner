@@ -13,74 +13,74 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		[InQuery("limit")]
 		[Minimum(1)]
 		[Maximum(100)]
-		public long Limit { get; set; }
+		public long Limit { get; set; } 
 
 		/// <summary>
 		/// Sort in ascending or descending order by purchase order creation date.
 		/// </summary>
 		[InQuery("sortOrder")]
-		public SortOrder SortOrder { get; set; }
+		public SortOrder SortOrder { get; set; } 
 
 		/// <summary>
 		/// Used for pagination when there are more purchase orders than the specified result size limit.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// Purchase orders that became available after this timestamp will be included in the result. Must be in
 		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		public DateTime CreatedAfter { get; set; }
+		public DateTime CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Purchase orders that became available before this timestamp will be included in the result. Must be in
 		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		public DateTime CreatedBefore { get; set; }
+		public DateTime CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Purchase orders for which the last purchase order update happened after this timestamp will be included
 		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedAfter")]
-		public DateTime UpdatedAfter { get; set; }
+		public DateTime UpdatedAfter { get; set; } 
 
 		/// <summary>
 		/// Purchase orders for which the last purchase order update happened before this timestamp will be included
 		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedBefore")]
-		public DateTime UpdatedBefore { get; set; }
+		public DateTime UpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// Provides purchase order status for the specified purchase order number.
 		/// </summary>
 		[InQuery("purchaseOrderNumber")]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// Filters purchase orders based on the specified purchase order status. If not included in filter, this
 		/// will return purchase orders for all statuses.
 		/// </summary>
 		[InQuery("purchaseOrderStatus")]
-		public PurchaseOrderStatus PurchaseOrderStatus { get; set; }
+		public PurchaseOrderStatus PurchaseOrderStatus { get; set; } 
 
 		/// <summary>
 		/// Filters purchase orders based on their item confirmation status. If the item confirmation status is not
 		/// included in the filter, purchase orders for all confirmation statuses are included.
 		/// </summary>
 		[InQuery("itemConfirmationStatus")]
-		public ItemConfirmationStatus ItemConfirmationStatus { get; set; }
+		public ItemConfirmationStatus ItemConfirmationStatus { get; set; } 
 
 		/// <summary>
 		/// Filters purchase orders based on the purchase order's item receive status. If the item receive status
 		/// is not included in the filter, purchase orders for all receive statuses are included.
 		/// </summary>
 		[InQuery("itemReceiveStatus")]
-		public ItemReceiveStatus ItemReceiveStatus { get; set; }
+		public ItemReceiveStatus ItemReceiveStatus { get; set; } 
 
 		/// <summary>
 		/// Filters purchase orders based on the specified ordering vendor code. This value should be same as 'sellingParty.partyId'
@@ -88,7 +88,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// in the vendor group used to authorize API client application are returned.
 		/// </summary>
 		[InQuery("orderingVendorCode")]
-		public string OrderingVendorCode { get; set; }
+		public string OrderingVendorCode { get; set; } 
 
 		/// <summary>
 		/// Filters purchase orders for a specific buyer's Fulfillment Center/warehouse by providing ship to location
@@ -97,6 +97,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// orders.
 		/// </summary>
 		[InQuery("shipToPartyId")]
-		public string ShipToPartyId { get; set; }
+		public string ShipToPartyId { get; set; } 
 	}
 }

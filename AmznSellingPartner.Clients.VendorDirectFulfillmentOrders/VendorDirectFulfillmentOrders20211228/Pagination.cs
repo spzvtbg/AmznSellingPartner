@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// return.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

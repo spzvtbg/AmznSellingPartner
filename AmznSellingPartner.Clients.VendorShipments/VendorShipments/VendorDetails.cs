@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Name/Address and tax details of the selling party.
 		/// </summary>
 		[JsonProperty("sellingParty")]
-		public PartyIdentification SellingParty { get; set; }
+		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
 		/// Unique vendor shipment id which is not used in last 365 days
 		/// </summary>
 		[JsonProperty("vendorShipmentIdentifier")]
-		public string VendorShipmentIdentifier { get; set; }
+		public string VendorShipmentIdentifier { get; set; } 
 	}
 }

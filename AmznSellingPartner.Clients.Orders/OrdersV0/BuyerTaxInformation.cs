@@ -11,24 +11,24 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// Business buyer's company legal name.
 		/// </summary>
 		[JsonProperty("BuyerLegalCompanyName")]
-		public string BuyerLegalCompanyName { get; set; }
+		public string BuyerLegalCompanyName { get; set; } 
 
 		/// <summary>
 		/// Business buyer's address.
 		/// </summary>
 		[JsonProperty("BuyerBusinessAddress")]
-		public string BuyerBusinessAddress { get; set; }
+		public string BuyerBusinessAddress { get; set; } 
 
 		/// <summary>
 		/// Business buyer's tax registration ID.
 		/// </summary>
 		[JsonProperty("BuyerTaxRegistrationId")]
-		public string BuyerTaxRegistrationId { get; set; }
+		public string BuyerTaxRegistrationId { get; set; } 
 
 		/// <summary>
 		/// Business buyer's tax office.
 		/// </summary>
 		[JsonProperty("BuyerTaxOffice")]
-		public string BuyerTaxOffice { get; set; }
+		public string BuyerTaxOffice { get; set; } 
 	}
 }

@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The number of Amazon Points granted with the purchase of an item.
 		/// </summary>
 		[JsonProperty("PointsNumber")]
-		public int PointsNumber { get; set; }
+		public int PointsNumber { get; set; } 
 
 		/// <summary>
 		/// The monetary value of the Amazon Points granted.
 		/// </summary>
 		[JsonProperty("PointsMonetaryValue")]
-		public Money PointsMonetaryValue { get; set; }
+		public Money PointsMonetaryValue { get; set; } 
 	}
 }

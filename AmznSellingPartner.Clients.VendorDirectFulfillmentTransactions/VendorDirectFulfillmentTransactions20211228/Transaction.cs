@@ -15,20 +15,20 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 		/// </summary>
 		[JsonProperty("transactionId")]
 		[IsRequired]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 
 		/// <summary>
 		/// Current processing status of the transaction.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public Status Status { get; set; }
+		public Status Status { get; set; } 
 
 		/// <summary>
 		/// Error code and message for the failed transaction. Only available when transaction status is 'Failur
 		/// e'.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

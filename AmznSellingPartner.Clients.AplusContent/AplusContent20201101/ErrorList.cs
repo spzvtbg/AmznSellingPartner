@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// </summary>
 		[JsonProperty("errors")]
 		[IsRequired]
-		public List<Error> Errors { get; set; }
+		public List<Error> Errors { get; set; } 
 	}
 }

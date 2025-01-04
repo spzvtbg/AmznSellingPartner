@@ -16,15 +16,15 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// </summary>
 		[JsonProperty("TimeOfFeesEstimation")]
 		[IsRequired]
-		public DateTime TimeOfFeesEstimation { get; set; }
+		public DateTime TimeOfFeesEstimation { get; set; } 
 
 		/// <summary>
 		/// Total estimated fees for a given item, price, and fulfillment channel.
 		/// </summary>
 		[JsonProperty("TotalFeesEstimate")]
-		public MoneyType TotalFeesEstimate { get; set; }
+		public MoneyType TotalFeesEstimate { get; set; } 
 
 		[JsonProperty("FeeDetailList")]
-		public FeeDetailList FeeDetailList { get; set; }
+		public FeeDetailList FeeDetailList { get; set; } 
 	}
 }

@@ -14,18 +14,18 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// </summary>
 		[JsonProperty("ListingPrice")]
 		[IsRequired]
-		public MoneyType ListingPrice { get; set; }
+		public MoneyType ListingPrice { get; set; } 
 
 		/// <summary>
 		/// The shipping cost.
 		/// </summary>
 		[JsonProperty("Shipping")]
-		public MoneyType Shipping { get; set; }
+		public MoneyType Shipping { get; set; } 
 
 		/// <summary>
 		/// The number of Amazon Points offered with the purchase of an item.
 		/// </summary>
 		[JsonProperty("Points")]
-		public Points Points { get; set; }
+		public Points Points { get; set; } 
 	}
 }

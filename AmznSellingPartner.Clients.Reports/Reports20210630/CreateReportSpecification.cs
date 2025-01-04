@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public class CreateReportSpecification : BaseClass
 	{
 		[JsonProperty("reportOptions")]
-		public ReportOptions ReportOptions { get; set; }
+		public ReportOptions ReportOptions { get; set; } 
 
 		/// <summary>
 		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("reportType")]
 		[IsRequired]
-		public string ReportType { get; set; }
+		public string ReportType { get; set; } 
 
 		/// <summary>
 		/// The start of a date and time range, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// be prior to or equal to the current date and time. Not all report types make use of this.
 		/// </summary>
 		[JsonProperty("dataStartTime")]
-		public DateTime DataStartTime { get; set; }
+		public DateTime DataStartTime { get; set; } 
 
 		/// <summary>
 		/// The end of a date and time range, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -37,7 +37,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// be prior to or equal to the current date and time. Not all report types make use of this.
 		/// </summary>
 		[JsonProperty("dataEndTime")]
-		public DateTime DataEndTime { get; set; }
+		public DateTime DataEndTime { get; set; } 
 
 		/// <summary>
 		/// A list of marketplace identifiers. The report document's contents will contain data for all of the specified
@@ -47,6 +47,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(25)]
-		public List<string> MarketplaceIds { get; set; }
+		public List<string> MarketplaceIds { get; set; } 
 	}
 }

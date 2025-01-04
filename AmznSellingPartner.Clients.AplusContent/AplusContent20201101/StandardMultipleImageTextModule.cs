@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardMultipleImageTextModule : BaseClass
 	{
 		[JsonProperty("blocks")]
-		public List<StandardImageTextCaptionBlock> Blocks { get; set; }
+		public List<StandardImageTextCaptionBlock> Blocks { get; set; } 
 	}
 }

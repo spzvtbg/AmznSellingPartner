@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[JsonProperty("errors")]
 		[IsRequired]
-		public List<Error> Errors { get; set; }
+		public List<Error> Errors { get; set; } 
 	}
 }

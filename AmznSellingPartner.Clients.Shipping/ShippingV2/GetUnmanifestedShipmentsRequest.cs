@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetUnmanifestedShipmentsRequest : BaseClass
 	{
 		[JsonProperty("clientReferenceDetails")]
-		public ClientReferenceDetails ClientReferenceDetails { get; set; }
+		public ClientReferenceDetails ClientReferenceDetails { get; set; } 
 	}
 }

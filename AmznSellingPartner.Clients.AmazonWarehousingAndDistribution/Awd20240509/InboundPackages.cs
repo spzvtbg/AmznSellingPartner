@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[JsonProperty("packagesToInbound")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<DistributionPackageQuantity> PackagesToInbound { get; set; }
+		public List<DistributionPackageQuantity> PackagesToInbound { get; set; } 
 	}
 }

@@ -11,18 +11,18 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Input appointment time details.
 		/// </summary>
 		[JsonProperty("fulfillmentTime")]
-		public FulfillmentTime FulfillmentTime { get; set; }
+		public FulfillmentTime FulfillmentTime { get; set; } 
 
 		/// <summary>
 		/// Resources involved in appointment fulfillment.
 		/// </summary>
 		[JsonProperty("appointmentResources")]
-		public AppointmentResources AppointmentResources { get; set; }
+		public AppointmentResources AppointmentResources { get; set; } 
 
 		/// <summary>
 		/// Documents specific to appointment fulfillment.
 		/// </summary>
 		[JsonProperty("fulfillmentDocuments")]
-		public FulfillmentDocuments FulfillmentDocuments { get; set; }
+		public FulfillmentDocuments FulfillmentDocuments { get; set; } 
 	}
 }

@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("trackingNumber")]
 		[IsRequired]
-		public string TrackingNumber { get; set; }
+		public string TrackingNumber { get; set; } 
 
 		/// <summary>
 		/// Indicates the shipment status code of the package that provides transportation information for Amazon
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("statusCode")]
 		[IsRequired]
-		public string StatusCode { get; set; }
+		public string StatusCode { get; set; } 
 
 		/// <summary>
 		/// Provides a reason code for the status of the package that will provide additional information about the
@@ -37,7 +37,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("reasonCode")]
 		[IsRequired]
-		public string ReasonCode { get; set; }
+		public string ReasonCode { get; set; } 
 
 		/// <summary>
 		/// The date and time when the shipment status was updated. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -46,13 +46,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("statusDateTime")]
 		[IsRequired]
-		public DateTime StatusDateTime { get; set; }
+		public DateTime StatusDateTime { get; set; } 
 
 		[JsonProperty("statusLocationAddress")]
 		[IsRequired]
-		public Address StatusLocationAddress { get; set; }
+		public Address StatusLocationAddress { get; set; } 
 
 		[JsonProperty("shipmentSchedule")]
-		public ShipmentSchedule ShipmentSchedule { get; set; }
+		public ShipmentSchedule ShipmentSchedule { get; set; } 
 	}
 }

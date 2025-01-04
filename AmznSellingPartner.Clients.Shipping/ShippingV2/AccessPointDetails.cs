@@ -5,6 +5,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class AccessPointDetails : BaseClass
 	{
 		[JsonProperty("accessPointId")]
-		public AccessPointId AccessPointId { get; set; }
+		public AccessPointId AccessPointId { get; set; } 
 	}
 }

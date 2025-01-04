@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// The unique identifier assigned to each notification.
 		/// </summary>
 		[JsonProperty("notificationId")]
-		public string NotificationId { get; set; }
+		public string NotificationId { get; set; } 
 	}
 }

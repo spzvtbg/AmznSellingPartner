@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class TimeOfDay : BaseClass
 	{
 		[JsonProperty("hourOfDay")]
-		public int HourOfDay { get; set; }
+		public int HourOfDay { get; set; } 
 
 		[JsonProperty("minuteOfHour")]
-		public int MinuteOfHour { get; set; }
+		public int MinuteOfHour { get; set; } 
 
 		[JsonProperty("secondOfMinute")]
-		public int SecondOfMinute { get; set; }
+		public int SecondOfMinute { get; set; } 
 	}
 }

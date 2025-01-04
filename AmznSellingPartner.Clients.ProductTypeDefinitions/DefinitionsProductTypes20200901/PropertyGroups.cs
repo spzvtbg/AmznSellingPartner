@@ -5,6 +5,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	public class PropertyGroups : BaseClass
 	{
 		[JsonProperty("")]
-		public PropertyGroup AdditionalValue { get; set; }
+		public PropertyGroup AdditionalValue { get; set; } 
 	}
 }

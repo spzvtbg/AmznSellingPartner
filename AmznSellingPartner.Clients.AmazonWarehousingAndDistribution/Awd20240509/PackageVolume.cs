@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("unitOfMeasurement")]
 		[IsRequired]
-		public VolumeUnitOfMeasurement UnitOfMeasurement { get; set; }
+		public VolumeUnitOfMeasurement UnitOfMeasurement { get; set; } 
 
 		/// <summary>
 		/// The package volume value.
 		/// </summary>
 		[JsonProperty("volume")]
 		[IsRequired]
-		public double Volume { get; set; }
+		public double Volume { get; set; } 
 	}
 }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 	public class GetPaymentMethodsResponse : BaseClass
 	{
 		[JsonProperty("paymentMethods")]
-		public PaymentMethodList PaymentMethods { get; set; }
+		public PaymentMethodList PaymentMethods { get; set; } 
 	}
 }

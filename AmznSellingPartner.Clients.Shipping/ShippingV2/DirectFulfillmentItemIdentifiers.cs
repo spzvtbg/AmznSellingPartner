@@ -16,13 +16,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("lineItemID")]
 		[IsRequired]
-		public string LineItemID { get; set; }
+		public string LineItemID { get; set; } 
 
 		/// <summary>
 		/// A unique identifier for an item provided by the client for a direct fulfillment shipment. This is only
 		/// populated if a single line item has multiple pieces. Defaults to 1.
 		/// </summary>
 		[JsonProperty("pieceNumber")]
-		public string PieceNumber { get; set; }
+		public string PieceNumber { get; set; } 
 	}
 }

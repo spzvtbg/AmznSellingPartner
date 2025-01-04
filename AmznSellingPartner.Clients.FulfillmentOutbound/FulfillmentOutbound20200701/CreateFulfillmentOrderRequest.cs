@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// The marketplace the fulfillment order is placed against.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A fulfillment order identifier that the seller creates to track their fulfillment order. The `SellerFulfillmentOrderId`
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("sellerFulfillmentOrderId")]
 		[IsRequired]
 		[MaxLength(40)]
-		public string SellerFulfillmentOrderId { get; set; }
+		public string SellerFulfillmentOrderId { get; set; } 
 
 		/// <summary>
 		/// A fulfillment order identifier that the seller creates. This value displays as the order identifier in
@@ -38,7 +38,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("displayableOrderId")]
 		[IsRequired]
 		[MaxLength(40)]
-		public string DisplayableOrderId { get; set; }
+		public string DisplayableOrderId { get; set; } 
 
 		/// <summary>
 		/// The date and time of the fulfillment order. Displays as the order date in recipient-facing materials
@@ -46,7 +46,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("displayableOrderDate")]
 		[IsRequired]
-		public Timestamp DisplayableOrderDate { get; set; }
+		public Timestamp DisplayableOrderDate { get; set; } 
 
 		/// <summary>
 		/// Order-specific text that appears in recipient-facing materials such as the outbound shipment packing
@@ -55,7 +55,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("displayableOrderComment")]
 		[IsRequired]
 		[MaxLength(750)]
-		public string DisplayableOrderComment { get; set; }
+		public string DisplayableOrderComment { get; set; } 
 
 		/// <summary>
 		/// The shipping method for the fulfillment order. When this value is `ScheduledDelivery`, choose Ship for
@@ -66,17 +66,17 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("shippingSpeedCategory")]
 		[IsRequired]
-		public ShippingSpeedCategory ShippingSpeedCategory { get; set; }
+		public ShippingSpeedCategory ShippingSpeedCategory { get; set; } 
 
 		[JsonProperty("deliveryWindow")]
-		public DeliveryWindow DeliveryWindow { get; set; }
+		public DeliveryWindow DeliveryWindow { get; set; } 
 
 		/// <summary>
 		/// The destination address for the fulfillment order.
 		/// </summary>
 		[JsonProperty("destinationAddress")]
 		[IsRequired]
-		public Address DestinationAddress { get; set; }
+		public Address DestinationAddress { get; set; } 
 
 		/// <summary>
 		/// The delivery preferences applied to the destination address. These preferences are applied when possible
@@ -86,32 +86,32 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// unattended at the front door, unless you specify otherwise.
 		/// </summary>
 		[JsonProperty("deliveryPreferences")]
-		public DeliveryPreferences DeliveryPreferences { get; set; }
+		public DeliveryPreferences DeliveryPreferences { get; set; } 
 
 		[JsonProperty("fulfillmentAction")]
-		public FulfillmentAction FulfillmentAction { get; set; }
+		public FulfillmentAction FulfillmentAction { get; set; } 
 
 		[JsonProperty("fulfillmentPolicy")]
-		public FulfillmentPolicy FulfillmentPolicy { get; set; }
+		public FulfillmentPolicy FulfillmentPolicy { get; set; } 
 
 		[JsonProperty("codSettings")]
-		public CODSettings CodSettings { get; set; }
+		public CODSettings CodSettings { get; set; } 
 
 		/// <summary>
 		/// The two-character country code for the country from which the fulfillment order ships. Must be in ISO
 		/// 3166-1 alpha-2 format.
 		/// </summary>
 		[JsonProperty("shipFromCountryCode")]
-		public string ShipFromCountryCode { get; set; }
+		public string ShipFromCountryCode { get; set; } 
 
 		[JsonProperty("notificationEmails")]
-		public NotificationEmailList NotificationEmails { get; set; }
+		public NotificationEmailList NotificationEmails { get; set; } 
 
 		/// <summary>
 		/// A list of features and their fulfillment policies to apply to the order.
 		/// </summary>
 		[JsonProperty("featureConstraints")]
-		public List<FeatureSettings> FeatureConstraints { get; set; }
+		public List<FeatureSettings> FeatureConstraints { get; set; } 
 
 		/// <summary>
 		/// A list of items to include in the fulfillment order preview, including quantity. Maximum of 100 line
@@ -119,13 +119,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("items")]
 		[IsRequired]
-		public CreateFulfillmentOrderItemList Items { get; set; }
+		public CreateFulfillmentOrderItemList Items { get; set; } 
 
 		/// <summary>
 		/// An array of various payment attributes related to this fulfillment order. This property is required if
 		/// the order is placed against the India marketplace.
 		/// </summary>
 		[JsonProperty("paymentInformation")]
-		public PaymentInformationList PaymentInformation { get; set; }
+		public PaymentInformationList PaymentInformation { get; set; } 
 	}
 }

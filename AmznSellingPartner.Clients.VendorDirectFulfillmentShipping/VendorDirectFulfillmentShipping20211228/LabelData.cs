@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// used as a reference to refer to this package from the pallet level.
 		/// </summary>
 		[JsonProperty("packageIdentifier")]
-		public string PackageIdentifier { get; set; }
+		public string PackageIdentifier { get; set; } 
 
 		/// <summary>
 		/// Package tracking identifier from the shipping carrier.
 		/// </summary>
 		[JsonProperty("trackingNumber")]
-		public string TrackingNumber { get; set; }
+		public string TrackingNumber { get; set; } 
 
 		/// <summary>
 		/// Ship method to be used for shipping the order. Amazon defines Ship Method Codes indicating shipping carrier
@@ -29,19 +29,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// will be provided to each vendor during the implementation.
 		/// </summary>
 		[JsonProperty("shipMethod")]
-		public string ShipMethod { get; set; }
+		public string ShipMethod { get; set; } 
 
 		/// <summary>
 		/// Shipping method name for internal reference.
 		/// </summary>
 		[JsonProperty("shipMethodName")]
-		public string ShipMethodName { get; set; }
+		public string ShipMethodName { get; set; } 
 
 		/// <summary>
 		/// This field will contain the Base64encoded string of the shipment label content.
 		/// </summary>
 		[JsonProperty("content")]
 		[IsRequired]
-		public string Content { get; set; }
+		public string Content { get; set; } 
 	}
 }

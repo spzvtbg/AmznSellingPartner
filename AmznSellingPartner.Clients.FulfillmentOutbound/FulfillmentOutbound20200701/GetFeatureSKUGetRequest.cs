@@ -10,14 +10,14 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The name of the feature.
 		/// </summary>
 		[InPath("featureName")]
 		[IsRequired]
-		public string FeatureName { get; set; }
+		public string FeatureName { get; set; } 
 
 		/// <summary>
 		/// Used to identify an item in the given marketplace. `SellerSKU` is qualified by the seller's `SellerId`,
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InPath("sellerSku")]
 		[IsRequired]
-		public string SellerSku { get; set; }
+		public string SellerSku { get; set; } 
 	}
 }

@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Encountered errors for the `cancelServiceJobByServiceJobId` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

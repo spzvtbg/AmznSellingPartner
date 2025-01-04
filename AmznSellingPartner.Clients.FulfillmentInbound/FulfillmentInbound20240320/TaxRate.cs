@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// Rate of cess tax.
 		/// </summary>
 		[JsonProperty("cessRate")]
-		public double CessRate { get; set; }
+		public double CessRate { get; set; } 
 
 		/// <summary>
 		/// Rate of gst tax.
 		/// </summary>
 		[JsonProperty("gstRate")]
-		public double GstRate { get; set; }
+		public double GstRate { get; set; } 
 
 		/// <summary>
 		/// Type of tax. Possible values: `CGST`, `SGST`, `IGST`, `TOTAL_TAX`.
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("taxType")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string TaxType { get; set; }
+		public string TaxType { get; set; } 
 	}
 }

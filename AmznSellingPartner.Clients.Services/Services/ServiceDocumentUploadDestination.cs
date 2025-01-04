@@ -14,23 +14,23 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("uploadDestinationId")]
 		[IsRequired]
-		public string UploadDestinationId { get; set; }
+		public string UploadDestinationId { get; set; } 
 
 		/// <summary>
 		/// The URL to which to upload the file.
 		/// </summary>
 		[JsonProperty("url")]
 		[IsRequired]
-		public string Url { get; set; }
+		public string Url { get; set; } 
 
 		[JsonProperty("encryptionDetails")]
 		[IsRequired]
-		public EncryptionDetails EncryptionDetails { get; set; }
+		public EncryptionDetails EncryptionDetails { get; set; } 
 
 		/// <summary>
 		/// The headers to include in the upload request.
 		/// </summary>
 		[JsonProperty("headers")]
-		public Headers Headers { get; set; }
+		public Headers Headers { get; set; } 
 	}
 }

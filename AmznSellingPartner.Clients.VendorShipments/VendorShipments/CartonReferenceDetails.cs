@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Pallet level carton count is mandatory for single item pallet and optional for mixed item pallet.
 		/// </summary>
 		[JsonProperty("cartonCount")]
-		public int CartonCount { get; set; }
+		public int CartonCount { get; set; } 
 
 		/// <summary>
 		/// Array of reference numbers for the carton that are part of this pallet/shipment. Please provide the cartonSequenceNumber
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("cartonReferenceNumbers")]
 		[IsRequired]
-		public List<string> CartonReferenceNumbers { get; set; }
+		public List<string> CartonReferenceNumbers { get; set; } 
 	}
 }

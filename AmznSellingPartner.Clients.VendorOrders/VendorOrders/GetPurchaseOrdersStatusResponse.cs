@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// Current status of list of purchase orders.
 		/// </summary>
 		[JsonProperty("payload")]
-		public OrderListStatus Payload { get; set; }
+		public OrderListStatus Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

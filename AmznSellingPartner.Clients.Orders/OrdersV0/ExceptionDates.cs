@@ -14,18 +14,18 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// 8601</a> date format.
 		/// </summary>
 		[JsonProperty("ExceptionDate")]
-		public string ExceptionDate { get; set; }
+		public string ExceptionDate { get; set; } 
 
 		/// <summary>
 		/// Boolean indicating if the business is closed or open on that date.
 		/// </summary>
 		[JsonProperty("IsOpen")]
-		public bool IsOpen { get; set; }
+		public bool IsOpen { get; set; } 
 
 		/// <summary>
 		/// Time window during the day when the business is open.
 		/// </summary>
 		[JsonProperty("OpenIntervals")]
-		public List<OpenInterval> OpenIntervals { get; set; }
+		public List<OpenInterval> OpenIntervals { get; set; } 
 	}
 }

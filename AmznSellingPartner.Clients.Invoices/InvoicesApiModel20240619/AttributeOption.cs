@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// The description of the attribute value.
 		/// </summary>
 		[JsonProperty("description")]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 
 		/// <summary>
 		/// The possible values for the attribute option.
 		/// </summary>
 		[JsonProperty("value")]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

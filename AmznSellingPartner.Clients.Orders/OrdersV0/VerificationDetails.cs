@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// Information regarding the prescription tied to the order.
 		/// </summary>
 		[JsonProperty("prescriptionDetail")]
-		public PrescriptionDetail PrescriptionDetail { get; set; }
+		public PrescriptionDetail PrescriptionDetail { get; set; } 
 	}
 }

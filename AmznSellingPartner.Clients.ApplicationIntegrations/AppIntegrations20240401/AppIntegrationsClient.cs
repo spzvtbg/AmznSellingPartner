@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	using System;
 	using System.Threading.Tasks;
 
-	public class AppIntegrationsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class AppIntegrationsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Create a notification for sellers in Seller Central.  **Usage Plan:**  | Rate (requests per second) |

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public SubmitInvoiceRequest Body { get; set; }
+		public SubmitInvoiceRequest Body { get; set; } 
 	}
 }

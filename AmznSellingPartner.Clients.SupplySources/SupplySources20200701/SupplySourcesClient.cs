@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	using System;
 	using System.Threading.Tasks;
 
-	public class SupplySourcesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class SupplySourcesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// The path to retrieve paginated supply sources.

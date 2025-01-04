@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardTextBlock : BaseClass
 	{
 		[JsonProperty("headline")]
-		public TextComponent Headline { get; set; }
+		public TextComponent Headline { get; set; } 
 
 		[JsonProperty("body")]
-		public ParagraphComponent Body { get; set; }
+		public ParagraphComponent Body { get; set; } 
 	}
 }

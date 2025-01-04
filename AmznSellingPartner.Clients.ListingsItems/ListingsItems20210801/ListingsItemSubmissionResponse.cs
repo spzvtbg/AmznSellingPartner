@@ -16,32 +16,32 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("sku")]
 		[IsRequired]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 
 		/// <summary>
 		/// The status of the listings item submission.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public Status Status { get; set; }
+		public Status Status { get; set; } 
 
 		/// <summary>
 		/// The unique identifier of the listings item submission.
 		/// </summary>
 		[JsonProperty("submissionId")]
 		[IsRequired]
-		public string SubmissionId { get; set; }
+		public string SubmissionId { get; set; } 
 
 		/// <summary>
 		/// Listings item issues related to the listings item submission.
 		/// </summary>
 		[JsonProperty("issues")]
-		public List<Issue> Issues { get; set; }
+		public List<Issue> Issues { get; set; } 
 
 		/// <summary>
 		/// Identity attributes associated with the item in the Amazon catalog, such as the ASIN.
 		/// </summary>
 		[JsonProperty("identifiers")]
-		public ItemIdentifiers Identifiers { get; set; }
+		public ItemIdentifiers Identifiers { get; set; } 
 	}
 }

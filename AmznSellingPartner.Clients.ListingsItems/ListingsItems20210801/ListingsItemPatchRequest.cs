@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("productType")]
 		[IsRequired]
-		public string ProductType { get; set; }
+		public string ProductType { get; set; } 
 
 		/// <summary>
 		/// One or more JSON Patch operations to perform on the listings item.
@@ -24,6 +24,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		[JsonProperty("patches")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<PatchOperation> Patches { get; set; }
+		public List<PatchOperation> Patches { get; set; } 
 	}
 }

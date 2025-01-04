@@ -16,11 +16,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("expiration")]
 		[Pattern("^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])")]
-		public string Expiration { get; set; }
+		public string Expiration { get; set; } 
 
 		[JsonProperty("labelOwner")]
 		[IsRequired]
-		public LabelOwner LabelOwner { get; set; }
+		public LabelOwner LabelOwner { get; set; } 
 
 		/// <summary>
 		/// The manufacturing lot code.
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("manufacturingLotCode")]
 		[MinLength(1)]
 		[MaxLength(256)]
-		public string ManufacturingLotCode { get; set; }
+		public string ManufacturingLotCode { get; set; } 
 
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier of a specific SKU.
@@ -37,11 +37,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Msku { get; set; }
+		public string Msku { get; set; } 
 
 		[JsonProperty("prepOwner")]
 		[IsRequired]
-		public PrepOwner PrepOwner { get; set; }
+		public PrepOwner PrepOwner { get; set; } 
 
 		/// <summary>
 		/// The number of units of the specified MSKU that will be shipped.
@@ -50,6 +50,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 	}
 }

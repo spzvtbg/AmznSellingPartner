@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("origin")]
 		[IsRequired]
-		public Origin Origin { get; set; }
+		public Origin Origin { get; set; } 
 
 		/// <summary>
 		/// The destination for the delivery offer.
 		/// </summary>
 		[JsonProperty("destination")]
 		[IsRequired]
-		public Destination Destination { get; set; }
+		public Destination Destination { get; set; } 
 	}
 }

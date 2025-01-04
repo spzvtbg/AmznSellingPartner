@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[JsonProperty("templateId")]
 		[IsRequired]
-		public string TemplateId { get; set; }
+		public string TemplateId { get; set; } 
 
 		/// <summary>
 		/// The unique identifier that maps each notification status to a reason code.
 		/// </summary>
 		[JsonProperty("deletionReason")]
 		[IsRequired]
-		public DeletionReason DeletionReason { get; set; }
+		public DeletionReason DeletionReason { get; set; } 
 	}
 }

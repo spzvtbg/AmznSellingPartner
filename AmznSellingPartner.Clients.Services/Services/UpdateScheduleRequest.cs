@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("schedules")]
 		[IsRequired]
-		public AvailabilityRecords Schedules { get; set; }
+		public AvailabilityRecords Schedules { get; set; } 
 	}
 }

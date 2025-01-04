@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("imagePositionType")]
 		[IsRequired]
-		public PositionType ImagePositionType { get; set; }
+		public PositionType ImagePositionType { get; set; } 
 
 		[JsonProperty("block")]
-		public StandardImageTextBlock Block { get; set; }
+		public StandardImageTextBlock Block { get; set; } 
 	}
 }

@@ -16,14 +16,14 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Timestamp when the shipment was created.
 		/// </summary>
 		[JsonProperty("createdAt")]
-		public DateTime CreatedAt { get; set; }
+		public DateTime CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Optional client-provided reference ID that can be used to correlate this shipment with client resources.
 		/// For example, to map this shipment to an internal bookkeeping order record.
 		/// </summary>
 		[JsonProperty("externalReferenceId")]
-		public string ExternalReferenceId { get; set; }
+		public string ExternalReferenceId { get; set; } 
 
 		/// <summary>
 		/// The AWD inbound order ID that this inbound shipment belongs to.
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[JsonProperty("orderId")]
 		[IsRequired]
 		[MinLength(1)]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 
 		/// <summary>
 		/// A unique shipment ID.
@@ -39,16 +39,16 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[JsonProperty("shipmentId")]
 		[IsRequired]
 		[MinLength(1)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 
 		[JsonProperty("shipmentStatus")]
 		[IsRequired]
-		public InboundShipmentStatus ShipmentStatus { get; set; }
+		public InboundShipmentStatus ShipmentStatus { get; set; } 
 
 		/// <summary>
 		/// Timestamp when the shipment was updated.
 		/// </summary>
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; }
+		public DateTime UpdatedAt { get; set; } 
 	}
 }

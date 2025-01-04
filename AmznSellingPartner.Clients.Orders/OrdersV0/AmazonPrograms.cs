@@ -19,6 +19,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("Programs")]
 		[IsRequired]
-		public List<string> Programs { get; set; }
+		public List<string> Programs { get; set; } 
 	}
 }

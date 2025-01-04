@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// header is deprecated and no longer returned.
 		/// </summary>
 		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; }
+		public string XAmznRateLimitLimit { get; set; } 
 
 		/// <summary>
 		/// The unique request reference ID.
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; }
+		public string XAmznRequestId { get; set; } 
 
-		public bool Succeeded { get; set; }
+		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.
 		/// </summary>
-		public ErrorList ErrorList { get; set; }
+		public ErrorList ErrorList { get; set; } 
 	}
 }

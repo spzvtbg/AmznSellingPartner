@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string ContentUpdatePreviewId { get; set; }
+		public string ContentUpdatePreviewId { get; set; } 
 
 		/// <summary>
 		/// The time at which the content update expires. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -27,14 +27,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("expiration")]
 		[IsRequired]
-		public DateTime Expiration { get; set; }
+		public DateTime Expiration { get; set; } 
 
 		[JsonProperty("requestedUpdates")]
 		[IsRequired]
-		public RequestedUpdates RequestedUpdates { get; set; }
+		public RequestedUpdates RequestedUpdates { get; set; } 
 
 		[JsonProperty("transportationOption")]
 		[IsRequired]
-		public TransportationOption TransportationOption { get; set; }
+		public TransportationOption TransportationOption { get; set; } 
 	}
 }

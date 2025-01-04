@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The body of the request to `updateItemComplianceDetails`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public UpdateItemComplianceDetailsRequest Body { get; set; }
+		public UpdateItemComplianceDetailsRequest Body { get; set; } 
 	}
 }

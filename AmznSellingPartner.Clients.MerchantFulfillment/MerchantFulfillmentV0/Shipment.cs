@@ -11,43 +11,43 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	{
 		[JsonProperty("ShipmentId")]
 		[IsRequired]
-		public ShipmentId ShipmentId { get; set; }
+		public ShipmentId ShipmentId { get; set; } 
 
 		[JsonProperty("AmazonOrderId")]
 		[IsRequired]
-		public AmazonOrderId AmazonOrderId { get; set; }
+		public AmazonOrderId AmazonOrderId { get; set; } 
 
 		[JsonProperty("SellerOrderId")]
-		public SellerOrderId SellerOrderId { get; set; }
+		public SellerOrderId SellerOrderId { get; set; } 
 
 		[JsonProperty("ItemList")]
 		[IsRequired]
-		public ItemList ItemList { get; set; }
+		public ItemList ItemList { get; set; } 
 
 		/// <summary>
 		/// The address of the sender.
 		/// </summary>
 		[JsonProperty("ShipFromAddress")]
 		[IsRequired]
-		public Address ShipFromAddress { get; set; }
+		public Address ShipFromAddress { get; set; } 
 
 		/// <summary>
 		/// The destination address for the shipment.
 		/// </summary>
 		[JsonProperty("ShipToAddress")]
 		[IsRequired]
-		public Address ShipToAddress { get; set; }
+		public Address ShipToAddress { get; set; } 
 
 		[JsonProperty("PackageDimensions")]
 		[IsRequired]
-		public PackageDimensions PackageDimensions { get; set; }
+		public PackageDimensions PackageDimensions { get; set; } 
 
 		/// <summary>
 		/// The package weight.
 		/// </summary>
 		[JsonProperty("Weight")]
 		[IsRequired]
-		public Weight Weight { get; set; }
+		public Weight Weight { get; set; } 
 
 		/// <summary>
 		/// If you specify `DeclaredValue` in a previous call to the `createShipment` operation, then `Insurance`
@@ -57,11 +57,11 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("Insurance")]
 		[IsRequired]
-		public CurrencyAmount Insurance { get; set; }
+		public CurrencyAmount Insurance { get; set; } 
 
 		[JsonProperty("ShippingService")]
 		[IsRequired]
-		public ShippingService ShippingService { get; set; }
+		public ShippingService ShippingService { get; set; } 
 
 		/// <summary>
 		/// Data for creating a shipping label and dimensions for printing the label. If the shipment is canceled,
@@ -69,29 +69,29 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("Label")]
 		[IsRequired]
-		public Label Label { get; set; }
+		public Label Label { get; set; } 
 
 		/// <summary>
 		/// The shipment status.
 		/// </summary>
 		[JsonProperty("Status")]
 		[IsRequired]
-		public ShipmentStatus Status { get; set; }
+		public ShipmentStatus Status { get; set; } 
 
 		[JsonProperty("TrackingId")]
-		public TrackingId TrackingId { get; set; }
+		public TrackingId TrackingId { get; set; } 
 
 		/// <summary>
 		/// The date and time the shipment is created.
 		/// </summary>
 		[JsonProperty("CreatedDate")]
 		[IsRequired]
-		public Timestamp CreatedDate { get; set; }
+		public Timestamp CreatedDate { get; set; } 
 
 		/// <summary>
 		/// The date and time of the last update.
 		/// </summary>
 		[JsonProperty("LastUpdatedDate")]
-		public Timestamp LastUpdatedDate { get; set; }
+		public Timestamp LastUpdatedDate { get; set; } 
 	}
 }

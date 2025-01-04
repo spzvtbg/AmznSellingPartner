@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	{
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public String MarketplaceId { get; set; }
+		public String MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// An array allowing users to specify orders to be scheduled.
@@ -21,10 +21,10 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		[JsonProperty("orderScheduleDetailsList")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<OrderScheduleDetails> OrderScheduleDetailsList { get; set; }
+		public List<OrderScheduleDetails> OrderScheduleDetailsList { get; set; } 
 
 		[JsonProperty("labelFormat")]
 		[IsRequired]
-		public LabelFormat LabelFormat { get; set; }
+		public LabelFormat LabelFormat { get; set; } 
 	}
 }

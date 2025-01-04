@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("benefit")]
 		[IsRequired]
-		public string Benefit { get; set; }
+		public string Benefit { get; set; } 
 
 		[JsonProperty("reasonCode")]
 		[IsRequired]
-		public string ReasonCode { get; set; }
+		public string ReasonCode { get; set; } 
 	}
 }

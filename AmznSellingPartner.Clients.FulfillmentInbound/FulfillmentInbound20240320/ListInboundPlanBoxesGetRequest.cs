@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		public string InboundPlanId { get; set; }
+		public string InboundPlanId { get; set; } 
 
 		/// <summary>
 		/// The number of boxes to return in the response matching the given query.
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[InQuery("pageSize")]
 		[Minimum(1)]
 		[Maximum(1000)]
-		public int PageSize { get; set; }
+		public int PageSize { get; set; } = 10;
 
 		/// <summary>
 		/// A token to fetch a certain page when there are multiple pages worth of results. The value of this token
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[InQuery("paginationToken")]
 		[MinLength(0)]
 		[MaxLength(1024)]
-		public string PaginationToken { get; set; }
+		public string PaginationToken { get; set; } 
 	}
 }

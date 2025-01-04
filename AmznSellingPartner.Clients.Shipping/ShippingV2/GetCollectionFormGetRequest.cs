@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[InPath("collectionFormId")]
 		[IsRequired]
-		public string CollectionFormId { get; set; }
+		public string CollectionFormId { get; set; } 
 
 		/// <summary>
 		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
-		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; }
+		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; } 
 	}
 }

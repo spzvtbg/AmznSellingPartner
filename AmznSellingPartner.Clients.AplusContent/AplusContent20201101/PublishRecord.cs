@@ -11,25 +11,25 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		[JsonProperty("locale")]
 		[IsRequired]
-		public LanguageTag Locale { get; set; }
+		public LanguageTag Locale { get; set; } 
 
 		[JsonProperty("asin")]
 		[IsRequired]
-		public Asin Asin { get; set; }
+		public Asin Asin { get; set; } 
 
 		[JsonProperty("contentType")]
 		[IsRequired]
-		public ContentType ContentType { get; set; }
+		public ContentType ContentType { get; set; } 
 
 		[JsonProperty("contentSubType")]
-		public ContentSubType ContentSubType { get; set; }
+		public ContentSubType ContentSubType { get; set; } 
 
 		[JsonProperty("contentReferenceKey")]
 		[IsRequired]
-		public ContentReferenceKey ContentReferenceKey { get; set; }
+		public ContentReferenceKey ContentReferenceKey { get; set; } 
 	}
 }

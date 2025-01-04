@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// </summary>
 		[JsonProperty("sellingParty")]
 		[IsRequired]
-		public PartyIdentification SellingParty { get; set; }
+		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
 		/// The warehouse code of the vendor.
 		/// </summary>
 		[JsonProperty("shipFromParty")]
 		[IsRequired]
-		public PartyIdentification ShipFromParty { get; set; }
+		public PartyIdentification ShipFromParty { get; set; } 
 	}
 }

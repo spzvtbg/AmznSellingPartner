@@ -11,16 +11,16 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	{
 		[JsonProperty("expectedQuantity")]
 		[IsRequired]
-		public InventoryQuantity ExpectedQuantity { get; set; }
+		public InventoryQuantity ExpectedQuantity { get; set; } 
 
 		[JsonProperty("receivedQuantity")]
-		public InventoryQuantity ReceivedQuantity { get; set; }
+		public InventoryQuantity ReceivedQuantity { get; set; } 
 
 		/// <summary>
 		/// The merchant stock keeping unit
 		/// </summary>
 		[JsonProperty("sku")]
 		[IsRequired]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 	}
 }

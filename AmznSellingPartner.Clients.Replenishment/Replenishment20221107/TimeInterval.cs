@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("startDate")]
 		[IsRequired]
-		public DateTime StartDate { get; set; }
+		public DateTime StartDate { get; set; } 
 
 		/// <summary>
 		/// When this object is used as a request parameter, the specified `endDate` is adjusted based on the aggregation
@@ -38,6 +38,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("endDate")]
 		[IsRequired]
-		public DateTime EndDate { get; set; }
+		public DateTime EndDate { get; set; } 
 	}
 }

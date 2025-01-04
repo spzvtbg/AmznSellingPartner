@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	using System;
 	using System.Threading.Tasks;
 
-	public class EasyShipClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class EasyShipClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns time slots available for Easy Ship orders to be scheduled based on the package weight and dimensions

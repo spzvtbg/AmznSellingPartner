@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 		/// The response payload for the getTransaction operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public TransactionStatus Payload { get; set; }
+		public TransactionStatus Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

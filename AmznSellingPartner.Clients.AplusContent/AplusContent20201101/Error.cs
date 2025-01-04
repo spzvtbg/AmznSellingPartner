@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[JsonProperty("code")]
 		[IsRequired]
 		[MinLength(1)]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// A human readable description of the error condition.
@@ -23,13 +23,13 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[JsonProperty("message")]
 		[IsRequired]
 		[MinLength(1)]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		/// <summary>
 		/// Additional information, if available, to clarify the error condition.
 		/// </summary>
 		[JsonProperty("details")]
 		[MinLength(1)]
-		public string Details { get; set; }
+		public string Details { get; set; } 
 	}
 }

@@ -11,34 +11,34 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Field to sort results by. By default, the response will be sorted by UPDATED_AT.
 		/// </summary>
 		[InQuery("sortBy")]
-		public SortBy SortBy { get; set; }
+		public SortBy SortBy { get; set; } 
 
 		/// <summary>
 		/// Sort the response in ASCENDING or DESCENDING order. By default, the response will be sorted in DESCENDING
 		/// order.
 		/// </summary>
 		[InQuery("sortOrder")]
-		public SortOrder SortOrder { get; set; }
+		public SortOrder SortOrder { get; set; } 
 
 		/// <summary>
 		/// Filter by inbound shipment status.
 		/// </summary>
 		[InQuery("shipmentStatus")]
-		public ShipmentStatus ShipmentStatus { get; set; }
+		public ShipmentStatus ShipmentStatus { get; set; } 
 
 		/// <summary>
 		/// List the inbound shipments that were updated after a certain time (inclusive). The date must be in <a
 		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("updatedAfter")]
-		public DateTime UpdatedAfter { get; set; }
+		public DateTime UpdatedAfter { get; set; } 
 
 		/// <summary>
 		/// List the inbound shipments that were updated before a certain time (inclusive). The date must be in <a
 		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("updatedBefore")]
-		public DateTime UpdatedBefore { get; set; }
+		public DateTime UpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// Maximum number of results to return.
@@ -46,7 +46,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[InQuery("maxResults")]
 		[Minimum(1)]
 		[Maximum(200)]
-		public int MaxResults { get; set; }
+		public int MaxResults { get; set; } = 25;
 
 		/// <summary>
 		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the
@@ -56,6 +56,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// pages.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

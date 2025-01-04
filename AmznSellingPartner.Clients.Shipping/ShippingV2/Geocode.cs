@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// The latitude of access point.
 		/// </summary>
 		[JsonProperty("latitude")]
-		public string Latitude { get; set; }
+		public string Latitude { get; set; } 
 
 		/// <summary>
 		/// The longitude of access point.
 		/// </summary>
 		[JsonProperty("longitude")]
-		public string Longitude { get; set; }
+		public string Longitude { get; set; } 
 	}
 }

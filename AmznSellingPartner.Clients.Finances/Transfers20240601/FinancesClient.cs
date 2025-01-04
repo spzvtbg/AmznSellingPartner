@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 	using System;
 	using System.Threading.Tasks;
 
-	public class FinancesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class FinancesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Initiates an on-demand payout to the seller's default deposit method in Seller Central for the given

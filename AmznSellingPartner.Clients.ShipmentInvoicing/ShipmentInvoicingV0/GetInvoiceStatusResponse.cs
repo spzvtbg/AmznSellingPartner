@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// The payload for the getInvoiceStatus operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public ShipmentInvoiceStatusResponse Payload { get; set; }
+		public ShipmentInvoiceStatusResponse Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

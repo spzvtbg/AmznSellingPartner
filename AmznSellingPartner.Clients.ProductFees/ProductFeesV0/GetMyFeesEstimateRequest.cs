@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	public class GetMyFeesEstimateRequest : BaseClass
 	{
 		[JsonProperty("FeesEstimateRequest")]
-		public FeesEstimateRequest FeesEstimateRequest { get; set; }
+		public FeesEstimateRequest FeesEstimateRequest { get; set; } 
 	}
 }

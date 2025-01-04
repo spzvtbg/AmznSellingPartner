@@ -16,12 +16,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[JsonProperty("requiredShipDate")]
 		[IsRequired]
-		public DateTime RequiredShipDate { get; set; }
+		public DateTime RequiredShipDate { get; set; } 
 
 		/// <summary>
 		/// Delivery date promised to the Amazon customer.
 		/// </summary>
 		[JsonProperty("promisedDeliveryDate")]
-		public DateTime PromisedDeliveryDate { get; set; }
+		public DateTime PromisedDeliveryDate { get; set; } 
 	}
 }

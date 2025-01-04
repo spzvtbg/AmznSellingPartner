@@ -19,10 +19,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(6)]
-		public int Position { get; set; }
+		public int Position { get; set; } 
 
 		[JsonProperty("image")]
-		public ImageComponent Image { get; set; }
+		public ImageComponent Image { get; set; } 
 
 		/// <summary>
 		/// The comparison product title.
@@ -30,16 +30,16 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[JsonProperty("title")]
 		[MinLength(1)]
 		[MaxLength(80)]
-		public string Title { get; set; }
+		public string Title { get; set; } 
 
 		[JsonProperty("asin")]
-		public Asin Asin { get; set; }
+		public Asin Asin { get; set; } 
 
 		/// <summary>
 		/// Determines whether this block of content is visually highlighted.
 		/// </summary>
 		[JsonProperty("highlight")]
-		public bool Highlight { get; set; }
+		public bool Highlight { get; set; } 
 
 		/// <summary>
 		/// Comparison metrics for the product.
@@ -47,6 +47,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[JsonProperty("metrics")]
 		[MinItems(0)]
 		[MaxItems(10)]
-		public List<PlainTextItem> Metrics { get; set; }
+		public List<PlainTextItem> Metrics { get; set; } 
 	}
 }

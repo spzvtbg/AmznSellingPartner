@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// "zh-CN", and "en-GB".
 		/// </summary>
 		[JsonProperty("locale")]
-		public string Locale { get; set; }
+		public string Locale { get; set; } 
 	}
 }

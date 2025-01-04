@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class PurchaseShipmentResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public PurchaseShipmentResult Payload { get; set; }
+		public PurchaseShipmentResult Payload { get; set; } 
 	}
 }

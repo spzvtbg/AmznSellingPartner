@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 	public class NotificationParameters : BaseClass
 	{
 		[JsonProperty("")]
-		public object AdditionalValue { get; set; }
+		public object AdditionalValue { get; set; } 
 	}
 }

@@ -10,17 +10,17 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	public class FeesEstimateByIdRequest : BaseClass
 	{
 		[JsonProperty("FeesEstimateRequest")]
-		public FeesEstimateRequest FeesEstimateRequest { get; set; }
+		public FeesEstimateRequest FeesEstimateRequest { get; set; } 
 
 		[JsonProperty("IdType")]
 		[IsRequired]
-		public IdType IdType { get; set; }
+		public IdType IdType { get; set; } 
 
 		/// <summary>
 		/// The item identifier.
 		/// </summary>
 		[JsonProperty("IdValue")]
 		[IsRequired]
-		public string IdValue { get; set; }
+		public string IdValue { get; set; } 
 	}
 }

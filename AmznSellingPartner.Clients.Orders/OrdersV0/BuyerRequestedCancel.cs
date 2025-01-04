@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// Indicate whether the buyer has requested cancellation.  **Possible Values**: `true`, `false`.
 		/// </summary>
 		[JsonProperty("IsBuyerRequestedCancel")]
-		public string IsBuyerRequestedCancel { get; set; }
+		public string IsBuyerRequestedCancel { get; set; } 
 
 		/// <summary>
 		/// The reason that the buyer requested cancellation.
 		/// </summary>
 		[JsonProperty("BuyerCancelReason")]
-		public string BuyerCancelReason { get; set; }
+		public string BuyerCancelReason { get; set; } 
 	}
 }

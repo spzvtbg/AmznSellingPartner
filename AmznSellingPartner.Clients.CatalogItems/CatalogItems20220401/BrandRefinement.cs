@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("numberOfResults")]
 		[IsRequired]
-		public int NumberOfResults { get; set; }
+		public int NumberOfResults { get; set; } 
 
 		/// <summary>
 		/// Brand name. For display and can be used as a search refinement.
 		/// </summary>
 		[JsonProperty("brandName")]
 		[IsRequired]
-		public string BrandName { get; set; }
+		public string BrandName { get; set; } 
 	}
 }

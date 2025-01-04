@@ -16,13 +16,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("amount")]
 		[IsRequired]
-		public int Amount { get; set; }
+		public int Amount { get; set; } 
 
 		/// <summary>
 		/// Unit of measure for the shipped quantity.
 		/// </summary>
 		[JsonProperty("unitOfMeasure")]
 		[IsRequired]
-		public string UnitOfMeasure { get; set; }
+		public string UnitOfMeasure { get; set; } 
 	}
 }

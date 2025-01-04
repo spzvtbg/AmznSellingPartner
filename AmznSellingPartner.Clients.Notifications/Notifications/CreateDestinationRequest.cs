@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[JsonProperty("resourceSpecification")]
 		[IsRequired]
-		public DestinationResourceSpecification ResourceSpecification { get; set; }
+		public DestinationResourceSpecification ResourceSpecification { get; set; } 
 
 		/// <summary>
 		/// A developer-defined name to help identify this destination.
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 	}
 }

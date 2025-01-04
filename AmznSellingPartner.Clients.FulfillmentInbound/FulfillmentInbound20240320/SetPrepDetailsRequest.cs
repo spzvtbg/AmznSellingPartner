@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A list of MSKUs and related prep details.
@@ -28,6 +28,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(100)]
-		public List<MskuPrepDetailInput> MskuPrepDetails { get; set; }
+		public List<MskuPrepDetailInput> MskuPrepDetails { get; set; } 
 	}
 }

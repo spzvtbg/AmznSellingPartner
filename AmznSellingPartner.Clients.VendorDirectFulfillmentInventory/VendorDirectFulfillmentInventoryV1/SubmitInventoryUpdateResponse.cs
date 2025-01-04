@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// The response payload for the submitInventoryUpdate operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public TransactionReference Payload { get; set; }
+		public TransactionReference Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

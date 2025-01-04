@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// Indicates the locker number
 		/// </summary>
 		[JsonProperty("lockerNumber")]
-		public string LockerNumber { get; set; }
+		public string LockerNumber { get; set; } 
 
 		/// <summary>
 		/// Indicates the locker access code
 		/// </summary>
 		[JsonProperty("lockerAccessCode")]
-		public string LockerAccessCode { get; set; }
+		public string LockerAccessCode { get; set; } 
 	}
 }

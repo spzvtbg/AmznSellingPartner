@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// An array of delivery offers.
 		/// </summary>
 		[JsonProperty("deliveryOffers")]
-		public DeliveryOffersList DeliveryOffers { get; set; }
+		public DeliveryOffersList DeliveryOffers { get; set; } 
 	}
 }

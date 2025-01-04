@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// feature.
 		/// </summary>
 		[JsonProperty("autoEnrollment")]
-		public AutoEnrollmentPreference AutoEnrollment { get; set; }
+		public AutoEnrollmentPreference AutoEnrollment { get; set; } 
 	}
 }

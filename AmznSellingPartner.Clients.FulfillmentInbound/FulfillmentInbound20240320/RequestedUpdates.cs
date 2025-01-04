@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// A list of boxes that will be present in the shipment after the update.
 		/// </summary>
 		[JsonProperty("boxes")]
-		public List<BoxUpdateInput> Boxes { get; set; }
+		public List<BoxUpdateInput> Boxes { get; set; } 
 
 		/// <summary>
 		/// A list of all items that will be present in the shipment after the update.
 		/// </summary>
 		[JsonProperty("items")]
-		public List<ItemInput> Items { get; set; }
+		public List<ItemInput> Items { get; set; } 
 	}
 }

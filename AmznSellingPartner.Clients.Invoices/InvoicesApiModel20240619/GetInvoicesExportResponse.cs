@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class GetInvoicesExportResponse : BaseClass
 	{
 		[JsonProperty("export")]
-		public Export Export { get; set; }
+		public Export Export { get; set; } 
 	}
 }

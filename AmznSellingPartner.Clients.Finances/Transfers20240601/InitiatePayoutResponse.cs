@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[JsonProperty("payoutReferenceId")]
 		[IsRequired]
-		public string PayoutReferenceId { get; set; }
+		public string PayoutReferenceId { get; set; } 
 	}
 }

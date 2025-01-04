@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("channelType")]
 		[IsRequired]
-		public ChannelType ChannelType { get; set; }
+		public ChannelType ChannelType { get; set; } 
 
 		[JsonProperty("amazonOrderDetails")]
-		public AmazonOrderDetails AmazonOrderDetails { get; set; }
+		public AmazonOrderDetails AmazonOrderDetails { get; set; } 
 
 		[JsonProperty("amazonShipmentDetails")]
-		public AmazonShipmentDetails AmazonShipmentDetails { get; set; }
+		public AmazonShipmentDetails AmazonShipmentDetails { get; set; } 
 	}
 }

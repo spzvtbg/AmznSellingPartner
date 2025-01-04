@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[InPath("orderId")]
 		[IsRequired]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 
 		/// <summary>
 		/// The request body for the `updateVerificationStatus` operation.
 		/// </summary>
 		[InBody("payload")]
 		[IsRequired]
-		public UpdateVerificationStatusRequest Payload { get; set; }
+		public UpdateVerificationStatusRequest Payload { get; set; } 
 	}
 }

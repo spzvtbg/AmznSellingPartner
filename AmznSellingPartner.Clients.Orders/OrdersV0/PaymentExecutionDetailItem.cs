@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	{
 		[JsonProperty("Payment")]
 		[IsRequired]
-		public Money Payment { get; set; }
+		public Money Payment { get; set; } 
 
 		/// <summary>
 		/// A sub-payment method for a COD order.  **Possible values**: * `COD`: Cash on delivery  * `GC`: Gift card
@@ -19,6 +19,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("PaymentMethod")]
 		[IsRequired]
-		public string PaymentMethod { get; set; }
+		public string PaymentMethod { get; set; } 
 	}
 }

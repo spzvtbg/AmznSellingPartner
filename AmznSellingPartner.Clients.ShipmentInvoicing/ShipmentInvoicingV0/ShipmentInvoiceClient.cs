@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 	using System;
 	using System.Threading.Tasks;
 
-	public class ShipmentInvoiceClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ShipmentInvoiceClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns the shipment details required to issue an invoice for the specified shipment.  **Usage Plan:**

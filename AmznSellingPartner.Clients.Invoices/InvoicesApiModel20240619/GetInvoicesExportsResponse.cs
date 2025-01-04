@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[JsonProperty("exports")]
 		[MaxItems(100)]
-		public List<Export> Exports { get; set; }
+		public List<Export> Exports { get; set; } 
 
 		/// <summary>
 		/// This token is returned when the number of results exceeds the specified `pageSize` value. To get the
@@ -24,6 +24,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// parameters.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

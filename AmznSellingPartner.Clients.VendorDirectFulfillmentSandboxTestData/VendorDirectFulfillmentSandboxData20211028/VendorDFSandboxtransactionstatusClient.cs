@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorDFSandboxtransactionstatusClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorDFSandboxtransactionstatusClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns the status of the transaction indicated by the specified transactionId. If the transaction was

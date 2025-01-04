@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// A list of orders.
 		/// </summary>
 		[JsonProperty("payload")]
-		public OrderList Payload { get; set; }
+		public OrderList Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

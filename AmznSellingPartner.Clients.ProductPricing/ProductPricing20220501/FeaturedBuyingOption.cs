@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("buyingOptionType")]
 		[IsRequired]
-		public BuyingOptionType BuyingOptionType { get; set; }
+		public BuyingOptionType BuyingOptionType { get; set; } 
 
 		/// <summary>
 		/// A list of segmented featured offers for the current buying option type. A segment can be considered as
@@ -29,6 +29,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		[JsonProperty("segmentedFeaturedOffers")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<SegmentedFeaturedOffer> SegmentedFeaturedOffers { get; set; }
+		public List<SegmentedFeaturedOffer> SegmentedFeaturedOffers { get; set; } 
 	}
 }

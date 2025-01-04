@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("Asin")]
 		[IsRequired]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		[JsonProperty("AdditionalInputs")]
 		[IsRequired]
-		public AdditionalInputsList AdditionalInputs { get; set; }
+		public AdditionalInputsList AdditionalInputs { get; set; } 
 	}
 }

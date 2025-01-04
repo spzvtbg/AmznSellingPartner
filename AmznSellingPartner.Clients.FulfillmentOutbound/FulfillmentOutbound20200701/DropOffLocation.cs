@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("type")]
 		[IsRequired]
-		public Type Type { get; set; }
+		public Type Type { get; set; } 
 
 		/// <summary>
 		/// Additional information about the drop-off location that can vary depending on the type of drop-off location
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// of the designated neighbor.
 		/// </summary>
 		[JsonProperty("attributes")]
-		public Attributes Attributes { get; set; }
+		public Attributes Attributes { get; set; } 
 	}
 }

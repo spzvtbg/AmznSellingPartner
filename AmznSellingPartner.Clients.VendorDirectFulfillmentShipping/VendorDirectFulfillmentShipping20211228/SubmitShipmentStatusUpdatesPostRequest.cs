@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public SubmitShipmentStatusUpdatesRequest Body { get; set; }
+		public SubmitShipmentStatusUpdatesRequest Body { get; set; } 
 	}
 }

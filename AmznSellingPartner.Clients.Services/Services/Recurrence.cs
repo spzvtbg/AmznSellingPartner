@@ -17,19 +17,19 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("endTime")]
 		[IsRequired]
-		public DateTime EndTime { get; set; }
+		public DateTime EndTime { get; set; } 
 
 		/// <summary>
 		/// Days of the week when recurrence is valid. If the schedule is valid every Monday, input will only contain
 		/// `MONDAY` in the list.
 		/// </summary>
 		[JsonProperty("daysOfWeek")]
-		public List<DayOfWeek> DaysOfWeek { get; set; }
+		public List<DayOfWeek> DaysOfWeek { get; set; } 
 
 		/// <summary>
 		/// Days of the month when recurrence is valid.
 		/// </summary>
 		[JsonProperty("daysOfMonth")]
-		public List<int> DaysOfMonth { get; set; }
+		public List<int> DaysOfMonth { get; set; } 
 	}
 }

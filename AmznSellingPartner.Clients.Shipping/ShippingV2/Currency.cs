@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("value")]
 		[IsRequired]
-		public double Value { get; set; }
+		public double Value { get; set; } 
 
 		/// <summary>
 		/// The ISO 4217 format 3-character currency code.
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[IsRequired]
 		[MinLength(3)]
 		[MaxLength(3)]
-		public string Unit { get; set; }
+		public string Unit { get; set; } 
 	}
 }

@@ -11,36 +11,36 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	{
 		[JsonProperty("asin")]
 		[IsRequired]
-		public ItemAsin Asin { get; set; }
+		public ItemAsin Asin { get; set; } 
 
 		[JsonProperty("attributes")]
-		public ItemAttributes Attributes { get; set; }
+		public ItemAttributes Attributes { get; set; } 
 
 		[JsonProperty("classifications")]
-		public ItemBrowseClassifications Classifications { get; set; }
+		public ItemBrowseClassifications Classifications { get; set; } 
 
 		[JsonProperty("dimensions")]
-		public ItemDimensions Dimensions { get; set; }
+		public ItemDimensions Dimensions { get; set; } 
 
 		[JsonProperty("identifiers")]
-		public ItemIdentifiers Identifiers { get; set; }
+		public ItemIdentifiers Identifiers { get; set; } 
 
 		[JsonProperty("images")]
-		public ItemImages Images { get; set; }
+		public ItemImages Images { get; set; } 
 
 		[JsonProperty("productTypes")]
-		public ItemProductTypes ProductTypes { get; set; }
+		public ItemProductTypes ProductTypes { get; set; } 
 
 		[JsonProperty("relationships")]
-		public ItemRelationships Relationships { get; set; }
+		public ItemRelationships Relationships { get; set; } 
 
 		[JsonProperty("salesRanks")]
-		public ItemSalesRanks SalesRanks { get; set; }
+		public ItemSalesRanks SalesRanks { get; set; } 
 
 		[JsonProperty("summaries")]
-		public ItemSummaries Summaries { get; set; }
+		public ItemSummaries Summaries { get; set; } 
 
 		[JsonProperty("vendorDetails")]
-		public ItemVendorDetails VendorDetails { get; set; }
+		public ItemVendorDetails VendorDetails { get; set; } 
 	}
 }

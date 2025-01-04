@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using System;
 	using System.Threading.Tasks;
 
-	public class MerchantFulfillmentClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class MerchantFulfillmentClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of shipping service offers that satisfy the specified shipment request details.  **Usage

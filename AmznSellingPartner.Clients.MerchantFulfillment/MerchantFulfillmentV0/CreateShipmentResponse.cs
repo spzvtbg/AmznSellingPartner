@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// Shipment information.
 		/// </summary>
 		[JsonProperty("payload")]
-		public Shipment Payload { get; set; }
+		public Shipment Payload { get; set; } 
 
 		/// <summary>
 		/// One or more unexpected errors occurred during the `createShipment` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

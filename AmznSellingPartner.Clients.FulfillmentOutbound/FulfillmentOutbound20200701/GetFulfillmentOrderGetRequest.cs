@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[InPath("sellerFulfillmentOrderId")]
 		[IsRequired]
 		[MaxLength(40)]
-		public string SellerFulfillmentOrderId { get; set; }
+		public string SellerFulfillmentOrderId { get; set; } 
 	}
 }

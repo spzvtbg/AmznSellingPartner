@@ -11,24 +11,24 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	{
 		[JsonProperty("fulfillmentOrder")]
 		[IsRequired]
-		public FulfillmentOrder FulfillmentOrder { get; set; }
+		public FulfillmentOrder FulfillmentOrder { get; set; } 
 
 		[JsonProperty("fulfillmentOrderItems")]
 		[IsRequired]
-		public FulfillmentOrderItemList FulfillmentOrderItems { get; set; }
+		public FulfillmentOrderItemList FulfillmentOrderItems { get; set; } 
 
 		[JsonProperty("fulfillmentShipments")]
-		public FulfillmentShipmentList FulfillmentShipments { get; set; }
+		public FulfillmentShipmentList FulfillmentShipments { get; set; } 
 
 		[JsonProperty("returnItems")]
 		[IsRequired]
-		public ReturnItemList ReturnItems { get; set; }
+		public ReturnItemList ReturnItems { get; set; } 
 
 		[JsonProperty("returnAuthorizations")]
 		[IsRequired]
-		public ReturnAuthorizationList ReturnAuthorizations { get; set; }
+		public ReturnAuthorizationList ReturnAuthorizations { get; set; } 
 
 		[JsonProperty("paymentInformation")]
-		public PaymentInformationList PaymentInformation { get; set; }
+		public PaymentInformationList PaymentInformation { get; set; } 
 	}
 }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class TrackingSummary : BaseClass
 	{
 		[JsonProperty("status")]
-		public Status Status { get; set; }
+		public Status Status { get; set; } 
 	}
 }

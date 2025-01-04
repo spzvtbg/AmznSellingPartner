@@ -17,10 +17,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string SlotId { get; set; }
+		public string SlotId { get; set; } 
 
 		[JsonProperty("slotTime")]
 		[IsRequired]
-		public AppointmentSlotTime SlotTime { get; set; }
+		public AppointmentSlotTime SlotTime { get; set; } 
 	}
 }

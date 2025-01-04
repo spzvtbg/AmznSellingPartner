@@ -42,7 +42,10 @@
 
         internal CsProperty HasDefaultValue(string @default)
         {
-            this.defaultValue = @default;
+            if (!string.IsNullOrWhiteSpace(@default))
+            {
+                this.defaultValue = @default;
+            }
 
             return this;
         }
@@ -105,7 +108,11 @@
                 }
             }
 
-            lines.Add($"public {this.Type} {this.Name.Capitalize()} {{ get; set; }}");
+            var defaultValue = !string.IsNullOrWhiteSpace(this.defaultValue)
+                ? $"= {this.defaultValue};" 
+                : null;
+
+            lines.Add($"public {this.Type} {this.Name.Capitalize()} {{ get; set; }} {defaultValue}");
 
             return lines;
         }

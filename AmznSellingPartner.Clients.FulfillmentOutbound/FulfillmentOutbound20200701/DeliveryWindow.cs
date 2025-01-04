@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("startDate")]
 		[IsRequired]
-		public Timestamp StartDate { get; set; }
+		public Timestamp StartDate { get; set; } 
 
 		/// <summary>
 		/// The date and time of the end of the Scheduled Delivery window. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -24,6 +24,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("endDate")]
 		[IsRequired]
-		public Timestamp EndDate { get; set; }
+		public Timestamp EndDate { get; set; } 
 	}
 }

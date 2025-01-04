@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("inventory")]
 		[IsRequired]
-		public List<InventorySummary> Inventory { get; set; }
+		public List<InventorySummary> Inventory { get; set; } 
 
 		/// <summary>
 		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the
@@ -26,6 +26,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// pages.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

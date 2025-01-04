@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class Item : BaseClass
 	{
 		[JsonProperty("orderItemId")]
-		public OrderItemId OrderItemId { get; set; }
+		public OrderItemId OrderItemId { get; set; } 
 
 		[JsonProperty("orderItemSerialNumbers")]
-		public OrderItemSerialNumbers OrderItemSerialNumbers { get; set; }
+		public OrderItemSerialNumbers OrderItemSerialNumbers { get; set; } 
 	}
 }

@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		/// </summary>
 		[InPath("amazonOrderId")]
 		[IsRequired]
-		public string AmazonOrderId { get; set; }
+		public string AmazonOrderId { get; set; } 
 
 		/// <summary>
 		/// A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace
@@ -21,6 +21,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 	}
 }

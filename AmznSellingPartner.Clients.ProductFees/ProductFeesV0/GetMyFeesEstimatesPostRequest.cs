@@ -7,6 +7,6 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	{
 		[InBody("body")]
 		[IsRequired]
-		public GetMyFeesEstimatesRequest Body { get; set; }
+		public GetMyFeesEstimatesRequest Body { get; set; } 
 	}
 }

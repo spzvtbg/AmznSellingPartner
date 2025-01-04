@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[InPath("reportScheduleId")]
 		[IsRequired]
-		public string ReportScheduleId { get; set; }
+		public string ReportScheduleId { get; set; } 
 	}
 }

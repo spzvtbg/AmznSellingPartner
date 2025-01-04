@@ -14,24 +14,24 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// </summary>
 		[JsonProperty("slotId")]
 		[IsRequired]
-		public String SlotId { get; set; }
+		public String SlotId { get; set; } 
 
 		/// <summary>
 		/// The start date and time of the time slot.
 		/// </summary>
 		[JsonProperty("startTime")]
-		public DateTime StartTime { get; set; }
+		public DateTime StartTime { get; set; } 
 
 		/// <summary>
 		/// The end date and time of the time slot.
 		/// </summary>
 		[JsonProperty("endTime")]
-		public DateTime EndTime { get; set; }
+		public DateTime EndTime { get; set; } 
 
 		/// <summary>
 		/// The method by which a seller will hand a package over to Amazon Logistics.
 		/// </summary>
 		[JsonProperty("handoverMethod")]
-		public HandoverMethod HandoverMethod { get; set; }
+		public HandoverMethod HandoverMethod { get; set; } 
 	}
 }

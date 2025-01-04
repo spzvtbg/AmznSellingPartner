@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class FreightInformation : BaseClass
 	{
 		[JsonProperty("declaredValue")]
-		public Currency DeclaredValue { get; set; }
+		public Currency DeclaredValue { get; set; } 
 
 		/// <summary>
 		/// Freight class.  Possible values: `NONE`, `FC_50`, `FC_55`, `FC_60`, `FC_65`, `FC_70`, `FC_77_5`, `FC_85`,
@@ -21,6 +21,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("freightClass")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string FreightClass { get; set; }
+		public string FreightClass { get; set; } 
 	}
 }

@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[JsonProperty("resource")]
 		[IsRequired]
-		public string Resource { get; set; }
+		public string Resource { get; set; } 
 
 		/// <summary>
 		/// HTTP method for the link operation.
 		/// </summary>
 		[JsonProperty("verb")]
 		[IsRequired]
-		public Verb Verb { get; set; }
+		public Verb Verb { get; set; } 
 	}
 }

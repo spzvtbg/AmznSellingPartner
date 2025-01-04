@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// </summary>
 		[JsonProperty("method")]
 		[IsRequired]
-		public Method Method { get; set; }
+		public Method Method { get; set; } 
 
 		/// <summary>
 		/// The path in the restricted resource. Here are some path examples: - ```/orders/v0/orders```. For getting
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// </summary>
 		[JsonProperty("path")]
 		[IsRequired]
-		public string Path { get; set; }
+		public string Path { get; set; } 
 
 		/// <summary>
 		/// Indicates the type of Personally Identifiable Information requested. This parameter is required only
@@ -42,6 +42,6 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// - **buyerTaxInformation**. This includes information for issuing tax invoices.
 		/// </summary>
 		[JsonProperty("dataElements")]
-		public List<string> DataElements { get; set; }
+		public List<string> DataElements { get; set; } 
 	}
 }

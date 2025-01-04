@@ -14,20 +14,20 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("Length")]
 		[IsRequired]
-		public LabelDimension Length { get; set; }
+		public LabelDimension Length { get; set; } 
 
 		/// <summary>
 		/// The width dimension.
 		/// </summary>
 		[JsonProperty("Width")]
 		[IsRequired]
-		public LabelDimension Width { get; set; }
+		public LabelDimension Width { get; set; } 
 
 		/// <summary>
 		/// The unit of measurement.
 		/// </summary>
 		[JsonProperty("Unit")]
 		[IsRequired]
-		public UnitOfLength Unit { get; set; }
+		public UnitOfLength Unit { get; set; } 
 	}
 }

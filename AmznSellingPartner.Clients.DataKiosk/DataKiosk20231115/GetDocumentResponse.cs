@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[JsonProperty("documentId")]
 		[IsRequired]
-		public string DocumentId { get; set; }
+		public string DocumentId { get; set; } 
 
 		/// <summary>
 		/// A presigned URL that can be used to retrieve the Data Kiosk document. This URL expires after 5 minutes.
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[JsonProperty("documentUrl")]
 		[IsRequired]
-		public string DocumentUrl { get; set; }
+		public string DocumentUrl { get; set; } 
 	}
 }

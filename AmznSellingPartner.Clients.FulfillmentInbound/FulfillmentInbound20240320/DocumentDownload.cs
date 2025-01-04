@@ -16,20 +16,20 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("downloadType")]
 		[IsRequired]
-		public string DownloadType { get; set; }
+		public string DownloadType { get; set; } 
 
 		/// <summary>
 		/// The URI's expiration time. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) datetime
 		/// format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; }
+		public DateTime Expiration { get; set; } 
 
 		/// <summary>
 		/// Uniform resource identifier to identify where the document is located.
 		/// </summary>
 		[JsonProperty("uri")]
 		[IsRequired]
-		public string Uri { get; set; }
+		public string Uri { get; set; } 
 	}
 }

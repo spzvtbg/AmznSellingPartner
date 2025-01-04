@@ -18,48 +18,48 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[JsonProperty("channelPlacedInboundShipments")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<InboundShipment> ChannelPlacedInboundShipments { get; set; }
+		public List<InboundShipment> ChannelPlacedInboundShipments { get; set; } 
 
 		/// <summary>
 		/// Date when this order was created.
 		/// </summary>
 		[JsonProperty("createdAt")]
 		[IsRequired]
-		public DateTime CreatedAt { get; set; }
+		public DateTime CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Reference ID that can be used to correlate the order with partner resources.
 		/// </summary>
 		[JsonProperty("externalReferenceId")]
-		public string ExternalReferenceId { get; set; }
+		public string ExternalReferenceId { get; set; } 
 
 		/// <summary>
 		/// Inbound order ID.
 		/// </summary>
 		[JsonProperty("orderId")]
 		[IsRequired]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 
 		/// <summary>
 		/// Inbound order status.
 		/// </summary>
 		[JsonProperty("orderStatus")]
 		[IsRequired]
-		public InboundStatus OrderStatus { get; set; }
+		public InboundStatus OrderStatus { get; set; } 
 
 		/// <summary>
 		/// Inbound order version.
 		/// </summary>
 		[JsonProperty("orderVersion")]
 		[IsRequired]
-		public string OrderVersion { get; set; }
+		public string OrderVersion { get; set; } 
 
 		/// <summary>
 		/// Origin address from where the inbound order will be shipped.
 		/// </summary>
 		[JsonProperty("originAddress")]
 		[IsRequired]
-		public Address OriginAddress { get; set; }
+		public Address OriginAddress { get; set; } 
 
 		/// <summary>
 		/// List of packages to be inbounded.
@@ -67,21 +67,21 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[JsonProperty("packagesToInbound")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<DistributionPackageQuantity> PackagesToInbound { get; set; }
+		public List<DistributionPackageQuantity> PackagesToInbound { get; set; } 
 
 		[JsonProperty("preferences")]
-		public InboundPreferences Preferences { get; set; }
+		public InboundPreferences Preferences { get; set; } 
 
 		/// <summary>
 		/// Date by which this order will be shipped.
 		/// </summary>
 		[JsonProperty("shipBy")]
-		public DateTime ShipBy { get; set; }
+		public DateTime ShipBy { get; set; } 
 
 		/// <summary>
 		/// Date when this order was last updated.
 		/// </summary>
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; }
+		public DateTime UpdatedAt { get; set; } 
 	}
 }

@@ -16,14 +16,14 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Reference ID that can be used to correlate the order with partner resources.
 		/// </summary>
 		[JsonProperty("externalReferenceId")]
-		public string ExternalReferenceId { get; set; }
+		public string ExternalReferenceId { get; set; } 
 
 		/// <summary>
 		/// Origin address from where the inbound order will be shipped.
 		/// </summary>
 		[JsonProperty("originAddress")]
 		[IsRequired]
-		public Address OriginAddress { get; set; }
+		public Address OriginAddress { get; set; } 
 
 		/// <summary>
 		/// List of packages to be inbounded.
@@ -31,15 +31,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[JsonProperty("packagesToInbound")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<DistributionPackageQuantity> PackagesToInbound { get; set; }
+		public List<DistributionPackageQuantity> PackagesToInbound { get; set; } 
 
 		[JsonProperty("preferences")]
-		public InboundPreferences Preferences { get; set; }
+		public InboundPreferences Preferences { get; set; } 
 
 		/// <summary>
 		/// Estimated date by when goods have to be picked up.
 		/// </summary>
 		[JsonProperty("shipBy")]
-		public DateTime ShipBy { get; set; }
+		public DateTime ShipBy { get; set; } 
 	}
 }

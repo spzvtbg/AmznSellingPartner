@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class HttpHeaders : BaseClass
 	{
 		[JsonProperty("")]
-		public string AdditionalValue { get; set; }
+		public string AdditionalValue { get; set; } 
 	}
 }

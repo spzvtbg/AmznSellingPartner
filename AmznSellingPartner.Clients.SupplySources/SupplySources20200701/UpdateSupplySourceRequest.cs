@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class UpdateSupplySourceRequest : BaseClass
 	{
 		[JsonProperty("alias")]
-		public SupplySourceAlias Alias { get; set; }
+		public SupplySourceAlias Alias { get; set; } 
 
 		[JsonProperty("configuration")]
-		public SupplySourceConfiguration Configuration { get; set; }
+		public SupplySourceConfiguration Configuration { get; set; } 
 
 		[JsonProperty("capabilities")]
-		public SupplySourceCapabilities Capabilities { get; set; }
+		public SupplySourceCapabilities Capabilities { get; set; } 
 	}
 }

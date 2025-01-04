@@ -8,13 +8,13 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class SupplySourceConfiguration : BaseClass
 	{
 		[JsonProperty("operationalConfiguration")]
-		public OperationalConfiguration OperationalConfiguration { get; set; }
+		public OperationalConfiguration OperationalConfiguration { get; set; } 
 
 		/// <summary>
 		/// Please see RFC 6557, should be a canonical time zone ID as listed here: https://www.joda.org/joda-ti
 		/// me/timezones.html.
 		/// </summary>
 		[JsonProperty("timezone")]
-		public string Timezone { get; set; }
+		public string Timezone { get; set; } 
 	}
 }

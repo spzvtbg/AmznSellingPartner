@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("identifierType")]
 		[IsRequired]
-		public string IdentifierType { get; set; }
+		public string IdentifierType { get; set; } 
 
 		/// <summary>
 		/// Identifier.
 		/// </summary>
 		[JsonProperty("identifier")]
 		[IsRequired]
-		public string Identifier { get; set; }
+		public string Identifier { get; set; } 
 	}
 }

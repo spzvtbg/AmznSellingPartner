@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("code")]
 		[IsRequired]
-		public IneligibilityReasonCode Code { get; set; }
+		public IneligibilityReasonCode Code { get; set; } 
 
 		/// <summary>
 		/// The ineligibility reason.
 		/// </summary>
 		[JsonProperty("message")]
 		[IsRequired]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 	}
 }

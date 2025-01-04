@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The `sourceId` of the location from where you want the order fulfilled.
 		/// </summary>
 		[JsonProperty("FulfillmentSupplySourceId")]
-		public string FulfillmentSupplySourceId { get; set; }
+		public string FulfillmentSupplySourceId { get; set; } 
 	}
 }

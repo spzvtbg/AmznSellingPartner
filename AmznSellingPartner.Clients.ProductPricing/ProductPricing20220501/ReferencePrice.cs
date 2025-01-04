@@ -16,13 +16,13 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The reference price for the ASIN `marketplaceId` combination.
 		/// </summary>
 		[JsonProperty("price")]
 		[IsRequired]
-		public MoneyType Price { get; set; }
+		public MoneyType Price { get; set; } 
 	}
 }

@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(100)]
-		public int Position { get; set; }
+		public int Position { get; set; } 
 
 		/// <summary>
 		/// The actual plain text.
@@ -26,6 +26,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(250)]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// The payload for the `getDestination` operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public Destination Payload { get; set; }
+		public Destination Payload { get; set; } 
 
 		/// <summary>
 		/// One or more unexpected errors occurred during the `getDestination` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

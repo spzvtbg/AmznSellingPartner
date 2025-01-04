@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	using System;
 	using System.Threading.Tasks;
 
-	public class InvoicesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class InvoicesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns marketplace-dependent schemas and their respective set of possible values.  **Usage Plan:**

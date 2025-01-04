@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateFeedDocumentSpecification Body { get; set; }
+		public CreateFeedDocumentSpecification Body { get; set; } 
 	}
 }

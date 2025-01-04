@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InPath("contentReferenceKey")]
 		[IsRequired]
 		[MinLength(1)]
-		public string ContentReferenceKey { get; set; }
+		public string ContentReferenceKey { get; set; } 
 
 		/// <summary>
 		/// The identifier for the marketplace where the A+ Content is published.
@@ -22,7 +22,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("marketplaceId")]
 		[IsRequired]
 		[MinLength(1)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The set of A+ Content data types to include in the response. If you do not include this parameter, the
@@ -31,14 +31,14 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("includedDataSet")]
 		[MinItems(0)]
 		[UniqueItems]
-		public CsvValue<IncludedDataSet> IncludedDataSet { get; set; }
+		public CsvValue<IncludedDataSet> IncludedDataSet { get; set; } 
 
 		/// <summary>
 		/// The set of ASINs.
 		/// </summary>
 		[InQuery("asinSet")]
 		[UniqueItems]
-		public CsvValue<string> AsinSet { get; set; }
+		public CsvValue<string> AsinSet { get; set; } 
 
 		/// <summary>
 		/// A page token from the nextPageToken response element returned by your previous call to this operation.
@@ -49,6 +49,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// </summary>
 		[InQuery("pageToken")]
 		[MinLength(1)]
-		public string PageToken { get; set; }
+		public string PageToken { get; set; } 
 	}
 }

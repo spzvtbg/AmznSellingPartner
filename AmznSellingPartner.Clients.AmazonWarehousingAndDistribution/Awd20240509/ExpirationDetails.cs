@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// The expiration date of the SKU.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; }
+		public DateTime Expiration { get; set; } 
 
 		/// <summary>
 		/// The quantity that is present in AWD.
 		/// </summary>
 		[JsonProperty("onhandQuantity")]
-		public long OnhandQuantity { get; set; }
+		public long OnhandQuantity { get; set; } 
 	}
 }

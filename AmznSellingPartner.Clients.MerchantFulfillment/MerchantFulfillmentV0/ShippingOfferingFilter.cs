@@ -11,18 +11,18 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// When true, include a packing slip with the label.
 		/// </summary>
 		[JsonProperty("IncludePackingSlipWithLabel")]
-		public bool IncludePackingSlipWithLabel { get; set; }
+		public bool IncludePackingSlipWithLabel { get; set; } 
 
 		/// <summary>
 		/// When true, include complex shipping options.
 		/// </summary>
 		[JsonProperty("IncludeComplexShippingOptions")]
-		public bool IncludeComplexShippingOptions { get; set; }
+		public bool IncludeComplexShippingOptions { get; set; } 
 
 		[JsonProperty("CarrierWillPickUp")]
-		public CarrierWillPickUpOption CarrierWillPickUp { get; set; }
+		public CarrierWillPickUpOption CarrierWillPickUp { get; set; } 
 
 		[JsonProperty("DeliveryExperience")]
-		public DeliveryExperienceOption DeliveryExperience { get; set; }
+		public DeliveryExperienceOption DeliveryExperience { get; set; } 
 	}
 }

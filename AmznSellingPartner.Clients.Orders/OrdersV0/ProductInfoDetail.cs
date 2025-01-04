@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The total number of items that are included in the ASIN.
 		/// </summary>
 		[JsonProperty("NumberOfItems")]
-		public string NumberOfItems { get; set; }
+		public string NumberOfItems { get; set; } 
 	}
 }

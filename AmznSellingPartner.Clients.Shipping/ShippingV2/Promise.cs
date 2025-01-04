@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class Promise : BaseClass
 	{
 		[JsonProperty("deliveryWindow")]
-		public TimeWindow DeliveryWindow { get; set; }
+		public TimeWindow DeliveryWindow { get; set; } 
 
 		[JsonProperty("pickupWindow")]
-		public TimeWindow PickupWindow { get; set; }
+		public TimeWindow PickupWindow { get; set; } 
 	}
 }

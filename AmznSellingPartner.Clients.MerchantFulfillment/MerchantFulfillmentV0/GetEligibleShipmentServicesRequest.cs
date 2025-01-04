@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("ShipmentRequestDetails")]
 		[IsRequired]
-		public ShipmentRequestDetails ShipmentRequestDetails { get; set; }
+		public ShipmentRequestDetails ShipmentRequestDetails { get; set; } 
 
 		[JsonProperty("ShippingOfferingFilter")]
-		public ShippingOfferingFilter ShippingOfferingFilter { get; set; }
+		public ShippingOfferingFilter ShippingOfferingFilter { get; set; } 
 	}
 }

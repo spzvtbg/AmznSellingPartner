@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class CreateServiceDocumentUploadDestination : BaseClass
 	{
 		[JsonProperty("payload")]
-		public ServiceDocumentUploadDestination Payload { get; set; }
+		public ServiceDocumentUploadDestination Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

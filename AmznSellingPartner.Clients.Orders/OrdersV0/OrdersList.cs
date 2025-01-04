@@ -11,14 +11,14 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	{
 		[JsonProperty("Orders")]
 		[IsRequired]
-		public OrderList Orders { get; set; }
+		public OrderList Orders { get; set; } 
 
 		/// <summary>
 		/// When present and not empty, pass this string token in the next request to return the next response p
 		/// age.
 		/// </summary>
 		[JsonProperty("NextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders that were last updated before (or at) a specified time. An update is defined
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// format.
 		/// </summary>
 		[JsonProperty("LastUpdatedBefore")]
-		public string LastUpdatedBefore { get; set; }
+		public string LastUpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders created before (or at) a specified time. Only orders placed before the
@@ -35,6 +35,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// format.
 		/// </summary>
 		[JsonProperty("CreatedBefore")]
-		public string CreatedBefore { get; set; }
+		public string CreatedBefore { get; set; } 
 	}
 }

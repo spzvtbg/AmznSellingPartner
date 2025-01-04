@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// A regular expression.
 		/// </summary>
 		[JsonProperty("ValidationRegEx")]
-		public string ValidationRegEx { get; set; }
+		public string ValidationRegEx { get; set; } 
 
 		/// <summary>
 		/// A validation string.
 		/// </summary>
 		[JsonProperty("ValidationString")]
 		[IsRequired]
-		public string ValidationString { get; set; }
+		public string ValidationString { get; set; } 
 	}
 }

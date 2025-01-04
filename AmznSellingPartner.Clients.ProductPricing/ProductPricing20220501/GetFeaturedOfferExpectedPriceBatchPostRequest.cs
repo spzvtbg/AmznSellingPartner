@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[InBody("getFeaturedOfferExpectedPriceBatchRequestBody")]
 		[IsRequired]
-		public GetFeaturedOfferExpectedPriceBatchRequest GetFeaturedOfferExpectedPriceBatchRequestBody { get; set; }
+		public GetFeaturedOfferExpectedPriceBatchRequest GetFeaturedOfferExpectedPriceBatchRequestBody { get; set; } 
 	}
 }

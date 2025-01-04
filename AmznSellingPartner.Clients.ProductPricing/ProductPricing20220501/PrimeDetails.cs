@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("eligibility")]
 		[IsRequired]
-		public Eligibility Eligibility { get; set; }
+		public Eligibility Eligibility { get; set; } 
 	}
 }

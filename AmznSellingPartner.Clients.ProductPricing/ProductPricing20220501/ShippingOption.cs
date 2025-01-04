@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("shippingOptionType")]
 		[IsRequired]
-		public ShippingOptionType ShippingOptionType { get; set; }
+		public ShippingOptionType ShippingOptionType { get; set; } 
 
 		/// <summary>
 		/// Shipping price for the offer.
 		/// </summary>
 		[JsonProperty("price")]
 		[IsRequired]
-		public MoneyType Price { get; set; }
+		public MoneyType Price { get; set; } 
 	}
 }

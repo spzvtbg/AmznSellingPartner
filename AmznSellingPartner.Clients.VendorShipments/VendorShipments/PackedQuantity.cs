@@ -16,19 +16,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("amount")]
 		[IsRequired]
-		public int Amount { get; set; }
+		public int Amount { get; set; } 
 
 		/// <summary>
 		/// Unit of measure for the shipped quantity.
 		/// </summary>
 		[JsonProperty("unitOfMeasure")]
 		[IsRequired]
-		public UnitOfMeasure UnitOfMeasure { get; set; }
+		public UnitOfMeasure UnitOfMeasure { get; set; } 
 
 		/// <summary>
 		/// The case size, in the event that we ordered using cases. Otherwise, 1.
 		/// </summary>
 		[JsonProperty("unitSize")]
-		public int UnitSize { get; set; }
+		public int UnitSize { get; set; } 
 	}
 }

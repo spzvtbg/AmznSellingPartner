@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("productType")]
 		[IsRequired]
-		public string ProductType { get; set; }
+		public string ProductType { get; set; } 
 
 		/// <summary>
 		/// The name of the requirements set for the provided data.
 		/// </summary>
 		[JsonProperty("requirements")]
-		public Requirements Requirements { get; set; }
+		public Requirements Requirements { get; set; } 
 
 		/// <summary>
 		/// A JSON object containing structured listings item attribute data keyed by attribute name.
 		/// </summary>
 		[JsonProperty("attributes")]
 		[IsRequired]
-		public Attributes Attributes { get; set; }
+		public Attributes Attributes { get; set; } 
 	}
 }

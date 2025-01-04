@@ -18,21 +18,21 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("discounts")]
 		[IsRequired]
-		public List<Incentive> Discounts { get; set; }
+		public List<Incentive> Discounts { get; set; } 
 
 		/// <summary>
 		/// The expiration date of the placement option. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; }
+		public DateTime Expiration { get; set; } 
 
 		/// <summary>
 		/// The fee for the offered option.
 		/// </summary>
 		[JsonProperty("fees")]
 		[IsRequired]
-		public List<Incentive> Fees { get; set; }
+		public List<Incentive> Fees { get; set; } 
 
 		/// <summary>
 		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
@@ -43,14 +43,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PlacementOptionId { get; set; }
+		public string PlacementOptionId { get; set; } 
 
 		/// <summary>
 		/// Shipment ids.
 		/// </summary>
 		[JsonProperty("shipmentIds")]
 		[IsRequired]
-		public List<string> ShipmentIds { get; set; }
+		public List<string> ShipmentIds { get; set; } 
 
 		/// <summary>
 		/// The status of a placement option. Possible values: `OFFERED`, `ACCEPTED`, `EXPIRED`.
@@ -59,6 +59,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Status { get; set; }
+		public string Status { get; set; } 
 	}
 }

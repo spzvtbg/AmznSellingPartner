@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("taxType")]
 		[IsRequired]
-		public TaxType TaxType { get; set; }
+		public TaxType TaxType { get; set; } 
 
 		/// <summary>
 		/// The shipper's tax registration number associated with the shipment for customs compliance purposes in
@@ -20,6 +20,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("taxRegistrationNumber")]
 		[IsRequired]
-		public string TaxRegistrationNumber { get; set; }
+		public string TaxRegistrationNumber { get; set; } 
 	}
 }

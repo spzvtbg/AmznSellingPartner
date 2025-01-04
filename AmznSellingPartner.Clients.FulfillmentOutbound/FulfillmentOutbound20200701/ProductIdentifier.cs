@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("merchantSku")]
 		[IsRequired]
 		[MaxLength(50)]
-		public string MerchantSku { get; set; }
+		public string MerchantSku { get; set; } 
 	}
 }

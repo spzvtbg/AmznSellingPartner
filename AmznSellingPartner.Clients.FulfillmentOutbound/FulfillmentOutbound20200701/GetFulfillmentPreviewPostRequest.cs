@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public GetFulfillmentPreviewRequest Body { get; set; }
+		public GetFulfillmentPreviewRequest Body { get; set; } 
 	}
 }

@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[JsonProperty("query")]
 		[IsRequired]
-		public string Query { get; set; }
+		public string Query { get; set; } 
 
 		/// <summary>
 		/// A token to fetch a certain page of query results when there are multiple pages of query results available.
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// of this token value, the first page of query results will be requested.
 		/// </summary>
 		[JsonProperty("paginationToken")]
-		public string PaginationToken { get; set; }
+		public string PaginationToken { get; set; } 
 	}
 }

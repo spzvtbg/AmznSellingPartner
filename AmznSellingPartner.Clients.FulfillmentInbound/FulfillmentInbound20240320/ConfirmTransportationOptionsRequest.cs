@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("transportationSelections")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<TransportationSelection> TransportationSelections { get; set; }
+		public List<TransportationSelection> TransportationSelections { get; set; } 
 	}
 }

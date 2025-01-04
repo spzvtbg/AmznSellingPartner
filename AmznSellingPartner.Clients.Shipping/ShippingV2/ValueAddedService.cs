@@ -14,20 +14,20 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("id")]
 		[IsRequired]
-		public string Id { get; set; }
+		public string Id { get; set; } 
 
 		/// <summary>
 		/// The name of the value-added service.
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The cost of the value-added service.
 		/// </summary>
 		[JsonProperty("cost")]
 		[IsRequired]
-		public Currency Cost { get; set; }
+		public Currency Cost { get; set; } 
 	}
 }

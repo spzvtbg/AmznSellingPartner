@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// The list of attributes related to the buyer.
 		/// </summary>
 		[JsonProperty("buyer")]
-		public Buyer Buyer { get; set; }
+		public Buyer Buyer { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

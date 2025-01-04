@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 	}
 }

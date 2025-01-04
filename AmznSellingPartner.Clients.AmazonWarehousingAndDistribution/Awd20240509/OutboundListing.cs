@@ -17,12 +17,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// pages.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// List of outbound orders.
 		/// </summary>
 		[JsonProperty("outboundOrders")]
-		public List<OutboundOrder> OutboundOrders { get; set; }
+		public List<OutboundOrder> OutboundOrders { get; set; } 
 	}
 }

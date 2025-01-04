@@ -14,17 +14,17 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("sellerReturnItemId")]
 		[IsRequired]
-		public string SellerReturnItemId { get; set; }
+		public string SellerReturnItemId { get; set; } 
 
 		/// <summary>
 		/// The identifier assigned to the item by the seller when the fulfillment order was created.
 		/// </summary>
 		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]
-		public string SellerFulfillmentOrderItemId { get; set; }
+		public string SellerFulfillmentOrderItemId { get; set; } 
 
 		[JsonProperty("invalidItemReason")]
 		[IsRequired]
-		public InvalidItemReason InvalidItemReason { get; set; }
+		public InvalidItemReason InvalidItemReason { get; set; } 
 	}
 }

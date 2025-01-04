@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The location of a ZIP file containing Amazon Custom data.
 		/// </summary>
 		[JsonProperty("CustomizedURL")]
-		public string CustomizedURL { get; set; }
+		public string CustomizedURL { get; set; } 
 	}
 }

@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string ServiceJobId { get; set; }
+		public string ServiceJobId { get; set; } 
 
 		/// <summary>
 		/// An existing appointment identifier for the Service Job.
@@ -21,13 +21,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string AppointmentId { get; set; }
+		public string AppointmentId { get; set; } 
 
 		/// <summary>
 		/// Reschedule appointment operation input details.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public RescheduleAppointmentRequest Body { get; set; }
+		public RescheduleAppointmentRequest Body { get; set; } 
 	}
 }

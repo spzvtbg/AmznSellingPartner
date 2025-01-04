@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// An array of order acknowledgements to be submitted.
 		/// </summary>
 		[JsonProperty("acknowledgements")]
-		public List<OrderAcknowledgement> Acknowledgements { get; set; }
+		public List<OrderAcknowledgement> Acknowledgements { get; set; } 
 	}
 }

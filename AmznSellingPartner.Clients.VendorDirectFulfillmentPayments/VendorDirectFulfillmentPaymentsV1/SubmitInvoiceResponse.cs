@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// The response payload for the submitInvoice operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public TransactionReference Payload { get; set; }
+		public TransactionReference Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

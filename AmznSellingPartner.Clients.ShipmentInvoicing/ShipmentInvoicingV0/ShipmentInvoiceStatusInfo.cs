@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// The Amazon-defined shipment identifier.
 		/// </summary>
 		[JsonProperty("AmazonShipmentId")]
-		public string AmazonShipmentId { get; set; }
+		public string AmazonShipmentId { get; set; } 
 
 		[JsonProperty("InvoiceStatus")]
-		public ShipmentInvoiceStatus InvoiceStatus { get; set; }
+		public ShipmentInvoiceStatus InvoiceStatus { get; set; } 
 	}
 }

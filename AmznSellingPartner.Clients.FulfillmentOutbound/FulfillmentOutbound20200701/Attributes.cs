@@ -5,6 +5,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class Attributes : BaseClass
 	{
 		[JsonProperty("")]
-		public string AdditionalValue { get; set; }
+		public string AdditionalValue { get; set; } 
 	}
 }

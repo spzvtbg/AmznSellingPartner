@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("containerIdentificationType")]
 		[IsRequired]
-		public ContainerIdentificationType ContainerIdentificationType { get; set; }
+		public ContainerIdentificationType ContainerIdentificationType { get; set; } 
 
 		/// <summary>
 		/// Container identification number that adheres to the definition of the container identification type.
 		/// </summary>
 		[JsonProperty("containerIdentificationNumber")]
 		[IsRequired]
-		public string ContainerIdentificationNumber { get; set; }
+		public string ContainerIdentificationNumber { get; set; } 
 	}
 }

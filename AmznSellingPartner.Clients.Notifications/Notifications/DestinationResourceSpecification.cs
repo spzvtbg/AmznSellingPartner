@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// The information required to create an Amazon Simple Queue Service (SQS) queue destination.
 		/// </summary>
 		[JsonProperty("sqs")]
-		public SqsResource Sqs { get; set; }
+		public SqsResource Sqs { get; set; } 
 
 		/// <summary>
 		/// The information required to create an Amazon EventBridge destination.
 		/// </summary>
 		[JsonProperty("eventBridge")]
-		public EventBridgeResourceSpecification EventBridge { get; set; }
+		public EventBridgeResourceSpecification EventBridge { get; set; } 
 	}
 }

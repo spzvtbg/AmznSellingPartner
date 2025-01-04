@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("companyLogo")]
 		[IsRequired]
-		public ImageComponent CompanyLogo { get; set; }
+		public ImageComponent CompanyLogo { get; set; } 
 	}
 }

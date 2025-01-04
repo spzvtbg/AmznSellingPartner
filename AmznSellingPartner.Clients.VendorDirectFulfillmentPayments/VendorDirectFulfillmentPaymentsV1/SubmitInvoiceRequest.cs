@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// An array of invoice details to be submitted.
 		/// </summary>
 		[JsonProperty("invoices")]
-		public List<InvoiceDetail> Invoices { get; set; }
+		public List<InvoiceDetail> Invoices { get; set; } 
 	}
 }

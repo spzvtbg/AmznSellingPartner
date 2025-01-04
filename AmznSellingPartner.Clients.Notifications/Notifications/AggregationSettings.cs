@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[JsonProperty("aggregationTimePeriod")]
 		[IsRequired]
-		public AggregationTimePeriod AggregationTimePeriod { get; set; }
+		public AggregationTimePeriod AggregationTimePeriod { get; set; } 
 	}
 }

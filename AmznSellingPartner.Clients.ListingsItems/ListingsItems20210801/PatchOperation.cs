@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("op")]
 		[IsRequired]
-		public Op Op { get; set; }
+		public Op Op { get; set; } 
 
 		/// <summary>
 		/// JSON Pointer path of the element to patch. Refer to [JavaScript Object Notation (JSON) Patch](https://tools.ietf.org/html/rfc6902)
@@ -26,12 +26,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("path")]
 		[IsRequired]
-		public string Path { get; set; }
+		public string Path { get; set; } 
 
 		/// <summary>
 		/// JSON value to add, replace, or delete.
 		/// </summary>
 		[JsonProperty("value")]
-		public List<Value> Value { get; set; }
+		public List<Value> Value { get; set; } 
 	}
 }

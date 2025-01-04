@@ -12,13 +12,13 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// The identifier of the export document.
 		/// </summary>
 		[JsonProperty("invoicesDocumentId")]
-		public string InvoicesDocumentId { get; set; }
+		public string InvoicesDocumentId { get; set; } 
 
 		/// <summary>
 		/// A pre-signed URL that you can use to download the invoices document in zip format. This URL expires after
 		/// 30 seconds.
 		/// </summary>
 		[JsonProperty("invoicesDocumentUrl")]
-		public string InvoicesDocumentUrl { get; set; }
+		public string InvoicesDocumentUrl { get; set; } 
 	}
 }

@@ -10,9 +10,9 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class Benefits : BaseClass
 	{
 		[JsonProperty("IncludedBenefits")]
-		public IncludedBenefits IncludedBenefits { get; set; }
+		public IncludedBenefits IncludedBenefits { get; set; } 
 
 		[JsonProperty("ExcludedBenefits")]
-		public ExcludedBenefits ExcludedBenefits { get; set; }
+		public ExcludedBenefits ExcludedBenefits { get; set; } 
 	}
 }

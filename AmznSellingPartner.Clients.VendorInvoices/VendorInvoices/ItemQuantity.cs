@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// </summary>
 		[JsonProperty("amount")]
 		[IsRequired]
-		public int Amount { get; set; }
+		public int Amount { get; set; } 
 
 		/// <summary>
 		/// Unit of measure for the quantity.
 		/// </summary>
 		[JsonProperty("unitOfMeasure")]
 		[IsRequired]
-		public UnitOfMeasure UnitOfMeasure { get; set; }
+		public UnitOfMeasure UnitOfMeasure { get; set; } 
 
 		/// <summary>
 		/// The case size, if the unit of measure value is Cases.
 		/// </summary>
 		[JsonProperty("unitSize")]
-		public int UnitSize { get; set; }
+		public int UnitSize { get; set; } 
 
 		[JsonProperty("totalWeight")]
-		public TotalWeight TotalWeight { get; set; }
+		public TotalWeight TotalWeight { get; set; } 
 	}
 }

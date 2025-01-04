@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// A GUID (Globally Unique Identifier) assigned by Amazon to uniquely identify the transaction.
 		/// </summary>
 		[JsonProperty("transactionId")]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 	}
 }

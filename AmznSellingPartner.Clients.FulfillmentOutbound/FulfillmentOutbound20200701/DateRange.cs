@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("earliest")]
 		[IsRequired]
-		public Timestamp Earliest { get; set; }
+		public Timestamp Earliest { get; set; } 
 
 		/// <summary>
 		/// The latest point in a date range.
 		/// </summary>
 		[JsonProperty("latest")]
 		[IsRequired]
-		public Timestamp Latest { get; set; }
+		public Timestamp Latest { get; set; } 
 	}
 }

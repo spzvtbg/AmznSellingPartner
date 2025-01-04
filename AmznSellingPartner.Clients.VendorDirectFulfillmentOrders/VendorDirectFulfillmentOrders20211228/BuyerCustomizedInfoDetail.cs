@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// allowed by the vendor, along with types and ranges for the attributes of their products.
 		/// </summary>
 		[JsonProperty("customizedUrl")]
-		public string CustomizedUrl { get; set; }
+		public string CustomizedUrl { get; set; } 
 	}
 }

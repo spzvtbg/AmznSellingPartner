@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PlacementOptionId { get; set; }
+		public string PlacementOptionId { get; set; } 
 
 		/// <summary>
 		/// List of shipment transportation configurations.
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("shipmentTransportationConfigurations")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<ShipmentTransportationConfiguration> ShipmentTransportationConfigurations { get; set; }
+		public List<ShipmentTransportationConfiguration> ShipmentTransportationConfigurations { get; set; } 
 	}
 }

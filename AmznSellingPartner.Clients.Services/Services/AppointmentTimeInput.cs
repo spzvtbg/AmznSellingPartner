@@ -16,12 +16,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("startTime")]
 		[IsRequired]
-		public DateTime StartTime { get; set; }
+		public DateTime StartTime { get; set; } 
 
 		/// <summary>
 		/// The duration of an appointment in minutes.
 		/// </summary>
 		[JsonProperty("durationInMinutes")]
-		public int DurationInMinutes { get; set; }
+		public int DurationInMinutes { get; set; } 
 	}
 }

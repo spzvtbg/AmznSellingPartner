@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorTransactionClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorTransactionClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns the status of the transaction indicated by the specified transactionId.  **Usage Plan:**  | Rate

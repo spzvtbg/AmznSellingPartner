@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// on warehouse capacity availability. AWD currently supports following region IDs: [us-west, us-east]
 		/// </summary>
 		[JsonProperty("destinationRegion")]
-		public string DestinationRegion { get; set; }
+		public string DestinationRegion { get; set; } 
 	}
 }

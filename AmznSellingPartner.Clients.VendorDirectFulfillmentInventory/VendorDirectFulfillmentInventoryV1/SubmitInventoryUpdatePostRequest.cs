@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public SubmitInventoryUpdateRequest Body { get; set; }
+		public SubmitInventoryUpdateRequest Body { get; set; } 
 
 		/// <summary>
 		/// Identifier for the warehouse for which to update inventory.
 		/// </summary>
 		[InPath("warehouseId")]
 		[IsRequired]
-		public string WarehouseId { get; set; }
+		public string WarehouseId { get; set; } 
 	}
 }

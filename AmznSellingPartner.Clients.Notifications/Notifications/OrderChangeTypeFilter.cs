@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	public class OrderChangeTypeFilter : BaseClass
 	{
 		[JsonProperty("orderChangeTypes")]
-		public OrderChangeTypes OrderChangeTypes { get; set; }
+		public OrderChangeTypes OrderChangeTypes { get; set; } 
 	}
 }

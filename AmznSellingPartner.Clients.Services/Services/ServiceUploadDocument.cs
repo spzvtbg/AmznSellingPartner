@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("contentType")]
 		[IsRequired]
-		public ContentType ContentType { get; set; }
+		public ContentType ContentType { get; set; } 
 
 		/// <summary>
 		/// The content length of the to-be-uploaded file
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(5242880)]
-		public long ContentLength { get; set; }
+		public long ContentLength { get; set; } 
 
 		/// <summary>
 		/// An MD5 hash of the content to be submitted to the upload destination. This value is used to determine
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("contentMD5")]
 		[Pattern("^[A-Za-z0-9\\\\+/]{22}={2}")]
-		public string ContentMD5 { get; set; }
+		public string ContentMD5 { get; set; } 
 	}
 }

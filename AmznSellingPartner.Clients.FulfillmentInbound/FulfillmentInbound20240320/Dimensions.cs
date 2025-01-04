@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		public double Height { get; set; }
+		public double Height { get; set; } 
 
 		/// <summary>
 		/// The length of a package.
@@ -25,11 +25,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		public double Length { get; set; }
+		public double Length { get; set; } 
 
 		[JsonProperty("unitOfMeasurement")]
 		[IsRequired]
-		public UnitOfMeasurement UnitOfMeasurement { get; set; }
+		public UnitOfMeasurement UnitOfMeasurement { get; set; } 
 
 		/// <summary>
 		/// The width of a package.
@@ -38,6 +38,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		public double Width { get; set; }
+		public double Width { get; set; } 
 	}
 }

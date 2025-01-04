@@ -8,21 +8,21 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetCollectionFormHistoryRequest : BaseClass
 	{
 		[JsonProperty("clientReferenceDetails")]
-		public ClientReferenceDetails ClientReferenceDetails { get; set; }
+		public ClientReferenceDetails ClientReferenceDetails { get; set; } 
 
 		/// <summary>
 		/// max Number of Results for query .
 		/// </summary>
 		[JsonProperty("maxResults")]
-		public int MaxResults { get; set; }
+		public int MaxResults { get; set; } 
 
 		[JsonProperty("carrierId")]
-		public CarrierId CarrierId { get; set; }
+		public CarrierId CarrierId { get; set; } 
 
 		[JsonProperty("shipFromAddress")]
-		public Address ShipFromAddress { get; set; }
+		public Address ShipFromAddress { get; set; } 
 
 		[JsonProperty("dateRange")]
-		public DateRange DateRange { get; set; }
+		public DateRange DateRange { get; set; } 
 	}
 }

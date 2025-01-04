@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(255)]
-		public string AmazonOrderId { get; set; }
+		public string AmazonOrderId { get; set; } 
 
 		/// <summary>
 		/// An identifier for the marketplace in which the seller is selling.
@@ -22,6 +22,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(255)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 	}
 }

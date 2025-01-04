@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 	using System;
 	using System.Threading.Tasks;
 
-	public class FbaInboundClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class FbaInboundClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// This operation gets an eligibility preview for an item that you specify. You can specify the type of

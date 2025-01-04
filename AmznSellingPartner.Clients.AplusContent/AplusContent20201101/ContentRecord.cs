@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("contentReferenceKey")]
 		[IsRequired]
-		public ContentReferenceKey ContentReferenceKey { get; set; }
+		public ContentReferenceKey ContentReferenceKey { get; set; } 
 
 		[JsonProperty("contentMetadata")]
-		public ContentMetadata ContentMetadata { get; set; }
+		public ContentMetadata ContentMetadata { get; set; } 
 
 		[JsonProperty("contentDocument")]
-		public ContentDocument ContentDocument { get; set; }
+		public ContentDocument ContentDocument { get; set; } 
 	}
 }

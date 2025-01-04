@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("id")]
 		[IsRequired]
-		public string Id { get; set; }
+		public string Id { get; set; } 
 
 		[JsonProperty("amount")]
-		public Currency Amount { get; set; }
+		public Currency Amount { get; set; } 
 	}
 }

@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// An array of Invoice objects representing the invoices or credit notes to be submitted.
 		/// </summary>
 		[JsonProperty("invoices")]
-		public List<Invoice> Invoices { get; set; }
+		public List<Invoice> Invoices { get; set; } 
 	}
 }

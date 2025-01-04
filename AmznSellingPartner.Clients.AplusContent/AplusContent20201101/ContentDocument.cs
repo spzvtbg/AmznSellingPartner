@@ -16,21 +16,21 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		[JsonProperty("contentType")]
 		[IsRequired]
-		public ContentType ContentType { get; set; }
+		public ContentType ContentType { get; set; } 
 
 		[JsonProperty("contentSubType")]
-		public ContentSubType ContentSubType { get; set; }
+		public ContentSubType ContentSubType { get; set; } 
 
 		[JsonProperty("locale")]
 		[IsRequired]
-		public LanguageTag Locale { get; set; }
+		public LanguageTag Locale { get; set; } 
 
 		[JsonProperty("contentModuleList")]
 		[IsRequired]
-		public ContentModuleList ContentModuleList { get; set; }
+		public ContentModuleList ContentModuleList { get; set; } 
 	}
 }

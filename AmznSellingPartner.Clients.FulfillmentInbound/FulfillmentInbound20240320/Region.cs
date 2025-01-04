@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("countryCode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string CountryCode { get; set; }
+		public string CountryCode { get; set; } 
 
 		/// <summary>
 		/// State.
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("state")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string State { get; set; }
+		public string State { get; set; } 
 
 		/// <summary>
 		/// An identifier for a warehouse, such as a FC, IXD, upstream storage.
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("warehouseId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string WarehouseId { get; set; }
+		public string WarehouseId { get; set; } 
 	}
 }

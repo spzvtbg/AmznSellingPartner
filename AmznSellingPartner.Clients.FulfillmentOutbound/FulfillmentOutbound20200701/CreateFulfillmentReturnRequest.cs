@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	{
 		[JsonProperty("items")]
 		[IsRequired]
-		public CreateReturnItemList Items { get; set; }
+		public CreateReturnItemList Items { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InQuery("packageNumber")]
 		[IsRequired]
-		public int PackageNumber { get; set; }
+		public int PackageNumber { get; set; } 
 	}
 }

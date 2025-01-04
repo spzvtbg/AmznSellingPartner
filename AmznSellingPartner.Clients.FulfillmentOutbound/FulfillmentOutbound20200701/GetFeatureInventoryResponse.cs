@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class GetFeatureInventoryResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public GetFeatureInventoryResult Payload { get; set; }
+		public GetFeatureInventoryResult Payload { get; set; } 
 
 		/// <summary>
 		/// One or more unexpected errors occurred during the `getFeatureInventory` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

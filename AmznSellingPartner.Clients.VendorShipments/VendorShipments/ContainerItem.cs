@@ -15,16 +15,16 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("itemReference")]
 		[IsRequired]
-		public string ItemReference { get; set; }
+		public string ItemReference { get; set; } 
 
 		/// <summary>
 		/// Total item quantity shipped in this carton/pallet.
 		/// </summary>
 		[JsonProperty("shippedQuantity")]
 		[IsRequired]
-		public ItemQuantity ShippedQuantity { get; set; }
+		public ItemQuantity ShippedQuantity { get; set; } 
 
 		[JsonProperty("itemDetails")]
-		public ItemDetails ItemDetails { get; set; }
+		public ItemDetails ItemDetails { get; set; } 
 	}
 }

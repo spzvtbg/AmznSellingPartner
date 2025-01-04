@@ -14,26 +14,26 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[JsonProperty("isPriorityShipment")]
 		[IsRequired]
-		public bool IsPriorityShipment { get; set; }
+		public bool IsPriorityShipment { get; set; } 
 
 		/// <summary>
 		/// When true, this order is part of a scheduled delivery program.
 		/// </summary>
 		[JsonProperty("isScheduledDeliveryShipment")]
-		public bool IsScheduledDeliveryShipment { get; set; }
+		public bool IsScheduledDeliveryShipment { get; set; } 
 
 		/// <summary>
 		/// When true, a packing slip is required to be sent to the customer.
 		/// </summary>
 		[JsonProperty("isPslipRequired")]
 		[IsRequired]
-		public bool IsPslipRequired { get; set; }
+		public bool IsPslipRequired { get; set; } 
 
 		/// <summary>
 		/// When true, the order contain a gift. Include the gift message and gift wrap information.
 		/// </summary>
 		[JsonProperty("isGift")]
-		public bool IsGift { get; set; }
+		public bool IsGift { get; set; } 
 
 		/// <summary>
 		/// Ship method to be used for shipping the order. Amazon defines ship method codes indicating the shipping
@@ -42,17 +42,17 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[JsonProperty("shipMethod")]
 		[IsRequired]
-		public string ShipMethod { get; set; }
+		public string ShipMethod { get; set; } 
 
 		[JsonProperty("shipmentDates")]
 		[IsRequired]
-		public ShipmentDates ShipmentDates { get; set; }
+		public ShipmentDates ShipmentDates { get; set; } 
 
 		/// <summary>
 		/// Message to customer for order status.
 		/// </summary>
 		[JsonProperty("messageToCustomer")]
 		[IsRequired]
-		public string MessageToCustomer { get; set; }
+		public string MessageToCustomer { get; set; } 
 	}
 }

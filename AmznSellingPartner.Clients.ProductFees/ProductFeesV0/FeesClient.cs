@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	using System;
 	using System.Threading.Tasks;
 
-	public class FeesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class FeesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns the estimated fees for the item indicated by the specified seller SKU in the marketplace specified

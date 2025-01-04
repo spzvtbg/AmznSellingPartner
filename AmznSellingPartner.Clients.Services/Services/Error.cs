@@ -14,25 +14,25 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("code")]
 		[IsRequired]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// A message that describes the error condition in a human-readable form.
 		/// </summary>
 		[JsonProperty("message")]
 		[IsRequired]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		/// <summary>
 		/// Additional details that can help the caller understand or fix the issue.
 		/// </summary>
 		[JsonProperty("details")]
-		public string Details { get; set; }
+		public string Details { get; set; } 
 
 		/// <summary>
 		/// The type of error.
 		/// </summary>
 		[JsonProperty("errorLevel")]
-		public ErrorLevel ErrorLevel { get; set; }
+		public ErrorLevel ErrorLevel { get; set; } 
 	}
 }

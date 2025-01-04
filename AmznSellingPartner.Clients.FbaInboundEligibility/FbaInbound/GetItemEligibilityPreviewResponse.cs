@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 		/// The payload for the getItemEligibilityPreview operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public ItemEligibilityPreview Payload { get; set; }
+		public ItemEligibilityPreview Payload { get; set; } 
 
 		/// <summary>
 		/// An unexpected condition occurred during the GetItemEligibilityPreview operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// </summary>
 		[InBody("payload")]
 		[IsRequired]
-		public CreateSupplySourceRequest Payload { get; set; }
+		public CreateSupplySourceRequest Payload { get; set; } 
 	}
 }

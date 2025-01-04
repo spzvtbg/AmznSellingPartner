@@ -11,18 +11,18 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Type of location identification.
 		/// </summary>
 		[JsonProperty("type")]
-		public string Type { get; set; }
+		public string Type { get; set; } 
 
 		/// <summary>
 		/// Location code.
 		/// </summary>
 		[JsonProperty("locationCode")]
-		public string LocationCode { get; set; }
+		public string LocationCode { get; set; } 
 
 		/// <summary>
 		/// The two digit country code. In ISO 3166-1 alpha-2 format.
 		/// </summary>
 		[JsonProperty("countryCode")]
-		public string CountryCode { get; set; }
+		public string CountryCode { get; set; } 
 	}
 }

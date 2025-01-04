@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// List of compliance details.
 		/// </summary>
 		[JsonProperty("complianceDetails")]
-		public List<ComplianceDetail> ComplianceDetails { get; set; }
+		public List<ComplianceDetail> ComplianceDetails { get; set; } 
 	}
 }

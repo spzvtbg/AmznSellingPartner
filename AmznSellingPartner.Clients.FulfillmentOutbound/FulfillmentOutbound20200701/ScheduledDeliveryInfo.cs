@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("deliveryTimeZone")]
 		[IsRequired]
-		public string DeliveryTimeZone { get; set; }
+		public string DeliveryTimeZone { get; set; } 
 
 		/// <summary>
 		/// An array of time ranges that are available for scheduled delivery.
 		/// </summary>
 		[JsonProperty("deliveryWindows")]
 		[IsRequired]
-		public DeliveryWindowList DeliveryWindows { get; set; }
+		public DeliveryWindowList DeliveryWindows { get; set; } 
 	}
 }

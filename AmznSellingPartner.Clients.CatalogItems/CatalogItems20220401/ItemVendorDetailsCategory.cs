@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// Display name of the product category or subcategory
 		/// </summary>
 		[JsonProperty("displayName")]
-		public string DisplayName { get; set; }
+		public string DisplayName { get; set; } 
 
 		/// <summary>
 		/// Value (code) of the product category or subcategory.
 		/// </summary>
 		[JsonProperty("value")]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

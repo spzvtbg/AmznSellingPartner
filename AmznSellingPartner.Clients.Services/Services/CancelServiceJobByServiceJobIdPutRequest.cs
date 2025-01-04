@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string ServiceJobId { get; set; }
+		public string ServiceJobId { get; set; } 
 
 		/// <summary>
 		/// A cancel reason code that specifies the reason for cancelling a service job.
@@ -22,6 +22,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[MinLength(1)]
 		[MaxLength(100)]
 		[Pattern("^[A-Z0-9_]*")]
-		public string CancellationReasonCode { get; set; }
+		public string CancellationReasonCode { get; set; } 
 	}
 }

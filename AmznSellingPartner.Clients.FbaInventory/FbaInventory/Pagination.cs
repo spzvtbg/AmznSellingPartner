@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// of nextToken to the next request. If nextToken is not returned, there are no more items to return.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

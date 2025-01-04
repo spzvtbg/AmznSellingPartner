@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("clientReferenceType")]
 		[IsRequired]
-		public ClientReferenceType ClientReferenceType { get; set; }
+		public ClientReferenceType ClientReferenceType { get; set; } 
 
 		/// <summary>
 		/// The Client Reference Id.
 		/// </summary>
 		[JsonProperty("clientReferenceId")]
 		[IsRequired]
-		public string ClientReferenceId { get; set; }
+		public string ClientReferenceId { get; set; } 
 	}
 }

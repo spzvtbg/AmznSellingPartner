@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	{
 		[JsonProperty("role")]
 		[IsRequired]
-		public ItemContributorRole Role { get; set; }
+		public ItemContributorRole Role { get; set; } 
 
 		/// <summary>
 		/// Name of the contributor, such as Jane Austen.
 		/// </summary>
 		[JsonProperty("value")]
 		[IsRequired]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

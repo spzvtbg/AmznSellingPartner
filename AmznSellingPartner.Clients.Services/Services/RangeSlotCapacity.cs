@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Resource Identifier.
 		/// </summary>
 		[JsonProperty("resourceId")]
-		public string ResourceId { get; set; }
+		public string ResourceId { get; set; } 
 
 		/// <summary>
 		/// Array of range capacities where each entry is for a specific capacity type.
 		/// </summary>
 		[JsonProperty("capacities")]
-		public List<RangeCapacity> Capacities { get; set; }
+		public List<RangeCapacity> Capacities { get; set; } 
 
 		/// <summary>
 		/// Next page token, if there are more pages.
 		/// </summary>
 		[JsonProperty("nextPageToken")]
-		public string NextPageToken { get; set; }
+		public string NextPageToken { get; set; } 
 	}
 }

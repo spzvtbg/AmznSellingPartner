@@ -12,10 +12,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class MskuPrepDetail : BaseClass
 	{
 		[JsonProperty("allOwnersConstraint")]
-		public AllOwnersConstraint AllOwnersConstraint { get; set; }
+		public AllOwnersConstraint AllOwnersConstraint { get; set; } 
 
 		[JsonProperty("labelOwnerConstraint")]
-		public OwnerConstraint LabelOwnerConstraint { get; set; }
+		public OwnerConstraint LabelOwnerConstraint { get; set; } 
 
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
@@ -24,20 +24,20 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Msku { get; set; }
+		public string Msku { get; set; } 
 
 		[JsonProperty("prepCategory")]
 		[IsRequired]
-		public PrepCategory PrepCategory { get; set; }
+		public PrepCategory PrepCategory { get; set; } 
 
 		[JsonProperty("prepOwnerConstraint")]
-		public OwnerConstraint PrepOwnerConstraint { get; set; }
+		public OwnerConstraint PrepOwnerConstraint { get; set; } 
 
 		/// <summary>
 		/// A list of preparation types associated with a preparation category.
 		/// </summary>
 		[JsonProperty("prepTypes")]
 		[IsRequired]
-		public List<PrepType> PrepTypes { get; set; }
+		public List<PrepType> PrepTypes { get; set; } 
 	}
 }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class SubmitFulfillmentOrderStatusUpdateRequest : BaseClass
 	{
 		[JsonProperty("fulfillmentOrderStatus")]
-		public FulfillmentOrderStatus FulfillmentOrderStatus { get; set; }
+		public FulfillmentOrderStatus FulfillmentOrderStatus { get; set; } 
 	}
 }

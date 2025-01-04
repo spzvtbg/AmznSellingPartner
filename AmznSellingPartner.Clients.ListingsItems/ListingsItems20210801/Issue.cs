@@ -16,27 +16,27 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("code")]
 		[IsRequired]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// A message that describes the issue.
 		/// </summary>
 		[JsonProperty("message")]
 		[IsRequired]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		/// <summary>
 		/// The severity of the issue.
 		/// </summary>
 		[JsonProperty("severity")]
 		[IsRequired]
-		public Severity Severity { get; set; }
+		public Severity Severity { get; set; } 
 
 		/// <summary>
 		/// The names of the attributes associated with the issue, if applicable.
 		/// </summary>
 		[JsonProperty("attributeNames")]
-		public List<string> AttributeNames { get; set; }
+		public List<string> AttributeNames { get; set; } 
 
 		/// <summary>
 		/// List of issue categories.   Possible vales:   * `INVALID_ATTRIBUTE` - Indicating an invalid attribute
@@ -50,13 +50,13 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("categories")]
 		[IsRequired]
-		public List<string> Categories { get; set; }
+		public List<string> Categories { get; set; } 
 
 		/// <summary>
 		/// This field provides information about the enforcement actions taken by Amazon that affect the publishing
 		/// or status of a listing. It also includes details about any associated exemptions.
 		/// </summary>
 		[JsonProperty("enforcements")]
-		public IssueEnforcements Enforcements { get; set; }
+		public IssueEnforcements Enforcements { get; set; } 
 	}
 }

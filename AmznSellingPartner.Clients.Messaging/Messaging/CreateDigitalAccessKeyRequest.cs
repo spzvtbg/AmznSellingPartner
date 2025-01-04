@@ -19,13 +19,13 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		[JsonProperty("text")]
 		[MinLength(1)]
 		[MaxLength(400)]
-		public string Text { get; set; }
+		public string Text { get; set; } 
 
 		/// <summary>
 		/// Attachments that you want to include in the message to the buyer.
 		/// </summary>
 		[JsonProperty("attachments")]
 		[MaxLength(5)]
-		public List<Attachment> Attachments { get; set; }
+		public List<Attachment> Attachments { get; set; } 
 	}
 }

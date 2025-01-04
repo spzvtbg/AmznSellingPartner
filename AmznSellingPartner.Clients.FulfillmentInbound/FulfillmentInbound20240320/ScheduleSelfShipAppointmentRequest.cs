@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ScheduleSelfShipAppointmentRequest : BaseClass
 	{
 		[JsonProperty("reasonComment")]
-		public ReasonComment ReasonComment { get; set; }
+		public ReasonComment ReasonComment { get; set; } 
 	}
 }

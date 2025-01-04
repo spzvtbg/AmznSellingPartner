@@ -15,16 +15,16 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("uri")]
 		[IsRequired]
-		public string Uri { get; set; }
+		public string Uri { get; set; } 
 
 		[JsonProperty("method")]
 		[IsRequired]
-		public HttpMethod Method { get; set; }
+		public HttpMethod Method { get; set; } 
 
 		[JsonProperty("body")]
-		public HttpBody Body { get; set; }
+		public HttpBody Body { get; set; } 
 
 		[JsonProperty("headers")]
-		public HttpHeaders Headers { get; set; }
+		public HttpHeaders Headers { get; set; } 
 	}
 }

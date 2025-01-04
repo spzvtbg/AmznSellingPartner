@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("availabilityType")]
 		[IsRequired]
-		public string AvailabilityType { get; set; }
+		public string AvailabilityType { get; set; } 
 
 		/// <summary>
 		/// Identifier of a delivery window option. A delivery window option represent one option for when a shipment
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(36)]
 		[MaxLength(38)]
-		public string DeliveryWindowOptionId { get; set; }
+		public string DeliveryWindowOptionId { get; set; } 
 
 		/// <summary>
 		/// The time at which this delivery window option ends. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -35,7 +35,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("endDate")]
 		[IsRequired]
-		public DateTime EndDate { get; set; }
+		public DateTime EndDate { get; set; } 
 
 		/// <summary>
 		/// The time at which this delivery window option starts. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -43,7 +43,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("startDate")]
 		[IsRequired]
-		public DateTime StartDate { get; set; }
+		public DateTime StartDate { get; set; } 
 
 		/// <summary>
 		/// The time at which this window delivery option is no longer valid. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -51,6 +51,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("validUntil")]
 		[IsRequired]
-		public DateTime ValidUntil { get; set; }
+		public DateTime ValidUntil { get; set; } 
 	}
 }

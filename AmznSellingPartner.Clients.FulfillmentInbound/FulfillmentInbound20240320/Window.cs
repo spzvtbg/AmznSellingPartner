@@ -15,20 +15,20 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// The timestamp at which this Window can no longer be edited.
 		/// </summary>
 		[JsonProperty("editableUntil")]
-		public DateTime EditableUntil { get; set; }
+		public DateTime EditableUntil { get; set; } 
 
 		/// <summary>
 		/// The end timestamp of the window.
 		/// </summary>
 		[JsonProperty("end")]
 		[IsRequired]
-		public DateTime End { get; set; }
+		public DateTime End { get; set; } 
 
 		/// <summary>
 		/// The start timestamp of the window.
 		/// </summary>
 		[JsonProperty("start")]
 		[IsRequired]
-		public DateTime Start { get; set; }
+		public DateTime Start { get; set; } 
 	}
 }

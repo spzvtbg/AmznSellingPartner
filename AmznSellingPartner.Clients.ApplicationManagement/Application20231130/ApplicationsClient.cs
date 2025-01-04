@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ApplicationManagement.Application20231130
 	using System;
 	using System.Threading.Tasks;
 
-	public class ApplicationsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ApplicationsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Rotates application client secrets for a developer application. Developers must register a destination

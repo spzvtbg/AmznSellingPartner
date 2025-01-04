@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Order preferences for the outbound order.
 		/// </summary>
 		[JsonProperty("orderPreferences")]
-		public List<OrderAttribute> OrderPreferences { get; set; }
+		public List<OrderAttribute> OrderPreferences { get; set; } 
 
 		/// <summary>
 		/// List of packages to be outbound.
 		/// </summary>
 		[JsonProperty("packagesToOutbound")]
-		public List<DistributionPackageQuantity> PackagesToOutbound { get; set; }
+		public List<DistributionPackageQuantity> PackagesToOutbound { get; set; } 
 
 		/// <summary>
 		/// List of product units to be outbound.
 		/// </summary>
 		[JsonProperty("productsToOutbound")]
-		public List<ProductQuantity> ProductsToOutbound { get; set; }
+		public List<ProductQuantity> ProductsToOutbound { get; set; } 
 	}
 }

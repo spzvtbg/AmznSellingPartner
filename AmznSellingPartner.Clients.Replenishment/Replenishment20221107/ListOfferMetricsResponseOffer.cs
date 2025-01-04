@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// The Amazon Standard Identification Number (ASIN).
 		/// </summary>
 		[JsonProperty("asin")]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The percentage of items that were not shipped out of the total shipped units over a period of time due
@@ -22,7 +22,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("notDeliveredDueToOOS")]
 		[Minimum(0)]
 		[Maximum(100)]
-		public double NotDeliveredDueToOOS { get; set; }
+		public double NotDeliveredDueToOOS { get; set; } 
 
 		/// <summary>
 		/// The revenue generated from subscriptions over a period of time. Applicable to PERFORMANCE timePeriod
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("totalSubscriptionsRevenue")]
 		[Minimum(0)]
-		public double TotalSubscriptionsRevenue { get; set; }
+		public double TotalSubscriptionsRevenue { get; set; } 
 
 		/// <summary>
 		/// The number of units shipped to the subscribers over a period of time. Applicable to PERFORMANCE time
@@ -38,7 +38,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("shippedSubscriptionUnits")]
 		[Minimum(0)]
-		public long ShippedSubscriptionUnits { get; set; }
+		public long ShippedSubscriptionUnits { get; set; } 
 
 		/// <summary>
 		/// The number of active subscriptions present at the end of the period. Applicable to PERFORMANCE timeP
@@ -46,7 +46,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("activeSubscriptions")]
 		[Minimum(0)]
-		public long ActiveSubscriptions { get; set; }
+		public long ActiveSubscriptions { get; set; } 
 
 		/// <summary>
 		/// The percentage of total program revenue out of total product revenue. Applicable to PERFORMANCE time
@@ -55,7 +55,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("revenuePenetration")]
 		[Minimum(0)]
 		[Maximum(100)]
-		public double RevenuePenetration { get; set; }
+		public double RevenuePenetration { get; set; } 
 
 		/// <summary>
 		/// The revenue that would have been generated had there not been out of stock. Applicable to PERFORMANCE
@@ -63,7 +63,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("lostRevenueDueToOOS")]
 		[Minimum(0)]
-		public double LostRevenueDueToOOS { get; set; }
+		public double LostRevenueDueToOOS { get; set; } 
 
 		/// <summary>
 		/// The percentage of revenue from ASINs with coupons out of total revenue from all ASINs. Applicable to
@@ -72,7 +72,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("couponsRevenuePenetration")]
 		[Minimum(0)]
 		[Maximum(100)]
-		public double CouponsRevenuePenetration { get; set; }
+		public double CouponsRevenuePenetration { get; set; } 
 
 		/// <summary>
 		/// The percentage of new subscriptions acquired through coupons. Applicable to PERFORMANCE timePeriodTy
@@ -81,7 +81,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("shareOfCouponSubscriptions")]
 		[Minimum(0)]
 		[Maximum(100)]
-		public double ShareOfCouponSubscriptions { get; set; }
+		public double ShareOfCouponSubscriptions { get; set; } 
 
 		/// <summary>
 		/// The forecasted total subscription revenue for the next 30 days. Applicable to FORECAST timePeriodTyp
@@ -89,7 +89,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("next30DayTotalSubscriptionsRevenue")]
 		[Minimum(0)]
-		public double Next30DayTotalSubscriptionsRevenue { get; set; }
+		public double Next30DayTotalSubscriptionsRevenue { get; set; } 
 
 		/// <summary>
 		/// The forecasted total subscription revenue for the next 60 days. Applicable to FORECAST timePeriodTyp
@@ -97,7 +97,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("next60DayTotalSubscriptionsRevenue")]
 		[Minimum(0)]
-		public double Next60DayTotalSubscriptionsRevenue { get; set; }
+		public double Next60DayTotalSubscriptionsRevenue { get; set; } 
 
 		/// <summary>
 		/// The forecasted total subscription revenue for the next 90 days. Applicable to FORECAST timePeriodTyp
@@ -105,7 +105,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("next90DayTotalSubscriptionsRevenue")]
 		[Minimum(0)]
-		public double Next90DayTotalSubscriptionsRevenue { get; set; }
+		public double Next90DayTotalSubscriptionsRevenue { get; set; } 
 
 		/// <summary>
 		/// The forecasted shipped subscription units for the next 30 days. Applicable to FORECAST timePeriodTyp
@@ -113,7 +113,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("next30DayShippedSubscriptionUnits")]
 		[Minimum(0)]
-		public long Next30DayShippedSubscriptionUnits { get; set; }
+		public long Next30DayShippedSubscriptionUnits { get; set; } 
 
 		/// <summary>
 		/// The forecasted shipped subscription units for the next 60 days. Applicable to FORECAST timePeriodTyp
@@ -121,7 +121,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("next60DayShippedSubscriptionUnits")]
 		[Minimum(0)]
-		public long Next60DayShippedSubscriptionUnits { get; set; }
+		public long Next60DayShippedSubscriptionUnits { get; set; } 
 
 		/// <summary>
 		/// The forecasted shipped subscription units for the next 90 days. Applicable to FORECAST timePeriodTyp
@@ -129,18 +129,18 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("next90DayShippedSubscriptionUnits")]
 		[Minimum(0)]
-		public long Next90DayShippedSubscriptionUnits { get; set; }
+		public long Next90DayShippedSubscriptionUnits { get; set; } 
 
 		/// <summary>
 		/// A time interval used to compute metrics.
 		/// </summary>
 		[JsonProperty("timeInterval")]
-		public TimeInterval TimeInterval { get; set; }
+		public TimeInterval TimeInterval { get; set; } 
 
 		/// <summary>
 		/// The currency code in ISO 4217 format.
 		/// </summary>
 		[JsonProperty("currencyCode")]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 	}
 }

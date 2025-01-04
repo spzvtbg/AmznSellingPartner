@@ -14,26 +14,26 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("websiteDisplayGroup")]
 		[IsRequired]
-		public string WebsiteDisplayGroup { get; set; }
+		public string WebsiteDisplayGroup { get; set; } 
 
 		/// <summary>
 		/// Title, or name, of the sales rank.
 		/// </summary>
 		[JsonProperty("title")]
 		[IsRequired]
-		public string Title { get; set; }
+		public string Title { get; set; } 
 
 		/// <summary>
 		/// Corresponding Amazon retail website link, or URL, for the sales rank.
 		/// </summary>
 		[JsonProperty("link")]
-		public string Link { get; set; }
+		public string Link { get; set; } 
 
 		/// <summary>
 		/// Sales rank value.
 		/// </summary>
 		[JsonProperty("rank")]
 		[IsRequired]
-		public int Rank { get; set; }
+		public int Rank { get; set; } 
 	}
 }

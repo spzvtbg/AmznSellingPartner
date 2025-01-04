@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		[JsonProperty("text")]
 		[MinLength(1)]
 		[MaxLength(2000)]
-		public string Text { get; set; }
+		public string Text { get; set; } 
 	}
 }

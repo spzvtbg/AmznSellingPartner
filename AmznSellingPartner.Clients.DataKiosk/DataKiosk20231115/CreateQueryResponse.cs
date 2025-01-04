@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[JsonProperty("queryId")]
 		[IsRequired]
-		public string QueryId { get; set; }
+		public string QueryId { get; set; } 
 	}
 }

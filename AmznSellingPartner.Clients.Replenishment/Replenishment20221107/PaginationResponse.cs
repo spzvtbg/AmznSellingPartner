@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("totalResults")]
 		[Minimum(0)]
-		public long TotalResults { get; set; }
+		public long TotalResults { get; set; } 
 	}
 }

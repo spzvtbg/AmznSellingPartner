@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// An array of shipping label requests to be processed.
 		/// </summary>
 		[JsonProperty("shippingLabelRequests")]
-		public List<ShippingLabelRequest> ShippingLabelRequests { get; set; }
+		public List<ShippingLabelRequest> ShippingLabelRequests { get; set; } 
 	}
 }

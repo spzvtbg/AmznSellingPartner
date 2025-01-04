@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class TaxDetails : BaseClass
 	{
 		[JsonProperty("declaredValue")]
-		public Currency DeclaredValue { get; set; }
+		public Currency DeclaredValue { get; set; } 
 
 		/// <summary>
 		/// Harmonized System of Nomenclature code.
@@ -20,12 +20,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("hsnCode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string HsnCode { get; set; }
+		public string HsnCode { get; set; } 
 
 		/// <summary>
 		/// List of tax rates.
 		/// </summary>
 		[JsonProperty("taxRates")]
-		public List<TaxRate> TaxRates { get; set; }
+		public List<TaxRate> TaxRates { get; set; } 
 	}
 }

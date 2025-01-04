@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		[JsonProperty("CurrencyCode")]
 		[IsRequired]
 		[MaxLength(3)]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		/// <summary>
 		/// The currency amount.
 		/// </summary>
 		[JsonProperty("Amount")]
 		[IsRequired]
-		public double Amount { get; set; }
+		public double Amount { get; set; } 
 	}
 }

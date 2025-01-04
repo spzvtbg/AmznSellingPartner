@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	{
 		[JsonProperty("CarrierWillPickUpOption")]
 		[IsRequired]
-		public CarrierWillPickUpOption CarrierWillPickUpOption { get; set; }
+		public CarrierWillPickUpOption CarrierWillPickUpOption { get; set; } 
 
 		/// <summary>
 		/// The fee charged.
 		/// </summary>
 		[JsonProperty("Charge")]
 		[IsRequired]
-		public CurrencyAmount Charge { get; set; }
+		public CurrencyAmount Charge { get; set; } 
 	}
 }

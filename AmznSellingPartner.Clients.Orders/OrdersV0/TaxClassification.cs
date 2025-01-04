@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The type of tax.
 		/// </summary>
 		[JsonProperty("Name")]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The buyer's tax identifier.
 		/// </summary>
 		[JsonProperty("Value")]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

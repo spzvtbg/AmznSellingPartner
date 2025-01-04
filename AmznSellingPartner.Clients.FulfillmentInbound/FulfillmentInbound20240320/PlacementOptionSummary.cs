@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PlacementOptionId { get; set; }
+		public string PlacementOptionId { get; set; } 
 
 		/// <summary>
 		/// The status of a placement option. Possible values: `OFFERED`, `ACCEPTED`.
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Status { get; set; }
+		public string Status { get; set; } 
 	}
 }

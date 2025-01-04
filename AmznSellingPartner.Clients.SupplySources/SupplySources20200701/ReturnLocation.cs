@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// The Amazon provided `supplySourceId` where orders can be returned to.
 		/// </summary>
 		[JsonProperty("supplySourceId")]
-		public string SupplySourceId { get; set; }
+		public string SupplySourceId { get; set; } 
 
 		[JsonProperty("addressWithContact")]
-		public AddressWithContact AddressWithContact { get; set; }
+		public AddressWithContact AddressWithContact { get; set; } 
 	}
 }

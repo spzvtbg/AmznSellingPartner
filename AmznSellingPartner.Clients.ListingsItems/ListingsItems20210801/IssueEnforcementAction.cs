@@ -18,6 +18,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("action")]
 		[IsRequired]
-		public string Action { get; set; }
+		public string Action { get; set; } 
 	}
 }

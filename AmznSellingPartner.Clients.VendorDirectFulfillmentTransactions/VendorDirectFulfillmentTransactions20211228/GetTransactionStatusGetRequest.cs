@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 	}
 }

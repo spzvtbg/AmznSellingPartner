@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public GetAdditionalSellerInputsRequest Body { get; set; }
+		public GetAdditionalSellerInputsRequest Body { get; set; } 
 	}
 }

@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("order")]
 		[IsRequired]
-		public SortOrder Order { get; set; }
+		public SortOrder Order { get; set; } 
 
 		[JsonProperty("key")]
 		[IsRequired]
-		public ListOfferMetricsSortKey Key { get; set; }
+		public ListOfferMetricsSortKey Key { get; set; } 
 	}
 }

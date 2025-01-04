@@ -15,27 +15,27 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// ID of the selling party or vendor.
 		/// </summary>
 		[JsonProperty("sellingParty")]
 		[IsRequired]
-		public PartyIdentification SellingParty { get; set; }
+		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
 		/// Warehouse code of vendor.
 		/// </summary>
 		[JsonProperty("shipFromParty")]
 		[IsRequired]
-		public PartyIdentification ShipFromParty { get; set; }
+		public PartyIdentification ShipFromParty { get; set; } 
 
 		/// <summary>
 		/// Provide the details about the status of the shipment at that particular point of time.
 		/// </summary>
 		[JsonProperty("statusUpdateDetails")]
 		[IsRequired]
-		public StatusUpdateDetails StatusUpdateDetails { get; set; }
+		public StatusUpdateDetails StatusUpdateDetails { get; set; } 
 	}
 }

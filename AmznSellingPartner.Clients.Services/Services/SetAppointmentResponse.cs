@@ -13,20 +13,20 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// operations.
 		/// </summary>
 		[JsonProperty("appointmentId")]
-		public AppointmentId AppointmentId { get; set; }
+		public AppointmentId AppointmentId { get; set; } 
 
 		/// <summary>
 		/// Warnings generated during the `addAppointmentForServiceJobByServiceJobId` or `rescheduleAppointmentForServiceJobByServiceJobId`
 		/// operations.
 		/// </summary>
 		[JsonProperty("warnings")]
-		public WarningList Warnings { get; set; }
+		public WarningList Warnings { get; set; } 
 
 		/// <summary>
 		/// Errors occurred during during the `addAppointmentForServiceJobByServiceJobId` or `rescheduleAppointmentForServiceJobByServiceJobId`
 		/// operations.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

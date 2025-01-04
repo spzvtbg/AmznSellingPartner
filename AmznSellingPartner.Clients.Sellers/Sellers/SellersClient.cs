@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 	using System;
 	using System.Threading.Tasks;
 
-	public class SellersClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class SellersClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of marketplaces that the seller submitting the request can sell in and information about

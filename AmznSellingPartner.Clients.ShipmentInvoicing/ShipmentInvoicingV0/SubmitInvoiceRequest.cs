@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 	{
 		[JsonProperty("InvoiceContent")]
 		[IsRequired]
-		public Blob InvoiceContent { get; set; }
+		public Blob InvoiceContent { get; set; } 
 
 		/// <summary>
 		/// An Amazon marketplace identifier.
 		/// </summary>
 		[JsonProperty("MarketplaceId")]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// MD5 sum for validating the invoice data. For more information about calculating this value, see [Working
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// </summary>
 		[JsonProperty("ContentMD5Value")]
 		[IsRequired]
-		public string ContentMD5Value { get; set; }
+		public string ContentMD5Value { get; set; } 
 	}
 }

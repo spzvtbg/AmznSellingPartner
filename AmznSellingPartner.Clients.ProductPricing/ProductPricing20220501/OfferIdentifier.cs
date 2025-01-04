@@ -14,32 +14,32 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The seller identifier for the offer.
 		/// </summary>
 		[JsonProperty("sellerId")]
-		public string SellerId { get; set; }
+		public string SellerId { get; set; } 
 
 		/// <summary>
 		/// The seller SKU of the item. This will only be present for the target offer, which belongs to the requesting
 		/// seller.
 		/// </summary>
 		[JsonProperty("sku")]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 
 		/// <summary>
 		/// The Amazon identifier for the item.
 		/// </summary>
 		[JsonProperty("asin")]
 		[IsRequired]
-		public Asin Asin { get; set; }
+		public Asin Asin { get; set; } 
 
 		/// <summary>
 		/// The fulfillment type for the offer.
 		/// </summary>
 		[JsonProperty("fulfillmentType")]
-		public FulfillmentType FulfillmentType { get; set; }
+		public FulfillmentType FulfillmentType { get; set; } 
 	}
 }

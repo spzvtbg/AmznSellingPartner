@@ -16,21 +16,21 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("amazonShipmentId")]
 		[IsRequired]
-		public string AmazonShipmentId { get; set; }
+		public string AmazonShipmentId { get; set; } 
 
 		/// <summary>
 		/// An identifier for the fulfillment center that the shipment will be sent from.
 		/// </summary>
 		[JsonProperty("fulfillmentCenterId")]
 		[IsRequired]
-		public string FulfillmentCenterId { get; set; }
+		public string FulfillmentCenterId { get; set; } 
 
 		/// <summary>
 		/// The current status of the shipment.
 		/// </summary>
 		[JsonProperty("fulfillmentShipmentStatus")]
 		[IsRequired]
-		public FulfillmentShipmentStatus FulfillmentShipmentStatus { get; set; }
+		public FulfillmentShipmentStatus FulfillmentShipmentStatus { get; set; } 
 
 		/// <summary>
 		/// The meaning of the `shippingDate` value depends on the current status of the shipment. If the current
@@ -42,7 +42,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// 8601</a> format.
 		/// </summary>
 		[JsonProperty("shippingDate")]
-		public Timestamp ShippingDate { get; set; }
+		public Timestamp ShippingDate { get; set; } 
 
 		/// <summary>
 		/// The estimated arrival date and time of the shipment. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -51,20 +51,20 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// `estimatedArrivalDate` is not returned.
 		/// </summary>
 		[JsonProperty("estimatedArrivalDate")]
-		public Timestamp EstimatedArrivalDate { get; set; }
+		public Timestamp EstimatedArrivalDate { get; set; } 
 
 		/// <summary>
 		/// Provides additional insight into shipment timeline. Primairly used to communicate that actual delivery
 		/// dates aren't available.
 		/// </summary>
 		[JsonProperty("shippingNotes")]
-		public List<string> ShippingNotes { get; set; }
+		public List<string> ShippingNotes { get; set; } 
 
 		[JsonProperty("fulfillmentShipmentItem")]
 		[IsRequired]
-		public FulfillmentShipmentItemList FulfillmentShipmentItem { get; set; }
+		public FulfillmentShipmentItemList FulfillmentShipmentItem { get; set; } 
 
 		[JsonProperty("fulfillmentShipmentPackage")]
-		public FulfillmentShipmentPackageList FulfillmentShipmentPackage { get; set; }
+		public FulfillmentShipmentPackageList FulfillmentShipmentPackage { get; set; } 
 	}
 }

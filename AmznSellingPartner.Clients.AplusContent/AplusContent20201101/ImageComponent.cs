@@ -15,11 +15,11 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[JsonProperty("uploadDestinationId")]
 		[IsRequired]
 		[MinLength(1)]
-		public string UploadDestinationId { get; set; }
+		public string UploadDestinationId { get; set; } 
 
 		[JsonProperty("imageCropSpecification")]
 		[IsRequired]
-		public ImageCropSpecification ImageCropSpecification { get; set; }
+		public ImageCropSpecification ImageCropSpecification { get; set; } 
 
 		/// <summary>
 		/// The alternative text for the image.
@@ -28,6 +28,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string AltText { get; set; }
+		public string AltText { get; set; } 
 	}
 }

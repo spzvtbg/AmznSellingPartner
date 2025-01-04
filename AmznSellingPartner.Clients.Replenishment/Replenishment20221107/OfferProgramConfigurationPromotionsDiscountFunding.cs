@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("percentage")]
 		[Minimum(0)]
 		[Maximum(100)]
-		public long Percentage { get; set; }
+		public long Percentage { get; set; } 
 	}
 }

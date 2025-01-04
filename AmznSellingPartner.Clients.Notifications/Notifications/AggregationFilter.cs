@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	public class AggregationFilter : BaseClass
 	{
 		[JsonProperty("aggregationSettings")]
-		public AggregationSettings AggregationSettings { get; set; }
+		public AggregationSettings AggregationSettings { get; set; } 
 	}
 }

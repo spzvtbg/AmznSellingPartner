@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	public class GetInvoicesAttributesResponse : BaseClass
 	{
 		[JsonProperty("invoicesAttributes")]
-		public InvoicesAttributes InvoicesAttributes { get; set; }
+		public InvoicesAttributes InvoicesAttributes { get; set; } 
 	}
 }

@@ -17,24 +17,24 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// iptions.
 		/// </summary>
 		[JsonProperty("ineligibilityReasons")]
-		public List<OrderIneligibilityReason> IneligibilityReasons { get; set; }
+		public List<OrderIneligibilityReason> IneligibilityReasons { get; set; } 
 
 		/// <summary>
 		/// Details on SKU eligibility for each inbound package.
 		/// </summary>
 		[JsonProperty("packagesToInbound")]
 		[IsRequired]
-		public List<SkuEligibility> PackagesToInbound { get; set; }
+		public List<SkuEligibility> PackagesToInbound { get; set; } 
 
 		/// <summary>
 		/// Timestamp when the eligibility check is performed.
 		/// </summary>
 		[JsonProperty("previewedAt")]
 		[IsRequired]
-		public DateTime PreviewedAt { get; set; }
+		public DateTime PreviewedAt { get; set; } 
 
 		[JsonProperty("status")]
 		[IsRequired]
-		public InboundEligibilityStatus Status { get; set; }
+		public InboundEligibilityStatus Status { get; set; } 
 	}
 }

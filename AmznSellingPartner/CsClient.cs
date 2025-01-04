@@ -66,7 +66,7 @@
                 }
             }
 
-            var inherits = $"{this.inherits}((baseAddress))" ?? "BaseClass";
+            var inherits = $"{this.inherits}(baseAddress)" ?? "BaseClass";
             stringBuilder.AppendLine($"\tpublic class {this.name}(Uri baseAddress) : {inherits}");
             stringBuilder.AppendLine($"\t{{");
 

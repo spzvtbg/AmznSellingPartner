@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// This is required only when `DistributionPackageType=PALLET`.
 		/// </summary>
 		[JsonProperty("packages")]
-		public List<DistributionPackageQuantity> Packages { get; set; }
+		public List<DistributionPackageQuantity> Packages { get; set; } 
 
 		/// <summary>
 		/// This is required only when `DistributionPackageType=CASE`.
 		/// </summary>
 		[JsonProperty("products")]
-		public List<ProductQuantity> Products { get; set; }
+		public List<ProductQuantity> Products { get; set; } 
 	}
 }

@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// The SKU. This property is only supported for sellers and not for vendors.
 		/// </summary>
 		[JsonProperty("sku")]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 
 		/// <summary>
 		/// The Amazon Standard Identification Number (ASIN).
 		/// </summary>
 		[JsonProperty("asin")]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The marketplace identifier. The supported marketplaces for both sellers and vendors are US, CA, ES, UK,
@@ -28,27 +28,27 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// for the marketplace.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The offer eligibility status.
 		/// </summary>
 		[JsonProperty("eligibility")]
-		public EligibilityStatus Eligibility { get; set; }
+		public EligibilityStatus Eligibility { get; set; } 
 
 		[JsonProperty("offerProgramConfiguration")]
-		public OfferProgramConfiguration OfferProgramConfiguration { get; set; }
+		public OfferProgramConfiguration OfferProgramConfiguration { get; set; } 
 
 		/// <summary>
 		/// The replenishment program for the offer.
 		/// </summary>
 		[JsonProperty("programType")]
-		public ProgramType ProgramType { get; set; }
+		public ProgramType ProgramType { get; set; } 
 
 		/// <summary>
 		/// A list of vendor codes associated with the offer.
 		/// </summary>
 		[JsonProperty("vendorCodes")]
-		public List<string> VendorCodes { get; set; }
+		public List<string> VendorCodes { get; set; } 
 	}
 }

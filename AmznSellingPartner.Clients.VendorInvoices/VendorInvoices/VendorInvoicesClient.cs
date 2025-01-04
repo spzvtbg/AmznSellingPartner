@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorInvoicesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorInvoicesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Submit new invoices to Amazon.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- | ----

@@ -16,12 +16,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		[JsonProperty("statusCode")]
 		[Minimum(100)]
 		[Maximum(599)]
-		public int StatusCode { get; set; }
+		public int StatusCode { get; set; } 
 
 		/// <summary>
 		/// The HTTP response reason phrase.
 		/// </summary>
 		[JsonProperty("reasonPhrase")]
-		public string ReasonPhrase { get; set; }
+		public string ReasonPhrase { get; set; } 
 	}
 }

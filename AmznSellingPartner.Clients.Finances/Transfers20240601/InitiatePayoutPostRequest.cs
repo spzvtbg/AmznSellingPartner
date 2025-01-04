@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public InitiatePayoutRequest Body { get; set; }
+		public InitiatePayoutRequest Body { get; set; } 
 	}
 }

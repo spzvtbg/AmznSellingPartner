@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Contains the `UpdateScheduleRecords` for which the error/warning has occurred.
 		/// </summary>
 		[JsonProperty("payload")]
-		public List<UpdateScheduleRecord> Payload { get; set; }
+		public List<UpdateScheduleRecord> Payload { get; set; } 
 
 		/// <summary>
 		/// Errors encountered, if any.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

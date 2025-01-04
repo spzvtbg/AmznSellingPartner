@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// A list of one or more shipments with underlying details.
 		/// </summary>
 		[JsonProperty("shipments")]
-		public List<Shipment> Shipments { get; set; }
+		public List<Shipment> Shipments { get; set; } 
 	}
 }

@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// The number of Amazon Points.
 		/// </summary>
 		[JsonProperty("pointsNumber")]
-		public int PointsNumber { get; set; }
+		public int PointsNumber { get; set; } 
 
 		/// <summary>
 		/// The monetary value of the Amazon Points.
 		/// </summary>
 		[JsonProperty("pointsMonetaryValue")]
-		public MoneyType PointsMonetaryValue { get; set; }
+		public MoneyType PointsMonetaryValue { get; set; } 
 	}
 }

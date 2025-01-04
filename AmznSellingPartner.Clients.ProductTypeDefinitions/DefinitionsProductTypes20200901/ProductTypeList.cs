@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	{
 		[JsonProperty("productTypes")]
 		[IsRequired]
-		public List<ProductType> ProductTypes { get; set; }
+		public List<ProductType> ProductTypes { get; set; } 
 
 		/// <summary>
 		/// Amazon product type version identifier.
 		/// </summary>
 		[JsonProperty("productTypeVersion")]
 		[IsRequired]
-		public string ProductTypeVersion { get; set; }
+		public string ProductTypeVersion { get; set; } 
 	}
 }

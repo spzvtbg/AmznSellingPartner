@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		public string InboundPlanId { get; set; }
+		public string InboundPlanId { get; set; } 
 
 		/// <summary>
 		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
@@ -23,13 +23,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 
 		/// <summary>
 		/// The body of the request to `updateShipmentTrackingDetails`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public UpdateShipmentTrackingDetailsRequest Body { get; set; }
+		public UpdateShipmentTrackingDetailsRequest Body { get; set; } 
 	}
 }

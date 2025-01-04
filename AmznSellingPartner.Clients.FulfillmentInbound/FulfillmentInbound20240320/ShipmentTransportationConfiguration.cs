@@ -12,16 +12,16 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ShipmentTransportationConfiguration : BaseClass
 	{
 		[JsonProperty("contactInformation")]
-		public ContactInformation ContactInformation { get; set; }
+		public ContactInformation ContactInformation { get; set; } 
 
 		[JsonProperty("freightInformation")]
-		public FreightInformation FreightInformation { get; set; }
+		public FreightInformation FreightInformation { get; set; } 
 
 		/// <summary>
 		/// List of pallet configuration inputs.
 		/// </summary>
 		[JsonProperty("pallets")]
-		public List<PalletInput> Pallets { get; set; }
+		public List<PalletInput> Pallets { get; set; } 
 
 		/// <summary>
 		/// The range of dates within which the seller intends to ship their items. This is the pick-up date or 'ready
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("readyToShipWindow")]
 		[IsRequired]
-		public WindowInput ReadyToShipWindow { get; set; }
+		public WindowInput ReadyToShipWindow { get; set; } 
 
 		/// <summary>
 		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
@@ -39,6 +39,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public GetEligibleShipmentServicesRequest Body { get; set; }
+		public GetEligibleShipmentServicesRequest Body { get; set; } 
 	}
 }

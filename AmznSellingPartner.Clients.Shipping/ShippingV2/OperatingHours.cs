@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class OperatingHours : BaseClass
 	{
 		[JsonProperty("closingTime")]
-		public TimeOfDay ClosingTime { get; set; }
+		public TimeOfDay ClosingTime { get; set; } 
 
 		[JsonProperty("openingTime")]
-		public TimeOfDay OpeningTime { get; set; }
+		public TimeOfDay OpeningTime { get; set; } 
 
 		[JsonProperty("midDayClosures")]
-		public List<TimeOfDay> MidDayClosures { get; set; }
+		public List<TimeOfDay> MidDayClosures { get; set; } 
 	}
 }

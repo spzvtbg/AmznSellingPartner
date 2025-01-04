@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	{
 		[InBody("body")]
 		[IsRequired]
-		public GetMyFeesEstimateRequest Body { get; set; }
+		public GetMyFeesEstimateRequest Body { get; set; } 
 
 		/// <summary>
 		/// Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which
@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// </summary>
 		[InPath("SellerSKU")]
 		[IsRequired]
-		public string SellerSKU { get; set; }
+		public string SellerSKU { get; set; } 
 	}
 }

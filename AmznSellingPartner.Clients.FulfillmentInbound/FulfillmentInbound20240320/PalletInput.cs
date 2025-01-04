@@ -10,7 +10,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class PalletInput : BaseClass
 	{
 		[JsonProperty("dimensions")]
-		public Dimensions Dimensions { get; set; }
+		public Dimensions Dimensions { get; set; } 
 
 		/// <summary>
 		/// The number of containers where all other properties like weight or dimensions are identical.
@@ -19,12 +19,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 
 		[JsonProperty("stackability")]
-		public Stackability Stackability { get; set; }
+		public Stackability Stackability { get; set; } 
 
 		[JsonProperty("weight")]
-		public Weight Weight { get; set; }
+		public Weight Weight { get; set; } 
 	}
 }

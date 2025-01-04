@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class ShippingLabelList : BaseClass
 	{
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// An array containing the details of the generated shipping labels.
 		/// </summary>
 		[JsonProperty("shippingLabels")]
-		public List<ShippingLabel> ShippingLabels { get; set; }
+		public List<ShippingLabel> ShippingLabels { get; set; } 
 	}
 }

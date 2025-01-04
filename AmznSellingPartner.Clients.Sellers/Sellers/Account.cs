@@ -11,26 +11,26 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 	{
 		[JsonProperty("marketplaceParticipationList")]
 		[IsRequired]
-		public MarketplaceParticipationList MarketplaceParticipationList { get; set; }
+		public MarketplaceParticipationList MarketplaceParticipationList { get; set; } 
 
 		/// <summary>
 		/// The type of business registered for the seller account.
 		/// </summary>
 		[JsonProperty("businessType")]
 		[IsRequired]
-		public BusinessType BusinessType { get; set; }
+		public BusinessType BusinessType { get; set; } 
 
 		/// <summary>
 		/// The selling plan details.
 		/// </summary>
 		[JsonProperty("sellingPlan")]
 		[IsRequired]
-		public SellingPlan SellingPlan { get; set; }
+		public SellingPlan SellingPlan { get; set; } 
 
 		[JsonProperty("business")]
-		public Business Business { get; set; }
+		public Business Business { get; set; } 
 
 		[JsonProperty("primaryContact")]
-		public PrimaryContact PrimaryContact { get; set; }
+		public PrimaryContact PrimaryContact { get; set; } 
 	}
 }

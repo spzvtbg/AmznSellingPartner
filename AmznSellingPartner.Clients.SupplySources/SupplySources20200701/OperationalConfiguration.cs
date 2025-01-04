@@ -8,15 +8,15 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class OperationalConfiguration : BaseClass
 	{
 		[JsonProperty("contactDetails")]
-		public ContactDetails ContactDetails { get; set; }
+		public ContactDetails ContactDetails { get; set; } 
 
 		[JsonProperty("throughputConfig")]
-		public ThroughputConfig ThroughputConfig { get; set; }
+		public ThroughputConfig ThroughputConfig { get; set; } 
 
 		[JsonProperty("operatingHoursByDay")]
-		public OperatingHoursByDay OperatingHoursByDay { get; set; }
+		public OperatingHoursByDay OperatingHoursByDay { get; set; } 
 
 		[JsonProperty("handlingTime")]
-		public Duration HandlingTime { get; set; }
+		public Duration HandlingTime { get; set; } 
 	}
 }

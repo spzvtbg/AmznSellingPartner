@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// The type of tax.
 		/// </summary>
 		[JsonProperty("Name")]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The entity's tax identifier.
 		/// </summary>
 		[JsonProperty("Value")]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

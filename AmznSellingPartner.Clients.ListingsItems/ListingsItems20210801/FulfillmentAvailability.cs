@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("fulfillmentChannelCode")]
 		[IsRequired]
-		public string FulfillmentChannelCode { get; set; }
+		public string FulfillmentChannelCode { get; set; } 
 
 		/// <summary>
 		/// The quantity of the item you are making available for sale.
 		/// </summary>
 		[JsonProperty("quantity")]
 		[Minimum(0)]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 	}
 }

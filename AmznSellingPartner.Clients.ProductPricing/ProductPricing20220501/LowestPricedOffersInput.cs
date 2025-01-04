@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("itemCondition")]
 		[IsRequired]
-		public Condition ItemCondition { get; set; }
+		public Condition ItemCondition { get; set; } 
 
 		/// <summary>
 		/// The input parameter specifies the type of offers requested for `LowestPricedOffers`. This applies to
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("offerType")]
 		[IsRequired]
-		public OfferType OfferType { get; set; }
+		public OfferType OfferType { get; set; } 
 	}
 }

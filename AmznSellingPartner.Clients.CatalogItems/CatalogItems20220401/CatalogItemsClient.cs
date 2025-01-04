@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using System;
 	using System.Threading.Tasks;
 
-	public class CatalogItemsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class CatalogItemsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Search for and return a list of Amazon catalog items and associated information either by identifier

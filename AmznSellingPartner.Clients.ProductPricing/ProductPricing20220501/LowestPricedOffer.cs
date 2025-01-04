@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("lowestPricedOffersInput")]
 		[IsRequired]
-		public LowestPricedOffersInput LowestPricedOffersInput { get; set; }
+		public LowestPricedOffersInput LowestPricedOffersInput { get; set; } 
 
 		/// <summary>
 		/// A list of up to 20 lowest priced offers that match the criteria specified in `lowestPricedOffersInpu
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(20)]
-		public List<Offer> Offers { get; set; }
+		public List<Offer> Offers { get; set; } 
 	}
 }

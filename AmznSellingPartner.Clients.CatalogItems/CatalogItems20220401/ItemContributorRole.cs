@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// Display name of the role in the requested locale, such as Author or Actor.
 		/// </summary>
 		[JsonProperty("displayName")]
-		public string DisplayName { get; set; }
+		public string DisplayName { get; set; } 
 
 		/// <summary>
 		/// Role value for the Amazon catalog item, such as author or actor.
 		/// </summary>
 		[JsonProperty("value")]
 		[IsRequired]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

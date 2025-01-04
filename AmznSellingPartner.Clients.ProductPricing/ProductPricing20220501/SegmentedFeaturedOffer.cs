@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("featuredOfferSegments")]
 		[IsRequired]
-		public List<FeaturedOfferSegment> FeaturedOfferSegments { get; set; }
+		public List<FeaturedOfferSegment> FeaturedOfferSegments { get; set; } 
 	}
 }

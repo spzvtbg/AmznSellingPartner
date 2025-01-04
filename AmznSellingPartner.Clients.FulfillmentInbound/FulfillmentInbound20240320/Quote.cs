@@ -13,19 +13,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	{
 		[JsonProperty("cost")]
 		[IsRequired]
-		public Currency Cost { get; set; }
+		public Currency Cost { get; set; } 
 
 		/// <summary>
 		/// The time at which this transportation option quote expires. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; }
+		public DateTime Expiration { get; set; } 
 
 		/// <summary>
 		/// Voidable until timestamp.
 		/// </summary>
 		[JsonProperty("voidableUntil")]
-		public DateTime VoidableUntil { get; set; }
+		public DateTime VoidableUntil { get; set; } 
 	}
 }

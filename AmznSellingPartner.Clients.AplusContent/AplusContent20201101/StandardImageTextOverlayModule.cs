@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("overlayColorType")]
 		[IsRequired]
-		public ColorType OverlayColorType { get; set; }
+		public ColorType OverlayColorType { get; set; } 
 
 		[JsonProperty("block")]
-		public StandardImageTextBlock Block { get; set; }
+		public StandardImageTextBlock Block { get; set; } 
 	}
 }

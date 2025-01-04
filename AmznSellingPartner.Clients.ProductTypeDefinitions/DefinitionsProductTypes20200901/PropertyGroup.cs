@@ -14,18 +14,18 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// The display label of the property group.
 		/// </summary>
 		[JsonProperty("title")]
-		public string Title { get; set; }
+		public string Title { get; set; } 
 
 		/// <summary>
 		/// The description of the property group.
 		/// </summary>
 		[JsonProperty("description")]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 
 		/// <summary>
 		/// The names of the schema properties for the property group.
 		/// </summary>
 		[JsonProperty("propertyNames")]
-		public List<string> PropertyNames { get; set; }
+		public List<string> PropertyNames { get; set; } 
 	}
 }

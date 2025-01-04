@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// </summary>
 		[JsonProperty("errors")]
 		[IsRequired]
-		public List<Error> Errors { get; set; }
+		public List<Error> Errors { get; set; } 
 	}
 }

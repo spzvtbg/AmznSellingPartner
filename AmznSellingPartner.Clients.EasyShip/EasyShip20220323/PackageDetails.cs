@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class PackageDetails : BaseClass
 	{
 		[JsonProperty("packageItems")]
-		public Items PackageItems { get; set; }
+		public Items PackageItems { get; set; } 
 
 		[JsonProperty("packageTimeSlot")]
 		[IsRequired]
-		public TimeSlot PackageTimeSlot { get; set; }
+		public TimeSlot PackageTimeSlot { get; set; } 
 
 		[JsonProperty("packageIdentifier")]
-		public PackageIdentifier PackageIdentifier { get; set; }
+		public PackageIdentifier PackageIdentifier { get; set; } 
 	}
 }

@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Is Carrier unlinked from Merchant
 		/// </summary>
 		[JsonProperty("isUnlinked")]
-		public bool IsUnlinked { get; set; }
+		public bool IsUnlinked { get; set; } 
 	}
 }

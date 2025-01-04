@@ -9,20 +9,20 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Filter by seller or merchant SKU for the item.
 		/// </summary>
 		[InQuery("sku")]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 
 		/// <summary>
 		/// Sort the response in `ASCENDING` or `DESCENDING` order.
 		/// </summary>
 		[InQuery("sortOrder")]
-		public SortOrder SortOrder { get; set; }
+		public SortOrder SortOrder { get; set; } 
 
 		/// <summary>
 		/// Set to `SHOW` to return summaries with additional inventory details. Defaults to `HIDE,` which returns
 		/// only inventory summary totals.
 		/// </summary>
 		[InQuery("details")]
-		public Details Details { get; set; }
+		public Details Details { get; set; } 
 
 		/// <summary>
 		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// pages.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// Maximum number of results to return.
@@ -40,6 +40,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[InQuery("maxResults")]
 		[Minimum(1)]
 		[Maximum(200)]
-		public int MaxResults { get; set; }
+		public int MaxResults { get; set; } = 25;
 	}
 }

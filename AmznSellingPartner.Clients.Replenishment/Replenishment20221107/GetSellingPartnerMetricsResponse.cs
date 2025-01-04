@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// A list of metrics data for the selling partner.
 		/// </summary>
 		[JsonProperty("metrics")]
-		public List<GetSellingPartnerMetricsResponseMetric> Metrics { get; set; }
+		public List<GetSellingPartnerMetricsResponseMetric> Metrics { get; set; } 
 	}
 }

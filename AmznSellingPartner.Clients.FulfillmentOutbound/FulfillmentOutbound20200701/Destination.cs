@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class Destination : BaseClass
 	{
 		[JsonProperty("deliveryAddress")]
-		public VariablePrecisionAddress DeliveryAddress { get; set; }
+		public VariablePrecisionAddress DeliveryAddress { get; set; } 
 
 		/// <summary>
 		/// The IP address of the customer.
 		/// </summary>
 		[JsonProperty("ipAddress")]
-		public IpAddress IpAddress { get; set; }
+		public IpAddress IpAddress { get; set; } 
 	}
 }

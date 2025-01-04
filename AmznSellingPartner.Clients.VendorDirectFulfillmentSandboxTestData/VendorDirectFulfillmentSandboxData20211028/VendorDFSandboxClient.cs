@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorDFSandboxClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorDFSandboxClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Submits a request to generate test order data for Vendor Direct Fulfillment API entities.

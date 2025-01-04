@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// A list of one or more purchase orders.
 		/// </summary>
 		[JsonProperty("orderAcknowledgements")]
-		public List<OrderAcknowledgementItem> OrderAcknowledgements { get; set; }
+		public List<OrderAcknowledgementItem> OrderAcknowledgements { get; set; } 
 	}
 }

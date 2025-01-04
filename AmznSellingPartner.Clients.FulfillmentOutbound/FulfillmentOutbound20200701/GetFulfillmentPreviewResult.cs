@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class GetFulfillmentPreviewResult : BaseClass
 	{
 		[JsonProperty("fulfillmentPreviews")]
-		public FulfillmentPreviewList FulfillmentPreviews { get; set; }
+		public FulfillmentPreviewList FulfillmentPreviews { get; set; } 
 	}
 }

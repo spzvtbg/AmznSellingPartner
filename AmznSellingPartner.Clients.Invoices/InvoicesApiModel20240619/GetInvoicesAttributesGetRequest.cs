@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 	}
 }

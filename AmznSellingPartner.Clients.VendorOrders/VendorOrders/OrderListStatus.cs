@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class OrderListStatus : BaseClass
 	{
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// Represents an order status within the OrderListStatus.
 		/// </summary>
 		[JsonProperty("ordersStatus")]
-		public List<OrderStatus> OrdersStatus { get; set; }
+		public List<OrderStatus> OrdersStatus { get; set; } 
 	}
 }

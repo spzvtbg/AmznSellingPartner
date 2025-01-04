@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// Guide.
 		/// </summary>
 		[JsonProperty("code")]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// Reason for the acknowledgement code.
 		/// </summary>
 		[JsonProperty("description")]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 	}
 }

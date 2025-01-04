@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class TrackingDetailsInput : BaseClass
 	{
 		[JsonProperty("ltlTrackingDetail")]
-		public LtlTrackingDetailInput LtlTrackingDetail { get; set; }
+		public LtlTrackingDetailInput LtlTrackingDetail { get; set; } 
 
 		[JsonProperty("spdTrackingDetail")]
-		public SpdTrackingDetailInput SpdTrackingDetail { get; set; }
+		public SpdTrackingDetailInput SpdTrackingDetail { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[InPath("documentId")]
 		[IsRequired]
-		public string DocumentId { get; set; }
+		public string DocumentId { get; set; } 
 	}
 }

@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	public class Weight : BaseClass
 	{
 		[JsonProperty("value")]
-		public WeightValue Value { get; set; }
+		public WeightValue Value { get; set; } 
 
 		[JsonProperty("unit")]
-		public UnitOfWeight Unit { get; set; }
+		public UnitOfWeight Unit { get; set; } 
 	}
 }

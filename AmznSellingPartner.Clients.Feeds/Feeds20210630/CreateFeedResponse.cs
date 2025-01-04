@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("feedId")]
 		[IsRequired]
-		public string FeedId { get; set; }
+		public string FeedId { get; set; } 
 	}
 }

@@ -11,20 +11,20 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	{
 		[JsonProperty("OrderItems")]
 		[IsRequired]
-		public OrderItemBuyerInfoList OrderItems { get; set; }
+		public OrderItemBuyerInfoList OrderItems { get; set; } 
 
 		/// <summary>
 		/// When present and not empty, pass this string token in the next request to return the next response p
 		/// age.
 		/// </summary>
 		[JsonProperty("NextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// An Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
 		[JsonProperty("AmazonOrderId")]
 		[IsRequired]
-		public string AmazonOrderId { get; set; }
+		public string AmazonOrderId { get; set; } 
 	}
 }

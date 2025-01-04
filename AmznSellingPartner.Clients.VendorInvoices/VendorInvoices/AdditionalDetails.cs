@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// </summary>
 		[JsonProperty("type")]
 		[IsRequired]
-		public Type Type { get; set; }
+		public Type Type { get; set; } 
 
 		/// <summary>
 		/// The detail of the additional information provided by the selling party.
 		/// </summary>
 		[JsonProperty("detail")]
 		[IsRequired]
-		public string Detail { get; set; }
+		public string Detail { get; set; } 
 
 		/// <summary>
 		/// The language code of the additional information detail.
 		/// </summary>
 		[JsonProperty("languageCode")]
-		public string LanguageCode { get; set; }
+		public string LanguageCode { get; set; } 
 	}
 }

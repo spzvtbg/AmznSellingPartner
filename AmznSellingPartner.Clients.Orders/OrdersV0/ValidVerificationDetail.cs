@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("VerificationDetailType")]
 		[IsRequired]
-		public string VerificationDetailType { get; set; }
+		public string VerificationDetailType { get; set; } 
 
 		/// <summary>
 		/// A list of valid verification statuses where the associated verification detail type may be provided.
@@ -29,6 +29,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("ValidVerificationStatuses")]
 		[IsRequired]
-		public List<VerificationStatus> ValidVerificationStatuses { get; set; }
+		public List<VerificationStatus> ValidVerificationStatuses { get; set; } 
 	}
 }

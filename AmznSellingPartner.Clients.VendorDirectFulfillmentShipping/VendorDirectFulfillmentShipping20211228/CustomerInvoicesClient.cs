@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System;
 	using System.Threading.Tasks;
 
-	public class CustomerInvoicesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class CustomerInvoicesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of customer invoices created during a time frame that you specify. You define the time

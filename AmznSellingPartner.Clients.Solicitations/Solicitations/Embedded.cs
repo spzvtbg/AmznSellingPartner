@@ -10,9 +10,9 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	{
 		[JsonProperty("actions")]
 		[IsRequired]
-		public List<GetSolicitationActionResponse> Actions { get; set; }
+		public List<GetSolicitationActionResponse> Actions { get; set; } 
 
 		[JsonProperty("schema")]
-		public GetSchemaResponse Schema { get; set; }
+		public GetSchemaResponse Schema { get; set; } 
 	}
 }

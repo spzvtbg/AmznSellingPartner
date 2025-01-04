@@ -13,24 +13,24 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// A list of all the options that are available for the invoice status attribute.
 		/// </summary>
 		[JsonProperty("invoiceStatusOptions")]
-		public List<AttributeOption> InvoiceStatusOptions { get; set; }
+		public List<AttributeOption> InvoiceStatusOptions { get; set; } 
 
 		/// <summary>
 		/// A list of all the options that are available for the invoice type attribute.
 		/// </summary>
 		[JsonProperty("invoiceTypeOptions")]
-		public List<AttributeOption> InvoiceTypeOptions { get; set; }
+		public List<AttributeOption> InvoiceTypeOptions { get; set; } 
 
 		/// <summary>
 		/// A list of all the options that are available for the transaction identifier name attribute.
 		/// </summary>
 		[JsonProperty("transactionIdentifierNameOptions")]
-		public List<AttributeOption> TransactionIdentifierNameOptions { get; set; }
+		public List<AttributeOption> TransactionIdentifierNameOptions { get; set; } 
 
 		/// <summary>
 		/// A list of all the options that are available for the transaction type attribute.
 		/// </summary>
 		[JsonProperty("transactionTypeOptions")]
-		public List<AttributeOption> TransactionTypeOptions { get; set; }
+		public List<AttributeOption> TransactionTypeOptions { get; set; } 
 	}
 }

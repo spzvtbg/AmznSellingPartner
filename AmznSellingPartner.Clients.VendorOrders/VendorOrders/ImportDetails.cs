@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// If the recipient requests, contains the shipment method of payment. This is for import PO's only.
 		/// </summary>
 		[JsonProperty("methodOfPayment")]
-		public MethodOfPayment MethodOfPayment { get; set; }
+		public MethodOfPayment MethodOfPayment { get; set; } 
 
 		/// <summary>
 		/// Incoterms (International Commercial Terms) are used to divide transaction costs and responsibilities
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// orders only.
 		/// </summary>
 		[JsonProperty("internationalCommercialTerms")]
-		public InternationalCommercialTerms InternationalCommercialTerms { get; set; }
+		public InternationalCommercialTerms InternationalCommercialTerms { get; set; } 
 
 		/// <summary>
 		/// The port where goods on an import purchase order must be delivered by the vendor. This should only be
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("portOfDelivery")]
 		[MaxLength(64)]
-		public string PortOfDelivery { get; set; }
+		public string PortOfDelivery { get; set; } 
 
 		/// <summary>
 		/// Types and numbers of container(s) for import purchase orders. Can be a comma-separated list if the shipment
@@ -40,12 +40,12 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("importContainers")]
 		[MaxLength(64)]
-		public string ImportContainers { get; set; }
+		public string ImportContainers { get; set; } 
 
 		/// <summary>
 		/// Special instructions regarding the shipment. This field is for import purchase orders.
 		/// </summary>
 		[JsonProperty("shippingInstructions")]
-		public string ShippingInstructions { get; set; }
+		public string ShippingInstructions { get; set; } 
 	}
 }

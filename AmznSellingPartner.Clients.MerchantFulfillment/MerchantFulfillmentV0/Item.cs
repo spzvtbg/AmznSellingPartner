@@ -11,37 +11,37 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	{
 		[JsonProperty("OrderItemId")]
 		[IsRequired]
-		public OrderItemId OrderItemId { get; set; }
+		public OrderItemId OrderItemId { get; set; } 
 
 		[JsonProperty("Quantity")]
 		[IsRequired]
-		public ItemQuantity Quantity { get; set; }
+		public ItemQuantity Quantity { get; set; } 
 
 		[JsonProperty("ItemWeight")]
-		public Weight ItemWeight { get; set; }
+		public Weight ItemWeight { get; set; } 
 
 		[JsonProperty("ItemDescription")]
-		public ItemDescription ItemDescription { get; set; }
+		public ItemDescription ItemDescription { get; set; } 
 
 		[JsonProperty("TransparencyCodeList")]
-		public TransparencyCodeList TransparencyCodeList { get; set; }
+		public TransparencyCodeList TransparencyCodeList { get; set; } 
 
 		/// <summary>
 		/// A list of additional seller inputs required to ship this item using the chosen shipping service.
 		/// </summary>
 		[JsonProperty("ItemLevelSellerInputsList")]
-		public AdditionalSellerInputsList ItemLevelSellerInputsList { get; set; }
+		public AdditionalSellerInputsList ItemLevelSellerInputsList { get; set; } 
 
 		[JsonProperty("LiquidVolume")]
-		public LiquidVolume LiquidVolume { get; set; }
+		public LiquidVolume LiquidVolume { get; set; } 
 
 		/// <summary>
 		/// When true, the item qualifies as hazardous materials (hazmat). Defaults to false.
 		/// </summary>
 		[JsonProperty("IsHazmat")]
-		public bool IsHazmat { get; set; }
+		public bool IsHazmat { get; set; } 
 
 		[JsonProperty("DangerousGoodsDetails")]
-		public DangerousGoodsDetails DangerousGoodsDetails { get; set; }
+		public DangerousGoodsDetails DangerousGoodsDetails { get; set; } 
 	}
 }

@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// The start time of the time window.
 		/// </summary>
 		[JsonProperty("start")]
-		public DateTime Start { get; set; }
+		public DateTime Start { get; set; } 
 
 		/// <summary>
 		/// The end time of the time window.
 		/// </summary>
 		[JsonProperty("end")]
-		public DateTime End { get; set; }
+		public DateTime End { get; set; } 
 	}
 }

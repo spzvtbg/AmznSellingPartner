@@ -16,12 +16,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// datetime format.
 		/// </summary>
 		[JsonProperty("expiresAt")]
-		public DateTime ExpiresAt { get; set; }
+		public DateTime ExpiresAt { get; set; } 
 
 		/// <summary>
 		/// A list of appointment slots.
 		/// </summary>
 		[JsonProperty("slots")]
-		public List<AppointmentSlot> Slots { get; set; }
+		public List<AppointmentSlot> Slots { get; set; } 
 	}
 }

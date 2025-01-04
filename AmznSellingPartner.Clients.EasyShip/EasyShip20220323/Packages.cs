@@ -18,6 +18,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(500)]
-		public List<Package> PackagesValue { get; set; }
+		public List<Package> PackagesValue { get; set; } 
 	}
 }

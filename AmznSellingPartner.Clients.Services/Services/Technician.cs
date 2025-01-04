@@ -15,12 +15,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[JsonProperty("technicianId")]
 		[MinLength(1)]
 		[MaxLength(50)]
-		public string TechnicianId { get; set; }
+		public string TechnicianId { get; set; } 
 
 		/// <summary>
 		/// The name of the technician.
 		/// </summary>
 		[JsonProperty("name")]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 	}
 }

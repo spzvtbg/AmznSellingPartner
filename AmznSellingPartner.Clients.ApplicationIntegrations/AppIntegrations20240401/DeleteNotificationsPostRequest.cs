@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public DeleteNotificationsRequest Body { get; set; }
+		public DeleteNotificationsRequest Body { get; set; } 
 	}
 }

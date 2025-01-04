@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		public string InboundPlanId { get; set; }
+		public string InboundPlanId { get; set; } 
 
 		/// <summary>
 		/// The shipment to generate delivery window options for.
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 	}
 }

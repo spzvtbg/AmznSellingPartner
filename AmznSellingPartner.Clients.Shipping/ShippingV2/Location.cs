@@ -8,15 +8,15 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class Location : BaseClass
 	{
 		[JsonProperty("stateOrRegion")]
-		public StateOrRegion StateOrRegion { get; set; }
+		public StateOrRegion StateOrRegion { get; set; } 
 
 		[JsonProperty("city")]
-		public City City { get; set; }
+		public City City { get; set; } 
 
 		[JsonProperty("countryCode")]
-		public CountryCode CountryCode { get; set; }
+		public CountryCode CountryCode { get; set; } 
 
 		[JsonProperty("postalCode")]
-		public PostalCode PostalCode { get; set; }
+		public PostalCode PostalCode { get; set; } 
 	}
 }

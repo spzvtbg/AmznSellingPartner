@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	{
 		[InBody("body")]
 		[IsRequired]
-		public CreateSubscriptionRequest Body { get; set; }
+		public CreateSubscriptionRequest Body { get; set; } 
 
 		/// <summary>
 		/// The type of notification.   For more information about notification types, refer to [Notification Type
@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("notificationType")]
 		[IsRequired]
-		public NotificationType NotificationType { get; set; }
+		public NotificationType NotificationType { get; set; } 
 	}
 }

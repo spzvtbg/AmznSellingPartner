@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		[JsonProperty("attachments")]
 		[MinLength(1)]
 		[MaxLength(5)]
-		public List<Attachment> Attachments { get; set; }
+		public List<Attachment> Attachments { get; set; } 
 	}
 }

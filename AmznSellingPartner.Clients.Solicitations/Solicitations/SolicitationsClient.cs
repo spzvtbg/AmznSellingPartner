@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	using System;
 	using System.Threading.Tasks;
 
-	public class SolicitationsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class SolicitationsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of solicitation types that are available for an order that you specify. A solicitation

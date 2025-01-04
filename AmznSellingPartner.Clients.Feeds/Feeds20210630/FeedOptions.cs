@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	public class FeedOptions : BaseClass
 	{
 		[JsonProperty("")]
-		public string AdditionalValue { get; set; }
+		public string AdditionalValue { get; set; } 
 	}
 }

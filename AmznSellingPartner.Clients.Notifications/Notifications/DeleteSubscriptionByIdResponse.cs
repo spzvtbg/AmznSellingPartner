@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// An unexpected condition occurred during the `deleteSubscriptionById` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 	}
 }

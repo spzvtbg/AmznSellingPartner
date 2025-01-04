@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// A list of offers.
 		/// </summary>
 		[JsonProperty("offers")]
-		public List<ListOffersResponseOffer> Offers { get; set; }
+		public List<ListOffersResponseOffer> Offers { get; set; } 
 
 		/// <summary>
 		/// Use these parameters to paginate through the response.
 		/// </summary>
 		[JsonProperty("pagination")]
-		public PaginationResponse Pagination { get; set; }
+		public PaginationResponse Pagination { get; set; } 
 	}
 }

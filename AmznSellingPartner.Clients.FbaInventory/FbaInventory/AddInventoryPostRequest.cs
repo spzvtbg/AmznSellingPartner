@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InHeader("x-amzn-idempotency-token")]
 		[IsRequired]
-		public string XAmznIdempotencyToken { get; set; }
+		public string XAmznIdempotencyToken { get; set; } 
 
 		/// <summary>
 		/// List of items to add to Sandbox inventory.
 		/// </summary>
 		[InBody("addInventoryRequestBody")]
 		[IsRequired]
-		public AddInventoryRequest AddInventoryRequestBody { get; set; }
+		public AddInventoryRequest AddInventoryRequestBody { get; set; } 
 	}
 }

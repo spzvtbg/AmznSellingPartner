@@ -17,40 +17,40 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[JsonProperty("queryId")]
 		[IsRequired]
-		public string QueryId { get; set; }
+		public string QueryId { get; set; } 
 
 		/// <summary>
 		/// The submitted query.
 		/// </summary>
 		[JsonProperty("query")]
 		[IsRequired]
-		public string QueryValue { get; set; }
+		public string QueryValue { get; set; } 
 
 		/// <summary>
 		/// The date and time when the query was created, in ISO 8601 date time format.
 		/// </summary>
 		[JsonProperty("createdTime")]
 		[IsRequired]
-		public DateTime CreatedTime { get; set; }
+		public DateTime CreatedTime { get; set; } 
 
 		/// <summary>
 		/// The processing status of the query.
 		/// </summary>
 		[JsonProperty("processingStatus")]
 		[IsRequired]
-		public ProcessingStatus ProcessingStatus { get; set; }
+		public ProcessingStatus ProcessingStatus { get; set; } 
 
 		/// <summary>
 		/// The date and time when the query processing started, in ISO 8601 date time format.
 		/// </summary>
 		[JsonProperty("processingStartTime")]
-		public DateTime ProcessingStartTime { get; set; }
+		public DateTime ProcessingStartTime { get; set; } 
 
 		/// <summary>
 		/// The date and time when the query processing completed, in ISO 8601 date time format.
 		/// </summary>
 		[JsonProperty("processingEndTime")]
-		public DateTime ProcessingEndTime { get; set; }
+		public DateTime ProcessingEndTime { get; set; } 
 
 		/// <summary>
 		/// The data document identifier. This identifier is only present when there is data available as a result
@@ -59,7 +59,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// contents.
 		/// </summary>
 		[JsonProperty("dataDocumentId")]
-		public string DataDocumentId { get; set; }
+		public string DataDocumentId { get; set; } 
 
 		/// <summary>
 		/// The error document identifier. This identifier is only present when an error occurs during query processing.
@@ -68,7 +68,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// ntents.
 		/// </summary>
 		[JsonProperty("errorDocumentId")]
-		public string ErrorDocumentId { get; set; }
+		public string ErrorDocumentId { get; set; } 
 
 		/// <summary>
 		/// When a query produces results that are not included in the data document, pagination occurs. This means
@@ -78,6 +78,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// field will be absent.
 		/// </summary>
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 	}
 }

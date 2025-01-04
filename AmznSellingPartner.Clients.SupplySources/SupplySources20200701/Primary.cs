@@ -5,12 +5,12 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class Primary : BaseClass
 	{
 		[JsonProperty("email")]
-		public EmailAddress Email { get; set; }
+		public EmailAddress Email { get; set; } 
 
 		/// <summary>
 		/// The phone number of the person, business or institution.
 		/// </summary>
 		[JsonProperty("phone")]
-		public string Phone { get; set; }
+		public string Phone { get; set; } 
 	}
 }

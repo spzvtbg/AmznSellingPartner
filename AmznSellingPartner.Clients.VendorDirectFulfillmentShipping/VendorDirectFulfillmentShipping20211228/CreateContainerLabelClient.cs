@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System;
 	using System.Threading.Tasks;
 
-	public class CreateContainerLabelClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class CreateContainerLabelClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Creates a container (pallet) label for the associated shipment package.  **Usage Plan:**  | Rate (requests

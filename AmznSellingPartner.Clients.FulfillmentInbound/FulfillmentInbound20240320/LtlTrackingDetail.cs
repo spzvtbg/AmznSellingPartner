@@ -17,12 +17,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("billOfLadingNumber")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string BillOfLadingNumber { get; set; }
+		public string BillOfLadingNumber { get; set; } 
 
 		/// <summary>
 		/// The number associated with the freight bill.
 		/// </summary>
 		[JsonProperty("freightBillNumber")]
-		public List<string> FreightBillNumber { get; set; }
+		public List<string> FreightBillNumber { get; set; } 
 	}
 }

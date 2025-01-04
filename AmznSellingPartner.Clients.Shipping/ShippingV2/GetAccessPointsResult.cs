@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("accessPointsMap")]
 		[IsRequired]
-		public AccessPointsMap AccessPointsMap { get; set; }
+		public AccessPointsMap AccessPointsMap { get; set; } 
 	}
 }

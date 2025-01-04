@@ -17,10 +17,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(100)]
-		public int Position { get; set; }
+		public int Position { get; set; } 
 
 		[JsonProperty("text")]
 		[IsRequired]
-		public TextComponent Text { get; set; }
+		public TextComponent Text { get; set; } 
 	}
 }

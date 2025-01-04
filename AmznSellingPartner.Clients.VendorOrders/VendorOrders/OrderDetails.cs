@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("purchaseOrderDate")]
 		[IsRequired]
-		public DateTime PurchaseOrderDate { get; set; }
+		public DateTime PurchaseOrderDate { get; set; } 
 
 		/// <summary>
 		/// The date when purchase order was last changed by Amazon after the order was placed. This date will be
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[JsonProperty("purchaseOrderChangedDate")]
-		public DateTime PurchaseOrderChangedDate { get; set; }
+		public DateTime PurchaseOrderChangedDate { get; set; } 
 
 		/// <summary>
 		/// The date when current purchase order state was changed. Current purchase order state is available in
@@ -35,44 +35,44 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("purchaseOrderStateChangedDate")]
 		[IsRequired]
-		public DateTime PurchaseOrderStateChangedDate { get; set; }
+		public DateTime PurchaseOrderStateChangedDate { get; set; } 
 
 		/// <summary>
 		/// Type of purchase order.
 		/// </summary>
 		[JsonProperty("purchaseOrderType")]
-		public PurchaseOrderType PurchaseOrderType { get; set; }
+		public PurchaseOrderType PurchaseOrderType { get; set; } 
 
 		/// <summary>
 		/// If the purchase order is an import order, the details for the import order.
 		/// </summary>
 		[JsonProperty("importDetails")]
-		public ImportDetails ImportDetails { get; set; }
+		public ImportDetails ImportDetails { get; set; } 
 
 		/// <summary>
 		/// If requested by the recipient, this field will contain a promotional/deal number. The discount code line
 		/// is optional. It is used to obtain a price discount on items on the order.
 		/// </summary>
 		[JsonProperty("dealCode")]
-		public string DealCode { get; set; }
+		public string DealCode { get; set; } 
 
 		/// <summary>
 		/// Payment method used.
 		/// </summary>
 		[JsonProperty("paymentMethod")]
-		public PaymentMethod PaymentMethod { get; set; }
+		public PaymentMethod PaymentMethod { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the buying party.
 		/// </summary>
 		[JsonProperty("buyingParty")]
-		public PartyIdentification BuyingParty { get; set; }
+		public PartyIdentification BuyingParty { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the selling party.
 		/// </summary>
 		[JsonProperty("sellingParty")]
-		public PartyIdentification SellingParty { get; set; }
+		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses for a
@@ -80,33 +80,33 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// embers/support/help/node/GPZ88XH8HQM97ZV6).
 		/// </summary>
 		[JsonProperty("shipToParty")]
-		public PartyIdentification ShipToParty { get; set; }
+		public PartyIdentification ShipToParty { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the bill to party.
 		/// </summary>
 		[JsonProperty("billToParty")]
-		public PartyIdentification BillToParty { get; set; }
+		public PartyIdentification BillToParty { get; set; } 
 
 		/// <summary>
 		/// This indicates the ship window. Format is start and end date separated by double hyphen (--). For example,
 		/// 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
 		/// </summary>
 		[JsonProperty("shipWindow")]
-		public DateTimeInterval ShipWindow { get; set; }
+		public DateTimeInterval ShipWindow { get; set; } 
 
 		/// <summary>
 		/// This indicates the delivery window. Format is start and end date separated by double hyphen (--). For
 		/// example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
 		/// </summary>
 		[JsonProperty("deliveryWindow")]
-		public DateTimeInterval DeliveryWindow { get; set; }
+		public DateTimeInterval DeliveryWindow { get; set; } 
 
 		/// <summary>
 		/// A list of items in this purchase order.
 		/// </summary>
 		[JsonProperty("items")]
 		[IsRequired]
-		public List<OrderItem> Items { get; set; }
+		public List<OrderItem> Items { get; set; } 
 	}
 }

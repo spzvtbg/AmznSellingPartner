@@ -18,6 +18,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("start")]
 		[IsRequired]
-		public DateTime Start { get; set; }
+		public DateTime Start { get; set; } 
 	}
 }

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	using System;
 	using System.Threading.Tasks;
 
-	public class ReportsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ReportsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns report details for the reports that match the filters that you specify.  **Usage Plan:**  | Rate

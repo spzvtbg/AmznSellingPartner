@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(50)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The first line of the address.
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(60)]
-		public string AddressLine1 { get; set; }
+		public string AddressLine1 { get; set; } 
 
 		/// <summary>
 		/// Additional address information, if required.
@@ -33,7 +33,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("addressLine2")]
 		[MinLength(1)]
 		[MaxLength(60)]
-		public string AddressLine2 { get; set; }
+		public string AddressLine2 { get; set; } 
 
 		/// <summary>
 		/// Additional address information, if required.
@@ -41,36 +41,36 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("addressLine3")]
 		[MinLength(1)]
 		[MaxLength(60)]
-		public string AddressLine3 { get; set; }
+		public string AddressLine3 { get; set; } 
 
 		/// <summary>
 		/// The name of the business or institution associated with the address.
 		/// </summary>
 		[JsonProperty("companyName")]
-		public string CompanyName { get; set; }
+		public string CompanyName { get; set; } 
 
 		[JsonProperty("stateOrRegion")]
 		[IsRequired]
-		public StateOrRegion StateOrRegion { get; set; }
+		public StateOrRegion StateOrRegion { get; set; } 
 
 		[JsonProperty("city")]
 		[IsRequired]
-		public City City { get; set; }
+		public City City { get; set; } 
 
 		[JsonProperty("countryCode")]
 		[IsRequired]
-		public CountryCode CountryCode { get; set; }
+		public CountryCode CountryCode { get; set; } 
 
 		[JsonProperty("postalCode")]
 		[IsRequired]
-		public PostalCode PostalCode { get; set; }
+		public PostalCode PostalCode { get; set; } 
 
 		/// <summary>
 		/// The email address of the contact associated with the address.
 		/// </summary>
 		[JsonProperty("email")]
 		[MaxLength(64)]
-		public string Email { get; set; }
+		public string Email { get; set; } 
 
 		/// <summary>
 		/// The phone number of the person, business or institution located at that address, including the country
@@ -79,9 +79,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("phoneNumber")]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string PhoneNumber { get; set; }
+		public string PhoneNumber { get; set; } 
 
 		[JsonProperty("geocode")]
-		public Geocode Geocode { get; set; }
+		public Geocode Geocode { get; set; } 
 	}
 }

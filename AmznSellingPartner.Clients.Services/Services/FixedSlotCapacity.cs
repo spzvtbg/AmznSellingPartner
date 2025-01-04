@@ -13,25 +13,25 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Resource Identifier.
 		/// </summary>
 		[JsonProperty("resourceId")]
-		public string ResourceId { get; set; }
+		public string ResourceId { get; set; } 
 
 		/// <summary>
 		/// The duration of each slot which is returned. This value will be a multiple of 5 and fall in the following
 		/// range: 5 <= `slotDuration` <= 360.
 		/// </summary>
 		[JsonProperty("slotDuration")]
-		public int SlotDuration { get; set; }
+		public int SlotDuration { get; set; } 
 
 		/// <summary>
 		/// Array of capacity slots in fixed slot format.
 		/// </summary>
 		[JsonProperty("capacities")]
-		public List<FixedSlot> Capacities { get; set; }
+		public List<FixedSlot> Capacities { get; set; } 
 
 		/// <summary>
 		/// Next page token, if there are more pages.
 		/// </summary>
 		[JsonProperty("nextPageToken")]
-		public string NextPageToken { get; set; }
+		public string NextPageToken { get; set; } 
 	}
 }

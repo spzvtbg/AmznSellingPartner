@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateFulfillmentOrderRequest Body { get; set; }
+		public CreateFulfillmentOrderRequest Body { get; set; } 
 	}
 }

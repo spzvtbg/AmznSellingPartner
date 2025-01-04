@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System;
 	using System.Threading.Tasks;
 
-	public class FbaOutboundClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class FbaOutboundClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of fulfillment order previews based on shipping criteria that you specify.  **Usage Plan:**

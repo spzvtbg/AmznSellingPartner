@@ -8,18 +8,18 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class OutboundCapability : BaseClass
 	{
 		[JsonProperty("isSupported")]
-		public bool IsSupported { get; set; }
+		public bool IsSupported { get; set; } 
 
 		[JsonProperty("operationalConfiguration")]
-		public OperationalConfiguration OperationalConfiguration { get; set; }
+		public OperationalConfiguration OperationalConfiguration { get; set; } 
 
 		[JsonProperty("returnLocation")]
-		public ReturnLocation ReturnLocation { get; set; }
+		public ReturnLocation ReturnLocation { get; set; } 
 
 		[JsonProperty("deliveryChannel")]
-		public DeliveryChannel DeliveryChannel { get; set; }
+		public DeliveryChannel DeliveryChannel { get; set; } 
 
 		[JsonProperty("pickupChannel")]
-		public PickupChannel PickupChannel { get; set; }
+		public PickupChannel PickupChannel { get; set; } 
 	}
 }

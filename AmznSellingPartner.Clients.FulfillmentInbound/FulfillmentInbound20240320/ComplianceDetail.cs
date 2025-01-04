@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("asin")]
 		[MinLength(1)]
 		[MaxLength(10)]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The Fulfillment Network SKU, which identifies a real fulfillable item with catalog data and conditio
@@ -24,7 +24,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("fnsku")]
 		[MinLength(1)]
 		[MaxLength(10)]
-		public string Fnsku { get; set; }
+		public string Fnsku { get; set; } 
 
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
@@ -32,9 +32,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("msku")]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Msku { get; set; }
+		public string Msku { get; set; } 
 
 		[JsonProperty("taxDetails")]
-		public TaxDetails TaxDetails { get; set; }
+		public TaxDetails TaxDetails { get; set; } 
 	}
 }

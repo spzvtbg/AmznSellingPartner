@@ -15,19 +15,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// </summary>
 		[JsonProperty("transactionId")]
 		[IsRequired]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 
 		/// <summary>
 		/// The current processing status of the transaction.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public Status Status { get; set; }
+		public Status Status { get; set; } 
 
 		/// <summary>
 		/// Test case data for the transaction. Only available when the transaction status is SUCCESS.
 		/// </summary>
 		[JsonProperty("testCaseData")]
-		public TestCaseData TestCaseData { get; set; }
+		public TestCaseData TestCaseData { get; set; } 
 	}
 }

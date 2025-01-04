@@ -14,26 +14,26 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// should be submitted.
 		/// </summary>
 		[JsonProperty("buyerProductIdentifier")]
-		public string BuyerProductIdentifier { get; set; }
+		public string BuyerProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// The vendor selected product identification of the item. Either buyerProductIdentifier or vendorProductIdentifier
 		/// should be submitted.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
-		public string VendorProductIdentifier { get; set; }
+		public string VendorProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// Total item quantity available in the warehouse.
 		/// </summary>
 		[JsonProperty("availableQuantity")]
 		[IsRequired]
-		public ItemQuantity AvailableQuantity { get; set; }
+		public ItemQuantity AvailableQuantity { get; set; } 
 
 		/// <summary>
 		/// When true, the item is permanently unavailable.
 		/// </summary>
 		[JsonProperty("isObsolete")]
-		public bool IsObsolete { get; set; }
+		public bool IsObsolete { get; set; } 
 	}
 }

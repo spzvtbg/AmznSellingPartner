@@ -16,19 +16,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("sellingParty")]
 		[IsRequired]
-		public PartyIdentification SellingParty { get; set; }
+		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
 		/// Warehouse code of vendor.
 		/// </summary>
 		[JsonProperty("shipFromParty")]
 		[IsRequired]
-		public PartyIdentification ShipFromParty { get; set; }
+		public PartyIdentification ShipFromParty { get; set; } 
 
 		/// <summary>
 		/// A list of the packages in this shipment.
 		/// </summary>
 		[JsonProperty("containers")]
-		public List<Container> Containers { get; set; }
+		public List<Container> Containers { get; set; } 
 	}
 }

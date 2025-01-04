@@ -9,19 +9,19 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// header is deprecated and no longer returned.
 		/// </summary>
 		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; }
+		public string XAmznRateLimitLimit { get; set; } 
 
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; }
+		public string XAmznRequestId { get; set; } 
 
-		public bool Succeeded { get; set; }
+		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Marketplace participations successfully retrieved.
 		/// </summary>
-		public GetMarketplaceParticipationsResponse GetMarketplaceParticipationsResponse { get; set; }
+		public GetMarketplaceParticipationsResponse GetMarketplaceParticipationsResponse { get; set; } 
 	}
 }

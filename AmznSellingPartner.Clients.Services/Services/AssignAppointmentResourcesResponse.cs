@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// The payload for the `assignAppointmentResource` operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public Payload Payload { get; set; }
+		public Payload Payload { get; set; } 
 
 		/// <summary>
 		/// Errors occurred during during the `assignAppointmentResources` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

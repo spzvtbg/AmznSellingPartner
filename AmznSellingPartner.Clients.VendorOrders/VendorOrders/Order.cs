@@ -15,19 +15,19 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// This field will contain the current state of the purchase order.
 		/// </summary>
 		[JsonProperty("purchaseOrderState")]
 		[IsRequired]
-		public PurchaseOrderState PurchaseOrderState { get; set; }
+		public PurchaseOrderState PurchaseOrderState { get; set; } 
 
 		/// <summary>
 		/// Details of an order.
 		/// </summary>
 		[JsonProperty("orderDetails")]
-		public OrderDetails OrderDetails { get; set; }
+		public OrderDetails OrderDetails { get; set; } 
 	}
 }

@@ -11,15 +11,15 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// The links response that is associated with the specified `amazonOrderId`.
 		/// </summary>
 		[JsonProperty("_links")]
-		public Links Links { get; set; }
+		public Links Links { get; set; } 
 
 		/// <summary>
 		/// The messaging actions response that is associated with the specified `amazonOrderId`.
 		/// </summary>
 		[JsonProperty("_embedded")]
-		public Embedded Embedded { get; set; }
+		public Embedded Embedded { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

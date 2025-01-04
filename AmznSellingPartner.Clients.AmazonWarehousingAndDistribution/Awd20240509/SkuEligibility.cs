@@ -15,14 +15,14 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// If not eligible, these are list of error codes and descriptions.
 		/// </summary>
 		[JsonProperty("ineligibilityReasons")]
-		public List<SkuIneligibilityReason> IneligibilityReasons { get; set; }
+		public List<SkuIneligibilityReason> IneligibilityReasons { get; set; } 
 
 		[JsonProperty("packageQuantity")]
 		[IsRequired]
-		public DistributionPackageQuantity PackageQuantity { get; set; }
+		public DistributionPackageQuantity PackageQuantity { get; set; } 
 
 		[JsonProperty("status")]
 		[IsRequired]
-		public InboundEligibilityStatus Status { get; set; }
+		public InboundEligibilityStatus Status { get; set; } 
 	}
 }

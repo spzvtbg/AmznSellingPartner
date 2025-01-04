@@ -20,13 +20,13 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public Status Status { get; set; }
+		public Status Status { get; set; } 
 
 		/// <summary>
 		/// This field represents the timestamp, following the ISO 8601 format, which specifies the date when temporary
 		/// exemptions, if applicable, will expire, and Amazon will begin enforcing the listed actions.
 		/// </summary>
 		[JsonProperty("expiryDate")]
-		public DateTime ExpiryDate { get; set; }
+		public DateTime ExpiryDate { get; set; } 
 	}
 }

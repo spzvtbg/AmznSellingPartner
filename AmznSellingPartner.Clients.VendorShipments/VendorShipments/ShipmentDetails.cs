@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class ShipmentDetails : BaseClass
 	{
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// A list of one or more shipments with underlying details.
 		/// </summary>
 		[JsonProperty("shipments")]
-		public List<Shipment> Shipments { get; set; }
+		public List<Shipment> Shipments { get; set; } 
 	}
 }

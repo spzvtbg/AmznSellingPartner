@@ -11,18 +11,18 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("requestToken")]
 		[IsRequired]
-		public RequestToken RequestToken { get; set; }
+		public RequestToken RequestToken { get; set; } 
 
 		[JsonProperty("rateId")]
 		[IsRequired]
-		public RateId RateId { get; set; }
+		public RateId RateId { get; set; } 
 
 		[JsonProperty("requestedDocumentSpecification")]
 		[IsRequired]
-		public RequestedDocumentSpecification RequestedDocumentSpecification { get; set; }
+		public RequestedDocumentSpecification RequestedDocumentSpecification { get; set; } 
 
 		[JsonProperty("requestedValueAddedServices")]
-		public RequestedValueAddedServiceList RequestedValueAddedServices { get; set; }
+		public RequestedValueAddedServiceList RequestedValueAddedServices { get; set; } 
 
 		/// <summary>
 		/// The additional inputs required to purchase a shipping offering, in JSON format. The JSON provided here
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// to the getRates operation.
 		/// </summary>
 		[JsonProperty("additionalInputs")]
-		public AdditionalInputs AdditionalInputs { get; set; }
+		public AdditionalInputs AdditionalInputs { get; set; } 
 	}
 }

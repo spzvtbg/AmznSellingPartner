@@ -8,24 +8,24 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// Unique request reference identifier.
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; }
+		public string XAmznRequestId { get; set; } 
 
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
 		/// </summary>
 		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; }
+		public string XAmznRateLimitLimit { get; set; } 
 
-		public bool Succeeded { get; set; }
+		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// GetInboundPlan 200 response
 		/// </summary>
-		public InboundPlan InboundPlan { get; set; }
+		public InboundPlan InboundPlan { get; set; } 
 
 		/// <summary>
 		/// Request has missing or invalid parameters and cannot be parsed.
 		/// </summary>
-		public ErrorList ErrorList { get; set; }
+		public ErrorList ErrorList { get; set; } 
 	}
 }

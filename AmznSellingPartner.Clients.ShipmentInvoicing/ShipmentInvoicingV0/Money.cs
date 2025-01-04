@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// Three-digit currency code in ISO 4217 format.
 		/// </summary>
 		[JsonProperty("CurrencyCode")]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		/// <summary>
 		/// The currency amount.
 		/// </summary>
 		[JsonProperty("Amount")]
-		public string Amount { get; set; }
+		public string Amount { get; set; } 
 	}
 }

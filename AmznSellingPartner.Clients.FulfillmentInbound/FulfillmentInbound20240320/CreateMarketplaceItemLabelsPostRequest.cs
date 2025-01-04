@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateMarketplaceItemLabelsRequest Body { get; set; }
+		public CreateMarketplaceItemLabelsRequest Body { get; set; } 
 	}
 }

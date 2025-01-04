@@ -18,19 +18,19 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("numberOfResults")]
 		[IsRequired]
-		public int NumberOfResults { get; set; }
+		public int NumberOfResults { get; set; } 
 
 		/// <summary>
 		/// If available, the `nextToken` and/or `previousToken` values required to return paginated results.
 		/// </summary>
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// A list of listings items.
 		/// </summary>
 		[JsonProperty("items")]
 		[IsRequired]
-		public List<Item> Items { get; set; }
+		public List<Item> Items { get; set; } 
 	}
 }

@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// The date when the line item was confirmed by vendor. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("acknowledgementDate")]
-		public DateTime AcknowledgementDate { get; set; }
+		public DateTime AcknowledgementDate { get; set; } 
 
 		/// <summary>
 		/// Item quantity accepted by vendor to be shipped.
 		/// </summary>
 		[JsonProperty("acceptedQuantity")]
-		public ItemQuantity AcceptedQuantity { get; set; }
+		public ItemQuantity AcceptedQuantity { get; set; } 
 
 		/// <summary>
 		/// Item quantity rejected by vendor.
 		/// </summary>
 		[JsonProperty("rejectedQuantity")]
-		public ItemQuantity RejectedQuantity { get; set; }
+		public ItemQuantity RejectedQuantity { get; set; } 
 	}
 }

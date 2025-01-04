@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class ExceptionOperatingHours : BaseClass
 	{
 		[JsonProperty("dateRange")]
-		public DateRange DateRange { get; set; }
+		public DateRange DateRange { get; set; } 
 
 		[JsonProperty("operatingHours")]
-		public OperatingHours OperatingHours { get; set; }
+		public OperatingHours OperatingHours { get; set; } 
 	}
 }

@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[IsRequired]
 		[MinLength(2)]
 		[MaxLength(2)]
-		public string CountryCode { get; set; }
+		public string CountryCode { get; set; } 
 	}
 }

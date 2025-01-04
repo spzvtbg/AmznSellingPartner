@@ -10,19 +10,19 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[InQuery("trackingId")]
 		[IsRequired]
-		public string TrackingId { get; set; }
+		public string TrackingId { get; set; } 
 
 		/// <summary>
 		/// A carrier identifier originally returned by the getRates operation for the selected rate.
 		/// </summary>
 		[InQuery("carrierId")]
 		[IsRequired]
-		public string CarrierId { get; set; }
+		public string CarrierId { get; set; } 
 
 		/// <summary>
 		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
-		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; }
+		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; } 
 	}
 }

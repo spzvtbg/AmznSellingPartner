@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 	public class GetAccountResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public Account Payload { get; set; }
+		public Account Payload { get; set; } 
 
 		/// <summary>
 		/// A list of errors that occurred with the `getAccount` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 
 		/// <summary>
 		/// The status of a shipment. The state of the shipment will typically start as `UNCONFIRMED`, then transition
@@ -29,6 +29,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Status { get; set; }
+		public string Status { get; set; } 
 	}
 }

@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	{
 		[JsonProperty("pointsNumber")]
 		[IsRequired]
-		public int PointsNumber { get; set; }
+		public int PointsNumber { get; set; } 
 	}
 }

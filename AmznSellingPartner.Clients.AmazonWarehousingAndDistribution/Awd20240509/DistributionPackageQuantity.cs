@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("count")]
 		[IsRequired]
-		public int Count { get; set; }
+		public int Count { get; set; } 
 
 		[JsonProperty("distributionPackage")]
 		[IsRequired]
-		public DistributionPackage DistributionPackage { get; set; }
+		public DistributionPackage DistributionPackage { get; set; } 
 	}
 }

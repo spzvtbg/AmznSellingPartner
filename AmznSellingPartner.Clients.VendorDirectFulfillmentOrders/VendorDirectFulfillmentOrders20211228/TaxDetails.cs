@@ -10,19 +10,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	public class TaxDetails : BaseClass
 	{
 		[JsonProperty("taxRate")]
-		public Decimal TaxRate { get; set; }
+		public Decimal TaxRate { get; set; } 
 
 		[JsonProperty("taxAmount")]
 		[IsRequired]
-		public Money TaxAmount { get; set; }
+		public Money TaxAmount { get; set; } 
 
 		[JsonProperty("taxableAmount")]
-		public Money TaxableAmount { get; set; }
+		public Money TaxableAmount { get; set; } 
 
 		/// <summary>
 		/// Tax type.
 		/// </summary>
 		[JsonProperty("type")]
-		public Type Type { get; set; }
+		public Type Type { get; set; } 
 	}
 }

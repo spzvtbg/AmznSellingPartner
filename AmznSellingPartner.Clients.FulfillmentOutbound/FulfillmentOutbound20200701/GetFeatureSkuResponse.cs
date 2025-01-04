@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class GetFeatureSkuResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public GetFeatureSkuResult Payload { get; set; }
+		public GetFeatureSkuResult Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

@@ -13,21 +13,21 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The name of the feature for which to return a list of eligible inventory.
 		/// </summary>
 		[InPath("featureName")]
 		[IsRequired]
-		public string FeatureName { get; set; }
+		public string FeatureName { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response to your previous request that is used to return the next response
 		/// page. A value of null will return the first page.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// A date that you can use to select inventory that has been updated since a specified date. An update is
@@ -35,6 +35,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// -MM-ddTHH:mm:ss.sssZ
 		/// </summary>
 		[InQuery("queryStartDate")]
-		public DateTime QueryStartDate { get; set; }
+		public DateTime QueryStartDate { get; set; } 
 	}
 }

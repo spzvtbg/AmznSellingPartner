@@ -16,25 +16,25 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// </summary>
 		[JsonProperty("type")]
 		[IsRequired]
-		public Type Type { get; set; }
+		public Type Type { get; set; } 
 
 		/// <summary>
 		/// Description of the charge.
 		/// </summary>
 		[JsonProperty("description")]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 
 		/// <summary>
 		/// Total monetary amount related to this charge.
 		/// </summary>
 		[JsonProperty("chargeAmount")]
 		[IsRequired]
-		public Money ChargeAmount { get; set; }
+		public Money ChargeAmount { get; set; } 
 
 		/// <summary>
 		/// Tax amount details applied on this charge.
 		/// </summary>
 		[JsonProperty("taxDetails")]
-		public List<TaxDetails> TaxDetails { get; set; }
+		public List<TaxDetails> TaxDetails { get; set; } 
 	}
 }

@@ -19,27 +19,27 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("numberOfResults")]
 		[IsRequired]
-		public int NumberOfResults { get; set; }
+		public int NumberOfResults { get; set; } 
 
 		/// <summary>
 		/// If available, the `nextToken` and/or `previousToken` values required to return paginated results.
 		/// </summary>
 		[JsonProperty("pagination")]
 		[IsRequired]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// Search refinements for `keywords`-based searches.
 		/// </summary>
 		[JsonProperty("refinements")]
 		[IsRequired]
-		public Refinements Refinements { get; set; }
+		public Refinements Refinements { get; set; } 
 
 		/// <summary>
 		/// A list of items from the Amazon catalog.
 		/// </summary>
 		[JsonProperty("items")]
 		[IsRequired]
-		public List<Item> Items { get; set; }
+		public List<Item> Items { get; set; } 
 	}
 }

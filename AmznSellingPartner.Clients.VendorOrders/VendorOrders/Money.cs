@@ -15,16 +15,16 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("currencyCode")]
 		[MaxLength(3)]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		[JsonProperty("amount")]
-		public Decimal Amount { get; set; }
+		public Decimal Amount { get; set; } 
 
 		/// <summary>
 		/// The unit of measure for prices of items sold by weight. If this field is absent, the item is sold by
 		/// eaches.
 		/// </summary>
 		[JsonProperty("unitOfMeasure")]
-		public UnitOfMeasure UnitOfMeasure { get; set; }
+		public UnitOfMeasure UnitOfMeasure { get; set; } 
 	}
 }

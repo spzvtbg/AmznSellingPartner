@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("deliveryNotes")]
 		[MaxLength(256)]
-		public string DeliveryNotes { get; set; }
+		public string DeliveryNotes { get; set; } 
 	}
 }

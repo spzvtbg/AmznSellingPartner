@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateNotificationRequest Body { get; set; }
+		public CreateNotificationRequest Body { get; set; } 
 	}
 }

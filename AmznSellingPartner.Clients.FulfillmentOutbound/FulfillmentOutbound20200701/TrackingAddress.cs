@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("city")]
 		[IsRequired]
 		[MaxLength(150)]
-		public string City { get; set; }
+		public string City { get; set; } 
 
 		/// <summary>
 		/// The state.
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("state")]
 		[IsRequired]
 		[MaxLength(150)]
-		public string State { get; set; }
+		public string State { get; set; } 
 
 		/// <summary>
 		/// The country.
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("country")]
 		[IsRequired]
 		[MaxLength(6)]
-		public string Country { get; set; }
+		public string Country { get; set; } 
 	}
 }

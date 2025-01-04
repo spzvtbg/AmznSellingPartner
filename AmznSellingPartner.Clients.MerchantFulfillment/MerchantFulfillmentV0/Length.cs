@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// The value in units.
 		/// </summary>
 		[JsonProperty("value")]
-		public double Value { get; set; }
+		public double Value { get; set; } 
 
 		[JsonProperty("unit")]
-		public UnitOfLength Unit { get; set; }
+		public UnitOfLength Unit { get; set; } 
 	}
 }

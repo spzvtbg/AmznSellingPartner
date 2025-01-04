@@ -17,31 +17,31 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("acknowledgementCode")]
 		[IsRequired]
-		public AcknowledgementCode AcknowledgementCode { get; set; }
+		public AcknowledgementCode AcknowledgementCode { get; set; } 
 
 		/// <summary>
 		/// Details of quantity acknowledged with the above acknowledgement code.
 		/// </summary>
 		[JsonProperty("acknowledgedQuantity")]
 		[IsRequired]
-		public ItemQuantity AcknowledgedQuantity { get; set; }
+		public ItemQuantity AcknowledgedQuantity { get; set; } 
 
 		/// <summary>
 		/// Estimated ship date per line item. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("scheduledShipDate")]
-		public DateTime ScheduledShipDate { get; set; }
+		public DateTime ScheduledShipDate { get; set; } 
 
 		/// <summary>
 		/// Estimated delivery date per line item. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("scheduledDeliveryDate")]
-		public DateTime ScheduledDeliveryDate { get; set; }
+		public DateTime ScheduledDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Indicates the reason for rejection.
 		/// </summary>
 		[JsonProperty("rejectionReason")]
-		public RejectionReason RejectionReason { get; set; }
+		public RejectionReason RejectionReason { get; set; } 
 	}
 }

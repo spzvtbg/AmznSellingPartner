@@ -14,27 +14,27 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("variant")]
 		[IsRequired]
-		public Variant Variant { get; set; }
+		public Variant Variant { get; set; } 
 
 		/// <summary>
 		/// Link, or URL, for the image.
 		/// </summary>
 		[JsonProperty("link")]
 		[IsRequired]
-		public string Link { get; set; }
+		public string Link { get; set; } 
 
 		/// <summary>
 		/// Height of the image in pixels.
 		/// </summary>
 		[JsonProperty("height")]
 		[IsRequired]
-		public int Height { get; set; }
+		public int Height { get; set; } 
 
 		/// <summary>
 		/// Width of the image in pixels.
 		/// </summary>
 		[JsonProperty("width")]
 		[IsRequired]
-		public int Width { get; set; }
+		public int Width { get; set; } 
 	}
 }

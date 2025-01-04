@@ -13,10 +13,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// Identifier for appointment.
 		/// </summary>
 		[JsonProperty("appointmentId")]
-		public double AppointmentId { get; set; }
+		public double AppointmentId { get; set; } 
 
 		[JsonProperty("appointmentSlotTime")]
-		public AppointmentSlotTime AppointmentSlotTime { get; set; }
+		public AppointmentSlotTime AppointmentSlotTime { get; set; } 
 
 		/// <summary>
 		/// Status of the appointment.
@@ -24,6 +24,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("appointmentStatus")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string AppointmentStatus { get; set; }
+		public string AppointmentStatus { get; set; } 
 	}
 }

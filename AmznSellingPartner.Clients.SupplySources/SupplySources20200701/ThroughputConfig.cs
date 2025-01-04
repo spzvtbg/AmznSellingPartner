@@ -10,10 +10,10 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class ThroughputConfig : BaseClass
 	{
 		[JsonProperty("throughputCap")]
-		public ThroughputCap ThroughputCap { get; set; }
+		public ThroughputCap ThroughputCap { get; set; } 
 
 		[JsonProperty("throughputUnit")]
 		[IsRequired]
-		public ThroughputUnit ThroughputUnit { get; set; }
+		public ThroughputUnit ThroughputUnit { get; set; } 
 	}
 }

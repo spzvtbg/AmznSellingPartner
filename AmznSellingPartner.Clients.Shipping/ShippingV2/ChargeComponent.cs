@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class ChargeComponent : BaseClass
 	{
 		[JsonProperty("amount")]
-		public Currency Amount { get; set; }
+		public Currency Amount { get; set; } 
 
 		/// <summary>
 		/// The type of charge.
 		/// </summary>
 		[JsonProperty("chargeType")]
-		public ChargeType ChargeType { get; set; }
+		public ChargeType ChargeType { get; set; } 
 	}
 }

@@ -12,13 +12,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// operation of the Services API.
 		/// </summary>
 		[JsonProperty("uploadDestinationId")]
-		public string UploadDestinationId { get; set; }
+		public string UploadDestinationId { get; set; } 
 
 		/// <summary>
 		/// Sha256 hash of the file content. This value is used to determine if the file has been corrupted or tampered
 		/// with during transit.
 		/// </summary>
 		[JsonProperty("contentSha256")]
-		public string ContentSha256 { get; set; }
+		public string ContentSha256 { get; set; } 
 	}
 }

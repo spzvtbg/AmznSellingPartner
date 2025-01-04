@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// Localized messaging for a delivery offering.
 		/// </summary>
 		[JsonProperty("message")]
-		public DeliveryMessage Message { get; set; }
+		public DeliveryMessage Message { get; set; } 
 	}
 }

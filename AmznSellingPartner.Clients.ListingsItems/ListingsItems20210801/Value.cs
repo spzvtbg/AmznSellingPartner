@@ -5,6 +5,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public class Value : BaseClass
 	{
 		[JsonProperty("")]
-		public bool? AdditionalValue { get; set; }
+		public bool? AdditionalValue { get; set; } 
 	}
 }

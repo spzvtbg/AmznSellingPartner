@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 	}
 }

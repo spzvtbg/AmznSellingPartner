@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class LabelCustomization : BaseClass
 	{
 		[JsonProperty("CustomTextForLabel")]
-		public CustomTextForLabel CustomTextForLabel { get; set; }
+		public CustomTextForLabel CustomTextForLabel { get; set; } 
 
 		[JsonProperty("StandardIdForLabel")]
-		public StandardIdForLabel StandardIdForLabel { get; set; }
+		public StandardIdForLabel StandardIdForLabel { get; set; } 
 	}
 }

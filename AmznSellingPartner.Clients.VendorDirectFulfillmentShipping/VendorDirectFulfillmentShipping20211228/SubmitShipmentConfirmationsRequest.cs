@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// details for a specific shipment.
 		/// </summary>
 		[JsonProperty("shipmentConfirmations")]
-		public List<ShipmentConfirmation> ShipmentConfirmations { get; set; }
+		public List<ShipmentConfirmation> ShipmentConfirmations { get; set; } 
 	}
 }

@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("reportScheduleId")]
 		[IsRequired]
-		public string ReportScheduleId { get; set; }
+		public string ReportScheduleId { get; set; } 
 
 		/// <summary>
 		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
@@ -26,17 +26,17 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("reportType")]
 		[IsRequired]
-		public string ReportType { get; set; }
+		public string ReportType { get; set; } 
 
 		/// <summary>
 		/// A list of marketplace identifiers. The report document's contents will contain data for all of the specified
 		/// marketplaces, unless the report type indicates otherwise.
 		/// </summary>
 		[JsonProperty("marketplaceIds")]
-		public List<string> MarketplaceIds { get; set; }
+		public List<string> MarketplaceIds { get; set; } 
 
 		[JsonProperty("reportOptions")]
-		public ReportOptions ReportOptions { get; set; }
+		public ReportOptions ReportOptions { get; set; } 
 
 		/// <summary>
 		/// An <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> period value that indicates
@@ -44,13 +44,13 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("period")]
 		[IsRequired]
-		public string Period { get; set; }
+		public string Period { get; set; } 
 
 		/// <summary>
 		/// The date and time when the schedule will create its next report, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> date time format.
 		/// </summary>
 		[JsonProperty("nextReportCreationTime")]
-		public DateTime NextReportCreationTime { get; set; }
+		public DateTime NextReportCreationTime { get; set; } 
 	}
 }

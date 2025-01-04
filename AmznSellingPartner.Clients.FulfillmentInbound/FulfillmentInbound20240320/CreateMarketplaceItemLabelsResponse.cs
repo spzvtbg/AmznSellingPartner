@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("documentDownloads")]
 		[IsRequired]
-		public List<DocumentDownload> DocumentDownloads { get; set; }
+		public List<DocumentDownload> DocumentDownloads { get; set; } 
 	}
 }

@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// irmations.
 		/// </summary>
 		[JsonProperty("carrierScac")]
-		public string CarrierScac { get; set; }
+		public string CarrierScac { get; set; } 
 
 		/// <summary>
 		/// The field also known as PRO number is a unique number assigned by the carrier. It is used to identify
@@ -22,13 +22,13 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// onfirmations.
 		/// </summary>
 		[JsonProperty("carrierShipmentReferenceNumber")]
-		public string CarrierShipmentReferenceNumber { get; set; }
+		public string CarrierShipmentReferenceNumber { get; set; } 
 
 		/// <summary>
 		/// The mode of transportation for this shipment.
 		/// </summary>
 		[JsonProperty("transportationMode")]
-		public TransportationMode TransportationMode { get; set; }
+		public TransportationMode TransportationMode { get; set; } 
 
 		/// <summary>
 		/// The Bill of Lading (BOL) number is a unique number assigned to each shipment of goods by the vendor or
@@ -39,6 +39,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// ield.
 		/// </summary>
 		[JsonProperty("billOfLadingNumber")]
-		public string BillOfLadingNumber { get; set; }
+		public string BillOfLadingNumber { get; set; } 
 	}
 }

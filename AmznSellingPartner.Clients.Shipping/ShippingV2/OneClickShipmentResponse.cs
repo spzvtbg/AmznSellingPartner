@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class OneClickShipmentResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public OneClickShipmentResult Payload { get; set; }
+		public OneClickShipmentResult Payload { get; set; } 
 	}
 }

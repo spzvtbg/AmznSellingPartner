@@ -17,19 +17,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("failureCode")]
 		[IsRequired]
-		public string FailureCode { get; set; }
+		public string FailureCode { get; set; } 
 
 		/// <summary>
 		/// Failure reasons for the error.
 		/// </summary>
 		[JsonProperty("failureReasons")]
 		[IsRequired]
-		public List<string> FailureReasons { get; set; }
+		public List<string> FailureReasons { get; set; } 
 
 		/// <summary>
 		/// MSKU associated with the error.
 		/// </summary>
 		[JsonProperty("sku")]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 	}
 }

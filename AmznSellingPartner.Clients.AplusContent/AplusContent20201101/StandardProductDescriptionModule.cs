@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("body")]
 		[IsRequired]
-		public ParagraphComponent Body { get; set; }
+		public ParagraphComponent Body { get; set; } 
 	}
 }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class AccessPointsMap : BaseClass
 	{
 		[JsonProperty("")]
-		public AccessPointList AdditionalValue { get; set; }
+		public AccessPointList AdditionalValue { get; set; } 
 	}
 }

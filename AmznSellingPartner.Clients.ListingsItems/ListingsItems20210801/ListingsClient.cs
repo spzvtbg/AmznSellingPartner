@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using System;
 	using System.Threading.Tasks;
 
-	public class ListingsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ListingsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Delete a listings item for a selling partner.  **Note:** The parameters associated with this operation

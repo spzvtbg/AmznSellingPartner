@@ -19,22 +19,22 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("boxId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string BoxId { get; set; }
+		public string BoxId { get; set; } 
 
 		[JsonProperty("contentInformationSource")]
-		public BoxContentInformationSource ContentInformationSource { get; set; }
+		public BoxContentInformationSource ContentInformationSource { get; set; } 
 
 		[JsonProperty("destinationRegion")]
-		public Region DestinationRegion { get; set; }
+		public Region DestinationRegion { get; set; } 
 
 		[JsonProperty("dimensions")]
-		public Dimensions Dimensions { get; set; }
+		public Dimensions Dimensions { get; set; } 
 
 		/// <summary>
 		/// Items contained within the box.
 		/// </summary>
 		[JsonProperty("items")]
-		public List<Item> Items { get; set; }
+		public List<Item> Items { get; set; } 
 
 		/// <summary>
 		/// Primary key to uniquely identify a Package (Box or Pallet).
@@ -44,7 +44,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PackageId { get; set; }
+		public string PackageId { get; set; } 
 
 		/// <summary>
 		/// The number of containers where all other properties like weight or dimensions are identical.
@@ -52,7 +52,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("quantity")]
 		[Minimum(1)]
 		[Maximum(10000)]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 
 		/// <summary>
 		/// Template name of the box.
@@ -60,9 +60,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("templateName")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string TemplateName { get; set; }
+		public string TemplateName { get; set; } 
 
 		[JsonProperty("weight")]
-		public Weight Weight { get; set; }
+		public Weight Weight { get; set; } 
 	}
 }

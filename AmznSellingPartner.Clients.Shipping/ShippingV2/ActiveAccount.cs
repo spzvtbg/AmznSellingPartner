@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Account Id associated with this account.
 		/// </summary>
 		[JsonProperty("accountId")]
-		public string AccountId { get; set; }
+		public string AccountId { get; set; } 
 
 		[JsonProperty("carrierId")]
-		public CarrierId CarrierId { get; set; }
+		public CarrierId CarrierId { get; set; } 
 	}
 }

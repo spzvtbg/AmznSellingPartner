@@ -10,21 +10,21 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class CollectionFormsHistoryRecord : BaseClass
 	{
 		[JsonProperty("carrierName")]
-		public CarrierName CarrierName { get; set; }
+		public CarrierName CarrierName { get; set; } 
 
 		/// <summary>
 		/// Creation Time for this account.
 		/// </summary>
 		[JsonProperty("creationDate")]
-		public DateTime CreationDate { get; set; }
+		public DateTime CreationDate { get; set; } 
 
 		[JsonProperty("generationStatus")]
-		public GenerationStatus GenerationStatus { get; set; }
+		public GenerationStatus GenerationStatus { get; set; } 
 
 		[JsonProperty("collectionFormId")]
-		public CollectionFormId CollectionFormId { get; set; }
+		public CollectionFormId CollectionFormId { get; set; } 
 
 		[JsonProperty("shipFromAddress")]
-		public Address ShipFromAddress { get; set; }
+		public Address ShipFromAddress { get; set; } 
 	}
 }

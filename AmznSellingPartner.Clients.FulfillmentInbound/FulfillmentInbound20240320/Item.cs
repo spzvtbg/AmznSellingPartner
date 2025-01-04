@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(10)]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The expiration date of the MSKU. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("expiration")]
 		[Pattern("^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])")]
-		public string Expiration { get; set; }
+		public string Expiration { get; set; } 
 
 		/// <summary>
 		/// A unique identifier assigned by Amazon to products stored in and fulfilled from an Amazon fulfillment
@@ -37,7 +37,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(10)]
-		public string Fnsku { get; set; }
+		public string Fnsku { get; set; } 
 
 		/// <summary>
 		/// Specifies who will label the items. Options include `AMAZON`, `SELLER`, and `NONE`.
@@ -46,7 +46,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string LabelOwner { get; set; }
+		public string LabelOwner { get; set; } 
 
 		/// <summary>
 		/// The manufacturing lot code.
@@ -54,7 +54,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("manufacturingLotCode")]
 		[MinLength(1)]
 		[MaxLength(256)]
-		public string ManufacturingLotCode { get; set; }
+		public string ManufacturingLotCode { get; set; } 
 
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier of a specific SKU.
@@ -63,14 +63,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Msku { get; set; }
+		public string Msku { get; set; } 
 
 		/// <summary>
 		/// Special preparations that are required for an item.
 		/// </summary>
 		[JsonProperty("prepInstructions")]
 		[IsRequired]
-		public List<PrepInstruction> PrepInstructions { get; set; }
+		public List<PrepInstruction> PrepInstructions { get; set; } 
 
 		/// <summary>
 		/// The number of the specified MSKU.
@@ -79,6 +79,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 	}
 }

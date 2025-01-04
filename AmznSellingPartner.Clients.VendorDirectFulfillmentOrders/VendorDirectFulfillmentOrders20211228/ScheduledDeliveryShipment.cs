@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// Scheduled delivery service type.
 		/// </summary>
 		[JsonProperty("scheduledDeliveryServiceType")]
-		public string ScheduledDeliveryServiceType { get; set; }
+		public string ScheduledDeliveryServiceType { get; set; } 
 
 		/// <summary>
 		/// Earliest nominated delivery date for the scheduled delivery.
 		/// </summary>
 		[JsonProperty("earliestNominatedDeliveryDate")]
-		public DateTime EarliestNominatedDeliveryDate { get; set; }
+		public DateTime EarliestNominatedDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Latest nominated delivery date for the scheduled delivery.
 		/// </summary>
 		[JsonProperty("latestNominatedDeliveryDate")]
-		public DateTime LatestNominatedDeliveryDate { get; set; }
+		public DateTime LatestNominatedDeliveryDate { get; set; } 
 	}
 }

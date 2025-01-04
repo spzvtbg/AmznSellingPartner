@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// it will contain the reservation entity with warnings/errors.
 		/// </summary>
 		[JsonProperty("payload")]
-		public UpdateReservationRecord Payload { get; set; }
+		public UpdateReservationRecord Payload { get; set; } 
 
 		/// <summary>
 		/// Errors encountered, if any.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	{
 		[JsonProperty("trackingDetails")]
 		[IsRequired]
-		public TrackingDetailsInput TrackingDetails { get; set; }
+		public TrackingDetailsInput TrackingDetails { get; set; } 
 	}
 }

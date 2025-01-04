@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// The pagination elements required to retrieve the remaining data.
 		/// </summary>
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// Represents a customer invoice within the `CustomerInvoiceList`.
 		/// </summary>
 		[JsonProperty("customerInvoices")]
-		public List<CustomerInvoice> CustomerInvoices { get; set; }
+		public List<CustomerInvoice> CustomerInvoices { get; set; } 
 	}
 }

@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	{
 		[JsonProperty("scheduledPackageId")]
 		[IsRequired]
-		public ScheduledPackageId ScheduledPackageId { get; set; }
+		public ScheduledPackageId ScheduledPackageId { get; set; } 
 
 		[JsonProperty("packageTimeSlot")]
 		[IsRequired]
-		public TimeSlot PackageTimeSlot { get; set; }
+		public TimeSlot PackageTimeSlot { get; set; } 
 	}
 }

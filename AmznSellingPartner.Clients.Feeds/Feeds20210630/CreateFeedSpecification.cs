@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("feedType")]
 		[IsRequired]
-		public string FeedType { get; set; }
+		public string FeedType { get; set; } 
 
 		/// <summary>
 		/// A list of identifiers for marketplaces that you want the feed to be applied to.
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(25)]
-		public List<string> MarketplaceIds { get; set; }
+		public List<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// The document identifier returned by the createFeedDocument operation. Upload the feed document contents
@@ -33,9 +33,9 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("inputFeedDocumentId")]
 		[IsRequired]
-		public string InputFeedDocumentId { get; set; }
+		public string InputFeedDocumentId { get; set; } 
 
 		[JsonProperty("feedOptions")]
-		public FeedOptions FeedOptions { get; set; }
+		public FeedOptions FeedOptions { get; set; } 
 	}
 }

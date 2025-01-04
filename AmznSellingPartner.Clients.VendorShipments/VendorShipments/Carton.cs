@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// A list of carton identifiers.
 		/// </summary>
 		[JsonProperty("cartonIdentifiers")]
-		public List<ContainerIdentification> CartonIdentifiers { get; set; }
+		public List<ContainerIdentification> CartonIdentifiers { get; set; } 
 
 		/// <summary>
 		/// Carton sequence number for the carton. The first carton will be 001, the second 002, and so on. This
@@ -23,25 +23,25 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("cartonSequenceNumber")]
 		[IsRequired]
-		public string CartonSequenceNumber { get; set; }
+		public string CartonSequenceNumber { get; set; } 
 
 		[JsonProperty("dimensions")]
-		public Dimensions Dimensions { get; set; }
+		public Dimensions Dimensions { get; set; } 
 
 		[JsonProperty("weight")]
-		public Weight Weight { get; set; }
+		public Weight Weight { get; set; } 
 
 		/// <summary>
 		/// This is required to be provided for every carton in the small parcel shipments.
 		/// </summary>
 		[JsonProperty("trackingNumber")]
-		public string TrackingNumber { get; set; }
+		public string TrackingNumber { get; set; } 
 
 		/// <summary>
 		/// A list of container item details.
 		/// </summary>
 		[JsonProperty("items")]
 		[IsRequired]
-		public List<ContainerItem> Items { get; set; }
+		public List<ContainerItem> Items { get; set; } 
 	}
 }

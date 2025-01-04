@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("serviceId")]
 		[IsRequired]
-		public ServiceIds ServiceId { get; set; }
+		public ServiceIds ServiceId { get; set; } 
 	}
 }

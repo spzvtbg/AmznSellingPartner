@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[JsonProperty("link")]
 		[IsRequired]
-		public Link Link { get; set; }
+		public Link Link { get; set; } 
 
 		/// <summary>
 		/// Checksum hash of the schema (Base64 MD5). Can be used to verify schema contents, identify changes between
@@ -19,6 +19,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[JsonProperty("checksum")]
 		[IsRequired]
-		public string Checksum { get; set; }
+		public string Checksum { get; set; } 
 	}
 }

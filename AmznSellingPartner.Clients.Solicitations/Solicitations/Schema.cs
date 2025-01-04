@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	public class Schema : BaseClass
 	{
 		[JsonProperty("")]
-		public object AdditionalValue { get; set; }
+		public object AdditionalValue { get; set; } 
 	}
 }

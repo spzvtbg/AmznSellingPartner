@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("amount")]
 		[IsRequired]
-		public Currency Amount { get; set; }
+		public Currency Amount { get; set; } 
 	}
 }

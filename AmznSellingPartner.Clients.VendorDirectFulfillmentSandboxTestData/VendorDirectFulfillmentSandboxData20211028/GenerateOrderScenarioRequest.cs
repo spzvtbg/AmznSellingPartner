@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// The list of test orders requested as indicated by party identifiers.
 		/// </summary>
 		[JsonProperty("orders")]
-		public List<OrderScenarioRequest> Orders { get; set; }
+		public List<OrderScenarioRequest> Orders { get; set; } 
 	}
 }

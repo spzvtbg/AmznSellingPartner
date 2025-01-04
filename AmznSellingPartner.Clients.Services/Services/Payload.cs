@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Warnings generated during the `assignAppointmentResources` operation.
 		/// </summary>
 		[JsonProperty("warnings")]
-		public WarningList Warnings { get; set; }
+		public WarningList Warnings { get; set; } 
 	}
 }

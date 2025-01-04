@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[InQuery("processingStatuses")]
 		[MinItems(1)]
-		public CsvValue<ProcessingStatuses> ProcessingStatuses { get; set; }
+		public CsvValue<ProcessingStatuses> ProcessingStatuses { get; set; } 
 
 		/// <summary>
 		/// The maximum number of queries to return in a single call.
@@ -21,21 +21,21 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		[InQuery("pageSize")]
 		[Minimum(1)]
 		[Maximum(100)]
-		public int PageSize { get; set; }
+		public int PageSize { get; set; } = 10;
 
 		/// <summary>
 		/// The earliest query creation date and time for queries to include in the response, in ISO 8601 date time
 		/// format. The default is 90 days ago.
 		/// </summary>
 		[InQuery("createdSince")]
-		public DateTime CreatedSince { get; set; }
+		public DateTime CreatedSince { get; set; } 
 
 		/// <summary>
 		/// The latest query creation date and time for queries to include in the response, in ISO 8601 date time
 		/// format. The default is the time of the `getQueries` request.
 		/// </summary>
 		[InQuery("createdUntil")]
-		public DateTime CreatedUntil { get; set; }
+		public DateTime CreatedUntil { get; set; } 
 
 		/// <summary>
 		/// A token to fetch a certain page of results when there are multiple pages of results available. The value
@@ -45,6 +45,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// the absence of this token value, `getQueries` returns the first page of results.
 		/// </summary>
 		[InQuery("paginationToken")]
-		public string PaginationToken { get; set; }
+		public string PaginationToken { get; set; } 
 	}
 }

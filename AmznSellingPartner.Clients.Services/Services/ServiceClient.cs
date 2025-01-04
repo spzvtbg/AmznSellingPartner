@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using System;
 	using System.Threading.Tasks;
 
-	public class ServiceClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ServiceClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Gets details of service job indicated by the provided `serviceJobID`.  **Usage Plan:**  | Rate (requests

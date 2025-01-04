@@ -14,21 +14,21 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("FieldId")]
 		[IsRequired]
-		public string FieldId { get; set; }
+		public string FieldId { get; set; } 
 
 		/// <summary>
 		/// The name of the field.
 		/// </summary>
 		[JsonProperty("FieldLabel")]
 		[IsRequired]
-		public string FieldLabel { get; set; }
+		public string FieldLabel { get; set; } 
 
 		/// <summary>
 		/// The type of field.
 		/// </summary>
 		[JsonProperty("FieldType")]
 		[IsRequired]
-		public FieldType FieldType { get; set; }
+		public FieldType FieldType { get; set; } 
 
 		/// <summary>
 		/// The content of the field as collected in regulatory form. Note that `FileAttachment` type fields contain
@@ -36,6 +36,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("FieldValue")]
 		[IsRequired]
-		public string FieldValue { get; set; }
+		public string FieldValue { get; set; } 
 	}
 }

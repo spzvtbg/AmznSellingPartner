@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// more Amazon customers receive this offer as the Featured Offer.
 		/// </summary>
 		[JsonProperty("glanceViewWeightPercentage")]
-		public double GlanceViewWeightPercentage { get; set; }
+		public double GlanceViewWeightPercentage { get; set; } 
 	}
 }

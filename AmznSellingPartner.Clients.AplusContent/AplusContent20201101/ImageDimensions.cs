@@ -13,10 +13,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("width")]
 		[IsRequired]
-		public IntegerWithUnits Width { get; set; }
+		public IntegerWithUnits Width { get; set; } 
 
 		[JsonProperty("height")]
 		[IsRequired]
-		public IntegerWithUnits Height { get; set; }
+		public IntegerWithUnits Height { get; set; } 
 	}
 }

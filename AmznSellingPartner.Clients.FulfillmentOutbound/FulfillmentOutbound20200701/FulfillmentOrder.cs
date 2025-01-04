@@ -16,14 +16,14 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("sellerFulfillmentOrderId")]
 		[IsRequired]
-		public string SellerFulfillmentOrderId { get; set; }
+		public string SellerFulfillmentOrderId { get; set; } 
 
 		/// <summary>
 		/// The identifier for the marketplace the fulfillment order is placed against.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A fulfillment order identifier submitted with the `createFulfillmentOrder` operation. Displays as the
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("displayableOrderId")]
 		[IsRequired]
-		public string DisplayableOrderId { get; set; }
+		public string DisplayableOrderId { get; set; } 
 
 		/// <summary>
 		/// A date and time submitted with the `createFulfillmentOrder` operation. Displays as the order date in
@@ -39,7 +39,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("displayableOrderDate")]
 		[IsRequired]
-		public Timestamp DisplayableOrderDate { get; set; }
+		public Timestamp DisplayableOrderDate { get; set; } 
 
 		/// <summary>
 		/// A text block submitted with the `createFulfillmentOrder` operation. Displays in recipient-facing materials
@@ -47,41 +47,41 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("displayableOrderComment")]
 		[IsRequired]
-		public string DisplayableOrderComment { get; set; }
+		public string DisplayableOrderComment { get; set; } 
 
 		[JsonProperty("shippingSpeedCategory")]
 		[IsRequired]
-		public ShippingSpeedCategory ShippingSpeedCategory { get; set; }
+		public ShippingSpeedCategory ShippingSpeedCategory { get; set; } 
 
 		[JsonProperty("deliveryWindow")]
-		public DeliveryWindow DeliveryWindow { get; set; }
+		public DeliveryWindow DeliveryWindow { get; set; } 
 
 		/// <summary>
 		/// The destination address submitted with the `createFulfillmentOrder` operation.
 		/// </summary>
 		[JsonProperty("destinationAddress")]
 		[IsRequired]
-		public Address DestinationAddress { get; set; }
+		public Address DestinationAddress { get; set; } 
 
 		[JsonProperty("fulfillmentAction")]
-		public FulfillmentAction FulfillmentAction { get; set; }
+		public FulfillmentAction FulfillmentAction { get; set; } 
 
 		[JsonProperty("fulfillmentPolicy")]
-		public FulfillmentPolicy FulfillmentPolicy { get; set; }
+		public FulfillmentPolicy FulfillmentPolicy { get; set; } 
 
 		[JsonProperty("codSettings")]
-		public CODSettings CodSettings { get; set; }
+		public CODSettings CodSettings { get; set; } 
 
 		/// <summary>
 		/// The date and time that the fulfillment order was received by an Amazon fulfillment center.
 		/// </summary>
 		[JsonProperty("receivedDate")]
 		[IsRequired]
-		public Timestamp ReceivedDate { get; set; }
+		public Timestamp ReceivedDate { get; set; } 
 
 		[JsonProperty("fulfillmentOrderStatus")]
 		[IsRequired]
-		public FulfillmentOrderStatus FulfillmentOrderStatus { get; set; }
+		public FulfillmentOrderStatus FulfillmentOrderStatus { get; set; } 
 
 		/// <summary>
 		/// The date and time that the status of the fulfillment order last changed. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -89,15 +89,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("statusUpdatedDate")]
 		[IsRequired]
-		public Timestamp StatusUpdatedDate { get; set; }
+		public Timestamp StatusUpdatedDate { get; set; } 
 
 		[JsonProperty("notificationEmails")]
-		public NotificationEmailList NotificationEmails { get; set; }
+		public NotificationEmailList NotificationEmails { get; set; } 
 
 		/// <summary>
 		/// A list of features and their fulfillment policies to apply to the order.
 		/// </summary>
 		[JsonProperty("featureConstraints")]
-		public List<FeatureSettings> FeatureConstraints { get; set; }
+		public List<FeatureSettings> FeatureConstraints { get; set; } 
 	}
 }

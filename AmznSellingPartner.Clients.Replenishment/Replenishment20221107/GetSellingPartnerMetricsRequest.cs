@@ -12,14 +12,14 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	public class GetSellingPartnerMetricsRequest : BaseClass
 	{
 		[JsonProperty("aggregationFrequency")]
-		public AggregationFrequency AggregationFrequency { get; set; }
+		public AggregationFrequency AggregationFrequency { get; set; } 
 
 		/// <summary>
 		/// A time interval used to compute metrics.
 		/// </summary>
 		[JsonProperty("timeInterval")]
 		[IsRequired]
-		public TimeInterval TimeInterval { get; set; }
+		public TimeInterval TimeInterval { get; set; } 
 
 		/// <summary>
 		/// The list of metrics requested. If no metric value is provided, data for all of the metrics will be r
@@ -28,11 +28,11 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("metrics")]
 		[MinItems(1)]
 		[UniqueItems]
-		public List<Metric> Metrics { get; set; }
+		public List<Metric> Metrics { get; set; } 
 
 		[JsonProperty("timePeriodType")]
 		[IsRequired]
-		public TimePeriodType TimePeriodType { get; set; }
+		public TimePeriodType TimePeriodType { get; set; } 
 
 		/// <summary>
 		/// The marketplace identifier. The supported marketplaces for both sellers and vendors are US, CA, ES, UK,
@@ -42,13 +42,13 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The list of replenishment program types for which to return metrics.
 		/// </summary>
 		[JsonProperty("programTypes")]
 		[IsRequired]
-		public ProgramTypes ProgramTypes { get; set; }
+		public ProgramTypes ProgramTypes { get; set; } 
 	}
 }

@@ -16,36 +16,36 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("palletIdentifiers")]
 		[IsRequired]
-		public List<ContainerIdentification> PalletIdentifiers { get; set; }
+		public List<ContainerIdentification> PalletIdentifiers { get; set; } 
 
 		/// <summary>
 		/// Number of layers per pallet. Only applicable to container type Pallet.
 		/// </summary>
 		[JsonProperty("tier")]
-		public int Tier { get; set; }
+		public int Tier { get; set; } 
 
 		/// <summary>
 		/// Number of cartons per layer on the pallet. Only applicable to container type Pallet.
 		/// </summary>
 		[JsonProperty("block")]
-		public int Block { get; set; }
+		public int Block { get; set; } 
 
 		[JsonProperty("dimensions")]
-		public Dimensions Dimensions { get; set; }
+		public Dimensions Dimensions { get; set; } 
 
 		[JsonProperty("weight")]
-		public Weight Weight { get; set; }
+		public Weight Weight { get; set; } 
 
 		/// <summary>
 		/// Carton reference details.
 		/// </summary>
 		[JsonProperty("cartonReferenceDetails")]
-		public CartonReferenceDetails CartonReferenceDetails { get; set; }
+		public CartonReferenceDetails CartonReferenceDetails { get; set; } 
 
 		/// <summary>
 		/// A list of container item details.
 		/// </summary>
 		[JsonProperty("items")]
-		public List<ContainerItem> Items { get; set; }
+		public List<ContainerItem> Items { get; set; } 
 	}
 }

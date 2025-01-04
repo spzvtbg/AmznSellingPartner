@@ -13,20 +13,20 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	{
 		[JsonProperty("carrier")]
 		[IsRequired]
-		public Carrier Carrier { get; set; }
+		public Carrier Carrier { get; set; } 
 
 		[JsonProperty("carrierAppointment")]
-		public CarrierAppointment CarrierAppointment { get; set; }
+		public CarrierAppointment CarrierAppointment { get; set; } 
 
 		/// <summary>
 		/// Identifies a list of preconditions for confirming the transportation option.
 		/// </summary>
 		[JsonProperty("preconditions")]
 		[IsRequired]
-		public List<string> Preconditions { get; set; }
+		public List<string> Preconditions { get; set; } 
 
 		[JsonProperty("quote")]
-		public Quote Quote { get; set; }
+		public Quote Quote { get; set; } 
 
 		/// <summary>
 		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 
 		/// <summary>
 		/// Mode of shipment transportation that this option will provide.  Possible values: `GROUND_SMALL_PARCEL`,
@@ -47,7 +47,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string ShippingMode { get; set; }
+		public string ShippingMode { get; set; } 
 
 		/// <summary>
 		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`
@@ -57,7 +57,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string ShippingSolution { get; set; }
+		public string ShippingSolution { get; set; } 
 
 		/// <summary>
 		/// Identifier of a transportation option. A transportation option represent one option for how to send a
@@ -68,6 +68,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string TransportationOptionId { get; set; }
+		public string TransportationOptionId { get; set; } 
 	}
 }

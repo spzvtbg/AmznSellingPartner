@@ -8,13 +8,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// Unique request reference identifier.
 		/// </summary>
 		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; }
+		public string XAmznRequestId { get; set; } 
 
-		public bool Succeeded { get; set; }
+		public bool Succeeded { get; set; } 
 
 		/// <summary>
 		/// Success.
 		/// </summary>
-		public SubmitFulfillmentOrderStatusUpdateResponse SubmitFulfillmentOrderStatusUpdateResponse { get; set; }
+		public SubmitFulfillmentOrderStatusUpdateResponse SubmitFulfillmentOrderStatusUpdateResponse { get; set; } 
 	}
 }

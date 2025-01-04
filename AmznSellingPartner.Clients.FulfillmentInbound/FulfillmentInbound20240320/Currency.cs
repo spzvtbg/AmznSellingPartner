@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("amount")]
 		[IsRequired]
-		public double Amount { get; set; }
+		public double Amount { get; set; } 
 
 		/// <summary>
 		/// ISO 4217 standard of a currency code.
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(3)]
 		[MaxLength(3)]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 	}
 }

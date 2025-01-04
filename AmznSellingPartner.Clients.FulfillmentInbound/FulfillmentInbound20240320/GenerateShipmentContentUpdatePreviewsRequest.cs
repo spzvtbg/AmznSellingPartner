@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(5000)]
-		public List<BoxUpdateInput> Boxes { get; set; }
+		public List<BoxUpdateInput> Boxes { get; set; } 
 
 		/// <summary>
 		/// A list of all items that will be present in the shipment after the update.
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(2000)]
-		public List<ItemInput> Items { get; set; }
+		public List<ItemInput> Items { get; set; } 
 	}
 }

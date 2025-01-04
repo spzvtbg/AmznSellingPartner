@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 	}
 }

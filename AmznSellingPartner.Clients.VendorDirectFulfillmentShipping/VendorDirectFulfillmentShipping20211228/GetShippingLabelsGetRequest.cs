@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// warehouses.
 		/// </summary>
 		[InQuery("shipFromPartyId")]
-		public string ShipFromPartyId { get; set; }
+		public string ShipFromPartyId { get; set; } 
 
 		/// <summary>
 		/// The limit to the number of records returned.
@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		[InQuery("limit")]
 		[Minimum(1)]
 		[Maximum(100)]
-		public int Limit { get; set; }
+		public int Limit { get; set; } 
 
 		/// <summary>
 		/// Shipping labels that became available after this date and time will be included in the result. Values
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[InQuery("createdAfter")]
 		[IsRequired]
-		public DateTime CreatedAfter { get; set; }
+		public DateTime CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Shipping labels that became available before this date and time will be included in the result. Values
@@ -36,20 +36,20 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[InQuery("createdBefore")]
 		[IsRequired]
-		public DateTime CreatedBefore { get; set; }
+		public DateTime CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// The sort order creation date. You can choose between ascending (`ASC`) or descending (`DESC`) sort o
 		/// rder.
 		/// </summary>
 		[InQuery("sortOrder")]
-		public SortOrder SortOrder { get; set; }
+		public SortOrder SortOrder { get; set; } = SortOrder.ASC;
 
 		/// <summary>
 		/// Used for pagination when there are more ship labels than the specified result size limit. The token value
 		/// is returned in the previous API call.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

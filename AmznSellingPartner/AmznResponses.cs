@@ -18,16 +18,16 @@
                 Type = "bool"
             };
 
-            var values = new List<CsProperty>();
+            var properties = new List<CsProperty>();
 
             foreach (var (status, response) in this)
             {
                 var csProperty = response.OnDeserialized(status, context);
 
-                values.Add(csProperty);
+                properties.Add(csProperty);
             }
 
-            foreach (var property in values.DistinctBy(x => x.Type))
+            foreach (var property in properties.DistinctBy(x => x.Type))
             {
                 yield return property;
             }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class DayOfWeekTimeMap : BaseClass
 	{
 		[JsonProperty("")]
-		public OperatingHours AdditionalValue { get; set; }
+		public OperatingHours AdditionalValue { get; set; } 
 	}
 }

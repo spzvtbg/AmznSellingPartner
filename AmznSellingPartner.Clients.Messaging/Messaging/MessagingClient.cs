@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using System;
 	using System.Threading.Tasks;
 
-	public class MessagingClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class MessagingClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of message types that are available for an order that you specify. A message type is represented

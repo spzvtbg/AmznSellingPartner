@@ -13,14 +13,14 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string ResourceId { get; set; }
+		public string ResourceId { get; set; } 
 
 		/// <summary>
 		/// Request body.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public RangeSlotCapacityQuery Body { get; set; }
+		public RangeSlotCapacityQuery Body { get; set; } 
 
 		/// <summary>
 		/// An identifier for the marketplace in which the resource operates.
@@ -28,12 +28,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// Next page token returned in the response of your previous request.
 		/// </summary>
 		[InQuery("nextPageToken")]
-		public string NextPageToken { get; set; }
+		public string NextPageToken { get; set; } 
 	}
 }

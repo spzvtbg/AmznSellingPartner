@@ -16,18 +16,18 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("partyId")]
 		[IsRequired]
-		public string PartyId { get; set; }
+		public string PartyId { get; set; } 
 
 		/// <summary>
 		/// The address of the party.
 		/// </summary>
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		/// <summary>
 		/// The tax registration details of the party.
 		/// </summary>
 		[JsonProperty("taxRegistrationDetails")]
-		public List<TaxRegistrationDetails> TaxRegistrationDetails { get; set; }
+		public List<TaxRegistrationDetails> TaxRegistrationDetails { get; set; } 
 	}
 }

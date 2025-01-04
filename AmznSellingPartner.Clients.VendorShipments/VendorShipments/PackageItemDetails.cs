@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// code.
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// The batch or lot number associates an item with information the manufacturer considers relevant for traceability
@@ -23,12 +23,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// or to items contained. This field is mandatory for all perishable items.
 		/// </summary>
 		[JsonProperty("lotNumber")]
-		public string LotNumber { get; set; }
+		public string LotNumber { get; set; } 
 
 		/// <summary>
 		/// Either expiryDate or mfgDate and expiryAfterDuration are mandatory for perishable items.
 		/// </summary>
 		[JsonProperty("expiry")]
-		public Expiry Expiry { get; set; }
+		public Expiry Expiry { get; set; } 
 	}
 }

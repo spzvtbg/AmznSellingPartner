@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A comma-separated list of the payment method types you want to include in the response.
@@ -21,6 +21,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		[InQuery("paymentMethodTypes")]
 		[MinItems(1)]
 		[UniqueItems]
-		public CsvValue<PaymentMethodTypes> PaymentMethodTypes { get; set; }
+		public CsvValue<PaymentMethodTypes> PaymentMethodTypes { get; set; } 
 	}
 }

@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// format.
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDate")]
-		public DateTime EstimatedDeliveryDate { get; set; }
+		public DateTime EstimatedDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Promised delivery information for the item.
 		/// </summary>
 		[JsonProperty("itemDeliveryPromise")]
-		public ItemDeliveryPromise ItemDeliveryPromise { get; set; }
+		public ItemDeliveryPromise ItemDeliveryPromise { get; set; } 
 	}
 }

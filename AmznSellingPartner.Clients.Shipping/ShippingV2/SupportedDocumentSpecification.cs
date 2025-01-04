@@ -11,14 +11,14 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("format")]
 		[IsRequired]
-		public DocumentFormat Format { get; set; }
+		public DocumentFormat Format { get; set; } 
 
 		[JsonProperty("size")]
 		[IsRequired]
-		public DocumentSize Size { get; set; }
+		public DocumentSize Size { get; set; } 
 
 		[JsonProperty("printOptions")]
 		[IsRequired]
-		public PrintOptionList PrintOptions { get; set; }
+		public PrintOptionList PrintOptions { get; set; } 
 	}
 }

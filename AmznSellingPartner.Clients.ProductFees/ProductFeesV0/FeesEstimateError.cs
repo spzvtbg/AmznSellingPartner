@@ -14,24 +14,24 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// </summary>
 		[JsonProperty("Type")]
 		[IsRequired]
-		public string Type { get; set; }
+		public string Type { get; set; } 
 
 		/// <summary>
 		/// An error code that identifies the type of error that occurred.
 		/// </summary>
 		[JsonProperty("Code")]
 		[IsRequired]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// A message that describes the error condition.
 		/// </summary>
 		[JsonProperty("Message")]
 		[IsRequired]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		[JsonProperty("Detail")]
 		[IsRequired]
-		public FeesEstimateErrorDetail Detail { get; set; }
+		public FeesEstimateErrorDetail Detail { get; set; } 
 	}
 }

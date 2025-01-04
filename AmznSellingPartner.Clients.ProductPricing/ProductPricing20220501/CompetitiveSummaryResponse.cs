@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public HttpStatusLine Status { get; set; }
+		public HttpStatusLine Status { get; set; } 
 
 		/// <summary>
 		/// The `competitiveSummaryResponse` body for a requested ASIN and `marketplaceId`.
 		/// </summary>
 		[JsonProperty("body")]
 		[IsRequired]
-		public CompetitiveSummaryResponseBody Body { get; set; }
+		public CompetitiveSummaryResponseBody Body { get; set; } 
 	}
 }

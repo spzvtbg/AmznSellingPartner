@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// as an SSA order.
 		/// </summary>
 		[JsonProperty("HasAutomatedShippingSettings")]
-		public bool HasAutomatedShippingSettings { get; set; }
+		public bool HasAutomatedShippingSettings { get; set; } 
 
 		/// <summary>
 		/// Auto-generated carrier for SSA orders.
 		/// </summary>
 		[JsonProperty("AutomatedCarrier")]
-		public string AutomatedCarrier { get; set; }
+		public string AutomatedCarrier { get; set; } 
 
 		/// <summary>
 		/// Auto-generated ship method for SSA orders.
 		/// </summary>
 		[JsonProperty("AutomatedShipMethod")]
-		public string AutomatedShipMethod { get; set; }
+		public string AutomatedShipMethod { get; set; } 
 	}
 }

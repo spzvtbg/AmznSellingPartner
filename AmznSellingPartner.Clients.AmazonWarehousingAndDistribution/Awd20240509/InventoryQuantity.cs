@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("quantity")]
 		[IsRequired]
-		public double Quantity { get; set; }
+		public double Quantity { get; set; } 
 
 		/// <summary>
 		/// Unit of measurement for the inventory.
 		/// </summary>
 		[JsonProperty("unitOfMeasurement")]
 		[IsRequired]
-		public InventoryUnitOfMeasurement UnitOfMeasurement { get; set; }
+		public InventoryUnitOfMeasurement UnitOfMeasurement { get; set; } 
 	}
 }

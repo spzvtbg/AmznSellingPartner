@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// 23:00:00+01:00.
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDateTime")]
-		public DateTime EstimatedDeliveryDateTime { get; set; }
+		public DateTime EstimatedDeliveryDateTime { get; set; } 
 
 		/// <summary>
 		/// The date and time at the start of the appointment window when the shipment is expected to be delivered.
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// UTC time zone or UTC offset. For example, 2020-07-16T23:00:00Z or 2020-07-16T23:00:00+01:00.
 		/// </summary>
 		[JsonProperty("apptWindowStartDateTime")]
-		public DateTime ApptWindowStartDateTime { get; set; }
+		public DateTime ApptWindowStartDateTime { get; set; } 
 
 		/// <summary>
 		/// The date and time at the end of the appointment window when the shipment is expected to be delivered.
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// UTC time zone or UTC offset. For example, 2020-07-16T23:00:00Z or 2020-07-16T23:00:00+01:00.
 		/// </summary>
 		[JsonProperty("apptWindowEndDateTime")]
-		public DateTime ApptWindowEndDateTime { get; set; }
+		public DateTime ApptWindowEndDateTime { get; set; } 
 	}
 }

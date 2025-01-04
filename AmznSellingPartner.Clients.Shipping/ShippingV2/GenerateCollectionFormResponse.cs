@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GenerateCollectionFormResponse : BaseClass
 	{
 		[JsonProperty("collectionsFormDocument")]
-		public CollectionsFormDocument CollectionsFormDocument { get; set; }
+		public CollectionsFormDocument CollectionsFormDocument { get; set; } 
 	}
 }

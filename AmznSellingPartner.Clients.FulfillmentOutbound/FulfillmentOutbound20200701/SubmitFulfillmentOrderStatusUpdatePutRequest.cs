@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[InPath("sellerFulfillmentOrderId")]
 		[IsRequired]
 		[MaxLength(40)]
-		public string SellerFulfillmentOrderId { get; set; }
+		public string SellerFulfillmentOrderId { get; set; } 
 
 		/// <summary>
 		/// The identifier assigned to the item by the seller when the fulfillment order was created.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public SubmitFulfillmentOrderStatusUpdateRequest Body { get; set; }
+		public SubmitFulfillmentOrderStatusUpdateRequest Body { get; set; } 
 	}
 }

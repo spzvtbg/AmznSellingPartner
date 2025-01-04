@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// age.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// An array of fulfillment order information.
 		/// </summary>
 		[JsonProperty("fulfillmentOrders")]
-		public List<FulfillmentOrder> FulfillmentOrders { get; set; }
+		public List<FulfillmentOrder> FulfillmentOrders { get; set; } 
 	}
 }

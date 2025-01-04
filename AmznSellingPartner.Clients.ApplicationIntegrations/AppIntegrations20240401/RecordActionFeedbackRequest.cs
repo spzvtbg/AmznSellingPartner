@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[JsonProperty("feedbackActionCode")]
 		[IsRequired]
-		public FeedbackActionCode FeedbackActionCode { get; set; }
+		public FeedbackActionCode FeedbackActionCode { get; set; } 
 	}
 }

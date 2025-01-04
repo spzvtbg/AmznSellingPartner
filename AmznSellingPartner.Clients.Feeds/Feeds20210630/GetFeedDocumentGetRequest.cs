@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[InPath("feedDocumentId")]
 		[IsRequired]
-		public string FeedDocumentId { get; set; }
+		public string FeedDocumentId { get; set; } 
 	}
 }

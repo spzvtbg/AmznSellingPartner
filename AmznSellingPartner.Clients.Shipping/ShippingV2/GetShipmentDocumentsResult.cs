@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("shipmentId")]
 		[IsRequired]
-		public ShipmentId ShipmentId { get; set; }
+		public ShipmentId ShipmentId { get; set; } 
 
 		[JsonProperty("packageDocumentDetail")]
 		[IsRequired]
-		public PackageDocumentDetail PackageDocumentDetail { get; set; }
+		public PackageDocumentDetail PackageDocumentDetail { get; set; } 
 	}
 }

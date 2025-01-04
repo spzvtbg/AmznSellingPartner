@@ -10,7 +10,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("subscriptionId")]
 		[IsRequired]
-		public string SubscriptionId { get; set; }
+		public string SubscriptionId { get; set; } 
 
 		/// <summary>
 		/// The type of notification.   For more information about notification types, refer to [Notification Type
@@ -18,6 +18,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("notificationType")]
 		[IsRequired]
-		public NotificationType NotificationType { get; set; }
+		public NotificationType NotificationType { get; set; } 
 	}
 }

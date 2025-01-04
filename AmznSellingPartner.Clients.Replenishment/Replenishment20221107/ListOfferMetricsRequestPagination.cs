@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(500)]
-		public long Limit { get; set; }
+		public long Limit { get; set; } 
 
 		/// <summary>
 		/// The offset from which to retrieve the number of results specified by the `limit` value. The first result
@@ -26,6 +26,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(9000)]
-		public long Offset { get; set; }
+		public long Offset { get; set; } 
 	}
 }

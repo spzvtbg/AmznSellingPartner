@@ -7,12 +7,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[InBody("body")]
 		[IsRequired]
-		public GetRatesRequest Body { get; set; }
+		public GetRatesRequest Body { get; set; } 
 
 		/// <summary>
 		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
-		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; }
+		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; } 
 	}
 }

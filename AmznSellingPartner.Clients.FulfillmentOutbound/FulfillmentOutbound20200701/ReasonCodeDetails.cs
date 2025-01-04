@@ -14,20 +14,20 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("returnReasonCode")]
 		[IsRequired]
-		public string ReturnReasonCode { get; set; }
+		public string ReturnReasonCode { get; set; } 
 
 		/// <summary>
 		/// A human readable description of the return reason code.
 		/// </summary>
 		[JsonProperty("description")]
 		[IsRequired]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 
 		/// <summary>
 		/// A translation of the description. The translation is in the language specified in the Language request
 		/// parameter.
 		/// </summary>
 		[JsonProperty("translatedDescription")]
-		public string TranslatedDescription { get; set; }
+		public string TranslatedDescription { get; set; } 
 	}
 }

@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// Three digit currency code in ISO 4217 format. String of length 3.
 		/// </summary>
 		[JsonProperty("currencyCode")]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		[JsonProperty("amount")]
-		public Decimal Amount { get; set; }
+		public Decimal Amount { get; set; } 
 	}
 }

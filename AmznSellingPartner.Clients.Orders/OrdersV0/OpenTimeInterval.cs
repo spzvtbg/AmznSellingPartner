@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The hour when the business opens or closes.
 		/// </summary>
 		[JsonProperty("Hour")]
-		public int Hour { get; set; }
+		public int Hour { get; set; } 
 
 		/// <summary>
 		/// The minute when the business opens or closes.
 		/// </summary>
 		[JsonProperty("Minute")]
-		public int Minute { get; set; }
+		public int Minute { get; set; } 
 	}
 }

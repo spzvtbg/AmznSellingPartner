@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorTransactionClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorTransactionClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns the status of the transaction that you specify.  **Usage Plan:**  | Rate (requests per second)

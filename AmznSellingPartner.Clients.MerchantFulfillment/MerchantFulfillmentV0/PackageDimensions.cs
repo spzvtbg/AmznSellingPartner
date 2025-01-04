@@ -12,29 +12,29 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// h.
 		/// </summary>
 		[JsonProperty("Length")]
-		public PackageDimension Length { get; set; }
+		public PackageDimension Length { get; set; } 
 
 		/// <summary>
 		/// The width dimension. If you don't specify `PredefinedPackageDimensions`, you must specify the width.
 		/// </summary>
 		[JsonProperty("Width")]
-		public PackageDimension Width { get; set; }
+		public PackageDimension Width { get; set; } 
 
 		/// <summary>
 		/// The height dimension. If you don't specify `PredefinedPackageDimensions`, you must specify the heigh
 		/// t.
 		/// </summary>
 		[JsonProperty("Height")]
-		public PackageDimension Height { get; set; }
+		public PackageDimension Height { get; set; } 
 
 		/// <summary>
 		/// The unit of measurement. If you don't specify `PredefinedPackageDimensions`, you must specify the un
 		/// it.
 		/// </summary>
 		[JsonProperty("Unit")]
-		public UnitOfLength Unit { get; set; }
+		public UnitOfLength Unit { get; set; } 
 
 		[JsonProperty("PredefinedPackageDimensions")]
-		public PredefinedPackageDimensions PredefinedPackageDimensions { get; set; }
+		public PredefinedPackageDimensions PredefinedPackageDimensions { get; set; } 
 	}
 }

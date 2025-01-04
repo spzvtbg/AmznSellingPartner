@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// </summary>
 		[JsonProperty("orderId")]
 		[IsRequired]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 	}
 }

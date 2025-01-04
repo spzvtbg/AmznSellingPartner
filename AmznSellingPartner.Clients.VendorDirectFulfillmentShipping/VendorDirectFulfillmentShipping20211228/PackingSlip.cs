@@ -15,19 +15,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// A Base64encoded string of the packing slip PDF.
 		/// </summary>
 		[JsonProperty("content")]
 		[IsRequired]
-		public string Content { get; set; }
+		public string Content { get; set; } 
 
 		/// <summary>
 		/// The format of the file such as PDF, JPEG etc.
 		/// </summary>
 		[JsonProperty("contentType")]
-		public ContentType ContentType { get; set; }
+		public ContentType ContentType { get; set; } 
 	}
 }

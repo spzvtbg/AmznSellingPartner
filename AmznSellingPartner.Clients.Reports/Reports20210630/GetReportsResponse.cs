@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("reports")]
 		[IsRequired]
-		public ReportList Reports { get; set; }
+		public ReportList Reports { get; set; } 
 
 		/// <summary>
 		/// Returned when the number of results exceeds `pageSize`. To get the next page of results, call `getReports`
 		/// with this token as the only parameter.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

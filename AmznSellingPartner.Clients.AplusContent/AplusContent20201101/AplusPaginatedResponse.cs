@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class AplusPaginatedResponse : BaseClass
 	{
 		[JsonProperty("nextPageToken")]
-		public PageToken NextPageToken { get; set; }
+		public PageToken NextPageToken { get; set; } 
 	}
 }

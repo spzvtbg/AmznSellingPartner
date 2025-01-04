@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	{
 		[JsonProperty("packageReferenceId")]
 		[IsRequired]
-		public PackageReferenceId PackageReferenceId { get; set; }
+		public PackageReferenceId PackageReferenceId { get; set; } 
 
 		/// <summary>
 		/// Identifies the carrier that will deliver the package. This field is required for all marketplaces. For
@@ -23,26 +23,26 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("carrierCode")]
 		[IsRequired]
-		public string CarrierCode { get; set; }
+		public string CarrierCode { get; set; } 
 
 		/// <summary>
 		/// Carrier Name that will deliver the package. Required when `carrierCode` is "Others"
 		/// </summary>
 		[JsonProperty("carrierName")]
-		public string CarrierName { get; set; }
+		public string CarrierName { get; set; } 
 
 		/// <summary>
 		/// Ship method to be used for shipping the order.
 		/// </summary>
 		[JsonProperty("shippingMethod")]
-		public string ShippingMethod { get; set; }
+		public string ShippingMethod { get; set; } 
 
 		/// <summary>
 		/// The tracking number used to obtain tracking and delivery information.
 		/// </summary>
 		[JsonProperty("trackingNumber")]
 		[IsRequired]
-		public string TrackingNumber { get; set; }
+		public string TrackingNumber { get; set; } 
 
 		/// <summary>
 		/// The shipping date for the package. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -50,19 +50,19 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("shipDate")]
 		[IsRequired]
-		public DateTime ShipDate { get; set; }
+		public DateTime ShipDate { get; set; } 
 
 		/// <summary>
 		/// The unique identifier for the supply source.
 		/// </summary>
 		[JsonProperty("shipFromSupplySourceId")]
-		public string ShipFromSupplySourceId { get; set; }
+		public string ShipFromSupplySourceId { get; set; } 
 
 		/// <summary>
 		/// The list of order items and quantities to be updated.
 		/// </summary>
 		[JsonProperty("orderItems")]
 		[IsRequired]
-		public ConfirmShipmentOrderItemsList OrderItems { get; set; }
+		public ConfirmShipmentOrderItemsList OrderItems { get; set; } 
 	}
 }

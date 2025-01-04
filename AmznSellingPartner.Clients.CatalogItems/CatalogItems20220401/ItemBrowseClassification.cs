@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("displayName")]
 		[IsRequired]
-		public string DisplayName { get; set; }
+		public string DisplayName { get; set; } 
 
 		/// <summary>
 		/// Identifier of the classification (browse node identifier).
 		/// </summary>
 		[JsonProperty("classificationId")]
 		[IsRequired]
-		public string ClassificationId { get; set; }
+		public string ClassificationId { get; set; } 
 
 		/// <summary>
 		/// Parent classification (browse node) of the current classification.
 		/// </summary>
 		[JsonProperty("parent")]
-		public ItemBrowseClassification Parent { get; set; }
+		public ItemBrowseClassification Parent { get; set; } 
 	}
 }

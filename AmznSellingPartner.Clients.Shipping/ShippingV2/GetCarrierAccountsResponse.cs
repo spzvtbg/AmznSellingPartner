@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("activeAccounts")]
 		[IsRequired]
-		public ActiveAccounts ActiveAccounts { get; set; }
+		public ActiveAccounts ActiveAccounts { get; set; } 
 	}
 }

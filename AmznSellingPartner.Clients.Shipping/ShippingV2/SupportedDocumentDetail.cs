@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("name")]
 		[IsRequired]
-		public DocumentType Name { get; set; }
+		public DocumentType Name { get; set; } 
 
 		/// <summary>
 		/// When true, the supported document type is required.
 		/// </summary>
 		[JsonProperty("isMandatory")]
 		[IsRequired]
-		public bool IsMandatory { get; set; }
+		public bool IsMandatory { get; set; } 
 	}
 }

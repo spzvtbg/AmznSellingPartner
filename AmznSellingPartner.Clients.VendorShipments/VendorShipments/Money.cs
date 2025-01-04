@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("currencyCode")]
 		[IsRequired]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		[JsonProperty("amount")]
 		[IsRequired]
-		public Decimal Amount { get; set; }
+		public Decimal Amount { get; set; } 
 	}
 }

@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("shipmentStatusUpdates")]
 		[MinItems(1)]
-		public List<ShipmentStatusUpdate> ShipmentStatusUpdates { get; set; }
+		public List<ShipmentStatusUpdate> ShipmentStatusUpdates { get; set; } 
 	}
 }

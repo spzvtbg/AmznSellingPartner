@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	{
 		[JsonProperty("features")]
 		[IsRequired]
-		public Features Features { get; set; }
+		public Features Features { get; set; } 
 	}
 }

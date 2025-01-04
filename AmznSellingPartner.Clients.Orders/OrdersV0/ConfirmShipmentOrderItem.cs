@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("orderItemId")]
 		[IsRequired]
-		public string OrderItemId { get; set; }
+		public string OrderItemId { get; set; } 
 
 		/// <summary>
 		/// The item's quantity.
 		/// </summary>
 		[JsonProperty("quantity")]
 		[IsRequired]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 
 		/// <summary>
 		/// The list of transparency codes.
 		/// </summary>
 		[JsonProperty("transparencyCodes")]
-		public TransparencyCodeList TransparencyCodes { get; set; }
+		public TransparencyCodeList TransparencyCodes { get; set; } 
 	}
 }

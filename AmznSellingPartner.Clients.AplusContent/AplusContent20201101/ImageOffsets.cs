@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("x")]
 		[IsRequired]
-		public IntegerWithUnits X { get; set; }
+		public IntegerWithUnits X { get; set; } 
 
 		[JsonProperty("y")]
 		[IsRequired]
-		public IntegerWithUnits Y { get; set; }
+		public IntegerWithUnits Y { get; set; } 
 	}
 }

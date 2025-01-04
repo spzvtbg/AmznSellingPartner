@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("listingPrice")]
 		[IsRequired]
-		public MoneyType ListingPrice { get; set; }
+		public MoneyType ListingPrice { get; set; } 
 
 		/// <summary>
 		/// The number of Amazon Points that are offered with the purchase of an item and the monetary value of these
 		/// points.
 		/// </summary>
 		[JsonProperty("points")]
-		public Points Points { get; set; }
+		public Points Points { get; set; } 
 	}
 }

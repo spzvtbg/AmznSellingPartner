@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardTextPairBlock : BaseClass
 	{
 		[JsonProperty("label")]
-		public TextComponent Label { get; set; }
+		public TextComponent Label { get; set; } 
 
 		[JsonProperty("description")]
-		public TextComponent Description { get; set; }
+		public TextComponent Description { get; set; } 
 	}
 }

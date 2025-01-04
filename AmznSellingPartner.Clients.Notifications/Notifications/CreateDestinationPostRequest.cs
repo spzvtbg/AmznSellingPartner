@@ -7,6 +7,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	{
 		[InBody("body")]
 		[IsRequired]
-		public CreateDestinationRequest Body { get; set; }
+		public CreateDestinationRequest Body { get; set; } 
 	}
 }

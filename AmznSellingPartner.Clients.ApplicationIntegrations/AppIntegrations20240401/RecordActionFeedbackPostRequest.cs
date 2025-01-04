@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[InPath("notificationId")]
 		[IsRequired]
-		public string NotificationId { get; set; }
+		public string NotificationId { get; set; } 
 
 		/// <summary>
 		/// The request body for the `recordActionFeedback` operation.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public RecordActionFeedbackRequest Body { get; set; }
+		public RecordActionFeedbackRequest Body { get; set; } 
 	}
 }

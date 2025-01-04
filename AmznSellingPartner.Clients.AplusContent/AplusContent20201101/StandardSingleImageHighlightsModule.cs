@@ -8,21 +8,21 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardSingleImageHighlightsModule : BaseClass
 	{
 		[JsonProperty("image")]
-		public ImageComponent Image { get; set; }
+		public ImageComponent Image { get; set; } 
 
 		[JsonProperty("headline")]
-		public TextComponent Headline { get; set; }
+		public TextComponent Headline { get; set; } 
 
 		[JsonProperty("textBlock1")]
-		public StandardTextBlock TextBlock1 { get; set; }
+		public StandardTextBlock TextBlock1 { get; set; } 
 
 		[JsonProperty("textBlock2")]
-		public StandardTextBlock TextBlock2 { get; set; }
+		public StandardTextBlock TextBlock2 { get; set; } 
 
 		[JsonProperty("textBlock3")]
-		public StandardTextBlock TextBlock3 { get; set; }
+		public StandardTextBlock TextBlock3 { get; set; } 
 
 		[JsonProperty("bulletedListBlock")]
-		public StandardHeaderTextListBlock BulletedListBlock { get; set; }
+		public StandardHeaderTextListBlock BulletedListBlock { get; set; } 
 	}
 }

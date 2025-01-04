@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// The resource identifier.
 		/// </summary>
 		[JsonProperty("resourceId")]
-		public string ResourceId { get; set; }
+		public string ResourceId { get; set; } 
 	}
 }

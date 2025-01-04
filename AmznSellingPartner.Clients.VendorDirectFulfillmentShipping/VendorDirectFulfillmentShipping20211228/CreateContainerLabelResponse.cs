@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("containerLabel")]
 		[IsRequired]
-		public ContainerLabel ContainerLabel { get; set; }
+		public ContainerLabel ContainerLabel { get; set; } 
 	}
 }

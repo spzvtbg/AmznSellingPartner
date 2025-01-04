@@ -5,9 +5,9 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	public class Points : BaseClass
 	{
 		[JsonProperty("PointsNumber")]
-		public int PointsNumber { get; set; }
+		public int PointsNumber { get; set; } 
 
 		[JsonProperty("PointsMonetaryValue")]
-		public MoneyType PointsMonetaryValue { get; set; }
+		public MoneyType PointsMonetaryValue { get; set; } 
 	}
 }

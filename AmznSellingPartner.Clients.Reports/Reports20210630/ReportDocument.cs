@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("reportDocumentId")]
 		[IsRequired]
-		public string ReportDocumentId { get; set; }
+		public string ReportDocumentId { get; set; } 
 
 		/// <summary>
 		/// A presigned URL for the report document. If `compressionAlgorithm` is not returned, you can download
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("url")]
 		[IsRequired]
-		public string Url { get; set; }
+		public string Url { get; set; } 
 
 		/// <summary>
 		/// If the report document contents have been compressed, the compression algorithm used is returned in this
@@ -32,6 +32,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// in the use case guide, where sample code is provided.
 		/// </summary>
 		[JsonProperty("compressionAlgorithm")]
-		public CompressionAlgorithm CompressionAlgorithm { get; set; }
+		public CompressionAlgorithm CompressionAlgorithm { get; set; } 
 	}
 }

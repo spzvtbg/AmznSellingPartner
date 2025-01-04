@@ -16,10 +16,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Msku { get; set; }
+		public string Msku { get; set; } 
 
 		[JsonProperty("taxDetails")]
 		[IsRequired]
-		public TaxDetails TaxDetails { get; set; }
+		public TaxDetails TaxDetails { get; set; } 
 	}
 }

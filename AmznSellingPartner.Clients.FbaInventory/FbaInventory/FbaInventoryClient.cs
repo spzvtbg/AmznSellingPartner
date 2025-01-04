@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	using System;
 	using System.Threading.Tasks;
 
-	public class FbaInventoryClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class FbaInventoryClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of inventory summaries. The summaries returned depend on the presence or absence of the

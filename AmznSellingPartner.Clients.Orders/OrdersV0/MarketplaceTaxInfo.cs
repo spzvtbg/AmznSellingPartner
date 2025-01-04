@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// A list of tax classifications that apply to the order.
 		/// </summary>
 		[JsonProperty("TaxClassifications")]
-		public List<TaxClassification> TaxClassifications { get; set; }
+		public List<TaxClassification> TaxClassifications { get; set; } 
 	}
 }

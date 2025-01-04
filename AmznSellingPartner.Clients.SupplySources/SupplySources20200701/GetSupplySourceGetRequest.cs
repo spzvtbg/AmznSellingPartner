@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// </summary>
 		[InPath("supplySourceId")]
 		[IsRequired]
-		public string SupplySourceId { get; set; }
+		public string SupplySourceId { get; set; } 
 	}
 }

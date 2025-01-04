@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Total containers as part of the shipment
 		/// </summary>
 		[JsonProperty("containerCount")]
-		public int ContainerCount { get; set; }
+		public int ContainerCount { get; set; } 
 
 		/// <summary>
 		/// Container sequence numbers that are involved in this shipment.
 		/// </summary>
 		[JsonProperty("containerSequenceNumbers")]
-		public List<ContainerSequenceNumbers> ContainerSequenceNumbers { get; set; }
+		public List<ContainerSequenceNumbers> ContainerSequenceNumbers { get; set; } 
 	}
 }

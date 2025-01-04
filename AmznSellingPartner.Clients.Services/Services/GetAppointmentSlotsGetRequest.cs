@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[InQuery("asin")]
 		[IsRequired]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// Store identifier defining the region scope to retrive appointment slots.
@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string StoreId { get; set; }
+		public string StoreId { get; set; } 
 
 		/// <summary>
 		/// An identifier for the marketplace for which appointment slots are queried
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// A time from which the appointment slots will be retrieved. The specified time must be in ISO 8601 format.
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// iguration.
 		/// </summary>
 		[InQuery("startTime")]
-		public string StartTime { get; set; }
+		public string StartTime { get; set; } 
 
 		/// <summary>
 		/// A time up to which the appointment slots will be retrieved. The specified time must be in ISO 8601 format.
@@ -44,6 +44,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Maximum range of appointment slots can be 90 days.
 		/// </summary>
 		[InQuery("endTime")]
-		public string EndTime { get; set; }
+		public string EndTime { get; set; } 
 	}
 }

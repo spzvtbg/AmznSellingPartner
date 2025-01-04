@@ -15,10 +15,10 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// </summary>
 		[JsonProperty("unitOfMeasure")]
 		[IsRequired]
-		public UnitOfMeasure UnitOfMeasure { get; set; }
+		public UnitOfMeasure UnitOfMeasure { get; set; } 
 
 		[JsonProperty("amount")]
 		[IsRequired]
-		public Decimal Amount { get; set; }
+		public Decimal Amount { get; set; } 
 	}
 }

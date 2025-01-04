@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("productIdentifier")]
 		[IsRequired]
-		public ProductIdentifier ProductIdentifier { get; set; }
+		public ProductIdentifier ProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// The amount of the requested product.
 		/// </summary>
 		[JsonProperty("amount")]
-		public Amount Amount { get; set; }
+		public Amount Amount { get; set; } 
 	}
 }

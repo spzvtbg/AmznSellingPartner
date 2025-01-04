@@ -9,18 +9,18 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class RateItem : BaseClass
 	{
 		[JsonProperty("rateItemID")]
-		public RateItemID RateItemID { get; set; }
+		public RateItemID RateItemID { get; set; } 
 
 		[JsonProperty("rateItemType")]
-		public RateItemType RateItemType { get; set; }
+		public RateItemType RateItemType { get; set; } 
 
 		[JsonProperty("rateItemCharge")]
-		public Currency RateItemCharge { get; set; }
+		public Currency RateItemCharge { get; set; } 
 
 		/// <summary>
 		/// Used for the localization.
 		/// </summary>
 		[JsonProperty("rateItemNameLocalization")]
-		public string RateItemNameLocalization { get; set; }
+		public string RateItemNameLocalization { get; set; } 
 	}
 }

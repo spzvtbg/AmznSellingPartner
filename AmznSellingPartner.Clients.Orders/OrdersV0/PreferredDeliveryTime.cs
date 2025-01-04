@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// Business hours when the business is open for deliveries.
 		/// </summary>
 		[JsonProperty("BusinessHours")]
-		public List<BusinessHours> BusinessHours { get; set; }
+		public List<BusinessHours> BusinessHours { get; set; } 
 
 		/// <summary>
 		/// Dates when the business is closed during the next 30 days.
 		/// </summary>
 		[JsonProperty("ExceptionDates")]
-		public List<ExceptionDates> ExceptionDates { get; set; }
+		public List<ExceptionDates> ExceptionDates { get; set; } 
 	}
 }

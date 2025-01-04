@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	public class GetSolicitationActionResponse : BaseClass
 	{
 		[JsonProperty("_links")]
-		public Links Links { get; set; }
+		public Links Links { get; set; } 
 
 		[JsonProperty("_embedded")]
-		public Embedded Embedded { get; set; }
+		public Embedded Embedded { get; set; } 
 
 		[JsonProperty("payload")]
-		public SolicitationsAction Payload { get; set; }
+		public SolicitationsAction Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

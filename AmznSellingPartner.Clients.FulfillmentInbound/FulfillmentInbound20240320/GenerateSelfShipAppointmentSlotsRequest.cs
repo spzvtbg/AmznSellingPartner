@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// format.
 		/// </summary>
 		[JsonProperty("desiredEndDate")]
-		public DateTime DesiredEndDate { get; set; }
+		public DateTime DesiredEndDate { get; set; } 
 
 		/// <summary>
 		/// The desired start date. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) datetime
 		/// format.
 		/// </summary>
 		[JsonProperty("desiredStartDate")]
-		public DateTime DesiredStartDate { get; set; }
+		public DateTime DesiredStartDate { get; set; } 
 	}
 }

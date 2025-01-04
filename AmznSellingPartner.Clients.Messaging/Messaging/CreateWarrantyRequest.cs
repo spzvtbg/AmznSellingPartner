@@ -20,18 +20,18 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		[JsonProperty("attachments")]
 		[MinLength(1)]
 		[MaxLength(5)]
-		public List<Attachment> Attachments { get; set; }
+		public List<Attachment> Attachments { get; set; } 
 
 		/// <summary>
 		/// The start date of the warranty coverage to include in the message to the buyer.
 		/// </summary>
 		[JsonProperty("coverageStartDate")]
-		public DateTime CoverageStartDate { get; set; }
+		public DateTime CoverageStartDate { get; set; } 
 
 		/// <summary>
 		/// The end date of the warranty coverage to include in the message to the buyer.
 		/// </summary>
 		[JsonProperty("coverageEndDate")]
-		public DateTime CoverageEndDate { get; set; }
+		public DateTime CoverageEndDate { get; set; } 
 	}
 }

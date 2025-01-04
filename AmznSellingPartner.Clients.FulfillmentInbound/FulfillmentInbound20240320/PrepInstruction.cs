@@ -10,7 +10,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class PrepInstruction : BaseClass
 	{
 		[JsonProperty("fee")]
-		public Currency Fee { get; set; }
+		public Currency Fee { get; set; } 
 
 		/// <summary>
 		/// In some situations, special preparations are required for items and this field reflects the owner of
@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("prepOwner")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string PrepOwner { get; set; }
+		public string PrepOwner { get; set; } 
 
 		/// <summary>
 		/// Type of preparation that should be done.  Possible values: `ITEM_LABELING`, `ITEM_BUBBLEWRAP`, `ITEM_POLYBAGGING`,
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("prepType")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string PrepType { get; set; }
+		public string PrepType { get; set; } 
 	}
 }

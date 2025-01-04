@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The payload for the `getOrder` operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public Order Payload { get; set; }
+		public Order Payload { get; set; } 
 
 		/// <summary>
 		/// One or more unexpected errors occurred during the `getOrder` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

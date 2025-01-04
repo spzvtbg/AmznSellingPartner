@@ -14,14 +14,14 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("sellerSku")]
 		[IsRequired]
-		public string SellerSku { get; set; }
+		public string SellerSku { get; set; } 
 
 		/// <summary>
 		/// The item quantity.
 		/// </summary>
 		[JsonProperty("quantity")]
 		[IsRequired]
-		public Quantity Quantity { get; set; }
+		public Quantity Quantity { get; set; } 
 
 		/// <summary>
 		/// A fulfillment order item identifier that the seller created with a call to the `createFulfillmentOrder`
@@ -29,19 +29,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]
-		public string SellerFulfillmentOrderItemId { get; set; }
+		public string SellerFulfillmentOrderItemId { get; set; } 
 
 		/// <summary>
 		/// The estimated shipping weight of the item quantity for a single item, as identified by `sellerSku`, in
 		/// a shipment.
 		/// </summary>
 		[JsonProperty("estimatedShippingWeight")]
-		public Weight EstimatedShippingWeight { get; set; }
+		public Weight EstimatedShippingWeight { get; set; } 
 
 		/// <summary>
 		/// The method used to calculate the estimated shipping weight.
 		/// </summary>
 		[JsonProperty("shippingWeightCalculationMethod")]
-		public ShippingWeightCalculationMethod ShippingWeightCalculationMethod { get; set; }
+		public ShippingWeightCalculationMethod ShippingWeightCalculationMethod { get; set; } 
 	}
 }

@@ -81,7 +81,8 @@
 
         internal override CsProperty OnDeserialized(CsClass csRequest, CsContext context, AmznParameters parameters)
               => base.OnDeserialized(csRequest, context, parameters)
-                     .HasType("bool");
+                     .HasType("bool")
+                     .HasDefaultValue(this.Default?.ToString()?.ToLower());
     }
 
     internal class AmznParameterDateTime : AmznParameter
@@ -106,7 +107,8 @@
         internal override CsProperty OnDeserialized(CsClass csRequest, CsContext context, AmznParameters parameters)
         {
             var csProperty = base.OnDeserialized(csRequest, context, parameters)
-                                 .HasType("int");
+                                 .HasType("int")
+                                 .HasDefaultValue(this.Default?.ToString());
 
             if (this.Minimum is not null)
             {
@@ -162,7 +164,8 @@
 
         internal override CsProperty OnDeserialized(CsClass csRequest, CsContext context, AmznParameters parameters)
               => base.OnDeserialized(csRequest, context, parameters)
-                     .HasType("double");
+                     .HasType("double")
+                     .HasDefaultValue(this.Default?.ToString());
     }
 
     internal class AmznParameterString : AmznParameter
@@ -183,7 +186,8 @@
         internal override CsProperty OnDeserialized(CsClass csRequest, CsContext context, AmznParameters parameters)
         {
             var csProperty = base.OnDeserialized(csRequest, context, parameters)
-                                 .HasType("string");
+                                 .HasType("string")
+                                 .HasDefaultValue(this.Default is not null ? $"\"{this.Default}\"" : null);
 
             if (this.MinLength is not null)
             {
@@ -294,7 +298,8 @@
             .GetTypeName();
 
             return base.OnDeserialized(csRequest, context, parameters)
-                       .HasType(typeName);
+                       .HasType(typeName)
+                       .HasDefaultValue(this.Default is not null ? $"{typeName}.{this.Default}" : null);
         }
     }
 

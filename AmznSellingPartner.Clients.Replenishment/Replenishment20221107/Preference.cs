@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("autoEnrollment")]
 		[MinItems(1)]
 		[UniqueItems]
-		public List<AutoEnrollmentPreference> AutoEnrollment { get; set; }
+		public List<AutoEnrollmentPreference> AutoEnrollment { get; set; } 
 	}
 }

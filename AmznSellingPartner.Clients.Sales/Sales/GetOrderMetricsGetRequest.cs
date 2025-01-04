@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// A time interval used for selecting order metrics. This takes the form of two dates separated by two hyphens
@@ -22,7 +22,7 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// </summary>
 		[InQuery("interval")]
 		[IsRequired]
-		public string Interval { get; set; }
+		public string Interval { get; set; } 
 
 		/// <summary>
 		/// An IANA-compatible time zone for determining the day boundary. Required when specifying a granularity
@@ -33,7 +33,7 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// US/Pacific zone.
 		/// </summary>
 		[InQuery("granularityTimeZone")]
-		public string GranularityTimeZone { get; set; }
+		public string GranularityTimeZone { get; set; } 
 
 		/// <summary>
 		/// The granularity of the grouping of order metrics, based on a unit of time. Specifying granularity=Hour
@@ -46,14 +46,14 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// </summary>
 		[InQuery("granularity")]
 		[IsRequired]
-		public Granularity Granularity { get; set; }
+		public Granularity Granularity { get; set; } 
 
 		/// <summary>
 		/// Filters the results by the buyer type that you specify, B2B (business to business) or B2C (business to
 		/// customer). Example: B2B, if you want the response to include order metrics for only B2B buyers.
 		/// </summary>
 		[InQuery("buyerType")]
-		public BuyerType BuyerType { get; set; }
+		public BuyerType BuyerType { get; set; } = BuyerType.All;
 
 		/// <summary>
 		/// Filters the results by the fulfillment network that you specify, MFN (merchant fulfillment network) or
@@ -62,14 +62,14 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// for only Amazon fulfillment network.
 		/// </summary>
 		[InQuery("fulfillmentNetwork")]
-		public string FulfillmentNetwork { get; set; }
+		public string FulfillmentNetwork { get; set; } 
 
 		/// <summary>
 		/// Specifies the day that the week starts on when granularity=Week, either Monday or Sunday. Default: Monday.
 		/// Example: Sunday, if you want the week to start on a Sunday.
 		/// </summary>
 		[InQuery("firstDayOfWeek")]
-		public FirstDayOfWeek FirstDayOfWeek { get; set; }
+		public FirstDayOfWeek FirstDayOfWeek { get; set; } = FirstDayOfWeek.Monday;
 
 		/// <summary>
 		/// Filters the results by the ASIN that you specify. Specifying both ASIN and SKU returns an error. Do not
@@ -77,7 +77,7 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// if you want the response to include order metrics for only ASIN B0792R1RSN.
 		/// </summary>
 		[InQuery("asin")]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// Filters the results by the SKU that you specify. Specifying both ASIN and SKU returns an error. Do not
@@ -85,6 +85,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// if you want the response to include order metrics for only SKU TestSKU.
 		/// </summary>
 		[InQuery("sku")]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 	}
 }

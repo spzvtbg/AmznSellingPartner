@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InPath("contentReferenceKey")]
 		[IsRequired]
 		[MinLength(1)]
-		public string ContentReferenceKey { get; set; }
+		public string ContentReferenceKey { get; set; } 
 
 		/// <summary>
 		/// The identifier for the marketplace where the A+ Content is published.
@@ -22,7 +22,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("marketplaceId")]
 		[IsRequired]
 		[MinLength(1)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The set of A+ Content data types to include in the response.
@@ -31,6 +31,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinItems(1)]
 		[UniqueItems]
-		public CsvValue<IncludedDataSet> IncludedDataSet { get; set; }
+		public CsvValue<IncludedDataSet> IncludedDataSet { get; set; } 
 	}
 }

@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The invoice identifier.
 		/// </summary>
 		[InPath("invoiceId")]
 		[IsRequired]
-		public string InvoiceId { get; set; }
+		public string InvoiceId { get; set; } 
 	}
 }

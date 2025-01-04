@@ -11,24 +11,24 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// Height of an item or item package.
 		/// </summary>
 		[JsonProperty("height")]
-		public Dimension Height { get; set; }
+		public Dimension Height { get; set; } 
 
 		/// <summary>
 		/// Length of an item or item package.
 		/// </summary>
 		[JsonProperty("length")]
-		public Dimension Length { get; set; }
+		public Dimension Length { get; set; } 
 
 		/// <summary>
 		/// Weight of an item or item package.
 		/// </summary>
 		[JsonProperty("weight")]
-		public Dimension Weight { get; set; }
+		public Dimension Weight { get; set; } 
 
 		/// <summary>
 		/// Width of an item or item package.
 		/// </summary>
 		[JsonProperty("width")]
-		public Dimension Width { get; set; }
+		public Dimension Width { get; set; } 
 	}
 }

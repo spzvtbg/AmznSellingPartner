@@ -11,14 +11,14 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[InPath("productType")]
 		[IsRequired]
-		public string ProductType { get; set; }
+		public string ProductType { get; set; } 
 
 		/// <summary>
 		/// A selling partner identifier. When provided, seller-specific requirements and values are populated within
 		/// the product type definition schema, such as brand names associated with the selling partner.
 		/// </summary>
 		[InQuery("sellerId")]
-		public string SellerId { get; set; }
+		public string SellerId { get; set; } 
 
 		/// <summary>
 		/// A comma-delimited list of Amazon marketplace identifiers for the request. Note: This parameter is limited
@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// The version of the Amazon product type to retrieve. Defaults to "LATEST",. Prerelease versions of product
@@ -34,13 +34,13 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// the "LATEST" live version will be provided.
 		/// </summary>
 		[InQuery("productTypeVersion")]
-		public string ProductTypeVersion { get; set; }
+		public string ProductTypeVersion { get; set; } = "LATEST";
 
 		/// <summary>
 		/// The name of the requirements set to retrieve requirements for.
 		/// </summary>
 		[InQuery("requirements")]
-		public Requirements Requirements { get; set; }
+		public Requirements Requirements { get; set; } = Requirements.LISTING;
 
 		/// <summary>
 		/// Identifies if the required attributes for a requirements set are enforced by the product type definition
@@ -48,13 +48,13 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// required attributes being present (such as for partial updates).
 		/// </summary>
 		[InQuery("requirementsEnforced")]
-		public RequirementsEnforced RequirementsEnforced { get; set; }
+		public RequirementsEnforced RequirementsEnforced { get; set; } = RequirementsEnforced.ENFORCED;
 
 		/// <summary>
 		/// Locale for retrieving display labels and other presentation details. Defaults to the default language
 		/// of the first marketplace in the request.
 		/// </summary>
 		[InQuery("locale")]
-		public Locale Locale { get; set; }
+		public Locale Locale { get; set; } = Locale.DEFAULT;
 	}
 }

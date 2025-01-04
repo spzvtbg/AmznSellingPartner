@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 	using System;
 	using System.Threading.Tasks;
 
-	public class UploadsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class UploadsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Creates an upload destination, returning the information required to upload a file to the destination

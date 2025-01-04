@@ -19,16 +19,16 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// </summary>
 		[JsonProperty("scheduledPackages")]
 		[MaxItems(100)]
-		public List<Package> ScheduledPackages { get; set; }
+		public List<Package> ScheduledPackages { get; set; } 
 
 		/// <summary>
 		/// A list of orders we couldn't scheduled on your behalf. Each element contains the reason and details on
 		/// the error.
 		/// </summary>
 		[JsonProperty("rejectedOrders")]
-		public List<RejectedOrder> RejectedOrders { get; set; }
+		public List<RejectedOrder> RejectedOrders { get; set; } 
 
 		[JsonProperty("printableDocumentsUrl")]
-		public URL PrintableDocumentsUrl { get; set; }
+		public URL PrintableDocumentsUrl { get; set; } 
 	}
 }

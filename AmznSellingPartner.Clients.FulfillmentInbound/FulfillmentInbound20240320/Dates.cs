@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class Dates : BaseClass
 	{
 		[JsonProperty("readyToShipWindow")]
-		public Window ReadyToShipWindow { get; set; }
+		public Window ReadyToShipWindow { get; set; } 
 	}
 }

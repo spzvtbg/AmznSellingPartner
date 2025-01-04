@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(180)]
-		public string AddressLine1 { get; set; }
+		public string AddressLine1 { get; set; } 
 
 		/// <summary>
 		/// Additional street address information.
@@ -24,7 +24,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("addressLine2")]
 		[MinLength(1)]
 		[MaxLength(60)]
-		public string AddressLine2 { get; set; }
+		public string AddressLine2 { get; set; } 
 
 		/// <summary>
 		/// The city.
@@ -33,7 +33,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(30)]
-		public string City { get; set; }
+		public string City { get; set; } 
 
 		/// <summary>
 		/// The name of the business.
@@ -41,7 +41,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("companyName")]
 		[MinLength(1)]
 		[MaxLength(50)]
-		public string CompanyName { get; set; }
+		public string CompanyName { get; set; } 
 
 		/// <summary>
 		/// The country code in two-character ISO 3166-1 alpha-2 format.
@@ -51,7 +51,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[A-Z]{2}")]
 		[MinLength(2)]
 		[MaxLength(2)]
-		public string CountryCode { get; set; }
+		public string CountryCode { get; set; } 
 
 		/// <summary>
 		/// The email address.
@@ -59,7 +59,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("email")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Email { get; set; }
+		public string Email { get; set; } 
 
 		/// <summary>
 		/// The name of the individual who is the primary contact.
@@ -68,7 +68,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(50)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The phone number.
@@ -76,7 +76,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("phoneNumber")]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string PhoneNumber { get; set; }
+		public string PhoneNumber { get; set; } 
 
 		/// <summary>
 		/// The postal code.
@@ -85,7 +85,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(32)]
-		public string PostalCode { get; set; }
+		public string PostalCode { get; set; } 
 
 		/// <summary>
 		/// The state or province code.
@@ -93,6 +93,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("stateOrProvinceCode")]
 		[MinLength(1)]
 		[MaxLength(64)]
-		public string StateOrProvinceCode { get; set; }
+		public string StateOrProvinceCode { get; set; } 
 	}
 }

@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The name of the product type that is submitted by the Selling Partner.
 		/// </summary>
 		[JsonProperty("productType")]
 		[IsRequired]
-		public string ProductType { get; set; }
+		public string ProductType { get; set; } 
 	}
 }

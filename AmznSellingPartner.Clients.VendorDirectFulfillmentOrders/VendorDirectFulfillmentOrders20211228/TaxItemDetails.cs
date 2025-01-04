@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// Tax details.
 		/// </summary>
 		[JsonProperty("taxLineItem")]
-		public TaxLineItem TaxLineItem { get; set; }
+		public TaxLineItem TaxLineItem { get; set; } 
 	}
 }

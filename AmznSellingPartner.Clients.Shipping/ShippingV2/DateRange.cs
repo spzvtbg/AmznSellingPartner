@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Start Date for query .
 		/// </summary>
 		[JsonProperty("startDate")]
-		public DateTime StartDate { get; set; }
+		public DateTime StartDate { get; set; } 
 
 		/// <summary>
 		/// end date for query.
 		/// </summary>
 		[JsonProperty("endDate")]
-		public DateTime EndDate { get; set; }
+		public DateTime EndDate { get; set; } 
 	}
 }

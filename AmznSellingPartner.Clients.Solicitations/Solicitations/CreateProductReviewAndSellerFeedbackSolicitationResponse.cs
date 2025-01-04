@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	public class CreateProductReviewAndSellerFeedbackSolicitationResponse : BaseClass
 	{
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

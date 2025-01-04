@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[JsonProperty("href")]
 		[IsRequired]
-		public string Href { get; set; }
+		public string Href { get; set; } 
 
 		/// <summary>
 		/// An identifier for this object.
 		/// </summary>
 		[JsonProperty("name")]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// </summary>
 		[InBody("CreateScheduledPackageRequest")]
 		[IsRequired]
-		public CreateScheduledPackageRequest CreateScheduledPackageRequest { get; set; }
+		public CreateScheduledPackageRequest CreateScheduledPackageRequest { get; set; } 
 	}
 }

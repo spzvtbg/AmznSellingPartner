@@ -18,6 +18,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[MinItems(1)]
 		[MaxItems(10)]
 		[UniqueItems]
-		public List<long> Percentage { get; set; }
+		public List<long> Percentage { get; set; } 
 	}
 }

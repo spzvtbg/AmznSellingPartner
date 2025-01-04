@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("code")]
 		[IsRequired]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// Detailed description of the SKU ineligibility.
 		/// </summary>
 		[JsonProperty("description")]
 		[IsRequired]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 	}
 }

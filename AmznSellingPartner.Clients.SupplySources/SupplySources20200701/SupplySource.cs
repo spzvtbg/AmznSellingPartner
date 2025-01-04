@@ -8,30 +8,30 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class SupplySource : BaseClass
 	{
 		[JsonProperty("supplySourceId")]
-		public SupplySourceId SupplySourceId { get; set; }
+		public SupplySourceId SupplySourceId { get; set; } 
 
 		[JsonProperty("supplySourceCode")]
-		public SupplySourceCode SupplySourceCode { get; set; }
+		public SupplySourceCode SupplySourceCode { get; set; } 
 
 		[JsonProperty("alias")]
-		public SupplySourceAlias Alias { get; set; }
+		public SupplySourceAlias Alias { get; set; } 
 
 		[JsonProperty("status")]
-		public SupplySourceStatusReadOnly Status { get; set; }
+		public SupplySourceStatusReadOnly Status { get; set; } 
 
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		[JsonProperty("configuration")]
-		public SupplySourceConfiguration Configuration { get; set; }
+		public SupplySourceConfiguration Configuration { get; set; } 
 
 		[JsonProperty("capabilities")]
-		public SupplySourceCapabilities Capabilities { get; set; }
+		public SupplySourceCapabilities Capabilities { get; set; } 
 
 		[JsonProperty("createdAt")]
-		public DateTime CreatedAt { get; set; }
+		public DateTime CreatedAt { get; set; } 
 
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; }
+		public DateTime UpdatedAt { get; set; } 
 	}
 }

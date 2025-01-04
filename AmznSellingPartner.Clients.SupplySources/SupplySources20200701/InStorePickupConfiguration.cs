@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// pChannel`).
 		/// </summary>
 		[JsonProperty("isSupported")]
-		public bool IsSupported { get; set; }
+		public bool IsSupported { get; set; } 
 
 		/// <summary>
 		/// The parking configuration for in-store pickup.
 		/// </summary>
 		[JsonProperty("parkingConfiguration")]
-		public ParkingConfiguration ParkingConfiguration { get; set; }
+		public ParkingConfiguration ParkingConfiguration { get; set; } 
 	}
 }

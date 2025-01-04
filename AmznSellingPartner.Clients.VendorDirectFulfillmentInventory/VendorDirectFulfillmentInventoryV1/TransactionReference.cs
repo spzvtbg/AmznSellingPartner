@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// status of this transaction.
 		/// </summary>
 		[JsonProperty("transactionId")]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 	}
 }

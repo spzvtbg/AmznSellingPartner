@@ -11,26 +11,26 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("shipmentId")]
 		[IsRequired]
-		public ShipmentId ShipmentId { get; set; }
+		public ShipmentId ShipmentId { get; set; } 
 
 		[JsonProperty("packageDocumentDetails")]
 		[IsRequired]
-		public PackageDocumentDetailList PackageDocumentDetails { get; set; }
+		public PackageDocumentDetailList PackageDocumentDetails { get; set; } 
 
 		[JsonProperty("promise")]
 		[IsRequired]
-		public Promise Promise { get; set; }
+		public Promise Promise { get; set; } 
 
 		[JsonProperty("carrier")]
 		[IsRequired]
-		public Carrier Carrier { get; set; }
+		public Carrier Carrier { get; set; } 
 
 		[JsonProperty("service")]
 		[IsRequired]
-		public Service Service { get; set; }
+		public Service Service { get; set; } 
 
 		[JsonProperty("totalCharge")]
 		[IsRequired]
-		public Currency TotalCharge { get; set; }
+		public Currency TotalCharge { get; set; } 
 	}
 }

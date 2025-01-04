@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class GetAdditionalSellerInputsResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public GetAdditionalSellerInputsResult Payload { get; set; }
+		public GetAdditionalSellerInputsResult Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

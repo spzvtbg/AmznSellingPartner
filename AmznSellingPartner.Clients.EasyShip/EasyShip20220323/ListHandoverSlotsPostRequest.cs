@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// The request schema for the `listHandoverSlots` operation.
 		/// </summary>
 		[InBody("ListHandoverSlotsRequest")]
-		public ListHandoverSlotsRequest ListHandoverSlotsRequest { get; set; }
+		public ListHandoverSlotsRequest ListHandoverSlotsRequest { get; set; } 
 	}
 }

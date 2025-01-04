@@ -17,11 +17,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("height")]
 		[Minimum(25)]
 		[Maximum(100)]
-		public double Height { get; set; }
+		public double Height { get; set; } 
 
 		[JsonProperty("labelType")]
 		[IsRequired]
-		public LabelPrintType LabelType { get; set; }
+		public LabelPrintType LabelType { get; set; } 
 
 		/// <summary>
 		/// The locale code constructed from ISO 639 language code and ISO 3166-1 alpha-2 standard of country codes
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("localeCode")]
 		[Pattern("^[a-z]{2}_[A-Z]{2}")]
-		public string LocaleCode { get; set; }
+		public string LocaleCode { get; set; } = "en_US";
 
 		/// <summary>
 		/// The Marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs
@@ -39,7 +39,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Represents the quantity of an MSKU to print item labels for.
@@ -48,10 +48,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(100)]
-		public List<MskuQuantity> MskuQuantities { get; set; }
+		public List<MskuQuantity> MskuQuantities { get; set; } 
 
 		[JsonProperty("pageType")]
-		public ItemLabelPageType PageType { get; set; }
+		public ItemLabelPageType PageType { get; set; } 
 
 		/// <summary>
 		/// The width of the item label.
@@ -59,6 +59,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("width")]
 		[Minimum(25)]
 		[Maximum(100)]
-		public double Width { get; set; }
+		public double Width { get; set; } 
 	}
 }

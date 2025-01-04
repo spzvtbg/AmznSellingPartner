@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Unique or identifying code for the carrier.
 		/// </summary>
 		[JsonProperty("carrierCode")]
-		public CarrierCode CarrierCode { get; set; }
+		public CarrierCode CarrierCode { get; set; } 
 
 		/// <summary>
 		/// Timestamp denoting when the shipment will be shipped Date should be in ISO 8601 format as defined by
@@ -24,13 +24,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("shipBy")]
 		[IsRequired]
-		public DateTime ShipBy { get; set; }
+		public DateTime ShipBy { get; set; } 
 
 		/// <summary>
 		/// The identifier that is received from transportation to uniquely identify a booking.
 		/// </summary>
 		[JsonProperty("bookingId")]
 		[MinLength(1)]
-		public string BookingId { get; set; }
+		public string BookingId { get; set; } 
 	}
 }

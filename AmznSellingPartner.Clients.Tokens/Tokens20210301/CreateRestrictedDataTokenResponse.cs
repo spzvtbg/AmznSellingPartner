@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// restricted resources.
 		/// </summary>
 		[JsonProperty("restrictedDataToken")]
-		public string RestrictedDataToken { get; set; }
+		public string RestrictedDataToken { get; set; } 
 
 		/// <summary>
 		/// The lifetime of the Restricted Data Token, in seconds.
 		/// </summary>
 		[JsonProperty("expiresIn")]
-		public int ExpiresIn { get; set; }
+		public int ExpiresIn { get; set; } 
 	}
 }

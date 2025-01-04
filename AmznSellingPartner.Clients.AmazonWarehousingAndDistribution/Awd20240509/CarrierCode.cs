@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Denotes the carrier type.
 		/// </summary>
 		[JsonProperty("carrierCodeType")]
-		public CarrierCodeType CarrierCodeType { get; set; }
+		public CarrierCodeType CarrierCodeType { get; set; } 
 
 		/// <summary>
 		/// Value of the carrier code.
 		/// </summary>
 		[JsonProperty("carrierCodeValue")]
-		public string CarrierCodeValue { get; set; }
+		public string CarrierCodeValue { get; set; } 
 	}
 }

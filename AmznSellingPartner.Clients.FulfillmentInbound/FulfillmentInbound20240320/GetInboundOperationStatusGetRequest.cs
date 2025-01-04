@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(36)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		public string OperationId { get; set; }
+		public string OperationId { get; set; } 
 	}
 }

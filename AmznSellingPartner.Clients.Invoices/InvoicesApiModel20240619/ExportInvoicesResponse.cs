@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// The export identifier.
 		/// </summary>
 		[JsonProperty("exportId")]
-		public string ExportId { get; set; }
+		public string ExportId { get; set; } 
 	}
 }

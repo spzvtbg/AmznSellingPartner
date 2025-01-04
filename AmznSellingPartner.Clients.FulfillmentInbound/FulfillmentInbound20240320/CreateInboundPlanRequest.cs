@@ -19,7 +19,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(1)]
-		public List<string> DestinationMarketplaces { get; set; }
+		public List<string> DestinationMarketplaces { get; set; } 
 
 		/// <summary>
 		/// Items included in this plan.
@@ -28,7 +28,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(2000)]
-		public List<ItemInput> Items { get; set; }
+		public List<ItemInput> Items { get; set; } 
 
 		/// <summary>
 		/// Name for the Inbound Plan. If one isn't provided, a default name will be provided.
@@ -36,10 +36,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("name")]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		[JsonProperty("sourceAddress")]
 		[IsRequired]
-		public AddressInput SourceAddress { get; set; }
+		public AddressInput SourceAddress { get; set; } 
 	}
 }

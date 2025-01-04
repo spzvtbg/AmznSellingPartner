@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetUnmanifestedShipmentsResponse : BaseClass
 	{
 		[JsonProperty("unmanifestedCarrierInformationList")]
-		public UnmanifestedCarrierInformationList UnmanifestedCarrierInformationList { get; set; }
+		public UnmanifestedCarrierInformationList UnmanifestedCarrierInformationList { get; set; } 
 	}
 }

@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorOrdersClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorOrdersClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of purchase orders created or changed during the time frame that you specify. You define

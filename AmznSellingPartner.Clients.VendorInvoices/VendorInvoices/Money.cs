@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// Three-digit currency code in ISO 4217 format.
 		/// </summary>
 		[JsonProperty("currencyCode")]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		[JsonProperty("amount")]
-		public Decimal Amount { get; set; }
+		public Decimal Amount { get; set; } 
 	}
 }

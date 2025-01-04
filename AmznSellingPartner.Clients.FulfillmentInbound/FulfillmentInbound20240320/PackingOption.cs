@@ -18,28 +18,28 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("discounts")]
 		[IsRequired]
-		public List<Incentive> Discounts { get; set; }
+		public List<Incentive> Discounts { get; set; } 
 
 		/// <summary>
 		/// The time at which this packing option is no longer valid. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; }
+		public DateTime Expiration { get; set; } 
 
 		/// <summary>
 		/// Fee for the offered option.
 		/// </summary>
 		[JsonProperty("fees")]
 		[IsRequired]
-		public List<Incentive> Fees { get; set; }
+		public List<Incentive> Fees { get; set; } 
 
 		/// <summary>
 		/// Packing group IDs.
 		/// </summary>
 		[JsonProperty("packingGroups")]
 		[IsRequired]
-		public List<string> PackingGroups { get; set; }
+		public List<string> PackingGroups { get; set; } 
 
 		/// <summary>
 		/// Identifier of a packing option.
@@ -49,7 +49,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PackingOptionId { get; set; }
+		public string PackingOptionId { get; set; } 
 
 		/// <summary>
 		/// The status of the packing option. Possible values: `OFFERED`, `ACCEPTED`, `EXPIRED`.
@@ -58,13 +58,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Status { get; set; }
+		public string Status { get; set; } 
 
 		/// <summary>
 		/// List of supported shipping modes.
 		/// </summary>
 		[JsonProperty("supportedShippingConfigurations")]
 		[IsRequired]
-		public List<ShippingConfiguration> SupportedShippingConfigurations { get; set; }
+		public List<ShippingConfiguration> SupportedShippingConfigurations { get; set; } 
 	}
 }

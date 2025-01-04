@@ -12,18 +12,18 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Availability record if the operation failed.
 		/// </summary>
 		[JsonProperty("availability")]
-		public AvailabilityRecord Availability { get; set; }
+		public AvailabilityRecord Availability { get; set; } 
 
 		/// <summary>
 		/// Warnings encountered, if any.
 		/// </summary>
 		[JsonProperty("warnings")]
-		public WarningList Warnings { get; set; }
+		public WarningList Warnings { get; set; } 
 
 		/// <summary>
 		/// Errors encountered, if any.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

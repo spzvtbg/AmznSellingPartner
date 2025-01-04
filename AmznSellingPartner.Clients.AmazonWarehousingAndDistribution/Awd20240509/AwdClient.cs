@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System;
 	using System.Threading.Tasks;
 
-	public class AwdClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class AwdClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Retrieves an AWD inbound shipment.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---- |

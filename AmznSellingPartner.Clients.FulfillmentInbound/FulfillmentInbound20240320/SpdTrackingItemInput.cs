@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string BoxId { get; set; }
+		public string BoxId { get; set; } 
 
 		/// <summary>
 		/// The tracking Id associated with each box in a non-Amazon partnered Small Parcel Delivery (SPD) shipment.
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string TrackingId { get; set; }
+		public string TrackingId { get; set; } 
 	}
 }

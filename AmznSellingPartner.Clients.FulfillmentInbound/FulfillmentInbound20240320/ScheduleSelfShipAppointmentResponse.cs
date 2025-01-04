@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	{
 		[JsonProperty("selfShipAppointmentDetails")]
 		[IsRequired]
-		public SelfShipAppointmentDetails SelfShipAppointmentDetails { get; set; }
+		public SelfShipAppointmentDetails SelfShipAppointmentDetails { get; set; } 
 	}
 }

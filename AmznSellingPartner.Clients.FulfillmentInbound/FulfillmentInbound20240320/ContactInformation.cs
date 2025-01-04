@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("email")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Email { get; set; }
+		public string Email { get; set; } 
 
 		/// <summary>
 		/// The contact's name.
@@ -24,7 +24,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(50)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The phone number.
@@ -33,6 +33,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string PhoneNumber { get; set; }
+		public string PhoneNumber { get; set; } 
 	}
 }

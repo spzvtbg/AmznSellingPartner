@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	public class MarketplaceFilter : BaseClass
 	{
 		[JsonProperty("marketplaceIds")]
-		public MarketplaceIds MarketplaceIds { get; set; }
+		public MarketplaceIds MarketplaceIds { get; set; } 
 	}
 }

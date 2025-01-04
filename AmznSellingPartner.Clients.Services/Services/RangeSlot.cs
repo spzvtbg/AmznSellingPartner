@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Start date time of slot in ISO 8601 format with precision of seconds.
 		/// </summary>
 		[JsonProperty("startDateTime")]
-		public DateTime StartDateTime { get; set; }
+		public DateTime StartDateTime { get; set; } 
 
 		/// <summary>
 		/// End date time of slot in ISO 8601 format with precision of seconds.
 		/// </summary>
 		[JsonProperty("endDateTime")]
-		public DateTime EndDateTime { get; set; }
+		public DateTime EndDateTime { get; set; } 
 
 		/// <summary>
 		/// Capacity of the slot.
 		/// </summary>
 		[JsonProperty("capacity")]
-		public int Capacity { get; set; }
+		public int Capacity { get; set; } 
 	}
 }

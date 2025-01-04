@@ -14,29 +14,29 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// </summary>
 		[JsonProperty("MarketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// When true, the offer is fulfilled by Amazon.
 		/// </summary>
 		[JsonProperty("IsAmazonFulfilled")]
-		public bool IsAmazonFulfilled { get; set; }
+		public bool IsAmazonFulfilled { get; set; } 
 
 		/// <summary>
 		/// The product price that the fee estimate is based on.
 		/// </summary>
 		[JsonProperty("PriceToEstimateFees")]
 		[IsRequired]
-		public PriceToEstimateFees PriceToEstimateFees { get; set; }
+		public PriceToEstimateFees PriceToEstimateFees { get; set; } 
 
 		/// <summary>
 		/// A unique identifier provided by the caller to track this request.
 		/// </summary>
 		[JsonProperty("Identifier")]
 		[IsRequired]
-		public string Identifier { get; set; }
+		public string Identifier { get; set; } 
 
 		[JsonProperty("OptionalFulfillmentProgram")]
-		public OptionalFulfillmentProgram OptionalFulfillmentProgram { get; set; }
+		public OptionalFulfillmentProgram OptionalFulfillmentProgram { get; set; } 
 	}
 }

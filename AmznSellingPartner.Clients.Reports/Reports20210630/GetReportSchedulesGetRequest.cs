@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(10)]
-		public CsvValue<string> ReportTypes { get; set; }
+		public CsvValue<string> ReportTypes { get; set; } 
 	}
 }

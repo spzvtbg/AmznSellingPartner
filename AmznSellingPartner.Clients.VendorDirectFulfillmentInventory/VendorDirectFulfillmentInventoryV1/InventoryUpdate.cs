@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// </summary>
 		[JsonProperty("sellingParty")]
 		[IsRequired]
-		public PartyIdentification SellingParty { get; set; }
+		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
 		/// When true, this request contains a full feed. Otherwise, this request contains a partial feed. When sending
@@ -26,13 +26,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// </summary>
 		[JsonProperty("isFullUpdate")]
 		[IsRequired]
-		public bool IsFullUpdate { get; set; }
+		public bool IsFullUpdate { get; set; } 
 
 		/// <summary>
 		/// A list of inventory items with updated details, including quantity available.
 		/// </summary>
 		[JsonProperty("items")]
 		[IsRequired]
-		public List<ItemDetails> Items { get; set; }
+		public List<ItemDetails> Items { get; set; } 
 	}
 }

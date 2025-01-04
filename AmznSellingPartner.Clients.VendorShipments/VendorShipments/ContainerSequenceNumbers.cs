@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// A list of containers shipped
 		/// </summary>
 		[JsonProperty("containerSequenceNumber")]
-		public string ContainerSequenceNumber { get; set; }
+		public string ContainerSequenceNumber { get; set; } 
 	}
 }

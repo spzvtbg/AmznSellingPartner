@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetAccessPointsResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public GetAccessPointsResult Payload { get; set; }
+		public GetAccessPointsResult Payload { get; set; } 
 	}
 }

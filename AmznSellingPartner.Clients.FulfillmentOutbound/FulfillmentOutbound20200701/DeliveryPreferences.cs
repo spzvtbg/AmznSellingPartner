@@ -18,12 +18,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("deliveryInstructions")]
 		[MaxLength(250)]
-		public string DeliveryInstructions { get; set; }
+		public string DeliveryInstructions { get; set; } 
 
 		/// <summary>
 		/// The preferred location to leave packages at the destination address.
 		/// </summary>
 		[JsonProperty("dropOffLocation")]
-		public DropOffLocation DropOffLocation { get; set; }
+		public DropOffLocation DropOffLocation { get; set; } 
 	}
 }

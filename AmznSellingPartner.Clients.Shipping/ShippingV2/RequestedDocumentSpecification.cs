@@ -15,27 +15,27 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("format")]
 		[IsRequired]
-		public DocumentFormat Format { get; set; }
+		public DocumentFormat Format { get; set; } 
 
 		[JsonProperty("size")]
 		[IsRequired]
-		public DocumentSize Size { get; set; }
+		public DocumentSize Size { get; set; } 
 
 		[JsonProperty("dpi")]
-		public Dpi Dpi { get; set; }
+		public Dpi Dpi { get; set; } 
 
 		[JsonProperty("pageLayout")]
-		public PageLayout PageLayout { get; set; }
+		public PageLayout PageLayout { get; set; } 
 
 		[JsonProperty("needFileJoining")]
 		[IsRequired]
-		public NeedFileJoining NeedFileJoining { get; set; }
+		public NeedFileJoining NeedFileJoining { get; set; } 
 
 		/// <summary>
 		/// A list of the document types requested.
 		/// </summary>
 		[JsonProperty("requestedDocumentTypes")]
 		[IsRequired]
-		public List<DocumentType> RequestedDocumentTypes { get; set; }
+		public List<DocumentType> RequestedDocumentTypes { get; set; } 
 	}
 }

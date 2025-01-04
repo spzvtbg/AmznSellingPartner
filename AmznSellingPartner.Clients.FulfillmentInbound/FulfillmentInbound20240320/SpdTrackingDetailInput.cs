@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("spdTrackingItems")]
 		[IsRequired]
-		public List<SpdTrackingItemInput> SpdTrackingItems { get; set; }
+		public List<SpdTrackingItemInput> SpdTrackingItems { get; set; } 
 	}
 }

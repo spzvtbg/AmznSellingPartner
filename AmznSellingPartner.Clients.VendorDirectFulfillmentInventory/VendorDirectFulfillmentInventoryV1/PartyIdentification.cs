@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// </summary>
 		[JsonProperty("partyId")]
 		[IsRequired]
-		public string PartyId { get; set; }
+		public string PartyId { get; set; } 
 	}
 }

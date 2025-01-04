@@ -11,15 +11,15 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// The payload for the getInventorySummaries operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public GetInventorySummariesResult Payload { get; set; }
+		public GetInventorySummariesResult Payload { get; set; } 
 
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// One or more unexpected errors occurred during the getInventorySummaries operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

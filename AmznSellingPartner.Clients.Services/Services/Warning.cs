@@ -15,19 +15,19 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("code")]
 		[IsRequired]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// A message that describes the warning condition in a human-readable form.
 		/// </summary>
 		[JsonProperty("message")]
 		[IsRequired]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		/// <summary>
 		/// Additional details that can help the caller understand or address the warning.
 		/// </summary>
 		[JsonProperty("details")]
-		public string Details { get; set; }
+		public string Details { get; set; } 
 	}
 }

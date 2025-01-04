@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A list of merchant SKUs, a merchant-supplied identifier of a specific SKU.
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(100)]
-		public CsvValue<string> Mskus { get; set; }
+		public CsvValue<string> Mskus { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 	}
 }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class CancelShipmentResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public CancelShipmentResult Payload { get; set; }
+		public CancelShipmentResult Payload { get; set; } 
 	}
 }

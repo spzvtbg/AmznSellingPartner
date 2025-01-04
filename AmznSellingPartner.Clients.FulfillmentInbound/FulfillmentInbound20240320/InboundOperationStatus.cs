@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Operation { get; set; }
+		public string Operation { get; set; } 
 
 		/// <summary>
 		/// The operation ID returned by the asynchronous API call.
@@ -28,17 +28,17 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(36)]
 		[MaxLength(38)]
-		public string OperationId { get; set; }
+		public string OperationId { get; set; } 
 
 		/// <summary>
 		/// The problems in the processing of the asynchronous operation.
 		/// </summary>
 		[JsonProperty("operationProblems")]
 		[IsRequired]
-		public List<OperationProblem> OperationProblems { get; set; }
+		public List<OperationProblem> OperationProblems { get; set; } 
 
 		[JsonProperty("operationStatus")]
 		[IsRequired]
-		public OperationStatus OperationStatus { get; set; }
+		public OperationStatus OperationStatus { get; set; } 
 	}
 }

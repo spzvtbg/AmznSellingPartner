@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// </summary>
 		[JsonProperty("code")]
 		[IsRequired]
-		public string Code { get; set; }
+		public string Code { get; set; } 
 
 		/// <summary>
 		/// A message that describes the error condition.
 		/// </summary>
 		[JsonProperty("message")]
 		[IsRequired]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		/// <summary>
 		/// Additional details that can help the caller understand or fix the issue.
 		/// </summary>
 		[JsonProperty("details")]
-		public string Details { get; set; }
+		public string Details { get; set; } 
 	}
 }

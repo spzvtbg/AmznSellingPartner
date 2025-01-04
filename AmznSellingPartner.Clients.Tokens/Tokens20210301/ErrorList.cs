@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 	public class ErrorList : BaseClass
 	{
 		[JsonProperty("errors")]
-		public List<Error> Errors { get; set; }
+		public List<Error> Errors { get; set; } 
 	}
 }

@@ -16,63 +16,63 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]
-		public string ItemSequenceNumber { get; set; }
+		public string ItemSequenceNumber { get; set; } 
 
 		/// <summary>
 		/// Buyer's standard identification number (ASIN) of an item.
 		/// </summary>
 		[JsonProperty("buyerProductIdentifier")]
-		public string BuyerProductIdentifier { get; set; }
+		public string BuyerProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// The vendor selected product identification of the item.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
-		public string VendorProductIdentifier { get; set; }
+		public string VendorProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// Item quantity invoiced.
 		/// </summary>
 		[JsonProperty("invoicedQuantity")]
 		[IsRequired]
-		public ItemQuantity InvoicedQuantity { get; set; }
+		public ItemQuantity InvoicedQuantity { get; set; } 
 
 		/// <summary>
 		/// Net price (before tax) to vendor with currency details.
 		/// </summary>
 		[JsonProperty("netCost")]
 		[IsRequired]
-		public Money NetCost { get; set; }
+		public Money NetCost { get; set; } 
 
 		/// <summary>
 		/// The purchase order number for this order. Formatting Notes: 8-character alpha-numeric code.
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// The vendor's order number for this order.
 		/// </summary>
 		[JsonProperty("vendorOrderNumber")]
-		public string VendorOrderNumber { get; set; }
+		public string VendorOrderNumber { get; set; } 
 
 		/// <summary>
 		/// Harmonized System of Nomenclature (HSN) tax code. The HSN number cannot contain alphabets.
 		/// </summary>
 		[JsonProperty("hsnCode")]
-		public string HsnCode { get; set; }
+		public string HsnCode { get; set; } 
 
 		/// <summary>
 		/// Individual tax details per line item.
 		/// </summary>
 		[JsonProperty("taxDetails")]
-		public List<TaxDetail> TaxDetails { get; set; }
+		public List<TaxDetail> TaxDetails { get; set; } 
 
 		/// <summary>
 		/// Individual charge details per line item.
 		/// </summary>
 		[JsonProperty("chargeDetails")]
-		public List<ChargeDetails> ChargeDetails { get; set; }
+		public List<ChargeDetails> ChargeDetails { get; set; } 
 	}
 }

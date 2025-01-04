@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	{
 		[JsonProperty("restrictions")]
 		[IsRequired]
-		public List<Restriction> Restrictions { get; set; }
+		public List<Restriction> Restrictions { get; set; } 
 	}
 }

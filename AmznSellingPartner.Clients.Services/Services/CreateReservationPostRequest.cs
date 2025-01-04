@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateReservationRequest Body { get; set; }
+		public CreateReservationRequest Body { get; set; } 
 
 		/// <summary>
 		/// An identifier for the marketplace in which the resource operates.
@@ -19,6 +19,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 	}
 }

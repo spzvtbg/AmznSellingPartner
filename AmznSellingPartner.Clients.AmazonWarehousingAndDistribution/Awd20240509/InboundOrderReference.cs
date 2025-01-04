@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("orderId")]
 		[IsRequired]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 
 		/// <summary>
 		/// Order version of the inbound order.
 		/// </summary>
 		[JsonProperty("orderVersion")]
 		[IsRequired]
-		public string OrderVersion { get; set; }
+		public string OrderVersion { get; set; } 
 	}
 }

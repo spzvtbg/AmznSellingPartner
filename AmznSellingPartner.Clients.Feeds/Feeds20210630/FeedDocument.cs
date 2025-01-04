@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("feedDocumentId")]
 		[IsRequired]
-		public string FeedDocumentId { get; set; }
+		public string FeedDocumentId { get; set; } 
 
 		/// <summary>
 		/// A presigned URL for the feed document. If `compressionAlgorithm` is not returned, you can download the
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("url")]
 		[IsRequired]
-		public string Url { get; set; }
+		public string Url { get; set; } 
 
 		/// <summary>
 		/// If the feed document contents have been compressed, the compression algorithm used is returned in this
@@ -32,6 +32,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// in the use case guide, where sample code is provided.
 		/// </summary>
 		[JsonProperty("compressionAlgorithm")]
-		public CompressionAlgorithm CompressionAlgorithm { get; set; }
+		public CompressionAlgorithm CompressionAlgorithm { get; set; } 
 	}
 }

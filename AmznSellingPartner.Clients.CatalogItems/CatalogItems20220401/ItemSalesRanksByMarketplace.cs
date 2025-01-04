@@ -16,18 +16,18 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Sales ranks of an Amazon catalog item for an Amazon marketplace by classification.
 		/// </summary>
 		[JsonProperty("classificationRanks")]
-		public List<ItemClassificationSalesRank> ClassificationRanks { get; set; }
+		public List<ItemClassificationSalesRank> ClassificationRanks { get; set; } 
 
 		/// <summary>
 		/// Sales ranks of an Amazon catalog item for an Amazon marketplace by website display group.
 		/// </summary>
 		[JsonProperty("displayGroupRanks")]
-		public List<ItemDisplayGroupSalesRank> DisplayGroupRanks { get; set; }
+		public List<ItemDisplayGroupSalesRank> DisplayGroupRanks { get; set; } 
 	}
 }

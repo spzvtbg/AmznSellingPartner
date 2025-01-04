@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("contentType")]
 		[IsRequired]
-		public string ContentType { get; set; }
+		public string ContentType { get; set; } 
 	}
 }

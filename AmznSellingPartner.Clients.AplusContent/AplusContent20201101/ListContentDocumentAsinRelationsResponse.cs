@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("asinMetadataSet")]
 		[IsRequired]
-		public AsinMetadataSet AsinMetadataSet { get; set; }
+		public AsinMetadataSet AsinMetadataSet { get; set; } 
 	}
 }

@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// The pagination token to retrieve a specific page of results.
 		/// </summary>
 		[InQuery("nextPageToken")]
-		public string NextPageToken { get; set; }
+		public string NextPageToken { get; set; } 
 
 		/// <summary>
 		/// The number of supply sources to return per paginated request.
 		/// </summary>
 		[InQuery("pageSize")]
-		public double PageSize { get; set; }
+		public double PageSize { get; set; } = 10;
 	}
 }

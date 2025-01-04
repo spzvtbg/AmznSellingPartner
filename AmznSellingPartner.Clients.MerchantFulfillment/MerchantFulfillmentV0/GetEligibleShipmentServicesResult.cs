@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("ShippingServiceList")]
 		[IsRequired]
-		public ShippingServiceList ShippingServiceList { get; set; }
+		public ShippingServiceList ShippingServiceList { get; set; } 
 
 		[JsonProperty("RejectedShippingServiceList")]
-		public RejectedShippingServiceList RejectedShippingServiceList { get; set; }
+		public RejectedShippingServiceList RejectedShippingServiceList { get; set; } 
 
 		[JsonProperty("TemporarilyUnavailableCarrierList")]
-		public TemporarilyUnavailableCarrierList TemporarilyUnavailableCarrierList { get; set; }
+		public TemporarilyUnavailableCarrierList TemporarilyUnavailableCarrierList { get; set; } 
 
 		[JsonProperty("TermsAndConditionsNotAcceptedCarrierList")]
-		public TermsAndConditionsNotAcceptedCarrierList TermsAndConditionsNotAcceptedCarrierList { get; set; }
+		public TermsAndConditionsNotAcceptedCarrierList TermsAndConditionsNotAcceptedCarrierList { get; set; } 
 	}
 }

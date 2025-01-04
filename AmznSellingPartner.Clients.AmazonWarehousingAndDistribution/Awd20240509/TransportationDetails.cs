@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("trackingDetails")]
 		[IsRequired]
-		public List<TrackingDetails> TrackingDetails { get; set; }
+		public List<TrackingDetails> TrackingDetails { get; set; } 
 	}
 }

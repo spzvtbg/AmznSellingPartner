@@ -11,18 +11,18 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// errorMessage for the error.
 		/// </summary>
 		[JsonProperty("errorMessage")]
-		public string ErrorMessage { get; set; }
+		public string ErrorMessage { get; set; } 
 
 		/// <summary>
 		/// validationStrategy for the error.
 		/// </summary>
 		[JsonProperty("validationStrategy")]
-		public string ValidationStrategy { get; set; }
+		public string ValidationStrategy { get; set; } 
 
 		/// <summary>
 		/// Value.
 		/// </summary>
 		[JsonProperty("value")]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

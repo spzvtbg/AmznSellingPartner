@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Date on which label is created.
 		/// </summary>
 		[JsonProperty("labelCreateDateTime")]
-		public DateTime LabelCreateDateTime { get; set; }
+		public DateTime LabelCreateDateTime { get; set; } 
 
 		/// <summary>
 		/// Indicates the shipment Information details like warehouse and business reference details like ARN, Selling
 		/// Party detail and Vendor Warehouse details
 		/// </summary>
 		[JsonProperty("shipmentInformation")]
-		public ShipmentInformation ShipmentInformation { get; set; }
+		public ShipmentInformation ShipmentInformation { get; set; } 
 
 		/// <summary>
 		/// Indicates the label data,format and type associated .
 		/// </summary>
 		[JsonProperty("labelData")]
-		public List<LabelData> LabelData { get; set; }
+		public List<LabelData> LabelData { get; set; } 
 	}
 }

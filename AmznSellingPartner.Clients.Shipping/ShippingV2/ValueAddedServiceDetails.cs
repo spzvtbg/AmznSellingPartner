@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class ValueAddedServiceDetails : BaseClass
 	{
 		[JsonProperty("collectOnDelivery")]
-		public CollectOnDelivery CollectOnDelivery { get; set; }
+		public CollectOnDelivery CollectOnDelivery { get; set; } 
 	}
 }

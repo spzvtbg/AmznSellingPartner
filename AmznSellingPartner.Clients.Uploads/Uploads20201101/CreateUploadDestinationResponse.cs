@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 	public class CreateUploadDestinationResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public UploadDestination Payload { get; set; }
+		public UploadDestination Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

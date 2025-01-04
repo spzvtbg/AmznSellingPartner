@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// The granularity type for the inventory aggregation level.
 		/// </summary>
 		[JsonProperty("granularityType")]
-		public GranularityType GranularityType { get; set; }
+		public GranularityType GranularityType { get; set; } 
 
 		/// <summary>
 		/// The granularity ID for the specified granularity type. When granularityType is Marketplace, specify the
 		/// marketplaceId.
 		/// </summary>
 		[JsonProperty("granularityId")]
-		public string GranularityId { get; set; }
+		public string GranularityId { get; set; } 
 	}
 }

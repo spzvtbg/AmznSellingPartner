@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[InPath("shipmentId")]
 		[IsRequired]
 		[MinLength(1)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 
 		/// <summary>
 		/// If equal to `SHOW`, the response includes the shipment SKU quantity details.  Defaults to `HIDE`, in
 		/// which case the response does not contain SKU quantities
 		/// </summary>
 		[InQuery("skuQuantities")]
-		public SkuQuantities SkuQuantities { get; set; }
+		public SkuQuantities SkuQuantities { get; set; } 
 	}
 }

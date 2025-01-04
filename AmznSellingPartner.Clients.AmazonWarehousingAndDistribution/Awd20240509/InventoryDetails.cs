@@ -12,13 +12,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Quantity that is available for downstream channel replenishment.
 		/// </summary>
 		[JsonProperty("availableDistributableQuantity")]
-		public long AvailableDistributableQuantity { get; set; }
+		public long AvailableDistributableQuantity { get; set; } 
 
 		/// <summary>
 		/// Quantity that is reserved for a downstream channel replenishment order that is being prepared for sh
 		/// ipment.
 		/// </summary>
 		[JsonProperty("reservedDistributableQuantity")]
-		public long ReservedDistributableQuantity { get; set; }
+		public long ReservedDistributableQuantity { get; set; } 
 	}
 }

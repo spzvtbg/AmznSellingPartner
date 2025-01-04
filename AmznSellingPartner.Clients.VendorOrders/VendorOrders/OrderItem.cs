@@ -15,44 +15,44 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]
-		public string ItemSequenceNumber { get; set; }
+		public string ItemSequenceNumber { get; set; } 
 
 		/// <summary>
 		/// Amazon Standard Identification Number (ASIN) of an item.
 		/// </summary>
 		[JsonProperty("amazonProductIdentifier")]
-		public string AmazonProductIdentifier { get; set; }
+		public string AmazonProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// The vendor selected product identification of the item.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
-		public string VendorProductIdentifier { get; set; }
+		public string VendorProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// Item quantity ordered.
 		/// </summary>
 		[JsonProperty("orderedQuantity")]
 		[IsRequired]
-		public ItemQuantity OrderedQuantity { get; set; }
+		public ItemQuantity OrderedQuantity { get; set; } 
 
 		/// <summary>
 		/// When true, we will accept backorder confirmations for this item.
 		/// </summary>
 		[JsonProperty("isBackOrderAllowed")]
 		[IsRequired]
-		public bool IsBackOrderAllowed { get; set; }
+		public bool IsBackOrderAllowed { get; set; } 
 
 		/// <summary>
 		/// The net cost of an item per each or weight unit.
 		/// </summary>
 		[JsonProperty("netCost")]
-		public Money NetCost { get; set; }
+		public Money NetCost { get; set; } 
 
 		/// <summary>
 		/// The list price of an item per each or weight unit.
 		/// </summary>
 		[JsonProperty("listPrice")]
-		public Money ListPrice { get; set; }
+		public Money ListPrice { get; set; } 
 	}
 }

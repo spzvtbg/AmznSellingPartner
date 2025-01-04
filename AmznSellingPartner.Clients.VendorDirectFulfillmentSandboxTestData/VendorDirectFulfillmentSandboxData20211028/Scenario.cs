@@ -16,13 +16,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// </summary>
 		[JsonProperty("scenarioId")]
 		[IsRequired]
-		public string ScenarioId { get; set; }
+		public string ScenarioId { get; set; } 
 
 		/// <summary>
 		/// A list of orders that can be used by the caller to test each life cycle or scenario.
 		/// </summary>
 		[JsonProperty("orders")]
 		[IsRequired]
-		public List<TestOrder> Orders { get; set; }
+		public List<TestOrder> Orders { get; set; } 
 	}
 }

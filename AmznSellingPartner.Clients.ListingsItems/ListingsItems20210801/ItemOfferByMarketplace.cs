@@ -14,29 +14,29 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Type of offer for the listings item.
 		/// </summary>
 		[JsonProperty("offerType")]
 		[IsRequired]
-		public OfferType OfferType { get; set; }
+		public OfferType OfferType { get; set; } 
 
 		/// <summary>
 		/// The purchase price of the listings item
 		/// </summary>
 		[JsonProperty("price")]
 		[IsRequired]
-		public Money Price { get; set; }
+		public Money Price { get; set; } 
 
 		[JsonProperty("points")]
-		public Points Points { get; set; }
+		public Points Points { get; set; } 
 
 		/// <summary>
 		/// Buyer segment or program this offer is applicable to.
 		/// </summary>
 		[JsonProperty("audience")]
-		public Audience Audience { get; set; }
+		public Audience Audience { get; set; } 
 	}
 }

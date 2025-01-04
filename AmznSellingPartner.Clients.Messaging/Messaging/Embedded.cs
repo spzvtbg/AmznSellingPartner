@@ -10,9 +10,9 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	{
 		[JsonProperty("actions")]
 		[IsRequired]
-		public List<GetMessagingActionResponse> Actions { get; set; }
+		public List<GetMessagingActionResponse> Actions { get; set; } 
 
 		[JsonProperty("schema")]
-		public GetSchemaResponse Schema { get; set; }
+		public GetSchemaResponse Schema { get; set; } 
 	}
 }

@@ -8,24 +8,24 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class PickupChannel : BaseClass
 	{
 		[JsonProperty("inventoryHoldPeriod")]
-		public Duration InventoryHoldPeriod { get; set; }
+		public Duration InventoryHoldPeriod { get; set; } 
 
 		[JsonProperty("isSupported")]
-		public bool IsSupported { get; set; }
+		public bool IsSupported { get; set; } 
 
 		[JsonProperty("operationalConfiguration")]
-		public OperationalConfiguration OperationalConfiguration { get; set; }
+		public OperationalConfiguration OperationalConfiguration { get; set; } 
 
 		/// <summary>
 		/// The configuration for supporting in-store pickup.
 		/// </summary>
 		[JsonProperty("inStorePickupConfiguration")]
-		public InStorePickupConfiguration InStorePickupConfiguration { get; set; }
+		public InStorePickupConfiguration InStorePickupConfiguration { get; set; } 
 
 		/// <summary>
 		/// The configuration for supporting curbside pickup.
 		/// </summary>
 		[JsonProperty("curbsidePickupConfiguration")]
-		public CurbsidePickupConfiguration CurbsidePickupConfiguration { get; set; }
+		public CurbsidePickupConfiguration CurbsidePickupConfiguration { get; set; } 
 	}
 }

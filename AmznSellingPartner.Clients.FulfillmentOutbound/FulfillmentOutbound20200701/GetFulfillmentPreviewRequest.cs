@@ -15,14 +15,14 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// The marketplace the fulfillment order is placed against.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The destination address for the fulfillment order preview.
 		/// </summary>
 		[JsonProperty("address")]
 		[IsRequired]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		/// <summary>
 		/// Identifying information and quantity information for the items in the fulfillment order preview. Maximum
@@ -30,7 +30,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("items")]
 		[IsRequired]
-		public GetFulfillmentPreviewItemList Items { get; set; }
+		public GetFulfillmentPreviewItemList Items { get; set; } 
 
 		/// <summary>
 		/// A list of shipping methods used for creating fulfillment order previews.  Possible values:  * `Standard`
@@ -40,14 +40,14 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// for shipping method service level agreements and fulfillment fees.
 		/// </summary>
 		[JsonProperty("shippingSpeedCategories")]
-		public ShippingSpeedCategoryList ShippingSpeedCategories { get; set; }
+		public ShippingSpeedCategoryList ShippingSpeedCategories { get; set; } 
 
 		/// <summary>
 		/// When true, returns all fulfillment order previews both for COD and not for COD. Otherwise, returns only
 		/// fulfillment order previews that are not for COD.
 		/// </summary>
 		[JsonProperty("includeCODFulfillmentPreview")]
-		public bool IncludeCODFulfillmentPreview { get; set; }
+		public bool IncludeCODFulfillmentPreview { get; set; } 
 
 		/// <summary>
 		/// When true, returns the `ScheduledDeliveryInfo` response object, which contains the available delivery
@@ -55,12 +55,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// fulfillment order previews with `ShippingSpeedCategories` = `ScheduledDelivery`.
 		/// </summary>
 		[JsonProperty("includeDeliveryWindows")]
-		public bool IncludeDeliveryWindows { get; set; }
+		public bool IncludeDeliveryWindows { get; set; } 
 
 		/// <summary>
 		/// A list of features and their fulfillment policies to apply to the order.
 		/// </summary>
 		[JsonProperty("featureConstraints")]
-		public List<FeatureSettings> FeatureConstraints { get; set; }
+		public List<FeatureSettings> FeatureConstraints { get; set; } 
 	}
 }

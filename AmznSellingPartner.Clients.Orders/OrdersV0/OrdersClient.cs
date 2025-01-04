@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System;
 	using System.Threading.Tasks;
 
-	public class OrdersClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class OrdersClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns orders that are created or updated during the specified time period. If you want to return specific

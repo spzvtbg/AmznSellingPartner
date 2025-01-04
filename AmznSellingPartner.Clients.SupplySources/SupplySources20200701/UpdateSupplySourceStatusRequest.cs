@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class UpdateSupplySourceStatusRequest : BaseClass
 	{
 		[JsonProperty("status")]
-		public SupplySourceStatus Status { get; set; }
+		public SupplySourceStatus Status { get; set; } 
 	}
 }

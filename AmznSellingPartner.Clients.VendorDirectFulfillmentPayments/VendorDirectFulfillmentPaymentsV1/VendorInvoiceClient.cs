@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorInvoiceClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorInvoiceClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Submits one or more invoices for a vendor's direct fulfillment orders.  **Usage Plan:**  | Rate (requests

@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("resourceId")]
 		[IsRequired]
-		public string ResourceId { get; set; }
+		public string ResourceId { get; set; } 
 
 		/// <summary>
 		/// `Reservation` object to reduce the capacity of a resource.
 		/// </summary>
 		[JsonProperty("reservation")]
 		[IsRequired]
-		public Reservation Reservation { get; set; }
+		public Reservation Reservation { get; set; } 
 	}
 }

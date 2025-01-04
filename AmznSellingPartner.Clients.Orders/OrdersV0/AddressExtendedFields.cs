@@ -12,24 +12,24 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The street name.
 		/// </summary>
 		[JsonProperty("StreetName")]
-		public string StreetName { get; set; }
+		public string StreetName { get; set; } 
 
 		/// <summary>
 		/// The house, building, or property number associated with the location's street address.
 		/// </summary>
 		[JsonProperty("StreetNumber")]
-		public string StreetNumber { get; set; }
+		public string StreetNumber { get; set; } 
 
 		/// <summary>
 		/// The floor number/unit number in the building/private house number.
 		/// </summary>
 		[JsonProperty("Complement")]
-		public string Complement { get; set; }
+		public string Complement { get; set; } 
 
 		/// <summary>
 		/// The neighborhood. This value is only used in some countries (such as Brazil).
 		/// </summary>
 		[JsonProperty("Neighborhood")]
-		public string Neighborhood { get; set; }
+		public string Neighborhood { get; set; } 
 	}
 }

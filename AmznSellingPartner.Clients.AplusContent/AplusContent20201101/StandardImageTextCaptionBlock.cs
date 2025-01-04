@@ -9,9 +9,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardImageTextCaptionBlock : BaseClass
 	{
 		[JsonProperty("block")]
-		public StandardImageTextBlock Block { get; set; }
+		public StandardImageTextBlock Block { get; set; } 
 
 		[JsonProperty("caption")]
-		public TextComponent Caption { get; set; }
+		public TextComponent Caption { get; set; } 
 	}
 }

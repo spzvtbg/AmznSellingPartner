@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// Day of the week.
 		/// </summary>
 		[JsonProperty("DayOfWeek")]
-		public DayOfWeek DayOfWeek { get; set; }
+		public DayOfWeek DayOfWeek { get; set; } 
 
 		/// <summary>
 		/// Time window during the day when the business is open.
 		/// </summary>
 		[JsonProperty("OpenIntervals")]
-		public List<OpenInterval> OpenIntervals { get; set; }
+		public List<OpenInterval> OpenIntervals { get; set; } 
 	}
 }

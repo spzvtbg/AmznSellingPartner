@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateRestrictedDataTokenRequest Body { get; set; }
+		public CreateRestrictedDataTokenRequest Body { get; set; } 
 	}
 }

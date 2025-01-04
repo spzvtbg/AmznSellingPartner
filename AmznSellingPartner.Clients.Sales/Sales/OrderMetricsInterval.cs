@@ -17,41 +17,41 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// </summary>
 		[JsonProperty("interval")]
 		[IsRequired]
-		public string Interval { get; set; }
+		public string Interval { get; set; } 
 
 		/// <summary>
 		/// The number of units in orders based on the specified filters.
 		/// </summary>
 		[JsonProperty("unitCount")]
 		[IsRequired]
-		public int UnitCount { get; set; }
+		public int UnitCount { get; set; } 
 
 		/// <summary>
 		/// The number of order items based on the specified filters.
 		/// </summary>
 		[JsonProperty("orderItemCount")]
 		[IsRequired]
-		public int OrderItemCount { get; set; }
+		public int OrderItemCount { get; set; } 
 
 		/// <summary>
 		/// The number of orders based on the specified filters.
 		/// </summary>
 		[JsonProperty("orderCount")]
 		[IsRequired]
-		public int OrderCount { get; set; }
+		public int OrderCount { get; set; } 
 
 		/// <summary>
 		/// The average price for an item based on the specified filters. Formula is totalSales/unitCount.
 		/// </summary>
 		[JsonProperty("averageUnitPrice")]
 		[IsRequired]
-		public Money AverageUnitPrice { get; set; }
+		public Money AverageUnitPrice { get; set; } 
 
 		/// <summary>
 		/// The total ordered product sales for all orders based on the specified filters.
 		/// </summary>
 		[JsonProperty("totalSales")]
 		[IsRequired]
-		public Money TotalSales { get; set; }
+		public Money TotalSales { get; set; } 
 	}
 }

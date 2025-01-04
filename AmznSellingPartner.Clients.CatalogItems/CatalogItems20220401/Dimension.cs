@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// Measurement unit of the dimension value.
 		/// </summary>
 		[JsonProperty("unit")]
-		public string Unit { get; set; }
+		public string Unit { get; set; } 
 
 		/// <summary>
 		/// Numeric dimension value.
 		/// </summary>
 		[JsonProperty("value")]
-		public double Value { get; set; }
+		public double Value { get; set; } 
 	}
 }

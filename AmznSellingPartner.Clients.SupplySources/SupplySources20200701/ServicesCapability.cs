@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// When true, `SupplySource` supports the Service capability.
 		/// </summary>
 		[JsonProperty("isSupported")]
-		public bool IsSupported { get; set; }
+		public bool IsSupported { get; set; } 
 
 		[JsonProperty("operationalConfiguration")]
-		public OperationalConfiguration OperationalConfiguration { get; set; }
+		public OperationalConfiguration OperationalConfiguration { get; set; } 
 	}
 }

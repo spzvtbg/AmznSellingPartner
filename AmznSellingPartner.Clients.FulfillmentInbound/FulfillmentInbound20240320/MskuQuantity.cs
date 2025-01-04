@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Msku { get; set; }
+		public string Msku { get; set; } 
 
 		/// <summary>
 		/// A positive integer.
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 	}
 }

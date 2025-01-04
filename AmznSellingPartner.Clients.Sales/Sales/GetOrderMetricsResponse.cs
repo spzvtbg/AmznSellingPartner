@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// The payload for the getOrderMetrics operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public OrderMetricsList Payload { get; set; }
+		public OrderMetricsList Payload { get; set; } 
 
 		/// <summary>
 		/// Encountered errors for the getOrderMetrics operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

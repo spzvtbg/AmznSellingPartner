@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("feedDocumentId")]
 		[IsRequired]
-		public string FeedDocumentId { get; set; }
+		public string FeedDocumentId { get; set; } 
 
 		/// <summary>
 		/// The presigned URL for uploading the feed contents. This URL expires after 5 minutes.
 		/// </summary>
 		[JsonProperty("url")]
 		[IsRequired]
-		public string Url { get; set; }
+		public string Url { get; set; } 
 	}
 }

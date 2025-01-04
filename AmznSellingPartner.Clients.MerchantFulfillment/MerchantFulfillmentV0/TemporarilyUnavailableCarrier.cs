@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("CarrierName")]
 		[IsRequired]
-		public string CarrierName { get; set; }
+		public string CarrierName { get; set; } 
 	}
 }

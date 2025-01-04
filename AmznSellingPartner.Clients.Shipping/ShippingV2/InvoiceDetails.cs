@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// The invoice number of the item.
 		/// </summary>
 		[JsonProperty("invoiceNumber")]
-		public string InvoiceNumber { get; set; }
+		public string InvoiceNumber { get; set; } 
 
 		/// <summary>
 		/// The invoice date of the item in ISO 8061 format.
 		/// </summary>
 		[JsonProperty("invoiceDate")]
-		public DateTime InvoiceDate { get; set; }
+		public DateTime InvoiceDate { get; set; } 
 	}
 }

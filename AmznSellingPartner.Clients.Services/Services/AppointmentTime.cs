@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("startTime")]
 		[IsRequired]
-		public DateTime StartTime { get; set; }
+		public DateTime StartTime { get; set; } 
 
 		/// <summary>
 		/// The duration of the appointment window, in minutes.
@@ -24,6 +24,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[JsonProperty("durationInMinutes")]
 		[IsRequired]
 		[Minimum(1)]
-		public int DurationInMinutes { get; set; }
+		public int DurationInMinutes { get; set; } 
 	}
 }

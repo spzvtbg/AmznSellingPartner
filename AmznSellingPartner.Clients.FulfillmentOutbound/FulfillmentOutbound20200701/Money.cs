@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("currencyCode")]
 		[IsRequired]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		[JsonProperty("value")]
 		[IsRequired]
-		public Decimal Value { get; set; }
+		public Decimal Value { get; set; } 
 	}
 }

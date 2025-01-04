@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("request")]
 		[IsRequired]
-		public FeaturedOfferExpectedPriceRequestParams Request { get; set; }
+		public FeaturedOfferExpectedPriceRequestParams Request { get; set; } 
 
 		[JsonProperty("body")]
-		public FeaturedOfferExpectedPriceResponseBody Body { get; set; }
+		public FeaturedOfferExpectedPriceResponseBody Body { get; set; } 
 	}
 }

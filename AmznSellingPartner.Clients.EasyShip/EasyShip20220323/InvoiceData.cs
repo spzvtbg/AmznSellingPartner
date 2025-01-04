@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// </summary>
 		[JsonProperty("invoiceNumber")]
 		[IsRequired]
-		public String InvoiceNumber { get; set; }
+		public String InvoiceNumber { get; set; } 
 
 		/// <summary>
 		/// The date that the invoice was generated.
 		/// </summary>
 		[JsonProperty("invoiceDate")]
-		public DateTime InvoiceDate { get; set; }
+		public DateTime InvoiceDate { get; set; } 
 	}
 }

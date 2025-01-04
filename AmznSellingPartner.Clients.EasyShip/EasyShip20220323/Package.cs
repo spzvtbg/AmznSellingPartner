@@ -11,33 +11,33 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	{
 		[JsonProperty("scheduledPackageId")]
 		[IsRequired]
-		public ScheduledPackageId ScheduledPackageId { get; set; }
+		public ScheduledPackageId ScheduledPackageId { get; set; } 
 
 		[JsonProperty("packageDimensions")]
 		[IsRequired]
-		public Dimensions PackageDimensions { get; set; }
+		public Dimensions PackageDimensions { get; set; } 
 
 		[JsonProperty("packageWeight")]
 		[IsRequired]
-		public Weight PackageWeight { get; set; }
+		public Weight PackageWeight { get; set; } 
 
 		[JsonProperty("packageItems")]
-		public Items PackageItems { get; set; }
+		public Items PackageItems { get; set; } 
 
 		[JsonProperty("packageTimeSlot")]
 		[IsRequired]
-		public TimeSlot PackageTimeSlot { get; set; }
+		public TimeSlot PackageTimeSlot { get; set; } 
 
 		[JsonProperty("packageIdentifier")]
-		public PackageIdentifier PackageIdentifier { get; set; }
+		public PackageIdentifier PackageIdentifier { get; set; } 
 
 		[JsonProperty("invoice")]
-		public InvoiceData Invoice { get; set; }
+		public InvoiceData Invoice { get; set; } 
 
 		[JsonProperty("packageStatus")]
-		public PackageStatus PackageStatus { get; set; }
+		public PackageStatus PackageStatus { get; set; } 
 
 		[JsonProperty("trackingDetails")]
-		public TrackingDetails TrackingDetails { get; set; }
+		public TrackingDetails TrackingDetails { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public GenerateOrderScenarioRequest Body { get; set; }
+		public GenerateOrderScenarioRequest Body { get; set; } 
 	}
 }

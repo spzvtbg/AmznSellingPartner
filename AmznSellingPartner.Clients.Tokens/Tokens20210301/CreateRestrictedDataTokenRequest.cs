@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// The application ID for the target application to which access is being delegated.
 		/// </summary>
 		[JsonProperty("targetApplication")]
-		public string TargetApplication { get; set; }
+		public string TargetApplication { get; set; } 
 
 		/// <summary>
 		/// A list of restricted resources. Maximum: 50
 		/// </summary>
 		[JsonProperty("restrictedResources")]
 		[IsRequired]
-		public List<RestrictedResource> RestrictedResources { get; set; }
+		public List<RestrictedResource> RestrictedResources { get; set; } 
 	}
 }

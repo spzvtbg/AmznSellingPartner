@@ -11,41 +11,41 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("rateId")]
 		[IsRequired]
-		public RateId RateId { get; set; }
+		public RateId RateId { get; set; } 
 
 		[JsonProperty("carrierId")]
 		[IsRequired]
-		public CarrierId CarrierId { get; set; }
+		public CarrierId CarrierId { get; set; } 
 
 		[JsonProperty("carrierName")]
 		[IsRequired]
-		public CarrierName CarrierName { get; set; }
+		public CarrierName CarrierName { get; set; } 
 
 		[JsonProperty("serviceId")]
 		[IsRequired]
-		public ServiceId ServiceId { get; set; }
+		public ServiceId ServiceId { get; set; } 
 
 		[JsonProperty("serviceName")]
 		[IsRequired]
-		public ServiceName ServiceName { get; set; }
+		public ServiceName ServiceName { get; set; } 
 
 		[JsonProperty("billedWeight")]
-		public Weight BilledWeight { get; set; }
+		public Weight BilledWeight { get; set; } 
 
 		[JsonProperty("totalCharge")]
 		[IsRequired]
-		public Currency TotalCharge { get; set; }
+		public Currency TotalCharge { get; set; } 
 
 		[JsonProperty("promise")]
 		[IsRequired]
-		public Promise Promise { get; set; }
+		public Promise Promise { get; set; } 
 
 		[JsonProperty("supportedDocumentSpecifications")]
 		[IsRequired]
-		public SupportedDocumentSpecificationList SupportedDocumentSpecifications { get; set; }
+		public SupportedDocumentSpecificationList SupportedDocumentSpecifications { get; set; } 
 
 		[JsonProperty("availableValueAddedServiceGroups")]
-		public AvailableValueAddedServiceGroupList AvailableValueAddedServiceGroups { get; set; }
+		public AvailableValueAddedServiceGroupList AvailableValueAddedServiceGroups { get; set; } 
 
 		/// <summary>
 		/// When true, indicates that additional inputs are required to purchase this shipment service. You must
@@ -54,15 +54,15 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("requiresAdditionalInputs")]
 		[IsRequired]
-		public bool RequiresAdditionalInputs { get; set; }
+		public bool RequiresAdditionalInputs { get; set; } 
 
 		[JsonProperty("rateItemList")]
-		public RateItemList RateItemList { get; set; }
+		public RateItemList RateItemList { get; set; } 
 
 		[JsonProperty("paymentType")]
-		public PaymentType PaymentType { get; set; }
+		public PaymentType PaymentType { get; set; } 
 
 		[JsonProperty("benefits")]
-		public Benefits Benefits { get; set; }
+		public Benefits Benefits { get; set; } 
 	}
 }

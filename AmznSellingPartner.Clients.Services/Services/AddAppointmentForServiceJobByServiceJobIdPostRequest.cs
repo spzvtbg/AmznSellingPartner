@@ -12,13 +12,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string ServiceJobId { get; set; }
+		public string ServiceJobId { get; set; } 
 
 		/// <summary>
 		/// Add appointment operation input details.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public AddAppointmentRequest Body { get; set; }
+		public AddAppointmentRequest Body { get; set; } 
 	}
 }

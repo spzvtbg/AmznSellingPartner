@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetAdditionalInputsResponse : BaseClass
 	{
 		[JsonProperty("payload")]
-		public GetAdditionalInputsResult Payload { get; set; }
+		public GetAdditionalInputsResult Payload { get; set; } 
 	}
 }

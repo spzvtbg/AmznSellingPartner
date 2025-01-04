@@ -12,13 +12,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ListInboundPlanPalletsResponse : BaseClass
 	{
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// The pallets in an inbound plan.
 		/// </summary>
 		[JsonProperty("pallets")]
 		[IsRequired]
-		public List<Pallet> Pallets { get; set; }
+		public List<Pallet> Pallets { get; set; } 
 	}
 }

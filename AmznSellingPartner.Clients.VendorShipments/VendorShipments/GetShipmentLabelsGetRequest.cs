@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		[InQuery("limit")]
 		[Minimum(1)]
 		[Maximum(50)]
-		public long Limit { get; set; }
+		public long Limit { get; set; } 
 
 		/// <summary>
 		/// Sort the list by shipment label creation date in ascending or descending order.
 		/// </summary>
 		[InQuery("sortOrder")]
-		public SortOrder SortOrder { get; set; }
+		public SortOrder SortOrder { get; set; } 
 
 		/// <summary>
 		/// A token that is used to retrieve the next page of results. The response includes `nextToken` when the
@@ -29,39 +29,39 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// .
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// Shipment labels created after this time will be included in the result. This field must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedAfter")]
-		public DateTime LabelCreatedAfter { get; set; }
+		public DateTime LabelCreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Shipment labels created before this time will be included in the result. This field must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedBefore")]
-		public DateTime LabelCreatedBefore { get; set; }
+		public DateTime LabelCreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment labels by passing buyer reference number.
 		/// </summary>
 		[InQuery("buyerReferenceNumber")]
-		public string BuyerReferenceNumber { get; set; }
+		public string BuyerReferenceNumber { get; set; } 
 
 		/// <summary>
 		/// Get Shipment labels by passing vendor shipment identifier.
 		/// </summary>
 		[InQuery("vendorShipmentIdentifier")]
-		public string VendorShipmentIdentifier { get; set; }
+		public string VendorShipmentIdentifier { get; set; } 
 
 		/// <summary>
 		/// Get Shipping labels based on vendor warehouse code. This value must be same as the `sellingParty.partyId`
 		/// in the shipment.
 		/// </summary>
 		[InQuery("sellerWarehouseCode")]
-		public string SellerWarehouseCode { get; set; }
+		public string SellerWarehouseCode { get; set; } 
 	}
 }

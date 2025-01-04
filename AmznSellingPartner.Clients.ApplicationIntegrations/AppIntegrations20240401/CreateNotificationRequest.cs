@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[JsonProperty("templateId")]
 		[IsRequired]
-		public string TemplateId { get; set; }
+		public string TemplateId { get; set; } 
 
 		/// <summary>
 		/// The parameters specified in the template you used to onboard your application.
 		/// </summary>
 		[JsonProperty("notificationParameters")]
 		[IsRequired]
-		public NotificationParameters NotificationParameters { get; set; }
+		public NotificationParameters NotificationParameters { get; set; } 
 
 		/// <summary>
 		/// An encrypted marketplace identifier for the posted notification.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 	}
 }

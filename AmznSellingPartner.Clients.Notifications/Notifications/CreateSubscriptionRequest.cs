@@ -14,16 +14,16 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[JsonProperty("payloadVersion")]
 		[IsRequired]
-		public string PayloadVersion { get; set; }
+		public string PayloadVersion { get; set; } 
 
 		/// <summary>
 		/// The identifier for the destination where notifications will be delivered.
 		/// </summary>
 		[JsonProperty("destinationId")]
 		[IsRequired]
-		public string DestinationId { get; set; }
+		public string DestinationId { get; set; } 
 
 		[JsonProperty("processingDirective")]
-		public ProcessingDirective ProcessingDirective { get; set; }
+		public ProcessingDirective ProcessingDirective { get; set; } 
 	}
 }

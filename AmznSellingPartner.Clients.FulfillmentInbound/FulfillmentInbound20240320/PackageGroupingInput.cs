@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(5000)]
-		public List<BoxInput> Boxes { get; set; }
+		public List<BoxInput> Boxes { get; set; } 
 
 		/// <summary>
 		/// The ID of the `packingGroup` that packages are grouped according to. The `PackingGroupId` can only be
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PackingGroupId { get; set; }
+		public string PackingGroupId { get; set; } 
 
 		/// <summary>
 		/// The ID of the shipment that packages are grouped according to. The `ShipmentId` can only be provided
@@ -40,6 +40,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 	}
 }

@@ -16,13 +16,13 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("brands")]
 		[IsRequired]
-		public List<BrandRefinement> Brands { get; set; }
+		public List<BrandRefinement> Brands { get; set; } 
 
 		/// <summary>
 		/// Classification search refinements.
 		/// </summary>
 		[JsonProperty("classifications")]
 		[IsRequired]
-		public List<ClassificationRefinement> Classifications { get; set; }
+		public List<ClassificationRefinement> Classifications { get; set; } 
 	}
 }

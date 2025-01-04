@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("appointmentTime")]
 		[IsRequired]
-		public AppointmentTimeInput AppointmentTime { get; set; }
+		public AppointmentTimeInput AppointmentTime { get; set; } 
 	}
 }

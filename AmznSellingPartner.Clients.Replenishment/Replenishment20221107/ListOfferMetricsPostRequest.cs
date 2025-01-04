@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// The request body for the `listOfferMetrics` operation.
 		/// </summary>
 		[InBody("body")]
-		public ListOfferMetricsRequest Body { get; set; }
+		public ListOfferMetricsRequest Body { get; set; } 
 	}
 }

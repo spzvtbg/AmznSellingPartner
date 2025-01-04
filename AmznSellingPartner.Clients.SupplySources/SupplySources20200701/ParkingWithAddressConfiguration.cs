@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// The address of the parking location.
 		/// </summary>
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 	}
 }

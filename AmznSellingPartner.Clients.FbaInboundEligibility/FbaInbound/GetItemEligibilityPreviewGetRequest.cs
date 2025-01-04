@@ -12,20 +12,20 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// The ASIN of the item for which you want an eligibility preview.
 		/// </summary>
 		[InQuery("asin")]
 		[IsRequired]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The program that you want to check eligibility against.
 		/// </summary>
 		[InQuery("program")]
 		[IsRequired]
-		public Program Program { get; set; }
+		public Program Program { get; set; } 
 	}
 }

@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class GetShipmentLabels : BaseClass
 	{
 		[JsonProperty("payload")]
-		public TransportationLabels Payload { get; set; }
+		public TransportationLabels Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	{
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 	}
 }

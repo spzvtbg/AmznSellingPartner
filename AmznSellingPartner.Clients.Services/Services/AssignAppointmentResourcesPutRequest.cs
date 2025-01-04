@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string ServiceJobId { get; set; }
+		public string ServiceJobId { get; set; } 
 
 		/// <summary>
 		/// An Amazon-defined identifier of active service job appointment.
@@ -22,10 +22,10 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string AppointmentId { get; set; }
+		public string AppointmentId { get; set; } 
 
 		[InBody("body")]
 		[IsRequired]
-		public AssignAppointmentResourcesRequest Body { get; set; }
+		public AssignAppointmentResourcesRequest Body { get; set; } 
 	}
 }

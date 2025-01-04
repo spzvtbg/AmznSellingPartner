@@ -11,69 +11,69 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// The name.
 		/// </summary>
 		[JsonProperty("Name")]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The street address.
 		/// </summary>
 		[JsonProperty("AddressLine1")]
-		public string AddressLine1 { get; set; }
+		public string AddressLine1 { get; set; } 
 
 		/// <summary>
 		/// Additional street address information, if required.
 		/// </summary>
 		[JsonProperty("AddressLine2")]
-		public string AddressLine2 { get; set; }
+		public string AddressLine2 { get; set; } 
 
 		/// <summary>
 		/// Additional street address information, if required.
 		/// </summary>
 		[JsonProperty("AddressLine3")]
-		public string AddressLine3 { get; set; }
+		public string AddressLine3 { get; set; } 
 
 		/// <summary>
 		/// The city.
 		/// </summary>
 		[JsonProperty("City")]
-		public string City { get; set; }
+		public string City { get; set; } 
 
 		/// <summary>
 		/// The county.
 		/// </summary>
 		[JsonProperty("County")]
-		public string County { get; set; }
+		public string County { get; set; } 
 
 		/// <summary>
 		/// The district.
 		/// </summary>
 		[JsonProperty("District")]
-		public string District { get; set; }
+		public string District { get; set; } 
 
 		/// <summary>
 		/// The state or region.
 		/// </summary>
 		[JsonProperty("StateOrRegion")]
-		public string StateOrRegion { get; set; }
+		public string StateOrRegion { get; set; } 
 
 		/// <summary>
 		/// The postal code.
 		/// </summary>
 		[JsonProperty("PostalCode")]
-		public string PostalCode { get; set; }
+		public string PostalCode { get; set; } 
 
 		/// <summary>
 		/// The country code.
 		/// </summary>
 		[JsonProperty("CountryCode")]
-		public string CountryCode { get; set; }
+		public string CountryCode { get; set; } 
 
 		/// <summary>
 		/// The phone number.
 		/// </summary>
 		[JsonProperty("Phone")]
-		public string Phone { get; set; }
+		public string Phone { get; set; } 
 
 		[JsonProperty("AddressType")]
-		public AddressTypeEnum AddressType { get; set; }
+		public AddressTypeEnum AddressType { get; set; } 
 	}
 }

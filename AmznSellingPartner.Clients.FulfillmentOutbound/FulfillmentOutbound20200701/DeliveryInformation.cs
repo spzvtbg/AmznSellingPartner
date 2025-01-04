@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// All of the delivery documents for a package.
 		/// </summary>
 		[JsonProperty("deliveryDocumentList")]
-		public DeliveryDocumentList DeliveryDocumentList { get; set; }
+		public DeliveryDocumentList DeliveryDocumentList { get; set; } 
 
 		/// <summary>
 		/// The drop off location for a package.
 		/// </summary>
 		[JsonProperty("dropOffLocation")]
-		public DropOffLocation DropOffLocation { get; set; }
+		public DropOffLocation DropOffLocation { get; set; } 
 	}
 }

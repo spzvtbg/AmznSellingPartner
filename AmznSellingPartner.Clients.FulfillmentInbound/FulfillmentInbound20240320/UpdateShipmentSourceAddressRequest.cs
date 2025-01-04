@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	{
 		[JsonProperty("address")]
 		[IsRequired]
-		public AddressInput Address { get; set; }
+		public AddressInput Address { get; set; } 
 	}
 }

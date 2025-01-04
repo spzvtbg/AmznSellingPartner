@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class CreateFulfillmentReturnResult : BaseClass
 	{
 		[JsonProperty("returnItems")]
-		public ReturnItemList ReturnItems { get; set; }
+		public ReturnItemList ReturnItems { get; set; } 
 
 		[JsonProperty("invalidReturnItems")]
-		public InvalidReturnItemList InvalidReturnItems { get; set; }
+		public InvalidReturnItemList InvalidReturnItems { get; set; } 
 
 		[JsonProperty("returnAuthorizations")]
-		public ReturnAuthorizationList ReturnAuthorizations { get; set; }
+		public ReturnAuthorizationList ReturnAuthorizations { get; set; } 
 	}
 }

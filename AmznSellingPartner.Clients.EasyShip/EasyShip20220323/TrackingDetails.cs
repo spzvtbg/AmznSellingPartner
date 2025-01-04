@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// The tracking identifier for the scheduled package.
 		/// </summary>
 		[JsonProperty("trackingId")]
-		public String TrackingId { get; set; }
+		public String TrackingId { get; set; } 
 	}
 }

@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// The response payload for the submitInvoices operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public TransactionId Payload { get; set; }
+		public TransactionId Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

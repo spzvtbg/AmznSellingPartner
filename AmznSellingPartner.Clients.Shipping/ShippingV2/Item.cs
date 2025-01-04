@@ -12,50 +12,50 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class Item : BaseClass
 	{
 		[JsonProperty("itemValue")]
-		public Currency ItemValue { get; set; }
+		public Currency ItemValue { get; set; } 
 
 		/// <summary>
 		/// The product description of the item.
 		/// </summary>
 		[JsonProperty("description")]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 
 		/// <summary>
 		/// A unique identifier for an item provided by the client.
 		/// </summary>
 		[JsonProperty("itemIdentifier")]
-		public string ItemIdentifier { get; set; }
+		public string ItemIdentifier { get; set; } 
 
 		/// <summary>
 		/// The number of units. This value is required.
 		/// </summary>
 		[JsonProperty("quantity")]
 		[IsRequired]
-		public int Quantity { get; set; }
+		public int Quantity { get; set; } 
 
 		[JsonProperty("weight")]
-		public Weight Weight { get; set; }
+		public Weight Weight { get; set; } 
 
 		[JsonProperty("liquidVolume")]
-		public LiquidVolume LiquidVolume { get; set; }
+		public LiquidVolume LiquidVolume { get; set; } 
 
 		/// <summary>
 		/// When true, the item qualifies as hazardous materials (hazmat). Defaults to false.
 		/// </summary>
 		[JsonProperty("isHazmat")]
-		public bool IsHazmat { get; set; }
+		public bool IsHazmat { get; set; } 
 
 		[JsonProperty("dangerousGoodsDetails")]
-		public DangerousGoodsDetails DangerousGoodsDetails { get; set; }
+		public DangerousGoodsDetails DangerousGoodsDetails { get; set; } 
 
 		/// <summary>
 		/// The product type of the item.
 		/// </summary>
 		[JsonProperty("productType")]
-		public string ProductType { get; set; }
+		public string ProductType { get; set; } 
 
 		[JsonProperty("invoiceDetails")]
-		public InvoiceDetails InvoiceDetails { get; set; }
+		public InvoiceDetails InvoiceDetails { get; set; } 
 
 		/// <summary>
 		/// A list of unique serial numbers in an Amazon package that can be used to guarantee non-fraudulent items.
@@ -63,9 +63,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Only applicable when channel source is Amazon.
 		/// </summary>
 		[JsonProperty("serialNumbers")]
-		public List<string> SerialNumbers { get; set; }
+		public List<string> SerialNumbers { get; set; } 
 
 		[JsonProperty("directFulfillmentItemIdentifiers")]
-		public DirectFulfillmentItemIdentifiers DirectFulfillmentItemIdentifiers { get; set; }
+		public DirectFulfillmentItemIdentifiers DirectFulfillmentItemIdentifiers { get; set; } 
 	}
 }

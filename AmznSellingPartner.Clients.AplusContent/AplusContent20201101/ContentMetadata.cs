@@ -18,25 +18,25 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		[JsonProperty("status")]
 		[IsRequired]
-		public ContentStatus Status { get; set; }
+		public ContentStatus Status { get; set; } 
 
 		[JsonProperty("badgeSet")]
 		[IsRequired]
-		public ContentBadgeSet BadgeSet { get; set; }
+		public ContentBadgeSet BadgeSet { get; set; } 
 
 		/// <summary>
 		/// The approximate age of the A+ Content document and metadata.
 		/// </summary>
 		[JsonProperty("updateTime")]
 		[IsRequired]
-		public DateTime UpdateTime { get; set; }
+		public DateTime UpdateTime { get; set; } 
 	}
 }

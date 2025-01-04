@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("packageTrackingNumber")]
 		[IsRequired]
-		public string PackageTrackingNumber { get; set; }
+		public string PackageTrackingNumber { get; set; } 
 	}
 }

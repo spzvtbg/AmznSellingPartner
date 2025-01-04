@@ -14,26 +14,26 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]
-		public string ItemSequenceNumber { get; set; }
+		public string ItemSequenceNumber { get; set; } 
 
 		/// <summary>
 		/// Buyer's standard identification number (ASIN) of an item.
 		/// </summary>
 		[JsonProperty("buyerProductIdentifier")]
-		public string BuyerProductIdentifier { get; set; }
+		public string BuyerProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// The vendor selected product identification of the item. Should be the same as was provided in the purchase
 		/// order.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
-		public string VendorProductIdentifier { get; set; }
+		public string VendorProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// Details of quantity acknowledged with the above acknowledgement code.
 		/// </summary>
 		[JsonProperty("acknowledgedQuantity")]
 		[IsRequired]
-		public ItemQuantity AcknowledgedQuantity { get; set; }
+		public ItemQuantity AcknowledgedQuantity { get; set; } 
 	}
 }

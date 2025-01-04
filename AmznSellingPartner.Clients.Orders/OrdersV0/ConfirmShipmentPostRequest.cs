@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[InPath("orderId")]
 		[IsRequired]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 
 		/// <summary>
 		/// Request body of `confirmShipment`.
 		/// </summary>
 		[InBody("payload")]
 		[IsRequired]
-		public ConfirmShipmentRequest Payload { get; set; }
+		public ConfirmShipmentRequest Payload { get; set; } 
 	}
 }

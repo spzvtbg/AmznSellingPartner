@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public SubmitInvoicesRequest Body { get; set; }
+		public SubmitInvoicesRequest Body { get; set; } 
 	}
 }

@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	{
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		[JsonProperty("shipmentStatus")]
 		[IsRequired]
-		public ShipmentStatus ShipmentStatus { get; set; }
+		public ShipmentStatus ShipmentStatus { get; set; } 
 
 		[JsonProperty("orderItems")]
-		public OrderItems OrderItems { get; set; }
+		public OrderItems OrderItems { get; set; } 
 	}
 }

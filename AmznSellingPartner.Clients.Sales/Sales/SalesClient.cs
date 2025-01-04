@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 	using System;
 	using System.Threading.Tasks;
 
-	public class SalesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class SalesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns aggregated order metrics for given interval, broken down by granularity, for given buyer type.

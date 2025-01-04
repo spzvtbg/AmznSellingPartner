@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("costPrice")]
 		[IsRequired]
-		public Money CostPrice { get; set; }
+		public Money CostPrice { get; set; } 
 	}
 }

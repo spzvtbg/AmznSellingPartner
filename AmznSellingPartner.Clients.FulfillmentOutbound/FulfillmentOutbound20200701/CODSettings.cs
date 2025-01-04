@@ -14,30 +14,30 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("isCodRequired")]
 		[IsRequired]
-		public bool IsCodRequired { get; set; }
+		public bool IsCodRequired { get; set; } 
 
 		/// <summary>
 		/// The amount of the COD charge to be collected from the recipient for a COD order.
 		/// </summary>
 		[JsonProperty("codCharge")]
-		public Money CodCharge { get; set; }
+		public Money CodCharge { get; set; } 
 
 		/// <summary>
 		/// The amount of the tax on the COD charge to be collected from the recipient for a COD order.
 		/// </summary>
 		[JsonProperty("codChargeTax")]
-		public Money CodChargeTax { get; set; }
+		public Money CodChargeTax { get; set; } 
 
 		/// <summary>
 		/// The amount of the tax on the COD charge to be collected from the recipient for a COD order.
 		/// </summary>
 		[JsonProperty("shippingCharge")]
-		public Money ShippingCharge { get; set; }
+		public Money ShippingCharge { get; set; } 
 
 		/// <summary>
 		/// The amount of the tax on the shipping charge to be collected from the recipient for a COD order.
 		/// </summary>
 		[JsonProperty("shippingChargeTax")]
-		public Money ShippingChargeTax { get; set; }
+		public Money ShippingChargeTax { get; set; } 
 	}
 }

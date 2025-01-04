@@ -14,25 +14,25 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("UnitedNationsRegulatoryId")]
 		[Pattern("^(UN|ID|NA)[0-9]{4}")]
-		public string UnitedNationsRegulatoryId { get; set; }
+		public string UnitedNationsRegulatoryId { get; set; } 
 
 		/// <summary>
 		/// The specific regulatory class of the shipped item.
 		/// </summary>
 		[JsonProperty("TransportationRegulatoryClass")]
 		[Pattern("^[1-9](\\.[1-9])?")]
-		public string TransportationRegulatoryClass { get; set; }
+		public string TransportationRegulatoryClass { get; set; } 
 
 		/// <summary>
 		/// The specific packaging group of the item being shipped.
 		/// </summary>
 		[JsonProperty("PackingGroup")]
-		public PackingGroup PackingGroup { get; set; }
+		public PackingGroup PackingGroup { get; set; } 
 
 		/// <summary>
 		/// The specific packing instruction of the item being shipped.
 		/// </summary>
 		[JsonProperty("PackingInstruction")]
-		public PackingInstruction PackingInstruction { get; set; }
+		public PackingInstruction PackingInstruction { get; set; } 
 	}
 }

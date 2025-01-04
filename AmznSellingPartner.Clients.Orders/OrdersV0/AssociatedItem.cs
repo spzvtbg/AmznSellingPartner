@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The order item's order identifier, in 3-7-7 format.
 		/// </summary>
 		[JsonProperty("OrderId")]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 
 		/// <summary>
 		/// An Amazon-defined item identifier for the associated item.
 		/// </summary>
 		[JsonProperty("OrderItemId")]
-		public string OrderItemId { get; set; }
+		public string OrderItemId { get; set; } 
 
 		[JsonProperty("AssociationType")]
-		public AssociationType AssociationType { get; set; }
+		public AssociationType AssociationType { get; set; } 
 	}
 }

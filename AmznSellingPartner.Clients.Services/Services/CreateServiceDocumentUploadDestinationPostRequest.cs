@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public ServiceUploadDocument Body { get; set; }
+		public ServiceUploadDocument Body { get; set; } 
 	}
 }

@@ -9,6 +9,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// The request schema for the `updateScheduledPackages` operation.
 		/// </summary>
 		[InBody("UpdateScheduledPackagesRequest")]
-		public UpdateScheduledPackagesRequest UpdateScheduledPackagesRequest { get; set; }
+		public UpdateScheduledPackagesRequest UpdateScheduledPackagesRequest { get; set; } 
 	}
 }

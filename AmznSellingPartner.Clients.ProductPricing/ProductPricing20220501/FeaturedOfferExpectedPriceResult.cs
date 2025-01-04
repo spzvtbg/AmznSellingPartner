@@ -10,7 +10,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class FeaturedOfferExpectedPriceResult : BaseClass
 	{
 		[JsonProperty("featuredOfferExpectedPrice")]
-		public FeaturedOfferExpectedPrice FeaturedOfferExpectedPrice { get; set; }
+		public FeaturedOfferExpectedPrice FeaturedOfferExpectedPrice { get; set; } 
 
 		/// <summary>
 		/// The status of the FOEP computation. Possible values include `VALID_FOEP`, `NO_COMPETING_OFFER`, `OFFER_NOT_ELIGIBLE`,
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("resultStatus")]
 		[IsRequired]
-		public string ResultStatus { get; set; }
+		public string ResultStatus { get; set; } 
 
 		/// <summary>
 		/// The offer that will likely be the featured offer if the target offer is priced above its FOEP. If the
@@ -26,13 +26,13 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// ffer`.
 		/// </summary>
 		[JsonProperty("competingFeaturedOffer")]
-		public FeaturedOffer CompetingFeaturedOffer { get; set; }
+		public FeaturedOffer CompetingFeaturedOffer { get; set; } 
 
 		/// <summary>
 		/// The offer that is currently the featured offer. If the target offer is not currently featured, then this
 		/// property will be equal to `competingFeaturedOffer`.
 		/// </summary>
 		[JsonProperty("currentFeaturedOffer")]
-		public FeaturedOffer CurrentFeaturedOffer { get; set; }
+		public FeaturedOffer CurrentFeaturedOffer { get; set; } 
 	}
 }

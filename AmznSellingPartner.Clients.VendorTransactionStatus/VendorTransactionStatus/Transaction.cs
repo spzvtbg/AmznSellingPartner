@@ -15,16 +15,16 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 		/// </summary>
 		[JsonProperty("transactionId")]
 		[IsRequired]
-		public string TransactionId { get; set; }
+		public string TransactionId { get; set; } 
 
 		/// <summary>
 		/// Current processing status of the transaction.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public Status Status { get; set; }
+		public Status Status { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

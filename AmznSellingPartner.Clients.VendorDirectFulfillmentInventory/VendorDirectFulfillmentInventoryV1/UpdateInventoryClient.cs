@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 	using System;
 	using System.Threading.Tasks;
 
-	public class UpdateInventoryClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class UpdateInventoryClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Submits inventory updates for the specified warehouse for either a partial or full feed of inventory

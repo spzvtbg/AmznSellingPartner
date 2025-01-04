@@ -13,29 +13,29 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("asin")]
 		[IsRequired]
-		public Asin Asin { get; set; }
+		public Asin Asin { get; set; } 
 
 		[JsonProperty("badgeSet")]
-		public AsinBadgeSet BadgeSet { get; set; }
+		public AsinBadgeSet BadgeSet { get; set; } 
 
 		[JsonProperty("parent")]
-		public Asin Parent { get; set; }
+		public Asin Parent { get; set; } 
 
 		/// <summary>
 		/// The title for the ASIN in the Amazon catalog.
 		/// </summary>
 		[JsonProperty("title")]
 		[MinLength(1)]
-		public string Title { get; set; }
+		public string Title { get; set; } 
 
 		/// <summary>
 		/// The default image for the ASIN in the Amazon catalog.
 		/// </summary>
 		[JsonProperty("imageUrl")]
 		[MinLength(1)]
-		public string ImageUrl { get; set; }
+		public string ImageUrl { get; set; } 
 
 		[JsonProperty("contentReferenceKeySet")]
-		public ContentReferenceKeySet ContentReferenceKeySet { get; set; }
+		public ContentReferenceKeySet ContentReferenceKeySet { get; set; } 
 	}
 }

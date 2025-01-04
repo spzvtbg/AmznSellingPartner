@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[InPath("amazonOrderId")]
 		[IsRequired]
-		public string AmazonOrderId { get; set; }
+		public string AmazonOrderId { get; set; } 
 
 		/// <summary>
 		/// A marketplace identifier. This identifies the marketplace in which the order was placed. You can only
@@ -20,6 +20,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 	}
 }

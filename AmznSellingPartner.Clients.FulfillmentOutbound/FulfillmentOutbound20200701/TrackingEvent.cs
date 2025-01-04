@@ -15,27 +15,27 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("eventDate")]
 		[IsRequired]
-		public Timestamp EventDate { get; set; }
+		public Timestamp EventDate { get; set; } 
 
 		/// <summary>
 		/// The city where the delivery event took place.
 		/// </summary>
 		[JsonProperty("eventAddress")]
 		[IsRequired]
-		public TrackingAddress EventAddress { get; set; }
+		public TrackingAddress EventAddress { get; set; } 
 
 		/// <summary>
 		/// The event code for the delivery event.
 		/// </summary>
 		[JsonProperty("eventCode")]
 		[IsRequired]
-		public EventCode EventCode { get; set; }
+		public EventCode EventCode { get; set; } 
 
 		/// <summary>
 		/// A description for the corresponding event code.
 		/// </summary>
 		[JsonProperty("eventDescription")]
 		[IsRequired]
-		public string EventDescription { get; set; }
+		public string EventDescription { get; set; } 
 	}
 }

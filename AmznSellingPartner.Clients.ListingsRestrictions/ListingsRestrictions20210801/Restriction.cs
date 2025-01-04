@@ -17,18 +17,18 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The condition that applies to the restriction.
 		/// </summary>
 		[JsonProperty("conditionType")]
-		public ConditionType ConditionType { get; set; }
+		public ConditionType ConditionType { get; set; } 
 
 		/// <summary>
 		/// A list of reasons for the restriction.
 		/// </summary>
 		[JsonProperty("reasons")]
-		public List<Reason> Reasons { get; set; }
+		public List<Reason> Reasons { get; set; } 
 	}
 }

@@ -12,18 +12,18 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// The links response that is associated with the messaging action.
 		/// </summary>
 		[JsonProperty("_links")]
-		public Links Links { get; set; }
+		public Links Links { get; set; } 
 
 		/// <summary>
 		/// The embedded response associated with the messaging action.
 		/// </summary>
 		[JsonProperty("_embedded")]
-		public Embedded Embedded { get; set; }
+		public Embedded Embedded { get; set; } 
 
 		[JsonProperty("payload")]
-		public MessagingAction Payload { get; set; }
+		public MessagingAction Payload { get; set; } 
 
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

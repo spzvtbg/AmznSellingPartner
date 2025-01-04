@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// The payload for the `listAllFulfillmentOrders` operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public ListAllFulfillmentOrdersResult Payload { get; set; }
+		public ListAllFulfillmentOrdersResult Payload { get; set; } 
 
 		/// <summary>
 		/// One or more unexpected errors occurred during the `listAllFulfillmentOrders` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class AddressWithContact : BaseClass
 	{
 		[JsonProperty("contactDetails")]
-		public ContactDetails ContactDetails { get; set; }
+		public ContactDetails ContactDetails { get; set; } 
 
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 	}
 }

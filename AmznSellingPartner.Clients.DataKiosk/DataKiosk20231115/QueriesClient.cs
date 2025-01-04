@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	using System;
 	using System.Threading.Tasks;
 
-	public class QueriesClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class QueriesClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns details for the Data Kiosk queries that match the specified filters. See the `createQuery` operation

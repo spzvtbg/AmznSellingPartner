@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("pagination")]
 		[IsRequired]
-		public ListOfferMetricsRequestPagination Pagination { get; set; }
+		public ListOfferMetricsRequestPagination Pagination { get; set; } 
 
 		/// <summary>
 		/// Use these parameters to sort the response.
 		/// </summary>
 		[JsonProperty("sort")]
-		public ListOfferMetricsRequestSort Sort { get; set; }
+		public ListOfferMetricsRequestSort Sort { get; set; } 
 
 		/// <summary>
 		/// Use these parameters to filter results. Any result must match all provided parameters. For any parameter
@@ -28,6 +28,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("filters")]
 		[IsRequired]
-		public ListOfferMetricsRequestFilters Filters { get; set; }
+		public ListOfferMetricsRequestFilters Filters { get; set; } 
 	}
 }

@@ -15,30 +15,30 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// which is included with every operation that you submit.
 		/// </summary>
 		[JsonProperty("sellerSku")]
-		public string SellerSku { get; set; }
+		public string SellerSku { get; set; } 
 
 		/// <summary>
 		/// The unique SKU used by Amazon's fulfillment network.
 		/// </summary>
 		[JsonProperty("fnSku")]
-		public string FnSku { get; set; }
+		public string FnSku { get; set; } 
 
 		/// <summary>
 		/// The Amazon Standard Identification Number (ASIN) of the item.
 		/// </summary>
 		[JsonProperty("asin")]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The number of SKUs available for this service.
 		/// </summary>
 		[JsonProperty("skuCount")]
-		public double SkuCount { get; set; }
+		public double SkuCount { get; set; } 
 
 		/// <summary>
 		/// Other seller SKUs that are shared across the same inventory.
 		/// </summary>
 		[JsonProperty("overlappingSkus")]
-		public List<string> OverlappingSkus { get; set; }
+		public List<string> OverlappingSkus { get; set; } 
 	}
 }

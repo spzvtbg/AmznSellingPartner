@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class LinkableCarrier : BaseClass
 	{
 		[JsonProperty("carrierId")]
-		public CarrierId CarrierId { get; set; }
+		public CarrierId CarrierId { get; set; } 
 
 		[JsonProperty("linkableAccountTypes")]
-		public LinkableAccountTypeList LinkableAccountTypes { get; set; }
+		public LinkableAccountTypeList LinkableAccountTypes { get; set; } 
 	}
 }

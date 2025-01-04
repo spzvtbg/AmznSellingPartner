@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("attributes")]
 		[IsRequired]
-		public List<string> Attributes { get; set; }
+		public List<string> Attributes { get; set; } 
 
 		/// <summary>
 		/// The variation theme that indicates the combination of listing item attributes that define the variation
@@ -25,6 +25,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("theme")]
 		[IsRequired]
-		public string Theme { get; set; }
+		public string Theme { get; set; } 
 	}
 }

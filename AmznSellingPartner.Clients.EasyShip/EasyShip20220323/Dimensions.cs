@@ -11,27 +11,27 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// The length dimension.
 		/// </summary>
 		[JsonProperty("length")]
-		public Dimension Length { get; set; }
+		public Dimension Length { get; set; } 
 
 		/// <summary>
 		/// The width dimension.
 		/// </summary>
 		[JsonProperty("width")]
-		public Dimension Width { get; set; }
+		public Dimension Width { get; set; } 
 
 		/// <summary>
 		/// The height dimension.
 		/// </summary>
 		[JsonProperty("height")]
-		public Dimension Height { get; set; }
+		public Dimension Height { get; set; } 
 
 		[JsonProperty("unit")]
-		public UnitOfLength Unit { get; set; }
+		public UnitOfLength Unit { get; set; } 
 
 		/// <summary>
 		/// Identifier for custom package dimensions.
 		/// </summary>
 		[JsonProperty("identifier")]
-		public String Identifier { get; set; }
+		public String Identifier { get; set; } 
 	}
 }

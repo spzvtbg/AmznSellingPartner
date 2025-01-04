@@ -15,18 +15,18 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("partyId")]
 		[IsRequired]
-		public string PartyId { get; set; }
+		public string PartyId { get; set; } 
 
 		/// <summary>
 		/// Identification of the party by address.
 		/// </summary>
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		/// <summary>
 		/// Tax registration details of the party.
 		/// </summary>
 		[JsonProperty("taxInfo")]
-		public TaxRegistrationDetails TaxInfo { get; set; }
+		public TaxRegistrationDetails TaxInfo { get; set; } 
 	}
 }

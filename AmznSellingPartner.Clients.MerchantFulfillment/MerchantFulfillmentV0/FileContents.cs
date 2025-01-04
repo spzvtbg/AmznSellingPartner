@@ -14,17 +14,17 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("Contents")]
 		[IsRequired]
-		public string Contents { get; set; }
+		public string Contents { get; set; } 
 
 		[JsonProperty("FileType")]
 		[IsRequired]
-		public FileType FileType { get; set; }
+		public FileType FileType { get; set; } 
 
 		/// <summary>
 		/// An MD5 hash to validate the PDF document data, in the form of a Base64 string.
 		/// </summary>
 		[JsonProperty("Checksum")]
 		[IsRequired]
-		public string Checksum { get; set; }
+		public string Checksum { get; set; } 
 	}
 }

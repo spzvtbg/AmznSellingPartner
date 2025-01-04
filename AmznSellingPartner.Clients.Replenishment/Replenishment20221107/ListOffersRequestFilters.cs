@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// A list of SKUs to filter. This filter is only supported for sellers and not for vendors.
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[MinItems(1)]
 		[MaxItems(20)]
 		[UniqueItems]
-		public List<string> Skus { get; set; }
+		public List<string> Skus { get; set; } 
 
 		/// <summary>
 		/// A list of Amazon Standard Identification Numbers (ASINs).
@@ -38,7 +38,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[MinItems(1)]
 		[MaxItems(20)]
 		[UniqueItems]
-		public List<string> Asins { get; set; }
+		public List<string> Asins { get; set; } 
 
 		/// <summary>
 		/// A list of eligibilities associated with an offer.
@@ -46,22 +46,22 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("eligibilities")]
 		[MinItems(1)]
 		[UniqueItems]
-		public List<EligibilityStatus> Eligibilities { get; set; }
+		public List<EligibilityStatus> Eligibilities { get; set; } 
 
 		/// <summary>
 		/// Offer preferences to include in the result filter criteria.
 		/// </summary>
 		[JsonProperty("preferences")]
-		public Preference Preferences { get; set; }
+		public Preference Preferences { get; set; } 
 
 		/// <summary>
 		/// Offer promotions to include in the result filter criteria.
 		/// </summary>
 		[JsonProperty("promotions")]
-		public Promotion Promotions { get; set; }
+		public Promotion Promotions { get; set; } 
 
 		[JsonProperty("programTypes")]
 		[IsRequired]
-		public ProgramTypes ProgramTypes { get; set; }
+		public ProgramTypes ProgramTypes { get; set; } 
 	}
 }

@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("errors")]
 		[IsRequired]
-		public ErrorList ErrorsValue { get; set; }
+		public ErrorList ErrorsValue { get; set; } 
 	}
 }

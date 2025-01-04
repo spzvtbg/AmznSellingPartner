@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public Name Name { get; set; }
+		public Name Name { get; set; } 
 
 		/// <summary>
 		/// The amount of the fee.
 		/// </summary>
 		[JsonProperty("amount")]
 		[IsRequired]
-		public Money Amount { get; set; }
+		public Money Amount { get; set; } 
 	}
 }

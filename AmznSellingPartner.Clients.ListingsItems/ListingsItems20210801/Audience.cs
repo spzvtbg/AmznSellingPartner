@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// for buyers on Amazon retail websites.   * 'B2B' - Offer audience for Amazon Business website buyers.
 		/// </summary>
 		[JsonProperty("value")]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 
 		/// <summary>
 		/// Localized display name for the audience.
 		/// </summary>
 		[JsonProperty("displayName")]
-		public string DisplayName { get; set; }
+		public string DisplayName { get; set; } 
 	}
 }

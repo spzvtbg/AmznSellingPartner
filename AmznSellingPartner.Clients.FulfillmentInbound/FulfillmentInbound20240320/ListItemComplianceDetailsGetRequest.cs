@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(100)]
-		public CsvValue<string> Mskus { get; set; }
+		public CsvValue<string> Mskus { get; set; } 
 
 		/// <summary>
 		/// The Marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(20)]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 	}
 }

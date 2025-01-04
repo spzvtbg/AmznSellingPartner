@@ -16,14 +16,14 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("asin")]
 		[IsRequired]
-		public Asin Asin { get; set; }
+		public Asin Asin { get; set; } 
 
 		/// <summary>
 		/// A marketplace identifier.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The list of requested competitive pricing data for the product.
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		[JsonProperty("includedData")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<CompetitiveSummaryIncludedData> IncludedData { get; set; }
+		public List<CompetitiveSummaryIncludedData> IncludedData { get; set; } 
 
 		/// <summary>
 		/// The list of `lowestPricedOffersInput` parameters that are used to build `lowestPricedOffers` in the response.
@@ -40,14 +40,14 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		[JsonProperty("lowestPricedOffersInputs")]
 		[MinItems(0)]
 		[MaxItems(5)]
-		public List<LowestPricedOffersInput> LowestPricedOffersInputs { get; set; }
+		public List<LowestPricedOffersInput> LowestPricedOffersInputs { get; set; } 
 
 		/// <summary>
 		/// HTTP method type
 		/// </summary>
 		[JsonProperty("method")]
 		[IsRequired]
-		public HttpMethod Method { get; set; }
+		public HttpMethod Method { get; set; } 
 
 		/// <summary>
 		/// The URI associated with the individual APIs that are called as part of the batch request. For `getCompetitiveSummary`,
@@ -55,6 +55,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("uri")]
 		[IsRequired]
-		public HttpUri Uri { get; set; }
+		public HttpUri Uri { get; set; } 
 	}
 }

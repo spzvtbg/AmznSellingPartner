@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InPath("sellerSku")]
 		[IsRequired]
-		public string SellerSku { get; set; }
+		public string SellerSku { get; set; } 
 
 		/// <summary>
 		/// The marketplace ID for the marketplace for which the sellerSku is to be deleted.
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 	}
 }

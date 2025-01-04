@@ -13,9 +13,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("size")]
 		[IsRequired]
-		public ImageDimensions Size { get; set; }
+		public ImageDimensions Size { get; set; } 
 
 		[JsonProperty("offset")]
-		public ImageOffsets Offset { get; set; }
+		public ImageOffsets Offset { get; set; } 
 	}
 }

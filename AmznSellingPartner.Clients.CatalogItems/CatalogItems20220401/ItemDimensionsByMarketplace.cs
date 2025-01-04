@@ -14,18 +14,18 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Dimensions of an Amazon catalog item.
 		/// </summary>
 		[JsonProperty("item")]
-		public Dimensions Item { get; set; }
+		public Dimensions Item { get; set; } 
 
 		/// <summary>
 		/// Dimensions of an Amazon catalog item in its packaging.
 		/// </summary>
 		[JsonProperty("package")]
-		public Dimensions Package { get; set; }
+		public Dimensions Package { get; set; } 
 	}
 }

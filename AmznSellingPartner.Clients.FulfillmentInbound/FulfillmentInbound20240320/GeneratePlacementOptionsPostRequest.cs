@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		public string InboundPlanId { get; set; }
+		public string InboundPlanId { get; set; } 
 
 		/// <summary>
 		/// The body of the request to `generatePlacementOptions`.
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public GeneratePlacementOptionsRequest Body { get; set; }
+		public GeneratePlacementOptionsRequest Body { get; set; } 
 	}
 }

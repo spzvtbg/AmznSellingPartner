@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.VendorTransactionStatus.VendorTransactionSt
 	public class TransactionStatus : BaseClass
 	{
 		[JsonProperty("transactionStatus")]
-		public Transaction TransactionStatusValue { get; set; }
+		public Transaction TransactionStatusValue { get; set; } 
 	}
 }

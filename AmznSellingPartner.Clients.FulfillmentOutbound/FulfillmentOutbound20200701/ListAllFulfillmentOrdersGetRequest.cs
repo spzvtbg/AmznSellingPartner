@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// der.
 		/// </summary>
 		[InQuery("queryStartDate")]
-		public DateTime QueryStartDate { get; set; }
+		public DateTime QueryStartDate { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response to your previous request.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

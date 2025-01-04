@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("nextToken")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

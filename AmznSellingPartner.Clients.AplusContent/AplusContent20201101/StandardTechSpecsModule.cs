@@ -12,7 +12,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardTechSpecsModule : BaseClass
 	{
 		[JsonProperty("headline")]
-		public TextComponent Headline { get; set; }
+		public TextComponent Headline { get; set; } 
 
 		/// <summary>
 		/// The specification list.
@@ -21,7 +21,7 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinItems(4)]
 		[MaxItems(16)]
-		public List<StandardTextPairBlock> SpecificationList { get; set; }
+		public List<StandardTextPairBlock> SpecificationList { get; set; } 
 
 		/// <summary>
 		/// The number of tables to present. Features are evenly divided between the tables.
@@ -29,6 +29,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[JsonProperty("tableCount")]
 		[Minimum(1)]
 		[Maximum(2)]
-		public int TableCount { get; set; }
+		public int TableCount { get; set; } 
 	}
 }

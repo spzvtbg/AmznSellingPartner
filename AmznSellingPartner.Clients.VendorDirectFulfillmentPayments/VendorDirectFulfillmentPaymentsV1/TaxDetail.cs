@@ -14,26 +14,26 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// </summary>
 		[JsonProperty("taxType")]
 		[IsRequired]
-		public TaxType TaxType { get; set; }
+		public TaxType TaxType { get; set; } 
 
 		/// <summary>
 		/// Tax percentage applied. Percentage must be expressed in decimal.
 		/// </summary>
 		[JsonProperty("taxRate")]
-		public Decimal TaxRate { get; set; }
+		public Decimal TaxRate { get; set; } 
 
 		/// <summary>
 		/// Total tax amount applied on invoice total or an item total.
 		/// </summary>
 		[JsonProperty("taxAmount")]
 		[IsRequired]
-		public Money TaxAmount { get; set; }
+		public Money TaxAmount { get; set; } 
 
 		/// <summary>
 		/// This field will contain the invoice amount that is taxable at the rate specified in the tax rate fie
 		/// ld.
 		/// </summary>
 		[JsonProperty("taxableAmount")]
-		public Money TaxableAmount { get; set; }
+		public Money TaxableAmount { get; set; } 
 	}
 }

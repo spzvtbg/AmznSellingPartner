@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InBody("createInventoryItemRequestBody")]
 		[IsRequired]
-		public CreateInventoryItemRequest CreateInventoryItemRequestBody { get; set; }
+		public CreateInventoryItemRequest CreateInventoryItemRequestBody { get; set; } 
 	}
 }

@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("stops")]
 		[IsRequired]
-		public List<Stop> Stops { get; set; }
+		public List<Stop> Stops { get; set; } 
 	}
 }

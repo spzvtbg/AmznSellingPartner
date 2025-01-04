@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("orderPreference")]
 		[IsRequired]
-		public OrderPreference OrderPreference { get; set; }
+		public OrderPreference OrderPreference { get; set; } 
 
 		/// <summary>
 		/// Value for the order preference.
 		/// </summary>
 		[JsonProperty("orderPreferenceValue")]
 		[IsRequired]
-		public OrderPreferenceValue OrderPreferenceValue { get; set; }
+		public OrderPreferenceValue OrderPreferenceValue { get; set; } 
 	}
 }

@@ -13,37 +13,37 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// The type of shipment.
 		/// </summary>
 		[JsonProperty("shipMode")]
-		public ShipMode ShipMode { get; set; }
+		public ShipMode ShipMode { get; set; } 
 
 		/// <summary>
 		/// The mode of transportation for this shipment.
 		/// </summary>
 		[JsonProperty("transportationMode")]
-		public TransportationMode TransportationMode { get; set; }
+		public TransportationMode TransportationMode { get; set; } 
 
 		/// <summary>
 		/// Date when shipment is performed by the Vendor to Buyer
 		/// </summary>
 		[JsonProperty("shippedDate")]
-		public DateTime ShippedDate { get; set; }
+		public DateTime ShippedDate { get; set; } 
 
 		/// <summary>
 		/// Estimated Date on which shipment will be delivered from Vendor to Buyer
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDate")]
-		public DateTime EstimatedDeliveryDate { get; set; }
+		public DateTime EstimatedDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Date on which shipment will be delivered from Vendor to Buyer
 		/// </summary>
 		[JsonProperty("shipmentDeliveryDate")]
-		public DateTime ShipmentDeliveryDate { get; set; }
+		public DateTime ShipmentDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Indicates the carrier details and their contact informations
 		/// </summary>
 		[JsonProperty("carrierDetails")]
-		public CarrierDetails CarrierDetails { get; set; }
+		public CarrierDetails CarrierDetails { get; set; } 
 
 		/// <summary>
 		/// The Bill of Lading (BOL) number is a unique number assigned to each shipment of goods by the vendor or
@@ -54,6 +54,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// ield.
 		/// </summary>
 		[JsonProperty("billOfLadingNumber")]
-		public string BillOfLadingNumber { get; set; }
+		public string BillOfLadingNumber { get; set; } 
 	}
 }

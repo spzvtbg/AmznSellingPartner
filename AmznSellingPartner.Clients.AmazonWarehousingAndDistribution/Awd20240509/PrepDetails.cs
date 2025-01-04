@@ -11,22 +11,22 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public class PrepDetails : BaseClass
 	{
 		[JsonProperty("labelOwner")]
-		public LabelOwner LabelOwner { get; set; }
+		public LabelOwner LabelOwner { get; set; } 
 
 		/// <summary>
 		/// The preparation category for shipping an item to Amazon's fulfillment network.
 		/// </summary>
 		[JsonProperty("prepCategory")]
-		public string PrepCategory { get; set; }
+		public string PrepCategory { get; set; } 
 
 		/// <summary>
 		/// Information that pertains to the preparation of inbound products. This is generated based on the specified
 		/// category.
 		/// </summary>
 		[JsonProperty("prepInstructions")]
-		public List<PrepInstruction> PrepInstructions { get; set; }
+		public List<PrepInstruction> PrepInstructions { get; set; } 
 
 		[JsonProperty("prepOwner")]
-		public PrepOwner PrepOwner { get; set; }
+		public PrepOwner PrepOwner { get; set; } 
 	}
 }

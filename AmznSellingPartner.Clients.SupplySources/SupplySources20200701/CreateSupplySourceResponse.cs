@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	{
 		[JsonProperty("supplySourceId")]
 		[IsRequired]
-		public SupplySourceId SupplySourceId { get; set; }
+		public SupplySourceId SupplySourceId { get; set; } 
 
 		[JsonProperty("supplySourceCode")]
 		[IsRequired]
-		public SupplySourceCode SupplySourceCode { get; set; }
+		public SupplySourceCode SupplySourceCode { get; set; } 
 	}
 }

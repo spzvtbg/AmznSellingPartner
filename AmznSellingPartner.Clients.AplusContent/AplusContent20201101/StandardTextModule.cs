@@ -10,10 +10,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardTextModule : BaseClass
 	{
 		[JsonProperty("headline")]
-		public TextComponent Headline { get; set; }
+		public TextComponent Headline { get; set; } 
 
 		[JsonProperty("body")]
 		[IsRequired]
-		public ParagraphComponent Body { get; set; }
+		public ParagraphComponent Body { get; set; } 
 	}
 }

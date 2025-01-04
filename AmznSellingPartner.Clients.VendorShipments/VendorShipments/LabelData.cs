@@ -11,30 +11,30 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// A sequential number assigned to each label within a shipment.
 		/// </summary>
 		[JsonProperty("labelSequenceNumber")]
-		public int LabelSequenceNumber { get; set; }
+		public int LabelSequenceNumber { get; set; } 
 
 		/// <summary>
 		/// The format of the label.
 		/// </summary>
 		[JsonProperty("labelFormat")]
-		public LabelFormat LabelFormat { get; set; }
+		public LabelFormat LabelFormat { get; set; } 
 
 		/// <summary>
 		/// Unique identification of the carrier.
 		/// </summary>
 		[JsonProperty("carrierCode")]
-		public string CarrierCode { get; set; }
+		public string CarrierCode { get; set; } 
 
 		/// <summary>
 		/// Tracking Id for the transportation.
 		/// </summary>
 		[JsonProperty("trackingId")]
-		public string TrackingId { get; set; }
+		public string TrackingId { get; set; } 
 
 		/// <summary>
 		/// The base-64 encoded string that represents the shipment label.
 		/// </summary>
 		[JsonProperty("label")]
-		public string Label { get; set; }
+		public string Label { get; set; } 
 	}
 }

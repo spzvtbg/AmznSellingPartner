@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// Purchase order details.
 		/// </summary>
 		[JsonProperty("orderDetails")]
-		public OrderDetails OrderDetails { get; set; }
+		public OrderDetails OrderDetails { get; set; } 
 	}
 }

@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[InPath("orderId")]
 		[IsRequired]
-		public string OrderId { get; set; }
+		public string OrderId { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response of your previous request.
 		/// </summary>
 		[InQuery("NextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

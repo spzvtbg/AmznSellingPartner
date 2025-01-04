@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	using System;
 	using System.Threading.Tasks;
 
-	public class ListingsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ListingsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns listing restrictions for an item in the Amazon Catalog.   **Usage Plan:**  | Rate (requests per

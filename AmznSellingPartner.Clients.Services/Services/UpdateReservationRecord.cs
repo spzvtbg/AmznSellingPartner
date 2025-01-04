@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// is successful.
 		/// </summary>
 		[JsonProperty("reservation")]
-		public Reservation Reservation { get; set; }
+		public Reservation Reservation { get; set; } 
 
 		/// <summary>
 		/// Warnings encountered, if any.
 		/// </summary>
 		[JsonProperty("warnings")]
-		public WarningList Warnings { get; set; }
+		public WarningList Warnings { get; set; } 
 
 		/// <summary>
 		/// Errors encountered, if any.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

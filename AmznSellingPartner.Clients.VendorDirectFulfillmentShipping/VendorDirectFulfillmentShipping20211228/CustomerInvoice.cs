@@ -15,13 +15,13 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } 
 
 		/// <summary>
 		/// The Base64encoded customer invoice.
 		/// </summary>
 		[JsonProperty("content")]
 		[IsRequired]
-		public string Content { get; set; }
+		public string Content { get; set; } 
 	}
 }

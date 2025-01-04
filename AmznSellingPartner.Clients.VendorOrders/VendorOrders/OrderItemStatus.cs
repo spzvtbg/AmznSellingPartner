@@ -14,48 +14,48 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]
-		public string ItemSequenceNumber { get; set; }
+		public string ItemSequenceNumber { get; set; } 
 
 		/// <summary>
 		/// Buyer's Standard Identification Number (ASIN) of an item.
 		/// </summary>
 		[JsonProperty("buyerProductIdentifier")]
-		public string BuyerProductIdentifier { get; set; }
+		public string BuyerProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// The vendor selected product identification of the item.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
-		public string VendorProductIdentifier { get; set; }
+		public string VendorProductIdentifier { get; set; } 
 
 		/// <summary>
 		/// The net cost of an item per each or weight unit.
 		/// </summary>
 		[JsonProperty("netCost")]
-		public Money NetCost { get; set; }
+		public Money NetCost { get; set; } 
 
 		/// <summary>
 		/// The list price of an item per each or weight unit.
 		/// </summary>
 		[JsonProperty("listPrice")]
-		public Money ListPrice { get; set; }
+		public Money ListPrice { get; set; } 
 
 		/// <summary>
 		/// Ordered quantity information.
 		/// </summary>
 		[JsonProperty("orderedQuantity")]
-		public OrderedQuantity OrderedQuantity { get; set; }
+		public OrderedQuantity OrderedQuantity { get; set; } 
 
 		/// <summary>
 		/// Acknowledgement status information.
 		/// </summary>
 		[JsonProperty("acknowledgementStatus")]
-		public AcknowledgementStatus AcknowledgementStatus { get; set; }
+		public AcknowledgementStatus AcknowledgementStatus { get; set; } 
 
 		/// <summary>
 		/// Item receive status at the buyer's warehouse.
 		/// </summary>
 		[JsonProperty("receivingStatus")]
-		public ReceivingStatus ReceivingStatus { get; set; }
+		public ReceivingStatus ReceivingStatus { get; set; } 
 	}
 }

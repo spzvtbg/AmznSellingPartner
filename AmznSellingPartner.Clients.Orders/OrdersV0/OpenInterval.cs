@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// The time when the business opens.
 		/// </summary>
 		[JsonProperty("StartTime")]
-		public OpenTimeInterval StartTime { get; set; }
+		public OpenTimeInterval StartTime { get; set; } 
 
 		/// <summary>
 		/// The time when the business closes.
 		/// </summary>
 		[JsonProperty("EndTime")]
-		public OpenTimeInterval EndTime { get; set; }
+		public OpenTimeInterval EndTime { get; set; } 
 	}
 }

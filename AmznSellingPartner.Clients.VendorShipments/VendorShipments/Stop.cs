@@ -16,21 +16,21 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("functionCode")]
 		[IsRequired]
-		public FunctionCode FunctionCode { get; set; }
+		public FunctionCode FunctionCode { get; set; } 
 
 		[JsonProperty("locationIdentification")]
-		public Location LocationIdentification { get; set; }
+		public Location LocationIdentification { get; set; } 
 
 		/// <summary>
 		/// Date and time of the arrival of the cargo.
 		/// </summary>
 		[JsonProperty("arrivalTime")]
-		public DateTime ArrivalTime { get; set; }
+		public DateTime ArrivalTime { get; set; } 
 
 		/// <summary>
 		/// Date and time of the departure of the cargo.
 		/// </summary>
 		[JsonProperty("departureTime")]
-		public DateTime DepartureTime { get; set; }
+		public DateTime DepartureTime { get; set; } 
 	}
 }

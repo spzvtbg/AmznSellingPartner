@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	using System;
 	using System.Threading.Tasks;
 
-	public class NotificationsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class NotificationsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns information about subscription of the specified notification type and payload version. `payloadVersion`

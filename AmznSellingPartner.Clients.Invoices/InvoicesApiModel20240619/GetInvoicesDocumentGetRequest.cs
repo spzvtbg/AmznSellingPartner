@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[InPath("invoicesDocumentId")]
 		[IsRequired]
-		public string InvoicesDocumentId { get; set; }
+		public string InvoicesDocumentId { get; set; } 
 	}
 }

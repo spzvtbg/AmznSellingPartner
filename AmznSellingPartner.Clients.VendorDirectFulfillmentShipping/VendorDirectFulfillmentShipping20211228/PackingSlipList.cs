@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// The pagination elements required to retrieve the remaining data.
 		/// </summary>
 		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; }
+		public Pagination Pagination { get; set; } 
 
 		/// <summary>
 		/// An array of packing slip objects.
 		/// </summary>
 		[JsonProperty("packingSlips")]
-		public List<PackingSlip> PackingSlips { get; set; }
+		public List<PackingSlip> PackingSlips { get; set; } 
 	}
 }

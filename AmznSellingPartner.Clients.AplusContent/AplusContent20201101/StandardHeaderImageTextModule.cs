@@ -8,9 +8,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardHeaderImageTextModule : BaseClass
 	{
 		[JsonProperty("headline")]
-		public TextComponent Headline { get; set; }
+		public TextComponent Headline { get; set; } 
 
 		[JsonProperty("block")]
-		public StandardImageTextBlock Block { get; set; }
+		public StandardImageTextBlock Block { get; set; } 
 	}
 }

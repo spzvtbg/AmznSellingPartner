@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public CreateQuerySpecification Body { get; set; }
+		public CreateQuerySpecification Body { get; set; } 
 	}
 }

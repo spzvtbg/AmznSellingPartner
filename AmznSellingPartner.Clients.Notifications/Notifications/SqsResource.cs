@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		[IsRequired]
 		[Pattern("^arn:aws:sqs:\\S+:\\S+:\\S+")]
 		[MaxLength(1000)]
-		public string Arn { get; set; }
+		public string Arn { get; set; } 
 	}
 }

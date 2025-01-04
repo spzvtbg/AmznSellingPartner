@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// The location of the service job.
 		/// </summary>
 		[JsonProperty("serviceLocationType")]
-		public ServiceLocationType ServiceLocationType { get; set; }
+		public ServiceLocationType ServiceLocationType { get; set; } 
 
 		/// <summary>
 		/// The shipping address for the service job.
 		/// </summary>
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 	}
 }

@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	{
 		[JsonProperty("amazonOrderId")]
 		[IsRequired]
-		public AmazonOrderId AmazonOrderId { get; set; }
+		public AmazonOrderId AmazonOrderId { get; set; } 
 
 		[JsonProperty("error")]
-		public Error Error { get; set; }
+		public Error Error { get; set; } 
 	}
 }

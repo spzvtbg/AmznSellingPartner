@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System;
 	using System.Threading.Tasks;
 
-	public class FulfillmentInboundClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class FulfillmentInboundClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Provides a list of inbound plans with minimal information.  **Usage Plan:**  | Rate (requests per second)

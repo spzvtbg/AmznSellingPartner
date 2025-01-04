@@ -18,26 +18,26 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("amazonReferenceId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string AmazonReferenceId { get; set; }
+		public string AmazonReferenceId { get; set; } 
 
 		[JsonProperty("contactInformation")]
-		public ContactInformation ContactInformation { get; set; }
+		public ContactInformation ContactInformation { get; set; } 
 
 		[JsonProperty("dates")]
-		public Dates Dates { get; set; }
+		public Dates Dates { get; set; } 
 
 		[JsonProperty("destination")]
 		[IsRequired]
-		public ShipmentDestination Destination { get; set; }
+		public ShipmentDestination Destination { get; set; } 
 
 		[JsonProperty("freightInformation")]
-		public FreightInformation FreightInformation { get; set; }
+		public FreightInformation FreightInformation { get; set; } 
 
 		/// <summary>
 		/// The name of the shipment.
 		/// </summary>
 		[JsonProperty("name")]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
@@ -48,10 +48,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string PlacementOptionId { get; set; }
+		public string PlacementOptionId { get; set; } 
 
 		[JsonProperty("selectedDeliveryWindow")]
-		public SelectedDeliveryWindow SelectedDeliveryWindow { get; set; }
+		public SelectedDeliveryWindow SelectedDeliveryWindow { get; set; } 
 
 		/// <summary>
 		/// Identifier of a transportation option. A transportation option represent one option for how to send a
@@ -61,13 +61,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string SelectedTransportationOptionId { get; set; }
+		public string SelectedTransportationOptionId { get; set; } 
 
 		/// <summary>
 		/// List of self ship appointment details.
 		/// </summary>
 		[JsonProperty("selfShipAppointmentDetails")]
-		public List<SelfShipAppointmentDetails> SelfShipAppointmentDetails { get; set; }
+		public List<SelfShipAppointmentDetails> SelfShipAppointmentDetails { get; set; } 
 
 		/// <summary>
 		/// The confirmed shipment ID which shows up on labels (for example, `FBA1234ABCD`).
@@ -75,7 +75,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("shipmentConfirmationId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string ShipmentConfirmationId { get; set; }
+		public string ShipmentConfirmationId { get; set; } 
 
 		/// <summary>
 		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
@@ -85,11 +85,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 
 		[JsonProperty("source")]
 		[IsRequired]
-		public ShipmentSource Source { get; set; }
+		public ShipmentSource Source { get; set; } 
 
 		/// <summary>
 		/// The status of a shipment. The state of the shipment will typically start as `UNCONFIRMED`, then transition
@@ -100,9 +100,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("status")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Status { get; set; }
+		public string Status { get; set; } 
 
 		[JsonProperty("trackingDetails")]
-		public TrackingDetails TrackingDetails { get; set; }
+		public TrackingDetails TrackingDetails { get; set; } 
 	}
 }

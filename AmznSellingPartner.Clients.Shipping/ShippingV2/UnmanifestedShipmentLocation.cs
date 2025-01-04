@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class UnmanifestedShipmentLocation : BaseClass
 	{
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		/// <summary>
 		/// Its Last Manifest Date.
 		/// </summary>
 		[JsonProperty("lastManifestDate")]
-		public DateTime LastManifestDate { get; set; }
+		public DateTime LastManifestDate { get; set; } 
 	}
 }

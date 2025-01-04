@@ -11,24 +11,24 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// A base discount set by the selling partner on the offer.
 		/// </summary>
 		[JsonProperty("sellingPartnerFundedBaseDiscount")]
-		public OfferProgramConfigurationPromotionsDiscountFunding SellingPartnerFundedBaseDiscount { get; set; }
+		public OfferProgramConfigurationPromotionsDiscountFunding SellingPartnerFundedBaseDiscount { get; set; } 
 
 		/// <summary>
 		/// A tiered discount set by the selling partner on the offer.
 		/// </summary>
 		[JsonProperty("sellingPartnerFundedTieredDiscount")]
-		public OfferProgramConfigurationPromotionsDiscountFunding SellingPartnerFundedTieredDiscount { get; set; }
+		public OfferProgramConfigurationPromotionsDiscountFunding SellingPartnerFundedTieredDiscount { get; set; } 
 
 		/// <summary>
 		/// A base discount set by Amazon on the offer.
 		/// </summary>
 		[JsonProperty("amazonFundedBaseDiscount")]
-		public OfferProgramConfigurationPromotionsDiscountFunding AmazonFundedBaseDiscount { get; set; }
+		public OfferProgramConfigurationPromotionsDiscountFunding AmazonFundedBaseDiscount { get; set; } 
 
 		/// <summary>
 		/// A tiered discount set by Amazon on the offer.
 		/// </summary>
 		[JsonProperty("amazonFundedTieredDiscount")]
-		public OfferProgramConfigurationPromotionsDiscountFunding AmazonFundedTieredDiscount { get; set; }
+		public OfferProgramConfigurationPromotionsDiscountFunding AmazonFundedTieredDiscount { get; set; } 
 	}
 }

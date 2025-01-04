@@ -11,16 +11,16 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	{
 		[JsonProperty("packageDetail")]
 		[IsRequired]
-		public PackageDetail PackageDetail { get; set; }
+		public PackageDetail PackageDetail { get; set; } 
 
 		/// <summary>
 		/// The COD collection method (only supported in the JP marketplace).
 		/// </summary>
 		[JsonProperty("codCollectionMethod")]
-		public CodCollectionMethod CodCollectionMethod { get; set; }
+		public CodCollectionMethod CodCollectionMethod { get; set; } 
 
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 	}
 }

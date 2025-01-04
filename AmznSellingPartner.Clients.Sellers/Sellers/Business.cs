@@ -15,33 +15,33 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The registered business address.
 		/// </summary>
 		[JsonProperty("registeredBusinessAddress")]
 		[IsRequired]
-		public Address RegisteredBusinessAddress { get; set; }
+		public Address RegisteredBusinessAddress { get; set; } 
 
 		/// <summary>
 		/// The seller's company registration number, if applicable. This field will be absent for individual sellers
 		/// and sole proprietorships.
 		/// </summary>
 		[JsonProperty("companyRegistrationNumber")]
-		public string CompanyRegistrationNumber { get; set; }
+		public string CompanyRegistrationNumber { get; set; } 
 
 		/// <summary>
 		/// The seller's company tax identification number, if applicable. This field will be present for certain
 		/// business types only, such as sole proprietorships.
 		/// </summary>
 		[JsonProperty("companyTaxIdentificationNumber")]
-		public string CompanyTaxIdentificationNumber { get; set; }
+		public string CompanyTaxIdentificationNumber { get; set; } 
 
 		/// <summary>
 		/// The non-Latin script version of the registered business name, if applicable.
 		/// </summary>
 		[JsonProperty("nonLatinName")]
-		public string NonLatinName { get; set; }
+		public string NonLatinName { get; set; } 
 	}
 }

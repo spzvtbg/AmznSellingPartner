@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The primary contact's residential address.
 		/// </summary>
 		[JsonProperty("address")]
 		[IsRequired]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		/// <summary>
 		/// The non-Latin script version of the primary contact's name, if applicable.
 		/// </summary>
 		[JsonProperty("nonLatinName")]
-		public string NonLatinName { get; set; }
+		public string NonLatinName { get; set; } 
 	}
 }

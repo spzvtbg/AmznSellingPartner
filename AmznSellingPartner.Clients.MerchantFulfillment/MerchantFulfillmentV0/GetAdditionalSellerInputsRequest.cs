@@ -11,20 +11,20 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	{
 		[JsonProperty("ShippingServiceId")]
 		[IsRequired]
-		public ShippingServiceIdentifier ShippingServiceId { get; set; }
+		public ShippingServiceIdentifier ShippingServiceId { get; set; } 
 
 		/// <summary>
 		/// The address from which to ship.
 		/// </summary>
 		[JsonProperty("ShipFromAddress")]
 		[IsRequired]
-		public Address ShipFromAddress { get; set; }
+		public Address ShipFromAddress { get; set; } 
 
 		/// <summary>
 		/// An Amazon defined order identifier
 		/// </summary>
 		[JsonProperty("OrderId")]
 		[IsRequired]
-		public AmazonOrderId OrderId { get; set; }
+		public AmazonOrderId OrderId { get; set; } 
 	}
 }

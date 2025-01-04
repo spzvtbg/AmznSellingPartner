@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("requestToken")]
 		[IsRequired]
-		public RequestToken RequestToken { get; set; }
+		public RequestToken RequestToken { get; set; } 
 
 		[JsonProperty("rates")]
 		[IsRequired]
-		public RateList Rates { get; set; }
+		public RateList Rates { get; set; } 
 
 		[JsonProperty("ineligibleRates")]
-		public IneligibleRateList IneligibleRates { get; set; }
+		public IneligibleRateList IneligibleRates { get; set; } 
 	}
 }

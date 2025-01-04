@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	{
 		[JsonProperty("headers")]
 		[IsRequired]
-		public HttpHeaders Headers { get; set; }
+		public HttpHeaders Headers { get; set; } 
 
 		[JsonProperty("status")]
 		[IsRequired]
-		public HttpStatusLine Status { get; set; }
+		public HttpStatusLine Status { get; set; } 
 	}
 }

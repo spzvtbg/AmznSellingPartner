@@ -11,18 +11,18 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// The timestamp at which a delivery offer expires.
 		/// </summary>
 		[JsonProperty("expiresAt")]
-		public Timestamp ExpiresAt { get; set; }
+		public Timestamp ExpiresAt { get; set; } 
 
 		/// <summary>
 		/// The range between which delivery is expected.
 		/// </summary>
 		[JsonProperty("dateRange")]
-		public DateRange DateRange { get; set; }
+		public DateRange DateRange { get; set; } 
 
 		/// <summary>
 		/// The policy for a delivery offer, including localized messaging.
 		/// </summary>
 		[JsonProperty("policy")]
-		public DeliveryPolicy Policy { get; set; }
+		public DeliveryPolicy Policy { get; set; } 
 	}
 }

@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	public class ListOfferMetricsRequestFilters : BaseClass
 	{
 		[JsonProperty("aggregationFrequency")]
-		public AggregationFrequency AggregationFrequency { get; set; }
+		public AggregationFrequency AggregationFrequency { get; set; } 
 
 		/// <summary>
 		/// A time interval used to compute metrics.
 		/// </summary>
 		[JsonProperty("timeInterval")]
 		[IsRequired]
-		public TimeInterval TimeInterval { get; set; }
+		public TimeInterval TimeInterval { get; set; } 
 
 		[JsonProperty("timePeriodType")]
 		[IsRequired]
-		public TimePeriodType TimePeriodType { get; set; }
+		public TimePeriodType TimePeriodType { get; set; } 
 
 		/// <summary>
 		/// The marketplace identifier. The supported marketplaces for both sellers and vendors are US, CA, ES, UK,
@@ -34,11 +34,11 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		[JsonProperty("programTypes")]
 		[IsRequired]
-		public ProgramTypes ProgramTypes { get; set; }
+		public ProgramTypes ProgramTypes { get; set; } 
 
 		/// <summary>
 		/// A list of Amazon Standard Identification Numbers (ASINs).
@@ -47,6 +47,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[MinItems(1)]
 		[MaxItems(20)]
 		[UniqueItems]
-		public List<string> Asins { get; set; }
+		public List<string> Asins { get; set; } 
 	}
 }

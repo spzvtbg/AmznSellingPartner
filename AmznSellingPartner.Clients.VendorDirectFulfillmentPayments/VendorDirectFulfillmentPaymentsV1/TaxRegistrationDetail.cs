@@ -13,25 +13,25 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// Tax registration type for the entity.
 		/// </summary>
 		[JsonProperty("taxRegistrationType")]
-		public TaxRegistrationType TaxRegistrationType { get; set; }
+		public TaxRegistrationType TaxRegistrationType { get; set; } 
 
 		/// <summary>
 		/// Tax registration number for the entity. For example, VAT ID, Consumption Tax ID.
 		/// </summary>
 		[JsonProperty("taxRegistrationNumber")]
 		[IsRequired]
-		public string TaxRegistrationNumber { get; set; }
+		public string TaxRegistrationNumber { get; set; } 
 
 		/// <summary>
 		/// Address associated with the tax registration number.
 		/// </summary>
 		[JsonProperty("taxRegistrationAddress")]
-		public Address TaxRegistrationAddress { get; set; }
+		public Address TaxRegistrationAddress { get; set; } 
 
 		/// <summary>
 		/// Tax registration message that can be used for additional tax related details.
 		/// </summary>
 		[JsonProperty("taxRegistrationMessage")]
-		public string TaxRegistrationMessage { get; set; }
+		public string TaxRegistrationMessage { get; set; } 
 	}
 }

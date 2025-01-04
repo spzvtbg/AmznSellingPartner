@@ -14,32 +14,32 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// </summary>
 		[JsonProperty("ShipmentRequestDetails")]
 		[IsRequired]
-		public ShipmentRequestDetails ShipmentRequestDetails { get; set; }
+		public ShipmentRequestDetails ShipmentRequestDetails { get; set; } 
 
 		[JsonProperty("ShippingServiceId")]
 		[IsRequired]
-		public ShippingServiceIdentifier ShippingServiceId { get; set; }
+		public ShippingServiceIdentifier ShippingServiceId { get; set; } 
 
 		/// <summary>
 		/// Identifies a shipping service order made by a carrier.
 		/// </summary>
 		[JsonProperty("ShippingServiceOfferId")]
-		public string ShippingServiceOfferId { get; set; }
+		public string ShippingServiceOfferId { get; set; } 
 
 		/// <summary>
 		/// Hazardous materials options for a package. Consult the terms and conditions for each carrier for more
 		/// information about hazardous materials.
 		/// </summary>
 		[JsonProperty("HazmatType")]
-		public HazmatType HazmatType { get; set; }
+		public HazmatType HazmatType { get; set; } 
 
 		[JsonProperty("LabelFormatOption")]
-		public LabelFormatOptionRequest LabelFormatOption { get; set; }
+		public LabelFormatOptionRequest LabelFormatOption { get; set; } 
 
 		/// <summary>
 		/// A list of additional seller inputs required to ship this shipment.
 		/// </summary>
 		[JsonProperty("ShipmentLevelSellerInputsList")]
-		public AdditionalSellerInputsList ShipmentLevelSellerInputsList { get; set; }
+		public AdditionalSellerInputsList ShipmentLevelSellerInputsList { get; set; } 
 	}
 }

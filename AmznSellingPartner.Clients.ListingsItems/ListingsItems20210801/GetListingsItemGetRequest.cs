@@ -11,14 +11,14 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[InPath("sellerId")]
 		[IsRequired]
-		public string SellerId { get; set; }
+		public string SellerId { get; set; } 
 
 		/// <summary>
 		/// A selling partner provided identifier for an Amazon listing.
 		/// </summary>
 		[InPath("sku")]
 		[IsRequired]
-		public string Sku { get; set; }
+		public string Sku { get; set; } 
 
 		/// <summary>
 		/// A comma-delimited list of Amazon marketplace identifiers for the request.
@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// A locale for localization of issues. When not provided, the default language code of the first marketplace
@@ -34,12 +34,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// is not available in the specified locale.
 		/// </summary>
 		[InQuery("issueLocale")]
-		public string IssueLocale { get; set; }
+		public string IssueLocale { get; set; } 
 
 		/// <summary>
 		/// A comma-delimited list of data sets to include in the response. Default: `summaries`.
 		/// </summary>
 		[InQuery("includedData")]
-		public CsvValue<IncludedData> IncludedData { get; set; }
+		public CsvValue<IncludedData> IncludedData { get; set; } 
 	}
 }

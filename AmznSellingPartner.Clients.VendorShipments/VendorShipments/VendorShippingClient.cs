@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorShippingClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorShippingClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Submits one or more shipment confirmations for vendor orders.  **Usage Plan:**  | Rate (requests per

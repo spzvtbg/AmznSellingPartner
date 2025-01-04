@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// set.
 		/// </summary>
 		[InQuery("CreatedAfter")]
-		public string CreatedAfter { get; set; }
+		public string CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders created before (or at) a specified time. Only orders placed before the
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// must be equal to or after the `CreatedAfter` date and at least two minutes before current time.
 		/// </summary>
 		[InQuery("CreatedBefore")]
-		public string CreatedBefore { get; set; }
+		public string CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders that were last updated after (or at) a specified time. An update is defined
@@ -34,7 +34,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// .
 		/// </summary>
 		[InQuery("LastUpdatedAfter")]
-		public string LastUpdatedAfter { get; set; }
+		public string LastUpdatedAfter { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders that were last updated before (or at) a specified time. An update is defined
@@ -45,7 +45,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// current time.
 		/// </summary>
 		[InQuery("LastUpdatedBefore")]
-		public string LastUpdatedBefore { get; set; }
+		public string LastUpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// A list of `OrderStatus` values used to filter the results.  **Possible values:** - `PendingAvailability`
@@ -59,7 +59,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// (The order cannot be fulfilled. This state applies only to Multi-Channel Fulfillment orders.)
 		/// </summary>
 		[InQuery("OrderStatuses")]
-		public CsvValue<string> OrderStatuses { get; set; }
+		public CsvValue<string> OrderStatuses { get; set; } 
 
 		/// <summary>
 		/// A list of `MarketplaceId` values. Used to select orders that were placed in the specified marketplaces.
@@ -69,14 +69,14 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		[InQuery("MarketplaceIds")]
 		[IsRequired]
 		[MaxItems(50)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// A list that indicates how an order was fulfilled. Filters the results by fulfillment channel.   **Possible
 		/// values**: `AFN` (fulfilled by Amazon), `MFN` (fulfilled by seller).
 		/// </summary>
 		[InQuery("FulfillmentChannels")]
-		public CsvValue<string> FulfillmentChannels { get; set; }
+		public CsvValue<string> FulfillmentChannels { get; set; } 
 
 		/// <summary>
 		/// A list of payment method values. Use this field to select orders that were paid with the specified payment
@@ -84,13 +84,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// method other than COD or CVS).
 		/// </summary>
 		[InQuery("PaymentMethods")]
-		public CsvValue<string> PaymentMethods { get; set; }
+		public CsvValue<string> PaymentMethods { get; set; } 
 
 		/// <summary>
 		/// The email address of a buyer. Used to select orders that contain the specified email address.
 		/// </summary>
 		[InQuery("BuyerEmail")]
-		public string BuyerEmail { get; set; }
+		public string BuyerEmail { get; set; } 
 
 		/// <summary>
 		/// An order identifier that is specified by the seller. Used to select only the orders that match the order
@@ -98,14 +98,14 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// `LastUpdatedAfter`, LastUpdatedBefore, and `BuyerEmail` cannot be specified.
 		/// </summary>
 		[InQuery("SellerOrderId")]
-		public string SellerOrderId { get; set; }
+		public string SellerOrderId { get; set; } 
 
 		/// <summary>
 		/// A number that indicates the maximum number of orders that can be returned per page. Value must be 1 -
 		/// 100. Default 100.
 		/// </summary>
 		[InQuery("MaxResultsPerPage")]
-		public int MaxResultsPerPage { get; set; }
+		public int MaxResultsPerPage { get; set; } 
 
 		/// <summary>
 		/// A list of `EasyShipShipmentStatus` values. Used to select Easy Ship orders with statuses that match the
@@ -123,7 +123,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// by the carrier.)
 		/// </summary>
 		[InQuery("EasyShipShipmentStatuses")]
-		public CsvValue<string> EasyShipShipmentStatuses { get; set; }
+		public CsvValue<string> EasyShipShipmentStatuses { get; set; } 
 
 		/// <summary>
 		/// A list of `ElectronicInvoiceStatus` values. Used to select orders with electronic invoice statuses that
@@ -134,13 +134,13 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// and accepted.)
 		/// </summary>
 		[InQuery("ElectronicInvoiceStatuses")]
-		public CsvValue<string> ElectronicInvoiceStatuses { get; set; }
+		public CsvValue<string> ElectronicInvoiceStatuses { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response of your previous request.
 		/// </summary>
 		[InQuery("NextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// A list of `AmazonOrderId` values. An `AmazonOrderId` is an Amazon-defined order identifier, in 3-7-7
@@ -148,52 +148,52 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[InQuery("AmazonOrderIds")]
 		[MaxItems(50)]
-		public CsvValue<string> AmazonOrderIds { get; set; }
+		public CsvValue<string> AmazonOrderIds { get; set; } 
 
 		/// <summary>
 		/// The `sourceId` of the location from where you want the order fulfilled.
 		/// </summary>
 		[InQuery("ActualFulfillmentSupplySourceId")]
-		public string ActualFulfillmentSupplySourceId { get; set; }
+		public string ActualFulfillmentSupplySourceId { get; set; } 
 
 		/// <summary>
 		/// When true, this order is marked to be picked up from a store rather than delivered.
 		/// </summary>
 		[InQuery("IsISPU")]
-		public bool IsISPU { get; set; }
+		public bool IsISPU { get; set; } 
 
 		/// <summary>
 		/// The store chain store identifier. Linked to a specific store in a store chain.
 		/// </summary>
 		[InQuery("StoreChainStoreId")]
-		public string StoreChainStoreId { get; set; }
+		public string StoreChainStoreId { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders with a earliest delivery date before (or at) a specified time. The date
 		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("EarliestDeliveryDateBefore")]
-		public string EarliestDeliveryDateBefore { get; set; }
+		public string EarliestDeliveryDateBefore { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders with a earliest delivery date after (or at) a specified time. The date
 		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("EarliestDeliveryDateAfter")]
-		public string EarliestDeliveryDateAfter { get; set; }
+		public string EarliestDeliveryDateAfter { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders with a latest delivery date before (or at) a specified time. The date
 		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("LatestDeliveryDateBefore")]
-		public string LatestDeliveryDateBefore { get; set; }
+		public string LatestDeliveryDateBefore { get; set; } 
 
 		/// <summary>
 		/// Use this date to select orders with a latest delivery date after (or at) a specified time. The date must
 		/// be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("LatestDeliveryDateAfter")]
-		public string LatestDeliveryDateAfter { get; set; }
+		public string LatestDeliveryDateAfter { get; set; } 
 	}
 }

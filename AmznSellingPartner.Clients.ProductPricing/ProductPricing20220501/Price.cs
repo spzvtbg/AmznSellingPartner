@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("listingPrice")]
 		[IsRequired]
-		public MoneyType ListingPrice { get; set; }
+		public MoneyType ListingPrice { get; set; } 
 
 		/// <summary>
 		/// The shipping cost of the product. Note that the shipping cost is not always available.
 		/// </summary>
 		[JsonProperty("shippingPrice")]
-		public MoneyType ShippingPrice { get; set; }
+		public MoneyType ShippingPrice { get; set; } 
 
 		/// <summary>
 		/// The number of Amazon Points that are offered with the purchase of an item and the monetary value of these
 		/// points.
 		/// </summary>
 		[JsonProperty("points")]
-		public Points Points { get; set; }
+		public Points Points { get; set; } 
 	}
 }

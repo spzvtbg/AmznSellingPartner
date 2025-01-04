@@ -11,27 +11,27 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// </summary>
 		[InQuery("asin")]
 		[IsRequired]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The condition used to filter restrictions.
 		/// </summary>
 		[InQuery("conditionType")]
-		public ConditionType ConditionType { get; set; }
+		public ConditionType ConditionType { get; set; } 
 
 		/// <summary>
 		/// A selling partner identifier, such as a merchant account.
 		/// </summary>
 		[InQuery("sellerId")]
 		[IsRequired]
-		public string SellerId { get; set; }
+		public string SellerId { get; set; } 
 
 		/// <summary>
 		/// A comma-delimited list of Amazon marketplace identifiers for the request.
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// A locale for reason text localization. When not provided, the default language code of the first marketplace
@@ -39,6 +39,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// is not available in the specified locale.
 		/// </summary>
 		[InQuery("reasonLocale")]
-		public string ReasonLocale { get; set; }
+		public string ReasonLocale { get; set; } 
 	}
 }

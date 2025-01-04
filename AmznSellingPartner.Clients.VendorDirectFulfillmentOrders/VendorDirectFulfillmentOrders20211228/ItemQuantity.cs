@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// Acknowledged quantity. This value should not be zero.
 		/// </summary>
 		[JsonProperty("amount")]
-		public int Amount { get; set; }
+		public int Amount { get; set; } 
 
 		/// <summary>
 		/// Unit of measure for the acknowledged quantity.
 		/// </summary>
 		[JsonProperty("unitOfMeasure")]
-		public UnitOfMeasure UnitOfMeasure { get; set; }
+		public UnitOfMeasure UnitOfMeasure { get; set; } 
 	}
 }

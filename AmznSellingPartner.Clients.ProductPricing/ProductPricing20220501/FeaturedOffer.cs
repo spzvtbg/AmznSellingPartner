@@ -15,18 +15,18 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("offerIdentifier")]
 		[IsRequired]
-		public OfferIdentifier OfferIdentifier { get; set; }
+		public OfferIdentifier OfferIdentifier { get; set; } 
 
 		/// <summary>
 		/// The item condition.
 		/// </summary>
 		[JsonProperty("condition")]
-		public Condition Condition { get; set; }
+		public Condition Condition { get; set; } 
 
 		/// <summary>
 		/// The current active price of the offer.
 		/// </summary>
 		[JsonProperty("price")]
-		public Price Price { get; set; }
+		public Price Price { get; set; } 
 	}
 }

@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[InBody("requests")]
 		[IsRequired]
-		public CompetitiveSummaryBatchRequest Requests { get; set; }
+		public CompetitiveSummaryBatchRequest Requests { get; set; } 
 	}
 }

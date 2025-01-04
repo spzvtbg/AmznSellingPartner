@@ -11,42 +11,42 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	{
 		[JsonProperty("Name")]
 		[IsRequired]
-		public AddressName Name { get; set; }
+		public AddressName Name { get; set; } 
 
 		[JsonProperty("AddressLine1")]
 		[IsRequired]
-		public AddressLine1 AddressLine1 { get; set; }
+		public AddressLine1 AddressLine1 { get; set; } 
 
 		[JsonProperty("AddressLine2")]
-		public AddressLine2 AddressLine2 { get; set; }
+		public AddressLine2 AddressLine2 { get; set; } 
 
 		[JsonProperty("AddressLine3")]
-		public AddressLine3 AddressLine3 { get; set; }
+		public AddressLine3 AddressLine3 { get; set; } 
 
 		[JsonProperty("DistrictOrCounty")]
-		public DistrictOrCounty DistrictOrCounty { get; set; }
+		public DistrictOrCounty DistrictOrCounty { get; set; } 
 
 		[JsonProperty("Email")]
 		[IsRequired]
-		public EmailAddress Email { get; set; }
+		public EmailAddress Email { get; set; } 
 
 		[JsonProperty("City")]
 		[IsRequired]
-		public City City { get; set; }
+		public City City { get; set; } 
 
 		[JsonProperty("StateOrProvinceCode")]
-		public StateOrProvinceCode StateOrProvinceCode { get; set; }
+		public StateOrProvinceCode StateOrProvinceCode { get; set; } 
 
 		[JsonProperty("PostalCode")]
 		[IsRequired]
-		public PostalCode PostalCode { get; set; }
+		public PostalCode PostalCode { get; set; } 
 
 		[JsonProperty("CountryCode")]
 		[IsRequired]
-		public CountryCode CountryCode { get; set; }
+		public CountryCode CountryCode { get; set; } 
 
 		[JsonProperty("Phone")]
 		[IsRequired]
-		public PhoneNumber Phone { get; set; }
+		public PhoneNumber Phone { get; set; } 
 	}
 }

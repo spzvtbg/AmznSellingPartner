@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	using System;
 	using System.Threading.Tasks;
 
-	public class DefinitionsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class DefinitionsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Search for and return a list of Amazon product types that have definitions available.  **Usage Plans:**

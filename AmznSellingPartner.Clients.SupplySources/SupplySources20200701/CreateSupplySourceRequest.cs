@@ -11,14 +11,14 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	{
 		[JsonProperty("supplySourceCode")]
 		[IsRequired]
-		public SupplySourceCode SupplySourceCode { get; set; }
+		public SupplySourceCode SupplySourceCode { get; set; } 
 
 		[JsonProperty("alias")]
 		[IsRequired]
-		public SupplySourceAlias Alias { get; set; }
+		public SupplySourceAlias Alias { get; set; } 
 
 		[JsonProperty("address")]
 		[IsRequired]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 	}
 }

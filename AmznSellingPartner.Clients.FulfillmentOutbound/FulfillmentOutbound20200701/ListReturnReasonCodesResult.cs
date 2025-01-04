@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class ListReturnReasonCodesResult : BaseClass
 	{
 		[JsonProperty("reasonCodeDetails")]
-		public ReasonCodeDetailsList ReasonCodeDetails { get; set; }
+		public ReasonCodeDetailsList ReasonCodeDetails { get; set; } 
 	}
 }

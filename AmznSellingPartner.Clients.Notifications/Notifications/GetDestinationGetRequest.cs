@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("destinationId")]
 		[IsRequired]
-		public string DestinationId { get; set; }
+		public string DestinationId { get; set; } 
 	}
 }

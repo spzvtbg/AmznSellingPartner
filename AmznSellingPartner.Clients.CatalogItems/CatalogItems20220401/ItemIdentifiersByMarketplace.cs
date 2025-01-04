@@ -16,13 +16,13 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace.
 		/// </summary>
 		[JsonProperty("identifiers")]
 		[IsRequired]
-		public List<ItemIdentifier> Identifiers { get; set; }
+		public List<ItemIdentifier> Identifiers { get; set; } 
 	}
 }

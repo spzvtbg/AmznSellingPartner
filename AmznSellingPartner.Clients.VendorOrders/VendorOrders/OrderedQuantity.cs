@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// Item quantity ordered.
 		/// </summary>
 		[JsonProperty("orderedQuantity")]
-		public ItemQuantity OrderedQuantityValue { get; set; }
+		public ItemQuantity OrderedQuantityValue { get; set; } 
 
 		/// <summary>
 		/// Details of item quantity ordered.
 		/// </summary>
 		[JsonProperty("orderedQuantityDetails")]
-		public List<OrderedQuantityDetails> OrderedQuantityDetails { get; set; }
+		public List<OrderedQuantityDetails> OrderedQuantityDetails { get; set; } 
 	}
 }

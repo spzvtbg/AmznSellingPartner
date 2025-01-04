@@ -11,7 +11,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	{
 		[JsonProperty("unit")]
 		[IsRequired]
-		public UnitOfWeight Unit { get; set; }
+		public UnitOfWeight Unit { get; set; } 
 
 		/// <summary>
 		/// Value of a weight.
@@ -20,6 +20,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		public double Value { get; set; }
+		public double Value { get; set; } 
 	}
 }

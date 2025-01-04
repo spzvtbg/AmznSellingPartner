@@ -17,13 +17,13 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("actions")]
 		[IsRequired]
-		public List<IssueEnforcementAction> Actions { get; set; }
+		public List<IssueEnforcementAction> Actions { get; set; } 
 
 		/// <summary>
 		/// The "exemption" field serves to convey the status of enforcement actions by Amazon.
 		/// </summary>
 		[JsonProperty("exemption")]
 		[IsRequired]
-		public IssueExemption Exemption { get; set; }
+		public IssueExemption Exemption { get; set; } 
 	}
 }

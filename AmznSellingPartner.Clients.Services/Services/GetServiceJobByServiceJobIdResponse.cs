@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// The payload for the `getServiceJobByServiceJobId` operation.
 		/// </summary>
 		[JsonProperty("payload")]
-		public ServiceJob Payload { get; set; }
+		public ServiceJob Payload { get; set; } 
 
 		/// <summary>
 		/// An unexpected condition occurred during the `getServiceJobByServiceJobId` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

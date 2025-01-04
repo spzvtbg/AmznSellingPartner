@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// A token that can be used to fetch the next page.
 		/// </summary>
 		[JsonProperty("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 
 		/// <summary>
 		/// A token that can be used to fetch the previous page.
 		/// </summary>
 		[JsonProperty("previousToken")]
-		public string PreviousToken { get; set; }
+		public string PreviousToken { get; set; } 
 	}
 }

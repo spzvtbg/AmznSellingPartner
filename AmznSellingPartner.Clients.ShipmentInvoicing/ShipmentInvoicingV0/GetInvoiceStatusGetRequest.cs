@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 	}
 }

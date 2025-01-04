@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("regulatedOrderVerificationStatus")]
 		[IsRequired]
-		public UpdateVerificationStatusRequestBody RegulatedOrderVerificationStatus { get; set; }
+		public UpdateVerificationStatusRequestBody RegulatedOrderVerificationStatus { get; set; } 
 	}
 }

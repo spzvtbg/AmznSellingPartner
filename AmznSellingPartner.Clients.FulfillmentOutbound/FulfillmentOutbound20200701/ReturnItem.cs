@@ -14,68 +14,68 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[JsonProperty("sellerReturnItemId")]
 		[IsRequired]
-		public string SellerReturnItemId { get; set; }
+		public string SellerReturnItemId { get; set; } 
 
 		/// <summary>
 		/// The identifier assigned to the item by the seller when the fulfillment order was created.
 		/// </summary>
 		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]
-		public string SellerFulfillmentOrderItemId { get; set; }
+		public string SellerFulfillmentOrderItemId { get; set; } 
 
 		/// <summary>
 		/// The identifier for the shipment that is associated with the return item.
 		/// </summary>
 		[JsonProperty("amazonShipmentId")]
 		[IsRequired]
-		public string AmazonShipmentId { get; set; }
+		public string AmazonShipmentId { get; set; } 
 
 		/// <summary>
 		/// The return reason code assigned to the return item by the seller.
 		/// </summary>
 		[JsonProperty("sellerReturnReasonCode")]
 		[IsRequired]
-		public string SellerReturnReasonCode { get; set; }
+		public string SellerReturnReasonCode { get; set; } 
 
 		/// <summary>
 		/// An optional comment about the return item.
 		/// </summary>
 		[JsonProperty("returnComment")]
-		public string ReturnComment { get; set; }
+		public string ReturnComment { get; set; } 
 
 		/// <summary>
 		/// The return reason code that the Amazon fulfillment center assigned to the return item.
 		/// </summary>
 		[JsonProperty("amazonReturnReasonCode")]
-		public string AmazonReturnReasonCode { get; set; }
+		public string AmazonReturnReasonCode { get; set; } 
 
 		/// <summary>
 		/// Indicates if the return item has been processed by an Amazon fulfillment center.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]
-		public FulfillmentReturnItemStatus Status { get; set; }
+		public FulfillmentReturnItemStatus Status { get; set; } 
 
 		/// <summary>
 		/// Indicates when the status last changed.
 		/// </summary>
 		[JsonProperty("statusChangedDate")]
 		[IsRequired]
-		public Timestamp StatusChangedDate { get; set; }
+		public Timestamp StatusChangedDate { get; set; } 
 
 		/// <summary>
 		/// Identifies the return authorization used to return this item. Refer to `ReturnAuthorization`.
 		/// </summary>
 		[JsonProperty("returnAuthorizationId")]
-		public string ReturnAuthorizationId { get; set; }
+		public string ReturnAuthorizationId { get; set; } 
 
 		[JsonProperty("returnReceivedCondition")]
-		public ReturnItemDisposition ReturnReceivedCondition { get; set; }
+		public ReturnItemDisposition ReturnReceivedCondition { get; set; } 
 
 		/// <summary>
 		/// The identifier for the Amazon fulfillment center that processed the return item.
 		/// </summary>
 		[JsonProperty("fulfillmentCenterId")]
-		public string FulfillmentCenterId { get; set; }
+		public string FulfillmentCenterId { get; set; } 
 	}
 }

@@ -10,7 +10,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class TransportationSelection : BaseClass
 	{
 		[JsonProperty("contactInformation")]
-		public ContactInformation ContactInformation { get; set; }
+		public ContactInformation ContactInformation { get; set; } 
 
 		/// <summary>
 		/// Shipment ID that the transportation Option is for.
@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string ShipmentId { get; set; }
+		public string ShipmentId { get; set; } 
 
 		/// <summary>
 		/// Transportation option being selected for the provided shipment.
@@ -30,6 +30,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		public string TransportationOptionId { get; set; }
+		public string TransportationOptionId { get; set; } 
 	}
 }

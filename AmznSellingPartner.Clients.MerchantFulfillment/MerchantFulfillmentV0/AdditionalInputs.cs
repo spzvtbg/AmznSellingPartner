@@ -11,9 +11,9 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// The field name.
 		/// </summary>
 		[JsonProperty("AdditionalInputFieldName")]
-		public string AdditionalInputFieldName { get; set; }
+		public string AdditionalInputFieldName { get; set; } 
 
 		[JsonProperty("SellerInputDefinition")]
-		public SellerInputDefinition SellerInputDefinition { get; set; }
+		public SellerInputDefinition SellerInputDefinition { get; set; } 
 	}
 }

@@ -15,18 +15,18 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("sellerSku")]
 		[IsRequired]
 		[MaxLength(50)]
-		public string SellerSku { get; set; }
+		public string SellerSku { get; set; } 
 
 		[JsonProperty("quantity")]
 		[IsRequired]
-		public Quantity Quantity { get; set; }
+		public Quantity Quantity { get; set; } 
 
 		/// <summary>
 		/// The monetary value assigned by the seller to this item. This is a required field if this order is an
 		/// export order or an India MCF order.
 		/// </summary>
 		[JsonProperty("perUnitDeclaredValue")]
-		public Money PerUnitDeclaredValue { get; set; }
+		public Money PerUnitDeclaredValue { get; set; } 
 
 		/// <summary>
 		/// A fulfillment order item identifier that the seller creates to track items in the fulfillment previe
@@ -35,6 +35,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]
 		[MaxLength(50)]
-		public string SellerFulfillmentOrderItemId { get; set; }
+		public string SellerFulfillmentOrderItemId { get; set; } 
 	}
 }

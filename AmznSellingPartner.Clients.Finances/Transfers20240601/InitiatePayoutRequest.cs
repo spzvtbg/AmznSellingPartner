@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public MarketplaceId MarketplaceId { get; set; }
+		public MarketplaceId MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The account type in the selected marketplace for which a payout must be initiated. For supported EU marketplaces,
@@ -24,6 +24,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[JsonProperty("accountType")]
 		[IsRequired]
-		public string AccountType { get; set; }
+		public string AccountType { get; set; } 
 	}
 }

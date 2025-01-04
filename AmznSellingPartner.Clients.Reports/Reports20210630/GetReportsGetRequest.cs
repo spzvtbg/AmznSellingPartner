@@ -17,14 +17,14 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		[InQuery("reportTypes")]
 		[MinItems(1)]
 		[MaxItems(10)]
-		public CsvValue<string> ReportTypes { get; set; }
+		public CsvValue<string> ReportTypes { get; set; } 
 
 		/// <summary>
 		/// A list of processing statuses used to filter reports.
 		/// </summary>
 		[InQuery("processingStatuses")]
 		[MinItems(1)]
-		public CsvValue<ProcessingStatuses> ProcessingStatuses { get; set; }
+		public CsvValue<ProcessingStatuses> ProcessingStatuses { get; set; } 
 
 		/// <summary>
 		/// A list of marketplace identifiers used to filter reports. The reports returned will match at least one
@@ -33,7 +33,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		[InQuery("marketplaceIds")]
 		[MinItems(1)]
 		[MaxItems(10)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
 		/// The maximum number of reports to return in a single call.
@@ -41,7 +41,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		[InQuery("pageSize")]
 		[Minimum(1)]
 		[Maximum(100)]
-		public int PageSize { get; set; }
+		public int PageSize { get; set; } = 10;
 
 		/// <summary>
 		/// The earliest report creation date and time for reports to include in the response, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -49,14 +49,14 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// .
 		/// </summary>
 		[InQuery("createdSince")]
-		public DateTime CreatedSince { get; set; }
+		public DateTime CreatedSince { get; set; } 
 
 		/// <summary>
 		/// The latest report creation date and time for reports to include in the response, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> date time format. The default is now.
 		/// </summary>
 		[InQuery("createdUntil")]
-		public DateTime CreatedUntil { get; set; }
+		public DateTime CreatedUntil { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response to your previous request. `nextToken` is returned when the number
@@ -65,6 +65,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// will cause the request to fail.
 		/// </summary>
 		[InQuery("nextToken")]
-		public string NextToken { get; set; }
+		public string NextToken { get; set; } 
 	}
 }

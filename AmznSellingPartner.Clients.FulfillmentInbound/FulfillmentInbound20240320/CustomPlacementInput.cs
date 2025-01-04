@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(2000)]
-		public List<ItemInput> Items { get; set; }
+		public List<ItemInput> Items { get; set; } 
 
 		/// <summary>
 		/// Warehouse Id.
@@ -27,6 +27,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string WarehouseId { get; set; }
+		public string WarehouseId { get; set; } 
 	}
 }

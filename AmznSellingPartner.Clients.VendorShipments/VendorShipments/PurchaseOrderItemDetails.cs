@@ -12,6 +12,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Maximum retail price of the item being shipped.
 		/// </summary>
 		[JsonProperty("maximumRetailPrice")]
-		public Money MaximumRetailPrice { get; set; }
+		public Money MaximumRetailPrice { get; set; } 
 	}
 }

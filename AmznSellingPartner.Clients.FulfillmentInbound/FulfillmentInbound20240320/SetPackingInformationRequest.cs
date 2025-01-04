@@ -17,6 +17,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("packageGroupings")]
 		[IsRequired]
 		[MinItems(1)]
-		public List<PackageGroupingInput> PackageGroupings { get; set; }
+		public List<PackageGroupingInput> PackageGroupings { get; set; } 
 	}
 }

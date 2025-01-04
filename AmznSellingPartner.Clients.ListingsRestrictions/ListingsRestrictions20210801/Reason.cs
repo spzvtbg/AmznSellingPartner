@@ -17,18 +17,18 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// </summary>
 		[JsonProperty("message")]
 		[IsRequired]
-		public string Message { get; set; }
+		public string Message { get; set; } 
 
 		/// <summary>
 		/// A code indicating why the listing is restricted.
 		/// </summary>
 		[JsonProperty("reasonCode")]
-		public ReasonCode ReasonCode { get; set; }
+		public ReasonCode ReasonCode { get; set; } 
 
 		/// <summary>
 		/// A list of path forward links that may allow Selling Partners to remove the restriction.
 		/// </summary>
 		[JsonProperty("links")]
-		public List<Link> Links { get; set; }
+		public List<Link> Links { get; set; } 
 	}
 }

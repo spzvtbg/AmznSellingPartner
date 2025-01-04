@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("availabilityType")]
 		[IsRequired]
-		public string AvailabilityType { get; set; }
+		public string AvailabilityType { get; set; } 
 
 		/// <summary>
 		/// Identifier of a delivery window option. A delivery window option represent one option for when a shipment
@@ -27,26 +27,26 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(36)]
 		[MaxLength(38)]
-		public string DeliveryWindowOptionId { get; set; }
+		public string DeliveryWindowOptionId { get; set; } 
 
 		/// <summary>
 		/// The timestamp at which this Window can no longer be edited.
 		/// </summary>
 		[JsonProperty("editableUntil")]
-		public DateTime EditableUntil { get; set; }
+		public DateTime EditableUntil { get; set; } 
 
 		/// <summary>
 		/// The end timestamp of the window.
 		/// </summary>
 		[JsonProperty("endDate")]
 		[IsRequired]
-		public DateTime EndDate { get; set; }
+		public DateTime EndDate { get; set; } 
 
 		/// <summary>
 		/// The start timestamp of the window.
 		/// </summary>
 		[JsonProperty("startDate")]
 		[IsRequired]
-		public DateTime StartDate { get; set; }
+		public DateTime StartDate { get; set; } 
 	}
 }

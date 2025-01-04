@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// The item's estimated fees.
 		/// </summary>
 		[JsonProperty("FeesEstimateResult")]
-		public FeesEstimateResult FeesEstimateResult { get; set; }
+		public FeesEstimateResult FeesEstimateResult { get; set; } 
 	}
 }

@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class GetFeaturedOfferExpectedPriceBatchResponse : BaseClass
 	{
 		[JsonProperty("responses")]
-		public FeaturedOfferExpectedPriceResponseList Responses { get; set; }
+		public FeaturedOfferExpectedPriceResponseList Responses { get; set; } 
 	}
 }

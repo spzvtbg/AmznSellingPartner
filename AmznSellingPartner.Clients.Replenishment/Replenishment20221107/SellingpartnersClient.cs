@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 	using System;
 	using System.Threading.Tasks;
 
-	public class SellingpartnersClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class SellingpartnersClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns aggregated replenishment program metrics for a selling partner.   **Usage Plan:**  | Rate (requests

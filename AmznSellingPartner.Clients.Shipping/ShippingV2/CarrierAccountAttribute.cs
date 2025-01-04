@@ -11,18 +11,18 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Attribute Name .
 		/// </summary>
 		[JsonProperty("attributeName")]
-		public string AttributeName { get; set; }
+		public string AttributeName { get; set; } 
 
 		/// <summary>
 		/// Property Group.
 		/// </summary>
 		[JsonProperty("propertyGroup")]
-		public string PropertyGroup { get; set; }
+		public string PropertyGroup { get; set; } 
 
 		/// <summary>
 		/// Value .
 		/// </summary>
 		[JsonProperty("value")]
-		public string Value { get; set; }
+		public string Value { get; set; } 
 	}
 }

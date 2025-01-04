@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	{
 		[JsonProperty("invalidItemReasonCode")]
 		[IsRequired]
-		public InvalidItemReasonCode InvalidItemReasonCode { get; set; }
+		public InvalidItemReasonCode InvalidItemReasonCode { get; set; } 
 
 		/// <summary>
 		/// A human readable description of the invalid item reason code.
 		/// </summary>
 		[JsonProperty("description")]
 		[IsRequired]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 	}
 }

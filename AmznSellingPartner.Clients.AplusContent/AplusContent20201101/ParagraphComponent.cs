@@ -15,6 +15,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(100)]
-		public List<TextComponent> TextList { get; set; }
+		public List<TextComponent> TextList { get; set; } 
 	}
 }

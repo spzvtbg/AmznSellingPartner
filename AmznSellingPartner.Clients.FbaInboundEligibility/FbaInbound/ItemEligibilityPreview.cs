@@ -17,32 +17,32 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 		/// </summary>
 		[JsonProperty("asin")]
 		[IsRequired]
-		public string Asin { get; set; }
+		public string Asin { get; set; } 
 
 		/// <summary>
 		/// The marketplace for which eligibility was determined.
 		/// </summary>
 		[JsonProperty("marketplaceId")]
-		public string MarketplaceId { get; set; }
+		public string MarketplaceId { get; set; } 
 
 		/// <summary>
 		/// The program for which eligibility was determined.
 		/// </summary>
 		[JsonProperty("program")]
 		[IsRequired]
-		public Program Program { get; set; }
+		public Program Program { get; set; } 
 
 		/// <summary>
 		/// Indicates if the item is eligible for the program.
 		/// </summary>
 		[JsonProperty("isEligibleForProgram")]
 		[IsRequired]
-		public bool IsEligibleForProgram { get; set; }
+		public bool IsEligibleForProgram { get; set; } 
 
 		/// <summary>
 		/// Potential Ineligibility Reason Codes.
 		/// </summary>
 		[JsonProperty("ineligibilityReasonList")]
-		public List<IneligibilityReasonList> IneligibilityReasonList { get; set; }
+		public List<IneligibilityReasonList> IneligibilityReasonList { get; set; } 
 	}
 }

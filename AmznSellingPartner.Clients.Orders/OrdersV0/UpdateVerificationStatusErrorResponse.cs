@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// One or more unexpected errors occurred during the `UpdateVerificationStatus` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

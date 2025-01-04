@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("boxId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string BoxId { get; set; }
+		public string BoxId { get; set; } 
 
 		/// <summary>
 		/// The tracking ID associated with each box in a non-Amazon partnered Small Parcel Delivery (SPD) shipm
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("trackingId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string TrackingId { get; set; }
+		public string TrackingId { get; set; } 
 
 		/// <summary>
 		/// Whether or not Amazon has validated the tracking number. If more than 24 hours have passed and the status
@@ -35,6 +35,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("trackingNumberValidationStatus")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string TrackingNumberValidationStatus { get; set; }
+		public string TrackingNumberValidationStatus { get; set; } 
 	}
 }

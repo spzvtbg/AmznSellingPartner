@@ -13,25 +13,25 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("serviceId")]
 		[IsRequired]
-		public ServiceId ServiceId { get; set; }
+		public ServiceId ServiceId { get; set; } 
 
 		[JsonProperty("serviceName")]
 		[IsRequired]
-		public ServiceName ServiceName { get; set; }
+		public ServiceName ServiceName { get; set; } 
 
 		[JsonProperty("carrierName")]
 		[IsRequired]
-		public CarrierName CarrierName { get; set; }
+		public CarrierName CarrierName { get; set; } 
 
 		[JsonProperty("carrierId")]
 		[IsRequired]
-		public CarrierId CarrierId { get; set; }
+		public CarrierId CarrierId { get; set; } 
 
 		/// <summary>
 		/// A list of reasons why a shipping service offering is ineligible.
 		/// </summary>
 		[JsonProperty("ineligibilityReasons")]
 		[IsRequired]
-		public List<IneligibilityReason> IneligibilityReasons { get; set; }
+		public List<IneligibilityReason> IneligibilityReasons { get; set; } 
 	}
 }

@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Description { get; set; }
+		public string Description { get; set; } 
 
 		/// <summary>
 		/// Target of the incentive. Possible values: 'Placement Services', 'Fulfillment Fee Discount'.
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Target { get; set; }
+		public string Target { get; set; } 
 
 		/// <summary>
 		/// Type of incentive. Possible values: `FEE`, `DISCOUNT`.
@@ -34,10 +34,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Type { get; set; }
+		public string Type { get; set; } 
 
 		[JsonProperty("value")]
 		[IsRequired]
-		public Currency Value { get; set; }
+		public Currency Value { get; set; } 
 	}
 }

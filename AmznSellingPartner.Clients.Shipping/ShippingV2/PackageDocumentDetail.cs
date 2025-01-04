@@ -11,13 +11,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	{
 		[JsonProperty("packageClientReferenceId")]
 		[IsRequired]
-		public PackageClientReferenceId PackageClientReferenceId { get; set; }
+		public PackageClientReferenceId PackageClientReferenceId { get; set; } 
 
 		[JsonProperty("packageDocuments")]
 		[IsRequired]
-		public PackageDocumentList PackageDocuments { get; set; }
+		public PackageDocumentList PackageDocuments { get; set; } 
 
 		[JsonProperty("trackingId")]
-		public TrackingId TrackingId { get; set; }
+		public TrackingId TrackingId { get; set; } 
 	}
 }

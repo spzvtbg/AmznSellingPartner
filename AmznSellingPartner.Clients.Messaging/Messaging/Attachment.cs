@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[JsonProperty("uploadDestinationId")]
 		[IsRequired]
-		public string UploadDestinationId { get; set; }
+		public string UploadDestinationId { get; set; } 
 
 		/// <summary>
 		/// The name of the file, including the extension. This is the file name that will appear in the message.
@@ -24,6 +24,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[JsonProperty("fileName")]
 		[IsRequired]
-		public string FileName { get; set; }
+		public string FileName { get; set; } 
 	}
 }

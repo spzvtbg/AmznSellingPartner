@@ -15,19 +15,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Identification of the party by address.
 		/// </summary>
 		[JsonProperty("address")]
-		public Address Address { get; set; }
+		public Address Address { get; set; } 
 
 		/// <summary>
 		/// Assigned identification for the party.
 		/// </summary>
 		[JsonProperty("partyId")]
 		[IsRequired]
-		public string PartyId { get; set; }
+		public string PartyId { get; set; } 
 
 		/// <summary>
 		/// Tax registration details of the entity.
 		/// </summary>
 		[JsonProperty("taxRegistrationDetails")]
-		public List<TaxRegistrationDetails> TaxRegistrationDetails { get; set; }
+		public List<TaxRegistrationDetails> TaxRegistrationDetails { get; set; } 
 	}
 }

@@ -20,7 +20,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("shippingMode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string ShippingMode { get; set; }
+		public string ShippingMode { get; set; } 
 
 		/// <summary>
 		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`
@@ -29,6 +29,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("shippingSolution")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string ShippingSolution { get; set; }
+		public string ShippingSolution { get; set; } 
 	}
 }

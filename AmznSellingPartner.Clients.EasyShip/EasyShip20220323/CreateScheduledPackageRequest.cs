@@ -11,14 +11,14 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	{
 		[JsonProperty("amazonOrderId")]
 		[IsRequired]
-		public AmazonOrderId AmazonOrderId { get; set; }
+		public AmazonOrderId AmazonOrderId { get; set; } 
 
 		[JsonProperty("marketplaceId")]
 		[IsRequired]
-		public String MarketplaceId { get; set; }
+		public String MarketplaceId { get; set; } 
 
 		[JsonProperty("packageDetails")]
 		[IsRequired]
-		public PackageDetails PackageDetails { get; set; }
+		public PackageDetails PackageDetails { get; set; } 
 	}
 }

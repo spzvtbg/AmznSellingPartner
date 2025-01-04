@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// The appointment slots fetched based on service context.
 		/// </summary>
 		[JsonProperty("payload")]
-		public AppointmentSlotReport Payload { get; set; }
+		public AppointmentSlotReport Payload { get; set; } 
 
 		/// <summary>
 		/// Errors occurred in getting schedule.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

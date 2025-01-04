@@ -18,17 +18,17 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		public string Msku { get; set; }
+		public string Msku { get; set; } 
 
 		[JsonProperty("prepCategory")]
 		[IsRequired]
-		public PrepCategory PrepCategory { get; set; }
+		public PrepCategory PrepCategory { get; set; } 
 
 		/// <summary>
 		/// A list of preparation types associated with a preparation category.
 		/// </summary>
 		[JsonProperty("prepTypes")]
 		[IsRequired]
-		public List<PrepType> PrepTypes { get; set; }
+		public List<PrepType> PrepTypes { get; set; } 
 	}
 }

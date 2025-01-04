@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("notificationType")]
 		[IsRequired]
-		public NotificationType NotificationType { get; set; }
+		public NotificationType NotificationType { get; set; } 
 
 		/// <summary>
 		/// The version of the payload object to be used in the notification.
 		/// </summary>
 		[InQuery("payloadVersion")]
-		public string PayloadVersion { get; set; }
+		public string PayloadVersion { get; set; } 
 	}
 }

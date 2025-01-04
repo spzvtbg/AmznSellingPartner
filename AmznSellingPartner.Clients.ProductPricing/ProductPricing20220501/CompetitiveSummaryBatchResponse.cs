@@ -14,6 +14,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("responses")]
 		[IsRequired]
-		public CompetitiveSummaryResponseList Responses { get; set; }
+		public CompetitiveSummaryResponseList Responses { get; set; } 
 	}
 }

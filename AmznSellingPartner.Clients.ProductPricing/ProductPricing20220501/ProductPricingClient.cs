@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using System;
 	using System.Threading.Tasks;
 
-	public class ProductPricingClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class ProductPricingClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns the set of responses that correspond to the batched list of up to 40 requests defined in the

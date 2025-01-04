@@ -3,7 +3,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	using System;
 	using System.Threading.Tasks;
 
-	public class VendorShippingLabelsClient(Uri baseAddress) : BaseHttpClient((baseAddress))
+	public class VendorShippingLabelsClient(Uri baseAddress) : BaseHttpClient(baseAddress)
 	{
 		/// <summary>
 		/// Returns a list of shipping labels created during the time frame that you specify. Use the `createdAfter`

@@ -10,13 +10,13 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GenerateCollectionFormRequest : BaseClass
 	{
 		[JsonProperty("clientReferenceDetails")]
-		public ClientReferenceDetails ClientReferenceDetails { get; set; }
+		public ClientReferenceDetails ClientReferenceDetails { get; set; } 
 
 		[JsonProperty("carrierId")]
 		[IsRequired]
-		public CarrierId CarrierId { get; set; }
+		public CarrierId CarrierId { get; set; } 
 
 		[JsonProperty("shipFromAddress")]
-		public Address ShipFromAddress { get; set; }
+		public Address ShipFromAddress { get; set; } 
 	}
 }

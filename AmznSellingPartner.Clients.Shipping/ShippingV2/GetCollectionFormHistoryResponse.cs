@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class GetCollectionFormHistoryResponse : BaseClass
 	{
 		[JsonProperty("collectionFormsHistoryRecordList")]
-		public CollectionFormsHistoryRecordList CollectionFormsHistoryRecordList { get; set; }
+		public CollectionFormsHistoryRecordList CollectionFormsHistoryRecordList { get; set; } 
 
 		/// <summary>
 		/// Last Refereshed Date of collection
 		/// </summary>
 		[JsonProperty("lastRefreshedDate")]
-		public string LastRefreshedDate { get; set; }
+		public string LastRefreshedDate { get; set; } 
 	}
 }

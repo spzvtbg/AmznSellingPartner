@@ -17,12 +17,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// The name of the feature.
 		/// </summary>
 		[JsonProperty("featureName")]
-		public string FeatureName { get; set; }
+		public string FeatureName { get; set; } 
 
 		/// <summary>
 		/// Specifies the policy to use when fulfilling an order.
 		/// </summary>
 		[JsonProperty("featureFulfillmentPolicy")]
-		public FeatureFulfillmentPolicy FeatureFulfillmentPolicy { get; set; }
+		public FeatureFulfillmentPolicy FeatureFulfillmentPolicy { get; set; } 
 	}
 }

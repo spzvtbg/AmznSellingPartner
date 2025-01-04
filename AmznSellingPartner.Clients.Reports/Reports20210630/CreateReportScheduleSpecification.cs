@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("reportType")]
 		[IsRequired]
-		public string ReportType { get; set; }
+		public string ReportType { get; set; } 
 
 		/// <summary>
 		/// A list of marketplace identifiers for the report schedule.
@@ -27,10 +27,10 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(25)]
-		public List<string> MarketplaceIds { get; set; }
+		public List<string> MarketplaceIds { get; set; } 
 
 		[JsonProperty("reportOptions")]
-		public ReportOptions ReportOptions { get; set; }
+		public ReportOptions ReportOptions { get; set; } 
 
 		/// <summary>
 		/// One of a set of predefined <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a>
@@ -38,13 +38,13 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("period")]
 		[IsRequired]
-		public Period Period { get; set; }
+		public Period Period { get; set; } 
 
 		/// <summary>
 		/// The date and time when the schedule will create its next report, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> date time format.
 		/// </summary>
 		[JsonProperty("nextReportCreationTime")]
-		public DateTime NextReportCreationTime { get; set; }
+		public DateTime NextReportCreationTime { get; set; } 
 	}
 }

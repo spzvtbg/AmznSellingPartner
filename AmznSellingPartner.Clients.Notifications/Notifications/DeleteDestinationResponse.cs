@@ -11,6 +11,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// One or more unexpected errors occurred during the `deleteDestination` operation.
 		/// </summary>
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

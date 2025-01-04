@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Base64 document Value of Collection.
 		/// </summary>
 		[JsonProperty("base64EncodedContent")]
-		public string Base64EncodedContent { get; set; }
+		public string Base64EncodedContent { get; set; } 
 
 		/// <summary>
 		/// Collection Document format is PDF.
 		/// </summary>
 		[JsonProperty("documentFormat")]
-		public string DocumentFormat { get; set; }
+		public string DocumentFormat { get; set; } 
 	}
 }

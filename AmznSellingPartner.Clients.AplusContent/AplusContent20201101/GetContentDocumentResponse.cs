@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	{
 		[JsonProperty("contentRecord")]
 		[IsRequired]
-		public ContentRecord ContentRecord { get; set; }
+		public ContentRecord ContentRecord { get; set; } 
 	}
 }

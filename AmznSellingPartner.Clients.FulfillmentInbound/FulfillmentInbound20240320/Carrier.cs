@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("alphaCode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string AlphaCode { get; set; }
+		public string AlphaCode { get; set; } 
 
 		/// <summary>
 		/// The name of the carrier.
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("name")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 	}
 }

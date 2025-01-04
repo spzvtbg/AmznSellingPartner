@@ -8,12 +8,12 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// The currency code in ISO 4217 format.
 		/// </summary>
 		[JsonProperty("CurrencyCode")]
-		public string CurrencyCode { get; set; }
+		public string CurrencyCode { get; set; } 
 
 		/// <summary>
 		/// The monetary value.
 		/// </summary>
 		[JsonProperty("Amount")]
-		public double Amount { get; set; }
+		public double Amount { get; set; } 
 	}
 }

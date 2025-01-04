@@ -10,6 +10,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public ExportInvoicesRequest Body { get; set; }
+		public ExportInvoicesRequest Body { get; set; } 
 	}
 }

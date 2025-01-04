@@ -15,7 +15,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		[JsonProperty("name")]
 		[IsRequired]
 		[MaxLength(256)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 
 		/// <summary>
 		/// The AWS region in which you receive the notifications. For AWS regions that are supported in Amazon EventBridge,
@@ -24,7 +24,7 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[JsonProperty("region")]
 		[IsRequired]
-		public string Region { get; set; }
+		public string Region { get; set; } 
 
 		/// <summary>
 		/// The identifier for the AWS account that is responsible for charges related to receiving notification
@@ -32,6 +32,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[JsonProperty("accountId")]
 		[IsRequired]
-		public string AccountId { get; set; }
+		public string AccountId { get; set; } 
 	}
 }

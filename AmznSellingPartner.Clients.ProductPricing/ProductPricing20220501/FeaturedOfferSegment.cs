@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[JsonProperty("customerMembership")]
 		[IsRequired]
-		public CustomerMembership CustomerMembership { get; set; }
+		public CustomerMembership CustomerMembership { get; set; } 
 
 		/// <summary>
 		/// The details about the segment.
 		/// </summary>
 		[JsonProperty("segmentDetails")]
 		[IsRequired]
-		public SegmentDetails SegmentDetails { get; set; }
+		public SegmentDetails SegmentDetails { get; set; } 
 	}
 }

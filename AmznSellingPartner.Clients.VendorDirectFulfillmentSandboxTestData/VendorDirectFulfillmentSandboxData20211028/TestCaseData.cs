@@ -13,6 +13,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// Set of use cases that describes the possible test scenarios.
 		/// </summary>
 		[JsonProperty("scenarios")]
-		public List<Scenario> Scenarios { get; set; }
+		public List<Scenario> Scenarios { get; set; } 
 	}
 }

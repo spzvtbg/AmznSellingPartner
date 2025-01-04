@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string Name { get; set; }
+		public string Name { get; set; } 
 	}
 }

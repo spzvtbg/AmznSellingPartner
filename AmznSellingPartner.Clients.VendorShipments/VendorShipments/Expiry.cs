@@ -15,19 +15,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// on the trade item context.
 		/// </summary>
 		[JsonProperty("manufacturerDate")]
-		public DateTime ManufacturerDate { get; set; }
+		public DateTime ManufacturerDate { get; set; } 
 
 		/// <summary>
 		/// The date that determines the limit of consumption or use of a product. Its meaning is determined based
 		/// on the trade item context.
 		/// </summary>
 		[JsonProperty("expiryDate")]
-		public DateTime ExpiryDate { get; set; }
+		public DateTime ExpiryDate { get; set; } 
 
 		/// <summary>
 		/// Duration after manufacturing date during which the product is valid for consumption.
 		/// </summary>
 		[JsonProperty("expiryAfterDuration")]
-		public Duration ExpiryAfterDuration { get; set; }
+		public Duration ExpiryAfterDuration { get; set; } 
 	}
 }

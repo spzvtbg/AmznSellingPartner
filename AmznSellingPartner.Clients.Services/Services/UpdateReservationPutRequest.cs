@@ -13,14 +13,14 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		public string ReservationId { get; set; }
+		public string ReservationId { get; set; } 
 
 		/// <summary>
 		/// Reservation details
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		public UpdateReservationRequest Body { get; set; }
+		public UpdateReservationRequest Body { get; set; } 
 
 		/// <summary>
 		/// An identifier for the marketplace in which the resource operates.
@@ -28,6 +28,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		public CsvValue<string> MarketplaceIds { get; set; }
+		public CsvValue<string> MarketplaceIds { get; set; } 
 	}
 }

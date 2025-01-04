@@ -8,6 +8,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	public class CreateConfirmDeliveryDetailsResponse : BaseClass
 	{
 		[JsonProperty("errors")]
-		public ErrorList Errors { get; set; }
+		public ErrorList Errors { get; set; } 
 	}
 }

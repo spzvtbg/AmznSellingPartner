@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The transaction identifier of this payment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("paymentTransactionId")]
+		[IsRequired]
 		public string PaymentTransactionId { get; set; }
 
 		/// <summary>
 		/// The transaction mode of this payment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("paymentMode")]
+		[IsRequired]
 		public string PaymentMode { get; set; }
 
 		/// <summary>
 		/// The transaction date of this payment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("paymentDate")]
+		[IsRequired]
 		public Timestamp PaymentDate { get; set; }
 	}
 }

@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 		/// <summary>
 		/// The ASIN for which eligibility was determined.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("asin")]
+		[IsRequired]
 		public string Asin { get; set; }
 
 		/// <summary>
@@ -28,15 +28,15 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 		/// <summary>
 		/// The program for which eligibility was determined.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("program")]
+		[IsRequired]
 		public Program Program { get; set; }
 
 		/// <summary>
 		/// Indicates if the item is eligible for the program.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isEligibleForProgram")]
+		[IsRequired]
 		public bool IsEligibleForProgram { get; set; }
 
 		/// <summary>

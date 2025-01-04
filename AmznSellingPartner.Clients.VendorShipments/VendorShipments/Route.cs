@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// The port or location involved in transporting the cargo, as specified in transportation contracts or
 		/// operational plans.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("stops")]
+		[IsRequired]
 		public List<Stop> Stops { get; set; }
 	}
 }

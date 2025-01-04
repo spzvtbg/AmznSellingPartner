@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	/// </summary>
 	public class GetFeaturesResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("features")]
+		[IsRequired]
 		public Features Features { get; set; }
 	}
 }

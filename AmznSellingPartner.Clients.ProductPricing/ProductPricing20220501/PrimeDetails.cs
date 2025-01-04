@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// Indicates whether the offer is an Amazon Prime offer.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("eligibility")]
+		[IsRequired]
 		public Eligibility Eligibility { get; set; }
 	}
 }

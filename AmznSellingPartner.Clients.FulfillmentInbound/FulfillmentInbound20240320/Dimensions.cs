@@ -12,32 +12,32 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The height of a package.
 		/// </summary>
+		[JsonProperty("height")]
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		[JsonProperty("height")]
 		public double Height { get; set; }
 
 		/// <summary>
 		/// The length of a package.
 		/// </summary>
+		[JsonProperty("length")]
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		[JsonProperty("length")]
 		public double Length { get; set; }
 
-		[IsRequired]
 		[JsonProperty("unitOfMeasurement")]
+		[IsRequired]
 		public UnitOfMeasurement UnitOfMeasurement { get; set; }
 
 		/// <summary>
 		/// The width of a package.
 		/// </summary>
+		[JsonProperty("width")]
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		[JsonProperty("width")]
 		public double Width { get; set; }
 	}
 }

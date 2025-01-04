@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 		/// The unique identifier sent in the 'transactionId' field in response to the post request of a specific
 		/// transaction.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("transactionId")]
+		[IsRequired]
 		public string TransactionId { get; set; }
 
 		/// <summary>
 		/// Current processing status of the transaction.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public Status Status { get; set; }
 
 		/// <summary>

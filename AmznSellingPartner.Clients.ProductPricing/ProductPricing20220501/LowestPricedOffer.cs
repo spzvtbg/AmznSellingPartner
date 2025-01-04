@@ -15,18 +15,18 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// The filtering criteria that are used to retrieve the lowest priced offers that correspond to the `lowestPricedOffersInputs`
 		/// request.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("lowestPricedOffersInput")]
+		[IsRequired]
 		public LowestPricedOffersInput LowestPricedOffersInput { get; set; }
 
 		/// <summary>
 		/// A list of up to 20 lowest priced offers that match the criteria specified in `lowestPricedOffersInpu
 		/// t`.
 		/// </summary>
+		[JsonProperty("offers")]
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(20)]
-		[JsonProperty("offers")]
 		public List<Offer> Offers { get; set; }
 	}
 }

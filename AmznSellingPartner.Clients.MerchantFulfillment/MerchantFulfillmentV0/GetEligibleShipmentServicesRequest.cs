@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// Shipment information required for requesting shipping service offers.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShipmentRequestDetails")]
+		[IsRequired]
 		public ShipmentRequestDetails ShipmentRequestDetails { get; set; }
 
 		[JsonProperty("ShippingOfferingFilter")]

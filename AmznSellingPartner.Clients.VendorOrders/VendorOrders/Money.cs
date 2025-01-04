@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// Three digit currency code in ISO 4217 format. String of length 3.
 		/// </summary>
-		[MaxLength(3)]
 		[JsonProperty("currencyCode")]
+		[MaxLength(3)]
 		public string CurrencyCode { get; set; }
 
 		[JsonProperty("amount")]

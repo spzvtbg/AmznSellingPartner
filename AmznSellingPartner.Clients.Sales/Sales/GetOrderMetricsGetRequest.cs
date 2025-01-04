@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/sales/v1/orderMetrics")]
 	public class GetOrderMetricsGetRequest : BaseHttpRequest
 	{
@@ -14,7 +12,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -25,7 +22,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// </summary>
 		[InQuery("interval")]
 		[IsRequired]
-		[JsonProperty("interval")]
 		public string Interval { get; set; }
 
 		/// <summary>
@@ -37,7 +33,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// US/Pacific zone.
 		/// </summary>
 		[InQuery("granularityTimeZone")]
-		[JsonProperty("granularityTimeZone")]
 		public string GranularityTimeZone { get; set; }
 
 		/// <summary>
@@ -51,7 +46,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// </summary>
 		[InQuery("granularity")]
 		[IsRequired]
-		[JsonProperty("granularity")]
 		public Granularity Granularity { get; set; }
 
 		/// <summary>
@@ -59,7 +53,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// customer). Example: B2B, if you want the response to include order metrics for only B2B buyers.
 		/// </summary>
 		[InQuery("buyerType")]
-		[JsonProperty("buyerType")]
 		public BuyerType BuyerType { get; set; }
 
 		/// <summary>
@@ -69,7 +62,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// for only Amazon fulfillment network.
 		/// </summary>
 		[InQuery("fulfillmentNetwork")]
-		[JsonProperty("fulfillmentNetwork")]
 		public string FulfillmentNetwork { get; set; }
 
 		/// <summary>
@@ -77,7 +69,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// Example: Sunday, if you want the week to start on a Sunday.
 		/// </summary>
 		[InQuery("firstDayOfWeek")]
-		[JsonProperty("firstDayOfWeek")]
 		public FirstDayOfWeek FirstDayOfWeek { get; set; }
 
 		/// <summary>
@@ -86,7 +77,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// if you want the response to include order metrics for only ASIN B0792R1RSN.
 		/// </summary>
 		[InQuery("asin")]
-		[JsonProperty("asin")]
 		public string Asin { get; set; }
 
 		/// <summary>
@@ -95,7 +85,6 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// if you want the response to include order metrics for only SKU TestSKU.
 		/// </summary>
 		[InQuery("sku")]
-		[JsonProperty("sku")]
 		public string Sku { get; set; }
 	}
 }

@@ -16,29 +16,29 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// The purchase order number. Formatting Notes: 8-character alpha-numeric code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderNumber")]
+		[IsRequired]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
 		/// Name, address and tax details of the party receiving a shipment of products.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
 		/// The date and time when the purchase order is acknowledged, in ISO-8601 date/time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("acknowledgementDate")]
+		[IsRequired]
 		public DateTime AcknowledgementDate { get; set; }
 
 		/// <summary>
 		/// A list of the items being acknowledged with associated details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<OrderAcknowledgementItem> Items { get; set; }
 	}
 }

@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class CancelShipmentResult : BaseClass
 	{
-		[JsonProperty("AdditionalValue")]
+		[JsonProperty("")]
 		public object AdditionalValue { get; set; }
 	}
 }

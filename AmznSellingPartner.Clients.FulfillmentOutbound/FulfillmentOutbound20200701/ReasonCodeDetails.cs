@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// A code that indicates a valid return reason.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("returnReasonCode")]
+		[IsRequired]
 		public string ReturnReasonCode { get; set; }
 
 		/// <summary>
 		/// A human readable description of the return reason code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("description")]
+		[IsRequired]
 		public string Description { get; set; }
 
 		/// <summary>

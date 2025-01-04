@@ -26,8 +26,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// <summary>
 		/// Total item quantity available in the warehouse.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("availableQuantity")]
+		[IsRequired]
 		public ItemQuantity AvailableQuantity { get; set; }
 
 		/// <summary>

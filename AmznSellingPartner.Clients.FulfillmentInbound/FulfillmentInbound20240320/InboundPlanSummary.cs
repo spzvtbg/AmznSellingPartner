@@ -16,53 +16,53 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// The time at which the inbound plan was created. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("createdAt")]
+		[IsRequired]
 		public DateTime CreatedAt { get; set; }
 
 		/// <summary>
 		/// Identifier of an inbound plan.
 		/// </summary>
+		[JsonProperty("inboundPlanId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("inboundPlanId")]
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
 		/// The time at which the inbound plan was last updated. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ssZ`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("lastUpdatedAt")]
+		[IsRequired]
 		public DateTime LastUpdatedAt { get; set; }
 
 		/// <summary>
 		/// A list of marketplace IDs.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceIds")]
+		[IsRequired]
 		public List<string> MarketplaceIds { get; set; }
 
 		/// <summary>
 		/// Human-readable name of the inbound plan.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
-		[IsRequired]
 		[JsonProperty("sourceAddress")]
+		[IsRequired]
 		public Address SourceAddress { get; set; }
 
 		/// <summary>
 		/// The current status of the inbound plan. Possible values: `ACTIVE`, `VOIDED`, `SHIPPED`, `ERRORED`.
 		/// </summary>
+		[JsonProperty("status")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("status")]
 		public string Status { get; set; }
 	}
 }

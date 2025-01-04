@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The Amazon product type of the listings item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productType")]
+		[IsRequired]
 		public string ProductType { get; set; }
 
 		/// <summary>
@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// A JSON object containing structured listings item attribute data keyed by attribute name.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("attributes")]
+		[IsRequired]
 		public Attributes Attributes { get; set; }
 	}
 }

@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class RequestedDocumentSpecification : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("format")]
+		[IsRequired]
 		public DocumentFormat Format { get; set; }
 
-		[IsRequired]
 		[JsonProperty("size")]
+		[IsRequired]
 		public DocumentSize Size { get; set; }
 
 		[JsonProperty("dpi")]
@@ -27,15 +27,15 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("pageLayout")]
 		public PageLayout PageLayout { get; set; }
 
-		[IsRequired]
 		[JsonProperty("needFileJoining")]
+		[IsRequired]
 		public NeedFileJoining NeedFileJoining { get; set; }
 
 		/// <summary>
 		/// A list of the document types requested.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("requestedDocumentTypes")]
+		[IsRequired]
 		public List<DocumentType> RequestedDocumentTypes { get; set; }
 	}
 }

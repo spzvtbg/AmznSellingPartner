@@ -14,29 +14,29 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// The A+ Content document name.
 		/// </summary>
+		[JsonProperty("name")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public ContentStatus Status { get; set; }
 
-		[IsRequired]
 		[JsonProperty("badgeSet")]
+		[IsRequired]
 		public ContentBadgeSet BadgeSet { get; set; }
 
 		/// <summary>
 		/// The approximate age of the A+ Content document and metadata.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("updateTime")]
+		[IsRequired]
 		public DateTime UpdateTime { get; set; }
 	}
 }

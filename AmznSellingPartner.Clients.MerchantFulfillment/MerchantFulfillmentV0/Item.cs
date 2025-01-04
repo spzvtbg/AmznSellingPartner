@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	/// </summary>
 	public class Item : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("OrderItemId")]
+		[IsRequired]
 		public OrderItemId OrderItemId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("Quantity")]
+		[IsRequired]
 		public ItemQuantity Quantity { get; set; }
 
 		[JsonProperty("ItemWeight")]

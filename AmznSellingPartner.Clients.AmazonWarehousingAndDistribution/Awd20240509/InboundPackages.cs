@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// List of packages to be inbounded.
 		/// </summary>
+		[JsonProperty("packagesToInbound")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("packagesToInbound")]
 		public List<DistributionPackageQuantity> PackagesToInbound { get; set; }
 	}
 }

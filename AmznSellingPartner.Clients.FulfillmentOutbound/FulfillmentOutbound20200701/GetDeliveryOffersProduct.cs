@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// Product identifier input that locates a product for MCF.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productIdentifier")]
+		[IsRequired]
 		public ProductIdentifier ProductIdentifier { get; set; }
 
 		/// <summary>

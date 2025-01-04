@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// The name of the person, business or institution at that address. For Amazon label only vendors, this
 		/// field will have the value `xxxxx` within the object `shipToParty`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
@@ -28,8 +28,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// First line of the address. For Amazon label only vendors, this field will have the value `xxxxx` within
 		/// the object `shipToParty`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("addressLine1")]
+		[IsRequired]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
@@ -70,8 +70,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// The state or region where person, business or institution is located.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("stateOrRegion")]
+		[IsRequired]
 		public string StateOrRegion { get; set; }
 
 		/// <summary>
@@ -84,8 +84,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// The two digit country code. In ISO 3166-1 alpha-2 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("countryCode")]
+		[IsRequired]
 		public string CountryCode { get; set; }
 
 		/// <summary>

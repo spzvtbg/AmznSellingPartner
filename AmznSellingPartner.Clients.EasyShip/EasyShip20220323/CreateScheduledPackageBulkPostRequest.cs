@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/easyShip/2022-03-23/packages/bulk")]
 	public class CreateScheduledPackageBulkPostRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// </summary>
 		[InBody("CreateScheduledPackagesRequest")]
 		[IsRequired]
-		[JsonProperty("CreateScheduledPackagesRequest")]
 		public CreateScheduledPackagesRequest CreateScheduledPackagesRequest { get; set; }
 	}
 }

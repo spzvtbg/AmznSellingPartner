@@ -9,27 +9,27 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class PublishRecord : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("locale")]
+		[IsRequired]
 		public LanguageTag Locale { get; set; }
 
-		[IsRequired]
 		[JsonProperty("asin")]
+		[IsRequired]
 		public Asin Asin { get; set; }
 
-		[IsRequired]
 		[JsonProperty("contentType")]
+		[IsRequired]
 		public ContentType ContentType { get; set; }
 
 		[JsonProperty("contentSubType")]
 		public ContentSubType ContentSubType { get; set; }
 
-		[IsRequired]
 		[JsonProperty("contentReferenceKey")]
+		[IsRequired]
 		public ContentReferenceKey ContentReferenceKey { get; set; }
 	}
 }

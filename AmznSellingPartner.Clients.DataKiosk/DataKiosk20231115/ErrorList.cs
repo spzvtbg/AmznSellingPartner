@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// <summary>
 		/// Error response returned when the request is unsuccessful.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

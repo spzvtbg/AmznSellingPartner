@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPut("/inbound/fba/2024-03-20/inboundPlans/{inboundPlanId}/shipments/{shipmentId}/sourceAddress")]
 	public class UpdateShipmentSourceAddressPutRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		[JsonProperty("inboundPlanId")]
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
@@ -26,7 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(38)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 
 		/// <summary>
@@ -34,7 +30,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public UpdateShipmentSourceAddressRequest Body { get; set; }
 	}
 }

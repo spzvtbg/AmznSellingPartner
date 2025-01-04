@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// The URI associated with an individual request within a batch. For `FeaturedOfferExpectedPrice`, this
 		/// is `/products/pricing/2022-05-01/offer/featuredOfferExpectedPrice`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("uri")]
+		[IsRequired]
 		public string Uri { get; set; }
 
-		[IsRequired]
 		[JsonProperty("method")]
+		[IsRequired]
 		public HttpMethod Method { get; set; }
 
 		[JsonProperty("body")]

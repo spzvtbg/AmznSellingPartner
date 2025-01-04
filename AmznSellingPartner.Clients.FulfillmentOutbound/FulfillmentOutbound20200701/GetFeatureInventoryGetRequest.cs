@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/fba/outbound/2020-07-01/features/inventory/{featureName}")]
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -23,7 +20,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InPath("featureName")]
 		[IsRequired]
-		[JsonProperty("featureName")]
 		public string FeatureName { get; set; }
 
 		/// <summary>
@@ -31,7 +27,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// page. A value of null will return the first page.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -40,7 +35,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// -MM-ddTHH:mm:ss.sssZ
 		/// </summary>
 		[InQuery("queryStartDate")]
-		[JsonProperty("queryStartDate")]
 		public DateTime QueryStartDate { get; set; }
 	}
 }

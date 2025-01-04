@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// <summary>
 		/// The unique identifier for each notification status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("feedbackActionCode")]
+		[IsRequired]
 		public FeedbackActionCode FeedbackActionCode { get; set; }
 	}
 }

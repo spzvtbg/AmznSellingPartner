@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class ServiceSelection : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("serviceId")]
+		[IsRequired]
 		public ServiceIds ServiceId { get; set; }
 	}
 }

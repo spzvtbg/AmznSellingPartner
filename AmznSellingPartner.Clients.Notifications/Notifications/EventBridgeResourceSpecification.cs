@@ -12,16 +12,16 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// <summary>
 		/// The AWS region in which you will be receiving the notifications.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("region")]
+		[IsRequired]
 		public string Region { get; set; }
 
 		/// <summary>
 		/// The identifier for the AWS account that is responsible for charges related to receiving notification
 		/// s.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("accountId")]
+		[IsRequired]
 		public string AccountId { get; set; }
 	}
 }

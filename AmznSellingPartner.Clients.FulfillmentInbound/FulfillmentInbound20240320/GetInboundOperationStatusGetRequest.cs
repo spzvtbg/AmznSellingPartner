@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/inbound/fba/2024-03-20/operations/{operationId}")]
 	public class GetInboundOperationStatusGetRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[MinLength(36)]
 		[MaxLength(38)]
 		[Pattern("^[a-zA-Z0-9-]*")]
-		[JsonProperty("operationId")]
 		public string OperationId { get; set; }
 	}
 }

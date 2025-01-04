@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// <summary>
 		/// A list of restricted resources. Maximum: 50
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("restrictedResources")]
+		[IsRequired]
 		public List<RestrictedResource> RestrictedResources { get; set; }
 	}
 }

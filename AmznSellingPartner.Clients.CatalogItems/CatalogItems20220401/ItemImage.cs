@@ -12,29 +12,29 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Variant of the image, such as `MAIN` or `PT01`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("variant")]
+		[IsRequired]
 		public Variant Variant { get; set; }
 
 		/// <summary>
 		/// Link, or URL, for the image.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("link")]
+		[IsRequired]
 		public string Link { get; set; }
 
 		/// <summary>
 		/// Height of the image in pixels.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("height")]
+		[IsRequired]
 		public int Height { get; set; }
 
 		/// <summary>
 		/// Width of the image in pixels.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("width")]
+		[IsRequired]
 		public int Width { get; set; }
 	}
 }

@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// until a specified date, or `NOT_EXEMPT` signifying no exemptions, and enforcement actions were already
 		/// applied.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public Status Status { get; set; }
 
 		/// <summary>

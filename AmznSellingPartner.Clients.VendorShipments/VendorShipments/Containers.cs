@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// The type of container.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("containerType")]
+		[IsRequired]
 		public ContainerType ContainerType { get; set; }
 
 		/// <summary>
@@ -30,8 +30,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// A list of carton identifiers.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("containerIdentifiers")]
+		[IsRequired]
 		public List<ContainerIdentification> ContainerIdentifiers { get; set; }
 
 		/// <summary>

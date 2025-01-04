@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/inbound/fba/2024-03-20/items/prepDetails")]
 	public class SetPrepDetailsPostRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public SetPrepDetailsRequest Body { get; set; }
 	}
 }

@@ -8,7 +8,7 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	/// </summary>
 	public class Schema : BaseClass
 	{
-		[JsonProperty("AdditionalValue")]
+		[JsonProperty("")]
 		public object AdditionalValue { get; set; }
 	}
 }

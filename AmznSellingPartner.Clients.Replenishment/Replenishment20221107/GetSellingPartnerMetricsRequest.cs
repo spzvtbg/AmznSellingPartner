@@ -17,21 +17,21 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// A time interval used to compute metrics.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("timeInterval")]
+		[IsRequired]
 		public TimeInterval TimeInterval { get; set; }
 
 		/// <summary>
 		/// The list of metrics requested. If no metric value is provided, data for all of the metrics will be r
 		/// eturned.
 		/// </summary>
+		[JsonProperty("metrics")]
 		[MinItems(1)]
 		[UniqueItems]
-		[JsonProperty("metrics")]
 		public List<Metric> Metrics { get; set; }
 
-		[IsRequired]
 		[JsonProperty("timePeriodType")]
+		[IsRequired]
 		public TimePeriodType TimePeriodType { get; set; }
 
 		/// <summary>
@@ -40,15 +40,15 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) to find the identifier
 		/// for the marketplace.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
 		/// <summary>
 		/// The list of replenishment program types for which to return metrics.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("programTypes")]
+		[IsRequired]
 		public ProgramTypes ProgramTypes { get; set; }
 	}
 }

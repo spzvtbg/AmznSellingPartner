@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	/// </summary>
 	public class TransportationOption : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("carrier")]
+		[IsRequired]
 		public Carrier Carrier { get; set; }
 
 		[JsonProperty("carrierAppointment")]
@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Identifies a list of preconditions for confirming the transportation option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("preconditions")]
+		[IsRequired]
 		public List<string> Preconditions { get; set; }
 
 		[JsonProperty("quote")]
@@ -31,11 +31,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
 		/// </summary>
+		[JsonProperty("shipmentId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 
 		/// <summary>
@@ -43,31 +43,31 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// `FREIGHT_LTL`, `FREIGHT_FTL_PALLET`, `FREIGHT_FTL_NONPALLET`, `OCEAN_LCL`, `OCEAN_FCL`, `AIR_SMALL_PARCEL`,
 		/// `AIR_SMALL_PARCEL_EXPRESS`.
 		/// </summary>
+		[JsonProperty("shippingMode")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("shippingMode")]
 		public string ShippingMode { get; set; }
 
 		/// <summary>
 		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`
 		/// .
 		/// </summary>
+		[JsonProperty("shippingSolution")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("shippingSolution")]
 		public string ShippingSolution { get; set; }
 
 		/// <summary>
 		/// Identifier of a transportation option. A transportation option represent one option for how to send a
 		/// shipment.
 		/// </summary>
+		[JsonProperty("transportationOptionId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("transportationOptionId")]
 		public string TransportationOptionId { get; set; }
 	}
 }

@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// <summary>
 		/// Error response returned when the request is unsuccessful.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

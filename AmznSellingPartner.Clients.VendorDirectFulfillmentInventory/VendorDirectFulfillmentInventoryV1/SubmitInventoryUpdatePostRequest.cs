@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/vendor/directFulfillment/inventory/v1/warehouses/{warehouseId}/items")]
 	public class SubmitInventoryUpdatePostRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public SubmitInventoryUpdateRequest Body { get; set; }
 
 		/// <summary>
@@ -20,7 +17,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// </summary>
 		[InPath("warehouseId")]
 		[IsRequired]
-		[JsonProperty("warehouseId")]
 		public string WarehouseId { get; set; }
 	}
 }

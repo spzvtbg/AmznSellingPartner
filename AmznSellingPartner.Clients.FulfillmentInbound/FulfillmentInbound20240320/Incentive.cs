@@ -12,32 +12,32 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Description of the incentive.
 		/// </summary>
+		[JsonProperty("description")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("description")]
 		public string Description { get; set; }
 
 		/// <summary>
 		/// Target of the incentive. Possible values: 'Placement Services', 'Fulfillment Fee Discount'.
 		/// </summary>
+		[JsonProperty("target")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("target")]
 		public string Target { get; set; }
 
 		/// <summary>
 		/// Type of incentive. Possible values: `FEE`, `DISCOUNT`.
 		/// </summary>
+		[JsonProperty("type")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("type")]
 		public string Type { get; set; }
 
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public Currency Value { get; set; }
 	}
 }

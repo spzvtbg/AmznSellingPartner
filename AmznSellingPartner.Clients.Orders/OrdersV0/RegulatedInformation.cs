@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// A list of regulated information fields as collected from the regulatory form.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Fields")]
+		[IsRequired]
 		public List<RegulatedInformationField> Fields { get; set; }
 	}
 }

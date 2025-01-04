@@ -12,27 +12,27 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The email address.
 		/// </summary>
+		[JsonProperty("email")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("email")]
 		public string Email { get; set; }
 
 		/// <summary>
 		/// The contact's name.
 		/// </summary>
+		[JsonProperty("name")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(50)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The phone number.
 		/// </summary>
+		[JsonProperty("phoneNumber")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(20)]
-		[JsonProperty("phoneNumber")]
 		public string PhoneNumber { get; set; }
 	}
 }

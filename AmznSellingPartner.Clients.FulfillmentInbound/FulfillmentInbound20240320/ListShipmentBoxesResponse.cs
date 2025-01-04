@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// A list of boxes in a shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("boxes")]
+		[IsRequired]
 		public List<Box> Boxes { get; set; }
 
 		[JsonProperty("pagination")]

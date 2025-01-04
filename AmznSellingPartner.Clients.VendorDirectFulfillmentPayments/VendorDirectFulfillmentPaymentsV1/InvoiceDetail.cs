@@ -16,15 +16,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// The unique invoice number.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoiceNumber")]
+		[IsRequired]
 		public string InvoiceNumber { get; set; }
 
 		/// <summary>
 		/// Invoice date.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoiceDate")]
+		[IsRequired]
 		public DateTime InvoiceDate { get; set; }
 
 		/// <summary>
@@ -36,15 +36,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// Name, address and tax details of the party receiving the payment of this invoice.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("remitToParty")]
+		[IsRequired]
 		public PartyIdentification RemitToParty { get; set; }
 
 		/// <summary>
 		/// Warehouse code of the vendor as in the order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipFromParty")]
+		[IsRequired]
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
@@ -68,8 +68,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// Total amount details of the invoice.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoiceTotal")]
+		[IsRequired]
 		public Money InvoiceTotal { get; set; }
 
 		/// <summary>
@@ -93,8 +93,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// Provides the details of the items in this invoice.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<InvoiceItem> Items { get; set; }
 	}
 }

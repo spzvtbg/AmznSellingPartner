@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/catalog/2022-04-01/items")]
 	public class SearchCatalogItemsGetRequest : BaseHttpRequest
 	{
@@ -14,7 +12,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[InQuery("identifiers")]
 		[MaxItems(20)]
-		[JsonProperty("identifiers")]
 		public CsvValue<string> Identifiers { get; set; }
 
 		/// <summary>
@@ -22,7 +19,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// provided.
 		/// </summary>
 		[InQuery("identifiersType")]
-		[JsonProperty("identifiersType")]
 		public IdentifiersType IdentifiersType { get; set; }
 
 		/// <summary>
@@ -31,21 +27,18 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
 		/// A comma-delimited list of data sets to include in the response. Default: `summaries`.
 		/// </summary>
 		[InQuery("includedData")]
-		[JsonProperty("includedData")]
 		public CsvValue<IncludedData> IncludedData { get; set; }
 
 		/// <summary>
 		/// Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace.
 		/// </summary>
 		[InQuery("locale")]
-		[JsonProperty("locale")]
 		public string Locale { get; set; }
 
 		/// <summary>
@@ -53,7 +46,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// is `SKU`.
 		/// </summary>
 		[InQuery("sellerId")]
-		[JsonProperty("sellerId")]
 		public string SellerId { get; set; }
 
 		/// <summary>
@@ -62,7 +54,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[InQuery("keywords")]
 		[MaxItems(20)]
-		[JsonProperty("keywords")]
 		public CsvValue<string> Keywords { get; set; }
 
 		/// <summary>
@@ -70,7 +61,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// be used with `identifiers`.
 		/// </summary>
 		[InQuery("brandNames")]
-		[JsonProperty("brandNames")]
 		public CsvValue<string> BrandNames { get; set; }
 
 		/// <summary>
@@ -78,7 +68,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// **Note:** Cannot be used with `identifiers`.
 		/// </summary>
 		[InQuery("classificationIds")]
-		[JsonProperty("classificationIds")]
 		public CsvValue<string> ClassificationIds { get; set; }
 
 		/// <summary>
@@ -86,14 +75,12 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// </summary>
 		[InQuery("pageSize")]
 		[Maximum(20)]
-		[JsonProperty("pageSize")]
 		public int PageSize { get; set; }
 
 		/// <summary>
 		/// A token to fetch a certain page when there are multiple pages worth of results.
 		/// </summary>
 		[InQuery("pageToken")]
-		[JsonProperty("pageToken")]
 		public string PageToken { get; set; }
 
 		/// <summary>
@@ -101,7 +88,6 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// the marketplace. **Note:** Cannot be used with `identifiers`.
 		/// </summary>
 		[InQuery("keywordsLocale")]
-		[JsonProperty("keywordsLocale")]
 		public string KeywordsLocale { get; set; }
 	}
 }

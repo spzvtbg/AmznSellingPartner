@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	/// </summary>
 	public class ListHandoverSlotsResponse : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("amazonOrderId")]
+		[IsRequired]
 		public AmazonOrderId AmazonOrderId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("timeSlots")]
+		[IsRequired]
 		public TimeSlots TimeSlots { get; set; }
 	}
 }

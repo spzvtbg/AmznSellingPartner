@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
+		[IsRequired]
 		public string ItemSequenceNumber { get; set; }
 
 		/// <summary>
@@ -33,22 +33,22 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// Item quantity invoiced.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoicedQuantity")]
+		[IsRequired]
 		public ItemQuantity InvoicedQuantity { get; set; }
 
 		/// <summary>
 		/// Net price (before tax) to vendor with currency details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("netCost")]
+		[IsRequired]
 		public Money NetCost { get; set; }
 
 		/// <summary>
 		/// The purchase order number for this order. Formatting Notes: 8-character alpha-numeric code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderNumber")]
+		[IsRequired]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>

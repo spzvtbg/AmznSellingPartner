@@ -20,14 +20,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
 		/// </summary>
+		[JsonProperty("msku")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		[JsonProperty("msku")]
 		public string Msku { get; set; }
 
-		[IsRequired]
 		[JsonProperty("prepCategory")]
+		[IsRequired]
 		public PrepCategory PrepCategory { get; set; }
 
 		[JsonProperty("prepOwnerConstraint")]
@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// A list of preparation types associated with a preparation category.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("prepTypes")]
+		[IsRequired]
 		public List<PrepType> PrepTypes { get; set; }
 	}
 }

@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Placement options generated for the inbound plan.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("placementOptions")]
+		[IsRequired]
 		public List<PlacementOption> PlacementOptions { get; set; }
 	}
 }

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPut("/fba/outbound/2020-07-01/fulfillmentOrders/{sellerFulfillmentOrderId}")]
 	public class UpdateFulfillmentOrderPutRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public UpdateFulfillmentOrderRequest Body { get; set; }
 
 		/// <summary>
@@ -21,7 +18,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[InPath("sellerFulfillmentOrderId")]
 		[IsRequired]
 		[MaxLength(40)]
-		[JsonProperty("sellerFulfillmentOrderId")]
 		public string SellerFulfillmentOrderId { get; set; }
 	}
 }

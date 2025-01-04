@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// A list of errors describing the failures.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

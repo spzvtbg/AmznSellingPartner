@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// The length dimension.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Length")]
+		[IsRequired]
 		public LabelDimension Length { get; set; }
 
 		/// <summary>
 		/// The width dimension.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Width")]
+		[IsRequired]
 		public LabelDimension Width { get; set; }
 
 		/// <summary>
 		/// The unit of measurement.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Unit")]
+		[IsRequired]
 		public UnitOfLength Unit { get; set; }
 	}
 }

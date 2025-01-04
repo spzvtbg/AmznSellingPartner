@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// outbound order ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderId")]
+		[IsRequired]
 		public string OrderId { get; set; }
 	}
 }

@@ -15,10 +15,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
+		[JsonProperty("quantity")]
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		[JsonProperty("quantity")]
 		public int Quantity { get; set; }
 
 		[JsonProperty("stackability")]

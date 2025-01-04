@@ -1,27 +1,43 @@
 ﻿namespace AmznSellingPartner.Clients.Attributes
 {
-    public class HttpMethodAttribute(string path) : AmznAttribute
+    using System;
+    using System.Net.Http;
+
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
+    public abstract class HttpMethodAttribute(string path, HttpMethod method) : Attribute
     {
         public string Path { get; } = path;
+
+        public HttpMethod Method { get; } = method;
     }
 
-    public class HttpGetAttribute(string path) : HttpMethodAttribute(path)
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
+    public class HttpGetAttribute(string path) : HttpMethodAttribute(path, HttpMethod.Get)
     {
+
     }
 
-    public class HttpDeleteAttribute(string path) : HttpMethodAttribute(path)
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
+    public class HttpDeleteAttribute(string path) : HttpMethodAttribute(path, HttpMethod.Delete)
     {
+
     }
 
-    public class HttpPatchAttribute(string path) : HttpMethodAttribute(path)
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
+    public class HttpPatchAttribute(string path) : HttpMethodAttribute(path, HttpMethod.Patch)
     {
+
     }
 
-    public class HttpPostAttribute(string path) : HttpMethodAttribute(path)
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
+    public class HttpPostAttribute(string path) : HttpMethodAttribute(path, HttpMethod.Post)
     {
+
     }
 
-    public class HttpPutAttribute(string path) : HttpMethodAttribute(path)
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
+    public class HttpPutAttribute(string path) : HttpMethodAttribute(path, HttpMethod.Put)
     {
+
     }
 }

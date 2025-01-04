@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// The date the purchase order was placed. Must be in ISO-8601 date/time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderDate")]
+		[IsRequired]
 		public DateTime PurchaseOrderDate { get; set; }
 
 		/// <summary>
@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// The date when current purchase order state was changed. Current purchase order state is available in
 		/// the field 'purchaseOrderState'. Must be in ISO-8601 date/time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderStateChangedDate")]
+		[IsRequired]
 		public DateTime PurchaseOrderStateChangedDate { get; set; }
 
 		/// <summary>
@@ -105,8 +105,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// A list of items in this purchase order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<OrderItem> Items { get; set; }
 	}
 }

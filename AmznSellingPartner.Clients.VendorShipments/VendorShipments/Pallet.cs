@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// A list of pallet identifiers.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("palletIdentifiers")]
+		[IsRequired]
 		public List<ContainerIdentification> PalletIdentifiers { get; set; }
 
 		/// <summary>

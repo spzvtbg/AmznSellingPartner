@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// <summary>
 		/// A list of invoices.
 		/// </summary>
-		[MaxItems(100)]
 		[JsonProperty("invoices")]
+		[MaxItems(100)]
 		public List<Invoice> Invoices { get; set; }
 
 		/// <summary>

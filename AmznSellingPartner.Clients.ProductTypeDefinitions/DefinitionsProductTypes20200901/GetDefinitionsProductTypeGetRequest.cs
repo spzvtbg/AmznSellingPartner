@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/definitions/2020-09-01/productTypes/{productType}")]
 	public class GetDefinitionsProductTypeGetRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[InPath("productType")]
 		[IsRequired]
-		[JsonProperty("productType")]
 		public string ProductType { get; set; }
 
 		/// <summary>
@@ -21,7 +18,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// the product type definition schema, such as brand names associated with the selling partner.
 		/// </summary>
 		[InQuery("sellerId")]
-		[JsonProperty("sellerId")]
 		public string SellerId { get; set; }
 
 		/// <summary>
@@ -30,7 +26,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -39,14 +34,12 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// the "LATEST" live version will be provided.
 		/// </summary>
 		[InQuery("productTypeVersion")]
-		[JsonProperty("productTypeVersion")]
 		public string ProductTypeVersion { get; set; }
 
 		/// <summary>
 		/// The name of the requirements set to retrieve requirements for.
 		/// </summary>
 		[InQuery("requirements")]
-		[JsonProperty("requirements")]
 		public Requirements Requirements { get; set; }
 
 		/// <summary>
@@ -55,7 +48,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// required attributes being present (such as for partial updates).
 		/// </summary>
 		[InQuery("requirementsEnforced")]
-		[JsonProperty("requirementsEnforced")]
 		public RequirementsEnforced RequirementsEnforced { get; set; }
 
 		/// <summary>
@@ -63,7 +55,6 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// of the first marketplace in the request.
 		/// </summary>
 		[InQuery("locale")]
-		[JsonProperty("locale")]
 		public Locale Locale { get; set; }
 	}
 }

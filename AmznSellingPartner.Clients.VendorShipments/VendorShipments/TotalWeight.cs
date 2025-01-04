@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// The unit of measure for the weight of items that are ordered by cases and support pricing by weight.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public UnitOfMeasure UnitOfMeasure { get; set; }
 
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public Decimal Amount { get; set; }
 	}
 }

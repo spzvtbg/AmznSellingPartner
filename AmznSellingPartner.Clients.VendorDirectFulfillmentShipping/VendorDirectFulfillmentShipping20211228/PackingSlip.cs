@@ -12,16 +12,16 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// Purchase order number of the shipment that the packing slip is for.
 		/// </summary>
+		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
-		[JsonProperty("purchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
 		/// A Base64encoded string of the packing slip PDF.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("content")]
+		[IsRequired]
 		public string Content { get; set; }
 
 		/// <summary>

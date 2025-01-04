@@ -12,25 +12,25 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// ISO 3166 standard alpha-2 country code.
 		/// </summary>
+		[JsonProperty("countryCode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("countryCode")]
 		public string CountryCode { get; set; }
 
 		/// <summary>
 		/// State.
 		/// </summary>
+		[JsonProperty("state")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("state")]
 		public string State { get; set; }
 
 		/// <summary>
 		/// An identifier for a warehouse, such as a FC, IXD, upstream storage.
 		/// </summary>
+		[JsonProperty("warehouseId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("warehouseId")]
 		public string WarehouseId { get; set; }
 	}
 }

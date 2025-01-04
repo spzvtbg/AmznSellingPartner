@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		[JsonProperty("FeesEstimateRequest")]
 		public FeesEstimateRequest FeesEstimateRequest { get; set; }
 
-		[IsRequired]
 		[JsonProperty("IdType")]
+		[IsRequired]
 		public IdType IdType { get; set; }
 
 		/// <summary>
 		/// The item identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("IdValue")]
+		[IsRequired]
 		public string IdValue { get; set; }
 	}
 }

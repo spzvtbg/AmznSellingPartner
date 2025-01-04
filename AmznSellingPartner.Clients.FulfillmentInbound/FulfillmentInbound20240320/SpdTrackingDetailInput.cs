@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// List of Small Parcel Delivery (SPD) tracking items input.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("spdTrackingItems")]
+		[IsRequired]
 		public List<SpdTrackingItemInput> SpdTrackingItems { get; set; }
 	}
 }

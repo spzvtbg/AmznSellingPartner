@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class ChannelDetails : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("channelType")]
+		[IsRequired]
 		public ChannelType ChannelType { get; set; }
 
 		[JsonProperty("amazonOrderDetails")]

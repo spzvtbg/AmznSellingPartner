@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// The name of the person, business, or institution.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The first line of the address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("addressLine1")]
+		[IsRequired]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>

@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class CollectOnDelivery : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public Currency Amount { get; set; }
 	}
 }

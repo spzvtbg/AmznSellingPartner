@@ -12,19 +12,19 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The seller SKU of the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerSku")]
+		[IsRequired]
 		public string SellerSku { get; set; }
 
 		/// <summary>
 		/// A fulfillment order item identifier submitted with a call to the `createFulfillmentOrder` operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerFulfillmentOrderItemId")]
+		[IsRequired]
 		public string SellerFulfillmentOrderItemId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public Quantity Quantity { get; set; }
 
 		/// <summary>
@@ -55,15 +55,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The item quantity that was cancelled by the seller.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("cancelledQuantity")]
+		[IsRequired]
 		public Quantity CancelledQuantity { get; set; }
 
 		/// <summary>
 		/// The item quantity that is unfulfillable.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unfulfillableQuantity")]
+		[IsRequired]
 		public Quantity UnfulfillableQuantity { get; set; }
 
 		/// <summary>

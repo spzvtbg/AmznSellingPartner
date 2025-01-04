@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/vendor/directFulfillment/orders/2021-12-28/purchaseOrders")]
@@ -14,7 +12,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// orders for all warehouses.
 		/// </summary>
 		[InQuery("shipFromPartyId")]
-		[JsonProperty("shipFromPartyId")]
 		public string ShipFromPartyId { get; set; }
 
 		/// <summary>
@@ -22,7 +19,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// orders that match any status.
 		/// </summary>
 		[InQuery("status")]
-		[JsonProperty("status")]
 		public Status Status { get; set; }
 
 		/// <summary>
@@ -31,7 +27,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		[InQuery("limit")]
 		[Minimum(1)]
 		[Maximum(100)]
-		[JsonProperty("limit")]
 		public long Limit { get; set; }
 
 		/// <summary>
@@ -40,7 +35,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[InQuery("createdAfter")]
 		[IsRequired]
-		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
@@ -49,14 +43,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[InQuery("createdBefore")]
 		[IsRequired]
-		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
 		/// Sort the list in ascending or descending order by order creation date.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
@@ -64,7 +56,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// is returned in the previous API call.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -72,7 +63,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// eturned.
 		/// </summary>
 		[InQuery("includeDetails")]
-		[JsonProperty("includeDetails")]
 		public bool IncludeDetails { get; set; }
 	}
 }

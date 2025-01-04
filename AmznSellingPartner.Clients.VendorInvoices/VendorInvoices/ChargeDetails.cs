@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Type of the charge applied.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public Type Type { get; set; }
 
 		/// <summary>
@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Total monetary amount related to this charge.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("chargeAmount")]
+		[IsRequired]
 		public Money ChargeAmount { get; set; }
 
 		/// <summary>

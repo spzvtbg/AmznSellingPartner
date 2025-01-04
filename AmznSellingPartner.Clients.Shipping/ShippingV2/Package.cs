@@ -9,16 +9,16 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class Package : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("dimensions")]
+		[IsRequired]
 		public Dimensions Dimensions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("weight")]
+		[IsRequired]
 		public Weight Weight { get; set; }
 
-		[IsRequired]
 		[JsonProperty("insuredValue")]
+		[IsRequired]
 		public Currency InsuredValue { get; set; }
 
 		/// <summary>
@@ -36,12 +36,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("charges")]
 		public ChargeList Charges { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageClientReferenceId")]
+		[IsRequired]
 		public PackageClientReferenceId PackageClientReferenceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public ItemList Items { get; set; }
 	}
 }

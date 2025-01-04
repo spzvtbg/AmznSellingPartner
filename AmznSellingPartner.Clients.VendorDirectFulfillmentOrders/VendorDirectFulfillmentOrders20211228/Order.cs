@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// The purchase order number for this order. Formatting Notes: alpha-numeric code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderNumber")]
+		[IsRequired]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>

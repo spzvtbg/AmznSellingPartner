@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The merchant SKU for the product.
 		/// </summary>
+		[JsonProperty("merchantSku")]
 		[IsRequired]
 		[MaxLength(50)]
-		[JsonProperty("merchantSku")]
 		public string MerchantSku { get; set; }
 	}
 }

@@ -14,16 +14,16 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// The date and time of the start of the Scheduled Delivery window. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("startDate")]
+		[IsRequired]
 		public Timestamp StartDate { get; set; }
 
 		/// <summary>
 		/// The date and time of the end of the Scheduled Delivery window. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("endDate")]
+		[IsRequired]
 		public Timestamp EndDate { get; set; }
 	}
 }

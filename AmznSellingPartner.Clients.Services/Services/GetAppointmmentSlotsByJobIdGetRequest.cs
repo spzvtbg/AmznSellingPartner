@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/service/v1/serviceJobs/{serviceJobId}/appointmentSlots")]
 	public class GetAppointmmentSlotsByJobIdGetRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("serviceJobId")]
 		public string ServiceJobId { get; set; }
 
 		/// <summary>
@@ -24,7 +21,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -33,7 +29,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// iguration.
 		/// </summary>
 		[InQuery("startTime")]
-		[JsonProperty("startTime")]
 		public string StartTime { get; set; }
 
 		/// <summary>
@@ -42,7 +37,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Maximum range of appointment slots can be 90 days.
 		/// </summary>
 		[InQuery("endTime")]
-		[JsonProperty("endTime")]
 		public string EndTime { get; set; }
 	}
 }

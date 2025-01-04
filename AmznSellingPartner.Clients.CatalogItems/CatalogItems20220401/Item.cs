@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	/// </summary>
 	public class Item : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("asin")]
+		[IsRequired]
 		public ItemAsin Asin { get; set; }
 
 		[JsonProperty("attributes")]

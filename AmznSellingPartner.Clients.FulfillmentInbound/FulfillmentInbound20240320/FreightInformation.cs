@@ -18,9 +18,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// `FC_92_5`, `FC_100`, `FC_110`, `FC_125`, `FC_150`, `FC_175`, `FC_200`, `FC_250`, `FC_300`, `FC_400`,
 		/// `FC_500`.
 		/// </summary>
+		[JsonProperty("freightClass")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("freightClass")]
 		public string FreightClass { get; set; }
 	}
 }

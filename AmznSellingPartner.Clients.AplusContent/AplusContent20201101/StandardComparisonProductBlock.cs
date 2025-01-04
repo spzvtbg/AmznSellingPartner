@@ -15,10 +15,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// The rank or index of this comparison product block within the module. Different blocks cannot occupy
 		/// the same position within a single module.
 		/// </summary>
+		[JsonProperty("position")]
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(6)]
-		[JsonProperty("position")]
 		public int Position { get; set; }
 
 		[JsonProperty("image")]
@@ -27,9 +27,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// The comparison product title.
 		/// </summary>
+		[JsonProperty("title")]
 		[MinLength(1)]
 		[MaxLength(80)]
-		[JsonProperty("title")]
 		public string Title { get; set; }
 
 		[JsonProperty("asin")]
@@ -44,9 +44,9 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// Comparison metrics for the product.
 		/// </summary>
+		[JsonProperty("metrics")]
 		[MinItems(0)]
 		[MaxItems(10)]
-		[JsonProperty("metrics")]
 		public List<PlainTextItem> Metrics { get; set; }
 	}
 }

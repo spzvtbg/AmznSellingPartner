@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// When present, pass this string token in the next request to return the next response page.
 		/// </summary>
+		[JsonProperty("nextToken")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 	}
 }

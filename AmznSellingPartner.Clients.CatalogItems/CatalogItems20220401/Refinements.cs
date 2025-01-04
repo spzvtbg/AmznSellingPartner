@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Brand search refinements.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("brands")]
+		[IsRequired]
 		public List<BrandRefinement> Brands { get; set; }
 
 		/// <summary>
 		/// Classification search refinements.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("classifications")]
+		[IsRequired]
 		public List<ClassificationRefinement> Classifications { get; set; }
 	}
 }

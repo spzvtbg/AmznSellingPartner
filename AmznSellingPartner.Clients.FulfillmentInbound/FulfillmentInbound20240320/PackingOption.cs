@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Discount for the offered option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("discounts")]
+		[IsRequired]
 		public List<Incentive> Discounts { get; set; }
 
 		/// <summary>
@@ -30,41 +30,41 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Fee for the offered option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("fees")]
+		[IsRequired]
 		public List<Incentive> Fees { get; set; }
 
 		/// <summary>
 		/// Packing group IDs.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("packingGroups")]
+		[IsRequired]
 		public List<string> PackingGroups { get; set; }
 
 		/// <summary>
 		/// Identifier of a packing option.
 		/// </summary>
+		[JsonProperty("packingOptionId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("packingOptionId")]
 		public string PackingOptionId { get; set; }
 
 		/// <summary>
 		/// The status of the packing option. Possible values: `OFFERED`, `ACCEPTED`, `EXPIRED`.
 		/// </summary>
+		[JsonProperty("status")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("status")]
 		public string Status { get; set; }
 
 		/// <summary>
 		/// List of supported shipping modes.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("supportedShippingConfigurations")]
+		[IsRequired]
 		public List<ShippingConfiguration> SupportedShippingConfigurations { get; set; }
 	}
 }

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/vendor/orders/v1/purchaseOrdersStatus")]
@@ -15,21 +13,18 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		[InQuery("limit")]
 		[Minimum(1)]
 		[Maximum(100)]
-		[JsonProperty("limit")]
 		public long Limit { get; set; }
 
 		/// <summary>
 		/// Sort in ascending or descending order by purchase order creation date.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
 		/// Used for pagination when there are more purchase orders than the specified result size limit.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -37,7 +32,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
@@ -45,7 +39,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
@@ -53,7 +46,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedAfter")]
-		[JsonProperty("updatedAfter")]
 		public DateTime UpdatedAfter { get; set; }
 
 		/// <summary>
@@ -61,14 +53,12 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedBefore")]
-		[JsonProperty("updatedBefore")]
 		public DateTime UpdatedBefore { get; set; }
 
 		/// <summary>
 		/// Provides purchase order status for the specified purchase order number.
 		/// </summary>
 		[InQuery("purchaseOrderNumber")]
-		[JsonProperty("purchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
@@ -76,7 +66,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// will return purchase orders for all statuses.
 		/// </summary>
 		[InQuery("purchaseOrderStatus")]
-		[JsonProperty("purchaseOrderStatus")]
 		public PurchaseOrderStatus PurchaseOrderStatus { get; set; }
 
 		/// <summary>
@@ -84,7 +73,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// included in the filter, purchase orders for all confirmation statuses are included.
 		/// </summary>
 		[InQuery("itemConfirmationStatus")]
-		[JsonProperty("itemConfirmationStatus")]
 		public ItemConfirmationStatus ItemConfirmationStatus { get; set; }
 
 		/// <summary>
@@ -92,7 +80,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// is not included in the filter, purchase orders for all receive statuses are included.
 		/// </summary>
 		[InQuery("itemReceiveStatus")]
-		[JsonProperty("itemReceiveStatus")]
 		public ItemReceiveStatus ItemReceiveStatus { get; set; }
 
 		/// <summary>
@@ -101,7 +88,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// in the vendor group used to authorize API client application are returned.
 		/// </summary>
 		[InQuery("orderingVendorCode")]
-		[JsonProperty("orderingVendorCode")]
 		public string OrderingVendorCode { get; set; }
 
 		/// <summary>
@@ -111,7 +97,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// orders.
 		/// </summary>
 		[InQuery("shipToPartyId")]
-		[JsonProperty("shipToPartyId")]
 		public string ShipToPartyId { get; set; }
 	}
 }

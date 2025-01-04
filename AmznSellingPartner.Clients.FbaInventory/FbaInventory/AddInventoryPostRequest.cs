@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/fba/inventory/v1/items/inventory")]
 	public class AddInventoryPostRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InHeader("x-amzn-idempotency-token")]
 		[IsRequired]
-		[JsonProperty("x-amzn-idempotency-token")]
 		public string XAmznIdempotencyToken { get; set; }
 
 		/// <summary>
@@ -20,7 +17,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InBody("addInventoryRequestBody")]
 		[IsRequired]
-		[JsonProperty("addInventoryRequestBody")]
 		public AddInventoryRequest AddInventoryRequestBody { get; set; }
 	}
 }

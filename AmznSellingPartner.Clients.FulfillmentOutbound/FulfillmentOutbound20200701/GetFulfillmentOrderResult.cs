@@ -9,23 +9,23 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	/// </summary>
 	public class GetFulfillmentOrderResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("fulfillmentOrder")]
+		[IsRequired]
 		public FulfillmentOrder FulfillmentOrder { get; set; }
 
-		[IsRequired]
 		[JsonProperty("fulfillmentOrderItems")]
+		[IsRequired]
 		public FulfillmentOrderItemList FulfillmentOrderItems { get; set; }
 
 		[JsonProperty("fulfillmentShipments")]
 		public FulfillmentShipmentList FulfillmentShipments { get; set; }
 
-		[IsRequired]
 		[JsonProperty("returnItems")]
+		[IsRequired]
 		public ReturnItemList ReturnItems { get; set; }
 
-		[IsRequired]
 		[JsonProperty("returnAuthorizations")]
+		[IsRequired]
 		public ReturnAuthorizationList ReturnAuthorizations { get; set; }
 
 		[JsonProperty("paymentInformation")]

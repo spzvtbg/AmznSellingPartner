@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// <summary>
 		/// An array of individual error objects containing error details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

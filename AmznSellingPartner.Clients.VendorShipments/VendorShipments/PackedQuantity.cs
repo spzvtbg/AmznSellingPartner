@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// cartons or pallets within the shipment, please provide this at the appropriate carton or pallet leve
 		/// l.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public int Amount { get; set; }
 
 		/// <summary>
 		/// Unit of measure for the shipped quantity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public UnitOfMeasure UnitOfMeasure { get; set; }
 
 		/// <summary>

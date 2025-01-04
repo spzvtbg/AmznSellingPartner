@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// The sort order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("order")]
+		[IsRequired]
 		public SortOrder Order { get; set; }
 
-		[IsRequired]
 		[JsonProperty("key")]
+		[IsRequired]
 		public ListOfferMetricsSortKey Key { get; set; }
 	}
 }

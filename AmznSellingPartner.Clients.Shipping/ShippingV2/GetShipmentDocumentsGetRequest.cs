@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/shipping/v2/shipments/{shipmentId}/documents")]
 	public class GetShipmentDocumentsGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[InPath("shipmentId")]
 		[IsRequired]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 
 		/// <summary>
@@ -21,7 +18,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[InQuery("packageClientReferenceId")]
 		[IsRequired]
-		[JsonProperty("packageClientReferenceId")]
 		public string PackageClientReferenceId { get; set; }
 
 		/// <summary>
@@ -29,7 +25,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// tion.
 		/// </summary>
 		[InQuery("format")]
-		[JsonProperty("format")]
 		public string Format { get; set; }
 
 		/// <summary>
@@ -37,14 +32,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// resolutions returned in the response to the getRates operation.
 		/// </summary>
 		[InQuery("dpi")]
-		[JsonProperty("dpi")]
 		public double Dpi { get; set; }
 
 		/// <summary>
 		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
-		[JsonProperty("x-amzn-shipping-business-id")]
 		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; }
 	}
 }

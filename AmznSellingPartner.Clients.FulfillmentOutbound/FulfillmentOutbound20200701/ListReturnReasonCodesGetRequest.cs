@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/fba/outbound/2020-07-01/returnReasonCodes")]
 	public class ListReturnReasonCodesGetRequest : BaseHttpRequest
 	{
@@ -12,14 +10,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InQuery("sellerSku")]
 		[IsRequired]
-		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; }
 
 		/// <summary>
 		/// The marketplace for which the seller wants return reason codes.
 		/// </summary>
 		[InQuery("marketplaceId")]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -27,7 +23,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// uses this value to determine the marketplace for which the seller wants return reason codes.
 		/// </summary>
 		[InQuery("sellerFulfillmentOrderId")]
-		[JsonProperty("sellerFulfillmentOrderId")]
 		public string SellerFulfillmentOrderId { get; set; }
 
 		/// <summary>
@@ -35,7 +30,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// be translated into.
 		/// </summary>
 		[InQuery("language")]
-		[JsonProperty("language")]
 		public string Language { get; set; }
 	}
 }

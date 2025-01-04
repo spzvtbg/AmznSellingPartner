@@ -15,16 +15,16 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// List of inbound shipments part of this order.
 		/// </summary>
+		[JsonProperty("channelPlacedInboundShipments")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("channelPlacedInboundShipments")]
 		public List<InboundShipment> ChannelPlacedInboundShipments { get; set; }
 
 		/// <summary>
 		/// Date when this order was created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("createdAt")]
+		[IsRequired]
 		public DateTime CreatedAt { get; set; }
 
 		/// <summary>
@@ -36,37 +36,37 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Inbound order ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderId")]
+		[IsRequired]
 		public string OrderId { get; set; }
 
 		/// <summary>
 		/// Inbound order status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderStatus")]
+		[IsRequired]
 		public InboundStatus OrderStatus { get; set; }
 
 		/// <summary>
 		/// Inbound order version.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderVersion")]
+		[IsRequired]
 		public string OrderVersion { get; set; }
 
 		/// <summary>
 		/// Origin address from where the inbound order will be shipped.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("originAddress")]
+		[IsRequired]
 		public Address OriginAddress { get; set; }
 
 		/// <summary>
 		/// List of packages to be inbounded.
 		/// </summary>
+		[JsonProperty("packagesToInbound")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("packagesToInbound")]
 		public List<DistributionPackageQuantity> PackagesToInbound { get; set; }
 
 		[JsonProperty("preferences")]

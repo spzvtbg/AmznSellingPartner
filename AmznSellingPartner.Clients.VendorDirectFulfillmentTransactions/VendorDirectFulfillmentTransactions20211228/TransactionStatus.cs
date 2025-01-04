@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 	/// </summary>
 	public class TransactionStatus : BaseClass
 	{
-		[JsonProperty("transactionStatusValue")]
+		[JsonProperty("transactionStatus")]
 		public Transaction TransactionStatusValue { get; set; }
 	}
 }

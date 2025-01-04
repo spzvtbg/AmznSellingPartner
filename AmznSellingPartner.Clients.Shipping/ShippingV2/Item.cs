@@ -29,8 +29,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The number of units. This value is required.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public int Quantity { get; set; }
 
 		[JsonProperty("weight")]

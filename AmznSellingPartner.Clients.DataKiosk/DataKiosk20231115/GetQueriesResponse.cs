@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// <summary>
 		/// The Data Kiosk queries.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("queries")]
+		[IsRequired]
 		public QueryList Queries { get; set; }
 
 		/// <summary>

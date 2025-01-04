@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class Event : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("eventCode")]
+		[IsRequired]
 		public EventCode EventCode { get; set; }
 
 		[JsonProperty("location")]
@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The ISO 8601 formatted timestamp of the event.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("eventTime")]
+		[IsRequired]
 		public DateTime EventTime { get; set; }
 	}
 }

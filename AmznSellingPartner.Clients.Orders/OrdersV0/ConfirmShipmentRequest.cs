@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	/// </summary>
 	public class ConfirmShipmentRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("packageDetail")]
+		[IsRequired]
 		public PackageDetail PackageDetail { get; set; }
 
 		/// <summary>
@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		[JsonProperty("codCollectionMethod")]
 		public CodCollectionMethod CodCollectionMethod { get; set; }
 
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 	}
 }

@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Amazon marketplace identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>

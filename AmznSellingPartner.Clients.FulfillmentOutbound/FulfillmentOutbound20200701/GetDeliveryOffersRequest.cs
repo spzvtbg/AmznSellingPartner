@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The product details for the delivery offer.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("product")]
+		[IsRequired]
 		public GetDeliveryOffersProduct Product { get; set; }
 
 		/// <summary>
 		/// The terms for the delivery offer.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("terms")]
+		[IsRequired]
 		public GetDeliveryOffersTerms Terms { get; set; }
 	}
 }

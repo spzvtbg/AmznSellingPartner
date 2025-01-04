@@ -12,24 +12,24 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// The code that identifies the type of error condition.
 		/// </summary>
+		[JsonProperty("code")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("code")]
 		public string Code { get; set; }
 
 		/// <summary>
 		/// A human readable description of the error condition.
 		/// </summary>
+		[JsonProperty("message")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("message")]
 		public string Message { get; set; }
 
 		/// <summary>
 		/// Additional information, if available, to clarify the error condition.
 		/// </summary>
-		[MinLength(1)]
 		[JsonProperty("details")]
+		[MinLength(1)]
 		public string Details { get; set; }
 	}
 }

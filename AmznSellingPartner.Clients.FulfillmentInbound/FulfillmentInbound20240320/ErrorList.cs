@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// List of errors.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

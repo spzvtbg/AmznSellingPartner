@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// <summary>
 		/// The type of fee charged to a seller.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("FeeType")]
+		[IsRequired]
 		public string FeeType { get; set; }
 
 		/// <summary>
 		/// The amount charged for a given fee.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("FeeAmount")]
+		[IsRequired]
 		public MoneyType FeeAmount { get; set; }
 
 		/// <summary>
@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// <summary>
 		/// The final fee amount for a given fee.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("FinalFee")]
+		[IsRequired]
 		public MoneyType FinalFee { get; set; }
 
 		[JsonProperty("IncludedFeeDetailList")]

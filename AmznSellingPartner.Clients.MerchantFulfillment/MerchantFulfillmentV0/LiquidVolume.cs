@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// The unit of measurement.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Unit")]
+		[IsRequired]
 		public Unit Unit { get; set; }
 
 		/// <summary>
 		/// The measurement value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Value")]
+		[IsRequired]
 		public double Value { get; set; }
 	}
 }

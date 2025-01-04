@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	/// </summary>
 	public class UpdateShipmentStatusRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("shipmentStatus")]
+		[IsRequired]
 		public ShipmentStatus ShipmentStatus { get; set; }
 
 		[JsonProperty("orderItems")]

@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The link, or URL, to the image.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("link")]
+		[IsRequired]
 		public string Link { get; set; }
 
 		/// <summary>
 		/// The height of the image in pixels.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("height")]
+		[IsRequired]
 		public int Height { get; set; }
 
 		/// <summary>
 		/// The width of the image in pixels.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("width")]
+		[IsRequired]
 		public int Width { get; set; }
 	}
 }

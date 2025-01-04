@@ -7,7 +7,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	/// </summary>
 	public class ReportOptions : BaseClass
 	{
-		[JsonProperty("AdditionalValue")]
+		[JsonProperty("")]
 		public string AdditionalValue { get; set; }
 	}
 }

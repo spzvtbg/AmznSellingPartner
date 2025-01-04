@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Unique Transportation ID created by Vendor (Should not be used over the last 365 days).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("vendorShipmentIdentifier")]
+		[IsRequired]
 		public string VendorShipmentIdentifier { get; set; }
 
 		/// <summary>
@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// transactiontype has a unique set of operation and there are corresponding details to be populated for
 		/// each operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("transactionType")]
+		[IsRequired]
 		public TransactionType TransactionType { get; set; }
 
 		/// <summary>
@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Date on which the transportation request was submitted.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("transactionDate")]
+		[IsRequired]
 		public DateTime TransactionDate { get; set; }
 
 		/// <summary>
@@ -92,22 +92,22 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Name/Address and tax details of the selling party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
 		/// Name/Address and tax details of the ship from party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipFromParty")]
+		[IsRequired]
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
 		/// Name/Address of the destination warehouse where the shipment is being shipped to.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipToParty")]
+		[IsRequired]
 		public PartyIdentification ShipToParty { get; set; }
 
 		/// <summary>

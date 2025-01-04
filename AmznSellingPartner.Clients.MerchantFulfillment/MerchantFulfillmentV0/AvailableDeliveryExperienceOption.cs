@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	/// </summary>
 	public class AvailableDeliveryExperienceOption : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("DeliveryExperienceOption")]
+		[IsRequired]
 		public DeliveryExperienceOption DeliveryExperienceOption { get; set; }
 
-		[IsRequired]
 		[JsonProperty("Charge")]
+		[IsRequired]
 		public CurrencyAmount Charge { get; set; }
 	}
 }

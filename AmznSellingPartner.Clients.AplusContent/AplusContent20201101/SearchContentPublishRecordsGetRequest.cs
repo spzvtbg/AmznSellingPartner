@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/aplus/2020-11-01/contentPublishRecords")]
 	public class SearchContentPublishRecordsGetRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("marketplaceId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -22,7 +19,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("asin")]
 		[IsRequired]
 		[MinLength(10)]
-		[JsonProperty("asin")]
 		public string Asin { get; set; }
 
 		/// <summary>
@@ -34,7 +30,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// </summary>
 		[InQuery("pageToken")]
 		[MinLength(1)]
-		[JsonProperty("pageToken")]
 		public string PageToken { get; set; }
 	}
 }

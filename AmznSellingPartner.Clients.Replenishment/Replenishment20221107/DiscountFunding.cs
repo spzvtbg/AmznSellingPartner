@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// Filters the results to only include offers with the percentage specified.
 		/// </summary>
+		[JsonProperty("percentage")]
 		[MinItems(1)]
 		[MaxItems(10)]
 		[UniqueItems]
-		[JsonProperty("percentage")]
 		public List<long> Percentage { get; set; }
 	}
 }

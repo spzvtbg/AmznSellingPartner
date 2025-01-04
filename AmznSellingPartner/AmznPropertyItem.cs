@@ -11,7 +11,9 @@
         public string Description { get; set; }
 
         internal virtual CsProperty OnDeserialized(string name, CsContext context) 
-              => new CsProperty().HasDescription(this.Description);
+              => new CsProperty()
+                    .HasDescription(this.Description)
+                    .HasJsonProperty(true);
     }
 
     internal class AmznPropertyItemRef : AmznPropertyItem

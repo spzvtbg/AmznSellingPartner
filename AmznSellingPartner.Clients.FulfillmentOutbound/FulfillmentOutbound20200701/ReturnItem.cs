@@ -12,29 +12,29 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// An identifier assigned by the seller to the return item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerReturnItemId")]
+		[IsRequired]
 		public string SellerReturnItemId { get; set; }
 
 		/// <summary>
 		/// The identifier assigned to the item by the seller when the fulfillment order was created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerFulfillmentOrderItemId")]
+		[IsRequired]
 		public string SellerFulfillmentOrderItemId { get; set; }
 
 		/// <summary>
 		/// The identifier for the shipment that is associated with the return item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("amazonShipmentId")]
+		[IsRequired]
 		public string AmazonShipmentId { get; set; }
 
 		/// <summary>
 		/// The return reason code assigned to the return item by the seller.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerReturnReasonCode")]
+		[IsRequired]
 		public string SellerReturnReasonCode { get; set; }
 
 		/// <summary>
@@ -52,15 +52,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// Indicates if the return item has been processed by an Amazon fulfillment center.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public FulfillmentReturnItemStatus Status { get; set; }
 
 		/// <summary>
 		/// Indicates when the status last changed.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("statusChangedDate")]
+		[IsRequired]
 		public Timestamp StatusChangedDate { get; set; }
 
 		/// <summary>

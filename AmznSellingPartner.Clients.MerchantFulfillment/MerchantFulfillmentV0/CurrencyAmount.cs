@@ -12,16 +12,16 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// Three-digit currency code in ISO 4217 format.
 		/// </summary>
+		[JsonProperty("CurrencyCode")]
 		[IsRequired]
 		[MaxLength(3)]
-		[JsonProperty("CurrencyCode")]
 		public string CurrencyCode { get; set; }
 
 		/// <summary>
 		/// The currency amount.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Amount")]
+		[IsRequired]
 		public double Amount { get; set; }
 	}
 }

@@ -9,16 +9,16 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	/// </summary>
 	public class CreateScheduledPackageRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("amazonOrderId")]
+		[IsRequired]
 		public AmazonOrderId AmazonOrderId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public String MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageDetails")]
+		[IsRequired]
 		public PackageDetails PackageDetails { get; set; }
 	}
 }

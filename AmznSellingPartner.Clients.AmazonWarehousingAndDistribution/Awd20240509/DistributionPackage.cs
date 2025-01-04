@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// The contents appropriate for the type.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("contents")]
+		[IsRequired]
 		public DistributionPackageContents Contents { get; set; }
 
 		/// <summary>
 		/// Measurements of a package, including weight, volume, and dimensions.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("measurements")]
+		[IsRequired]
 		public MeasurementData Measurements { get; set; }
 
 		/// <summary>
 		/// Type of distribution package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public DistributionPackageType Type { get; set; }
 	}
 }

@@ -15,15 +15,15 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// <summary>
 		/// The identifier for the feed. This identifier is unique only in combination with a seller ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("feedId")]
+		[IsRequired]
 		public string FeedId { get; set; }
 
 		/// <summary>
 		/// The feed type.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("feedType")]
+		[IsRequired]
 		public string FeedType { get; set; }
 
 		/// <summary>
@@ -35,15 +35,15 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// <summary>
 		/// The date and time when the feed was created, in ISO 8601 date time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("createdTime")]
+		[IsRequired]
 		public DateTime CreatedTime { get; set; }
 
 		/// <summary>
 		/// The processing status of the feed.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("processingStatus")]
+		[IsRequired]
 		public ProcessingStatus ProcessingStatus { get; set; }
 
 		/// <summary>

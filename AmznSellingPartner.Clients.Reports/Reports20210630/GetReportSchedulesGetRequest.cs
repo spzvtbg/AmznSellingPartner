@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/reports/2021-06-30/schedules")]
 	public class GetReportSchedulesGetRequest : BaseHttpRequest
 	{
@@ -16,7 +14,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(10)]
-		[JsonProperty("reportTypes")]
 		public CsvValue<string> ReportTypes { get; set; }
 	}
 }

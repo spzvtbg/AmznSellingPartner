@@ -22,19 +22,19 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Details on SKU eligibility for each inbound package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("packagesToInbound")]
+		[IsRequired]
 		public List<SkuEligibility> PackagesToInbound { get; set; }
 
 		/// <summary>
 		/// Timestamp when the eligibility check is performed.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("previewedAt")]
+		[IsRequired]
 		public DateTime PreviewedAt { get; set; }
 
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public InboundEligibilityStatus Status { get; set; }
 	}
 }

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/aplus/2020-11-01/contentDocuments/{contentReferenceKey}/suspendSubmissions")]
 	public class PostContentDocumentSuspendSubmissionPostRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InPath("contentReferenceKey")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("contentReferenceKey")]
 		public string ContentReferenceKey { get; set; }
 
 		/// <summary>
@@ -24,7 +21,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("marketplaceId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 	}
 }

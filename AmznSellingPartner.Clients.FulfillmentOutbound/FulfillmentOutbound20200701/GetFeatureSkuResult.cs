@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The requested marketplace.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
 		/// The name of the feature.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("featureName")]
+		[IsRequired]
 		public string FeatureName { get; set; }
 
 		/// <summary>
 		/// When true, the seller SKU is eligible for the requested feature.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isEligible")]
+		[IsRequired]
 		public bool IsEligible { get; set; }
 
 		/// <summary>

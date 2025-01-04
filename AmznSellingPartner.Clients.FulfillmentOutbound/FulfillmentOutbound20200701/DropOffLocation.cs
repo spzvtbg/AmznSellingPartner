@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// Specifies the preferred location to leave the package at the destination address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public Type Type { get; set; }
 
 		/// <summary>

@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Information needed to confirm one of the available transportation options.
 		/// </summary>
+		[JsonProperty("transportationSelections")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("transportationSelections")]
 		public List<TransportationSelection> TransportationSelections { get; set; }
 	}
 }

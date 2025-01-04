@@ -12,19 +12,19 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// Data for printing labels encoded into a Base64, GZip-compressed string.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Contents")]
+		[IsRequired]
 		public string Contents { get; set; }
 
-		[IsRequired]
 		[JsonProperty("FileType")]
+		[IsRequired]
 		public FileType FileType { get; set; }
 
 		/// <summary>
 		/// An MD5 hash to validate the PDF document data, in the form of a Base64 string.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Checksum")]
+		[IsRequired]
 		public string Checksum { get; set; }
 	}
 }

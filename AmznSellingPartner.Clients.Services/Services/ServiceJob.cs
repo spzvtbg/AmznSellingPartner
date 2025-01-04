@@ -70,16 +70,16 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// The marketplace identifier.
 		/// </summary>
-		[Pattern("^[A-Z0-9]*")]
 		[JsonProperty("marketplaceId")]
+		[Pattern("^[A-Z0-9]*")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
 		/// The Amazon-defined identifier for the region scope.
 		/// </summary>
+		[JsonProperty("storeId")]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("storeId")]
 		public string StoreId { get; set; }
 
 		/// <summary>

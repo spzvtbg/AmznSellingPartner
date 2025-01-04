@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// An Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("AmazonOrderId")]
+		[IsRequired]
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
@@ -25,23 +25,23 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The date when the order was created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("PurchaseDate")]
+		[IsRequired]
 		public string PurchaseDate { get; set; }
 
 		/// <summary>
 		/// The date when the order was last updated.  __Note__: `LastUpdateDate` is returned with an incorrect date
 		/// for orders that were last updated before 2009-04-01.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("LastUpdateDate")]
+		[IsRequired]
 		public string LastUpdateDate { get; set; }
 
 		/// <summary>
 		/// The current order status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("OrderStatus")]
+		[IsRequired]
 		public OrderStatus OrderStatus { get; set; }
 
 		/// <summary>

@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// The quantity of this item ordered.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderedQuantity")]
+		[IsRequired]
 		public ItemQuantity OrderedQuantity { get; set; }
 
 		/// <summary>
@@ -63,8 +63,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// This is used to indicate acknowledged quantity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemAcknowledgements")]
+		[IsRequired]
 		public List<OrderItemAcknowledgement> ItemAcknowledgements { get; set; }
 	}
 }

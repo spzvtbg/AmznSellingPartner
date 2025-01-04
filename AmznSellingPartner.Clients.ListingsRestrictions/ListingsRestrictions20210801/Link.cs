@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// <summary>
 		/// The URI of the related resource.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("resource")]
+		[IsRequired]
 		public string Resource { get; set; }
 
 		/// <summary>
 		/// The HTTP verb used to interact with the related resource.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("verb")]
+		[IsRequired]
 		public Verb Verb { get; set; }
 
 		/// <summary>

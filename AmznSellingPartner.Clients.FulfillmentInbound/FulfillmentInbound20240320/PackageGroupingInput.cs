@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Box level information being provided.
 		/// </summary>
+		[JsonProperty("boxes")]
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(5000)]
-		[JsonProperty("boxes")]
 		public List<BoxInput> Boxes { get; set; }
 
 		/// <summary>
@@ -25,10 +25,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// provided before placement confirmation, and it must belong to the confirmed `PackingOption`. One of `ShipmentId`
 		/// or `PackingGroupId` must be provided with every request.
 		/// </summary>
+		[JsonProperty("packingGroupId")]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("packingGroupId")]
 		public string PackingGroupId { get; set; }
 
 		/// <summary>
@@ -36,10 +36,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// after placement confirmation, and the shipment must belong to the confirmed placement option. One of
 		/// `ShipmentId` or `PackingGroupId` must be provided with every request.
 		/// </summary>
+		[JsonProperty("shipmentId")]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 	}
 }

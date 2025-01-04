@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Sales.Sales
 		/// <summary>
 		/// Three-digit currency code. In ISO 4217 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("currencyCode")]
+		[IsRequired]
 		public string CurrencyCode { get; set; }
 
 		/// <summary>
 		/// The currency amount.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public Decimal Amount { get; set; }
 	}
 }

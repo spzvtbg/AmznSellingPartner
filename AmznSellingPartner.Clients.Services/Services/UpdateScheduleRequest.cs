@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// List of schedule objects to define the normal working hours of a resource.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("schedules")]
+		[IsRequired]
 		public AvailabilityRecords Schedules { get; set; }
 	}
 }

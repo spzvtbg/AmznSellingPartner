@@ -16,19 +16,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Primary key to uniquely identify a Package (Box or Pallet).
 		/// </summary>
+		[JsonProperty("packageId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("packageId")]
 		public string PackageId { get; set; }
 
 		/// <summary>
 		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
+		[JsonProperty("quantity")]
 		[Minimum(1)]
 		[Maximum(10000)]
-		[JsonProperty("quantity")]
 		public int Quantity { get; set; }
 
 		[JsonProperty("stackability")]

@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	/// </summary>
 	public class UpdateScheduledPackagesRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public String MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("updatePackageDetailsList")]
+		[IsRequired]
 		public UpdatePackageDetailsList UpdatePackageDetailsList { get; set; }
 	}
 }

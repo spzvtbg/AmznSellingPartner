@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
 		/// for more information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportType")]
+		[IsRequired]
 		public string ReportType { get; set; }
 
 		/// <summary>
@@ -43,10 +43,10 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// A list of marketplace identifiers. The report document's contents will contain data for all of the specified
 		/// marketplaces, unless the report type indicates otherwise.
 		/// </summary>
+		[JsonProperty("marketplaceIds")]
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(25)]
-		[JsonProperty("marketplaceIds")]
 		public List<string> MarketplaceIds { get; set; }
 	}
 }

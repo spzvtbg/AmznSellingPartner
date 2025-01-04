@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// A list of content update previews in a shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("contentUpdatePreviews")]
+		[IsRequired]
 		public List<ContentUpdatePreview> ContentUpdatePreviews { get; set; }
 
 		[JsonProperty("pagination")]

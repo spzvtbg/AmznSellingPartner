@@ -12,29 +12,29 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// An Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("AmazonOrderId")]
+		[IsRequired]
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
 		/// The regulated information collected during purchase and used to verify the order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("RegulatedInformation")]
+		[IsRequired]
 		public RegulatedInformation RegulatedInformation { get; set; }
 
 		/// <summary>
 		/// When true, the order requires attaching a dosage information label when shipped.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("RequiresDosageLabel")]
+		[IsRequired]
 		public bool RequiresDosageLabel { get; set; }
 
 		/// <summary>
 		/// The order's verification status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("RegulatedOrderVerificationStatus")]
+		[IsRequired]
 		public RegulatedOrderVerificationStatus RegulatedOrderVerificationStatus { get; set; }
 	}
 }

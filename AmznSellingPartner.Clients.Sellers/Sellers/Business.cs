@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// <summary>
 		/// The registered business name.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The registered business address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("registeredBusinessAddress")]
+		[IsRequired]
 		public Address RegisteredBusinessAddress { get; set; }
 
 		/// <summary>

@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/dataKiosk/2023-11-15/queries")]
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[InQuery("processingStatuses")]
 		[MinItems(1)]
-		[JsonProperty("processingStatuses")]
 		public CsvValue<ProcessingStatuses> ProcessingStatuses { get; set; }
 
 		/// <summary>
@@ -24,7 +21,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		[InQuery("pageSize")]
 		[Minimum(1)]
 		[Maximum(100)]
-		[JsonProperty("pageSize")]
 		public int PageSize { get; set; }
 
 		/// <summary>
@@ -32,7 +28,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// format. The default is 90 days ago.
 		/// </summary>
 		[InQuery("createdSince")]
-		[JsonProperty("createdSince")]
 		public DateTime CreatedSince { get; set; }
 
 		/// <summary>
@@ -40,7 +35,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// format. The default is the time of the `getQueries` request.
 		/// </summary>
 		[InQuery("createdUntil")]
-		[JsonProperty("createdUntil")]
 		public DateTime CreatedUntil { get; set; }
 
 		/// <summary>
@@ -51,7 +45,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// the absence of this token value, `getQueries` returns the first page of results.
 		/// </summary>
 		[InQuery("paginationToken")]
-		[JsonProperty("paginationToken")]
 		public string PaginationToken { get; set; }
 	}
 }

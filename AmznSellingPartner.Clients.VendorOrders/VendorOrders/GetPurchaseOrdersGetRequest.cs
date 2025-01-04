@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/vendor/orders/v1/purchaseOrders")]
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		[InQuery("limit")]
 		[Minimum(1)]
 		[Maximum(100)]
-		[JsonProperty("limit")]
 		public long Limit { get; set; }
 
 		/// <summary>
@@ -23,7 +20,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
@@ -31,14 +27,12 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
 		/// Sort in ascending or descending order by purchase order creation date.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
@@ -46,7 +40,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// value is returned in the previous API call
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -54,7 +47,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// returned. Default value is true.
 		/// </summary>
 		[InQuery("includeDetails")]
-		[JsonProperty("includeDetails")]
 		public bool IncludeDetails { get; set; }
 
 		/// <summary>
@@ -62,7 +54,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[InQuery("changedAfter")]
-		[JsonProperty("changedAfter")]
 		public DateTime ChangedAfter { get; set; }
 
 		/// <summary>
@@ -70,7 +61,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[InQuery("changedBefore")]
-		[JsonProperty("changedBefore")]
 		public DateTime ChangedBefore { get; set; }
 
 		/// <summary>
@@ -78,7 +68,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// which have one or more items cancelled by Amazon with updated item quantity as zero.
 		/// </summary>
 		[InQuery("poItemState")]
-		[JsonProperty("poItemState")]
 		public PoItemState PoItemState { get; set; }
 
 		/// <summary>
@@ -87,14 +76,12 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// value is false.
 		/// </summary>
 		[InQuery("isPOChanged")]
-		[JsonProperty("isPOChanged")]
 		public bool IsPOChanged { get; set; }
 
 		/// <summary>
 		/// Filters purchase orders based on the purchase order state.
 		/// </summary>
 		[InQuery("purchaseOrderState")]
-		[JsonProperty("purchaseOrderState")]
 		public PurchaseOrderState PurchaseOrderState { get; set; }
 
 		/// <summary>
@@ -103,7 +90,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// that exist in the vendor group used to authorize the API client application are returned.
 		/// </summary>
 		[InQuery("orderingVendorCode")]
-		[JsonProperty("orderingVendorCode")]
 		public string OrderingVendorCode { get; set; }
 	}
 }

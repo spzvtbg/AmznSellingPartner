@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/listings/2021-08-01/restrictions")]
 	public class GetListingsRestrictionsGetRequest : BaseHttpRequest
 	{
@@ -13,14 +11,12 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// </summary>
 		[InQuery("asin")]
 		[IsRequired]
-		[JsonProperty("asin")]
 		public string Asin { get; set; }
 
 		/// <summary>
 		/// The condition used to filter restrictions.
 		/// </summary>
 		[InQuery("conditionType")]
-		[JsonProperty("conditionType")]
 		public ConditionType ConditionType { get; set; }
 
 		/// <summary>
@@ -28,7 +24,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// </summary>
 		[InQuery("sellerId")]
 		[IsRequired]
-		[JsonProperty("sellerId")]
 		public string SellerId { get; set; }
 
 		/// <summary>
@@ -36,7 +31,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// </summary>
 		[InQuery("marketplaceIds")]
 		[IsRequired]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -45,7 +39,6 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 		/// is not available in the specified locale.
 		/// </summary>
 		[InQuery("reasonLocale")]
-		[JsonProperty("reasonLocale")]
 		public string ReasonLocale { get; set; }
 	}
 }

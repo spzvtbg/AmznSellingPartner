@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class ImageDimensions : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("width")]
+		[IsRequired]
 		public IntegerWithUnits Width { get; set; }
 
-		[IsRequired]
 		[JsonProperty("height")]
+		[IsRequired]
 		public IntegerWithUnits Height { get; set; }
 	}
 }

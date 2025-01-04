@@ -18,12 +18,12 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// A time interval used to compute metrics.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("timeInterval")]
+		[IsRequired]
 		public TimeInterval TimeInterval { get; set; }
 
-		[IsRequired]
 		[JsonProperty("timePeriodType")]
+		[IsRequired]
 		public TimePeriodType TimePeriodType { get; set; }
 
 		/// <summary>
@@ -32,21 +32,21 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) to find the identifier
 		/// for the marketplace.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("programTypes")]
+		[IsRequired]
 		public ProgramTypes ProgramTypes { get; set; }
 
 		/// <summary>
 		/// A list of Amazon Standard Identification Numbers (ASINs).
 		/// </summary>
+		[JsonProperty("asins")]
 		[MinItems(1)]
 		[MaxItems(20)]
 		[UniqueItems]
-		[JsonProperty("asins")]
 		public List<string> Asins { get; set; }
 	}
 }

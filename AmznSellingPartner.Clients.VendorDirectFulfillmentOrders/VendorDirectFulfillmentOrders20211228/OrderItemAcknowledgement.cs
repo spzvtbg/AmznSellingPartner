@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// Line item sequence number for the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
+		[IsRequired]
 		public string ItemSequenceNumber { get; set; }
 
 		/// <summary>
@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// Details of quantity acknowledged with the above acknowledgement code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("acknowledgedQuantity")]
+		[IsRequired]
 		public ItemQuantity AcknowledgedQuantity { get; set; }
 	}
 }

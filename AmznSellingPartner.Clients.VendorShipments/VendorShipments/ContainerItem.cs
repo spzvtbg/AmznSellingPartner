@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// The reference number for the item. Please provide the itemSequenceNumber from the 'items' segment to
 		/// refer to that item's details here.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemReference")]
+		[IsRequired]
 		public string ItemReference { get; set; }
 
 		/// <summary>
 		/// Total item quantity shipped in this carton/pallet.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shippedQuantity")]
+		[IsRequired]
 		public ItemQuantity ShippedQuantity { get; set; }
 
 		[JsonProperty("itemDetails")]

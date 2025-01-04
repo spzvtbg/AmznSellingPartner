@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// a customer receives on the detail page, such as `B2B`, `Fresh`, and `Subscribe n Save`. `buyingOptionType`
 		/// currently supports `NEW` as a value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("buyingOptionType")]
+		[IsRequired]
 		public BuyingOptionType BuyingOptionType { get; set; }
 
 		/// <summary>
@@ -26,9 +26,9 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// a group of regional contexts that all have the same featured offer. A regional context is a combination
 		/// of factors such as customer type, region, or postal code and buying option.
 		/// </summary>
+		[JsonProperty("segmentedFeaturedOffers")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("segmentedFeaturedOffers")]
 		public List<SegmentedFeaturedOffer> SegmentedFeaturedOffers { get; set; }
 	}
 }

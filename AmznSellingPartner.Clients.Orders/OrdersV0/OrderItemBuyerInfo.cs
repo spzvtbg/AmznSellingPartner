@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// An Amazon-defined order item identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("OrderItemId")]
+		[IsRequired]
 		public string OrderItemId { get; set; }
 
 		/// <summary>

@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// A shipment identifier assigned by Amazon.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("amazonShipmentId")]
+		[IsRequired]
 		public string AmazonShipmentId { get; set; }
 
 		/// <summary>
 		/// An identifier for the fulfillment center that the shipment will be sent from.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("fulfillmentCenterId")]
+		[IsRequired]
 		public string FulfillmentCenterId { get; set; }
 
 		/// <summary>
 		/// The current status of the shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("fulfillmentShipmentStatus")]
+		[IsRequired]
 		public FulfillmentShipmentStatus FulfillmentShipmentStatus { get; set; }
 
 		/// <summary>
@@ -60,8 +60,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		[JsonProperty("shippingNotes")]
 		public List<string> ShippingNotes { get; set; }
 
-		[IsRequired]
 		[JsonProperty("fulfillmentShipmentItem")]
+		[IsRequired]
 		public FulfillmentShipmentItemList FulfillmentShipmentItem { get; set; }
 
 		[JsonProperty("fulfillmentShipmentPackage")]

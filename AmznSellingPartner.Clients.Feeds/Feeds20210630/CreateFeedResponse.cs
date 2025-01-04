@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// <summary>
 		/// The identifier for the feed. This identifier is unique only in combination with a seller ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("feedId")]
+		[IsRequired]
 		public string FeedId { get; set; }
 	}
 }

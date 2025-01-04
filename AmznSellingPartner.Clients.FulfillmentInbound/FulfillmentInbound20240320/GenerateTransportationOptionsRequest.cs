@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The placement option to generate transportation options for.
 		/// </summary>
+		[JsonProperty("placementOptionId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("placementOptionId")]
 		public string PlacementOptionId { get; set; }
 
 		/// <summary>
 		/// List of shipment transportation configurations.
 		/// </summary>
+		[JsonProperty("shipmentTransportationConfigurations")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("shipmentTransportationConfigurations")]
 		public List<ShipmentTransportationConfiguration> ShipmentTransportationConfigurations { get; set; }
 	}
 }

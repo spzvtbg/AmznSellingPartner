@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("clientReferenceDetails")]
 		public ClientReferenceDetails ClientReferenceDetails { get; set; }
 
-		[IsRequired]
 		[JsonProperty("carrierId")]
+		[IsRequired]
 		public CarrierId CarrierId { get; set; }
 
 		[JsonProperty("shipFromAddress")]

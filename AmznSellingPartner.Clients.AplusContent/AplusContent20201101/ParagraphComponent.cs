@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class ParagraphComponent : BaseClass
 	{
+		[JsonProperty("textList")]
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(100)]
-		[JsonProperty("textList")]
 		public List<TextComponent> TextList { get; set; }
 	}
 }

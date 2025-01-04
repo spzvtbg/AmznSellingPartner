@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// packages or pallets within the shipment, please provide this at the appropriate package or pallet le
 		/// vel.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public int Amount { get; set; }
 
 		/// <summary>
 		/// Unit of measure for the shipped quantity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public string UnitOfMeasure { get; set; }
 	}
 }

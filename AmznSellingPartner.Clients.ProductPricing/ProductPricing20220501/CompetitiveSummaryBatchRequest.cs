@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// A batched list of `competitiveSummary` requests.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("requests")]
+		[IsRequired]
 		public CompetitiveSummaryRequestList Requests { get; set; }
 	}
 }

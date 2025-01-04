@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// <summary>
 		/// The HTTP method in the restricted resource.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("method")]
+		[IsRequired]
 		public Method Method { get; set; }
 
 		/// <summary>
@@ -28,8 +28,8 @@ namespace AmznSellingPartner.Clients.Tokens.Tokens20210301
 		/// the getShipment operation of the Shipping API. For any of a selling partner's shipments that you specify
 		/// when you call the getShipment operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("path")]
+		[IsRequired]
 		public string Path { get; set; }
 
 		/// <summary>

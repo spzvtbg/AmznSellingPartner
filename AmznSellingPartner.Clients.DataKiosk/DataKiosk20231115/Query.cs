@@ -15,29 +15,29 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// The query identifier. This identifier is unique only in combination with a selling partner account I
 		/// D.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("queryId")]
+		[IsRequired]
 		public string QueryId { get; set; }
 
 		/// <summary>
 		/// The submitted query.
 		/// </summary>
+		[JsonProperty("query")]
 		[IsRequired]
-		[JsonProperty("queryValue")]
 		public string QueryValue { get; set; }
 
 		/// <summary>
 		/// The date and time when the query was created, in ISO 8601 date time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("createdTime")]
+		[IsRequired]
 		public DateTime CreatedTime { get; set; }
 
 		/// <summary>
 		/// The processing status of the query.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("processingStatus")]
+		[IsRequired]
 		public ProcessingStatus ProcessingStatus { get; set; }
 
 		/// <summary>

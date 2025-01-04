@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("clientReferenceDetails")]
 		public ClientReferenceDetails ClientReferenceDetails { get; set; }
 
-		[IsRequired]
 		[JsonProperty("carrierAccountType")]
+		[IsRequired]
 		public CarrierAccountType CarrierAccountType { get; set; }
 
-		[IsRequired]
 		[JsonProperty("carrierAccountAttributes")]
+		[IsRequired]
 		public CarrierAccountAttributes CarrierAccountAttributes { get; set; }
 
 		[JsonProperty("encryptedCarrierAccountAttributes")]

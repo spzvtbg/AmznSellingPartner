@@ -13,16 +13,16 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// The identifier for the report document. This identifier is unique only in combination with a seller
 		/// ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportDocumentId")]
+		[IsRequired]
 		public string ReportDocumentId { get; set; }
 
 		/// <summary>
 		/// A presigned URL for the report document. If `compressionAlgorithm` is not returned, you can download
 		/// the report directly from this URL. This URL expires after 5 minutes.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("url")]
+		[IsRequired]
 		public string Url { get; set; }
 
 		/// <summary>

@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Item sequence number for the item. The first item will be 001, the second 002, and so on. This number
 		/// is used as a reference to refer to this item from the carton or pallet level.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
+		[IsRequired]
 		public string ItemSequenceNumber { get; set; }
 
 		/// <summary>
@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Total item quantity shipped in this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shippedQuantity")]
+		[IsRequired]
 		public ItemQuantity ShippedQuantity { get; set; }
 
 		[JsonProperty("itemDetails")]

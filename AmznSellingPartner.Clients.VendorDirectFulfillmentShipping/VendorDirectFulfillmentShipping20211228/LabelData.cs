@@ -40,8 +40,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// This field will contain the Base64encoded string of the shipment label content.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("content")]
+		[IsRequired]
 		public string Content { get; set; }
 	}
 }

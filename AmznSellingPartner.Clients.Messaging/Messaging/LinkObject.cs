@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// <summary>
 		/// A URI for this object.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("href")]
+		[IsRequired]
 		public string Href { get; set; }
 
 		/// <summary>

@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Unit for duration.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("durationUnit")]
+		[IsRequired]
 		public DurationUnit DurationUnit { get; set; }
 
 		/// <summary>
 		/// Value for the duration in terms of the durationUnit.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("durationValue")]
+		[IsRequired]
 		public int DurationValue { get; set; }
 	}
 }

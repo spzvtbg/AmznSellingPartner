@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPatch("/orders/v0/orders/{orderId}/regulatedInfo")]
 	public class UpdateVerificationStatusPatchRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[InPath("orderId")]
 		[IsRequired]
-		[JsonProperty("orderId")]
 		public string OrderId { get; set; }
 
 		/// <summary>
@@ -20,7 +17,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[InBody("payload")]
 		[IsRequired]
-		[JsonProperty("payload")]
 		public UpdateVerificationStatusRequest Payload { get; set; }
 	}
 }

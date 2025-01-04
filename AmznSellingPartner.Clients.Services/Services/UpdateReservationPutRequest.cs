@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpPut("/service/v1/reservation/{reservationId}")]
 	public class UpdateReservationPutRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("reservationId")]
 		public string ReservationId { get; set; }
 
 		/// <summary>
@@ -23,7 +20,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public UpdateReservationRequest Body { get; set; }
 
 		/// <summary>
@@ -32,7 +28,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 	}
 }

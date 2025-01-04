@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// An error code that identifies the type of error that occurred.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("code")]
+		[IsRequired]
 		public string Code { get; set; }
 
 		/// <summary>
 		/// A message that describes the error condition in a human-readable form.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("message")]
+		[IsRequired]
 		public string Message { get; set; }
 
 		/// <summary>

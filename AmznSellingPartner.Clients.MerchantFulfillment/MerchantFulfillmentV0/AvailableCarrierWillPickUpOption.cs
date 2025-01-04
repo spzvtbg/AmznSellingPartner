@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	/// </summary>
 	public class AvailableCarrierWillPickUpOption : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("CarrierWillPickUpOption")]
+		[IsRequired]
 		public CarrierWillPickUpOption CarrierWillPickUpOption { get; set; }
 
 		/// <summary>
 		/// The fee charged.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Charge")]
+		[IsRequired]
 		public CurrencyAmount Charge { get; set; }
 	}
 }

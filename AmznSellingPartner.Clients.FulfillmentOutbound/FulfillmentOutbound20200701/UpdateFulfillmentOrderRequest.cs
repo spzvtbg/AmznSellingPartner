@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// for this value or they can specify an alternate value if they want the recipient to reference an alternate
 		/// order identifier.
 		/// </summary>
-		[MaxLength(40)]
 		[JsonProperty("displayableOrderId")]
+		[MaxLength(40)]
 		public string DisplayableOrderId { get; set; }
 
 		/// <summary>
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// Order-specific text that appears in recipient-facing materials such as the outbound shipment packing
 		/// slip.
 		/// </summary>
-		[MaxLength(750)]
 		[JsonProperty("displayableOrderComment")]
+		[MaxLength(750)]
 		public string DisplayableOrderComment { get; set; }
 
 		[JsonProperty("shippingSpeedCategory")]

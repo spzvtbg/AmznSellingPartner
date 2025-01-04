@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Type of the tax applied.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("taxType")]
+		[IsRequired]
 		public TaxType TaxType { get; set; }
 
 		/// <summary>
@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Total tax amount applied on invoice total or an item total.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("taxAmount")]
+		[IsRequired]
 		public Money TaxAmount { get; set; }
 
 		/// <summary>

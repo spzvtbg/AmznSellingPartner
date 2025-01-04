@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// This identifier is provided by the Selling Partner API for Uploads.
 		/// </summary>
+		[JsonProperty("uploadDestinationId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("uploadDestinationId")]
 		public string UploadDestinationId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("imageCropSpecification")]
+		[IsRequired]
 		public ImageCropSpecification ImageCropSpecification { get; set; }
 
 		/// <summary>
 		/// The alternative text for the image.
 		/// </summary>
+		[JsonProperty("altText")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("altText")]
 		public string AltText { get; set; }
 	}
 }

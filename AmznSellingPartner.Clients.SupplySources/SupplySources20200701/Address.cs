@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// <summary>
 		/// The name of the person, business or institution at that address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The first line of the address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("addressLine1")]
+		[IsRequired]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
@@ -56,8 +56,8 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// <summary>
 		/// The state or region where person, business or institution is located.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("stateOrRegion")]
+		[IsRequired]
 		public string StateOrRegion { get; set; }
 
 		/// <summary>
@@ -70,8 +70,8 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// <summary>
 		/// The two digit country code. In ISO 3166-1 alpha-2 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("countryCode")]
+		[IsRequired]
 		public string CountryCode { get; set; }
 
 		/// <summary>

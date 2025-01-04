@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/appIntegrations/2024-04-01/notifications/{notificationId}/feedback")]
 	public class RecordActionFeedbackPostRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[InPath("notificationId")]
 		[IsRequired]
-		[JsonProperty("notificationId")]
 		public string NotificationId { get; set; }
 
 		/// <summary>
@@ -20,7 +17,6 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public RecordActionFeedbackRequest Body { get; set; }
 	}
 }

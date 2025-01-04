@@ -4,7 +4,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 
 	public class AdditionalInputs : BaseClass
 	{
-		[JsonProperty("AdditionalValue")]
+		[JsonProperty("")]
 		public object AdditionalValue { get; set; }
 	}
 }

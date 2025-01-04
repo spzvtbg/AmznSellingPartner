@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	/// </summary>
 	public class Weight : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("Value")]
+		[IsRequired]
 		public WeightValue Value { get; set; }
 
-		[IsRequired]
 		[JsonProperty("Unit")]
+		[IsRequired]
 		public UnitOfWeight Unit { get; set; }
 	}
 }

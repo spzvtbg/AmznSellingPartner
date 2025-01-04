@@ -13,33 +13,33 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// A plain text representation of a carrier's shipping service. For example, "UPS Ground" or "FedEx Standard
 		/// Overnight".
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShippingServiceName")]
+		[IsRequired]
 		public string ShippingServiceName { get; set; }
 
 		/// <summary>
 		/// The name of the carrier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("CarrierName")]
+		[IsRequired]
 		public string CarrierName { get; set; }
 
-		[IsRequired]
 		[JsonProperty("ShippingServiceId")]
+		[IsRequired]
 		public ShippingServiceIdentifier ShippingServiceId { get; set; }
 
 		/// <summary>
 		/// An Amazon-defined shipping service offer identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShippingServiceOfferId")]
+		[IsRequired]
 		public string ShippingServiceOfferId { get; set; }
 
 		/// <summary>
 		/// The date that the carrier will ship the package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShipDate")]
+		[IsRequired]
 		public Timestamp ShipDate { get; set; }
 
 		/// <summary>
@@ -57,15 +57,15 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// The amount that the carrier will charge for the shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Rate")]
+		[IsRequired]
 		public CurrencyAmount Rate { get; set; }
 
 		/// <summary>
 		/// Extra services offered by the carrier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShippingServiceOptions")]
+		[IsRequired]
 		public ShippingServiceOptions ShippingServiceOptions { get; set; }
 
 		[JsonProperty("AvailableShippingServiceOptions")]
@@ -80,8 +80,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// When true, additional seller inputs are required.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("RequiresAdditionalSellerInputs")]
+		[IsRequired]
 		public bool RequiresAdditionalSellerInputs { get; set; }
 
 		[JsonProperty("Benefits")]

@@ -12,17 +12,17 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Decimal value of the currency.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public double Amount { get; set; }
 
 		/// <summary>
 		/// ISO 4217 standard of a currency code.
 		/// </summary>
+		[JsonProperty("code")]
 		[IsRequired]
 		[MinLength(3)]
 		[MaxLength(3)]
-		[JsonProperty("code")]
 		public string Code { get; set; }
 	}
 }

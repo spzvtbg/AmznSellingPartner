@@ -47,8 +47,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// <summary>
 		/// The ID of the marketplace from which you want the invoices.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -61,8 +61,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// A list of statuses that you can use to filter invoices. Use the `getInvoicesAttributes` operation to
 		/// check invoice status options.  Min count: 1
 		/// </summary>
-		[MinItems(1)]
 		[JsonProperty("statuses")]
+		[MinItems(1)]
 		public List<string> Statuses { get; set; }
 
 		[JsonProperty("transactionIdentifier")]

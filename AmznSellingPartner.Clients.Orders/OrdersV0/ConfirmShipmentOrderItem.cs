@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The order item's unique identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderItemId")]
+		[IsRequired]
 		public string OrderItemId { get; set; }
 
 		/// <summary>
 		/// The item's quantity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public int Quantity { get; set; }
 
 		/// <summary>

@@ -7,7 +7,8 @@
         public string Description { get; set; }
 
         internal virtual CsProperty OnDeserialized(string name, CsContext context) 
-            => new CsProperty { Name = name  }.HasDescription(this.Description);
+              => new CsProperty { Name = name  }
+                    .HasDescription(this.Description);
     }
 
     internal class AmznDefinitionItemString : AmznDefinitionItem

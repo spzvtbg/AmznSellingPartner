@@ -14,12 +14,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// Type of charge applied.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public Type Type { get; set; }
 
-		[IsRequired]
 		[JsonProperty("chargeAmount")]
+		[IsRequired]
 		public Money ChargeAmount { get; set; }
 
 		/// <summary>

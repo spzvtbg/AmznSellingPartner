@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/replenishment/2022-11-07/offers/metrics/search")]
 	public class ListOfferMetricsPostRequest : BaseHttpRequest
 	{
@@ -11,7 +9,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// The request body for the `listOfferMetrics` operation.
 		/// </summary>
 		[InBody("body")]
-		[JsonProperty("body")]
 		public ListOfferMetricsRequest Body { get; set; }
 	}
 }

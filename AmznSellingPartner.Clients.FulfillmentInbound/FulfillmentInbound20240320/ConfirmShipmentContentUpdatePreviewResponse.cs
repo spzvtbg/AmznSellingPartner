@@ -12,11 +12,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// UUID for the given operation.
 		/// </summary>
+		[JsonProperty("operationId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(36)]
 		[MaxLength(38)]
-		[JsonProperty("operationId")]
 		public string OperationId { get; set; }
 	}
 }

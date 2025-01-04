@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class ContentModule : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("contentModuleType")]
+		[IsRequired]
 		public ContentModuleType ContentModuleType { get; set; }
 
 		[JsonProperty("standardCompanyLogo")]

@@ -12,20 +12,20 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The seller SKU of the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerSku")]
+		[IsRequired]
 		public string SellerSku { get; set; }
 
 		/// <summary>
 		/// The fulfillment order item identifier that the seller created and submitted with a call to the `createFulfillmentOrder`
 		/// operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerFulfillmentOrderItemId")]
+		[IsRequired]
 		public string SellerFulfillmentOrderItemId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public Quantity Quantity { get; set; }
 
 		/// <summary>

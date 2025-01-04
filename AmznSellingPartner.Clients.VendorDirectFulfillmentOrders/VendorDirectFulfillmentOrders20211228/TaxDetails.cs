@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		[JsonProperty("taxRate")]
 		public Decimal TaxRate { get; set; }
 
-		[IsRequired]
 		[JsonProperty("taxAmount")]
+		[IsRequired]
 		public Money TaxAmount { get; set; }
 
 		[JsonProperty("taxableAmount")]

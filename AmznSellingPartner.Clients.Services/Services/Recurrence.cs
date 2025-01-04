@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// End time of the recurrence.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("endTime")]
+		[IsRequired]
 		public DateTime EndTime { get; set; }
 
 		/// <summary>

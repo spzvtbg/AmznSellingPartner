@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// Tax registration number for the party. For example, VAT ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("taxRegistrationNumber")]
+		[IsRequired]
 		public string TaxRegistrationNumber { get; set; }
 
 		/// <summary>

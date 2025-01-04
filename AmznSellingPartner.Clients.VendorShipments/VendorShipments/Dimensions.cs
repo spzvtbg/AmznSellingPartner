@@ -12,29 +12,29 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// The length of the container.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("length")]
+		[IsRequired]
 		public Decimal Length { get; set; }
 
 		/// <summary>
 		/// The width of the container.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("width")]
+		[IsRequired]
 		public Decimal Width { get; set; }
 
 		/// <summary>
 		/// The height of the container.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("height")]
+		[IsRequired]
 		public Decimal Height { get; set; }
 
 		/// <summary>
 		/// The unit of measure for dimensions.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public UnitOfMeasure UnitOfMeasure { get; set; }
 	}
 }

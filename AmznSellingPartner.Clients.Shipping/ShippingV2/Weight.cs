@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The unit of measurement.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unit")]
+		[IsRequired]
 		public Unit Unit { get; set; }
 
 		/// <summary>
 		/// The measurement value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public double Value { get; set; }
 	}
 }

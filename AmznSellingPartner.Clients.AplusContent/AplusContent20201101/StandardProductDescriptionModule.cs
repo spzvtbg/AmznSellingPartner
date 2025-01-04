@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class StandardProductDescriptionModule : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("body")]
+		[IsRequired]
 		public ParagraphComponent Body { get; set; }
 	}
 }

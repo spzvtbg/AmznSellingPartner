@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The identifier of the selected value-added service.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("id")]
+		[IsRequired]
 		public string Id { get; set; }
 
 		[JsonProperty("amount")]

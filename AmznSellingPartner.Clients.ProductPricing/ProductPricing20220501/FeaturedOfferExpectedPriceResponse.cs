@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// Use these request parameters to map the response back to the request.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("request")]
+		[IsRequired]
 		public FeaturedOfferExpectedPriceRequestParams Request { get; set; }
 
 		[JsonProperty("body")]

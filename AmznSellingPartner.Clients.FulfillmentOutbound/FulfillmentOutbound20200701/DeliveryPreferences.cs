@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// Additional delivery instructions. For example, this could be instructions on how to enter a building,
 		/// nearby landmark or navigation instructions, 'Beware of dogs', etc.
 		/// </summary>
-		[MaxLength(250)]
 		[JsonProperty("deliveryInstructions")]
+		[MaxLength(250)]
 		public string DeliveryInstructions { get; set; }
 
 		/// <summary>

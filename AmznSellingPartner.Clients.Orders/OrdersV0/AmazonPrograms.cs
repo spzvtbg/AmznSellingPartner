@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// A list of the programs that are associated with the specified order item.  **Possible values**: `SUB
 		/// SCRIBE_AND_SAVE`
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Programs")]
+		[IsRequired]
 		public List<string> Programs { get; set; }
 	}
 }

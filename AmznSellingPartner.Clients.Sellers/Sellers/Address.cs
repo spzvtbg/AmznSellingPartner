@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// <summary>
 		/// Street address information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("addressLine1")]
+		[IsRequired]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// <summary>
 		/// The country code in two-character ISO 3166-1 alpha-2 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("countryCode")]
+		[IsRequired]
 		public string CountryCode { get; set; }
 
 		/// <summary>

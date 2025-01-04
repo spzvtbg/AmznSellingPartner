@@ -9,44 +9,44 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	/// </summary>
 	public class Shipment : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("ShipmentId")]
+		[IsRequired]
 		public ShipmentId ShipmentId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("AmazonOrderId")]
+		[IsRequired]
 		public AmazonOrderId AmazonOrderId { get; set; }
 
 		[JsonProperty("SellerOrderId")]
 		public SellerOrderId SellerOrderId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("ItemList")]
+		[IsRequired]
 		public ItemList ItemList { get; set; }
 
 		/// <summary>
 		/// The address of the sender.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShipFromAddress")]
+		[IsRequired]
 		public Address ShipFromAddress { get; set; }
 
 		/// <summary>
 		/// The destination address for the shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShipToAddress")]
+		[IsRequired]
 		public Address ShipToAddress { get; set; }
 
-		[IsRequired]
 		[JsonProperty("PackageDimensions")]
+		[IsRequired]
 		public PackageDimensions PackageDimensions { get; set; }
 
 		/// <summary>
 		/// The package weight.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Weight")]
+		[IsRequired]
 		public Weight Weight { get; set; }
 
 		/// <summary>
@@ -55,27 +55,27 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// call to the `createShipment` operation, then the shipment is insured for the carrier's minimum insurance
 		/// amount, or the combined sale prices that the items are listed for in the shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Insurance")]
+		[IsRequired]
 		public CurrencyAmount Insurance { get; set; }
 
-		[IsRequired]
 		[JsonProperty("ShippingService")]
+		[IsRequired]
 		public ShippingService ShippingService { get; set; }
 
 		/// <summary>
 		/// Data for creating a shipping label and dimensions for printing the label. If the shipment is canceled,
 		/// an empty label is returned.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Label")]
+		[IsRequired]
 		public Label Label { get; set; }
 
 		/// <summary>
 		/// The shipment status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Status")]
+		[IsRequired]
 		public ShipmentStatus Status { get; set; }
 
 		[JsonProperty("TrackingId")]
@@ -84,8 +84,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// The date and time the shipment is created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("CreatedDate")]
+		[IsRequired]
 		public Timestamp CreatedDate { get; set; }
 
 		/// <summary>

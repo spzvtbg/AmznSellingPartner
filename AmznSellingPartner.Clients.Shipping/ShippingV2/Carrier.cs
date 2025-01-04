@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class Carrier : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("id")]
+		[IsRequired]
 		public CarrierId Id { get; set; }
 
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public CarrierName Name { get; set; }
 	}
 }

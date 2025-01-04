@@ -10,12 +10,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class Benefits : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("includedBenefits")]
+		[IsRequired]
 		public IncludedBenefits IncludedBenefits { get; set; }
 
-		[IsRequired]
 		[JsonProperty("excludedBenefits")]
+		[IsRequired]
 		public ExcludedBenefits ExcludedBenefits { get; set; }
 	}
 }

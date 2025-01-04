@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// The type of container.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("containerType")]
+		[IsRequired]
 		public ContainerType ContainerType { get; set; }
 
 		/// <summary>
 		/// The container identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("containerIdentifier")]
+		[IsRequired]
 		public string ContainerIdentifier { get; set; }
 
 		/// <summary>
@@ -72,15 +72,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		[JsonProperty("dimensions")]
 		public Dimensions Dimensions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("weight")]
+		[IsRequired]
 		public Weight Weight { get; set; }
 
 		/// <summary>
 		/// A list of packed items.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("packedItems")]
+		[IsRequired]
 		public List<PackedItem> PackedItems { get; set; }
 	}
 }

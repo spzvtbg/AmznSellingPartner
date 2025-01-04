@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// A computed listing price at or below which a seller can expect to become the featured offer (before applicable
 		/// promotions).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("listingPrice")]
+		[IsRequired]
 		public MoneyType ListingPrice { get; set; }
 
 		/// <summary>

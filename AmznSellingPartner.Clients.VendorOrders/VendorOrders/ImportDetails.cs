@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// The port where goods on an import purchase order must be delivered by the vendor. This should only be
 		/// specified when the internationalCommercialTerms is FOB.
 		/// </summary>
-		[MaxLength(64)]
 		[JsonProperty("portOfDelivery")]
+		[MaxLength(64)]
 		public string PortOfDelivery { get; set; }
 
 		/// <summary>
@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// The list of values for the container type is: 40'(40-foot container), 40'HC (40-foot high-capacity container),
 		/// 45', 45'HC, 30', 30'HC, 20', 20'HC.
 		/// </summary>
-		[MaxLength(64)]
 		[JsonProperty("importContainers")]
+		[MaxLength(64)]
 		public string ImportContainers { get; set; }
 
 		/// <summary>

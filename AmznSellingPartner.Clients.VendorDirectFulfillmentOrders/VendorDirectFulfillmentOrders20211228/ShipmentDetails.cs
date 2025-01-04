@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// When true, this is a priority shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isPriorityShipment")]
+		[IsRequired]
 		public bool IsPriorityShipment { get; set; }
 
 		/// <summary>
@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// When true, a packing slip is required to be sent to the customer.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isPslipRequired")]
+		[IsRequired]
 		public bool IsPslipRequired { get; set; }
 
 		/// <summary>
@@ -40,19 +40,19 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// carrier and shipment service level. To see the full list of ship methods in use, including both the code
 		/// and the friendly name, search the 'Help' section on Vendor Central for 'ship methods'.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipMethod")]
+		[IsRequired]
 		public string ShipMethod { get; set; }
 
-		[IsRequired]
 		[JsonProperty("shipmentDates")]
+		[IsRequired]
 		public ShipmentDates ShipmentDates { get; set; }
 
 		/// <summary>
 		/// Message to customer for order status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("messageToCustomer")]
+		[IsRequired]
 		public string MessageToCustomer { get; set; }
 	}
 }

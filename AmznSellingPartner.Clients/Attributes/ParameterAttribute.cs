@@ -1,6 +1,9 @@
 ﻿namespace AmznSellingPartner.Clients.Attributes
 {
-    public class ParameterAttribute(string name) : AmznAttribute
+    using System;
+
+    [AttributeUsage(AttributeTargets.All, AllowMultiple = false, Inherited = true)]
+    public class ParameterAttribute(string name) : Attribute
     {
         public string Name { get; } = name;
     }
@@ -18,6 +21,10 @@
     }
 
     public class InHeaderAttribute(string name) : ParameterAttribute(name)
+    {
+    }
+
+    public class FromHeaderAttribute(string name) : ParameterAttribute(name)
     {
     }
 }

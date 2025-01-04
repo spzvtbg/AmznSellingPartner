@@ -12,20 +12,20 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// The maximum number of results to return in the response.
 		/// </summary>
+		[JsonProperty("limit")]
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(500)]
-		[JsonProperty("limit")]
 		public long Limit { get; set; }
 
 		/// <summary>
 		/// The offset from which to retrieve the number of results specified by the `limit` value. The first result
 		/// is at offset 0.
 		/// </summary>
+		[JsonProperty("offset")]
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(9000)]
-		[JsonProperty("offset")]
 		public long Offset { get; set; }
 	}
 }

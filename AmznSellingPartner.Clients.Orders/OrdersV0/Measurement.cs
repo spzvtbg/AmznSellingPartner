@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The unit of measure.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Unit")]
+		[IsRequired]
 		public Unit Unit { get; set; }
 
 		/// <summary>
 		/// The measurement value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Value")]
+		[IsRequired]
 		public double Value { get; set; }
 	}
 }

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// A list of shipping services offers.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShippingServiceList")]
+		[IsRequired]
 		public ShippingServiceList ShippingServiceList { get; set; }
 
 		[JsonProperty("RejectedShippingServiceList")]

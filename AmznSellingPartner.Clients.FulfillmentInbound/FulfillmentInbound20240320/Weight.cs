@@ -9,17 +9,17 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	/// </summary>
 	public class Weight : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("unit")]
+		[IsRequired]
 		public UnitOfWeight Unit { get; set; }
 
 		/// <summary>
 		/// Value of a weight.
 		/// </summary>
+		[JsonProperty("value")]
 		[IsRequired]
 		[Minimum(0)]
 		[Maximum(100000)]
-		[JsonProperty("value")]
 		public double Value { get; set; }
 	}
 }

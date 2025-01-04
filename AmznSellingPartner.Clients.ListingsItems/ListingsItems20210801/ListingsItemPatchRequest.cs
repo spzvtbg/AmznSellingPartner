@@ -14,16 +14,16 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The Amazon product type of the listings item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productType")]
+		[IsRequired]
 		public string ProductType { get; set; }
 
 		/// <summary>
 		/// One or more JSON Patch operations to perform on the listings item.
 		/// </summary>
+		[JsonProperty("patches")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("patches")]
 		public List<PatchOperation> Patches { get; set; }
 	}
 }

@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Identifier of the classification associated with the sales rank.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("classificationId")]
+		[IsRequired]
 		public string ClassificationId { get; set; }
 
 		/// <summary>
 		/// Title, or name, of the sales rank.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("title")]
+		[IsRequired]
 		public string Title { get; set; }
 
 		/// <summary>
@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Sales rank value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("rank")]
+		[IsRequired]
 		public int Rank { get; set; }
 	}
 }

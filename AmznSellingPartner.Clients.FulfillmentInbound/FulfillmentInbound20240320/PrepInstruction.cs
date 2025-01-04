@@ -16,9 +16,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// In some situations, special preparations are required for items and this field reflects the owner of
 		/// the preparations. Options include `AMAZON`, `SELLER` or `NONE`.
 		/// </summary>
+		[JsonProperty("prepOwner")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("prepOwner")]
 		public string PrepOwner { get; set; }
 
 		/// <summary>
@@ -28,9 +28,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// `BABY`, `TEXTILE`, `HANGER`, `FRAGILE`, `LIQUID`, `SHARP`, `SMALL`, `PERFORATED`, `GRANULAR`, `SET`,
 		/// `FC_PROVIDED`, `UNKNOWN`, `NONE`.
 		/// </summary>
+		[JsonProperty("prepType")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("prepType")]
 		public string PrepType { get; set; }
 	}
 }

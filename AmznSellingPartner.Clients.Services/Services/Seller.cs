@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// The identifier of the seller of the service job.
 		/// </summary>
-		[Pattern("^[A-Z0-9]*")]
 		[JsonProperty("sellerId")]
+		[Pattern("^[A-Z0-9]*")]
 		public string SellerId { get; set; }
 	}
 }

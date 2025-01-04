@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
+		[IsRequired]
 		public string ItemSequenceNumber { get; set; }
 
 		/// <summary>
@@ -37,8 +37,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// Item quantity ordered.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderedQuantity")]
+		[IsRequired]
 		public ItemQuantity OrderedQuantity { get; set; }
 
 		/// <summary>
@@ -56,8 +56,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// Net price (before tax) to vendor with currency details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("netPrice")]
+		[IsRequired]
 		public Money NetPrice { get; set; }
 
 		/// <summary>

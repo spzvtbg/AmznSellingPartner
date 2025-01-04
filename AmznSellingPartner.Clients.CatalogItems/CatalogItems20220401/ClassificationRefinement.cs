@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// The estimated number of results that would still be returned if refinement key applied.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("numberOfResults")]
+		[IsRequired]
 		public int NumberOfResults { get; set; }
 
 		/// <summary>
 		/// Display name for the classification.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("displayName")]
+		[IsRequired]
 		public string DisplayName { get; set; }
 
 		/// <summary>
 		/// Identifier for the classification that can be used for search refinement purposes.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("classificationId")]
+		[IsRequired]
 		public string ClassificationId { get; set; }
 	}
 }

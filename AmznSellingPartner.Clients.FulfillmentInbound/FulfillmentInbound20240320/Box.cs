@@ -16,9 +16,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// The ID provided by Amazon that identifies a given box. This ID is comprised of the external shipment
 		/// ID (which is generated after transportation has been confirmed) and the index of the box.
 		/// </summary>
+		[JsonProperty("boxId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("boxId")]
 		public string BoxId { get; set; }
 
 		[JsonProperty("contentInformationSource")]
@@ -39,27 +39,27 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Primary key to uniquely identify a Package (Box or Pallet).
 		/// </summary>
+		[JsonProperty("packageId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("packageId")]
 		public string PackageId { get; set; }
 
 		/// <summary>
 		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
+		[JsonProperty("quantity")]
 		[Minimum(1)]
 		[Maximum(10000)]
-		[JsonProperty("quantity")]
 		public int Quantity { get; set; }
 
 		/// <summary>
 		/// Template name of the box.
 		/// </summary>
+		[JsonProperty("templateName")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("templateName")]
 		public string TemplateName { get; set; }
 
 		[JsonProperty("weight")]

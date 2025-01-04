@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The items in an inbound plan.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<Item> Items { get; set; }
 
 		[JsonProperty("pagination")]

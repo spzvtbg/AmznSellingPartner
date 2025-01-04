@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// <summary>
 		/// The name of the partner event source associated with the destination.
 		/// </summary>
+		[JsonProperty("name")]
 		[IsRequired]
 		[MaxLength(256)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 
 		/// <summary>
@@ -22,16 +22,16 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// refer to [Amazon EventBridge endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ev.
 		/// html).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("region")]
+		[IsRequired]
 		public string Region { get; set; }
 
 		/// <summary>
 		/// The identifier for the AWS account that is responsible for charges related to receiving notification
 		/// s.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("accountId")]
+		[IsRequired]
 		public string AccountId { get; set; }
 	}
 }

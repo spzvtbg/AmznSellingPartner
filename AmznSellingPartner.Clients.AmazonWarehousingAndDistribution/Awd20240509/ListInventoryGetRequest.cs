@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/awd/2024-05-09/inventory")]
 	public class ListInventoryGetRequest : BaseHttpRequest
 	{
@@ -11,14 +9,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Filter by seller or merchant SKU for the item.
 		/// </summary>
 		[InQuery("sku")]
-		[JsonProperty("sku")]
 		public string Sku { get; set; }
 
 		/// <summary>
 		/// Sort the response in `ASCENDING` or `DESCENDING` order.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
@@ -26,7 +22,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// only inventory summary totals.
 		/// </summary>
 		[InQuery("details")]
-		[JsonProperty("details")]
 		public Details Details { get; set; }
 
 		/// <summary>
@@ -37,7 +32,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// pages.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -46,7 +40,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[InQuery("maxResults")]
 		[Minimum(1)]
 		[Maximum(200)]
-		[JsonProperty("maxResults")]
 		public int MaxResults { get; set; }
 	}
 }

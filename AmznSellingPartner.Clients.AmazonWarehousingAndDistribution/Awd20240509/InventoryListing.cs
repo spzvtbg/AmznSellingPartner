@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// List of inventory summaries.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("inventory")]
+		[IsRequired]
 		public List<InventorySummary> Inventory { get; set; }
 
 		/// <summary>

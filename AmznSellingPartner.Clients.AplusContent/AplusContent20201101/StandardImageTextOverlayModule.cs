@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class StandardImageTextOverlayModule : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("overlayColorType")]
+		[IsRequired]
 		public ColorType OverlayColorType { get; set; }
 
 		[JsonProperty("block")]

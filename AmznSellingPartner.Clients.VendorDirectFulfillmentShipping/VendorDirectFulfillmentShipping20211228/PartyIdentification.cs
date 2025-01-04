@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// The identifier of the party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("partyId")]
+		[IsRequired]
 		public string PartyId { get; set; }
 
 		/// <summary>

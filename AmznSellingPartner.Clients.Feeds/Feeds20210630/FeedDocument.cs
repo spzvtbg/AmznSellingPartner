@@ -13,16 +13,16 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// The identifier for the feed document. This identifier is unique only in combination with a seller ID
 		/// .
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("feedDocumentId")]
+		[IsRequired]
 		public string FeedDocumentId { get; set; }
 
 		/// <summary>
 		/// A presigned URL for the feed document. If `compressionAlgorithm` is not returned, you can download the
 		/// feed directly from this URL. This URL expires after 5 minutes.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("url")]
+		[IsRequired]
 		public string Url { get; set; }
 
 		/// <summary>

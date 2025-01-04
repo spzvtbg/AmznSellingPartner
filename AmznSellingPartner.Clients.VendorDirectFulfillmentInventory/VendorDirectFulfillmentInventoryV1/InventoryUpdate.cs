@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// <summary>
 		/// ID of the selling party or vendor.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
@@ -24,15 +24,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// are updated as not available. When sending a partial feed, only include the items that need an update
 		/// to inventory. The status of other items will remain unchanged.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isFullUpdate")]
+		[IsRequired]
 		public bool IsFullUpdate { get; set; }
 
 		/// <summary>
 		/// A list of inventory items with updated details, including quantity available.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<ItemDetails> Items { get; set; }
 	}
 }

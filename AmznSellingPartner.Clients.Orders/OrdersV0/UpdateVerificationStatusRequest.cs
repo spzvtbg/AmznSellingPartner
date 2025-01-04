@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The updated values of the `VerificationStatus` field.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("regulatedOrderVerificationStatus")]
+		[IsRequired]
 		public UpdateVerificationStatusRequestBody RegulatedOrderVerificationStatus { get; set; }
 	}
 }

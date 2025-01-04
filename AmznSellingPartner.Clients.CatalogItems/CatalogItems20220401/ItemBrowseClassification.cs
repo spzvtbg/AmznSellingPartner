@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Display name for the classification (browse node).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("displayName")]
+		[IsRequired]
 		public string DisplayName { get; set; }
 
 		/// <summary>
 		/// Identifier of the classification (browse node identifier).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("classificationId")]
+		[IsRequired]
 		public string ClassificationId { get; set; }
 
 		/// <summary>

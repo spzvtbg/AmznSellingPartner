@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[JsonProperty("pagination")]
 		public Pagination Pagination { get; set; }
 
-		[IsRequired]
 		[JsonProperty("selfShipAppointmentSlotsAvailability")]
+		[IsRequired]
 		public SelfShipAppointmentSlotsAvailability SelfShipAppointmentSlotsAvailability { get; set; }
 	}
 }

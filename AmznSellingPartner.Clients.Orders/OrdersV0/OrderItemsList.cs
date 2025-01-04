@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	/// </summary>
 	public class OrderItemsList : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("OrderItems")]
+		[IsRequired]
 		public OrderItemList OrderItems { get; set; }
 
 		/// <summary>
@@ -23,8 +23,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// An Amazon-defined order identifier, in 3-7-7 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("AmazonOrderId")]
+		[IsRequired]
 		public string AmazonOrderId { get; set; }
 	}
 }

@@ -13,14 +13,14 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// The rank or index of this text item within the collection. Different items cannot occupy the same position
 		/// within a single collection.
 		/// </summary>
+		[JsonProperty("position")]
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(100)]
-		[JsonProperty("position")]
 		public int Position { get; set; }
 
-		[IsRequired]
 		[JsonProperty("text")]
+		[IsRequired]
 		public TextComponent Text { get; set; }
 	}
 }

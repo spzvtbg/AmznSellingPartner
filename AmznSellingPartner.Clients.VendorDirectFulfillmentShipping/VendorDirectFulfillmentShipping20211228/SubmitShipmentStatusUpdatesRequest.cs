@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// Contains a list of one or more `ShipmentStatusUpdate` objects. Each `ShipmentStatusUpdate` object represents
 		/// an update to the status of a specific shipment.
 		/// </summary>
-		[MinItems(1)]
 		[JsonProperty("shipmentStatusUpdates")]
+		[MinItems(1)]
 		public List<ShipmentStatusUpdate> ShipmentStatusUpdates { get; set; }
 	}
 }

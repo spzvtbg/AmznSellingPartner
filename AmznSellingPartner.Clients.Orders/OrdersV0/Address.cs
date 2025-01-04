@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The name.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>

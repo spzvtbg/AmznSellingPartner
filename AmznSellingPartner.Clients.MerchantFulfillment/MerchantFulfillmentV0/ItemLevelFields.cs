@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// The Amazon Standard Identification Number (ASIN) of the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Asin")]
+		[IsRequired]
 		public string Asin { get; set; }
 
-		[IsRequired]
 		[JsonProperty("AdditionalInputs")]
+		[IsRequired]
 		public AdditionalInputsList AdditionalInputs { get; set; }
 	}
 }

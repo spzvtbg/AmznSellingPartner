@@ -16,16 +16,16 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// The identifier for the report schedule. This identifier is unique only in combination with a seller
 		/// ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportScheduleId")]
+		[IsRequired]
 		public string ReportScheduleId { get; set; }
 
 		/// <summary>
 		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
 		/// for more information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportType")]
+		[IsRequired]
 		public string ReportType { get; set; }
 
 		/// <summary>
@@ -42,8 +42,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// An <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> period value that indicates
 		/// how often a report should be created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("period")]
+		[IsRequired]
 		public string Period { get; set; }
 
 		/// <summary>

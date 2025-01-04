@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/dataKiosk/2023-11-15/documents/{documentId}")]
 	public class GetDocumentGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[InPath("documentId")]
 		[IsRequired]
-		[JsonProperty("documentId")]
 		public string DocumentId { get; set; }
 	}
 }

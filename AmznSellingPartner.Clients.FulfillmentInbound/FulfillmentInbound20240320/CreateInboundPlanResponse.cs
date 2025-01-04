@@ -12,21 +12,21 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Identifier of an inbound plan.
 		/// </summary>
+		[JsonProperty("inboundPlanId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("inboundPlanId")]
 		public string InboundPlanId { get; set; }
 
 		/// <summary>
 		/// UUID for the given operation.
 		/// </summary>
+		[JsonProperty("operationId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(36)]
 		[MaxLength(38)]
-		[JsonProperty("operationId")]
 		public string OperationId { get; set; }
 	}
 }

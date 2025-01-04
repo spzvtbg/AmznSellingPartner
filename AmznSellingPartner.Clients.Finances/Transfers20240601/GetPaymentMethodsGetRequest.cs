@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/finances/transfers/2024-06-01/paymentMethods")]
 	public class GetPaymentMethodsGetRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -24,7 +21,6 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		[InQuery("paymentMethodTypes")]
 		[MinItems(1)]
 		[UniqueItems]
-		[JsonProperty("paymentMethodTypes")]
 		public CsvValue<PaymentMethodTypes> PaymentMethodTypes { get; set; }
 	}
 }

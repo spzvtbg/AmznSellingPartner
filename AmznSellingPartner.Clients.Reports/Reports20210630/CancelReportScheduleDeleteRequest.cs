@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpDelete("/reports/2021-06-30/schedules/{reportScheduleId}")]
 	public class CancelReportScheduleDeleteRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[InPath("reportScheduleId")]
 		[IsRequired]
-		[JsonProperty("reportScheduleId")]
 		public string ReportScheduleId { get; set; }
 	}
 }

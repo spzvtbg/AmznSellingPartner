@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// The unit of measure for items sold by weight.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public UnitOfMeasure UnitOfMeasure { get; set; }
 
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public Decimal Amount { get; set; }
 	}
 }

@@ -15,15 +15,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Failure code details for the error.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("failureCode")]
+		[IsRequired]
 		public string FailureCode { get; set; }
 
 		/// <summary>
 		/// Failure reasons for the error.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("failureReasons")]
+		[IsRequired]
 		public List<string> FailureReasons { get; set; }
 
 		/// <summary>

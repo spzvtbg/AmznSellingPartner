@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// Filters the results to only include offers with the auto-enrollment preference specified.
 		/// </summary>
+		[JsonProperty("autoEnrollment")]
 		[MinItems(1)]
 		[UniqueItems]
-		[JsonProperty("autoEnrollment")]
 		public List<AutoEnrollmentPreference> AutoEnrollment { get; set; }
 	}
 }

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/easyShip/2022-03-23/package")]
 	public class GetScheduledPackageGetRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(255)]
-		[JsonProperty("amazonOrderId")]
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
@@ -25,7 +22,6 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(255)]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 	}
 }

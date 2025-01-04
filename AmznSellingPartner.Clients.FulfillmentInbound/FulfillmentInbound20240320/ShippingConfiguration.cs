@@ -17,18 +17,18 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// `FREIGHT_LTL`, `FREIGHT_FTL_PALLET`, `FREIGHT_FTL_NONPALLET`, `OCEAN_LCL`, `OCEAN_FCL`, `AIR_SMALL_PARCEL`,
 		/// `AIR_SMALL_PARCEL_EXPRESS`.
 		/// </summary>
+		[JsonProperty("shippingMode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("shippingMode")]
 		public string ShippingMode { get; set; }
 
 		/// <summary>
 		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`
 		/// .
 		/// </summary>
+		[JsonProperty("shippingSolution")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("shippingSolution")]
 		public string ShippingSolution { get; set; }
 	}
 }

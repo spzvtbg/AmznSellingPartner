@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// Time by which the vendor is required to ship the order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("requiredShipDate")]
+		[IsRequired]
 		public DateTime RequiredShipDate { get; set; }
 
 		/// <summary>

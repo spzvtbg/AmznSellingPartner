@@ -17,18 +17,18 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// The specification list.
 		/// </summary>
+		[JsonProperty("specificationList")]
 		[IsRequired]
 		[MinItems(4)]
 		[MaxItems(16)]
-		[JsonProperty("specificationList")]
 		public List<StandardTextPairBlock> SpecificationList { get; set; }
 
 		/// <summary>
 		/// The number of tables to present. Features are evenly divided between the tables.
 		/// </summary>
+		[JsonProperty("tableCount")]
 		[Minimum(1)]
 		[Maximum(2)]
-		[JsonProperty("tableCount")]
 		public int TableCount { get; set; }
 	}
 }

@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Number of cases or pallets with the same package configuration.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("count")]
+		[IsRequired]
 		public int Count { get; set; }
 
-		[IsRequired]
 		[JsonProperty("distributionPackage")]
+		[IsRequired]
 		public DistributionPackage DistributionPackage { get; set; }
 	}
 }

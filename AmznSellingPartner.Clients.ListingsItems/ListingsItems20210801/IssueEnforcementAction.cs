@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// item is inactive on Amazon, and all offers against it in the applicable marketplace are non-buyable.
 		/// * `SEARCH_SUPPRESSED` - This value indicates that the catalog item is hidden from search results.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("action")]
+		[IsRequired]
 		public string Action { get; set; }
 	}
 }

@@ -226,12 +226,7 @@
         internal override CsType OnDeserialized(string name, CsContext context)
         {
             var @class = base.OnDeserialized(name, context);
-            var item = this.Items.OnDeserialized($"{name}Item", context);
-
-            foreach (var (key, value) in item.GetAttributes())
-            {
-                @class.HasAttribute(key, value);
-            }
+            var item = this.Items.OnDeserialized(name, context);
 
             if (this.MinItems is not null)
             {

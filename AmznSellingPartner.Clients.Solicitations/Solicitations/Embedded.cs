@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 
 	public class Embedded : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("actions")]
+		[IsRequired]
 		public List<GetSolicitationActionResponse> Actions { get; set; }
 
 		[JsonProperty("schema")]

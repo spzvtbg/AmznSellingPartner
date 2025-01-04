@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Provide the function code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("functionCode")]
+		[IsRequired]
 		public FunctionCode FunctionCode { get; set; }
 
 		[JsonProperty("locationIdentification")]

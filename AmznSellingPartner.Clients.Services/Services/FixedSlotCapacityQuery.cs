@@ -29,15 +29,15 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// Start date time from which the capacity slots are being requested in ISO 8601 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("startDateTime")]
+		[IsRequired]
 		public DateTime StartDateTime { get; set; }
 
 		/// <summary>
 		/// End date time up to which the capacity slots are being requested in ISO 8601 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("endDateTime")]
+		[IsRequired]
 		public DateTime EndDateTime { get; set; }
 	}
 }

@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Carton sequence number for the carton. The first carton will be 001, the second 002, and so on. This
 		/// number is used as a reference to refer to this carton from the pallet level.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("cartonSequenceNumber")]
+		[IsRequired]
 		public string CartonSequenceNumber { get; set; }
 
 		[JsonProperty("dimensions")]
@@ -40,8 +40,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// A list of container item details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<ContainerItem> Items { get; set; }
 	}
 }

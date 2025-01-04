@@ -12,30 +12,30 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The unique identifier of the field.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("FieldId")]
+		[IsRequired]
 		public string FieldId { get; set; }
 
 		/// <summary>
 		/// The name of the field.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("FieldLabel")]
+		[IsRequired]
 		public string FieldLabel { get; set; }
 
 		/// <summary>
 		/// The type of field.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("FieldType")]
+		[IsRequired]
 		public FieldType FieldType { get; set; }
 
 		/// <summary>
 		/// The content of the field as collected in regulatory form. Note that `FileAttachment` type fields contain
 		/// a URL where you can download the attachment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("FieldValue")]
+		[IsRequired]
 		public string FieldValue { get; set; }
 	}
 }

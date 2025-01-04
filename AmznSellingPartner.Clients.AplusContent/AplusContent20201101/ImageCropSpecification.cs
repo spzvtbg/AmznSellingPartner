@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class ImageCropSpecification : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("size")]
+		[IsRequired]
 		public ImageDimensions Size { get; set; }
 
 		[JsonProperty("offset")]

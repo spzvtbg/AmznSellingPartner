@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/shipping/v2/shipments/additionalInputs/schema")]
 	public class GetAdditionalInputsGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[InQuery("requestToken")]
 		[IsRequired]
-		[JsonProperty("requestToken")]
 		public string RequestToken { get; set; }
 
 		/// <summary>
@@ -21,14 +18,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[InQuery("rateId")]
 		[IsRequired]
-		[JsonProperty("rateId")]
 		public string RateId { get; set; }
 
 		/// <summary>
 		/// Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 		/// </summary>
 		[InHeader("x-amzn-shipping-business-id")]
-		[JsonProperty("x-amzn-shipping-business-id")]
 		public XAmznShippingBusinessId XAmznShippingBusinessId { get; set; }
 	}
 }

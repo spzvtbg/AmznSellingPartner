@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// A selling partner provided identifier for an Amazon listing.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sku")]
+		[IsRequired]
 		public string Sku { get; set; }
 
 		/// <summary>
 		/// The status of the listings item submission.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public Status Status { get; set; }
 
 		/// <summary>
 		/// The unique identifier of the listings item submission.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("submissionId")]
+		[IsRequired]
 		public string SubmissionId { get; set; }
 
 		/// <summary>

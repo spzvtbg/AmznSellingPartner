@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Assigned identification for the party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("partyId")]
+		[IsRequired]
 		public string PartyId { get; set; }
 
 		/// <summary>

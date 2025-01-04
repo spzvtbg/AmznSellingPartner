@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class GetCarrierAccountsResponse : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("activeAccounts")]
+		[IsRequired]
 		public ActiveAccounts ActiveAccounts { get; set; }
 	}
 }

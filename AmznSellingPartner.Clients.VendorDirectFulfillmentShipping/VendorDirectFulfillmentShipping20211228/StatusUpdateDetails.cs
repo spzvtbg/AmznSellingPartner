@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// The shipment tracking number is required for every package and should match the `trackingNumber` sent
 		/// for the shipment confirmation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("trackingNumber")]
+		[IsRequired]
 		public string TrackingNumber { get; set; }
 
 		/// <summary>
@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// Fields Explanation](https://developer-docs.amazon.com/sp-api/docs/vendor-direct-fulfillment-shipping
 		/// -api-use-case-guide#additional-fields-explanation).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("statusCode")]
+		[IsRequired]
 		public string StatusCode { get; set; }
 
 		/// <summary>
@@ -35,8 +35,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// veloper-docs.amazon.com/sp-api/docs/vendor-direct-fulfillment-shipping-api-use-case-guide#additional
 		/// -fields-explanation).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reasonCode")]
+		[IsRequired]
 		public string ReasonCode { get; set; }
 
 		/// <summary>
@@ -44,12 +44,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// date-time format, with UTC time zone or UTC offset. For example, 2020-07-16T23:00:00Z or 2020-07-16T
 		/// 23:00:00+01:00.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("statusDateTime")]
+		[IsRequired]
 		public DateTime StatusDateTime { get; set; }
 
-		[IsRequired]
 		[JsonProperty("statusLocationAddress")]
+		[IsRequired]
 		public Address StatusLocationAddress { get; set; }
 
 		[JsonProperty("shipmentSchedule")]

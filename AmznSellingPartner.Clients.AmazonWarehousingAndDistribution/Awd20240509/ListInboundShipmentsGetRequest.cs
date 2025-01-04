@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/awd/2024-05-09/inboundShipments")]
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Field to sort results by. By default, the response will be sorted by UPDATED_AT.
 		/// </summary>
 		[InQuery("sortBy")]
-		[JsonProperty("sortBy")]
 		public SortBy SortBy { get; set; }
 
 		/// <summary>
@@ -21,14 +18,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// order.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
 		/// Filter by inbound shipment status.
 		/// </summary>
 		[InQuery("shipmentStatus")]
-		[JsonProperty("shipmentStatus")]
 		public ShipmentStatus ShipmentStatus { get; set; }
 
 		/// <summary>
@@ -36,7 +31,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("updatedAfter")]
-		[JsonProperty("updatedAfter")]
 		public DateTime UpdatedAfter { get; set; }
 
 		/// <summary>
@@ -44,7 +38,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("updatedBefore")]
-		[JsonProperty("updatedBefore")]
 		public DateTime UpdatedBefore { get; set; }
 
 		/// <summary>
@@ -53,7 +46,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[InQuery("maxResults")]
 		[Minimum(1)]
 		[Maximum(200)]
-		[JsonProperty("maxResults")]
 		public int MaxResults { get; set; }
 
 		/// <summary>
@@ -64,7 +56,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// pages.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 	}
 }

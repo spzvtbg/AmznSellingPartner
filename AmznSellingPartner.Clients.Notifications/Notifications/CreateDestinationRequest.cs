@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// The information required to create a destination resource. Applications should use one resource type
 		/// (sqs or eventBridge) per destination.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("resourceSpecification")]
+		[IsRequired]
 		public DestinationResourceSpecification ResourceSpecification { get; set; }
 
 		/// <summary>
 		/// A developer-defined name to help identify this destination.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 	}
 }

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// <summary>
 		/// The identifier for the report. This identifier is unique only in combination with a seller ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportId")]
+		[IsRequired]
 		public string ReportId { get; set; }
 	}
 }

@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	/// </summary>
 	public class ItemContributor : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("role")]
+		[IsRequired]
 		public ItemContributorRole Role { get; set; }
 
 		/// <summary>
 		/// Name of the contributor, such as Jane Austen.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public string Value { get; set; }
 	}
 }

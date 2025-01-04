@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// List of packing options.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("packingOptions")]
+		[IsRequired]
 		public List<PackingOption> PackingOptions { get; set; }
 
 		[JsonProperty("pagination")]

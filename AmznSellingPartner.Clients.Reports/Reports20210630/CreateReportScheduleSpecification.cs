@@ -16,17 +16,17 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
 		/// for more information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportType")]
+		[IsRequired]
 		public string ReportType { get; set; }
 
 		/// <summary>
 		/// A list of marketplace identifiers for the report schedule.
 		/// </summary>
+		[JsonProperty("marketplaceIds")]
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(25)]
-		[JsonProperty("marketplaceIds")]
 		public List<string> MarketplaceIds { get; set; }
 
 		[JsonProperty("reportOptions")]
@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// One of a set of predefined <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a>
 		/// periods that specifies how often a report should be created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("period")]
+		[IsRequired]
 		public Period Period { get; set; }
 
 		/// <summary>

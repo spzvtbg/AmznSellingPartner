@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// The identifier of the selected value-added service. Must be among those returned in the response to the
 		/// getRates operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("id")]
+		[IsRequired]
 		public string Id { get; set; }
 	}
 }

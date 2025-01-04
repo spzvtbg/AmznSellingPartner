@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// <summary>
 		/// An identifier that identifies the type of scenario that user can use for testing.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("scenarioId")]
+		[IsRequired]
 		public string ScenarioId { get; set; }
 
 		/// <summary>
 		/// A list of orders that can be used by the caller to test each life cycle or scenario.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orders")]
+		[IsRequired]
 		public List<TestOrder> Orders { get; set; }
 	}
 }

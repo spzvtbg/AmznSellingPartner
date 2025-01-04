@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class GetRatesResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("requestToken")]
+		[IsRequired]
 		public RequestToken RequestToken { get; set; }
 
-		[IsRequired]
 		[JsonProperty("rates")]
+		[IsRequired]
 		public RateList Rates { get; set; }
 
 		[JsonProperty("ineligibleRates")]

@@ -14,19 +14,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Items included while creating Inbound Plan.
 		/// </summary>
+		[JsonProperty("items")]
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(2000)]
-		[JsonProperty("items")]
 		public List<ItemInput> Items { get; set; }
 
 		/// <summary>
 		/// Warehouse Id.
 		/// </summary>
+		[JsonProperty("warehouseId")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("warehouseId")]
 		public string WarehouseId { get; set; }
 	}
 }

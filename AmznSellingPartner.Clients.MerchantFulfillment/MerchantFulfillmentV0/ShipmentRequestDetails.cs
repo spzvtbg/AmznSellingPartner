@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// An Amazon-defined order identifier in 3-7-7 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("AmazonOrderId")]
+		[IsRequired]
 		public AmazonOrderId AmazonOrderId { get; set; }
 
 		/// <summary>
@@ -22,29 +22,29 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		[JsonProperty("SellerOrderId")]
 		public SellerOrderId SellerOrderId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("ItemList")]
+		[IsRequired]
 		public ItemList ItemList { get; set; }
 
 		/// <summary>
 		/// The address of the sender.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShipFromAddress")]
+		[IsRequired]
 		public Address ShipFromAddress { get; set; }
 
 		/// <summary>
 		/// The package dimensions.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("PackageDimensions")]
+		[IsRequired]
 		public PackageDimensions PackageDimensions { get; set; }
 
 		/// <summary>
 		/// The package weight.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Weight")]
+		[IsRequired]
 		public Weight Weight { get; set; }
 
 		/// <summary>
@@ -65,8 +65,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// Extra services offered by the carrier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShippingServiceOptions")]
+		[IsRequired]
 		public ShippingServiceOptions ShippingServiceOptions { get; set; }
 
 		/// <summary>

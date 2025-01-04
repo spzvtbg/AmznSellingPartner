@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// When true, this fulfillment order requires a COD (Cash On Delivery) payment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isCodRequired")]
+		[IsRequired]
 		public bool IsCodRequired { get; set; }
 
 		/// <summary>

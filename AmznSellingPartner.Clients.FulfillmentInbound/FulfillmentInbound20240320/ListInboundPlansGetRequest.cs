@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/inbound/fba/2024-03-20/inboundPlans")]
 	public class ListInboundPlansGetRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[InQuery("pageSize")]
 		[Minimum(1)]
 		[Maximum(30)]
-		[JsonProperty("pageSize")]
 		public int PageSize { get; set; }
 
 		/// <summary>
@@ -24,28 +21,24 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		[InQuery("paginationToken")]
 		[MinLength(0)]
 		[MaxLength(1024)]
-		[JsonProperty("paginationToken")]
 		public string PaginationToken { get; set; }
 
 		/// <summary>
 		/// The status of an inbound plan.
 		/// </summary>
 		[InQuery("status")]
-		[JsonProperty("status")]
 		public Status Status { get; set; }
 
 		/// <summary>
 		/// Sort by field.
 		/// </summary>
 		[InQuery("sortBy")]
-		[JsonProperty("sortBy")]
 		public SortBy SortBy { get; set; }
 
 		/// <summary>
 		/// The sort order.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 	}
 }

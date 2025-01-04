@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The Amazon marketplace identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
 		/// Type of offer for the listings item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("offerType")]
+		[IsRequired]
 		public OfferType OfferType { get; set; }
 
 		/// <summary>
 		/// The purchase price of the listings item
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("price")]
+		[IsRequired]
 		public Money Price { get; set; }
 
 		[JsonProperty("points")]

@@ -9,22 +9,22 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	/// </summary>
 	public class GetAdditionalSellerInputsRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("ShippingServiceId")]
+		[IsRequired]
 		public ShippingServiceIdentifier ShippingServiceId { get; set; }
 
 		/// <summary>
 		/// The address from which to ship.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShipFromAddress")]
+		[IsRequired]
 		public Address ShipFromAddress { get; set; }
 
 		/// <summary>
 		/// An Amazon defined order identifier
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("OrderId")]
+		[IsRequired]
 		public AmazonOrderId OrderId { get; set; }
 	}
 }

@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The number of the carrier shipment acknowledgement document.
 		/// </summary>
+		[JsonProperty("billOfLadingNumber")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("billOfLadingNumber")]
 		public string BillOfLadingNumber { get; set; }
 
 		/// <summary>

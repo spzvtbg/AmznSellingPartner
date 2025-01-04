@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// format with minute precision. Supports patterns `yyyy-MM-ddTHH:mmZ`, `yyyy-MM-ddTHH:mm:ssZ`, or `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// Note that non-zero second and millisecond components are removed.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("start")]
+		[IsRequired]
 		public DateTime Start { get; set; }
 	}
 }

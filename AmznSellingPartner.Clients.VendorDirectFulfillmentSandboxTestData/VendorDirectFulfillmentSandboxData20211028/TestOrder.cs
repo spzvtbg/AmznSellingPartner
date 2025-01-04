@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// <summary>
 		/// An error code that identifies the type of error that occurred.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderId")]
+		[IsRequired]
 		public string OrderId { get; set; }
 	}
 }

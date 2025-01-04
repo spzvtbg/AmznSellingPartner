@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Weight of the package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("weight")]
+		[IsRequired]
 		public PackageWeight Weight { get; set; }
 	}
 }

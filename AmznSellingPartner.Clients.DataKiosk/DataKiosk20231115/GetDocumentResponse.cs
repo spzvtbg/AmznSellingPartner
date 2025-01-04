@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// The identifier for the Data Kiosk document. This identifier is unique only in combination with a selling
 		/// partner account ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("documentId")]
+		[IsRequired]
 		public string DocumentId { get; set; }
 
 		/// <summary>
@@ -23,8 +23,8 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// algorithm.  **Note:** Most HTTP clients are capable of automatically decompressing downloaded files based
 		/// on the `Content-Encoding` header.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("documentUrl")]
+		[IsRequired]
 		public string DocumentUrl { get; set; }
 	}
 }

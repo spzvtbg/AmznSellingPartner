@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// <summary>
 		/// The name of the template.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 	}
 }

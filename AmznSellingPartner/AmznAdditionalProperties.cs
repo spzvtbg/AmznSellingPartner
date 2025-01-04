@@ -27,7 +27,7 @@
                     type = this.Type;
                 }
 
-                return new CsProperty() { Type = type };
+                return new CsProperty() { Type = type }.HasJsonProperty(true);
             }
         }
 

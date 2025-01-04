@@ -9,39 +9,39 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class Rate : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("rateId")]
+		[IsRequired]
 		public RateId RateId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("carrierId")]
+		[IsRequired]
 		public CarrierId CarrierId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("carrierName")]
+		[IsRequired]
 		public CarrierName CarrierName { get; set; }
 
-		[IsRequired]
 		[JsonProperty("serviceId")]
+		[IsRequired]
 		public ServiceId ServiceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("serviceName")]
+		[IsRequired]
 		public ServiceName ServiceName { get; set; }
 
 		[JsonProperty("billedWeight")]
 		public Weight BilledWeight { get; set; }
 
-		[IsRequired]
 		[JsonProperty("totalCharge")]
+		[IsRequired]
 		public Currency TotalCharge { get; set; }
 
-		[IsRequired]
 		[JsonProperty("promise")]
+		[IsRequired]
 		public Promise Promise { get; set; }
 
-		[IsRequired]
 		[JsonProperty("supportedDocumentSpecifications")]
+		[IsRequired]
 		public SupportedDocumentSpecificationList SupportedDocumentSpecifications { get; set; }
 
 		[JsonProperty("availableValueAddedServiceGroups")]
@@ -52,8 +52,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// then call the getAdditionalInputs operation to return the JSON schema to use when providing the additional
 		/// inputs to the purchaseShipment operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("requiresAdditionalInputs")]
+		[IsRequired]
 		public bool RequiresAdditionalInputs { get; set; }
 
 		[JsonProperty("rateItemList")]

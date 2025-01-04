@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/tax/invoices/2024-06-19/exports")]
@@ -14,7 +12,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -23,7 +20,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// is 30 days ago.
 		/// </summary>
 		[InQuery("dateStart")]
-		[JsonProperty("dateStart")]
 		public DateTime DateStart { get; set; }
 
 		/// <summary>
@@ -33,14 +29,12 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// Note that this operation can return empty pages.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
 		/// The maximum number of invoices to return in a single call.  Minimum: 1  Maximum: 100
 		/// </summary>
 		[InQuery("pageSize")]
-		[JsonProperty("pageSize")]
 		public int PageSize { get; set; }
 
 		/// <summary>
@@ -49,14 +43,12 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// value is the time of the request.
 		/// </summary>
 		[InQuery("dateEnd")]
-		[JsonProperty("dateEnd")]
 		public DateTime DateEnd { get; set; }
 
 		/// <summary>
 		/// Return exports matching the status specified.
 		/// </summary>
 		[InQuery("status")]
-		[JsonProperty("status")]
 		public Status Status { get; set; }
 	}
 }

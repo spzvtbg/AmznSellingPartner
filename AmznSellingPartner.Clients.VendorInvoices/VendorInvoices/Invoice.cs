@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Identifies the type of invoice.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoiceType")]
+		[IsRequired]
 		public InvoiceType InvoiceType { get; set; }
 
 		/// <summary>
@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// type is Invoice or CreditNote number if the document type is Credit Note. Failure to provide this reference
 		/// will result in a rejection.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("id")]
+		[IsRequired]
 		public string Id { get; set; }
 
 		/// <summary>
@@ -38,15 +38,15 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// Date when the invoice/credit note information was generated in the origin's accounting system. The invoice
 		/// date should be on or after the purchase order creation date.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("date")]
+		[IsRequired]
 		public DateTime Date { get; set; }
 
 		/// <summary>
 		/// Name, address and tax details of the party receiving the payment of this invoice.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("remitToParty")]
+		[IsRequired]
 		public PartyIdentification RemitToParty { get; set; }
 
 		/// <summary>
@@ -78,8 +78,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// taxes. It is the total amount of invoice (including charges, less allowances) before terms discount (if
 		/// discount is applicable).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoiceTotal")]
+		[IsRequired]
 		public Money InvoiceTotal { get; set; }
 
 		/// <summary>

@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// <summary>
 		/// The supported time period to use to perform marketplace-ASIN level aggregation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("aggregationTimePeriod")]
+		[IsRequired]
 		public AggregationTimePeriod AggregationTimePeriod { get; set; }
 	}
 }

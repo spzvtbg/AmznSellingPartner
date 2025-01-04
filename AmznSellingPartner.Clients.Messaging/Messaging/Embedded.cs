@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 
 	public class Embedded : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("actions")]
+		[IsRequired]
 		public List<GetMessagingActionResponse> Actions { get; set; }
 
 		[JsonProperty("schema")]

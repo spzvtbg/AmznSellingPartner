@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// The financial event group ID for a successfully initiated payout. You can use this ID to track payout
 		/// information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("payoutReferenceId")]
+		[IsRequired]
 		public string PayoutReferenceId { get; set; }
 	}
 }

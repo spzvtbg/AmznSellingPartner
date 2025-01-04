@@ -9,20 +9,20 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class StandardFourImageTextQuadrantModule : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("block1")]
+		[IsRequired]
 		public StandardImageTextBlock Block1 { get; set; }
 
-		[IsRequired]
 		[JsonProperty("block2")]
+		[IsRequired]
 		public StandardImageTextBlock Block2 { get; set; }
 
-		[IsRequired]
 		[JsonProperty("block3")]
+		[IsRequired]
 		public StandardImageTextBlock Block3 { get; set; }
 
-		[IsRequired]
 		[JsonProperty("block4")]
+		[IsRequired]
 		public StandardImageTextBlock Block4 { get; set; }
 	}
 }

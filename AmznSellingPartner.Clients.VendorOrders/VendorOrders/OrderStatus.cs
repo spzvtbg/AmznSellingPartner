@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// The buyer's purchase order number for this order. Formatting Notes: 8-character alpha-numeric code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderNumber")]
+		[IsRequired]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
 		/// The status of the buyer's purchase order for this order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderStatus")]
+		[IsRequired]
 		public PurchaseOrderStatus PurchaseOrderStatus { get; set; }
 
 		/// <summary>
 		/// The date the purchase order was placed. Must be in ISO-8601 date/time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderDate")]
+		[IsRequired]
 		public DateTime PurchaseOrderDate { get; set; }
 
 		/// <summary>
@@ -41,8 +41,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// Name/Address and tax details of the selling party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
@@ -50,15 +50,15 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// region on the [Resources page of Amazon Vendor Central](https://vendorcentral.amazon.com/hz/vendor/m
 		/// embers/support/help/node/GPZ88XH8HQM97ZV6).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipToParty")]
+		[IsRequired]
 		public PartyIdentification ShipToParty { get; set; }
 
 		/// <summary>
 		/// Detailed order status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemStatus")]
+		[IsRequired]
 		public ItemStatus ItemStatus { get; set; }
 	}
 }

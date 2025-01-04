@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The identifier of the order's regulated information reviewer.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("externalReviewerId")]
+		[IsRequired]
 		public string ExternalReviewerId { get; set; }
 
 		/// <summary>

@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	/// </summary>
 	public class GetInventorySummariesResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("granularity")]
+		[IsRequired]
 		public Granularity Granularity { get; set; }
 
-		[IsRequired]
 		[JsonProperty("inventorySummaries")]
+		[IsRequired]
 		public InventorySummaries InventorySummaries { get; set; }
 	}
 }

@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class ContentRecord : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("contentReferenceKey")]
+		[IsRequired]
 		public ContentReferenceKey ContentReferenceKey { get; set; }
 
 		[JsonProperty("contentMetadata")]

@@ -19,28 +19,28 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// Identifies the fulfillment order item to update. Created with a previous call to the `createFulfillmentOrder`
 		/// operation.
 		/// </summary>
+		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]
 		[MaxLength(50)]
-		[JsonProperty("sellerFulfillmentOrderItemId")]
 		public string SellerFulfillmentOrderItemId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public Quantity Quantity { get; set; }
 
 		/// <summary>
 		/// A message to the gift recipient, if applicable.
 		/// </summary>
-		[MaxLength(512)]
 		[JsonProperty("giftMessage")]
+		[MaxLength(512)]
 		public string GiftMessage { get; set; }
 
 		/// <summary>
 		/// Item-specific text that displays in recipient-facing materials such as the outbound shipment packing
 		/// slip.
 		/// </summary>
-		[MaxLength(250)]
 		[JsonProperty("displayableComment")]
+		[MaxLength(250)]
 		public string DisplayableComment { get; set; }
 
 		/// <summary>

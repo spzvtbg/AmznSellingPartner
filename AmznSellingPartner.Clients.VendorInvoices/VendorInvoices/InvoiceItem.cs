@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Unique number related to this line item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
+		[IsRequired]
 		public int ItemSequenceNumber { get; set; }
 
 		/// <summary>
@@ -34,8 +34,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// Invoiced quantity of this item. Quantity must be greater than zero.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoicedQuantity")]
+		[IsRequired]
 		public ItemQuantity InvoicedQuantity { get; set; }
 
 		/// <summary>
@@ -43,8 +43,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// or negative. It indicates net unit price. Net cost means VAT is not included in cost. If items are priced
 		/// by weight, this cost need to be considered in conjunction with netCostUnitOfMeasure. E.g.: 5/LB
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("netCost")]
+		[IsRequired]
 		public Money NetCost { get; set; }
 
 		/// <summary>

@@ -28,8 +28,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Destination address for this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("destinationAddress")]
+		[IsRequired]
 		public Address DestinationAddress { get; set; }
 
 		/// <summary>
@@ -42,16 +42,16 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// The AWD inbound order ID that this inbound shipment belongs to.
 		/// </summary>
+		[JsonProperty("orderId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("orderId")]
 		public string OrderId { get; set; }
 
 		/// <summary>
 		/// Origin address for this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("originAddress")]
+		[IsRequired]
 		public Address OriginAddress { get; set; }
 
 		/// <summary>
@@ -69,16 +69,16 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Packages that are part of this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentContainerQuantities")]
+		[IsRequired]
 		public List<DistributionPackageQuantity> ShipmentContainerQuantities { get; set; }
 
 		/// <summary>
 		/// Unique shipment ID.
 		/// </summary>
+		[JsonProperty("shipmentId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 
 		/// <summary>
@@ -98,15 +98,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Current status of this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentStatus")]
+		[IsRequired]
 		public InboundShipmentStatus ShipmentStatus { get; set; }
 
 		/// <summary>
 		/// Carrier-unique tracking ID for this shipment.
 		/// </summary>
-		[MinLength(1)]
 		[JsonProperty("trackingId")]
+		[MinLength(1)]
 		public string TrackingId { get; set; }
 
 		/// <summary>

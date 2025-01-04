@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	/// </summary>
 	public class FulfillmentPreview : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("shippingSpeedCategory")]
+		[IsRequired]
 		public ShippingSpeedCategory ShippingSpeedCategory { get; set; }
 
 		[JsonProperty("scheduledDeliveryInfo")]
@@ -22,15 +22,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// When true, this fulfillment order preview is fulfillable.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isFulfillable")]
+		[IsRequired]
 		public bool IsFulfillable { get; set; }
 
 		/// <summary>
 		/// When true, this fulfillment order preview is for COD (Cash On Delivery).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isCODCapable")]
+		[IsRequired]
 		public bool IsCODCapable { get; set; }
 
 		/// <summary>
@@ -62,8 +62,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The marketplace the fulfillment order is placed against.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>

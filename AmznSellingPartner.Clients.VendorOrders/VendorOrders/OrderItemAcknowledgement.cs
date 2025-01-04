@@ -15,15 +15,15 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// This indicates the acknowledgement code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("acknowledgementCode")]
+		[IsRequired]
 		public AcknowledgementCode AcknowledgementCode { get; set; }
 
 		/// <summary>
 		/// Details of quantity acknowledged with the above acknowledgement code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("acknowledgedQuantity")]
+		[IsRequired]
 		public ItemQuantity AcknowledgedQuantity { get; set; }
 
 		/// <summary>

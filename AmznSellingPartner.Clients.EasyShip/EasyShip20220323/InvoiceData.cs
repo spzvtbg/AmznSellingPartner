@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// <summary>
 		/// The invoice number.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("invoiceNumber")]
+		[IsRequired]
 		public String InvoiceNumber { get; set; }
 
 		/// <summary>

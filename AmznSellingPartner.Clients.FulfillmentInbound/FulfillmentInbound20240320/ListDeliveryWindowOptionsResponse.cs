@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Delivery window options generated for the placement option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("deliveryWindowOptions")]
+		[IsRequired]
 		public List<DeliveryWindowOption> DeliveryWindowOptions { get; set; }
 
 		[JsonProperty("pagination")]

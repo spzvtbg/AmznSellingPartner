@@ -28,21 +28,21 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// The AWD inbound order ID that this inbound shipment belongs to.
 		/// </summary>
+		[JsonProperty("orderId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("orderId")]
 		public string OrderId { get; set; }
 
 		/// <summary>
 		/// A unique shipment ID.
 		/// </summary>
+		[JsonProperty("shipmentId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("shipmentStatus")]
+		[IsRequired]
 		public InboundShipmentStatus ShipmentStatus { get; set; }
 
 		/// <summary>

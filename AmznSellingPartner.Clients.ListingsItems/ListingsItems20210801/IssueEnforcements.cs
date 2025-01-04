@@ -15,15 +15,15 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// List of enforcement actions taken by Amazon that affect the publishing or status of a listing.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("actions")]
+		[IsRequired]
 		public List<IssueEnforcementAction> Actions { get; set; }
 
 		/// <summary>
 		/// The "exemption" field serves to convey the status of enforcement actions by Amazon.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("exemption")]
+		[IsRequired]
 		public IssueExemption Exemption { get; set; }
 	}
 }

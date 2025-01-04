@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// The sequence number of the item. The number must be the same as the order number of the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
+		[IsRequired]
 		public int ItemSequenceNumber { get; set; }
 
 		/// <summary>
@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// The total quantity of items that are in this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shippedQuantity")]
+		[IsRequired]
 		public ItemQuantity ShippedQuantity { get; set; }
 	}
 }

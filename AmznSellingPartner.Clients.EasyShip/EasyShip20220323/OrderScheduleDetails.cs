@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	/// </summary>
 	public class OrderScheduleDetails : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("amazonOrderId")]
+		[IsRequired]
 		public AmazonOrderId AmazonOrderId { get; set; }
 
 		[JsonProperty("packageDetails")]

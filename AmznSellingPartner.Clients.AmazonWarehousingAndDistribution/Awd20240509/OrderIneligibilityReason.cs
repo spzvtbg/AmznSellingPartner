@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Code for the order ineligibility.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("code")]
+		[IsRequired]
 		public string Code { get; set; }
 
 		/// <summary>
 		/// Description detailing the ineligibility reason of the order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("description")]
+		[IsRequired]
 		public string Description { get; set; }
 	}
 }

@@ -27,18 +27,18 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// The range of dates within which the seller intends to ship their items. This is the pick-up date or 'ready
 		/// to ship' date, not an estimated delivery date.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("readyToShipWindow")]
+		[IsRequired]
 		public WindowInput ReadyToShipWindow { get; set; }
 
 		/// <summary>
 		/// Identifier of a shipment. A shipment contains the boxes and units being inbounded.
 		/// </summary>
+		[JsonProperty("shipmentId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 	}
 }

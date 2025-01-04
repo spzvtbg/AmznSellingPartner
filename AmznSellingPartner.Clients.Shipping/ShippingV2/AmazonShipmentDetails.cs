@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// This attribute is required only for a Direct Fulfillment shipment. This is the encrypted shipment ID
 		/// .
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentId")]
+		[IsRequired]
 		public string ShipmentId { get; set; }
 	}
 }

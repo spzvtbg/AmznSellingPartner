@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	/// </summary>
 	public class Quote : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("cost")]
+		[IsRequired]
 		public Currency Cost { get; set; }
 
 		/// <summary>

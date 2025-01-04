@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// An issue code that identifies the type of issue.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("code")]
+		[IsRequired]
 		public string Code { get; set; }
 
 		/// <summary>
 		/// A message that describes the issue.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("message")]
+		[IsRequired]
 		public string Message { get; set; }
 
 		/// <summary>
 		/// The severity of the issue.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("severity")]
+		[IsRequired]
 		public Severity Severity { get; set; }
 
 		/// <summary>
@@ -48,8 +48,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// ASIN.   * `QUALIFICATION_REQUIRED` - Indicating that the listing requires qualification-related appr
 		/// oval.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("categories")]
+		[IsRequired]
 		public List<string> Categories { get; set; }
 
 		/// <summary>

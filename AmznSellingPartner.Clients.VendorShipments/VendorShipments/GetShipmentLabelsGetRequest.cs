@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/vendor/shipping/v1/transportLabels")]
@@ -15,14 +13,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		[InQuery("limit")]
 		[Minimum(1)]
 		[Maximum(50)]
-		[JsonProperty("limit")]
 		public long Limit { get; set; }
 
 		/// <summary>
 		/// Sort the list by shipment label creation date in ascending or descending order.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
@@ -33,7 +29,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// .
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -41,7 +36,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedAfter")]
-		[JsonProperty("labelCreatedAfter")]
 		public DateTime LabelCreatedAfter { get; set; }
 
 		/// <summary>
@@ -49,21 +43,18 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedBefore")]
-		[JsonProperty("labelCreatedBefore")]
 		public DateTime LabelCreatedBefore { get; set; }
 
 		/// <summary>
 		/// Get Shipment labels by passing buyer reference number.
 		/// </summary>
 		[InQuery("buyerReferenceNumber")]
-		[JsonProperty("buyerReferenceNumber")]
 		public string BuyerReferenceNumber { get; set; }
 
 		/// <summary>
 		/// Get Shipment labels by passing vendor shipment identifier.
 		/// </summary>
 		[InQuery("vendorShipmentIdentifier")]
-		[JsonProperty("vendorShipmentIdentifier")]
 		public string VendorShipmentIdentifier { get; set; }
 
 		/// <summary>
@@ -71,7 +62,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// in the shipment.
 		/// </summary>
 		[InQuery("sellerWarehouseCode")]
-		[JsonProperty("sellerWarehouseCode")]
 		public string SellerWarehouseCode { get; set; }
 	}
 }

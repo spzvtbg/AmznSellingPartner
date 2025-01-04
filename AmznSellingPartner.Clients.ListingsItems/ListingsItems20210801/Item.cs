@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// A selling partner provided identifier for an Amazon listing.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sku")]
+		[IsRequired]
 		public string Sku { get; set; }
 
 		[JsonProperty("summaries")]

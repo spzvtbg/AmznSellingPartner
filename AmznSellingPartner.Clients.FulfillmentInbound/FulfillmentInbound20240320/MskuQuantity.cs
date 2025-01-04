@@ -12,19 +12,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
 		/// </summary>
+		[JsonProperty("msku")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		[JsonProperty("msku")]
 		public string Msku { get; set; }
 
 		/// <summary>
 		/// A positive integer.
 		/// </summary>
+		[JsonProperty("quantity")]
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		[JsonProperty("quantity")]
 		public int Quantity { get; set; }
 	}
 }

@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/aplus/2020-11-01/contentDocuments/{contentReferenceKey}/asins")]
 	public class ListContentDocumentAsinRelationsGetRequest : BaseHttpRequest
 	{
@@ -16,7 +14,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InPath("contentReferenceKey")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("contentReferenceKey")]
 		public string ContentReferenceKey { get; set; }
 
 		/// <summary>
@@ -25,7 +22,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("marketplaceId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -35,7 +31,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		[InQuery("includedDataSet")]
 		[MinItems(0)]
 		[UniqueItems]
-		[JsonProperty("includedDataSet")]
 		public CsvValue<IncludedDataSet> IncludedDataSet { get; set; }
 
 		/// <summary>
@@ -43,7 +38,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// </summary>
 		[InQuery("asinSet")]
 		[UniqueItems]
-		[JsonProperty("asinSet")]
 		public CsvValue<string> AsinSet { get; set; }
 
 		/// <summary>
@@ -55,7 +49,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// </summary>
 		[InQuery("pageToken")]
 		[MinLength(1)]
-		[JsonProperty("pageToken")]
 		public string PageToken { get; set; }
 	}
 }

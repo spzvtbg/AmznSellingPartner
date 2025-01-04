@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Status of label generation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("labelStatus")]
+		[IsRequired]
 		public LabelStatus LabelStatus { get; set; }
 	}
 }

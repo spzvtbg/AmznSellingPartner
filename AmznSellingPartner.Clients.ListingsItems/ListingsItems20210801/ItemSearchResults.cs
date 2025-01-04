@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// the page count limit will be returned per request regardless of the number found).  Note: The maximum
 		/// number of items (SKUs) that can be returned and paged through is 1000.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("numberOfResults")]
+		[IsRequired]
 		public int NumberOfResults { get; set; }
 
 		/// <summary>
@@ -29,8 +29,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// A list of listings items.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<Item> Items { get; set; }
 	}
 }

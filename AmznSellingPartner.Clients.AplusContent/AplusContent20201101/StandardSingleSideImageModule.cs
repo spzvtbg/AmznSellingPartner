@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class StandardSingleSideImageModule : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("imagePositionType")]
+		[IsRequired]
 		public PositionType ImagePositionType { get; set; }
 
 		[JsonProperty("block")]

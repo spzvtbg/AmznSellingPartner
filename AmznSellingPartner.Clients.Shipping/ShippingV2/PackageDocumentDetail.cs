@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class PackageDocumentDetail : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("packageClientReferenceId")]
+		[IsRequired]
 		public PackageClientReferenceId PackageClientReferenceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageDocuments")]
+		[IsRequired]
 		public PackageDocumentList PackageDocuments { get; set; }
 
 		[JsonProperty("trackingId")]

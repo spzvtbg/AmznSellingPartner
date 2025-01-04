@@ -12,20 +12,20 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Identifier of a packing option.
 		/// </summary>
+		[JsonProperty("packingOptionId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("packingOptionId")]
 		public string PackingOptionId { get; set; }
 
 		/// <summary>
 		/// The status of a packing option. Possible values: 'OFFERED', 'ACCEPTED', 'EXPIRED'.
 		/// </summary>
+		[JsonProperty("status")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("status")]
 		public string Status { get; set; }
 	}
 }

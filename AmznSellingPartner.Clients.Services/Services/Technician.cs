@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// The technician identifier.
 		/// </summary>
+		[JsonProperty("technicianId")]
 		[MinLength(1)]
 		[MaxLength(50)]
-		[JsonProperty("technicianId")]
 		public string TechnicianId { get; set; }
 
 		/// <summary>

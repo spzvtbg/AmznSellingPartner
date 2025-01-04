@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	/// </summary>
 	public class ScheduleSelfShipAppointmentResponse : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("selfShipAppointmentDetails")]
+		[IsRequired]
 		public SelfShipAppointmentDetails SelfShipAppointmentDetails { get; set; }
 	}
 }

@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The item's Amazon Standard Identification Number (ASIN).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ASIN")]
+		[IsRequired]
 		public string ASIN { get; set; }
 
 		/// <summary>
@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// An Amazon-defined order item identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("OrderItemId")]
+		[IsRequired]
 		public string OrderItemId { get; set; }
 
 		/// <summary>
@@ -47,8 +47,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The number of items in the order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("QuantityOrdered")]
+		[IsRequired]
 		public int QuantityOrdered { get; set; }
 
 		/// <summary>

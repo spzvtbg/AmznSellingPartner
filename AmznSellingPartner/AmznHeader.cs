@@ -12,6 +12,7 @@
                 Name = name,
                 Type = "string"
             }
-            .HasDescription(this.Description);
+            .HasDescription(this.Description)
+            .HasAttribute("FromHeader", $"\"{name}\"");
     }
 }

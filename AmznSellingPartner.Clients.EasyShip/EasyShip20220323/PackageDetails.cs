@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		[JsonProperty("packageItems")]
 		public Items PackageItems { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageTimeSlot")]
+		[IsRequired]
 		public TimeSlot PackageTimeSlot { get; set; }
 
 		[JsonProperty("packageIdentifier")]

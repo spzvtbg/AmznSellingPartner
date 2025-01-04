@@ -20,15 +20,15 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The end timestamp of the window.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("end")]
+		[IsRequired]
 		public DateTime End { get; set; }
 
 		/// <summary>
 		/// The start timestamp of the window.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("start")]
+		[IsRequired]
 		public DateTime Start { get; set; }
 	}
 }

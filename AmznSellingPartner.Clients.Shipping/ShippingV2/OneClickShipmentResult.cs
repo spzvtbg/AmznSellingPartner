@@ -9,28 +9,28 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class OneClickShipmentResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("shipmentId")]
+		[IsRequired]
 		public ShipmentId ShipmentId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageDocumentDetails")]
+		[IsRequired]
 		public PackageDocumentDetailList PackageDocumentDetails { get; set; }
 
-		[IsRequired]
 		[JsonProperty("promise")]
+		[IsRequired]
 		public Promise Promise { get; set; }
 
-		[IsRequired]
 		[JsonProperty("carrier")]
+		[IsRequired]
 		public Carrier Carrier { get; set; }
 
-		[IsRequired]
 		[JsonProperty("service")]
+		[IsRequired]
 		public Service Service { get; set; }
 
-		[IsRequired]
 		[JsonProperty("totalCharge")]
+		[IsRequired]
 		public Currency TotalCharge { get; set; }
 	}
 }

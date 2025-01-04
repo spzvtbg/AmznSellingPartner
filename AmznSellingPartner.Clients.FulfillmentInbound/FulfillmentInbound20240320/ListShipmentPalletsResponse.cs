@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The pallets in a shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("pallets")]
+		[IsRequired]
 		public List<Pallet> Pallets { get; set; }
 	}
 }

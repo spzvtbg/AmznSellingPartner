@@ -12,23 +12,23 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// <summary>
 		/// The developer-defined name for this destination.
 		/// </summary>
+		[JsonProperty("name")]
 		[IsRequired]
 		[MaxLength(256)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The destination identifier generated when you created the destination.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("destinationId")]
+		[IsRequired]
 		public string DestinationId { get; set; }
 
 		/// <summary>
 		/// The resource that will receive notifications associated with this destination.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("resource")]
+		[IsRequired]
 		public DestinationResource Resource { get; set; }
 	}
 }

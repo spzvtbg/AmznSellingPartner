@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// The status of the FOEP computation. Possible values include `VALID_FOEP`, `NO_COMPETING_OFFER`, `OFFER_NOT_ELIGIBLE`,
 		/// `OFFER_NOT_FOUND`, and `ASIN_NOT_ELIGIBLE`. Additional values might be added in the future.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("resultStatus")]
+		[IsRequired]
 		public string ResultStatus { get; set; }
 
 		/// <summary>

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/feeds/2021-06-30/feeds")]
 	public class CreateFeedPostRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public CreateFeedSpecification Body { get; set; }
 	}
 }

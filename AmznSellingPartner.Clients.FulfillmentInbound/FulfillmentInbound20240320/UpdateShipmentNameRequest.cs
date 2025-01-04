@@ -12,10 +12,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// A human-readable name to update the shipment name to.
 		/// </summary>
+		[JsonProperty("name")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 	}
 }

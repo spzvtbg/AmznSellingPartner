@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class IneligibilityReason : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("code")]
+		[IsRequired]
 		public IneligibilityReasonCode Code { get; set; }
 
 		/// <summary>
 		/// The ineligibility reason.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("message")]
+		[IsRequired]
 		public string Message { get; set; }
 	}
 }

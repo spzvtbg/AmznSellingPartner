@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The type of download. Possible values: `URL`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("downloadType")]
+		[IsRequired]
 		public string DownloadType { get; set; }
 
 		/// <summary>
@@ -28,8 +28,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Uniform resource identifier to identify where the document is located.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("uri")]
+		[IsRequired]
 		public string Uri { get; set; }
 	}
 }

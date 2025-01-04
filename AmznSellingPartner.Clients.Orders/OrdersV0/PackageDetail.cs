@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	/// </summary>
 	public class PackageDetail : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("packageReferenceId")]
+		[IsRequired]
 		public PackageReferenceId PackageReferenceId { get; set; }
 
 		/// <summary>
@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// /changelog/carriercode-value-required-in-shipment-confirmations-for-br-mx-ca-sg-au-in-jp-marketplace
 		/// s).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("carrierCode")]
+		[IsRequired]
 		public string CarrierCode { get; set; }
 
 		/// <summary>
@@ -40,16 +40,16 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The tracking number used to obtain tracking and delivery information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("trackingNumber")]
+		[IsRequired]
 		public string TrackingNumber { get; set; }
 
 		/// <summary>
 		/// The shipping date for the package. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> date/time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipDate")]
+		[IsRequired]
 		public DateTime ShipDate { get; set; }
 
 		/// <summary>
@@ -61,8 +61,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The list of order items and quantities to be updated.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderItems")]
+		[IsRequired]
 		public ConfirmShipmentOrderItemsList OrderItems { get; set; }
 	}
 }

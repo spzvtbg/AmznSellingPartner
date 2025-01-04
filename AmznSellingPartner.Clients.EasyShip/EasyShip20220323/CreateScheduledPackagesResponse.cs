@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// <summary>
 		/// A list of packages. Refer to the `Package` object.
 		/// </summary>
-		[MaxItems(100)]
 		[JsonProperty("scheduledPackages")]
+		[MaxItems(100)]
 		public List<Package> ScheduledPackages { get; set; }
 
 		/// <summary>

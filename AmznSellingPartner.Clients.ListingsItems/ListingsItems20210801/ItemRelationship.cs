@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The type of relationship.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public Type Type { get; set; }
 	}
 }

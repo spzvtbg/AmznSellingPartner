@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Unique shipment ID (not used over the last 365 days).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentIdentifier")]
+		[IsRequired]
 		public string ShipmentIdentifier { get; set; }
 
 		/// <summary>
@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// posted shipment confirmation. If replacing an existing shipment confirmation, be sure to provide the
 		/// identical shipmentIdentifier and sellingParty information as in the previous confirmation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentConfirmationType")]
+		[IsRequired]
 		public ShipmentConfirmationType ShipmentConfirmationType { get; set; }
 
 		/// <summary>
@@ -56,8 +56,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Date on which the shipment confirmation was submitted.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentConfirmationDate")]
+		[IsRequired]
 		public DateTime ShipmentConfirmationDate { get; set; }
 
 		/// <summary>
@@ -81,22 +81,22 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Name/Address and tax details of the selling party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
 		/// Name/Address and tax details of the ship from party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipFromParty")]
+		[IsRequired]
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
 		/// Name/Address of the destination warehouse where the shipment is being shipped to.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipToParty")]
+		[IsRequired]
 		public PartyIdentification ShipToParty { get; set; }
 
 		[JsonProperty("shipmentMeasurements")]
@@ -112,8 +112,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// A list of the items in this shipment and their associated details. If any of the item detail fields are
 		/// common at a carton or a pallet level, provide them at the corresponding carton or pallet level.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shippedItems")]
+		[IsRequired]
 		public List<Item> ShippedItems { get; set; }
 
 		/// <summary>

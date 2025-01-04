@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	/// </summary>
 	public class FeaturedOfferExpectedPriceRequestParams : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("sku")]
+		[IsRequired]
 		public Sku Sku { get; set; }
 	}
 }

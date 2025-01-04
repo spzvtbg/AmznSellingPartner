@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// The estimated number of results that would still be returned if refinement key applied.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("numberOfResults")]
+		[IsRequired]
 		public int NumberOfResults { get; set; }
 
 		/// <summary>
 		/// Brand name. For display and can be used as a search refinement.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("brandName")]
+		[IsRequired]
 		public string BrandName { get; set; }
 	}
 }

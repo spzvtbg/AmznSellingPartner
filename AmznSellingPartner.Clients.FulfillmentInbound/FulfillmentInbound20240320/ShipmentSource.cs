@@ -15,10 +15,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The type of source for this shipment. Possible values: `SELLER_FACILITY`.
 		/// </summary>
+		[JsonProperty("sourceType")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("sourceType")]
 		public string SourceType { get; set; }
 	}
 }

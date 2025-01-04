@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/fba/inventory/v1/summaries")]
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// returns inventory summaries only (default value).
 		/// </summary>
 		[InQuery("details")]
-		[JsonProperty("details")]
 		public bool Details { get; set; }
 
 		/// <summary>
@@ -23,7 +20,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InQuery("granularityType")]
 		[IsRequired]
-		[JsonProperty("granularityType")]
 		public GranularityType GranularityType { get; set; }
 
 		/// <summary>
@@ -31,7 +27,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InQuery("granularityId")]
 		[IsRequired]
-		[JsonProperty("granularityId")]
 		public string GranularityId { get; set; }
 
 		/// <summary>
@@ -41,7 +36,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// are not detected.
 		/// </summary>
 		[InQuery("startDateTime")]
-		[JsonProperty("startDateTime")]
 		public DateTime StartDateTime { get; set; }
 
 		/// <summary>
@@ -49,14 +43,12 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InQuery("sellerSkus")]
 		[MaxItems(50)]
-		[JsonProperty("sellerSkus")]
 		public CsvValue<string> SellerSkus { get; set; }
 
 		/// <summary>
 		/// A single seller SKU used for querying the specified seller SKU inventory summaries.
 		/// </summary>
 		[InQuery("sellerSku")]
-		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; }
 
 		/// <summary>
@@ -64,7 +56,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// after being created.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -73,7 +64,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 	}
 }

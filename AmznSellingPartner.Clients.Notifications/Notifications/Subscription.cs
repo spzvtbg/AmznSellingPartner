@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// <summary>
 		/// The subscription identifier generated when the subscription is created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("subscriptionId")]
+		[IsRequired]
 		public string SubscriptionId { get; set; }
 
 		/// <summary>
 		/// The version of the payload object to be used in the notification.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("payloadVersion")]
+		[IsRequired]
 		public string PayloadVersion { get; set; }
 
 		/// <summary>
 		/// The identifier for the destination where notifications will be delivered.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("destinationId")]
+		[IsRequired]
 		public string DestinationId { get; set; }
 
 		[JsonProperty("processingDirective")]

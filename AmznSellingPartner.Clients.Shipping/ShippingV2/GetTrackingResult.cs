@@ -12,30 +12,30 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class GetTrackingResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("trackingId")]
+		[IsRequired]
 		public TrackingId TrackingId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("alternateLegTrackingId")]
+		[IsRequired]
 		public AlternateLegTrackingId AlternateLegTrackingId { get; set; }
 
 		/// <summary>
 		/// A list of tracking events.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("eventHistory")]
+		[IsRequired]
 		public List<Event> EventHistory { get; set; }
 
 		/// <summary>
 		/// The date and time by which the shipment is promised to be delivered.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("promisedDeliveryDate")]
+		[IsRequired]
 		public DateTime PromisedDeliveryDate { get; set; }
 
-		[IsRequired]
 		[JsonProperty("summary")]
+		[IsRequired]
 		public TrackingSummary Summary { get; set; }
 	}
 }

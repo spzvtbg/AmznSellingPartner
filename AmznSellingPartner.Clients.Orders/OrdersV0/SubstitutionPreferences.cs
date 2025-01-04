@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The type of substitution that these preferences represent.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("SubstitutionType")]
+		[IsRequired]
 		public SubstitutionType SubstitutionType { get; set; }
 
 		/// <summary>

@@ -15,15 +15,15 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The end timestamp of the appointment in UTC.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("endTime")]
+		[IsRequired]
 		public DateTime EndTime { get; set; }
 
 		/// <summary>
 		/// The start timestamp of the appointment in UTC.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("startTime")]
+		[IsRequired]
 		public DateTime StartTime { get; set; }
 	}
 }

@@ -12,17 +12,17 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The carrier code. For example, USPS or DHLEX.
 		/// </summary>
+		[JsonProperty("alphaCode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("alphaCode")]
 		public string AlphaCode { get; set; }
 
 		/// <summary>
 		/// The name of the carrier.
 		/// </summary>
+		[JsonProperty("name")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 	}
 }

@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// An offer identifier used to identify the merchant of the featured offer. Since this may not belong to
 		/// the requester, the SKU field is omitted.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("offerIdentifier")]
+		[IsRequired]
 		public OfferIdentifier OfferIdentifier { get; set; }
 
 		/// <summary>

@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class DirectPurchaseResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("shipmentId")]
+		[IsRequired]
 		public ShipmentId ShipmentId { get; set; }
 
 		[JsonProperty("packageDocumentDetailList")]

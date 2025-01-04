@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// <summary>
 		/// The unique identifier returned in the response to the generateOrderScenarios request.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("transactionId")]
+		[IsRequired]
 		public string TransactionId { get; set; }
 
 		/// <summary>
 		/// The current processing status of the transaction.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public Status Status { get; set; }
 
 		/// <summary>

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// <summary>
 		/// The reports.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reports")]
+		[IsRequired]
 		public ReportList Reports { get; set; }
 
 		/// <summary>

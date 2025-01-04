@@ -14,16 +14,16 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// The identifier for the upload destination. To retrieve this value, call the Uploads API [`createUploadDestinationForResource`](https://developer-docs.amazon.com/sp-api/docs/uploads-api-reference#post-uploads2020-11-01uploaddestinationsresource)
 		/// operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("uploadDestinationId")]
+		[IsRequired]
 		public string UploadDestinationId { get; set; }
 
 		/// <summary>
 		/// The name of the file, including the extension. This is the file name that will appear in the message.
 		/// This does not need to match the file name of the file that you uploaded.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("fileName")]
+		[IsRequired]
 		public string FileName { get; set; }
 	}
 }

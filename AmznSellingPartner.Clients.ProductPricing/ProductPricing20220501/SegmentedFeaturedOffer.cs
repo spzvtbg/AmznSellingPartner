@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// The list of segment information in which the offer is featured.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("featuredOfferSegments")]
+		[IsRequired]
 		public List<FeaturedOfferSegment> FeaturedOfferSegments { get; set; }
 	}
 }

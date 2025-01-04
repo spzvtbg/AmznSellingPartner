@@ -12,35 +12,35 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The name of the person, business or institution at the address.
 		/// </summary>
+		[JsonProperty("name")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(50)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The first line of the address.
 		/// </summary>
+		[JsonProperty("addressLine1")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(60)]
-		[JsonProperty("addressLine1")]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
 		/// Additional address information, if required.
 		/// </summary>
+		[JsonProperty("addressLine2")]
 		[MinLength(1)]
 		[MaxLength(60)]
-		[JsonProperty("addressLine2")]
 		public string AddressLine2 { get; set; }
 
 		/// <summary>
 		/// Additional address information, if required.
 		/// </summary>
+		[JsonProperty("addressLine3")]
 		[MinLength(1)]
 		[MaxLength(60)]
-		[JsonProperty("addressLine3")]
 		public string AddressLine3 { get; set; }
 
 		/// <summary>
@@ -49,36 +49,36 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("companyName")]
 		public string CompanyName { get; set; }
 
-		[IsRequired]
 		[JsonProperty("stateOrRegion")]
+		[IsRequired]
 		public StateOrRegion StateOrRegion { get; set; }
 
-		[IsRequired]
 		[JsonProperty("city")]
+		[IsRequired]
 		public City City { get; set; }
 
-		[IsRequired]
 		[JsonProperty("countryCode")]
+		[IsRequired]
 		public CountryCode CountryCode { get; set; }
 
-		[IsRequired]
 		[JsonProperty("postalCode")]
+		[IsRequired]
 		public PostalCode PostalCode { get; set; }
 
 		/// <summary>
 		/// The email address of the contact associated with the address.
 		/// </summary>
-		[MaxLength(64)]
 		[JsonProperty("email")]
+		[MaxLength(64)]
 		public string Email { get; set; }
 
 		/// <summary>
 		/// The phone number of the person, business or institution located at that address, including the country
 		/// calling code.
 		/// </summary>
+		[JsonProperty("phoneNumber")]
 		[MinLength(1)]
 		[MaxLength(20)]
-		[JsonProperty("phoneNumber")]
 		public string PhoneNumber { get; set; }
 
 		[JsonProperty("geocode")]

@@ -18,15 +18,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// The `Base64encoded` string of the container label content.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("content")]
+		[IsRequired]
 		public string Content { get; set; }
 
 		/// <summary>
 		/// The format of the container label.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("format")]
+		[IsRequired]
 		public ContainerLabelFormat Format { get; set; }
 	}
 }

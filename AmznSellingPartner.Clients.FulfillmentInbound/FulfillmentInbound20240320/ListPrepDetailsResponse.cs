@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// A list of MSKUs and related prep details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("mskuPrepDetails")]
+		[IsRequired]
 		public List<MskuPrepDetail> MskuPrepDetails { get; set; }
 	}
 }

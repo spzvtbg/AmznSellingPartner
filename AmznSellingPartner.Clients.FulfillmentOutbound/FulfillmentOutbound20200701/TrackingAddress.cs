@@ -12,25 +12,25 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The city.
 		/// </summary>
+		[JsonProperty("city")]
 		[IsRequired]
 		[MaxLength(150)]
-		[JsonProperty("city")]
 		public string City { get; set; }
 
 		/// <summary>
 		/// The state.
 		/// </summary>
+		[JsonProperty("state")]
 		[IsRequired]
 		[MaxLength(150)]
-		[JsonProperty("state")]
 		public string State { get; set; }
 
 		/// <summary>
 		/// The country.
 		/// </summary>
+		[JsonProperty("country")]
 		[IsRequired]
 		[MaxLength(6)]
-		[JsonProperty("country")]
 		public string Country { get; set; }
 	}
 }

@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/listings/2021-08-01/items/{sellerId}")]
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[InPath("sellerId")]
 		[IsRequired]
-		[JsonProperty("sellerId")]
 		public string SellerId { get; set; }
 
 		/// <summary>
@@ -24,7 +21,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -33,14 +29,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// localized messages default to "en_US".
 		/// </summary>
 		[InQuery("issueLocale")]
-		[JsonProperty("issueLocale")]
 		public string IssueLocale { get; set; }
 
 		/// <summary>
 		/// A comma-delimited list of datasets that you want to include in the response. Default: `summaries`.
 		/// </summary>
 		[InQuery("includedData")]
-		[JsonProperty("includedData")]
 		public CsvValue<IncludedData> IncludedData { get; set; }
 
 		/// <summary>
@@ -50,7 +44,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[InQuery("identifiers")]
 		[MaxItems(20)]
-		[JsonProperty("identifiers")]
 		public CsvValue<string> Identifiers { get; set; }
 
 		/// <summary>
@@ -58,7 +51,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// when `identifiers` is provided.
 		/// </summary>
 		[InQuery("identifiersType")]
-		[JsonProperty("identifiersType")]
 		public IdentifiersType IdentifiersType { get; set; }
 
 		/// <summary>
@@ -67,7 +59,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// quest.
 		/// </summary>
 		[InQuery("variationParentSku")]
-		[JsonProperty("variationParentSku")]
 		public string VariationParentSku { get; set; }
 
 		/// <summary>
@@ -76,7 +67,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// quest.
 		/// </summary>
 		[InQuery("packageHierarchySku")]
-		[JsonProperty("packageHierarchySku")]
 		public string PackageHierarchySku { get; set; }
 
 		/// <summary>
@@ -85,7 +75,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		[JsonProperty("createdAfter")]
 		public DateTime CreatedAfter { get; set; }
 
 		/// <summary>
@@ -94,7 +83,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		[JsonProperty("createdBefore")]
 		public DateTime CreatedBefore { get; set; }
 
 		/// <summary>
@@ -103,7 +91,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("lastUpdatedAfter")]
-		[JsonProperty("lastUpdatedAfter")]
 		public DateTime LastUpdatedAfter { get; set; }
 
 		/// <summary>
@@ -112,7 +99,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("lastUpdatedBefore")]
-		[JsonProperty("lastUpdatedBefore")]
 		public DateTime LastUpdatedBefore { get; set; }
 
 		/// <summary>
@@ -120,35 +106,30 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// severity levels.
 		/// </summary>
 		[InQuery("withIssueSeverity")]
-		[JsonProperty("withIssueSeverity")]
 		public CsvValue<WithIssueSeverity> WithIssueSeverity { get; set; }
 
 		/// <summary>
 		/// Filter results to include only listing items that have the specified status.
 		/// </summary>
 		[InQuery("withStatus")]
-		[JsonProperty("withStatus")]
 		public CsvValue<WithStatus> WithStatus { get; set; }
 
 		/// <summary>
 		/// Filter results to include only listing items that don't contain the specified statuses.
 		/// </summary>
 		[InQuery("withoutStatus")]
-		[JsonProperty("withoutStatus")]
 		public CsvValue<WithoutStatus> WithoutStatus { get; set; }
 
 		/// <summary>
 		/// An attribute by which to sort the returned listing items.
 		/// </summary>
 		[InQuery("sortBy")]
-		[JsonProperty("sortBy")]
 		public SortBy SortBy { get; set; }
 
 		/// <summary>
 		/// The order in which to sort the result items.
 		/// </summary>
 		[InQuery("sortOrder")]
-		[JsonProperty("sortOrder")]
 		public SortOrder SortOrder { get; set; }
 
 		/// <summary>
@@ -156,14 +137,12 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[InQuery("pageSize")]
 		[Maximum(20)]
-		[JsonProperty("pageSize")]
 		public int PageSize { get; set; }
 
 		/// <summary>
 		/// A token that you can use to fetch a specific page when there are multiple pages of results.
 		/// </summary>
 		[InQuery("pageToken")]
-		[JsonProperty("pageToken")]
 		public string PageToken { get; set; }
 	}
 }

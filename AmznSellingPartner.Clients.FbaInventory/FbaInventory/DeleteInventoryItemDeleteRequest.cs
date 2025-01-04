@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpDelete("/fba/inventory/v1/items/{sellerSku}")]
 	public class DeleteInventoryItemDeleteRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InPath("sellerSku")]
 		[IsRequired]
-		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; }
 
 		/// <summary>
@@ -20,7 +17,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 	}
 }

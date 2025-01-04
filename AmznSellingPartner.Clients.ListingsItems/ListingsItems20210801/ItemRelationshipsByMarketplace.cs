@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// Amazon marketplace identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
 		/// Relationships for the listing item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("relationships")]
+		[IsRequired]
 		public List<ItemRelationship> Relationships { get; set; }
 	}
 }

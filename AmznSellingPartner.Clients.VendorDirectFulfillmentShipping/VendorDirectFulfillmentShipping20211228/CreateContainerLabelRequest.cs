@@ -12,36 +12,36 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// The ID of the selling party or vendor.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
 		/// The warehouse code of the vendor.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipFromParty")]
+		[IsRequired]
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
 		/// The container (pallet) label's carrier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("carrierId")]
+		[IsRequired]
 		public CarrierId CarrierId { get; set; }
 
 		/// <summary>
 		/// The vendor's unique identifier for the container.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("vendorContainerId")]
+		[IsRequired]
 		public VendorContainerId VendorContainerId { get; set; }
 
 		/// <summary>
 		/// An array of package objects that associates shipment packages with a container.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("packages")]
+		[IsRequired]
 		public Packages Packages { get; set; }
 	}
 }

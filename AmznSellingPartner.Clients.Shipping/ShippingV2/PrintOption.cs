@@ -20,22 +20,22 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// A list of the supported page layout options for a document.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("supportedPageLayouts")]
+		[IsRequired]
 		public List<PageLayout> SupportedPageLayouts { get; set; }
 
 		/// <summary>
 		/// A list of the supported needFileJoining boolean values for a document.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("supportedFileJoiningOptions")]
+		[IsRequired]
 		public List<NeedFileJoining> SupportedFileJoiningOptions { get; set; }
 
 		/// <summary>
 		/// A list of the supported documented details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("supportedDocumentDetails")]
+		[IsRequired]
 		public List<SupportedDocumentDetail> SupportedDocumentDetails { get; set; }
 	}
 }

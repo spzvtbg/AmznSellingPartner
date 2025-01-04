@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Preference for the distribution order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderPreference")]
+		[IsRequired]
 		public OrderPreference OrderPreference { get; set; }
 
 		/// <summary>
 		/// Value for the order preference.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderPreferenceValue")]
+		[IsRequired]
 		public OrderPreferenceValue OrderPreferenceValue { get; set; }
 	}
 }

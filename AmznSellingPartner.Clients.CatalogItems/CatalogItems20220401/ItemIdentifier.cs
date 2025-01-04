@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Type of identifier, such as UPC, EAN, or ISBN.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("identifierType")]
+		[IsRequired]
 		public string IdentifierType { get; set; }
 
 		/// <summary>
 		/// Identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("identifier")]
+		[IsRequired]
 		public string Identifier { get; set; }
 	}
 }

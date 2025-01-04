@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 	/// </summary>
 	public class SubmitInvoiceRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("InvoiceContent")]
+		[IsRequired]
 		public Blob InvoiceContent { get; set; }
 
 		/// <summary>
@@ -23,8 +23,8 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// MD5 sum for validating the invoice data. For more information about calculating this value, see [Working
 		/// with Content-MD5 Checksums](https://docs.developer.amazonservices.com/en_US/dev_guide/DG_MD5.html).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ContentMD5Value")]
+		[IsRequired]
 		public string ContentMD5Value { get; set; }
 	}
 }

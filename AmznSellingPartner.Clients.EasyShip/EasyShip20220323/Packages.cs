@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// <summary>
 		/// A list of packages.
 		/// </summary>
+		[JsonProperty("packages")]
 		[IsRequired]
 		[MinItems(1)]
 		[MaxItems(500)]
-		[JsonProperty("packagesValue")]
 		public List<Package> PackagesValue { get; set; }
 	}
 }

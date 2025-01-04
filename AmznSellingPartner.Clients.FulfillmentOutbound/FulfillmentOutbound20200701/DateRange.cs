@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The earliest point in a date range.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("earliest")]
+		[IsRequired]
 		public Timestamp Earliest { get; set; }
 
 		/// <summary>
 		/// The latest point in a date range.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("latest")]
+		[IsRequired]
 		public Timestamp Latest { get; set; }
 	}
 }

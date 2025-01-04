@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// <summary>
 		/// Role value for the Amazon catalog item, such as author or actor.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public string Value { get; set; }
 	}
 }

@@ -9,16 +9,16 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// <summary>
 		/// Link to retrieve the schema.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("link")]
+		[IsRequired]
 		public Link Link { get; set; }
 
 		/// <summary>
 		/// Checksum hash of the schema (Base64 MD5). Can be used to verify schema contents, identify changes between
 		/// schema versions, and for caching.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("checksum")]
+		[IsRequired]
 		public string Checksum { get; set; }
 	}
 }

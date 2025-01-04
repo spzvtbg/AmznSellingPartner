@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class StandardCompanyLogoModule : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("companyLogo")]
+		[IsRequired]
 		public ImageComponent CompanyLogo { get; set; }
 	}
 }

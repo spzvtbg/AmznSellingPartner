@@ -12,17 +12,17 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The monetary value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public double Value { get; set; }
 
 		/// <summary>
 		/// The ISO 4217 format 3-character currency code.
 		/// </summary>
+		[JsonProperty("unit")]
 		[IsRequired]
 		[MinLength(3)]
 		[MaxLength(3)]
-		[JsonProperty("unit")]
 		public string Unit { get; set; }
 	}
 }

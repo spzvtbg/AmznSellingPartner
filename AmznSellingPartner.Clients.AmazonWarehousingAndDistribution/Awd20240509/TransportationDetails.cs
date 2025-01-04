@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Tracking details for the shipment. If using SPD transportation, this can be for each case. If not using
 		/// SPD transportation, this is a single tracking entry for the entire shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("trackingDetails")]
+		[IsRequired]
 		public List<TrackingDetails> TrackingDetails { get; set; }
 	}
 }

@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// <summary>
 		/// The name of the Amazon product type.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The human-readable and localized description of the Amazon product type.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("displayName")]
+		[IsRequired]
 		public string DisplayName { get; set; }
 
 		/// <summary>
 		/// The Amazon marketplace identifiers for which the product type definition is available.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceIds")]
+		[IsRequired]
 		public List<string> MarketplaceIds { get; set; }
 	}
 }

@@ -19,15 +19,15 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// Type of reservation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public Type Type { get; set; }
 
 		/// <summary>
 		/// `AvailabilityRecord` to represent the capacity of a resource over a time range.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("availability")]
+		[IsRequired]
 		public AvailabilityRecord Availability { get; set; }
 	}
 }

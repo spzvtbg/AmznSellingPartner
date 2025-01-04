@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		/// <summary>
 		/// The tax registration type for the entity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("taxRegistrationType")]
+		[IsRequired]
 		public TaxRegistrationType TaxRegistrationType { get; set; }
 
 		/// <summary>
 		/// The tax registration number for the entity. For example, VAT ID, Consumption Tax ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("taxRegistrationNumber")]
+		[IsRequired]
 		public string TaxRegistrationNumber { get; set; }
 	}
 }

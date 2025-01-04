@@ -16,15 +16,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// from their warehouse/distribution center or six hours prior to the appointment time at the Amazon destination
 		/// warehouse. The shipped date mentioned in the shipment confirmation cannot be in the future.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shippedDate")]
+		[IsRequired]
 		public DateTime ShippedDate { get; set; }
 
 		/// <summary>
 		/// The shipment status.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentStatus")]
+		[IsRequired]
 		public ShipmentStatus ShipmentStatus { get; set; }
 
 		/// <summary>

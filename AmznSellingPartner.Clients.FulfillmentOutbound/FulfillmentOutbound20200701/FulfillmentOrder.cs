@@ -14,43 +14,43 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The fulfillment order identifier submitted with the `createFulfillmentOrder` operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerFulfillmentOrderId")]
+		[IsRequired]
 		public string SellerFulfillmentOrderId { get; set; }
 
 		/// <summary>
 		/// The identifier for the marketplace the fulfillment order is placed against.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
 		/// A fulfillment order identifier submitted with the `createFulfillmentOrder` operation. Displays as the
 		/// order identifier in recipient-facing materials such as the packing slip.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("displayableOrderId")]
+		[IsRequired]
 		public string DisplayableOrderId { get; set; }
 
 		/// <summary>
 		/// A date and time submitted with the `createFulfillmentOrder` operation. Displays as the order date in
 		/// recipient-facing materials such as the packing slip.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("displayableOrderDate")]
+		[IsRequired]
 		public Timestamp DisplayableOrderDate { get; set; }
 
 		/// <summary>
 		/// A text block submitted with the `createFulfillmentOrder` operation. Displays in recipient-facing materials
 		/// such as the packing slip.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("displayableOrderComment")]
+		[IsRequired]
 		public string DisplayableOrderComment { get; set; }
 
-		[IsRequired]
 		[JsonProperty("shippingSpeedCategory")]
+		[IsRequired]
 		public ShippingSpeedCategory ShippingSpeedCategory { get; set; }
 
 		[JsonProperty("deliveryWindow")]
@@ -59,8 +59,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The destination address submitted with the `createFulfillmentOrder` operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("destinationAddress")]
+		[IsRequired]
 		public Address DestinationAddress { get; set; }
 
 		[JsonProperty("fulfillmentAction")]
@@ -75,20 +75,20 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The date and time that the fulfillment order was received by an Amazon fulfillment center.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("receivedDate")]
+		[IsRequired]
 		public Timestamp ReceivedDate { get; set; }
 
-		[IsRequired]
 		[JsonProperty("fulfillmentOrderStatus")]
+		[IsRequired]
 		public FulfillmentOrderStatus FulfillmentOrderStatus { get; set; }
 
 		/// <summary>
 		/// The date and time that the status of the fulfillment order last changed. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("statusUpdatedDate")]
+		[IsRequired]
 		public Timestamp StatusUpdatedDate { get; set; }
 
 		[JsonProperty("notificationEmails")]

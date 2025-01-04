@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// that contains the `startDate`. * For `YEAR` the metric is computed from the first day of the year that
 		/// contains the `startDate`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("startDate")]
+		[IsRequired]
 		public DateTime StartDate { get; set; }
 
 		/// <summary>
@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// the `endDate`. * For `YEAR` the metric is computed up to the last day of the year that contains the `endDate`.
 		/// Note: The end date may be adjusted to a lower value based on the data available in our system.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("endDate")]
+		[IsRequired]
 		public DateTime EndDate { get; set; }
 	}
 }

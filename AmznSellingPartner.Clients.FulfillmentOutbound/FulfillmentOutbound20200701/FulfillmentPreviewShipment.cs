@@ -48,8 +48,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// Information about the items in the shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("fulfillmentPreviewItems")]
+		[IsRequired]
 		public FulfillmentPreviewItemList FulfillmentPreviewItems { get; set; }
 	}
 }

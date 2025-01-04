@@ -17,29 +17,29 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// up to the page count limit will be returned per request regardless of the number found).  Note: The maximum
 		/// number of items (ASINs) that can be returned and paged through is 1000.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("numberOfResults")]
+		[IsRequired]
 		public int NumberOfResults { get; set; }
 
 		/// <summary>
 		/// If available, the `nextToken` and/or `previousToken` values required to return paginated results.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("pagination")]
+		[IsRequired]
 		public Pagination Pagination { get; set; }
 
 		/// <summary>
 		/// Search refinements for `keywords`-based searches.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("refinements")]
+		[IsRequired]
 		public Refinements Refinements { get; set; }
 
 		/// <summary>
 		/// A list of items from the Amazon catalog.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<Item> Items { get; set; }
 	}
 }

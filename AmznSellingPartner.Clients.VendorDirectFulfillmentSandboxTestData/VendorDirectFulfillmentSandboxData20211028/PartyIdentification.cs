@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// Assigned identification for the party. For example, warehouse code or vendor code. Please refer to specific
 		/// party for more details.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("partyId")]
+		[IsRequired]
 		public string PartyId { get; set; }
 	}
 }

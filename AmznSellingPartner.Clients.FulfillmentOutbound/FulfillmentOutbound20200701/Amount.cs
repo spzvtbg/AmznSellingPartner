@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The unit of measure for the amount.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public UnitOfMeasure UnitOfMeasure { get; set; }
 
 		/// <summary>
 		/// The amount of a product in the associated unit of measure.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public Decimal Value { get; set; }
 	}
 }

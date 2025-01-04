@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/vendor/directFulfillment/transactions/2021-12-28/transactions/{transactionId}")]
 	public class GetTransactionStatusGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]
-		[JsonProperty("transactionId")]
 		public string TransactionId { get; set; }
 	}
 }

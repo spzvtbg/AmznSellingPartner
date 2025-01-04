@@ -21,16 +21,16 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Origin address from where the inbound order will be shipped.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("originAddress")]
+		[IsRequired]
 		public Address OriginAddress { get; set; }
 
 		/// <summary>
 		/// List of packages to be inbounded.
 		/// </summary>
+		[JsonProperty("packagesToInbound")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("packagesToInbound")]
 		public List<DistributionPackageQuantity> PackagesToInbound { get; set; }
 
 		[JsonProperty("preferences")]

@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// Shipment information required to create a shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ShipmentRequestDetails")]
+		[IsRequired]
 		public ShipmentRequestDetails ShipmentRequestDetails { get; set; }
 
-		[IsRequired]
 		[JsonProperty("ShippingServiceId")]
+		[IsRequired]
 		public ShippingServiceIdentifier ShippingServiceId { get; set; }
 
 		/// <summary>

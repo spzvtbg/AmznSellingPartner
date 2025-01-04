@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// An warning code that identifies the type of warning that occurred.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("code")]
+		[IsRequired]
 		public string Code { get; set; }
 
 		/// <summary>
 		/// A message that describes the warning condition in a human-readable form.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("message")]
+		[IsRequired]
 		public string Message { get; set; }
 
 		/// <summary>

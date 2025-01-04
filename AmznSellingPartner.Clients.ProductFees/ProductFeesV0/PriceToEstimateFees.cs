@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// <summary>
 		/// The price of the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ListingPrice")]
+		[IsRequired]
 		public MoneyType ListingPrice { get; set; }
 
 		/// <summary>

@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// The name of the additional input field.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("AdditionalInputFieldName")]
+		[IsRequired]
 		public string AdditionalInputFieldName { get; set; }
 
-		[IsRequired]
 		[JsonProperty("AdditionalSellerInput")]
+		[IsRequired]
 		public AdditionalSellerInput AdditionalSellerInput { get; set; }
 	}
 }

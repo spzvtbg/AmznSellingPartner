@@ -15,21 +15,21 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Shipment ID that the transportation Option is for.
 		/// </summary>
+		[JsonProperty("shipmentId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 
 		/// <summary>
 		/// Transportation option being selected for the provided shipment.
 		/// </summary>
+		[JsonProperty("transportationOptionId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("transportationOptionId")]
 		public string TransportationOptionId { get; set; }
 	}
 }

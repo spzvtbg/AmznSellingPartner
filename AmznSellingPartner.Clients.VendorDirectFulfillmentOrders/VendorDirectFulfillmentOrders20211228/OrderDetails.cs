@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// The customer order number.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("customerOrderNumber")]
+		[IsRequired]
 		public string CustomerOrderNumber { get; set; }
 
 		/// <summary>
@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// 2018-07-16T23:00:00-05:00 /2018-07-16T23:00:00-08:00. If no time zone is specified, UTC should be as
 		/// sumed.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderDate")]
+		[IsRequired]
 		public DateTime OrderDate { get; set; }
 
 		/// <summary>
@@ -34,8 +34,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		[JsonProperty("orderStatus")]
 		public OrderStatus OrderStatus { get; set; }
 
-		[IsRequired]
 		[JsonProperty("shipmentDetails")]
+		[IsRequired]
 		public ShipmentDetails ShipmentDetails { get; set; }
 
 		[JsonProperty("taxTotal")]
@@ -44,36 +44,36 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// <summary>
 		/// PartyID of vendor code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
 		/// PartyID of vendor's warehouse.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipFromParty")]
+		[IsRequired]
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
 		/// Name/Address and tax details of the ship to party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipToParty")]
+		[IsRequired]
 		public Address ShipToParty { get; set; }
 
 		/// <summary>
 		/// Name/Address and tax details of the bill to party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("billToParty")]
+		[IsRequired]
 		public PartyIdentification BillToParty { get; set; }
 
 		/// <summary>
 		/// A list of items in this purchase order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<OrderItem> Items { get; set; }
 	}
 }

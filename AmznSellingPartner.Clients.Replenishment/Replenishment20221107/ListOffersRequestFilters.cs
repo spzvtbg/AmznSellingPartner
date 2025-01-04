@@ -18,34 +18,34 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// to [Marketplace IDs](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) to find the identifier
 		/// for the marketplace.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
 		/// <summary>
 		/// A list of SKUs to filter. This filter is only supported for sellers and not for vendors.
 		/// </summary>
+		[JsonProperty("skus")]
 		[MinItems(1)]
 		[MaxItems(20)]
 		[UniqueItems]
-		[JsonProperty("skus")]
 		public List<string> Skus { get; set; }
 
 		/// <summary>
 		/// A list of Amazon Standard Identification Numbers (ASINs).
 		/// </summary>
+		[JsonProperty("asins")]
 		[MinItems(1)]
 		[MaxItems(20)]
 		[UniqueItems]
-		[JsonProperty("asins")]
 		public List<string> Asins { get; set; }
 
 		/// <summary>
 		/// A list of eligibilities associated with an offer.
 		/// </summary>
+		[JsonProperty("eligibilities")]
 		[MinItems(1)]
 		[UniqueItems]
-		[JsonProperty("eligibilities")]
 		public List<EligibilityStatus> Eligibilities { get; set; }
 
 		/// <summary>
@@ -60,8 +60,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		[JsonProperty("promotions")]
 		public Promotion Promotions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("programTypes")]
+		[IsRequired]
 		public ProgramTypes ProgramTypes { get; set; }
 	}
 }

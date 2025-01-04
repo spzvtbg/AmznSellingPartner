@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	/// </summary>
 	public class UpdatePackageDetails : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("scheduledPackageId")]
+		[IsRequired]
 		public ScheduledPackageId ScheduledPackageId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageTimeSlot")]
+		[IsRequired]
 		public TimeSlot PackageTimeSlot { get; set; }
 	}
 }

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/batches/products/pricing/2022-05-01/items/competitiveSummary")]
 	public class GetCompetitiveSummaryPostRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// </summary>
 		[InBody("requests")]
 		[IsRequired]
-		[JsonProperty("requests")]
 		public CompetitiveSummaryBatchRequest Requests { get; set; }
 	}
 }

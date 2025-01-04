@@ -13,9 +13,9 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// The HTTP response status code.
 		/// </summary>
+		[JsonProperty("statusCode")]
 		[Minimum(100)]
 		[Maximum(599)]
-		[JsonProperty("statusCode")]
 		public int StatusCode { get; set; }
 
 		/// <summary>

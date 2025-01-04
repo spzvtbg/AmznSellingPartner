@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// <summary>
 		/// URI resource for the link.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("resource")]
+		[IsRequired]
 		public string Resource { get; set; }
 
 		/// <summary>
 		/// HTTP method for the link operation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("verb")]
+		[IsRequired]
 		public Verb Verb { get; set; }
 	}
 }

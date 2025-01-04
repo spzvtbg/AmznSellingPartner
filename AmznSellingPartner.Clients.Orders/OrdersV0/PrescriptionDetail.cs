@@ -15,33 +15,33 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The identifier for the prescription used to verify the regulated product.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("prescriptionId")]
+		[IsRequired]
 		public string PrescriptionId { get; set; }
 
 		/// <summary>
 		/// The expiration date of the prescription used to verify the regulated product, in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// date time format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("expirationDate")]
+		[IsRequired]
 		public DateTime ExpirationDate { get; set; }
 
 		/// <summary>
 		/// The number of units in each fill as provided in the prescription.
 		/// </summary>
+		[JsonProperty("writtenQuantity")]
 		[IsRequired]
 		[Minimum(1)]
-		[JsonProperty("writtenQuantity")]
 		public int WrittenQuantity { get; set; }
 
 		/// <summary>
 		/// The total number of refills written in the original prescription used to verify the regulated product.
 		/// If a prescription originally had no refills, this value must be 0.
 		/// </summary>
+		[JsonProperty("totalRefillsAuthorized")]
 		[IsRequired]
 		[Minimum(0)]
-		[JsonProperty("totalRefillsAuthorized")]
 		public int TotalRefillsAuthorized { get; set; }
 
 		/// <summary>
@@ -49,23 +49,23 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// originally had 10 total refills, this value must be `10` for the first order, `9` for the second order,
 		/// and `0` for the eleventh order. If a prescription originally had no refills, this value must be 0.
 		/// </summary>
+		[JsonProperty("refillsRemaining")]
 		[IsRequired]
 		[Minimum(0)]
-		[JsonProperty("refillsRemaining")]
 		public int RefillsRemaining { get; set; }
 
 		/// <summary>
 		/// The identifier for the clinic which provided the prescription used to verify the regulated product.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("clinicId")]
+		[IsRequired]
 		public string ClinicId { get; set; }
 
 		/// <summary>
 		/// The instructions for the prescription as provided by the approver of the regulated product.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("usageInstructions")]
+		[IsRequired]
 		public string UsageInstructions { get; set; }
 	}
 }

@@ -14,16 +14,16 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		/// SE, NL, PL, and BE. For a list of possible marketplace IDs, refer to [Marketplace IDs](https://devel
 		/// oper-docs.amazon.com/sp-api/docs/marketplace-ids).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
 		/// <summary>
 		/// The account type in the selected marketplace for which a payout must be initiated. For supported EU marketplaces,
 		/// the only account type is `Standard Orders`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("accountType")]
+		[IsRequired]
 		public string AccountType { get; set; }
 	}
 }

@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// populated for direct fulfillment multi-piece shipments. It is required if a vendor wants to change the
 		/// configuration of the packages in which the purchase order is shipped.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("lineItemID")]
+		[IsRequired]
 		public string LineItemID { get; set; }
 
 		/// <summary>

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpPut("/service/v1/serviceJobs/{serviceJobId}/appointments/{appointmentId}/fulfillment")]
 	public class SetAppointmentFulfillmentDataPutRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("serviceJobId")]
 		public string ServiceJobId { get; set; }
 
 		/// <summary>
@@ -25,7 +22,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("appointmentId")]
 		public string AppointmentId { get; set; }
 
 		/// <summary>
@@ -33,7 +29,6 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public SetAppointmentFulfillmentDataRequest Body { get; set; }
 	}
 }

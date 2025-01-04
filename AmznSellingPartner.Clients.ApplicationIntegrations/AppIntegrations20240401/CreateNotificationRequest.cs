@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.ApplicationIntegrations.AppIntegrations2024
 		/// <summary>
 		/// The unique identifier of the notification template you used to onboard your application.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("templateId")]
+		[IsRequired]
 		public string TemplateId { get; set; }
 
 		/// <summary>
 		/// The parameters specified in the template you used to onboard your application.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("notificationParameters")]
+		[IsRequired]
 		public NotificationParameters NotificationParameters { get; set; }
 
 		/// <summary>

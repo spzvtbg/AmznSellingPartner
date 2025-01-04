@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	/// </summary>
 	public class BatchResponse : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("headers")]
+		[IsRequired]
 		public HttpHeaders Headers { get; set; }
 
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public HttpStatusLine Status { get; set; }
 	}
 }

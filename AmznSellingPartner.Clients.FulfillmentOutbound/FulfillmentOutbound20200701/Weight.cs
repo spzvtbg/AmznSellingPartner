@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The unit of weight.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unit")]
+		[IsRequired]
 		public Unit Unit { get; set; }
 
 		/// <summary>
 		/// The weight value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public string Value { get; set; }
 	}
 }

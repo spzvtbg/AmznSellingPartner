@@ -11,10 +11,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class StandardTextListBlock : BaseClass
 	{
+		[JsonProperty("textList")]
 		[IsRequired]
 		[MinItems(0)]
 		[MaxItems(8)]
-		[JsonProperty("textList")]
 		public List<TextItem> TextList { get; set; }
 	}
 }

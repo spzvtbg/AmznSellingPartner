@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The feature name.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("featureName")]
+		[IsRequired]
 		public string FeatureName { get; set; }
 
 		/// <summary>
 		/// The feature description.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("featureDescription")]
+		[IsRequired]
 		public string FeatureDescription { get; set; }
 
 		/// <summary>

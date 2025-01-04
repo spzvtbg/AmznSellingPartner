@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The unique identifier for the rejection reason.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("RejectionReasonId")]
+		[IsRequired]
 		public string RejectionReasonId { get; set; }
 
 		/// <summary>
 		/// The description of this rejection reason.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("RejectionReasonDescription")]
+		[IsRequired]
 		public string RejectionReasonDescription { get; set; }
 	}
 }

@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// The content metadata records.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("contentMetadataRecords")]
+		[IsRequired]
 		public ContentMetadataRecordList ContentMetadataRecords { get; set; }
 	}
 }

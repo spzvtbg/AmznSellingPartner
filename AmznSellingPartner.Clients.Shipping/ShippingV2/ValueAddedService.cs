@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The identifier for the value-added service.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("id")]
+		[IsRequired]
 		public string Id { get; set; }
 
 		/// <summary>
 		/// The name of the value-added service.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The cost of the value-added service.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("cost")]
+		[IsRequired]
 		public Currency Cost { get; set; }
 	}
 }

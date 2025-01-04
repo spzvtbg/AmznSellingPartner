@@ -20,7 +20,8 @@
         internal virtual CsProperty OnDeserialized(string name, CsType @class, CsContext context)
         {
             var property = new CsProperty { Name = name }
-                .HasDescription(this.Description);
+                .HasDescription(this.Description)
+                .HasJsonProperty(true);
 
             if (this.IsRequired is not null)
             {

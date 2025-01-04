@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	/// </summary>
 	public class ErrorList : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

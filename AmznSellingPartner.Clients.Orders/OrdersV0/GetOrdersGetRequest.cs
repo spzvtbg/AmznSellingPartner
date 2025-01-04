@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/orders/v0/orders")]
 	public class GetOrdersGetRequest : BaseHttpRequest
 	{
@@ -16,7 +14,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// set.
 		/// </summary>
 		[InQuery("CreatedAfter")]
-		[JsonProperty("CreatedAfter")]
 		public string CreatedAfter { get; set; }
 
 		/// <summary>
@@ -26,7 +23,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// must be equal to or after the `CreatedAfter` date and at least two minutes before current time.
 		/// </summary>
 		[InQuery("CreatedBefore")]
-		[JsonProperty("CreatedBefore")]
 		public string CreatedBefore { get; set; }
 
 		/// <summary>
@@ -38,7 +34,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// .
 		/// </summary>
 		[InQuery("LastUpdatedAfter")]
-		[JsonProperty("LastUpdatedAfter")]
 		public string LastUpdatedAfter { get; set; }
 
 		/// <summary>
@@ -50,7 +45,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// current time.
 		/// </summary>
 		[InQuery("LastUpdatedBefore")]
-		[JsonProperty("LastUpdatedBefore")]
 		public string LastUpdatedBefore { get; set; }
 
 		/// <summary>
@@ -65,7 +59,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// (The order cannot be fulfilled. This state applies only to Multi-Channel Fulfillment orders.)
 		/// </summary>
 		[InQuery("OrderStatuses")]
-		[JsonProperty("OrderStatuses")]
 		public CsvValue<string> OrderStatuses { get; set; }
 
 		/// <summary>
@@ -76,7 +69,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		[InQuery("MarketplaceIds")]
 		[IsRequired]
 		[MaxItems(50)]
-		[JsonProperty("MarketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -84,7 +76,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// values**: `AFN` (fulfilled by Amazon), `MFN` (fulfilled by seller).
 		/// </summary>
 		[InQuery("FulfillmentChannels")]
-		[JsonProperty("FulfillmentChannels")]
 		public CsvValue<string> FulfillmentChannels { get; set; }
 
 		/// <summary>
@@ -93,14 +84,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// method other than COD or CVS).
 		/// </summary>
 		[InQuery("PaymentMethods")]
-		[JsonProperty("PaymentMethods")]
 		public CsvValue<string> PaymentMethods { get; set; }
 
 		/// <summary>
 		/// The email address of a buyer. Used to select orders that contain the specified email address.
 		/// </summary>
 		[InQuery("BuyerEmail")]
-		[JsonProperty("BuyerEmail")]
 		public string BuyerEmail { get; set; }
 
 		/// <summary>
@@ -109,7 +98,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// `LastUpdatedAfter`, LastUpdatedBefore, and `BuyerEmail` cannot be specified.
 		/// </summary>
 		[InQuery("SellerOrderId")]
-		[JsonProperty("SellerOrderId")]
 		public string SellerOrderId { get; set; }
 
 		/// <summary>
@@ -117,7 +105,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// 100. Default 100.
 		/// </summary>
 		[InQuery("MaxResultsPerPage")]
-		[JsonProperty("MaxResultsPerPage")]
 		public int MaxResultsPerPage { get; set; }
 
 		/// <summary>
@@ -136,7 +123,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// by the carrier.)
 		/// </summary>
 		[InQuery("EasyShipShipmentStatuses")]
-		[JsonProperty("EasyShipShipmentStatuses")]
 		public CsvValue<string> EasyShipShipmentStatuses { get; set; }
 
 		/// <summary>
@@ -148,14 +134,12 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// and accepted.)
 		/// </summary>
 		[InQuery("ElectronicInvoiceStatuses")]
-		[JsonProperty("ElectronicInvoiceStatuses")]
 		public CsvValue<string> ElectronicInvoiceStatuses { get; set; }
 
 		/// <summary>
 		/// A string token returned in the response of your previous request.
 		/// </summary>
 		[InQuery("NextToken")]
-		[JsonProperty("NextToken")]
 		public string NextToken { get; set; }
 
 		/// <summary>
@@ -164,28 +148,24 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[InQuery("AmazonOrderIds")]
 		[MaxItems(50)]
-		[JsonProperty("AmazonOrderIds")]
 		public CsvValue<string> AmazonOrderIds { get; set; }
 
 		/// <summary>
 		/// The `sourceId` of the location from where you want the order fulfilled.
 		/// </summary>
 		[InQuery("ActualFulfillmentSupplySourceId")]
-		[JsonProperty("ActualFulfillmentSupplySourceId")]
 		public string ActualFulfillmentSupplySourceId { get; set; }
 
 		/// <summary>
 		/// When true, this order is marked to be picked up from a store rather than delivered.
 		/// </summary>
 		[InQuery("IsISPU")]
-		[JsonProperty("IsISPU")]
 		public bool IsISPU { get; set; }
 
 		/// <summary>
 		/// The store chain store identifier. Linked to a specific store in a store chain.
 		/// </summary>
 		[InQuery("StoreChainStoreId")]
-		[JsonProperty("StoreChainStoreId")]
 		public string StoreChainStoreId { get; set; }
 
 		/// <summary>
@@ -193,7 +173,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("EarliestDeliveryDateBefore")]
-		[JsonProperty("EarliestDeliveryDateBefore")]
 		public string EarliestDeliveryDateBefore { get; set; }
 
 		/// <summary>
@@ -201,7 +180,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("EarliestDeliveryDateAfter")]
-		[JsonProperty("EarliestDeliveryDateAfter")]
 		public string EarliestDeliveryDateAfter { get; set; }
 
 		/// <summary>
@@ -209,7 +187,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("LatestDeliveryDateBefore")]
-		[JsonProperty("LatestDeliveryDateBefore")]
 		public string LatestDeliveryDateBefore { get; set; }
 
 		/// <summary>
@@ -217,7 +194,6 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) format.
 		/// </summary>
 		[InQuery("LatestDeliveryDateAfter")]
-		[JsonProperty("LatestDeliveryDateAfter")]
 		public string LatestDeliveryDateAfter { get; set; }
 	}
 }

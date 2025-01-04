@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 
 	public class SearchContentPublishRecordsResponse : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("publishRecordList")]
+		[IsRequired]
 		public PublishRecordList PublishRecordList { get; set; }
 	}
 }

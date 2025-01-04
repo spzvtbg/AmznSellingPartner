@@ -10,10 +10,7 @@
         protected Dictionary<string, string> attributes = [];
 
         [JsonProperty]
-        protected ICollection<string> usings = 
-        [
-            "Newtonsoft.Json"
-        ];
+        protected ICollection<string> usings = [];
 
         [JsonProperty]
         protected string defaultValue;
@@ -60,6 +57,17 @@
             return this;
         }
 
+        internal CsProperty HasJsonProperty(bool addJsonPropertyAttribute)
+        {
+            if (addJsonPropertyAttribute && !this.attributes.ContainsKey("JsonProperty"))
+            {
+                this.usings.Add("Newtonsoft.Json");
+                this.attributes["JsonProperty"] = $"\"{this.Name}\"";
+            }
+
+            return this;
+        }
+
         internal CsProperty HasType(string type, string @using = default)
         {
             this.Type = type;
@@ -96,8 +104,6 @@
                     lines.Add($"[{attr}({val.Replace("\\", "\\\\")})]");
                 }
             }
-
-            lines.Add($"[JsonProperty(\"{this.Name}\")]");
 
             lines.Add($"public {this.Type} {this.Name.Capitalize()} {{ get; set; }}");
 

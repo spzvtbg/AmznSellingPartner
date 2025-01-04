@@ -21,19 +21,12 @@
 
         public JToken Examples { get; set; }
 
-        internal IEnumerable<CsProperty> OnDeserialized(string status, CsContext context)
-        {
-            foreach (var csProperty in (this.Headers ?? []).OnDeserialized(context))
-            {
-                yield return csProperty;
-            }
-
-            yield return new CsProperty
-            {
-                Name = $"Value{status}",
-                Type = this.Schema?.Ref?.GetReferenceType() ?? "object"
-            }
-            .HasDescription(this.Description);
-        }
+        internal CsProperty OnDeserialized(string status, CsContext context) 
+              => new CsProperty
+              {
+                  Name = this.Schema?.Ref?.GetReferenceType() ?? "Object",
+                  Type = this.Schema?.Ref?.GetReferenceType() ?? "object"
+              }
+              .HasDescription(this.Description);
     }
 }

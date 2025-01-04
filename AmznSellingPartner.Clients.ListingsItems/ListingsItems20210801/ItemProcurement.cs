@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The price (numeric value) that you want Amazon to pay you for this product.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("costPrice")]
+		[IsRequired]
 		public Money CostPrice { get; set; }
 	}
 }

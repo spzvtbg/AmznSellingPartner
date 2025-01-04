@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// The GraphQL query to submit. A query must be at most 8000 characters after unnecessary whitespace is
 		/// removed.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("query")]
+		[IsRequired]
 		public string Query { get; set; }
 
 		/// <summary>

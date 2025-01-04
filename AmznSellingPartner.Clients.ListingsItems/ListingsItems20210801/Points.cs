@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	/// </summary>
 	public class Points : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("pointsNumber")]
+		[IsRequired]
 		public int PointsNumber { get; set; }
 	}
 }

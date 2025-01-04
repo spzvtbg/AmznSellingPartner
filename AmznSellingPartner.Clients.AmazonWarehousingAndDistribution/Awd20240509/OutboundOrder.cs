@@ -46,8 +46,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Order ID for the outbound order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderId")]
+		[IsRequired]
 		public string OrderId { get; set; }
 
 		/// <summary>
@@ -59,15 +59,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Status for the outbound order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderStatus")]
+		[IsRequired]
 		public OutboundStatus OrderStatus { get; set; }
 
 		/// <summary>
 		/// List of outbound shipments that are part of this order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("outboundShipments")]
+		[IsRequired]
 		public List<OutboundShipment> OutboundShipments { get; set; }
 
 		/// <summary>

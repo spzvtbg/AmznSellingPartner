@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Provides the information about the list of boxes in the packing group.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("boxes")]
+		[IsRequired]
 		public List<Box> Boxes { get; set; }
 
 		[JsonProperty("pagination")]

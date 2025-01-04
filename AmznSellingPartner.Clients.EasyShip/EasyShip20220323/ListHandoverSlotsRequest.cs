@@ -9,20 +9,20 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	/// </summary>
 	public class ListHandoverSlotsRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public String MarketplaceId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("amazonOrderId")]
+		[IsRequired]
 		public AmazonOrderId AmazonOrderId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageDimensions")]
+		[IsRequired]
 		public Dimensions PackageDimensions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageWeight")]
+		[IsRequired]
 		public Weight PackageWeight { get; set; }
 	}
 }

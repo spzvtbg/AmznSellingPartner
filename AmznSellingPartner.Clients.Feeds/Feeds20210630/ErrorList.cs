@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// <summary>
 		/// An error response returned when the request is unsuccessful.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

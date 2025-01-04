@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	/// </summary>
 	public class ItemAttributes : BaseClass
 	{
-		[JsonProperty("AdditionalValue")]
+		[JsonProperty("")]
 		public bool? AdditionalValue { get; set; }
 	}
 }

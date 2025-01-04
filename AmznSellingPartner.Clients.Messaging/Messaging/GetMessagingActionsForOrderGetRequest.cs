@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/messaging/v1/orders/{amazonOrderId}")]
 	public class GetMessagingActionsForOrderGetRequest : BaseHttpRequest
 	{
@@ -14,7 +12,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// </summary>
 		[InPath("amazonOrderId")]
 		[IsRequired]
-		[JsonProperty("amazonOrderId")]
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
@@ -24,7 +21,6 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 	}
 }

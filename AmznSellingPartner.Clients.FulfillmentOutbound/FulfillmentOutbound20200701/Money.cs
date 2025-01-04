@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// Three digit currency code in ISO 4217 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("currencyCode")]
+		[IsRequired]
 		public string CurrencyCode { get; set; }
 
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public Decimal Value { get; set; }
 	}
 }

@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Transportation options generated for the placement option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("transportationOptions")]
+		[IsRequired]
 		public List<TransportationOption> TransportationOptions { get; set; }
 	}
 }

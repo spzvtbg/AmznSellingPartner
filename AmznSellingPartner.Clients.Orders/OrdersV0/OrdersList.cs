@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	/// </summary>
 	public class OrdersList : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("Orders")]
+		[IsRequired]
 		public OrderList Orders { get; set; }
 
 		/// <summary>

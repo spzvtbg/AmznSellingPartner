@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// <summary>
 		/// The duration of the research.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public Name Name { get; set; }
 
 		/// <summary>
 		/// The number of units.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public int Quantity { get; set; }
 	}
 }

@@ -12,10 +12,10 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// <summary>
 		/// The Amazon Resource Name (ARN) associated with the SQS queue.
 		/// </summary>
+		[JsonProperty("arn")]
 		[IsRequired]
 		[Pattern("^arn:aws:sqs:\\S+:\\S+:\\S+")]
 		[MaxLength(1000)]
-		[JsonProperty("arn")]
 		public string Arn { get; set; }
 	}
 }

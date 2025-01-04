@@ -18,19 +18,19 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The type of destination for this shipment. Possible values: `AMAZON_OPTIMIZED`, `AMAZON_WAREHOUSE`.
 		/// </summary>
+		[JsonProperty("destinationType")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("destinationType")]
 		public string DestinationType { get; set; }
 
 		/// <summary>
 		/// The warehouse that the shipment should be sent to. Empty if the destination type is `AMAZON_OPTIMIZE
 		/// D`.
 		/// </summary>
+		[JsonProperty("warehouseId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("warehouseId")]
 		public string WarehouseId { get; set; }
 	}
 }

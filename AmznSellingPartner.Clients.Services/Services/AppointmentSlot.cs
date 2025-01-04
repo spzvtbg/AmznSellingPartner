@@ -26,8 +26,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// Number of resources for which a slot can be reserved.
 		/// </summary>
-		[Minimum(0)]
 		[JsonProperty("capacity")]
+		[Minimum(0)]
 		public int Capacity { get; set; }
 	}
 }

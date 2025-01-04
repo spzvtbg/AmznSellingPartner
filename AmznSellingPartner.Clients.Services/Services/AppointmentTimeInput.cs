@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// The date, time in UTC for the start time of an appointment in ISO 8601 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("startTime")]
+		[IsRequired]
 		public DateTime StartTime { get; set; }
 
 		/// <summary>

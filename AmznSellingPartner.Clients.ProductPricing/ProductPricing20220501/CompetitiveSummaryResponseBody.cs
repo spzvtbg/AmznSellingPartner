@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// The Amazon identifier for the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("asin")]
+		[IsRequired]
 		public Asin Asin { get; set; }
 
 		/// <summary>
 		/// A marketplace identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public MarketplaceId MarketplaceId { get; set; }
 
 		/// <summary>

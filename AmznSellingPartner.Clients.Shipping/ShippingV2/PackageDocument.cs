@@ -9,16 +9,16 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class PackageDocument : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public DocumentType Type { get; set; }
 
-		[IsRequired]
 		[JsonProperty("format")]
+		[IsRequired]
 		public DocumentFormat Format { get; set; }
 
-		[IsRequired]
 		[JsonProperty("contents")]
+		[IsRequired]
 		public Contents Contents { get; set; }
 	}
 }

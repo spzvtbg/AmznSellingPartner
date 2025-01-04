@@ -21,16 +21,16 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// <summary>
 		/// The identifier for the report. This identifier is unique only in combination with a seller ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportId")]
+		[IsRequired]
 		public string ReportId { get; set; }
 
 		/// <summary>
 		/// The report type. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values)
 		/// for more information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("reportType")]
+		[IsRequired]
 		public string ReportType { get; set; }
 
 		/// <summary>
@@ -55,15 +55,15 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// <summary>
 		/// The date and time when the report was created.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("createdTime")]
+		[IsRequired]
 		public DateTime CreatedTime { get; set; }
 
 		/// <summary>
 		/// The processing status of the report.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("processingStatus")]
+		[IsRequired]
 		public ProcessingStatus ProcessingStatus { get; set; }
 
 		/// <summary>

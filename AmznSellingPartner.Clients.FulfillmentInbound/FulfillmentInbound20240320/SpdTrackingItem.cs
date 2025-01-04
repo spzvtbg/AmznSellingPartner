@@ -13,18 +13,18 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// The ID provided by Amazon that identifies a given box. This ID is comprised of the external shipment
 		/// ID (which is generated after transportation has been confirmed) and the index of the box.
 		/// </summary>
+		[JsonProperty("boxId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("boxId")]
 		public string BoxId { get; set; }
 
 		/// <summary>
 		/// The tracking ID associated with each box in a non-Amazon partnered Small Parcel Delivery (SPD) shipm
 		/// ent.
 		/// </summary>
+		[JsonProperty("trackingId")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("trackingId")]
 		public string TrackingId { get; set; }
 
 		/// <summary>
@@ -32,9 +32,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// is not yet 'VALIDATED', please verify the number and update if necessary. Possible values: `VALIDATED`,
 		/// `NOT_VALIDATED`.
 		/// </summary>
+		[JsonProperty("trackingNumberValidationStatus")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("trackingNumberValidationStatus")]
 		public string TrackingNumberValidationStatus { get; set; }
 	}
 }

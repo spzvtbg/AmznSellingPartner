@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/notifications/v1/subscriptions/{notificationType}/{subscriptionId}")]
 	public class GetSubscriptionByIdGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("subscriptionId")]
 		[IsRequired]
-		[JsonProperty("subscriptionId")]
 		public string SubscriptionId { get; set; }
 
 		/// <summary>
@@ -21,7 +18,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("notificationType")]
 		[IsRequired]
-		[JsonProperty("notificationType")]
 		public NotificationType NotificationType { get; set; }
 	}
 }

@@ -21,9 +21,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Status of the appointment.
 		/// </summary>
+		[JsonProperty("appointmentStatus")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("appointmentStatus")]
 		public string AppointmentStatus { get; set; }
 	}
 }

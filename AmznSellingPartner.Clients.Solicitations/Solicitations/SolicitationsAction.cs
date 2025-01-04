@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	/// </summary>
 	public class SolicitationsAction : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 	}
 }

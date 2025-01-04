@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// The delivery confirmation level.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("DeliveryExperience")]
+		[IsRequired]
 		public DeliveryExperienceType DeliveryExperience { get; set; }
 
 		/// <summary>
@@ -30,8 +30,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// When true, the carrier will pick up the package. Note: Scheduled carrier pickup is available only using
 		/// Dynamex (US), DPD (UK), and Royal Mail (UK).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("CarrierWillPickUp")]
+		[IsRequired]
 		public bool CarrierWillPickUp { get; set; }
 
 		[JsonProperty("CarrierWillPickUpOption")]

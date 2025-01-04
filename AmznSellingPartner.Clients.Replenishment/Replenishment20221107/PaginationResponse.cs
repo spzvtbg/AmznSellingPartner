@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// Total number of results matching the given filter criteria.
 		/// </summary>
-		[Minimum(0)]
 		[JsonProperty("totalResults")]
+		[Minimum(0)]
 		public long TotalResults { get; set; }
 	}
 }

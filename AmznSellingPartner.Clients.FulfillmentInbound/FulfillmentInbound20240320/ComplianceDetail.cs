@@ -12,26 +12,26 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The Amazon Standard Identification Number, which identifies the detail page identifier.
 		/// </summary>
+		[JsonProperty("asin")]
 		[MinLength(1)]
 		[MaxLength(10)]
-		[JsonProperty("asin")]
 		public string Asin { get; set; }
 
 		/// <summary>
 		/// The Fulfillment Network SKU, which identifies a real fulfillable item with catalog data and conditio
 		/// n.
 		/// </summary>
+		[JsonProperty("fnsku")]
 		[MinLength(1)]
 		[MaxLength(10)]
-		[JsonProperty("fnsku")]
 		public string Fnsku { get; set; }
 
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
 		/// </summary>
+		[JsonProperty("msku")]
 		[MinLength(1)]
 		[MaxLength(40)]
-		[JsonProperty("msku")]
 		public string Msku { get; set; }
 
 		[JsonProperty("taxDetails")]

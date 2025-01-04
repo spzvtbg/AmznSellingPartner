@@ -23,15 +23,15 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// <summary>
 		/// Link to schema describing the attributes and requirements for the product type.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("schema")]
+		[IsRequired]
 		public SchemaLink Schema { get; set; }
 
 		/// <summary>
 		/// Name of the requirements set represented in this product type definition.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("requirements")]
+		[IsRequired]
 		public Requirements Requirements { get; set; }
 
 		/// <summary>
@@ -39,51 +39,51 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 		/// schema. Non-enforced requirements enable structural validation of individual attributes without all of
 		/// the required attributes being present (such as for partial updates).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("requirementsEnforced")]
+		[IsRequired]
 		public RequirementsEnforced RequirementsEnforced { get; set; }
 
 		/// <summary>
 		/// Mapping of property group names to property groups. Property groups represent logical groupings of schema
 		/// properties that can be used for display or informational purposes.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("propertyGroups")]
+		[IsRequired]
 		public PropertyGroups PropertyGroups { get; set; }
 
 		/// <summary>
 		/// Locale of the display elements contained in the product type definition.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("locale")]
+		[IsRequired]
 		public string Locale { get; set; }
 
 		/// <summary>
 		/// Amazon marketplace identifiers for which the product type definition is applicable.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceIds")]
+		[IsRequired]
 		public List<string> MarketplaceIds { get; set; }
 
 		/// <summary>
 		/// The name of the Amazon product type that this product type definition applies to.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productType")]
+		[IsRequired]
 		public string ProductType { get; set; }
 
 		/// <summary>
 		/// Human-readable and localized description of the Amazon product type.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("displayName")]
+		[IsRequired]
 		public string DisplayName { get; set; }
 
 		/// <summary>
 		/// The version details for the Amazon product type.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productTypeVersion")]
+		[IsRequired]
 		public ProductTypeVersion ProductTypeVersion { get; set; }
 	}
 }

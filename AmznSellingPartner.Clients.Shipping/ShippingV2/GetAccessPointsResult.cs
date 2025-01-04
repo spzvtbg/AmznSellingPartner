@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class GetAccessPointsResult : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("accessPointsMap")]
+		[IsRequired]
 		public AccessPointsMap AccessPointsMap { get; set; }
 	}
 }

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// One or more unexpected errors occurred during the operation.
 		/// </summary>
+		[JsonProperty("errors")]
 		[IsRequired]
-		[JsonProperty("errorsValue")]
 		public ErrorList ErrorsValue { get; set; }
 	}
 }

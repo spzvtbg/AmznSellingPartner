@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// <summary>
 		/// The percentage discount on the offer.
 		/// </summary>
+		[JsonProperty("percentage")]
 		[Minimum(0)]
 		[Maximum(100)]
-		[JsonProperty("percentage")]
 		public long Percentage { get; set; }
 	}
 }

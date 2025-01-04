@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// First line of the address text.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("addressLine1")]
+		[IsRequired]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
@@ -37,8 +37,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Two-digit, ISO 3166-1 alpha-2 formatted country code where this address is located.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("countryCode")]
+		[IsRequired]
 		public string CountryCode { get; set; }
 
 		/// <summary>
@@ -56,8 +56,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Name of the person, business, or institution at this address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
@@ -76,8 +76,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// State or region where this address is located. Note that this is contextual to the specified country
 		/// code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("stateOrRegion")]
+		[IsRequired]
 		public string StateOrRegion { get; set; }
 	}
 }

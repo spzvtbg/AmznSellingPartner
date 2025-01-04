@@ -13,20 +13,20 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
 		/// of SKUs.
 		/// </summary>
+		[JsonProperty("placementOptionId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("placementOptionId")]
 		public string PlacementOptionId { get; set; }
 
 		/// <summary>
 		/// The status of a placement option. Possible values: `OFFERED`, `ACCEPTED`.
 		/// </summary>
+		[JsonProperty("status")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("status")]
 		public string Status { get; set; }
 	}
 }

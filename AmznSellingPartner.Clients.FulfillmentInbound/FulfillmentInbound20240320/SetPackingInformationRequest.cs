@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// List of packing information for the inbound plan.
 		/// </summary>
+		[JsonProperty("packageGroupings")]
 		[IsRequired]
 		[MinItems(1)]
-		[JsonProperty("packageGroupings")]
 		public List<PackageGroupingInput> PackageGroupings { get; set; }
 	}
 }

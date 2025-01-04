@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// Quantity of units available for a specific item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("amount")]
+		[IsRequired]
 		public int Amount { get; set; }
 
 		/// <summary>
 		/// Unit of measure for the available quantity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public string UnitOfMeasure { get; set; }
 	}
 }

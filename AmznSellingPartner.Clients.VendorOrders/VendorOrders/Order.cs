@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// The purchase order number for this order. Formatting Notes: 8-character alpha-numeric code.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderNumber")]
+		[IsRequired]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
 		/// This field will contain the current state of the purchase order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("purchaseOrderState")]
+		[IsRequired]
 		public PurchaseOrderState PurchaseOrderState { get; set; }
 
 		/// <summary>

@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// The customer membership type that makes up this segment
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("customerMembership")]
+		[IsRequired]
 		public CustomerMembership CustomerMembership { get; set; }
 
 		/// <summary>
 		/// The details about the segment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("segmentDetails")]
+		[IsRequired]
 		public SegmentDetails SegmentDetails { get; set; }
 	}
 }

@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// The name of the person, business or institution at that address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// First line of the address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("addressLine1")]
+		[IsRequired]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// The city where the person, business or institution is located.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("city")]
+		[IsRequired]
 		public string City { get; set; }
 
 		/// <summary>
@@ -57,23 +57,23 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// The state or region where person, business or institution is located.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("stateOrRegion")]
+		[IsRequired]
 		public string StateOrRegion { get; set; }
 
 		/// <summary>
 		/// The postal code of that address. It conatins a series of letters or digits or both, sometimes including
 		/// spaces or punctuation.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("postalCode")]
+		[IsRequired]
 		public string PostalCode { get; set; }
 
 		/// <summary>
 		/// The two digit country code in ISO 3166-1 alpha-2 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("countryCode")]
+		[IsRequired]
 		public string CountryCode { get; set; }
 
 		/// <summary>

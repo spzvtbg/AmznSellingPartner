@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpDelete("/feeds/2021-06-30/feeds/{feedId}")]
 	public class CancelFeedDeleteRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[InPath("feedId")]
 		[IsRequired]
-		[JsonProperty("feedId")]
 		public string FeedId { get; set; }
 	}
 }

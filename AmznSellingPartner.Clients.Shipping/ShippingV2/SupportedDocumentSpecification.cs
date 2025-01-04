@@ -9,16 +9,16 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class SupportedDocumentSpecification : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("format")]
+		[IsRequired]
 		public DocumentFormat Format { get; set; }
 
-		[IsRequired]
 		[JsonProperty("size")]
+		[IsRequired]
 		public DocumentSize Size { get; set; }
 
-		[IsRequired]
 		[JsonProperty("printOptions")]
+		[IsRequired]
 		public PrintOptionList PrintOptions { get; set; }
 	}
 }

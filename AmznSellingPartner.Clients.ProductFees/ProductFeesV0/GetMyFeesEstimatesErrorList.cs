@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	/// </summary>
 	public class GetMyFeesEstimatesErrorList : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

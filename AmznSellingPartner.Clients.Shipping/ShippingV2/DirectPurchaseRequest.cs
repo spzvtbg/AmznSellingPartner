@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("packages")]
 		public PackageList Packages { get; set; }
 
-		[IsRequired]
 		[JsonProperty("channelDetails")]
+		[IsRequired]
 		public ChannelDetails ChannelDetails { get; set; }
 
 		/// <summary>

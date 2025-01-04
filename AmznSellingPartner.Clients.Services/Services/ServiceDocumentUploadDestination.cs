@@ -12,19 +12,19 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// The unique identifier to be used by APIs that reference the upload destination.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("uploadDestinationId")]
+		[IsRequired]
 		public string UploadDestinationId { get; set; }
 
 		/// <summary>
 		/// The URL to which to upload the file.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("url")]
+		[IsRequired]
 		public string Url { get; set; }
 
-		[IsRequired]
 		[JsonProperty("encryptionDetails")]
+		[IsRequired]
 		public EncryptionDetails EncryptionDetails { get; set; }
 
 		/// <summary>

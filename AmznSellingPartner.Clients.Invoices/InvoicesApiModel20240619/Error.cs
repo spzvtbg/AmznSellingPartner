@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// <summary>
 		/// An error code that identifies the type of error that occurred.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("code")]
+		[IsRequired]
 		public string Code { get; set; }
 
 		/// <summary>
@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// <summary>
 		/// A message that describes the error condition.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("message")]
+		[IsRequired]
 		public string Message { get; set; }
 	}
 }

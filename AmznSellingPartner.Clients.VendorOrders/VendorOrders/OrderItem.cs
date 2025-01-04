@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("itemSequenceNumber")]
+		[IsRequired]
 		public string ItemSequenceNumber { get; set; }
 
 		/// <summary>
@@ -32,15 +32,15 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// Item quantity ordered.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderedQuantity")]
+		[IsRequired]
 		public ItemQuantity OrderedQuantity { get; set; }
 
 		/// <summary>
 		/// When true, we will accept backorder confirmations for this item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isBackOrderAllowed")]
+		[IsRequired]
 		public bool IsBackOrderAllowed { get; set; }
 
 		/// <summary>

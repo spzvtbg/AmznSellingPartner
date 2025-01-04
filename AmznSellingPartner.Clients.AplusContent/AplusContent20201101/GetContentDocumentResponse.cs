@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 
 	public class GetContentDocumentResponse : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("contentRecord")]
+		[IsRequired]
 		public ContentRecord ContentRecord { get; set; }
 	}
 }

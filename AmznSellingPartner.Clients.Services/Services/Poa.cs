@@ -21,15 +21,15 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// A list of technicians.
 		/// </summary>
-		[MinItems(1)]
 		[JsonProperty("technicians")]
+		[MinItems(1)]
 		public List<Technician> Technicians { get; set; }
 
 		/// <summary>
 		/// The identifier of the technician who uploaded the POA.
 		/// </summary>
-		[Pattern("^[A-Z0-9]*")]
 		[JsonProperty("uploadingTechnician")]
+		[Pattern("^[A-Z0-9]*")]
 		public string UploadingTechnician { get; set; }
 
 		/// <summary>

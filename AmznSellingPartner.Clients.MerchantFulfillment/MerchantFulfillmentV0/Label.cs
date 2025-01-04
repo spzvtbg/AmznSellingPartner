@@ -12,12 +12,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		[JsonProperty("CustomTextForLabel")]
 		public CustomTextForLabel CustomTextForLabel { get; set; }
 
-		[IsRequired]
 		[JsonProperty("Dimensions")]
+		[IsRequired]
 		public LabelDimensions Dimensions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("FileContents")]
+		[IsRequired]
 		public FileContents FileContents { get; set; }
 
 		[JsonProperty("LabelFormat")]

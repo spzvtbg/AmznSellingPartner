@@ -11,15 +11,15 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	/// </summary>
 	public class ProductTypeList : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("productTypes")]
+		[IsRequired]
 		public List<ProductType> ProductTypes { get; set; }
 
 		/// <summary>
 		/// Amazon product type version identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productTypeVersion")]
+		[IsRequired]
 		public string ProductTypeVersion { get; set; }
 	}
 }

@@ -12,13 +12,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The seller SKU of the item.
 		/// </summary>
+		[JsonProperty("sellerSku")]
 		[IsRequired]
 		[MaxLength(50)]
-		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; }
 
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public Quantity Quantity { get; set; }
 
 		/// <summary>
@@ -32,9 +32,9 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// A fulfillment order item identifier that the seller creates to track items in the fulfillment previe
 		/// w.
 		/// </summary>
+		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]
 		[MaxLength(50)]
-		[JsonProperty("sellerFulfillmentOrderItemId")]
 		public string SellerFulfillmentOrderItemId { get; set; }
 	}
 }

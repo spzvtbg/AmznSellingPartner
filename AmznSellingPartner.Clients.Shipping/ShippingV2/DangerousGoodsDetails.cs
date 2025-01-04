@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The specific UNID of the item being shipped.
 		/// </summary>
-		[Pattern("^[0-9]{4}")]
 		[JsonProperty("unitedNationsRegulatoryId")]
+		[Pattern("^[0-9]{4}")]
 		public string UnitedNationsRegulatoryId { get; set; }
 
 		/// <summary>
 		/// The specific regulatory class  of the item being shipped.
 		/// </summary>
-		[Pattern("^[1-9](\\.[1-9])?")]
 		[JsonProperty("transportationRegulatoryClass")]
+		[Pattern("^[1-9](\\.[1-9])?")]
 		public string TransportationRegulatoryClass { get; set; }
 
 		/// <summary>

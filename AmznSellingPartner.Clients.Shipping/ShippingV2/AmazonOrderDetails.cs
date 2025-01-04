@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The Amazon order ID associated with the Amazon order fulfilled by this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderId")]
+		[IsRequired]
 		public string OrderId { get; set; }
 	}
 }

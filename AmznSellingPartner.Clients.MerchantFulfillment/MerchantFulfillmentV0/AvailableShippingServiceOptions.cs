@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	/// </summary>
 	public class AvailableShippingServiceOptions : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("AvailableCarrierWillPickUpOptions")]
+		[IsRequired]
 		public AvailableCarrierWillPickUpOptionsList AvailableCarrierWillPickUpOptions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("AvailableDeliveryExperienceOptions")]
+		[IsRequired]
 		public AvailableDeliveryExperienceOptionsList AvailableDeliveryExperienceOptions { get; set; }
 	}
 }

@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// <summary>
 		/// The content type of the feed.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("contentType")]
+		[IsRequired]
 		public string ContentType { get; set; }
 	}
 }

@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// Amazon marketplace identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
 		/// The name of the product type that is submitted by the Selling Partner.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productType")]
+		[IsRequired]
 		public string ProductType { get; set; }
 	}
 }

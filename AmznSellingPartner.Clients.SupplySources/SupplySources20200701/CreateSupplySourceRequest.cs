@@ -9,16 +9,16 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	/// </summary>
 	public class CreateSupplySourceRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("supplySourceCode")]
+		[IsRequired]
 		public SupplySourceCode SupplySourceCode { get; set; }
 
-		[IsRequired]
 		[JsonProperty("alias")]
+		[IsRequired]
 		public SupplySourceAlias Alias { get; set; }
 
-		[IsRequired]
 		[JsonProperty("address")]
+		[IsRequired]
 		public Address Address { get; set; }
 	}
 }

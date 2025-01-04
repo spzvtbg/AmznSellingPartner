@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// A marketplace identifier. Identifies the Amazon marketplace for the listings item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -28,8 +28,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The Amazon product type of the listings item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productType")]
+		[IsRequired]
 		public string ProductType { get; set; }
 
 		/// <summary>
@@ -41,8 +41,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// Statuses that apply to the listings item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public List<Status> Status { get; set; }
 
 		/// <summary>
@@ -61,15 +61,15 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// <summary>
 		/// The date the listings item was created in ISO 8601 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("createdDate")]
+		[IsRequired]
 		public DateTime CreatedDate { get; set; }
 
 		/// <summary>
 		/// The date the listings item was last updated in ISO 8601 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("lastUpdatedDate")]
+		[IsRequired]
 		public DateTime LastUpdatedDate { get; set; }
 
 		/// <summary>

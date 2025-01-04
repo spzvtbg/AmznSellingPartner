@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	/// </summary>
 	public class UpdateShipmentTrackingDetailsRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("trackingDetails")]
+		[IsRequired]
 		public TrackingDetailsInput TrackingDetails { get; set; }
 	}
 }

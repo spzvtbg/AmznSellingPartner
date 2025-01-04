@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/fba/outbound/2020-07-01/tracking")]
 	public class GetPackageTrackingDetailsGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InQuery("packageNumber")]
 		[IsRequired]
-		[JsonProperty("packageNumber")]
 		public int PackageNumber { get; set; }
 	}
 }

@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpDelete("/notifications/v1/destinations/{destinationId}")]
 	public class DeleteDestinationDeleteRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// </summary>
 		[InPath("destinationId")]
 		[IsRequired]
-		[JsonProperty("destinationId")]
 		public string DestinationId { get; set; }
 	}
 }

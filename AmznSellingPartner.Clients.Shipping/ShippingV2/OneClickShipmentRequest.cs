@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// <summary>
 		/// The ship from address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipFrom")]
+		[IsRequired]
 		public Address ShipFrom { get; set; }
 
 		/// <summary>
@@ -37,8 +37,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("shipDate")]
 		public DateTime ShipDate { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packages")]
+		[IsRequired]
 		public PackageList Packages { get; set; }
 
 		[JsonProperty("valueAddedServicesDetails")]
@@ -47,16 +47,16 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		[JsonProperty("taxDetails")]
 		public TaxDetailList TaxDetails { get; set; }
 
-		[IsRequired]
 		[JsonProperty("channelDetails")]
+		[IsRequired]
 		public ChannelDetails ChannelDetails { get; set; }
 
-		[IsRequired]
 		[JsonProperty("labelSpecifications")]
+		[IsRequired]
 		public RequestedDocumentSpecification LabelSpecifications { get; set; }
 
-		[IsRequired]
 		[JsonProperty("serviceSelection")]
+		[IsRequired]
 		public ServiceSelection ServiceSelection { get; set; }
 
 		/// <summary>

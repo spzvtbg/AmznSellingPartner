@@ -24,9 +24,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Type of tax. Possible values: `CGST`, `SGST`, `IGST`, `TOTAL_TAX`.
 		/// </summary>
+		[JsonProperty("taxType")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("taxType")]
 		public string TaxType { get; set; }
 	}
 }

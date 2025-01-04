@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// <summary>
 		/// A marketplace identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("MarketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -25,15 +25,15 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// <summary>
 		/// The product price that the fee estimate is based on.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("PriceToEstimateFees")]
+		[IsRequired]
 		public PriceToEstimateFees PriceToEstimateFees { get; set; }
 
 		/// <summary>
 		/// A unique identifier provided by the caller to track this request.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Identifier")]
+		[IsRequired]
 		public string Identifier { get; set; }
 
 		[JsonProperty("OptionalFulfillmentProgram")]

@@ -22,15 +22,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Timestamp denoting when the shipment will be shipped Date should be in ISO 8601 format as defined by
 		/// date-time.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipBy")]
+		[IsRequired]
 		public DateTime ShipBy { get; set; }
 
 		/// <summary>
 		/// The identifier that is received from transportation to uniquely identify a booking.
 		/// </summary>
-		[MinLength(1)]
 		[JsonProperty("bookingId")]
+		[MinLength(1)]
 		public string BookingId { get; set; }
 	}
 }

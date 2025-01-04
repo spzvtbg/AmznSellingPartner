@@ -17,12 +17,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[JsonProperty("ineligibilityReasons")]
 		public List<SkuIneligibilityReason> IneligibilityReasons { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageQuantity")]
+		[IsRequired]
 		public DistributionPackageQuantity PackageQuantity { get; set; }
 
-		[IsRequired]
 		[JsonProperty("status")]
+		[IsRequired]
 		public InboundEligibilityStatus Status { get; set; }
 	}
 }

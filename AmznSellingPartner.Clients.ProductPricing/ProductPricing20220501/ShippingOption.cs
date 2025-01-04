@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// The type of shipping option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shippingOptionType")]
+		[IsRequired]
 		public ShippingOptionType ShippingOptionType { get; set; }
 
 		/// <summary>
 		/// Shipping price for the offer.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("price")]
+		[IsRequired]
 		public MoneyType Price { get; set; }
 	}
 }

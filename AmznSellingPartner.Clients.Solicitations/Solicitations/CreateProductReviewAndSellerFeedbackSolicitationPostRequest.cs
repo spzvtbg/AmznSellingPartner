@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/solicitations/v1/orders/{amazonOrderId}/solicitations/productReviewAndSellerFeedback")]
 	public class CreateProductReviewAndSellerFeedbackSolicitationPostRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		/// </summary>
 		[InPath("amazonOrderId")]
 		[IsRequired]
-		[JsonProperty("amazonOrderId")]
 		public string AmazonOrderId { get; set; }
 
 		/// <summary>
@@ -23,7 +20,6 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 	}
 }

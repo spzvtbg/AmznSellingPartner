@@ -9,16 +9,16 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class PurchaseShipmentRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("requestToken")]
+		[IsRequired]
 		public RequestToken RequestToken { get; set; }
 
-		[IsRequired]
 		[JsonProperty("rateId")]
+		[IsRequired]
 		public RateId RateId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("requestedDocumentSpecification")]
+		[IsRequired]
 		public RequestedDocumentSpecification RequestedDocumentSpecification { get; set; }
 
 		[JsonProperty("requestedValueAddedServices")]

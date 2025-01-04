@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/fba/outbound/2020-07-01/features/inventory/{featureName}/{sellerSku}")]
 	public class GetFeatureSKUGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InQuery("marketplaceId")]
 		[IsRequired]
-		[JsonProperty("marketplaceId")]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
@@ -20,7 +17,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InPath("featureName")]
 		[IsRequired]
-		[JsonProperty("featureName")]
 		public string FeatureName { get; set; }
 
 		/// <summary>
@@ -29,7 +25,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// </summary>
 		[InPath("sellerSku")]
 		[IsRequired]
-		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; }
 	}
 }

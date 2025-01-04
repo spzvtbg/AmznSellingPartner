@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// The seller identifier for the offer.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerId")]
+		[IsRequired]
 		public string SellerId { get; set; }
 
 		/// <summary>
 		/// Item Condition.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("condition")]
+		[IsRequired]
 		public Condition Condition { get; set; }
 
 		/// <summary>
@@ -35,15 +35,15 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// The fulfillment type for the offer. Possible values are `AFN` (Amazon Fulfillment Network) and `MFN`
 		/// (Merchant Fulfillment Network).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("fulfillmentType")]
+		[IsRequired]
 		public FulfillmentType FulfillmentType { get; set; }
 
 		/// <summary>
 		/// The offer buying price. This doesn't include shipping, points, or applicable promotions.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("listingPrice")]
+		[IsRequired]
 		public MoneyType ListingPrice { get; set; }
 
 		/// <summary>

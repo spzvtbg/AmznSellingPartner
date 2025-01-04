@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		/// <summary>
 		/// The listing price for the item, excluding any promotions.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("listingPrice")]
+		[IsRequired]
 		public MoneyType ListingPrice { get; set; }
 
 		/// <summary>

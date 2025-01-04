@@ -11,14 +11,14 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class StandardComparisonTableModule : BaseClass
 	{
+		[JsonProperty("productColumns")]
 		[MinItems(0)]
 		[MaxItems(6)]
-		[JsonProperty("productColumns")]
 		public List<StandardComparisonProductBlock> ProductColumns { get; set; }
 
+		[JsonProperty("metricRowLabels")]
 		[MinItems(0)]
 		[MaxItems(10)]
-		[JsonProperty("metricRowLabels")]
 		public List<PlainTextItem> MetricRowLabels { get; set; }
 	}
 }

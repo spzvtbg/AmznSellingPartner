@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	using System;
 
 	[HttpGet("/feeds/2021-06-30/feeds")]
@@ -18,7 +16,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		[InQuery("feedTypes")]
 		[MinItems(1)]
 		[MaxItems(10)]
-		[JsonProperty("feedTypes")]
 		public CsvValue<string> FeedTypes { get; set; }
 
 		/// <summary>
@@ -28,7 +25,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		[InQuery("marketplaceIds")]
 		[MinItems(1)]
 		[MaxItems(10)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -37,7 +33,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		[InQuery("pageSize")]
 		[Minimum(1)]
 		[Maximum(100)]
-		[JsonProperty("pageSize")]
 		public int PageSize { get; set; }
 
 		/// <summary>
@@ -45,7 +40,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[InQuery("processingStatuses")]
 		[MinItems(1)]
-		[JsonProperty("processingStatuses")]
 		public CsvValue<ProcessingStatuses> ProcessingStatuses { get; set; }
 
 		/// <summary>
@@ -53,7 +47,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// default is 90 days ago. Feeds are retained for a maximum of 90 days.
 		/// </summary>
 		[InQuery("createdSince")]
-		[JsonProperty("createdSince")]
 		public DateTime CreatedSince { get; set; }
 
 		/// <summary>
@@ -61,7 +54,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// is now.
 		/// </summary>
 		[InQuery("createdUntil")]
-		[JsonProperty("createdUntil")]
 		public DateTime CreatedUntil { get; set; }
 
 		/// <summary>
@@ -71,7 +63,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// the request to fail.
 		/// </summary>
 		[InQuery("nextToken")]
-		[JsonProperty("nextToken")]
 		public string NextToken { get; set; }
 	}
 }

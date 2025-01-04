@@ -12,29 +12,29 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Height of the package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("height")]
+		[IsRequired]
 		public double Height { get; set; }
 
 		/// <summary>
 		/// Length of the package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("length")]
+		[IsRequired]
 		public double Length { get; set; }
 
 		/// <summary>
 		/// Unit of measurement for package dimensions.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasurement")]
+		[IsRequired]
 		public DimensionUnitOfMeasurement UnitOfMeasurement { get; set; }
 
 		/// <summary>
 		/// Width of the package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("width")]
+		[IsRequired]
 		public double Width { get; set; }
 	}
 }

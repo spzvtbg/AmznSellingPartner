@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpPut("/listings/2021-08-01/items/{sellerId}/{sku}")]
 	public class PutListingsItemPutRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[InPath("sellerId")]
 		[IsRequired]
-		[JsonProperty("sellerId")]
 		public string SellerId { get; set; }
 
 		/// <summary>
@@ -21,7 +18,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[InPath("sku")]
 		[IsRequired]
-		[JsonProperty("sku")]
 		public string Sku { get; set; }
 
 		/// <summary>
@@ -30,21 +26,18 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
 		/// A comma-delimited list of data sets to include in the response. Default: `issues`.
 		/// </summary>
 		[InQuery("includedData")]
-		[JsonProperty("includedData")]
 		public CsvValue<IncludedData> IncludedData { get; set; }
 
 		/// <summary>
 		/// The mode of operation for the request.
 		/// </summary>
 		[InQuery("mode")]
-		[JsonProperty("mode")]
 		public Mode Mode { get; set; }
 
 		/// <summary>
@@ -53,7 +46,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// is not available in the specified locale.
 		/// </summary>
 		[InQuery("issueLocale")]
-		[JsonProperty("issueLocale")]
 		public string IssueLocale { get; set; }
 
 		/// <summary>
@@ -61,7 +53,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[InBody("body")]
 		[IsRequired]
-		[JsonProperty("body")]
 		public ListingsItemPutRequest Body { get; set; }
 	}
 }

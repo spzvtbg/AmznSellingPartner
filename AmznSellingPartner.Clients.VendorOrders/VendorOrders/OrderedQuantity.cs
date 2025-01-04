@@ -9,7 +9,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// Item quantity ordered.
 		/// </summary>
-		[JsonProperty("orderedQuantityValue")]
+		[JsonProperty("orderedQuantity")]
 		public ItemQuantity OrderedQuantityValue { get; set; }
 
 		/// <summary>

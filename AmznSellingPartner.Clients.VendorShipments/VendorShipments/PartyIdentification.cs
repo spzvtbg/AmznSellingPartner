@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// <summary>
 		/// Assigned identification for the party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("partyId")]
+		[IsRequired]
 		public string PartyId { get; set; }
 
 		/// <summary>

@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// <summary>
 		/// List of errors.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

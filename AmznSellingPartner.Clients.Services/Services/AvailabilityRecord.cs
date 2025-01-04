@@ -14,15 +14,15 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// Denotes the time from when the resource is available in a day in ISO-8601 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("startTime")]
+		[IsRequired]
 		public DateTime StartTime { get; set; }
 
 		/// <summary>
 		/// Denotes the time till when the resource is available in a day in ISO-8601 format.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("endTime")]
+		[IsRequired]
 		public DateTime EndTime { get; set; }
 
 		/// <summary>
@@ -34,8 +34,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// Signifies the capacity of a resource which is available.
 		/// </summary>
-		[Minimum(1)]
 		[JsonProperty("capacity")]
+		[Minimum(1)]
 		public int Capacity { get; set; }
 	}
 }

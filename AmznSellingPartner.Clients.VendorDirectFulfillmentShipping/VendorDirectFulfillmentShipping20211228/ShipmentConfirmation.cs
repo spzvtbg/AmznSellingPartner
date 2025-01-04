@@ -15,38 +15,38 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// <summary>
 		/// Purchase order number corresponding to the shipment.
 		/// </summary>
+		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9]+")]
-		[JsonProperty("purchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; }
 
 		/// <summary>
 		/// Shipment information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentDetails")]
+		[IsRequired]
 		public ShipmentDetails ShipmentDetails { get; set; }
 
 		/// <summary>
 		/// ID of the selling party or vendor.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellingParty")]
+		[IsRequired]
 		public PartyIdentification SellingParty { get; set; }
 
 		/// <summary>
 		/// Warehouse code of vendor.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipFromParty")]
+		[IsRequired]
 		public PartyIdentification ShipFromParty { get; set; }
 
 		/// <summary>
 		/// Provide the details of the items in this shipment. If any of the item details field is common at a package
 		/// or a pallet level, then provide them at the corresponding package.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public List<Item> Items { get; set; }
 
 		/// <summary>

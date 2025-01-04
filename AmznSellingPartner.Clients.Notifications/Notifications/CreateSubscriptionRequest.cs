@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// <summary>
 		/// The version of the payload object to be used in the notification.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("payloadVersion")]
+		[IsRequired]
 		public string PayloadVersion { get; set; }
 
 		/// <summary>
 		/// The identifier for the destination where notifications will be delivered.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("destinationId")]
+		[IsRequired]
 		public string DestinationId { get; set; }
 
 		[JsonProperty("processingDirective")]

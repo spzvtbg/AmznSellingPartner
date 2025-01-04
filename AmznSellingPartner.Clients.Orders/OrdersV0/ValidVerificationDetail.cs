@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// A supported type of verification detail. The type indicates which verification detail could be shared
 		/// while updating the regulated order. Valid value: `prescriptionDetail`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("VerificationDetailType")]
+		[IsRequired]
 		public string VerificationDetailType { get; set; }
 
 		/// <summary>
@@ -27,8 +27,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// detail will fail for orders with a `VerificationStatus` of `Pending`, `Rejected`, `Expired`, or `Can
 		/// celled`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ValidVerificationStatuses")]
+		[IsRequired]
 		public List<VerificationStatus> ValidVerificationStatuses { get; set; }
 	}
 }

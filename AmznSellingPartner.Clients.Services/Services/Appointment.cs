@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// A list of technicians assigned to the service job.
 		/// </summary>
-		[MinItems(1)]
 		[JsonProperty("assignedTechnicians")]
+		[MinItems(1)]
 		public List<Technician> AssignedTechnicians { get; set; }
 
 		/// <summary>

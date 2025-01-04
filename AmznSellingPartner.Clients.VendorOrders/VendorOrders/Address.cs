@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// The name of the person, business or institution at that address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// First line of the address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("addressLine1")]
+		[IsRequired]
 		public string AddressLine1 { get; set; }
 
 		/// <summary>
@@ -69,9 +69,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// <summary>
 		/// The two digit country code. In ISO 3166-1 alpha-2 format.
 		/// </summary>
+		[JsonProperty("countryCode")]
 		[IsRequired]
 		[MaxLength(2)]
-		[JsonProperty("countryCode")]
 		public string CountryCode { get; set; }
 
 		/// <summary>

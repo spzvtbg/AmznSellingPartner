@@ -34,8 +34,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Types and numbers of container(s) for import purchase orders. Can be a comma-separated list if shipment
 		/// has multiple containers.
 		/// </summary>
-		[MaxLength(64)]
 		[JsonProperty("importContainers")]
+		[MaxLength(64)]
 		public string ImportContainers { get; set; }
 
 		/// <summary>

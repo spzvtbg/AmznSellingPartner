@@ -17,9 +17,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Harmonized System of Nomenclature code.
 		/// </summary>
+		[JsonProperty("hsnCode")]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("hsnCode")]
 		public string HsnCode { get; set; }
 
 		/// <summary>

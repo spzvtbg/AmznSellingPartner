@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.ListingsRestrictions.ListingsRestrictions20
 	/// </summary>
 	public class RestrictionList : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("restrictions")]
+		[IsRequired]
 		public List<Restriction> Restrictions { get; set; }
 	}
 }

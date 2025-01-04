@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentInventory.VendorDire
 		/// <summary>
 		/// Unit of measure for the available quantity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("unitOfMeasure")]
+		[IsRequired]
 		public string UnitOfMeasure { get; set; }
 	}
 }

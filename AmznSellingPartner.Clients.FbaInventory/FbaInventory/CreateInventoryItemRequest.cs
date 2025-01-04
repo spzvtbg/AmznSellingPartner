@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// <summary>
 		/// The seller SKU of the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sellerSku")]
+		[IsRequired]
 		public string SellerSku { get; set; }
 
 		/// <summary>
 		/// The marketplaceId.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("marketplaceId")]
+		[IsRequired]
 		public string MarketplaceId { get; set; }
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("productName")]
+		[IsRequired]
 		public string ProductName { get; set; }
 	}
 }

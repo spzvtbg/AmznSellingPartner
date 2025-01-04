@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// Identifies a package in a shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("packageNumber")]
+		[IsRequired]
 		public int PackageNumber { get; set; }
 
 		/// <summary>
 		/// Identifies the carrier who will deliver the shipment to the recipient.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("carrierCode")]
+		[IsRequired]
 		public string CarrierCode { get; set; }
 
 		/// <summary>

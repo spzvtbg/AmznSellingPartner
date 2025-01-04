@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/supplySources/2020-07-01/supplySources/{supplySourceId}")]
 	public class GetSupplySourceGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// </summary>
 		[InPath("supplySourceId")]
 		[IsRequired]
-		[JsonProperty("supplySourceId")]
 		public string SupplySourceId { get; set; }
 	}
 }

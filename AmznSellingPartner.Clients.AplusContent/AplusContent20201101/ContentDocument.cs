@@ -12,25 +12,25 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// The A+ Content document name.
 		/// </summary>
+		[JsonProperty("name")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(100)]
-		[JsonProperty("name")]
 		public string Name { get; set; }
 
-		[IsRequired]
 		[JsonProperty("contentType")]
+		[IsRequired]
 		public ContentType ContentType { get; set; }
 
 		[JsonProperty("contentSubType")]
 		public ContentSubType ContentSubType { get; set; }
 
-		[IsRequired]
 		[JsonProperty("locale")]
+		[IsRequired]
 		public LanguageTag Locale { get; set; }
 
-		[IsRequired]
 		[JsonProperty("contentModuleList")]
+		[IsRequired]
 		public ContentModuleList ContentModuleList { get; set; }
 	}
 }

@@ -11,12 +11,12 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	/// </summary>
 	public class BoxInput : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("contentInformationSource")]
+		[IsRequired]
 		public BoxContentInformationSource ContentInformationSource { get; set; }
 
-		[IsRequired]
 		[JsonProperty("dimensions")]
+		[IsRequired]
 		public Dimensions Dimensions { get; set; }
 
 		/// <summary>
@@ -29,14 +29,14 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The number of containers where all other properties like weight or dimensions are identical.
 		/// </summary>
+		[JsonProperty("quantity")]
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		[JsonProperty("quantity")]
 		public int Quantity { get; set; }
 
-		[IsRequired]
 		[JsonProperty("weight")]
+		[IsRequired]
 		public Weight Weight { get; set; }
 	}
 }

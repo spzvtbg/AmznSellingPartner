@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// <summary>
 		/// The full name of the seller's primary contact.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public string Name { get; set; }
 
 		/// <summary>
 		/// The primary contact's residential address.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("address")]
+		[IsRequired]
 		public Address Address { get; set; }
 
 		/// <summary>

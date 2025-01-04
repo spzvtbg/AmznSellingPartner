@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		/// <summary>
 		/// A validation string.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ValidationString")]
+		[IsRequired]
 		public string ValidationString { get; set; }
 	}
 }

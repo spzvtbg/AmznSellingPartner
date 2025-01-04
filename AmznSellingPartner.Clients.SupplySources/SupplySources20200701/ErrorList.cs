@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		/// <summary>
 		/// A list of error responses returned when a request is unsuccessful.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

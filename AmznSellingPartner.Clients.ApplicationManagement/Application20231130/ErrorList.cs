@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.ApplicationManagement.Application20231130
 		/// <summary>
 		/// array of errors
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("errors")]
+		[IsRequired]
 		public List<Error> Errors { get; set; }
 	}
 }

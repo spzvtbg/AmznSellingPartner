@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 
 	public class PostContentDocumentResponse : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("contentReferenceKey")]
+		[IsRequired]
 		public ContentReferenceKey ContentReferenceKey { get; set; }
 	}
 }

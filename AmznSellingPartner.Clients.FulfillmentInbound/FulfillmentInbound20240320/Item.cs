@@ -14,10 +14,10 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The Amazon Standard Identification Number (ASIN) of the item.
 		/// </summary>
+		[JsonProperty("asin")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(10)]
-		[JsonProperty("asin")]
 		public string Asin { get; set; }
 
 		/// <summary>
@@ -25,60 +25,60 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// datetime format with pattern`YYYY-MM-DD`. The same MSKU with different expiration dates cannot go into
 		/// the same box.
 		/// </summary>
-		[Pattern("^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])")]
 		[JsonProperty("expiration")]
+		[Pattern("^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])")]
 		public string Expiration { get; set; }
 
 		/// <summary>
 		/// A unique identifier assigned by Amazon to products stored in and fulfilled from an Amazon fulfillment
 		/// center.
 		/// </summary>
+		[JsonProperty("fnsku")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(10)]
-		[JsonProperty("fnsku")]
 		public string Fnsku { get; set; }
 
 		/// <summary>
 		/// Specifies who will label the items. Options include `AMAZON`, `SELLER`, and `NONE`.
 		/// </summary>
+		[JsonProperty("labelOwner")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("labelOwner")]
 		public string LabelOwner { get; set; }
 
 		/// <summary>
 		/// The manufacturing lot code.
 		/// </summary>
+		[JsonProperty("manufacturingLotCode")]
 		[MinLength(1)]
 		[MaxLength(256)]
-		[JsonProperty("manufacturingLotCode")]
 		public string ManufacturingLotCode { get; set; }
 
 		/// <summary>
 		/// The merchant SKU, a merchant-supplied identifier of a specific SKU.
 		/// </summary>
+		[JsonProperty("msku")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(40)]
-		[JsonProperty("msku")]
 		public string Msku { get; set; }
 
 		/// <summary>
 		/// Special preparations that are required for an item.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("prepInstructions")]
+		[IsRequired]
 		public List<PrepInstruction> PrepInstructions { get; set; }
 
 		/// <summary>
 		/// The number of the specified MSKU.
 		/// </summary>
+		[JsonProperty("quantity")]
 		[IsRequired]
 		[Minimum(1)]
 		[Maximum(10000)]
-		[JsonProperty("quantity")]
 		public int Quantity { get; set; }
 	}
 }

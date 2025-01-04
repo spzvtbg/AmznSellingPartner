@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/vendor/directFulfillment/sandbox/2021-10-28/transactions/{transactionId}")]
 	public class GetOrderScenariosGetRequest : BaseHttpRequest
 	{
@@ -12,7 +10,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 		/// </summary>
 		[InPath("transactionId")]
 		[IsRequired]
-		[JsonProperty("transactionId")]
 		public string TransactionId { get; set; }
 	}
 }

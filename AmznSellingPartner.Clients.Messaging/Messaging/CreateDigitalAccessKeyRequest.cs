@@ -16,16 +16,16 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// Do not include HTML or email addresses. The text must be written in the buyer's preferred language, which
 		/// you can retrieve from the `GetAttributes` operation.
 		/// </summary>
+		[JsonProperty("text")]
 		[MinLength(1)]
 		[MaxLength(400)]
-		[JsonProperty("text")]
 		public string Text { get; set; }
 
 		/// <summary>
 		/// Attachments that you want to include in the message to the buyer.
 		/// </summary>
-		[MaxLength(5)]
 		[JsonProperty("attachments")]
+		[MaxLength(5)]
 		public List<Attachment> Attachments { get; set; }
 	}
 }

@@ -12,22 +12,22 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// <summary>
 		/// The encryption standard required to encrypt or decrypt the document contents.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("standard")]
+		[IsRequired]
 		public Standard Standard { get; set; }
 
 		/// <summary>
 		/// The vector to encrypt or decrypt the document contents using Cipher Block Chaining (CBC).
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("initializationVector")]
+		[IsRequired]
 		public string InitializationVector { get; set; }
 
 		/// <summary>
 		/// The encryption key used to encrypt or decrypt the document contents.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("key")]
+		[IsRequired]
 		public string Key { get; set; }
 	}
 }

@@ -14,22 +14,22 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// <summary>
 		/// The verification status of the order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Status")]
+		[IsRequired]
 		public VerificationStatus Status { get; set; }
 
 		/// <summary>
 		/// When true, the regulated information provided in the order requires a review by the merchant.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("RequiresMerchantAction")]
+		[IsRequired]
 		public bool RequiresMerchantAction { get; set; }
 
 		/// <summary>
 		/// A list of valid rejection reasons that may be used to reject the order's regulated information.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("ValidRejectionReasons")]
+		[IsRequired]
 		public List<RejectionReason> ValidRejectionReasons { get; set; }
 
 		/// <summary>

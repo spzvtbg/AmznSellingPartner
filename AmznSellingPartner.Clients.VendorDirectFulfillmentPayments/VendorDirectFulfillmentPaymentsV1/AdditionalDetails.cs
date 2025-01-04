@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// <summary>
 		/// The type of the additional information provided by the selling party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("type")]
+		[IsRequired]
 		public Type Type { get; set; }
 
 		/// <summary>
 		/// The detail of the additional information provided by the selling party.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("detail")]
+		[IsRequired]
 		public string Detail { get; set; }
 
 		/// <summary>

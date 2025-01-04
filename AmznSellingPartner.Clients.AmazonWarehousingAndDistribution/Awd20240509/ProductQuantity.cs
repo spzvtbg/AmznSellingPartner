@@ -22,15 +22,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Product quantity.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public int Quantity { get; set; }
 
 		/// <summary>
 		/// The seller or merchant SKU.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sku")]
+		[IsRequired]
 		public string Sku { get; set; }
 
 		/// <summary>

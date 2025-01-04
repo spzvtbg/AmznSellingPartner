@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// <summary>
 		/// The time at which the fees were estimated. This defaults to the time the request is made.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("TimeOfFeesEstimation")]
+		[IsRequired]
 		public DateTime TimeOfFeesEstimation { get; set; }
 
 		/// <summary>

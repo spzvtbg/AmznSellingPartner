@@ -13,15 +13,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// The time zone of the destination address for the fulfillment order preview. Must be an IANA time zone
 		/// name. Example: Asia/Tokyo.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("deliveryTimeZone")]
+		[IsRequired]
 		public string DeliveryTimeZone { get; set; }
 
 		/// <summary>
 		/// An array of time ranges that are available for scheduled delivery.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("deliveryWindows")]
+		[IsRequired]
 		public DeliveryWindowList DeliveryWindows { get; set; }
 	}
 }

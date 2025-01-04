@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The package identifier.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("packageNumber")]
+		[IsRequired]
 		public int PackageNumber { get; set; }
 
 		/// <summary>

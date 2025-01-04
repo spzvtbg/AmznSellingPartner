@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	/// </summary>
 	public class UpdateShipmentSourceAddressRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("address")]
+		[IsRequired]
 		public AddressInput Address { get; set; }
 	}
 }

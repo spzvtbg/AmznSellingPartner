@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/awd/2024-05-09/inboundShipments/{shipmentId}")]
 	public class GetInboundShipmentGetRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		[InPath("shipmentId")]
 		[IsRequired]
 		[MinLength(1)]
-		[JsonProperty("shipmentId")]
 		public string ShipmentId { get; set; }
 
 		/// <summary>
@@ -21,7 +18,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// which case the response does not contain SKU quantities
 		/// </summary>
 		[InQuery("skuQuantities")]
-		[JsonProperty("skuQuantities")]
 		public SkuQuantities SkuQuantities { get; set; }
 	}
 }

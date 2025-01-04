@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The delivery document type. Values are `SIGNATURE` and `DELIVERY_IMAGE`.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("documentType")]
+		[IsRequired]
 		public string DocumentType { get; set; }
 
 		/// <summary>

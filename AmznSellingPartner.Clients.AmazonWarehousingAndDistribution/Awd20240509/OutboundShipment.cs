@@ -21,22 +21,22 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Destination address for this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("destinationAddress")]
+		[IsRequired]
 		public Address DestinationAddress { get; set; }
 
 		/// <summary>
 		/// Outbound order ID this outbound shipment belongs to.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("orderId")]
+		[IsRequired]
 		public string OrderId { get; set; }
 
 		/// <summary>
 		/// Origin address for this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("originAddress")]
+		[IsRequired]
 		public Address OriginAddress { get; set; }
 
 		/// <summary>
@@ -48,8 +48,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Unique shipment ID.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentId")]
+		[IsRequired]
 		public string ShipmentId { get; set; }
 
 		/// <summary>
@@ -61,8 +61,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// Current status of this shipment.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentStatus")]
+		[IsRequired]
 		public OutboundShipmentStatus ShipmentStatus { get; set; }
 
 		/// <summary>

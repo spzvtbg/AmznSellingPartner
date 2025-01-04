@@ -16,8 +16,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// Discount for the offered option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("discounts")]
+		[IsRequired]
 		public List<Incentive> Discounts { get; set; }
 
 		/// <summary>
@@ -30,35 +30,35 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// The fee for the offered option.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("fees")]
+		[IsRequired]
 		public List<Incentive> Fees { get; set; }
 
 		/// <summary>
 		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
 		/// of SKUs.
 		/// </summary>
+		[JsonProperty("placementOptionId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("placementOptionId")]
 		public string PlacementOptionId { get; set; }
 
 		/// <summary>
 		/// Shipment ids.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("shipmentIds")]
+		[IsRequired]
 		public List<string> ShipmentIds { get; set; }
 
 		/// <summary>
 		/// The status of a placement option. Possible values: `OFFERED`, `ACCEPTED`, `EXPIRED`.
 		/// </summary>
+		[JsonProperty("status")]
 		[IsRequired]
 		[MinLength(1)]
 		[MaxLength(1024)]
-		[JsonProperty("status")]
 		public string Status { get; set; }
 	}
 }

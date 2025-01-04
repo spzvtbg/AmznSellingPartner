@@ -2,8 +2,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
 
-	using Newtonsoft.Json;
-
 	[HttpGet("/vendor/orders/v1/purchaseOrders/{purchaseOrderNumber}")]
 	public class GetPurchaseOrderGetRequest : BaseHttpRequest
 	{
@@ -13,7 +11,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[InPath("purchaseOrderNumber")]
 		[IsRequired]
-		[JsonProperty("purchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; }
 	}
 }

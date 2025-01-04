@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 		/// <summary>
 		/// An Amazon-defined identifier for a time slot.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("slotId")]
+		[IsRequired]
 		public String SlotId { get; set; }
 
 		/// <summary>

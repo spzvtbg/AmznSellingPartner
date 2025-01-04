@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// <summary>
 		/// The dimension value.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("value")]
+		[IsRequired]
 		public int Value { get; set; }
 
 		/// <summary>
 		/// The unit of measurement.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("units")]
+		[IsRequired]
 		public string Units { get; set; }
 	}
 }

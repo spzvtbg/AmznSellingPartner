@@ -9,12 +9,12 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	/// </summary>
 	public class ImageOffsets : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("x")]
+		[IsRequired]
 		public IntegerWithUnits X { get; set; }
 
-		[IsRequired]
 		[JsonProperty("y")]
+		[IsRequired]
 		public IntegerWithUnits Y { get; set; }
 	}
 }

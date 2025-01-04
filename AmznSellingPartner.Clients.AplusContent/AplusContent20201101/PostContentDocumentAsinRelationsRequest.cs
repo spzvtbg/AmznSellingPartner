@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 
 	public class PostContentDocumentAsinRelationsRequest : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("asinSet")]
+		[IsRequired]
 		public AsinSet AsinSet { get; set; }
 	}
 }

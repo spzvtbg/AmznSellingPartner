@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		/// subscription service to determine the type of event filter. Refer to [Notification Type Values](https://developer-docs.amazon.com/sp-api/docs/notification-type-values)
 		/// to determine if an `eventFilterType` is supported.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("eventFilterType")]
+		[IsRequired]
 		public EventFilterType EventFilterType { get; set; }
 	}
 }

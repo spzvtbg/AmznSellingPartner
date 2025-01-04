@@ -12,26 +12,26 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// <summary>
 		/// An error type, identifying either the receiver or the sender as the originator of the error.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Type")]
+		[IsRequired]
 		public string Type { get; set; }
 
 		/// <summary>
 		/// An error code that identifies the type of error that occurred.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Code")]
+		[IsRequired]
 		public string Code { get; set; }
 
 		/// <summary>
 		/// A message that describes the error condition.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("Message")]
+		[IsRequired]
 		public string Message { get; set; }
 
-		[IsRequired]
 		[JsonProperty("Detail")]
+		[IsRequired]
 		public FeesEstimateErrorDetail Detail { get; set; }
 	}
 }

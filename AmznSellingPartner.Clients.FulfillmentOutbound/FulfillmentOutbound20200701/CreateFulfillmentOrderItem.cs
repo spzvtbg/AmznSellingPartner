@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The seller SKU of the item.
 		/// </summary>
+		[JsonProperty("sellerSku")]
 		[IsRequired]
 		[MaxLength(50)]
-		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; }
 
 		/// <summary>
@@ -23,28 +23,28 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// assign different `SellerFulfillmentOrderItemId` values to two items in a fulfillment order that share
 		/// the same `SellerSKU` but have different `GiftMessage` values.
 		/// </summary>
+		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]
 		[MaxLength(50)]
-		[JsonProperty("sellerFulfillmentOrderItemId")]
 		public string SellerFulfillmentOrderItemId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("quantity")]
+		[IsRequired]
 		public Quantity Quantity { get; set; }
 
 		/// <summary>
 		/// A message to the gift recipient, if applicable.
 		/// </summary>
-		[MaxLength(512)]
 		[JsonProperty("giftMessage")]
+		[MaxLength(512)]
 		public string GiftMessage { get; set; }
 
 		/// <summary>
 		/// Item-specific text that displays in recipient-facing materials such as the outbound shipment packing
 		/// slip.
 		/// </summary>
-		[MaxLength(250)]
 		[JsonProperty("displayableComment")]
+		[MaxLength(250)]
 		public string DisplayableComment { get; set; }
 
 		/// <summary>

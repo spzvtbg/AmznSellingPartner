@@ -20,16 +20,16 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// <summary>
 		/// The destination address for the fulfillment order preview.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("address")]
+		[IsRequired]
 		public Address Address { get; set; }
 
 		/// <summary>
 		/// Identifying information and quantity information for the items in the fulfillment order preview. Maximum
 		/// of 100 line items with a maximum of 250 units per order.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("items")]
+		[IsRequired]
 		public GetFulfillmentPreviewItemList Items { get; set; }
 
 		/// <summary>

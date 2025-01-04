@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	/// </summary>
 	public class SkuQuantity : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("expectedQuantity")]
+		[IsRequired]
 		public InventoryQuantity ExpectedQuantity { get; set; }
 
 		[JsonProperty("receivedQuantity")]
@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// <summary>
 		/// The merchant stock keeping unit
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("sku")]
+		[IsRequired]
 		public string Sku { get; set; }
 	}
 }

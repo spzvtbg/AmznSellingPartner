@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	/// </summary>
 	public class SupportedDocumentDetail : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("name")]
+		[IsRequired]
 		public DocumentType Name { get; set; }
 
 		/// <summary>
 		/// When true, the supported document type is required.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isMandatory")]
+		[IsRequired]
 		public bool IsMandatory { get; set; }
 	}
 }

@@ -17,9 +17,9 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// must be written in the buyer's language of preference, which can be retrieved from the GetAttributes
 		/// operation.
 		/// </summary>
+		[JsonProperty("attachments")]
 		[MinLength(1)]
 		[MaxLength(5)]
-		[JsonProperty("attachments")]
 		public List<Attachment> Attachments { get; set; }
 
 		/// <summary>

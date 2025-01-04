@@ -8,19 +8,19 @@ namespace AmznSellingPartner.Clients.Solicitations.Solicitations
 
 	public class Links : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("self")]
+		[IsRequired]
 		public LinkObject Self { get; set; }
 
 		/// <summary>
 		/// Eligible actions for the specified amazonOrderId.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("actions")]
+		[IsRequired]
 		public List<LinkObject> Actions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("schema")]
+		[IsRequired]
 		public LinkObject Schema { get; set; }
 	}
 }

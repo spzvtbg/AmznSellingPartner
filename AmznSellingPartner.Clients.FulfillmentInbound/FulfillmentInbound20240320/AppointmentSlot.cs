@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// <summary>
 		/// An identifier to a self-ship appointment slot.
 		/// </summary>
+		[JsonProperty("slotId")]
 		[IsRequired]
 		[Pattern("^[a-zA-Z0-9-]*")]
 		[MinLength(38)]
 		[MaxLength(38)]
-		[JsonProperty("slotId")]
 		public string SlotId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("slotTime")]
+		[IsRequired]
 		public AppointmentSlotTime SlotTime { get; set; }
 	}
 }

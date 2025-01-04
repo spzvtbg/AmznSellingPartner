@@ -9,23 +9,23 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 	/// </summary>
 	public class Package : BaseClass
 	{
-		[IsRequired]
 		[JsonProperty("scheduledPackageId")]
+		[IsRequired]
 		public ScheduledPackageId ScheduledPackageId { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageDimensions")]
+		[IsRequired]
 		public Dimensions PackageDimensions { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageWeight")]
+		[IsRequired]
 		public Weight PackageWeight { get; set; }
 
 		[JsonProperty("packageItems")]
 		public Items PackageItems { get; set; }
 
-		[IsRequired]
 		[JsonProperty("packageTimeSlot")]
+		[IsRequired]
 		public TimeSlot PackageTimeSlot { get; set; }
 
 		[JsonProperty("packageIdentifier")]

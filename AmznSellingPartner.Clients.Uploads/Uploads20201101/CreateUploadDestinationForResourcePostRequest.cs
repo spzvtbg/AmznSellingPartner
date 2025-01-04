@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
-
 	[HttpPost("/uploads/2020-11-01/uploadDestinations/{resource}")]
 	public class CreateUploadDestinationForResourcePostRequest : BaseHttpRequest
 	{
@@ -15,7 +13,6 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 		[InQuery("marketplaceIds")]
 		[IsRequired]
 		[MaxItems(1)]
-		[JsonProperty("marketplaceIds")]
 		public CsvValue<string> MarketplaceIds { get; set; }
 
 		/// <summary>
@@ -24,7 +21,6 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 		/// </summary>
 		[InQuery("contentMD5")]
 		[IsRequired]
-		[JsonProperty("contentMD5")]
 		public string ContentMD5 { get; set; }
 
 		/// <summary>
@@ -36,14 +32,12 @@ namespace AmznSellingPartner.Clients.Uploads.Uploads20201101
 		/// </summary>
 		[InPath("resource")]
 		[IsRequired]
-		[JsonProperty("resource")]
 		public string Resource { get; set; }
 
 		/// <summary>
 		/// The content type of the file to be uploaded.
 		/// </summary>
 		[InQuery("contentType")]
-		[JsonProperty("contentType")]
 		public string ContentType { get; set; }
 	}
 }

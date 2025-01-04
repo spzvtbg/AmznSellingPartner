@@ -12,15 +12,15 @@ namespace AmznSellingPartner.Clients.Sellers.Sellers
 		/// <summary>
 		/// If true, the seller participates in the marketplace.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("isParticipating")]
+		[IsRequired]
 		public bool IsParticipating { get; set; }
 
 		/// <summary>
 		/// If true, the seller has suspended listings.
 		/// </summary>
-		[IsRequired]
 		[JsonProperty("hasSuspendedListings")]
+		[IsRequired]
 		public bool HasSuspendedListings { get; set; }
 	}
 }

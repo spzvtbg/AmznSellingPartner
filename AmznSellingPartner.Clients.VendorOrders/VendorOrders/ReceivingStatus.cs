@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	public class ReceivingStatus : BaseClass
 	{
@@ -23,6 +23,6 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// format.
 		/// </summary>
 		[JsonProperty("lastReceiveDate")]
-		public DateTime LastReceiveDate { get; set; } 
+		public DateTimeValue LastReceiveDate { get; set; } 
 	}
 }

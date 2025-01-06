@@ -1,20 +1,20 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class GetInboundPlanGetResponse : BaseHttpResponse
+	public class GetInboundPlanGetResponse : BaseHttpResponse<GetInboundPlanGetResponse>
 	{
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
 		/// </summary>
-		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; } 
+		[JsonProperty("x-amzn-ratelimit-limit")]
+		public string XAmznRatelimitLimit { get; set; } 
 
 		/// <summary>
 		/// GetInboundPlan 200 response

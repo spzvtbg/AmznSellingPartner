@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// The date and time of the creation of the job in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("createTime")]
-		public DateTime CreateTime { get; set; } 
+		public DateTimeValue CreateTime { get; set; } 
 
 		/// <summary>
 		/// The service job identifier.

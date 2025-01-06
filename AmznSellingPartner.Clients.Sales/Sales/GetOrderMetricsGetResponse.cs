@@ -1,21 +1,21 @@
 namespace AmznSellingPartner.Clients.Sales.Sales
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class GetOrderMetricsGetResponse : BaseHttpResponse
+	public class GetOrderMetricsGetResponse : BaseHttpResponse<GetOrderMetricsGetResponse>
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation. _Note:_ For this status code, the rate limit
 		/// header is deprecated and no longer returned.
 		/// </summary>
-		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; } 
+		[JsonProperty("x-amzn-ratelimit-limit")]
+		public string XAmznRatelimitLimit { get; set; } 
 
 		/// <summary>
 		/// Unique request reference id.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// OrderMetric action taken on the resource OrderMetrics.

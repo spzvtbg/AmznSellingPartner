@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("previewedAt")]
 		[IsRequired]
-		public DateTime PreviewedAt { get; set; } 
+		public DateTimeValue PreviewedAt { get; set; } 
 
 		[JsonProperty("status")]
 		[IsRequired]

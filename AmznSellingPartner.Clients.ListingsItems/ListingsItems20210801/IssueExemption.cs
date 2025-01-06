@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Conveying the status of the listed enforcement actions and, if applicable, provides information about
@@ -27,6 +26,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// exemptions, if applicable, will expire, and Amazon will begin enforcing the listed actions.
 		/// </summary>
 		[JsonProperty("expiryDate")]
-		public DateTime ExpiryDate { get; set; } 
+		public DateTimeValue ExpiryDate { get; set; } 
 	}
 }

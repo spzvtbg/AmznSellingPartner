@@ -1,27 +1,27 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class DirectPurchaseShipmentPostResponse : BaseHttpResponse
+	public class DirectPurchaseShipmentPostResponse : BaseHttpResponse<DirectPurchaseShipmentPostResponse>
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation. _Note:_ For this status code, the rate limit
 		/// header is deprecated and no longer returned.
 		/// </summary>
-		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; } 
+		[JsonProperty("x-amzn-ratelimit-limit")]
+		public string XAmznRatelimitLimit { get; set; } 
 
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// A unique value which the server uses to recognize subsequent retries of the same request.
 		/// </summary>
-		[FromHeader("x-amzn-IdempotencyKey")]
-		public string XAmznIdempotencyKey { get; set; } 
+		[JsonProperty("x-amzn-idempotencykey")]
+		public string XAmznIdempotencykey { get; set; } 
 
 		/// <summary>
 		/// Success

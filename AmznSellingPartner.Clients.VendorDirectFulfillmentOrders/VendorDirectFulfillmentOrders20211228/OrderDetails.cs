@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectFulfillmentOrders20211228
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[JsonProperty("orderDate")]
 		[IsRequired]
-		public DateTime OrderDate { get; set; } 
+		public DateTimeValue OrderDate { get; set; } 
 
 		/// <summary>
 		/// Current status of the order.

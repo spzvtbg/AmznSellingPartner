@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound20200701
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/fba/outbound/2020-07-01/fulfillmentOrders")]
 	public class ListAllFulfillmentOrdersGetRequest : BaseHttpRequest
@@ -13,7 +12,7 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// der.
 		/// </summary>
 		[InQuery("queryStartDate")]
-		public DateTime QueryStartDate { get; set; } 
+		public DateTimeValue QueryStartDate { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response to your previous request.

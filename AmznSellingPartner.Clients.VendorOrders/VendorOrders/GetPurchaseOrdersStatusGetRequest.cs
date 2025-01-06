@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/vendor/orders/v1/purchaseOrdersStatus")]
 	public class GetPurchaseOrdersStatusGetRequest : BaseHttpRequest
@@ -32,28 +31,28 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		public DateTime CreatedAfter { get; set; } 
+		public DateTimeValue CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Purchase orders that became available before this timestamp will be included in the result. Must be in
 		/// ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		public DateTime CreatedBefore { get; set; } 
+		public DateTimeValue CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Purchase orders for which the last purchase order update happened after this timestamp will be included
 		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedAfter")]
-		public DateTime UpdatedAfter { get; set; } 
+		public DateTimeValue UpdatedAfter { get; set; } 
 
 		/// <summary>
 		/// Purchase orders for which the last purchase order update happened before this timestamp will be included
 		/// in the result. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[InQuery("updatedBefore")]
-		public DateTime UpdatedBefore { get; set; } 
+		public DateTimeValue UpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// Provides purchase order status for the specified purchase order number.

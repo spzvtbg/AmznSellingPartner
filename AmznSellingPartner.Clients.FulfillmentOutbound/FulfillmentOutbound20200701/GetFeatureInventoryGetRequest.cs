@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound20200701
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/fba/outbound/2020-07-01/features/inventory/{featureName}")]
 	public class GetFeatureInventoryGetRequest : BaseHttpRequest
@@ -35,6 +34,6 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		/// -MM-ddTHH:mm:ss.sssZ
 		/// </summary>
 		[InQuery("queryStartDate")]
-		public DateTime QueryStartDate { get; set; } 
+		public DateTimeValue QueryStartDate { get; set; } 
 	}
 }

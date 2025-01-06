@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Contains only a starting DateTime.
@@ -18,6 +17,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("start")]
 		[IsRequired]
-		public DateTime Start { get; set; } 
+		public DateTimeValue Start { get; set; } 
 	}
 }

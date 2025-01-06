@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// The request schema for the OneClickShipment operation. When the channelType is not Amazon, shipTo is
@@ -35,7 +34,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// The ship date and time (the requested pickup). This defaults to the current date and time.
 		/// </summary>
 		[JsonProperty("shipDate")]
-		public DateTime ShipDate { get; set; } 
+		public DateTimeValue ShipDate { get; set; } 
 
 		[JsonProperty("packages")]
 		[IsRequired]

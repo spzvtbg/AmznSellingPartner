@@ -1,8 +1,9 @@
 namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 {
+	using AmznSellingPartner.Clients.Values;
+
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -41,7 +42,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// The date and time that any quantity was last updated.
 		/// </summary>
 		[JsonProperty("lastUpdatedTime")]
-		public DateTime LastUpdatedTime { get; set; } 
+		public DateTimeValue LastUpdatedTime { get; set; } 
 
 		/// <summary>
 		/// The localized language product title of the item within the specific marketplace.

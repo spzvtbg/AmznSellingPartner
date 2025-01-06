@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("createdAt")]
 		[IsRequired]
-		public DateTime CreatedAt { get; set; } 
+		public DateTimeValue CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Identifier of an inbound plan.
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("lastUpdatedAt")]
 		[IsRequired]
-		public DateTime LastUpdatedAt { get; set; } 
+		public DateTimeValue LastUpdatedAt { get; set; } 
 
 		/// <summary>
 		/// A list of marketplace IDs.

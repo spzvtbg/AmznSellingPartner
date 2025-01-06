@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -40,6 +40,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Estimated date by when goods have to be picked up.
 		/// </summary>
 		[JsonProperty("shipBy")]
-		public DateTime ShipBy { get; set; } 
+		public DateTimeValue ShipBy { get; set; } 
 	}
 }

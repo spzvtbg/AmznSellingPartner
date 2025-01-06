@@ -1,14 +1,14 @@
 namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound20200701
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class SubmitFulfillmentOrderStatusUpdatePutResponse : BaseHttpResponse
+	public class SubmitFulfillmentOrderStatusUpdatePutResponse : BaseHttpResponse<SubmitFulfillmentOrderStatusUpdatePutResponse>
 	{
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// Success.

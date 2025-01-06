@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Current status of a purchase order.
@@ -30,13 +29,13 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("purchaseOrderDate")]
 		[IsRequired]
-		public DateTime PurchaseOrderDate { get; set; } 
+		public DateTimeValue PurchaseOrderDate { get; set; } 
 
 		/// <summary>
 		/// The date when the purchase order was last updated. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("lastUpdatedDate")]
-		public DateTime LastUpdatedDate { get; set; } 
+		public DateTimeValue LastUpdatedDate { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the selling party.

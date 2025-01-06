@@ -11,7 +11,7 @@
         public BaseHttpClient(Uri baseAddress) 
             => httpClient.BaseAddress = baseAddress;
 
-        protected static async Task<T> SendAsync<T>(BaseHttpRequest request) where T : BaseHttpResponse
+        protected static async Task<T> SendAsync<T>(BaseHttpRequest request) where T : BaseHttpResponse<T>, new() 
         {
             if (!request.Validate(out var errors))
             {

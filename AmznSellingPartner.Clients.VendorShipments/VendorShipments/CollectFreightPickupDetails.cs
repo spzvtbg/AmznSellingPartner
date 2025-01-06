@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Transport Request pickup date from Vendor Warehouse by Buyer
@@ -14,20 +14,20 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// rs.
 		/// </summary>
 		[JsonProperty("requestedPickUp")]
-		public DateTime RequestedPickUp { get; set; } 
+		public DateTimeValue RequestedPickUp { get; set; } 
 
 		/// <summary>
 		/// Date on which the items are scheduled to be picked from vendor warehouse by Buyer used for WePay/Collect
 		/// vendors.
 		/// </summary>
 		[JsonProperty("scheduledPickUp")]
-		public DateTime ScheduledPickUp { get; set; } 
+		public DateTimeValue ScheduledPickUp { get; set; } 
 
 		/// <summary>
 		/// Date on which the carrier is being scheduled to pickup items from vendor warehouse by Byer used for WePay/Collect
 		/// vendors.
 		/// </summary>
 		[JsonProperty("carrierAssignmentDate")]
-		public DateTime CarrierAssignmentDate { get; set; } 
+		public DateTimeValue CarrierAssignmentDate { get; set; } 
 	}
 }

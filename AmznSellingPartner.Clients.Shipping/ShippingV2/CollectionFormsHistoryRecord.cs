@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Active Account Details
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Creation Time for this account.
 		/// </summary>
 		[JsonProperty("creationDate")]
-		public DateTime CreationDate { get; set; } 
+		public DateTimeValue CreationDate { get; set; } 
 
 		[JsonProperty("generationStatus")]
 		public GenerationStatus GenerationStatus { get; set; } 

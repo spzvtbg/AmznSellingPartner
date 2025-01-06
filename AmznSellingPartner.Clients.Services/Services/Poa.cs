@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -36,7 +36,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// The date and time when the POA was uploaded in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("uploadTime")]
-		public DateTime UploadTime { get; set; } 
+		public DateTimeValue UploadTime { get; set; } 
 
 		/// <summary>
 		/// The type of POA uploaded.

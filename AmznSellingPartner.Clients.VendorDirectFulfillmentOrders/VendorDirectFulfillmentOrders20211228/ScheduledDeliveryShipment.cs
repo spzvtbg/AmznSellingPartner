@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectFulfillmentOrders20211228
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Dates for the scheduled delivery shipments.
@@ -19,12 +19,12 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// Earliest nominated delivery date for the scheduled delivery.
 		/// </summary>
 		[JsonProperty("earliestNominatedDeliveryDate")]
-		public DateTime EarliestNominatedDeliveryDate { get; set; } 
+		public DateTimeValue EarliestNominatedDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Latest nominated delivery date for the scheduled delivery.
 		/// </summary>
 		[JsonProperty("latestNominatedDeliveryDate")]
-		public DateTime LatestNominatedDeliveryDate { get; set; } 
+		public DateTimeValue LatestNominatedDeliveryDate { get; set; } 
 	}
 }

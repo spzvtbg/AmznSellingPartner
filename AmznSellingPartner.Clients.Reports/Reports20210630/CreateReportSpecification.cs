@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Reports.Reports20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -29,7 +29,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// be prior to or equal to the current date and time. Not all report types make use of this.
 		/// </summary>
 		[JsonProperty("dataStartTime")]
-		public DateTime DataStartTime { get; set; } 
+		public DateTimeValue DataStartTime { get; set; } 
 
 		/// <summary>
 		/// The end of a date and time range, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
@@ -37,7 +37,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// be prior to or equal to the current date and time. Not all report types make use of this.
 		/// </summary>
 		[JsonProperty("dataEndTime")]
-		public DateTime DataEndTime { get; set; } 
+		public DateTimeValue DataEndTime { get; set; } 
 
 		/// <summary>
 		/// A list of marketplace identifiers. The report document's contents will contain data for all of the specified

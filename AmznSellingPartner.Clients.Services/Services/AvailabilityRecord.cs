@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// `AvailabilityRecord` to represent the capacity of a resource over a time range.
@@ -16,14 +15,14 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("startTime")]
 		[IsRequired]
-		public DateTime StartTime { get; set; } 
+		public DateTimeValue StartTime { get; set; } 
 
 		/// <summary>
 		/// Denotes the time till when the resource is available in a day in ISO-8601 format.
 		/// </summary>
 		[JsonProperty("endTime")]
 		[IsRequired]
-		public DateTime EndTime { get; set; } 
+		public DateTimeValue EndTime { get; set; } 
 
 		/// <summary>
 		/// Recurrence object containing the recurrence pattern of schedule.

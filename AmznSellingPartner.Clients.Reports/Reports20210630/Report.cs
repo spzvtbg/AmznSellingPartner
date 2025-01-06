@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Reports.Reports20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -37,13 +37,13 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// The start of a date and time range used for selecting the data to report.
 		/// </summary>
 		[JsonProperty("dataStartTime")]
-		public DateTime DataStartTime { get; set; } 
+		public DateTimeValue DataStartTime { get; set; } 
 
 		/// <summary>
 		/// The end of a date and time range used for selecting the data to report.
 		/// </summary>
 		[JsonProperty("dataEndTime")]
-		public DateTime DataEndTime { get; set; } 
+		public DateTimeValue DataEndTime { get; set; } 
 
 		/// <summary>
 		/// The identifier of the report schedule that created this report (if any). This identifier is unique only
@@ -57,7 +57,7 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// </summary>
 		[JsonProperty("createdTime")]
 		[IsRequired]
-		public DateTime CreatedTime { get; set; } 
+		public DateTimeValue CreatedTime { get; set; } 
 
 		/// <summary>
 		/// The processing status of the report.
@@ -71,14 +71,14 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// 8601</a> date time format.
 		/// </summary>
 		[JsonProperty("processingStartTime")]
-		public DateTime ProcessingStartTime { get; set; } 
+		public DateTimeValue ProcessingStartTime { get; set; } 
 
 		/// <summary>
 		/// The date and time when the report processing completed, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> date time format.
 		/// </summary>
 		[JsonProperty("processingEndTime")]
-		public DateTime ProcessingEndTime { get; set; } 
+		public DateTimeValue ProcessingEndTime { get; set; } 
 
 		/// <summary>
 		/// The identifier for the report document. Pass this into the `getReportDocument` operation to get the information

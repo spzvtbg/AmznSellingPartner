@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// The total estimated fees for an item and a list of details.
@@ -16,7 +15,7 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 		/// </summary>
 		[JsonProperty("TimeOfFeesEstimation")]
 		[IsRequired]
-		public DateTime TimeOfFeesEstimation { get; set; } 
+		public DateTimeValue TimeOfFeesEstimation { get; set; } 
 
 		/// <summary>
 		/// Total estimated fees for a given item, price, and fulfillment channel.

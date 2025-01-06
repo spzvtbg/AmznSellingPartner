@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using System;
-
 	[HttpGet("/tax/invoices/2024-06-19/invoices")]
 	public class GetInvoicesGetRequest : BaseHttpRequest
 	{
@@ -28,7 +26,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// current date-time.
 		/// </summary>
 		[InQuery("dateEnd")]
-		public DateTime DateEnd { get; set; } 
+		public DateTimeValue DateEnd { get; set; } 
 
 		/// <summary>
 		/// The response includes only the invoices that match the specified marketplace.
@@ -57,7 +55,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// hours prior to the time of the request.
 		/// </summary>
 		[InQuery("dateStart")]
-		public DateTime DateStart { get; set; } 
+		public DateTimeValue DateStart { get; set; } 
 
 		/// <summary>
 		/// Return invoices with the specified series number.

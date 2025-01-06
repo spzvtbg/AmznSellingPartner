@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// A tracking event.
@@ -23,6 +22,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("eventTime")]
 		[IsRequired]
-		public DateTime EventTime { get; set; } 
+		public DateTimeValue EventTime { get; set; } 
 	}
 }

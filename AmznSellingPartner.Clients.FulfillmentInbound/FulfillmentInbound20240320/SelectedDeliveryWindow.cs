@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Selected delivery window attributes.
@@ -33,20 +32,20 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// The timestamp at which this Window can no longer be edited.
 		/// </summary>
 		[JsonProperty("editableUntil")]
-		public DateTime EditableUntil { get; set; } 
+		public DateTimeValue EditableUntil { get; set; } 
 
 		/// <summary>
 		/// The end timestamp of the window.
 		/// </summary>
 		[JsonProperty("endDate")]
 		[IsRequired]
-		public DateTime EndDate { get; set; } 
+		public DateTimeValue EndDate { get; set; } 
 
 		/// <summary>
 		/// The start timestamp of the window.
 		/// </summary>
 		[JsonProperty("startDate")]
 		[IsRequired]
-		public DateTime StartDate { get; set; } 
+		public DateTimeValue StartDate { get; set; } 
 	}
 }

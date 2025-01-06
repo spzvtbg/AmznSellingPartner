@@ -6,13 +6,13 @@
 
         public string Description { get; set; }
 
-        internal CsProperty OnDeserialized(string name, CsContext context)
+        internal CsProperty OnDeserialized(string name, CsContext _)
             => new CsProperty
             {
-                Name = name,
+                Name = name.ToLower(),
                 Type = "string"
             }
             .HasDescription(this.Description)
-            .HasAttribute("FromHeader", $"\"{name}\"");
+            .HasJsonProperty(true);
     }
 }

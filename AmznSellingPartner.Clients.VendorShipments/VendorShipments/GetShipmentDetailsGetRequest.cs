@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/vendor/shipping/v1/shipments")]
 	public class GetShipmentDetailsGetRequest : BaseHttpRequest
@@ -32,112 +31,112 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		public DateTime CreatedAfter { get; set; } 
+		public DateTimeValue CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details that became available before this timestamp will be included in the result. Must
 		/// be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		public DateTime CreatedBefore { get; set; } 
+		public DateTimeValue CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Shipment confirmed create Date Before. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentConfirmedBefore")]
-		public DateTime ShipmentConfirmedBefore { get; set; } 
+		public DateTimeValue ShipmentConfirmedBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Shipment confirmed create Date After. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentConfirmedAfter")]
-		public DateTime ShipmentConfirmedAfter { get; set; } 
+		public DateTimeValue ShipmentConfirmedAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Package label create Date by buyer. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("packageLabelCreatedBefore")]
-		public DateTime PackageLabelCreatedBefore { get; set; } 
+		public DateTimeValue PackageLabelCreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Package label create Date After by buyer. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("packageLabelCreatedAfter")]
-		public DateTime PackageLabelCreatedAfter { get; set; } 
+		public DateTimeValue PackageLabelCreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Shipped Date Before. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("shippedBefore")]
-		public DateTime ShippedBefore { get; set; } 
+		public DateTimeValue ShippedBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Shipped Date After. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("shippedAfter")]
-		public DateTime ShippedAfter { get; set; } 
+		public DateTimeValue ShippedAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Estimated Delivery Date Before. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("estimatedDeliveryBefore")]
-		public DateTime EstimatedDeliveryBefore { get; set; } 
+		public DateTimeValue EstimatedDeliveryBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Estimated Delivery Date Before. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("estimatedDeliveryAfter")]
-		public DateTime EstimatedDeliveryAfter { get; set; } 
+		public DateTimeValue EstimatedDeliveryAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Shipment Delivery Date Before. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentDeliveryBefore")]
-		public DateTime ShipmentDeliveryBefore { get; set; } 
+		public DateTimeValue ShipmentDeliveryBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Shipment Delivery Date After. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("shipmentDeliveryAfter")]
-		public DateTime ShipmentDeliveryAfter { get; set; } 
+		public DateTimeValue ShipmentDeliveryAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Before Requested pickup date. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("requestedPickUpBefore")]
-		public DateTime RequestedPickUpBefore { get; set; } 
+		public DateTimeValue RequestedPickUpBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing After Requested pickup date. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("requestedPickUpAfter")]
-		public DateTime RequestedPickUpAfter { get; set; } 
+		public DateTimeValue RequestedPickUpAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Before scheduled pickup date. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("scheduledPickUpBefore")]
-		public DateTime ScheduledPickUpBefore { get; set; } 
+		public DateTimeValue ScheduledPickUpBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing After Scheduled pickup date. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[InQuery("scheduledPickUpAfter")]
-		public DateTime ScheduledPickUpAfter { get; set; } 
+		public DateTimeValue ScheduledPickUpAfter { get; set; } 
 
 		/// <summary>
 		/// Get Shipment Details by passing Current shipment status.

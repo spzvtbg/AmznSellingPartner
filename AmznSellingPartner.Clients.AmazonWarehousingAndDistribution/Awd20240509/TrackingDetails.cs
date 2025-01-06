@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Tracking details for the shipment. If using SPD transportation, this can be for each case. If not using
@@ -24,7 +23,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("shipBy")]
 		[IsRequired]
-		public DateTime ShipBy { get; set; } 
+		public DateTimeValue ShipBy { get; set; } 
 
 		/// <summary>
 		/// The identifier that is received from transportation to uniquely identify a booking.

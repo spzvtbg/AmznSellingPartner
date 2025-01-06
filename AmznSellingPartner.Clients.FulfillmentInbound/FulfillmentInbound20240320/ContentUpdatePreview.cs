@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Preview of the changes that will be applied to the shipment.
@@ -27,7 +26,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("expiration")]
 		[IsRequired]
-		public DateTime Expiration { get; set; } 
+		public DateTimeValue Expiration { get; set; } 
 
 		[JsonProperty("requestedUpdates")]
 		[IsRequired]

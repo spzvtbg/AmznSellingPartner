@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirectFulfillmentShipping20211228
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/vendor/directFulfillment/shipping/2021-12-28/customerInvoices")]
 	public class GetCustomerInvoicesGetRequest : BaseHttpRequest
@@ -28,7 +27,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[InQuery("createdAfter")]
 		[IsRequired]
-		public DateTime CreatedAfter { get; set; } 
+		public DateTimeValue CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Orders that became available before this date and time will be included in the result. Values are in
@@ -36,7 +35,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[InQuery("createdBefore")]
 		[IsRequired]
-		public DateTime CreatedBefore { get; set; } 
+		public DateTimeValue CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Sort ASC or DESC by order creation date.

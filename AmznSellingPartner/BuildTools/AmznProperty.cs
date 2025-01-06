@@ -1,6 +1,7 @@
 ﻿namespace AmznSellingPartner.BuildTools
 {
     using AmznSellingPartner;
+    using AmznSellingPartner.Clients.Values;
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
@@ -233,7 +234,7 @@
 
         internal override CsProperty OnDeserialized(string name, CsType @class, CsContext context)
               => base.OnDeserialized(name, @class, context)
-                     .HasType(nameof(DateTime), "System");
+                     .HasType(nameof(DateTimeValue), "AmznSellingPartner.Clients.Values");
     }
 
     internal class AmznPropertyArray : AmznProperty

@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// </summary>
 		[JsonProperty("promisedDeliveryDate")]
 		[IsRequired]
-		public DateTime PromisedDeliveryDate { get; set; } 
+		public DateTimeValue PromisedDeliveryDate { get; set; } 
 
 		[JsonProperty("summary")]
 		[IsRequired]

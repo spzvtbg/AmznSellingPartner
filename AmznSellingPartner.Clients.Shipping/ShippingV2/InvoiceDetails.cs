@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// The invoice details for charges associated with the goods in the package. Only applies to certain re
@@ -20,6 +20,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// The invoice date of the item in ISO 8061 format.
 		/// </summary>
 		[JsonProperty("invoiceDate")]
-		public DateTime InvoiceDate { get; set; } 
+		public DateTimeValue InvoiceDate { get; set; } 
 	}
 }

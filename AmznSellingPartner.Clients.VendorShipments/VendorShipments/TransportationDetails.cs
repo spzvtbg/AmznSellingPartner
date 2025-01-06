@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Transportation details for this shipment.
@@ -25,19 +25,19 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Date when shipment is performed by the Vendor to Buyer
 		/// </summary>
 		[JsonProperty("shippedDate")]
-		public DateTime ShippedDate { get; set; } 
+		public DateTimeValue ShippedDate { get; set; } 
 
 		/// <summary>
 		/// Estimated Date on which shipment will be delivered from Vendor to Buyer
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDate")]
-		public DateTime EstimatedDeliveryDate { get; set; } 
+		public DateTimeValue EstimatedDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Date on which shipment will be delivered from Vendor to Buyer
 		/// </summary>
 		[JsonProperty("shipmentDeliveryDate")]
-		public DateTime ShipmentDeliveryDate { get; set; } 
+		public DateTimeValue ShipmentDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Indicates the carrier details and their contact informations

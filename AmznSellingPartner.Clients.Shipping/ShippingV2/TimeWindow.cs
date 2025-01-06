@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// The start and end time that specifies the time interval of an event.
@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// The start time of the time window.
 		/// </summary>
 		[JsonProperty("start")]
-		public DateTime Start { get; set; } 
+		public DateTimeValue Start { get; set; } 
 
 		/// <summary>
 		/// The end time of the time window.
 		/// </summary>
 		[JsonProperty("end")]
-		public DateTime End { get; set; } 
+		public DateTimeValue End { get; set; } 
 	}
 }

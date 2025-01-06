@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Contains information pertaining to a delivery window option.
@@ -35,7 +34,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("endDate")]
 		[IsRequired]
-		public DateTime EndDate { get; set; } 
+		public DateTimeValue EndDate { get; set; } 
 
 		/// <summary>
 		/// The time at which this delivery window option starts. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -43,7 +42,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("startDate")]
 		[IsRequired]
-		public DateTime StartDate { get; set; } 
+		public DateTimeValue StartDate { get; set; } 
 
 		/// <summary>
 		/// The time at which this window delivery option is no longer valid. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
@@ -51,6 +50,6 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("validUntil")]
 		[IsRequired]
-		public DateTime ValidUntil { get; set; } 
+		public DateTimeValue ValidUntil { get; set; } 
 	}
 }

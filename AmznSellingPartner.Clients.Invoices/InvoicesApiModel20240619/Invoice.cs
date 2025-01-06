@@ -1,8 +1,9 @@
 namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 {
+	using AmznSellingPartner.Clients.Values;
+
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -15,7 +16,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// date-time format.
 		/// </summary>
 		[JsonProperty("date")]
-		public DateTime Date { get; set; } 
+		public DateTimeValue Date { get; set; } 
 
 		/// <summary>
 		/// If the invoice is in an error state, this attribute displays the error code.

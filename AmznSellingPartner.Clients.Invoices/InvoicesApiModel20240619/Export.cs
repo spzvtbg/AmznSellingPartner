@@ -1,8 +1,9 @@
 namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 {
+	using AmznSellingPartner.Clients.Values;
+
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -27,14 +28,14 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// date-time format.
 		/// </summary>
 		[JsonProperty("generateExportFinishedAt")]
-		public DateTime GenerateExportFinishedAt { get; set; } 
+		public DateTimeValue GenerateExportFinishedAt { get; set; } 
 
 		/// <summary>
 		/// The date and time when the export generation started. Values are in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// date-time format.
 		/// </summary>
 		[JsonProperty("generateExportStartedAt")]
-		public DateTime GenerateExportStartedAt { get; set; } 
+		public DateTimeValue GenerateExportStartedAt { get; set; } 
 
 		/// <summary>
 		/// The identifier for the export documents. To get the information required to retrieve the export document's

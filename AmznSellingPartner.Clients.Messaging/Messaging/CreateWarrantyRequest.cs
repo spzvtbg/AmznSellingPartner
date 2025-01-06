@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Messaging.Messaging
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -26,12 +26,12 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 		/// The start date of the warranty coverage to include in the message to the buyer.
 		/// </summary>
 		[JsonProperty("coverageStartDate")]
-		public DateTime CoverageStartDate { get; set; } 
+		public DateTimeValue CoverageStartDate { get; set; } 
 
 		/// <summary>
 		/// The end date of the warranty coverage to include in the message to the buyer.
 		/// </summary>
 		[JsonProperty("coverageEndDate")]
-		public DateTime CoverageEndDate { get; set; } 
+		public DateTimeValue CoverageEndDate { get; set; } 
 	}
 }

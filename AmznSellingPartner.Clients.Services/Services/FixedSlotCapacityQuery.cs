@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -31,13 +31,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("startDateTime")]
 		[IsRequired]
-		public DateTime StartDateTime { get; set; } 
+		public DateTimeValue StartDateTime { get; set; } 
 
 		/// <summary>
 		/// End date time up to which the capacity slots are being requested in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("endDateTime")]
 		[IsRequired]
-		public DateTime EndDateTime { get; set; } 
+		public DateTimeValue EndDateTime { get; set; } 
 	}
 }

@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectFulfillmentOrders20211228
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -32,7 +32,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[JsonProperty("acknowledgementDate")]
 		[IsRequired]
-		public DateTime AcknowledgementDate { get; set; } 
+		public DateTimeValue AcknowledgementDate { get; set; } 
 
 		/// <summary>
 		/// Status of acknowledgement.

@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using System;
-
 	[HttpGet("/reports/2021-06-30/reports")]
 	public class GetReportsGetRequest : BaseHttpRequest
 	{
@@ -49,14 +47,14 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// .
 		/// </summary>
 		[InQuery("createdSince")]
-		public DateTime CreatedSince { get; set; } 
+		public DateTimeValue CreatedSince { get; set; } 
 
 		/// <summary>
 		/// The latest report creation date and time for reports to include in the response, in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> date time format. The default is now.
 		/// </summary>
 		[InQuery("createdUntil")]
-		public DateTime CreatedUntil { get; set; } 
+		public DateTimeValue CreatedUntil { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response to your previous request. `nextToken` is returned when the number

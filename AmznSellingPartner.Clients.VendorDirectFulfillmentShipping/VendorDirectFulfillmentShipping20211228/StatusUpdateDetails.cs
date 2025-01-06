@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirectFulfillmentShipping20211228
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Details for the shipment status update given by the vendor for the specific package.
@@ -46,7 +45,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("statusDateTime")]
 		[IsRequired]
-		public DateTime StatusDateTime { get; set; } 
+		public DateTimeValue StatusDateTime { get; set; } 
 
 		[JsonProperty("statusLocationAddress")]
 		[IsRequired]

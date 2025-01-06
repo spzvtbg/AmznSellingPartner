@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -18,7 +18,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// time of the request.
 		/// </summary>
 		[JsonProperty("dateEnd")]
-		public DateTime DateEnd { get; set; } 
+		public DateTimeValue DateEnd { get; set; } 
 
 		/// <summary>
 		/// The earliest invoice creation date for invoices that you want to include in the response. Dates are in
@@ -26,7 +26,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// hours prior to the time of the request.
 		/// </summary>
 		[JsonProperty("dateStart")]
-		public DateTime DateStart { get; set; } 
+		public DateTimeValue DateStart { get; set; } 
 
 		/// <summary>
 		/// The external ID of the invoices you want included in the response.

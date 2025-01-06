@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectFulfillmentOrders20211228
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/vendor/directFulfillment/orders/2021-12-28/purchaseOrders")]
 	public class GetOrdersGetRequest : BaseHttpRequest
@@ -35,7 +34,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[InQuery("createdAfter")]
 		[IsRequired]
-		public DateTime CreatedAfter { get; set; } 
+		public DateTimeValue CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Purchase orders that became available before this date and time will be included in the result. Must
@@ -43,7 +42,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		/// </summary>
 		[InQuery("createdBefore")]
 		[IsRequired]
-		public DateTime CreatedBefore { get; set; } 
+		public DateTimeValue CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Sort the list in ascending or descending order by order creation date.

@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("purchaseOrderDate")]
 		[IsRequired]
-		public DateTime PurchaseOrderDate { get; set; } 
+		public DateTimeValue PurchaseOrderDate { get; set; } 
 
 		/// <summary>
 		/// The date when purchase order was last changed by Amazon after the order was placed. This date will be
@@ -27,7 +27,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[JsonProperty("purchaseOrderChangedDate")]
-		public DateTime PurchaseOrderChangedDate { get; set; } 
+		public DateTimeValue PurchaseOrderChangedDate { get; set; } 
 
 		/// <summary>
 		/// The date when current purchase order state was changed. Current purchase order state is available in
@@ -35,7 +35,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// </summary>
 		[JsonProperty("purchaseOrderStateChangedDate")]
 		[IsRequired]
-		public DateTime PurchaseOrderStateChangedDate { get; set; } 
+		public DateTimeValue PurchaseOrderStateChangedDate { get; set; } 
 
 		/// <summary>
 		/// Type of purchase order.

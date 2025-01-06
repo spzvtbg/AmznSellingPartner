@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// </summary>
 		[JsonProperty("createdAt")]
 		[IsRequired]
-		public DateTime CreatedAt { get; set; } 
+		public DateTimeValue CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Reference ID that can be used to correlate the order with partner resources.
@@ -76,12 +76,12 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Date by which this order will be shipped.
 		/// </summary>
 		[JsonProperty("shipBy")]
-		public DateTime ShipBy { get; set; } 
+		public DateTimeValue ShipBy { get; set; } 
 
 		/// <summary>
 		/// Date when this order was last updated.
 		/// </summary>
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; } 
+		public DateTimeValue UpdatedAt { get; set; } 
 	}
 }

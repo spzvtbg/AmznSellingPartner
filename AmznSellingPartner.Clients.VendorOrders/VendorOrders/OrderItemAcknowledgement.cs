@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Represents the acknowledgement details for an individual order item, including the acknowledgement code,
@@ -30,13 +29,13 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// Estimated ship date per line item. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("scheduledShipDate")]
-		public DateTime ScheduledShipDate { get; set; } 
+		public DateTimeValue ScheduledShipDate { get; set; } 
 
 		/// <summary>
 		/// Estimated delivery date per line item. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("scheduledDeliveryDate")]
-		public DateTime ScheduledDeliveryDate { get; set; } 
+		public DateTimeValue ScheduledDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Indicates the reason for rejection.

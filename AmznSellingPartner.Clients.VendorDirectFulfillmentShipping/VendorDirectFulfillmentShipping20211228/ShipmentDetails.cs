@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirectFulfillmentShipping20211228
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Details about a shipment.
@@ -18,7 +17,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// </summary>
 		[JsonProperty("shippedDate")]
 		[IsRequired]
-		public DateTime ShippedDate { get; set; } 
+		public DateTimeValue ShippedDate { get; set; } 
 
 		/// <summary>
 		/// The shipment status.
@@ -45,6 +44,6 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		/// time is unknown when creating the shipment confirmation and is later provided by the buyer.
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDate")]
-		public DateTime EstimatedDeliveryDate { get; set; } 
+		public DateTimeValue EstimatedDeliveryDate { get; set; } 
 	}
 }

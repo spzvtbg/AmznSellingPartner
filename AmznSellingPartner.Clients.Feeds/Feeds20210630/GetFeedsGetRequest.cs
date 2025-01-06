@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using System;
-
 	[HttpGet("/feeds/2021-06-30/feeds")]
 	public class GetFeedsGetRequest : BaseHttpRequest
 	{
@@ -47,14 +45,14 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// default is 90 days ago. Feeds are retained for a maximum of 90 days.
 		/// </summary>
 		[InQuery("createdSince")]
-		public DateTime CreatedSince { get; set; } 
+		public DateTimeValue CreatedSince { get; set; } 
 
 		/// <summary>
 		/// The latest feed creation date and time for feeds included in the response, in ISO 8601 format. The default
 		/// is now.
 		/// </summary>
 		[InQuery("createdUntil")]
-		public DateTime CreatedUntil { get; set; } 
+		public DateTimeValue CreatedUntil { get; set; } 
 
 		/// <summary>
 		/// A string token returned in the response to your previous request. nextToken is returned when the number

@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using System;
-
 	[HttpGet("/listings/2021-08-01/items/{sellerId}")]
 	public class SearchListingsItemsGetRequest : BaseHttpRequest
 	{
@@ -75,7 +73,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		public DateTime CreatedAfter { get; set; } 
+		public DateTimeValue CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// A date-time that is used to filter listing items. The response includes listings items that were created
@@ -83,7 +81,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		public DateTime CreatedBefore { get; set; } 
+		public DateTimeValue CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// A date-time that is used to filter listing items. The response includes listings items that were last
@@ -91,7 +89,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("lastUpdatedAfter")]
-		public DateTime LastUpdatedAfter { get; set; } 
+		public DateTimeValue LastUpdatedAfter { get; set; } 
 
 		/// <summary>
 		/// A date-time that is used to filter listing items. The response includes listings items that were last
@@ -99,7 +97,7 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// date-time format.
 		/// </summary>
 		[InQuery("lastUpdatedBefore")]
-		public DateTime LastUpdatedBefore { get; set; } 
+		public DateTimeValue LastUpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// Filter results to include only listing items that have issues that match one or more of the specified

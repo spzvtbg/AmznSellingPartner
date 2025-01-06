@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -37,7 +37,7 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// </summary>
 		[JsonProperty("createdTime")]
 		[IsRequired]
-		public DateTime CreatedTime { get; set; } 
+		public DateTimeValue CreatedTime { get; set; } 
 
 		/// <summary>
 		/// The processing status of the feed.
@@ -50,13 +50,13 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		/// The date and time when feed processing started, in ISO 8601 date time format.
 		/// </summary>
 		[JsonProperty("processingStartTime")]
-		public DateTime ProcessingStartTime { get; set; } 
+		public DateTimeValue ProcessingStartTime { get; set; } 
 
 		/// <summary>
 		/// The date and time when feed processing completed, in ISO 8601 date time format.
 		/// </summary>
 		[JsonProperty("processingEndTime")]
-		public DateTime ProcessingEndTime { get; set; } 
+		public DateTimeValue ProcessingEndTime { get; set; } 
 
 		/// <summary>
 		/// The identifier for the feed document. This identifier is unique only in combination with a seller ID

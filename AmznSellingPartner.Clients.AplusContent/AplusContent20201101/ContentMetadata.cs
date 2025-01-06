@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// The metadata of an A+ Content document.
@@ -37,6 +36,6 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		/// </summary>
 		[JsonProperty("updateTime")]
 		[IsRequired]
-		public DateTime UpdateTime { get; set; } 
+		public DateTimeValue UpdateTime { get; set; } 
 	}
 }

@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Information about the prescription that is used to verify a regulated product. This must be provided
@@ -25,7 +24,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("expirationDate")]
 		[IsRequired]
-		public DateTime ExpirationDate { get; set; } 
+		public DateTimeValue ExpirationDate { get; set; } 
 
 		/// <summary>
 		/// The number of units in each fill as provided in the prescription.

@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// datetime format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; } 
+		public DateTimeValue Expiration { get; set; } 
 
 		/// <summary>
 		/// The fee for the offered option.

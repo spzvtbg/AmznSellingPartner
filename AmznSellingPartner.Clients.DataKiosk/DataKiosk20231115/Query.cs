@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Detailed information about the query.
@@ -31,7 +30,7 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// </summary>
 		[JsonProperty("createdTime")]
 		[IsRequired]
-		public DateTime CreatedTime { get; set; } 
+		public DateTimeValue CreatedTime { get; set; } 
 
 		/// <summary>
 		/// The processing status of the query.
@@ -44,13 +43,13 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// The date and time when the query processing started, in ISO 8601 date time format.
 		/// </summary>
 		[JsonProperty("processingStartTime")]
-		public DateTime ProcessingStartTime { get; set; } 
+		public DateTimeValue ProcessingStartTime { get; set; } 
 
 		/// <summary>
 		/// The date and time when the query processing completed, in ISO 8601 date time format.
 		/// </summary>
 		[JsonProperty("processingEndTime")]
-		public DateTime ProcessingEndTime { get; set; } 
+		public DateTimeValue ProcessingEndTime { get; set; } 
 
 		/// <summary>
 		/// The data document identifier. This identifier is only present when there is data available as a result

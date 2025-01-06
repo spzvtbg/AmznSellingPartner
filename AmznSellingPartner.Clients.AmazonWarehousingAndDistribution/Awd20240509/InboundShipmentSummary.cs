@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Summary for an AWD inbound shipment containing the shipment ID, which can be used to retrieve the actual
@@ -16,7 +15,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Timestamp when the shipment was created.
 		/// </summary>
 		[JsonProperty("createdAt")]
-		public DateTime CreatedAt { get; set; } 
+		public DateTimeValue CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Optional client-provided reference ID that can be used to correlate this shipment with client resources.
@@ -49,6 +48,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Timestamp when the shipment was updated.
 		/// </summary>
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; } 
+		public DateTimeValue UpdatedAt { get; set; } 
 	}
 }

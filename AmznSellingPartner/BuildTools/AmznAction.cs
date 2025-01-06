@@ -48,7 +48,7 @@
             }
 
             var csResponse = context.GetOrCreateClass($"{operation}{method}Response");
-            csResponse.Inherits(nameof(BaseHttpResponse));
+            csResponse.Inherits($"BaseHttpResponse<{csResponse.GetTypeName()}>");
 
             foreach (var csProeprty in this.Responses.OnDeserialized(context))
             {

@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Provide these fields only if this shipment is a direct import.
@@ -49,7 +48,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// than 60 days out in the future.
 		/// </summary>
 		[JsonProperty("estimatedShipByDate")]
-		public DateTime EstimatedShipByDate { get; set; } 
+		public DateTimeValue EstimatedShipByDate { get; set; } 
 
 		/// <summary>
 		/// Identification of the instructions on how specified item/carton/pallet should be handled.

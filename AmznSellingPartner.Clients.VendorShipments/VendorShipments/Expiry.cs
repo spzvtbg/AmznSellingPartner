@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Expiry refers to the collection of dates required  for certain items. These could be either expiryDate
@@ -15,14 +15,14 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// on the trade item context.
 		/// </summary>
 		[JsonProperty("manufacturerDate")]
-		public DateTime ManufacturerDate { get; set; } 
+		public DateTimeValue ManufacturerDate { get; set; } 
 
 		/// <summary>
 		/// The date that determines the limit of consumption or use of a product. Its meaning is determined based
 		/// on the trade item context.
 		/// </summary>
 		[JsonProperty("expiryDate")]
-		public DateTime ExpiryDate { get; set; } 
+		public DateTimeValue ExpiryDate { get; set; } 
 
 		/// <summary>
 		/// Duration after manufacturing date during which the product is valid for consumption.

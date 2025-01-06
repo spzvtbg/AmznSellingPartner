@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// A date-time interval in ISO 8601 format which is used to compute metrics. Only the date is required,
@@ -26,7 +25,7 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("startDate")]
 		[IsRequired]
-		public DateTime StartDate { get; set; } 
+		public DateTimeValue StartDate { get; set; } 
 
 		/// <summary>
 		/// When this object is used as a request parameter, the specified `endDate` is adjusted based on the aggregation
@@ -38,6 +37,6 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		/// </summary>
 		[JsonProperty("endDate")]
 		[IsRequired]
-		public DateTime EndDate { get; set; } 
+		public DateTimeValue EndDate { get; set; } 
 	}
 }

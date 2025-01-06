@@ -1,8 +1,9 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
+	using AmznSellingPartner.Clients.Values;
+
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -22,7 +23,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// shipment.
 		/// </summary>
 		[JsonProperty("purchaseOrderDate")]
-		public DateTime PurchaseOrderDate { get; set; } 
+		public DateTimeValue PurchaseOrderDate { get; set; } 
 
 		/// <summary>
 		/// Date range in which shipment is expected for these purchase orders.

@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using System;
-
 	[HttpGet("/fba/inventory/v1/summaries")]
 	public class GetInventorySummariesGetRequest : BaseHttpRequest
 	{
@@ -36,7 +34,7 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		/// are not detected.
 		/// </summary>
 		[InQuery("startDateTime")]
-		public DateTime StartDateTime { get; set; } 
+		public DateTimeValue StartDateTime { get; set; } 
 
 		/// <summary>
 		/// A list of seller SKUs for which to return inventory summaries. You may specify up to 50 SKUs.

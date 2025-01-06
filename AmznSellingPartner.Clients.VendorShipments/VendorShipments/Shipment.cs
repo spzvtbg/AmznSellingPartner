@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -40,7 +40,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("transactionDate")]
 		[IsRequired]
-		public DateTime TransactionDate { get; set; } 
+		public DateTimeValue TransactionDate { get; set; } 
 
 		/// <summary>
 		/// Indicates the current shipment status.
@@ -52,7 +52,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Date and time when the last status was updated.
 		/// </summary>
 		[JsonProperty("currentshipmentStatusDate")]
-		public DateTime CurrentshipmentStatusDate { get; set; } 
+		public DateTimeValue CurrentshipmentStatusDate { get; set; } 
 
 		/// <summary>
 		/// Indicates the list of current shipment status details and when the last update was received from carrier
@@ -65,7 +65,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// The date and time of the shipment request created by vendor.
 		/// </summary>
 		[JsonProperty("shipmentCreateDate")]
-		public DateTime ShipmentCreateDate { get; set; } 
+		public DateTimeValue ShipmentCreateDate { get; set; } 
 
 		/// <summary>
 		/// The date and time of the departure of the shipment from the vendor's location. Vendors are requested
@@ -74,13 +74,13 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// in the shipment confirmation should not be in the future.
 		/// </summary>
 		[JsonProperty("shipmentConfirmDate")]
-		public DateTime ShipmentConfirmDate { get; set; } 
+		public DateTimeValue ShipmentConfirmDate { get; set; } 
 
 		/// <summary>
 		/// The date and time of the package label created for the shipment by buyer.
 		/// </summary>
 		[JsonProperty("packageLabelCreateDate")]
-		public DateTime PackageLabelCreateDate { get; set; } 
+		public DateTimeValue PackageLabelCreateDate { get; set; } 
 
 		/// <summary>
 		/// Indicates if this transportation request is WePay/Collect or TheyPay/Prepaid. This is a mandatory in

@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -17,7 +17,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("endTime")]
 		[IsRequired]
-		public DateTime EndTime { get; set; } 
+		public DateTimeValue EndTime { get; set; } 
 
 		/// <summary>
 		/// Days of the week when recurrence is valid. If the schedule is valid every Monday, input will only contain

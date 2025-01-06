@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirectFulfillmentPaymentsV1
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -25,7 +25,7 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		/// </summary>
 		[JsonProperty("invoiceDate")]
 		[IsRequired]
-		public DateTime InvoiceDate { get; set; } 
+		public DateTimeValue InvoiceDate { get; set; } 
 
 		/// <summary>
 		/// An additional unique reference number used for regulatory or other purposes.

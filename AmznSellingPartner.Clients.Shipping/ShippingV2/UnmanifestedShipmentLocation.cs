@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// UnmanifestedShipmentLocation info
@@ -16,6 +16,6 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Its Last Manifest Date.
 		/// </summary>
 		[JsonProperty("lastManifestDate")]
-		public DateTime LastManifestDate { get; set; } 
+		public DateTimeValue LastManifestDate { get; set; } 
 	}
 }

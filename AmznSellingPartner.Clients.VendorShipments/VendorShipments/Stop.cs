@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Contractual or operational port or point relevant to the movement of the cargo.
@@ -25,12 +24,12 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Date and time of the arrival of the cargo.
 		/// </summary>
 		[JsonProperty("arrivalTime")]
-		public DateTime ArrivalTime { get; set; } 
+		public DateTimeValue ArrivalTime { get; set; } 
 
 		/// <summary>
 		/// Date and time of the departure of the cargo.
 		/// </summary>
 		[JsonProperty("departureTime")]
-		public DateTime DepartureTime { get; set; } 
+		public DateTimeValue DepartureTime { get; set; } 
 	}
 }

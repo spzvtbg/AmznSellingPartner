@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -58,7 +58,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// </summary>
 		[JsonProperty("shipmentConfirmationDate")]
 		[IsRequired]
-		public DateTime ShipmentConfirmationDate { get; set; } 
+		public DateTimeValue ShipmentConfirmationDate { get; set; } 
 
 		/// <summary>
 		/// The date and time of the departure of the shipment from the vendor's location. Vendors are requested
@@ -67,7 +67,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// in the shipment confirmation should not be in the future.
 		/// </summary>
 		[JsonProperty("shippedDate")]
-		public DateTime ShippedDate { get; set; } 
+		public DateTimeValue ShippedDate { get; set; } 
 
 		/// <summary>
 		/// The date and time on which the shipment is estimated to reach buyer's warehouse. It needs to be an estimate
@@ -76,7 +76,7 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// ion.
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDate")]
-		public DateTime EstimatedDeliveryDate { get; set; } 
+		public DateTimeValue EstimatedDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Name/Address and tax details of the selling party.

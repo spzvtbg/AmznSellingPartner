@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Resource to download the requested document.
@@ -23,7 +22,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// format with pattern `yyyy-MM-ddTHH:mm:ss.sssZ`.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; } 
+		public DateTimeValue Expiration { get; set; } 
 
 		/// <summary>
 		/// Uniform resource identifier to identify where the document is located.

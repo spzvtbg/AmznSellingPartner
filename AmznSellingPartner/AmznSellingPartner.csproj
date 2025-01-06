@@ -16,6 +16,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\AmznSellingPartner.Clients.AmazonWarehousingAndDistribution\AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.csproj" />
 	  <ProjectReference Include="..\AmznSellingPartner.Clients\AmznSellingPartner.Clients.csproj" />
 	</ItemGroup>
 

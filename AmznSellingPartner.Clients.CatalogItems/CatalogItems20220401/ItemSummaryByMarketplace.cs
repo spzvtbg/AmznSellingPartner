@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -102,7 +102,7 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		/// First date on which an Amazon catalog item is shippable to customers.
 		/// </summary>
 		[JsonProperty("releaseDate")]
-		public DateTime ReleaseDate { get; set; } 
+		public DateTimeValue ReleaseDate { get; set; } 
 
 		/// <summary>
 		/// Name of the size associated with an Amazon catalog item.

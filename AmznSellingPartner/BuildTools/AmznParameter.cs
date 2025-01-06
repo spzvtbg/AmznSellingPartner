@@ -1,11 +1,10 @@
 ﻿namespace AmznSellingPartner.BuildTools
 {
     using AmznSellingPartner;
+    using AmznSellingPartner.Clients.Values;
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
-
-    using System;
 
     internal class AmznParameter : AmznUnhandled
     {
@@ -93,7 +92,7 @@
 
         internal override CsProperty OnDeserialized(CsClass csRequest, CsContext context, AmznParameters parameters)
               => base.OnDeserialized(csRequest, context, parameters)
-                     .HasType(nameof(DateTime), "System");
+                     .HasType(nameof(DateTimeValue), "AmznSellingPartner.Clients.Values");
     }
 
     internal class AmznParameterInt : AmznParameter

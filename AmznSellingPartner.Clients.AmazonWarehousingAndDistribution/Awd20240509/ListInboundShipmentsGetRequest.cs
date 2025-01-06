@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/awd/2024-05-09/inboundShipments")]
 	public class ListInboundShipmentsGetRequest : BaseHttpRequest
@@ -31,14 +30,14 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("updatedAfter")]
-		public DateTime UpdatedAfter { get; set; } 
+		public DateTimeValue UpdatedAfter { get; set; } 
 
 		/// <summary>
 		/// List the inbound shipments that were updated before a certain time (inclusive). The date must be in <a
 		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
 		/// </summary>
 		[InQuery("updatedBefore")]
-		public DateTime UpdatedBefore { get; set; } 
+		public DateTimeValue UpdatedBefore { get; set; } 
 
 		/// <summary>
 		/// Maximum number of results to return.

@@ -1,8 +1,9 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
+	using AmznSellingPartner.Clients.Values;
+
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -16,7 +17,7 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// datetime format.
 		/// </summary>
 		[JsonProperty("expiresAt")]
-		public DateTime ExpiresAt { get; set; } 
+		public DateTimeValue ExpiresAt { get; set; } 
 
 		/// <summary>
 		/// A list of appointment slots.

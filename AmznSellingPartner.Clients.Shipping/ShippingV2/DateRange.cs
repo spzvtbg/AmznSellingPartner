@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Date Range for query the results.
@@ -13,12 +13,12 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		/// Start Date for query .
 		/// </summary>
 		[JsonProperty("startDate")]
-		public DateTime StartDate { get; set; } 
+		public DateTimeValue StartDate { get; set; } 
 
 		/// <summary>
 		/// end date for query.
 		/// </summary>
 		[JsonProperty("endDate")]
-		public DateTime EndDate { get; set; } 
+		public DateTimeValue EndDate { get; set; } 
 	}
 }

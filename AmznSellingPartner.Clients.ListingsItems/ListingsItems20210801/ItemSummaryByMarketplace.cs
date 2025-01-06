@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -63,14 +63,14 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		/// </summary>
 		[JsonProperty("createdDate")]
 		[IsRequired]
-		public DateTime CreatedDate { get; set; } 
+		public DateTimeValue CreatedDate { get; set; } 
 
 		/// <summary>
 		/// The date the listings item was last updated in ISO 8601 format.
 		/// </summary>
 		[JsonProperty("lastUpdatedDate")]
 		[IsRequired]
-		public DateTime LastUpdatedDate { get; set; } 
+		public DateTimeValue LastUpdatedDate { get; set; } 
 
 		/// <summary>
 		/// The main image for the listings item.

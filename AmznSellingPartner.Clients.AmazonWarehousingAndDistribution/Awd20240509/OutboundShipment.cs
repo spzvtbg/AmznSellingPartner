@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -16,7 +16,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Timestamp when the shipment was created.
 		/// </summary>
 		[JsonProperty("createdAt")]
-		public DateTime CreatedAt { get; set; } 
+		public DateTimeValue CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Destination address for this shipment.
@@ -69,6 +69,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Timestamp when the shipment was updated.
 		/// </summary>
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; } 
+		public DateTimeValue UpdatedAt { get; set; } 
 	}
 }

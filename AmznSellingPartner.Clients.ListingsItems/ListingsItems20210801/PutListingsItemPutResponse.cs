@@ -1,20 +1,20 @@
 namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class PutListingsItemPutResponse : BaseHttpResponse
+	public class PutListingsItemPutResponse : BaseHttpResponse<PutListingsItemPutResponse>
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
 		/// </summary>
-		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; } 
+		[JsonProperty("x-amzn-ratelimit-limit")]
+		public string XAmznRatelimitLimit { get; set; } 
 
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// Successfully understood the request to create or fully-update a listings item. See the response to determine

@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// An appointment slot time with start and end.
@@ -16,13 +15,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// </summary>
 		[JsonProperty("endTime")]
 		[IsRequired]
-		public DateTime EndTime { get; set; } 
+		public DateTimeValue EndTime { get; set; } 
 
 		/// <summary>
 		/// The start timestamp of the appointment in UTC.
 		/// </summary>
 		[JsonProperty("startTime")]
 		[IsRequired]
-		public DateTime StartTime { get; set; } 
+		public DateTimeValue StartTime { get; set; } 
 	}
 }

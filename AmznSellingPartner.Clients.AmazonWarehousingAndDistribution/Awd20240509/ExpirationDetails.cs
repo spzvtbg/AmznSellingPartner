@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// The expiration details of the inventory. This object will only appear if the details parameter in the
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// The expiration date of the SKU.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; } 
+		public DateTimeValue Expiration { get; set; } 
 
 		/// <summary>
 		/// The quantity that is present in AWD.

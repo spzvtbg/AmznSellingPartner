@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// Properties of packages
@@ -50,7 +49,7 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		/// </summary>
 		[JsonProperty("shipDate")]
 		[IsRequired]
-		public DateTime ShipDate { get; set; } 
+		public DateTimeValue ShipDate { get; set; } 
 
 		/// <summary>
 		/// The unique identifier for the supply source.

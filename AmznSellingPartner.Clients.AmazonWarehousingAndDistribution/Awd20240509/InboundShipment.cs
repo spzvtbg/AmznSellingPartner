@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -23,7 +23,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// 8601</a> format.
 		/// </summary>
 		[JsonProperty("createdAt")]
-		public DateTime CreatedAt { get; set; } 
+		public DateTimeValue CreatedAt { get; set; } 
 
 		/// <summary>
 		/// Destination address for this shipment.
@@ -64,7 +64,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Timestamp when the shipment will be shipped.
 		/// </summary>
 		[JsonProperty("shipBy")]
-		public DateTime ShipBy { get; set; } 
+		public DateTimeValue ShipBy { get; set; } 
 
 		/// <summary>
 		/// Packages that are part of this shipment.
@@ -114,7 +114,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// 8601</a> format.
 		/// </summary>
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; } 
+		public DateTimeValue UpdatedAt { get; set; } 
 
 		/// <summary>
 		/// An AWD-provided reference ID that you can use to interact with the warehouse. For example, a carrier

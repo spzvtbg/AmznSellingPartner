@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Delivery information for the item.
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// format.
 		/// </summary>
 		[JsonProperty("estimatedDeliveryDate")]
-		public DateTime EstimatedDeliveryDate { get; set; } 
+		public DateTimeValue EstimatedDeliveryDate { get; set; } 
 
 		/// <summary>
 		/// Promised delivery information for the item.

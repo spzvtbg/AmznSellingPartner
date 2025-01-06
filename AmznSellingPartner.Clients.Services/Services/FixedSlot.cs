@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// In this slot format each slot only has the requested capacity types. This slot size is as specified by
@@ -14,7 +14,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Start date time of slot in ISO 8601 format with precision of seconds.
 		/// </summary>
 		[JsonProperty("startDateTime")]
-		public DateTime StartDateTime { get; set; } 
+		public DateTimeValue StartDateTime { get; set; } 
 
 		/// <summary>
 		/// Scheduled capacity corresponding to the slot. This capacity represents the originally allocated capacity

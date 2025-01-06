@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Reports.Reports20210630
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -45,6 +45,6 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		/// 8601</a> date time format.
 		/// </summary>
 		[JsonProperty("nextReportCreationTime")]
-		public DateTime NextReportCreationTime { get; set; } 
+		public DateTimeValue NextReportCreationTime { get; set; } 
 	}
 }

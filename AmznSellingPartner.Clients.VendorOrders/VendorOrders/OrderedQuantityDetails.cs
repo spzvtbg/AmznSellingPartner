@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Details of item quantity ordered.
@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// The date when the line item quantity was updated by buyer. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("updatedDate")]
-		public DateTime UpdatedDate { get; set; } 
+		public DateTimeValue UpdatedDate { get; set; } 
 
 		/// <summary>
 		/// Item quantity ordered.

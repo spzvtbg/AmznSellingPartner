@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// The information required by a selling partner to issue a shipment invoice.
@@ -31,7 +31,7 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		/// The date and time when the order was created.
 		/// </summary>
 		[JsonProperty("PurchaseDate")]
-		public DateTime PurchaseDate { get; set; } 
+		public DateTimeValue PurchaseDate { get; set; } 
 
 		[JsonProperty("ShippingAddress")]
 		public Address ShippingAddress { get; set; } 

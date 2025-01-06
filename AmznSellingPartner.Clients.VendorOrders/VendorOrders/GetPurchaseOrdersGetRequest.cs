@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/vendor/orders/v1/purchaseOrders")]
 	public class GetPurchaseOrdersGetRequest : BaseHttpRequest
@@ -20,14 +19,14 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[InQuery("createdAfter")]
-		public DateTime CreatedAfter { get; set; } 
+		public DateTimeValue CreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Purchase orders that became available before this time will be included in the result. Must be in ISO-8601
 		/// date/time format.
 		/// </summary>
 		[InQuery("createdBefore")]
-		public DateTime CreatedBefore { get; set; } 
+		public DateTimeValue CreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Sort in ascending or descending order by purchase order creation date.
@@ -54,14 +53,14 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// date/time format.
 		/// </summary>
 		[InQuery("changedAfter")]
-		public DateTime ChangedAfter { get; set; } 
+		public DateTimeValue ChangedAfter { get; set; } 
 
 		/// <summary>
 		/// Purchase orders that changed before this timestamp will be included in the result. Must be in ISO-8601
 		/// date/time format.
 		/// </summary>
 		[InQuery("changedBefore")]
-		public DateTime ChangedBefore { get; set; } 
+		public DateTimeValue ChangedBefore { get; set; } 
 
 		/// <summary>
 		/// Current state of the purchase order item. If this value is Cancelled, this API will return purchase orders

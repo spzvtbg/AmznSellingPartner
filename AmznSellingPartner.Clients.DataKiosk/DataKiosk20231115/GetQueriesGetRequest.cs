@@ -3,8 +3,6 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 	using AmznSellingPartner.Clients.Attributes;
 	using AmznSellingPartner.Clients.Values;
 
-	using System;
-
 	[HttpGet("/dataKiosk/2023-11-15/queries")]
 	public class GetQueriesGetRequest : BaseHttpRequest
 	{
@@ -28,14 +26,14 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		/// format. The default is 90 days ago.
 		/// </summary>
 		[InQuery("createdSince")]
-		public DateTime CreatedSince { get; set; } 
+		public DateTimeValue CreatedSince { get; set; } 
 
 		/// <summary>
 		/// The latest query creation date and time for queries to include in the response, in ISO 8601 date time
 		/// format. The default is the time of the `getQueries` request.
 		/// </summary>
 		[InQuery("createdUntil")]
-		public DateTime CreatedUntil { get; set; } 
+		public DateTimeValue CreatedUntil { get; set; } 
 
 		/// <summary>
 		/// A token to fetch a certain page of results when there are multiple pages of results available. The value

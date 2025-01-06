@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -38,7 +38,7 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// date-time format.
 		/// </summary>
 		[JsonProperty("expiration")]
-		public DateTime Expiration { get; set; } 
+		public DateTimeValue Expiration { get; set; } 
 
 		/// <summary>
 		/// Preparation details of a product which contains the prep category, prep owner and the label owner. If

@@ -1,10 +1,9 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
-
-	using System;
 
 	/// <summary>
 	/// The input appointment time details.
@@ -16,7 +15,7 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// </summary>
 		[JsonProperty("startTime")]
 		[IsRequired]
-		public DateTime StartTime { get; set; } 
+		public DateTimeValue StartTime { get; set; } 
 
 		/// <summary>
 		/// The duration of an appointment in minutes.

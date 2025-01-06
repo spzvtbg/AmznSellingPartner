@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/vendor/shipping/v1/transportLabels")]
 	public class GetShipmentLabelsGetRequest : BaseHttpRequest
@@ -36,14 +35,14 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedAfter")]
-		public DateTime LabelCreatedAfter { get; set; } 
+		public DateTimeValue LabelCreatedAfter { get; set; } 
 
 		/// <summary>
 		/// Shipment labels created before this time will be included in the result. This field must be in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
 		/// datetime format.
 		/// </summary>
 		[InQuery("labelCreatedBefore")]
-		public DateTime LabelCreatedBefore { get; set; } 
+		public DateTimeValue LabelCreatedBefore { get; set; } 
 
 		/// <summary>
 		/// Get Shipment labels by passing buyer reference number.

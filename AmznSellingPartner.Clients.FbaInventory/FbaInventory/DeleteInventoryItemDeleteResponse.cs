@@ -1,14 +1,14 @@
 namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class DeleteInventoryItemDeleteResponse : BaseHttpResponse
+	public class DeleteInventoryItemDeleteResponse : BaseHttpResponse<DeleteInventoryItemDeleteResponse>
 	{
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// OK

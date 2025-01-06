@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// The `generateSelfShipAppointmentSlots` request.
@@ -14,13 +14,13 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		/// format.
 		/// </summary>
 		[JsonProperty("desiredEndDate")]
-		public DateTime DesiredEndDate { get; set; } 
+		public DateTimeValue DesiredEndDate { get; set; } 
 
 		/// <summary>
 		/// The desired start date. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) datetime
 		/// format.
 		/// </summary>
 		[JsonProperty("desiredStartDate")]
-		public DateTime DesiredStartDate { get; set; } 
+		public DateTimeValue DesiredStartDate { get; set; } 
 	}
 }

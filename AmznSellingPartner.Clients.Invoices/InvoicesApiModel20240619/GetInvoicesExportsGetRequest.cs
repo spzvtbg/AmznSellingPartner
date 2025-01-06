@@ -1,8 +1,7 @@
 namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 {
 	using AmznSellingPartner.Clients.Attributes;
-
-	using System;
+	using AmznSellingPartner.Clients.Values;
 
 	[HttpGet("/tax/invoices/2024-06-19/exports")]
 	public class GetInvoicesExportsGetRequest : BaseHttpRequest
@@ -20,7 +19,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// is 30 days ago.
 		/// </summary>
 		[InQuery("dateStart")]
-		public DateTime DateStart { get; set; } 
+		public DateTimeValue DateStart { get; set; } 
 
 		/// <summary>
 		/// The response includes `nextToken` when the number of results exceeds the specified `pageSize` value.
@@ -43,7 +42,7 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		/// value is the time of the request.
 		/// </summary>
 		[InQuery("dateEnd")]
-		public DateTime DateEnd { get; set; } 
+		public DateTimeValue DateEnd { get; set; } 
 
 		/// <summary>
 		/// Return exports matching the status specified.

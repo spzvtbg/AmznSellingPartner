@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Capacity slots represented in a format similar to availability rules.
@@ -13,13 +13,13 @@ namespace AmznSellingPartner.Clients.Services.Services
 		/// Start date time of slot in ISO 8601 format with precision of seconds.
 		/// </summary>
 		[JsonProperty("startDateTime")]
-		public DateTime StartDateTime { get; set; } 
+		public DateTimeValue StartDateTime { get; set; } 
 
 		/// <summary>
 		/// End date time of slot in ISO 8601 format with precision of seconds.
 		/// </summary>
 		[JsonProperty("endDateTime")]
-		public DateTime EndDateTime { get; set; } 
+		public DateTimeValue EndDateTime { get; set; } 
 
 		/// <summary>
 		/// Capacity of the slot.

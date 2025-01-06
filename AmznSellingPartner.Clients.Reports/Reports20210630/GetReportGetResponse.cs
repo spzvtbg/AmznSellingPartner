@@ -1,20 +1,20 @@
 namespace AmznSellingPartner.Clients.Reports.Reports20210630
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class GetReportGetResponse : BaseHttpResponse
+	public class GetReportGetResponse : BaseHttpResponse<GetReportGetResponse>
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
 		/// </summary>
-		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; } 
+		[JsonProperty("x-amzn-ratelimit-limit")]
+		public string XAmznRatelimitLimit { get; set; } 
 
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// Success.

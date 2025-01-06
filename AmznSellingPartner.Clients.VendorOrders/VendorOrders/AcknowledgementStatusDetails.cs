@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Details of item quantity ordered
@@ -13,7 +13,7 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		/// The date when the line item was confirmed by vendor. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("acknowledgementDate")]
-		public DateTime AcknowledgementDate { get; set; } 
+		public DateTimeValue AcknowledgementDate { get; set; } 
 
 		/// <summary>
 		/// Item quantity accepted by vendor to be shipped.

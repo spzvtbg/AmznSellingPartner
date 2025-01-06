@@ -1,8 +1,8 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
-	using Newtonsoft.Json;
+	using AmznSellingPartner.Clients.Values;
 
-	using System;
+	using Newtonsoft.Json;
 
 	/// <summary>
 	/// Shipment Status details.
@@ -19,6 +19,6 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		/// Date and time on last status update received for the shipment
 		/// </summary>
 		[JsonProperty("shipmentStatusDate")]
-		public DateTime ShipmentStatusDate { get; set; } 
+		public DateTimeValue ShipmentStatusDate { get; set; } 
 	}
 }

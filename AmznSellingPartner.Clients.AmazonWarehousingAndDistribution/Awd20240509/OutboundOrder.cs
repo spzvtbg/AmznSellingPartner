@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd20240509
 {
 	using AmznSellingPartner.Clients.Attributes;
+	using AmznSellingPartner.Clients.Values;
 
 	using Newtonsoft.Json;
 
-	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -16,13 +16,13 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Date on which this outbound order was confirmed.
 		/// </summary>
 		[JsonProperty("confirmedOn")]
-		public DateTime ConfirmedOn { get; set; } 
+		public DateTimeValue ConfirmedOn { get; set; } 
 
 		/// <summary>
 		/// Date on which this outbound order was created.
 		/// </summary>
 		[JsonProperty("createdAt")]
-		public DateTime CreatedAt { get; set; } 
+		public DateTimeValue CreatedAt { get; set; } 
 
 		/// <summary>
 		/// List of packages that are eligible for outbound.
@@ -98,6 +98,6 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		/// Date on which this outbound order was last updated.
 		/// </summary>
 		[JsonProperty("updatedAt")]
-		public DateTime UpdatedAt { get; set; } 
+		public DateTimeValue UpdatedAt { get; set; } 
 	}
 }

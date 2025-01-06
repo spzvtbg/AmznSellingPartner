@@ -1,20 +1,20 @@
 namespace AmznSellingPartner.Clients.Messaging.Messaging
 {
-	using AmznSellingPartner.Clients.Attributes;
+	using Newtonsoft.Json;
 
-	public class GetMessagingActionsForOrderGetResponse : BaseHttpResponse
+	public class GetMessagingActionsForOrderGetResponse : BaseHttpResponse<GetMessagingActionsForOrderGetResponse>
 	{
 		/// <summary>
 		/// Your rate limit (requests per second) for this operation.
 		/// </summary>
-		[FromHeader("x-amzn-RateLimit-Limit")]
-		public string XAmznRateLimitLimit { get; set; } 
+		[JsonProperty("x-amzn-ratelimit-limit")]
+		public string XAmznRatelimitLimit { get; set; } 
 
 		/// <summary>
 		/// Unique request reference identifier.
 		/// </summary>
-		[FromHeader("x-amzn-RequestId")]
-		public string XAmznRequestId { get; set; } 
+		[JsonProperty("x-amzn-requestid")]
+		public string XAmznRequestid { get; set; } 
 
 		/// <summary>
 		/// Returns hypermedia links under the _links.actions key that specify which messaging actions are allowed

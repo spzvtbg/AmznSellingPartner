@@ -15,7 +15,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		Summaries,
 
 		/// <summary>
-		/// A JSON object that contains structured listing item attribute data, keyed by attribute name.
+		/// A JSON object that contains structured listing item attribute data, keyed by attribute nam
+		/// e.
 		/// </summary>
 		[EnumMember(Value = "attributes")]
 		Attributes,
@@ -57,8 +58,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		ProductTypes,
 
 		/// <summary>
-		/// Identifiers associated with the item in the Amazon catalog, such as Amazon Standard Identification Number
-		/// (ASIN). Can only be requested when `mode` is `VALIDATION_PREVIEW`.
+		/// Identifiers associated with the item in the Amazon catalog, such as Amazon Standard Identification
+		/// Number (ASIN). Can only be requested when `mode` is `VALIDATION_PREVIEW`.
 		/// </summary>
 		[EnumMember(Value = "identifiers")]
 		Identifiers,

@@ -7,14 +7,15 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Contains information about a box that is used in the inbound plan. The box is a container that holds
-	/// multiple items.
+	/// Contains information about a box that is used in the inbound plan. The box is a container that
+	/// holds multiple items.
 	/// </summary>
 	public class Box : BaseClass
 	{
 		/// <summary>
-		/// The ID provided by Amazon that identifies a given box. This ID is comprised of the external shipment
-		/// ID (which is generated after transportation has been confirmed) and the index of the box.
+		/// The ID provided by Amazon that identifies a given box. This ID is comprised of the external
+		/// shipment ID (which is generated after transportation has been confirmed) and the index of the
+		/// box.
 		/// </summary>
 		[JsonProperty("boxId")]
 		[MinLength(1)]
@@ -47,7 +48,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackageId { get; set; } 
 
 		/// <summary>
-		/// The number of containers where all other properties like weight or dimensions are identical.
+		/// The number of containers where all other properties like weight or dimensions are identica
+		/// l.
 		/// </summary>
 		[JsonProperty("quantity")]
 		[Minimum(1)]

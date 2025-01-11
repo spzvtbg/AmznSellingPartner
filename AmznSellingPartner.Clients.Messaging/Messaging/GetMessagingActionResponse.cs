@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Describes a messaging action that can be taken for an order. Provides a JSON Hypertext Application Language
-	/// (HAL) link to the JSON schema document that describes the expected input.
+	/// Describes a messaging action that can be taken for an order. Provides a JSON Hypertext Application
+	/// Language (HAL) link to the JSON schema document that describes the expected input.
 	/// </summary>
 	public class GetMessagingActionResponse : BaseClass
 	{

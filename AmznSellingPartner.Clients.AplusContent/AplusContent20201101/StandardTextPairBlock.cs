@@ -3,7 +3,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The A+ Content standard label and description block, comprised of a pair of text components.
+	/// The A+ Content standard label and description block, comprised of a pair of text component
+	/// s.
 	/// </summary>
 	public class StandardTextPairBlock : BaseClass
 	{

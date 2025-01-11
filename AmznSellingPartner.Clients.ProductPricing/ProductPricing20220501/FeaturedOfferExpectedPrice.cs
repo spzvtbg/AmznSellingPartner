@@ -10,16 +10,16 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class FeaturedOfferExpectedPrice : BaseClass
 	{
 		/// <summary>
-		/// A computed listing price at or below which a seller can expect to become the featured offer (before applicable
-		/// promotions).
+		/// A computed listing price at or below which a seller can expect to become the featured offer
+		/// (before applicable promotions).
 		/// </summary>
 		[JsonProperty("listingPrice")]
 		[IsRequired]
 		public MoneyType ListingPrice { get; set; } 
 
 		/// <summary>
-		/// The number of Amazon Points that are offered with the purchase of an item and the monetary value of these
-		/// points.
+		/// The number of Amazon Points that are offered with the purchase of an item and the monetary
+		/// value of these points.
 		/// </summary>
 		[JsonProperty("points")]
 		public Points Points { get; set; } 

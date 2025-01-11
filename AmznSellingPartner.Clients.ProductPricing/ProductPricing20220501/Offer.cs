@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		public SubCondition SubCondition { get; set; } 
 
 		/// <summary>
-		/// The fulfillment type for the offer. Possible values are `AFN` (Amazon Fulfillment Network) and `MFN`
-		/// (Merchant Fulfillment Network).
+		/// The fulfillment type for the offer. Possible values are `AFN` (Amazon Fulfillment Network)
+		/// and `MFN` (Merchant Fulfillment Network).
 		/// </summary>
 		[JsonProperty("fulfillmentType")]
 		[IsRequired]
@@ -53,8 +53,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		public List<ShippingOption> ShippingOptions { get; set; } 
 
 		/// <summary>
-		/// The number of Amazon Points that are offered with the purchase of an item and the monetary value of these
-		/// points. Note that the Points element is only returned in Japan (JP).
+		/// The number of Amazon Points that are offered with the purchase of an item and the monetary
+		/// value of these points. Note that the Points element is only returned in Japan (JP).
 		/// </summary>
 		[JsonProperty("points")]
 		public Points Points { get; set; } 

@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string SellerFulfillmentOrderItemId { get; set; } 
 
 		/// <summary>
-		/// The estimated shipping weight of the item quantity for a single item, as identified by `sellerSku`, in
-		/// a shipment.
+		/// The estimated shipping weight of the item quantity for a single item, as identified by `sellerSku`,
+		/// in a shipment.
 		/// </summary>
 		[JsonProperty("estimatedShippingWeight")]
 		public Weight EstimatedShippingWeight { get; set; } 

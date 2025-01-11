@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public class ProductQuantity : BaseClass
 	{
 		/// <summary>
-		/// Attributes for this instance of the product. For example, already-prepped, or other attributes that distinguish
-		/// the product beyond the SKU.
+		/// Attributes for this instance of the product. For example, already-prepped, or other attributes
+		/// that distinguish the product beyond the SKU.
 		/// </summary>
 		[JsonProperty("attributes")]
 		public List<ProductAttribute> Attributes { get; set; } 
@@ -41,9 +41,9 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public DateTimeValue Expiration { get; set; } 
 
 		/// <summary>
-		/// Preparation details of a product which contains the prep category, prep owner and the label owner. If
-		/// not passed while creating an inbound order, NO_PREP will be used on the product by-default. Prep instructions
-		/// will be generated based on the category passed
+		/// Preparation details of a product which contains the prep category, prep owner and the label
+		/// owner. If not passed while creating an inbound order, NO_PREP will be used on the product by-default.
+		/// Prep instructions will be generated based on the category passed
 		/// </summary>
 		[JsonProperty("prepDetails")]
 		public PrepDetails PrepDetails { get; set; } 

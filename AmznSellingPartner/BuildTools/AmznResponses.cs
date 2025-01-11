@@ -21,7 +21,29 @@
                 properties.Add(csProperty);
             }
 
-            foreach (var property in properties.DistinctBy(x => x.Type))
+            var groupedProperties = properties
+                .GroupBy(x => x.Type)
+                .ToDictionary(x => x.Key, x => x.ToList());
+            var responseProperties = new List<CsProperty>();
+
+            foreach (var (type, csProperties) in groupedProperties)
+            {
+                var csProperty = new CsProperty
+                {
+                    Name = type.Capitalize(),
+                    Type = type,
+                };
+
+                foreach (var _csProperty in csProperties)
+                {
+                    csProperty.HasDescription(_csProperty)
+                              .HasAttribute(_csProperty);
+                }
+
+                responseProperties.Add(csProperty);
+            }
+
+            foreach (var property in responseProperties)
             {
                 yield return property;
             }

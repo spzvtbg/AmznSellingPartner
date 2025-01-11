@@ -44,8 +44,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string ManifestDate { get; set; } 
 
 		/// <summary>
-		/// The shipment method. This property is required when calling the `submitShipmentConfirmations` operation,
-		/// and optional otherwise.
+		/// The shipment method. This property is required when calling the `submitShipmentConfirmations`
+		/// operation, and optional otherwise.
 		/// </summary>
 		[JsonProperty("shipMethod")]
 		public string ShipMethod { get; set; } 
@@ -63,8 +63,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string Carrier { get; set; } 
 
 		/// <summary>
-		/// An integer that must be submitted for multi-box shipments only, where one item may come in separate
-		/// packages.
+		/// An integer that must be submitted for multi-box shipments only, where one item may come in
+		/// separate packages.
 		/// </summary>
 		[JsonProperty("containerSequenceNumber")]
 		public int ContainerSequenceNumber { get; set; } 

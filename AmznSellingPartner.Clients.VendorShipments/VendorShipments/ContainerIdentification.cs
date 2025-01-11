@@ -17,7 +17,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public ContainerIdentificationType ContainerIdentificationType { get; set; } 
 
 		/// <summary>
-		/// Container identification number that adheres to the definition of the container identification type.
+		/// Container identification number that adheres to the definition of the container identification
+		/// type.
 		/// </summary>
 		[JsonProperty("containerIdentificationNumber")]
 		[IsRequired]

@@ -33,12 +33,13 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public FulfillmentShipmentStatus FulfillmentShipmentStatus { get; set; } 
 
 		/// <summary>
-		/// The meaning of the `shippingDate` value depends on the current status of the shipment. If the current
-		/// value of `FulfillmentShipmentStatus` is:  * Pending - `shippingDate` represents the estimated time that
-		/// the shipment will leave the Amazon fulfillment center.  * Shipped - `shippingDate` represents the date
-		/// that the shipment left the Amazon fulfillment center. If a shipment includes more than one package, `shippingDate`
-		/// applies to all of the packages in the shipment. If the value of `FulfillmentShipmentStatus` is `CancelledByFulfiller`
-		/// or `CancelledBySeller`, `shippingDate` is not returned. The value must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// The meaning of the `shippingDate` value depends on the current status of the shipment. If the
+		/// current value of `FulfillmentShipmentStatus` is:  * Pending - `shippingDate` represents the
+		/// estimated time that the shipment will leave the Amazon fulfillment center.  * Shipped - `shippingDate`
+		/// represents the date that the shipment left the Amazon fulfillment center. If a shipment includes
+		/// more than one package, `shippingDate` applies to all of the packages in the shipment. If the
+		/// value of `FulfillmentShipmentStatus` is `CancelledByFulfiller` or `CancelledBySeller`, `shippingDate`
+		/// is not returned. The value must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
 		/// 8601</a> format.
 		/// </summary>
 		[JsonProperty("shippingDate")]
@@ -46,16 +47,16 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 
 		/// <summary>
 		/// The estimated arrival date and time of the shipment. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
-		/// 8601</a> format. Note that this value can change over time. If a shipment includes more than one package,
-		/// `estimatedArrivalDate` applies to all of the packages in the shipment. If the shipment has been cancelled,
-		/// `estimatedArrivalDate` is not returned.
+		/// 8601</a> format. Note that this value can change over time. If a shipment includes more than
+		/// one package, `estimatedArrivalDate` applies to all of the packages in the shipment. If the
+		/// shipment has been cancelled, `estimatedArrivalDate` is not returned.
 		/// </summary>
 		[JsonProperty("estimatedArrivalDate")]
 		public Timestamp EstimatedArrivalDate { get; set; } 
 
 		/// <summary>
-		/// Provides additional insight into shipment timeline. Primairly used to communicate that actual delivery
-		/// dates aren't available.
+		/// Provides additional insight into shipment timeline. Primairly used to communicate that actual
+		/// delivery dates aren't available.
 		/// </summary>
 		[JsonProperty("shippingNotes")]
 		public List<string> ShippingNotes { get; set; } 

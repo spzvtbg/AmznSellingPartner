@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Contains all of the delivery instructions provided by the customer for the shipping address.
+	/// Contains all of the delivery instructions provided by the customer for the shipping addres
+	/// s.
 	/// </summary>
 	public class DeliveryPreferences : BaseClass
 	{

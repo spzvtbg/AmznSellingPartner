@@ -30,8 +30,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		public Money TaxAmount { get; set; } 
 
 		/// <summary>
-		/// This field will contain the invoice amount that is taxable at the rate specified in the tax rate fie
-		/// ld.
+		/// This field will contain the invoice amount that is taxable at the rate specified in the tax
+		/// rate field.
 		/// </summary>
 		[JsonProperty("taxableAmount")]
 		public Money TaxableAmount { get; set; } 

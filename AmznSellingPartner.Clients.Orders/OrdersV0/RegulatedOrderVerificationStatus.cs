@@ -7,7 +7,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The verification status of the order, along with associated approval or rejection metadata.
+	/// The verification status of the order, along with associated approval or rejection metadata
+	/// .
 	/// </summary>
 	public class RegulatedOrderVerificationStatus : BaseClass
 	{
@@ -19,21 +20,24 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public VerificationStatus Status { get; set; } 
 
 		/// <summary>
-		/// When true, the regulated information provided in the order requires a review by the merchant.
+		/// When true, the regulated information provided in the order requires a review by the mercha
+		/// nt.
 		/// </summary>
 		[JsonProperty("RequiresMerchantAction")]
 		[IsRequired]
 		public bool RequiresMerchantAction { get; set; } 
 
 		/// <summary>
-		/// A list of valid rejection reasons that may be used to reject the order's regulated information.
+		/// A list of valid rejection reasons that may be used to reject the order's regulated informa
+		/// tion.
 		/// </summary>
 		[JsonProperty("ValidRejectionReasons")]
 		[IsRequired]
 		public List<RejectionReason> ValidRejectionReasons { get; set; } 
 
 		/// <summary>
-		/// The reason for rejecting the order's regulated information. Not present if the order isn't rejected.
+		/// The reason for rejecting the order's regulated information. Not present if the order isn't
+		/// rejected.
 		/// </summary>
 		[JsonProperty("RejectionReason")]
 		public RejectionReason RejectionReason { get; set; } 
@@ -52,8 +56,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string ExternalReviewerId { get; set; } 
 
 		/// <summary>
-		/// A list of valid verification details that may be provided and the criteria required for when the verification
-		/// detail can be provided.
+		/// A list of valid verification details that may be provided and the criteria required for when
+		/// the verification detail can be provided.
 		/// </summary>
 		[JsonProperty("ValidVerificationDetails")]
 		public List<ValidVerificationDetail> ValidVerificationDetails { get; set; } 

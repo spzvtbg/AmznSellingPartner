@@ -6,8 +6,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents the acknowledgement details for an individual order item, including the acknowledgement code,
-	/// acknowledged quantity, scheduled ship and delivery dates, and rejection reason (if applicable).
+	/// Represents the acknowledgement details for an individual order item, including the acknowledgement
+	/// code, acknowledged quantity, scheduled ship and delivery dates, and rejection reason (if a
+	/// pplicable).
 	/// </summary>
 	public class OrderItemAcknowledgement : BaseClass
 	{

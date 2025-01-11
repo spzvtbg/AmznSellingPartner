@@ -15,8 +15,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		Accepted,
 
 		/// <summary>
-		/// Vendor placed a backorder to fulfill the original order and provides a scheduledShipDate or scheduledDeliveryDate
-		/// which is different than the expectedShipDate or expectedDeliveryDate provided in the purchase order.
+		/// Vendor placed a backorder to fulfill the original order and provides a scheduledShipDate or
+		/// scheduledDeliveryDate which is different than the expectedShipDate or expectedDeliveryDate
+		/// provided in the purchase order.
 		/// </summary>
 		[EnumMember(Value = "Backordered")]
 		Backordered,

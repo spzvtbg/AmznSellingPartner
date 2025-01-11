@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Execution errors associated with the outbound order. This field will be populated if the order failed
-	/// validation.
+	/// Execution errors associated with the outbound order. This field will be populated if the order
+	/// failed validation.
 	/// </summary>
 	public class OutboundExecutionError : BaseClass
 	{

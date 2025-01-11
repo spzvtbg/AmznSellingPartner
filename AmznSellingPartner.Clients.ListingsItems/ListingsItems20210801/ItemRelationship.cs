@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public List<string> ParentSkus { get; set; } 
 
 		/// <summary>
-		/// For `VARIATION` relationships, the variation theme is the combination of listing item attributes that
-		/// define the variation family.
+		/// For `VARIATION` relationships, the variation theme is the combination of listing item attributes
+		/// that define the variation family.
 		/// </summary>
 		[JsonProperty("variationTheme")]
 		public ItemVariationTheme VariationTheme { get; set; } 

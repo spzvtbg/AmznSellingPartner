@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public class InventorySummary : BaseClass
 	{
 		/// <summary>
-		/// The expiration details of the inventory. This object will only appear if the `details` parameter in the
-		/// request is set to `SHOW`.
+		/// The expiration details of the inventory. This object will only appear if the `details` parameter
+		/// in the request is set to `SHOW`.
 		/// </summary>
 		[JsonProperty("expirationDetails")]
 		public List<ExpirationDetails> ExpirationDetails { get; set; } 

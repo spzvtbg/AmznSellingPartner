@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Vendor details associated with an Amazon catalog item for the indicated Amazon marketplace.
+	/// Vendor details associated with an Amazon catalog item for the indicated Amazon marketplace
+	/// .
 	/// </summary>
 	public class ItemVendorDetailsByMarketplace : BaseClass
 	{

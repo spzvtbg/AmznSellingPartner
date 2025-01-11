@@ -13,7 +13,8 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 	public class Feed : BaseClass
 	{
 		/// <summary>
-		/// The identifier for the feed. This identifier is unique only in combination with a seller ID.
+		/// The identifier for the feed. This identifier is unique only in combination with a seller I
+		/// D.
 		/// </summary>
 		[JsonProperty("feedId")]
 		[IsRequired]
@@ -59,8 +60,8 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		public DateTimeValue ProcessingEndTime { get; set; } 
 
 		/// <summary>
-		/// The identifier for the feed document. This identifier is unique only in combination with a seller ID
-		/// .
+		/// The identifier for the feed document. This identifier is unique only in combination with a
+		/// seller ID.
 		/// </summary>
 		[JsonProperty("resultFeedDocumentId")]
 		public string ResultFeedDocumentId { get; set; } 

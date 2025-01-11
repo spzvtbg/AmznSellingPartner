@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	public enum Type
 	{
 		/// <summary>
-		/// An additional tax on something already taxed, such as a higher rate of tax on incomes above a certain
-		/// level.
+		/// An additional tax on something already taxed, such as a higher rate of tax on incomes above
+		/// a certain level.
 		/// </summary>
 		[EnumMember(Value = "SUR")]
 		SUR,
@@ -160,8 +160,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		PaymentDueUponReceiptOfInvoice,
 
 		/// <summary>
-		/// A payment undertaking given by a bank to the seller and is issued on behalf of the applicant i.e. the
-		/// buyer.
+		/// A payment undertaking given by a bank to the seller and is issued on behalf of the applicant
+		/// i.e. the buyer.
 		/// </summary>
 		[EnumMember(Value = "LetterofCredit")]
 		LetterofCredit,

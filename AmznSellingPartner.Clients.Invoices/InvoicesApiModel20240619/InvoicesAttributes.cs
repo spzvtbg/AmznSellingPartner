@@ -22,7 +22,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public List<AttributeOption> InvoiceTypeOptions { get; set; } 
 
 		/// <summary>
-		/// A list of all the options that are available for the transaction identifier name attribute.
+		/// A list of all the options that are available for the transaction identifier name attribute
+		/// .
 		/// </summary>
 		[JsonProperty("transactionIdentifierNameOptions")]
 		public List<AttributeOption> TransactionIdentifierNameOptions { get; set; } 

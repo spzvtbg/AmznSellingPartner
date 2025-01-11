@@ -31,8 +31,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public FieldType FieldType { get; set; } 
 
 		/// <summary>
-		/// The content of the field as collected in regulatory form. Note that `FileAttachment` type fields contain
-		/// a URL where you can download the attachment.
+		/// The content of the field as collected in regulatory form. Note that `FileAttachment` type fields
+		/// contain a URL where you can download the attachment.
 		/// </summary>
 		[JsonProperty("FieldValue")]
 		[IsRequired]

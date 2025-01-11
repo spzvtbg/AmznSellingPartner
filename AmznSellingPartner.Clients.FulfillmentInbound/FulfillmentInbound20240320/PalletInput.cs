@@ -13,7 +13,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Dimensions Dimensions { get; set; } 
 
 		/// <summary>
-		/// The number of containers where all other properties like weight or dimensions are identical.
+		/// The number of containers where all other properties like weight or dimensions are identica
+		/// l.
 		/// </summary>
 		[JsonProperty("quantity")]
 		[IsRequired]

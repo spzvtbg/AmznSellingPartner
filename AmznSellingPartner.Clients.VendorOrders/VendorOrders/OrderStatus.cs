@@ -11,7 +11,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class OrderStatus : BaseClass
 	{
 		/// <summary>
-		/// The buyer's purchase order number for this order. Formatting Notes: 8-character alpha-numeric code.
+		/// The buyer's purchase order number for this order. Formatting Notes: 8-character alpha-numeric
+		/// code.
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]
@@ -45,9 +46,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
-		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses for a
-		/// region on the [Resources page of Amazon Vendor Central](https://vendorcentral.amazon.com/hz/vendor/m
-		/// embers/support/help/node/GPZ88XH8HQM97ZV6).
+		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses
+		/// for a region on the [Resources page of Amazon Vendor Central](https://vendorcentral.amazon
+		/// .com/hz/vendor/members/support/help/node/GPZ88XH8HQM97ZV6).
 		/// </summary>
 		[JsonProperty("shipToParty")]
 		[IsRequired]

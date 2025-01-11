@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.Messaging.Messaging
 	public class CreateDigitalAccessKeyRequest : BaseClass
 	{
 		/// <summary>
-		/// The text that is sent to the buyer. Only links that are related to the digital access key are allowed.
-		/// Do not include HTML or email addresses. The text must be written in the buyer's preferred language, which
-		/// you can retrieve from the `GetAttributes` operation.
+		/// The text that is sent to the buyer. Only links that are related to the digital access key are
+		/// allowed. Do not include HTML or email addresses. The text must be written in the buyer's preferred
+		/// language, which you can retrieve from the `GetAttributes` operation.
 		/// </summary>
 		[JsonProperty("text")]
 		[MinLength(1)]

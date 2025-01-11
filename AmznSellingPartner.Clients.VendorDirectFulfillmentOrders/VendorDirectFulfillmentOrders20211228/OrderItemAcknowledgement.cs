@@ -23,8 +23,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public string BuyerProductIdentifier { get; set; } 
 
 		/// <summary>
-		/// The vendor selected product identification of the item. Should be the same as was provided in the purchase
-		/// order.
+		/// The vendor selected product identification of the item. Should be the same as was provided
+		/// in the purchase order.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
 		public string VendorProductIdentifier { get; set; } 

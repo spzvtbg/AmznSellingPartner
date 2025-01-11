@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The schema for item's price information, including listing price, shipping price, and Amazon Points.
+	/// The schema for item's price information, including listing price, shipping price, and Amazon
+	/// Points.
 	/// </summary>
 	public class Price : BaseClass
 	{
@@ -23,8 +24,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		public MoneyType ShippingPrice { get; set; } 
 
 		/// <summary>
-		/// The number of Amazon Points that are offered with the purchase of an item and the monetary value of these
-		/// points.
+		/// The number of Amazon Points that are offered with the purchase of an item and the monetary
+		/// value of these points.
 		/// </summary>
 		[JsonProperty("points")]
 		public Points Points { get; set; } 

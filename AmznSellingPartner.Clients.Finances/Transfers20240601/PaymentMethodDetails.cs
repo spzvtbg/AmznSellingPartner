@@ -32,9 +32,9 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		public ExpiryDate ExpiryDate { get; set; } 
 
 		/// <summary>
-		/// The two-letter country code in ISO 3166-1 alpha-2 format. For payment methods in the `card` category,
-		/// the code is for the country where the card was issued. For payment methods in the `bank account` category,
-		/// the code is for the country where the account is located.
+		/// The two-letter country code in ISO 3166-1 alpha-2 format. For payment methods in the `card`
+		/// category, the code is for the country where the card was issued. For payment methods in the
+		/// `bank account` category, the code is for the country where the account is located.
 		/// </summary>
 		[JsonProperty("countryCode")]
 		public string CountryCode { get; set; } 
@@ -46,8 +46,8 @@ namespace AmznSellingPartner.Clients.Finances.Transfers20240601
 		public PaymentMethodType PaymentMethodType { get; set; } 
 
 		/// <summary>
-		/// The payment method assignment type, whether it is assigned as default to the given marketplace or no
-		/// t.
+		/// The payment method assignment type, whether it is assigned as default to the given marketplace
+		/// or not.
 		/// </summary>
 		[JsonProperty("assignmentType")]
 		public AssignmentType AssignmentType { get; set; } 

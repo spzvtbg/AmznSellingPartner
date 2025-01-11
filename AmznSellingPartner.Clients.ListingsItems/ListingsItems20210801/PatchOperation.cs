@@ -12,9 +12,9 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public class PatchOperation : BaseClass
 	{
 		/// <summary>
-		/// Type of JSON Patch operation. Supported JSON Patch operations include add, replace, and delete. Refer
-		/// to [JavaScript Object Notation (JSON) Patch](https://tools.ietf.org/html/rfc6902) for more informati
-		/// on.
+		/// Type of JSON Patch operation. Supported JSON Patch operations include add, replace, and delete.
+		/// Refer to [JavaScript Object Notation (JSON) Patch](https://tools.ietf.org/html/rfc6902) for
+		/// more information.
 		/// </summary>
 		[JsonProperty("op")]
 		[IsRequired]

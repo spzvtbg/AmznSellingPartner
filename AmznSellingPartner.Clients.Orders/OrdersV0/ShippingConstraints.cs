@@ -20,15 +20,15 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public ConstraintType SignatureConfirmation { get; set; } 
 
 		/// <summary>
-		/// Indicates that the person receiving the line item must be the same as the intended recipient of the
-		/// order.
+		/// Indicates that the person receiving the line item must be the same as the intended recipient
+		/// of the order.
 		/// </summary>
 		[JsonProperty("RecipientIdentityVerification")]
 		public ConstraintType RecipientIdentityVerification { get; set; } 
 
 		/// <summary>
-		/// Indicates that the carrier must confirm the recipient is of the legal age to receive the line item upon
-		/// delivery.
+		/// Indicates that the carrier must confirm the recipient is of the legal age to receive the line
+		/// item upon delivery.
 		/// </summary>
 		[JsonProperty("RecipientAgeVerification")]
 		public ConstraintType RecipientAgeVerification { get; set; } 

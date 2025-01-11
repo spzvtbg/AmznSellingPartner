@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public List<string> ParentAsins { get; set; } 
 
 		/// <summary>
-		/// For "VARIATION" relationships, variation theme indicating the combination of Amazon item catalog attributes
-		/// that define the variation family.
+		/// For "VARIATION" relationships, variation theme indicating the combination of Amazon item catalog
+		/// attributes that define the variation family.
 		/// </summary>
 		[JsonProperty("variationTheme")]
 		public ItemVariationTheme VariationTheme { get; set; } 

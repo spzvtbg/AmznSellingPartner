@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The misplaced or warehouse damaged inventory that is actively being confirmed at our fulfillment cen
-	/// ters.
+	/// The misplaced or warehouse damaged inventory that is actively being confirmed at our fulfillment
+	/// centers.
 	/// </summary>
 	public class ResearchingQuantityEntry : BaseClass
 	{

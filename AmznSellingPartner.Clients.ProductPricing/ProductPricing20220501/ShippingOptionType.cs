@@ -9,7 +9,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public enum ShippingOptionType
 	{
 		/// <summary>
-		/// The estimated shipping cost of the product. Note that the shipping cost is not always available.
+		/// The estimated shipping cost of the product. Note that the shipping cost is not always avai
+		/// lable.
 		/// </summary>
 		[EnumMember(Value = "DEFAULT")]
 		DEFAULT,

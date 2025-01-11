@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		public string Region { get; set; } 
 
 		/// <summary>
-		/// The identifier for the AWS account that is responsible for charges related to receiving notification
-		/// s.
+		/// The identifier for the AWS account that is responsible for charges related to receiving no
+		/// tifications.
 		/// </summary>
 		[JsonProperty("accountId")]
 		[IsRequired]

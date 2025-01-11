@@ -20,9 +20,9 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public string CustomerOrderNumber { get; set; } 
 
 		/// <summary>
-		/// The date the order was placed. This  field is expected to be in ISO-8601 date/time format, for example:2018-07-16T23:00:00Z/
-		/// 2018-07-16T23:00:00-05:00 /2018-07-16T23:00:00-08:00. If no time zone is specified, UTC should be as
-		/// sumed.
+		/// The date the order was placed. This  field is expected to be in ISO-8601 date/time format,
+		/// for example:2018-07-16T23:00:00Z/ 2018-07-16T23:00:00-05:00 /2018-07-16T23:00:00-08:00. If
+		/// no time zone is specified, UTC should be assumed.
 		/// </summary>
 		[JsonProperty("orderDate")]
 		[IsRequired]

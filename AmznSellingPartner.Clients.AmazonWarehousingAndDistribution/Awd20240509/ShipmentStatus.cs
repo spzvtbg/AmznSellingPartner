@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		SHIPPED,
 
 		/// <summary>
-		/// The carrier has notified AWD that the shipment is in transit between the origin and destination node
-		/// s.
+		/// The carrier has notified AWD that the shipment is in transit between the origin and destination
+		/// nodes.
 		/// </summary>
 		[EnumMember(Value = "IN_TRANSIT")]
 		IN_TRANSIT,
@@ -34,8 +34,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		RECEIVING,
 
 		/// <summary>
-		/// The shipment has reached the destination node and has been delivered to the facility yard. The shipment
-		/// `receive` process at the warehouse will start soon.
+		/// The shipment has reached the destination node and has been delivered to the facility yard.
+		/// The shipment `receive` process at the warehouse will start soon.
 		/// </summary>
 		[EnumMember(Value = "DELIVERED")]
 		DELIVERED,

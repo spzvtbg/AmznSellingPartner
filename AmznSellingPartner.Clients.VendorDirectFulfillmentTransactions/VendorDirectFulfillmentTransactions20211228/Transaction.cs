@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 	public class Transaction : BaseClass
 	{
 		/// <summary>
-		/// The unique identifier sent in the 'transactionId' field in response to the post request of a specific
-		/// transaction.
+		/// The unique identifier sent in the 'transactionId' field in response to the post request of
+		/// a specific transaction.
 		/// </summary>
 		[JsonProperty("transactionId")]
 		[IsRequired]
@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentTransactions.VendorD
 		public Status Status { get; set; } 
 
 		/// <summary>
-		/// Error code and message for the failed transaction. Only available when transaction status is 'Failur
-		/// e'.
+		/// Error code and message for the failed transaction. Only available when transaction status is
+		/// 'Failure'.
 		/// </summary>
 		[JsonProperty("errors")]
 		public ErrorList Errors { get; set; } 

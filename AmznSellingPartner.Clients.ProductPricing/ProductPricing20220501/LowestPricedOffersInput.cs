@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 		public Condition ItemCondition { get; set; } 
 
 		/// <summary>
-		/// The input parameter specifies the type of offers requested for `LowestPricedOffers`. This applies to
-		/// `Consumer` and `Business` offers. `Consumer` is the default `offerType`.
+		/// The input parameter specifies the type of offers requested for `LowestPricedOffers`. This applies
+		/// to `Consumer` and `Business` offers. `Consumer` is the default `offerType`.
 		/// </summary>
 		[JsonProperty("offerType")]
 		[IsRequired]

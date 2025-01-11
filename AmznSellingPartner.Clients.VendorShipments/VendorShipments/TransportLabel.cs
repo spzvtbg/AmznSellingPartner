@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public DateTimeValue LabelCreateDateTime { get; set; } 
 
 		/// <summary>
-		/// Indicates the shipment Information details like warehouse and business reference details like ARN, Selling
-		/// Party detail and Vendor Warehouse details
+		/// Indicates the shipment Information details like warehouse and business reference details like
+		/// ARN, Selling Party detail and Vendor Warehouse details
 		/// </summary>
 		[JsonProperty("shipmentInformation")]
 		public ShipmentInformation ShipmentInformation { get; set; } 

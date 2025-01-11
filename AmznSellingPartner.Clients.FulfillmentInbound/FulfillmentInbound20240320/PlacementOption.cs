@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Contains information pertaining to the placement of the contents of an inbound plan and the related
-	/// costs.
+	/// Contains information pertaining to the placement of the contents of an inbound plan and the
+	/// related costs.
 	/// </summary>
 	public class PlacementOption : BaseClass
 	{
@@ -35,8 +35,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public List<Incentive> Fees { get; set; } 
 
 		/// <summary>
-		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
-		/// of SKUs.
+		/// The identifier of a placement option. A placement option represents the shipment splits and
+		/// destinations of SKUs.
 		/// </summary>
 		[JsonProperty("placementOptionId")]
 		[IsRequired]

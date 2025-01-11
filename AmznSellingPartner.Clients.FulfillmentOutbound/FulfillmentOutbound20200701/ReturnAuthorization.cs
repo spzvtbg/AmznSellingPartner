@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class ReturnAuthorization : BaseClass
 	{
 		/// <summary>
-		/// An identifier for the return authorization. This identifier associates return items with the return authorization
-		/// used to return them.
+		/// An identifier for the return authorization. This identifier associates return items with the
+		/// return authorization used to return them.
 		/// </summary>
 		[JsonProperty("returnAuthorizationId")]
 		[IsRequired]
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string AmazonRmaId { get; set; } 
 
 		/// <summary>
-		/// A URL for a web page that contains the return authorization barcode and the mailing label. This does
-		/// not include pre-paid shipping.
+		/// A URL for a web page that contains the return authorization barcode and the mailing label.
+		/// This does not include pre-paid shipping.
 		/// </summary>
 		[JsonProperty("rmaPageURL")]
 		[IsRequired]

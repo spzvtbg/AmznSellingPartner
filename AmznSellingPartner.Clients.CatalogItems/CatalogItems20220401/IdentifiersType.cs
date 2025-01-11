@@ -45,8 +45,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		MINSAN,
 
 		/// <summary>
-		/// Stock Keeping Unit, a seller-specified identifier for an Amazon listing. **Note:** Must be accompanied
-		/// by `sellerId`.
+		/// Stock Keeping Unit, a seller-specified identifier for an Amazon listing. **Note:** Must be
+		/// accompanied by `sellerId`.
 		/// </summary>
 		[EnumMember(Value = "SKU")]
 		SKU,

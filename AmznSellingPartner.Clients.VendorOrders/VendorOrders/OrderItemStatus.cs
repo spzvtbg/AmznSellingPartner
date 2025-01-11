@@ -5,12 +5,14 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents the current status of an order item, including acknowledgement and receiving details.
+	/// Represents the current status of an order item, including acknowledgement and receiving de
+	/// tails.
 	/// </summary>
 	public class OrderItemStatus : BaseClass
 	{
 		/// <summary>
-		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
+		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so
+		/// on.
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]

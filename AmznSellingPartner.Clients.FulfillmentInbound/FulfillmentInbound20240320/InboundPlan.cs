@@ -53,26 +53,26 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Name { get; set; } 
 
 		/// <summary>
-		/// Packing options for the inbound plan. This property will be populated when it has been generated via
-		/// the corresponding operation. If there is a chosen placement option, only packing options for that placement
-		/// option will be returned. If there are confirmed shipments, only packing options for those shipments will
-		/// be returned. Query the packing option for more details.
+		/// Packing options for the inbound plan. This property will be populated when it has been generated
+		/// via the corresponding operation. If there is a chosen placement option, only packing options
+		/// for that placement option will be returned. If there are confirmed shipments, only packing
+		/// options for those shipments will be returned. Query the packing option for more details.
 		/// </summary>
 		[JsonProperty("packingOptions")]
 		public List<PackingOptionSummary> PackingOptions { get; set; } 
 
 		/// <summary>
-		/// Placement options for the inbound plan. This property will be populated when it has been generated via
-		/// the corresponding operation. If there is a chosen placement option, that will be the only returned option.
-		/// Query the placement option for more details.
+		/// Placement options for the inbound plan. This property will be populated when it has been generated
+		/// via the corresponding operation. If there is a chosen placement option, that will be the only
+		/// returned option. Query the placement option for more details.
 		/// </summary>
 		[JsonProperty("placementOptions")]
 		public List<PlacementOptionSummary> PlacementOptions { get; set; } 
 
 		/// <summary>
-		/// A list of shipment IDs for the inbound plan. This property is populated when it has been generated with
-		/// the `confirmPlacementOptions` operation. Only shipments from the chosen placement option are returned.
-		/// Query the shipment for more details.
+		/// A list of shipment IDs for the inbound plan. This property is populated when it has been generated
+		/// with the `confirmPlacementOptions` operation. Only shipments from the chosen placement option
+		/// are returned. Query the shipment for more details.
 		/// </summary>
 		[JsonProperty("shipments")]
 		public List<ShipmentSummary> Shipments { get; set; } 
@@ -82,7 +82,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Address SourceAddress { get; set; } 
 
 		/// <summary>
-		/// Current status of the inbound plan. Possible values: `ACTIVE`, `VOIDED`, `SHIPPED`, `ERRORED`.
+		/// Current status of the inbound plan. Possible values: `ACTIVE`, `VOIDED`, `SHIPPED`, `ERROR
+		/// ED`.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]

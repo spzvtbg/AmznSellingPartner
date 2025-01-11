@@ -4,12 +4,14 @@
 
     using Newtonsoft.Json;
 
+    using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class CsProperty
     {
         [JsonProperty]
-        protected Dictionary<string, string> attributes = [];
+        protected ICollection<KeyValuePair<string, string>> attributes = [];
 
         [JsonProperty]
         protected ICollection<string> usings = [];
@@ -26,17 +28,24 @@
         [JsonProperty]
         public string Name { get; set; }
 
-        internal IDictionary<string, string> GetAttributes()
-            => this.attributes;
-
         internal IEnumerable<string> GetUsings() => this.usings;
 
         internal CsProperty HasAttribute(string name, object value = default)
         {
             if (!string.IsNullOrWhiteSpace(name))
             {
-                this.attributes[name] = value?.ToString();
+                this.attributes.Add(new KeyValuePair<string, string>(name, value?.ToString()));
                 this.usings.Add("AmznSellingPartner.Clients.Attributes");
+            }
+
+            return this;
+        }
+
+        internal CsProperty HasAttribute(CsProperty csProperty)
+        {
+            foreach (var (name, parameter) in csProperty.attributes ?? [])
+            {
+                this.HasAttribute(name, parameter);
             }
 
             return this;
@@ -54,20 +63,24 @@
 
         internal CsProperty HasDescription(string description)
         {
-            if (!string.IsNullOrWhiteSpace(description))
-            {
-                this.description = description;
-            }
+            this.description = $"{this.description?.Trim()} {description?.Trim()}".Trim();
+
+            return this;
+        }
+
+        internal CsProperty HasDescription(CsProperty csProperty)
+        {
+            this.HasDescription(csProperty?.description);
 
             return this;
         }
 
         internal CsProperty HasJsonProperty(bool addJsonPropertyAttribute)
         {
-            if (addJsonPropertyAttribute && !this.attributes.ContainsKey("JsonProperty"))
+            if (addJsonPropertyAttribute && !this.attributes.Any(x => x.Key == "JsonProperty"))
             {
                 this.usings.Add("Newtonsoft.Json");
-                this.attributes["JsonProperty"] = $"\"{this.Name}\"";
+                this.attributes.Add(new KeyValuePair<string, string>("JsonProperty", $"\"{this.Name}\""));
             }
 
             return this;

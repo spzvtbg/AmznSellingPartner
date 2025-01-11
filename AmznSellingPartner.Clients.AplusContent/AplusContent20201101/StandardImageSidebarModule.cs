@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Two images, two paragraphs, and two bulleted lists. One image is smaller and displayed in the sideba
-	/// r.
+	/// Two images, two paragraphs, and two bulleted lists. One image is smaller and displayed in the
+	/// sidebar.
 	/// </summary>
 	public class StandardImageSidebarModule : BaseClass
 	{

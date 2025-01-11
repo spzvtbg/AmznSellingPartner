@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Indicates the tax specifications associated with the shipment for customs compliance purposes in certain
-	/// regions.
+	/// Indicates the tax specifications associated with the shipment for customs compliance purposes
+	/// in certain regions.
 	/// </summary>
 	public class TaxDetail : BaseClass
 	{
@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public TaxType TaxType { get; set; } 
 
 		/// <summary>
-		/// The shipper's tax registration number associated with the shipment for customs compliance purposes in
-		/// certain regions.
+		/// The shipper's tax registration number associated with the shipment for customs compliance purposes
+		/// in certain regions.
 		/// </summary>
 		[JsonProperty("taxRegistrationNumber")]
 		[IsRequired]

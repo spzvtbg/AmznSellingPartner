@@ -15,10 +15,10 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public PackageReferenceId PackageReferenceId { get; set; } 
 
 		/// <summary>
-		/// Identifies the carrier that will deliver the package. This field is required for all marketplaces. For
-		/// more information, refer to the [`CarrierCode` announcement](https://developer-docs.amazon.com/sp-api
-		/// /changelog/carriercode-value-required-in-shipment-confirmations-for-br-mx-ca-sg-au-in-jp-marketplace
-		/// s).
+		/// Identifies the carrier that will deliver the package. This field is required for all marketplaces.
+		/// For more information, refer to the [`CarrierCode` announcement](https://developer-docs.ama
+		/// zon.com/sp-api/changelog/carriercode-value-required-in-shipment-confirmations-for-br-mx-ca
+		/// -sg-au-in-jp-marketplaces).
 		/// </summary>
 		[JsonProperty("carrierCode")]
 		[IsRequired]

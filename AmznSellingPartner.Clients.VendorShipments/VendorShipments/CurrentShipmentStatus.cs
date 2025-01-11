@@ -33,7 +33,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		Transportation_requested,
 
 		/// <summary>
-		/// Shipment is assigned to a carrier for pickup from vendor warehouse to Buyer FC / Warehouse.
+		/// Shipment is assigned to a carrier for pickup from vendor warehouse to Buyer FC / Warehouse
+		/// .
 		/// </summary>
 		[EnumMember(Value = "Carrier assigned")]
 		Carrier_assigned,

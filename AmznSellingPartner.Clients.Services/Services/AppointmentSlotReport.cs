@@ -30,7 +30,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public DateTimeValue EndTime { get; set; } 
 
 		/// <summary>
-		/// A list of time windows along with associated capacity in which the service can be performed.
+		/// A list of time windows along with associated capacity in which the service can be performe
+		/// d.
 		/// </summary>
 		[JsonProperty("appointmentSlots")]
 		public List<AppointmentSlot> AppointmentSlots { get; set; } 

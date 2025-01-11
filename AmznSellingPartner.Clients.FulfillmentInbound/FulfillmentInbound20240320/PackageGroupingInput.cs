@@ -21,9 +21,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public List<BoxInput> Boxes { get; set; } 
 
 		/// <summary>
-		/// The ID of the `packingGroup` that packages are grouped according to. The `PackingGroupId` can only be
-		/// provided before placement confirmation, and it must belong to the confirmed `PackingOption`. One of `ShipmentId`
-		/// or `PackingGroupId` must be provided with every request.
+		/// The ID of the `packingGroup` that packages are grouped according to. The `PackingGroupId` can
+		/// only be provided before placement confirmation, and it must belong to the confirmed `PackingOption`.
+		/// One of `ShipmentId` or `PackingGroupId` must be provided with every request.
 		/// </summary>
 		[JsonProperty("packingGroupId")]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -32,9 +32,9 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string PackingGroupId { get; set; } 
 
 		/// <summary>
-		/// The ID of the shipment that packages are grouped according to. The `ShipmentId` can only be provided
-		/// after placement confirmation, and the shipment must belong to the confirmed placement option. One of
-		/// `ShipmentId` or `PackingGroupId` must be provided with every request.
+		/// The ID of the shipment that packages are grouped according to. The `ShipmentId` can only be
+		/// provided after placement confirmation, and the shipment must belong to the confirmed placement
+		/// option. One of `ShipmentId` or `PackingGroupId` must be provided with every request.
 		/// </summary>
 		[JsonProperty("shipmentId")]
 		[Pattern("^[a-zA-Z0-9-]*")]

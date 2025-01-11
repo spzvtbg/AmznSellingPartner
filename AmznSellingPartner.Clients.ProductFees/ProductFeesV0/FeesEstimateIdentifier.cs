@@ -3,7 +3,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// An item identifier, marketplace, time of request, and other details that identify an estimate.
+	/// An item identifier, marketplace, time of request, and other details that identify an estim
+	/// ate.
 	/// </summary>
 	public class FeesEstimateIdentifier : BaseClass
 	{

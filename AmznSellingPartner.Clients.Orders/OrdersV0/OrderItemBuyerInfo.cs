@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string OrderItemId { get; set; } 
 
 		/// <summary>
-		/// Buyer information for custom orders from the Amazon Custom program.  **Note**: This attribute is only
-		/// available for MFN (fulfilled by seller) orders.
+		/// Buyer information for custom orders from the Amazon Custom program.  **Note**: This attribute
+		/// is only available for MFN (fulfilled by seller) orders.
 		/// </summary>
 		[JsonProperty("BuyerCustomizedInfo")]
 		public BuyerCustomizedInfoDetail BuyerCustomizedInfo { get; set; } 

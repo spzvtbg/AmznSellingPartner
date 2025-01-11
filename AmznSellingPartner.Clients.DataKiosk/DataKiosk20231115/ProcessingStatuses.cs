@@ -33,7 +33,8 @@ namespace AmznSellingPartner.Clients.DataKiosk.DataKiosk20231115
 		IN_PROGRESS,
 
 		/// <summary>
-		/// The query has not yet started processing. It may be waiting for another `IN_PROGRESS` query.
+		/// The query has not yet started processing. It may be waiting for another `IN_PROGRESS` quer
+		/// y.
 		/// </summary>
 		[EnumMember(Value = "IN_QUEUE")]
 		IN_QUEUE,

@@ -5,14 +5,14 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Information about an SKU, including the count available, identifiers, and a list of overlapping SKUs
-	/// that share the same inventory pool.
+	/// Information about an SKU, including the count available, identifiers, and a list of overlapping
+	/// SKUs that share the same inventory pool.
 	/// </summary>
 	public class FeatureSku : BaseClass
 	{
 		/// <summary>
-		/// Used to identify an item in the given marketplace. `SellerSKU` is qualified by the seller's SellerId,
-		/// which is included with every operation that you submit.
+		/// Used to identify an item in the given marketplace. `SellerSKU` is qualified by the seller's
+		/// SellerId, which is included with every operation that you submit.
 		/// </summary>
 		[JsonProperty("sellerSku")]
 		public string SellerSku { get; set; } 

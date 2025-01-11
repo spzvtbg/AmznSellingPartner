@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public Address DestinationAddress { get; set; } 
 
 		/// <summary>
-		/// Client-provided reference ID that can correlate this shipment to client resources. For example, to map
-		/// this shipment to an internal bookkeeping order record.
+		/// Client-provided reference ID that can correlate this shipment to client resources. For example,
+		/// to map this shipment to an internal bookkeeping order record.
 		/// </summary>
 		[JsonProperty("externalReferenceId")]
 		public string ExternalReferenceId { get; set; } 
@@ -117,8 +117,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public DateTimeValue UpdatedAt { get; set; } 
 
 		/// <summary>
-		/// An AWD-provided reference ID that you can use to interact with the warehouse. For example, a carrier
-		/// appointment booking.
+		/// An AWD-provided reference ID that you can use to interact with the warehouse. For example,
+		/// a carrier appointment booking.
 		/// </summary>
 		[JsonProperty("warehouseReferenceId")]
 		public string WarehouseReferenceId { get; set; } 

@@ -18,19 +18,19 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		Purchased,
 
 		/// <summary>
-		/// The seller requested a label refund by calling the `cancelShipment` operation, and the refund request
-		/// is being processed by the carrier. Note: A seller can create a new shipment for an order while `Status
-		/// = RefundPending` for a canceled shipment. After you request a label refund (by calling `cancelShipment`),
-		/// the status of the order remains `Shipped`.
+		/// The seller requested a label refund by calling the `cancelShipment` operation, and the refund
+		/// request is being processed by the carrier. Note: A seller can create a new shipment for an
+		/// order while `Status = RefundPending` for a canceled shipment. After you request a label refund
+		/// (by calling `cancelShipment`), the status of the order remains `Shipped`.
 		/// </summary>
 		[EnumMember(Value = "RefundPending")]
 		RefundPending,
 
 		/// <summary>
-		/// The label refund request is rejected by the carrier. A refund request is rejected because the cancellation
-		/// window has expired or the carrier has already accepted the shipment for delivery. Cancellation policies
-		/// vary by carrier. For more information about carrier cancellation policies, refer to the Seller Central
-		/// Help for your marketplace.
+		/// The label refund request is rejected by the carrier. A refund request is rejected because the
+		/// cancellation window has expired or the carrier has already accepted the shipment for delivery.
+		/// Cancellation policies vary by carrier. For more information about carrier cancellation policies,
+		/// refer to the Seller Central Help for your marketplace.
 		/// </summary>
 		[EnumMember(Value = "RefundRejected")]
 		RefundRejected,

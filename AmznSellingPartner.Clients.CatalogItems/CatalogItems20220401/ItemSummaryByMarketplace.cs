@@ -20,7 +20,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string MarketplaceId { get; set; } 
 
 		/// <summary>
-		/// Identifies an Amazon catalog item is intended for an adult audience or is sexual in nature.
+		/// Identifies an Amazon catalog item is intended for an adult audience or is sexual in nature
+		/// .
 		/// </summary>
 		[JsonProperty("adultProduct")]
 		public bool AdultProduct { get; set; } 
@@ -74,8 +75,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string Manufacturer { get; set; } 
 
 		/// <summary>
-		/// Identifies an Amazon catalog item is memorabilia valued for its connection with historical events, culture,
-		/// or entertainment.
+		/// Identifies an Amazon catalog item is memorabilia valued for its connection with historical
+		/// events, culture, or entertainment.
 		/// </summary>
 		[JsonProperty("memorabilia")]
 		public bool Memorabilia { get; set; } 

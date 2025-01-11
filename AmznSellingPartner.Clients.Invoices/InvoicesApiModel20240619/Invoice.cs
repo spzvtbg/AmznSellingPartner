@@ -25,14 +25,15 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public string ErrorCode { get; set; } 
 
 		/// <summary>
-		/// The invoice identifier that is used by an external party. This is typically the government agency that
-		/// authorized the invoice.
+		/// The invoice identifier that is used by an external party. This is typically the government
+		/// agency that authorized the invoice.
 		/// </summary>
 		[JsonProperty("externalInvoiceId")]
 		public string ExternalInvoiceId { get; set; } 
 
 		/// <summary>
-		/// The response message from the government authority when there is an error during invoice issuance.
+		/// The response message from the government authority when there is an error during invoice i
+		/// ssuance.
 		/// </summary>
 		[JsonProperty("govResponse")]
 		public string GovResponse { get; set; } 
@@ -51,15 +52,15 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public string InvoiceType { get; set; } 
 
 		/// <summary>
-		/// Use this identifier in conjunction with `externalInvoiceId` to identify invoices from the same selle
-		/// r.
+		/// Use this identifier in conjunction with `externalInvoiceId` to identify invoices from the same
+		/// seller.
 		/// </summary>
 		[JsonProperty("series")]
 		public string Series { get; set; } 
 
 		/// <summary>
-		/// The invoice status classification. Use the `getInvoicesAttributes` operation to check invoice status
-		/// options.
+		/// The invoice status classification. Use the `getInvoicesAttributes` operation to check invoice
+		/// status options.
 		/// </summary>
 		[JsonProperty("status")]
 		public string Status { get; set; } 
@@ -71,8 +72,8 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public List<TransactionIdentifier> TransactionIds { get; set; } 
 
 		/// <summary>
-		/// Classification of the transaction that originated this invoice. Use the `getInvoicesAttributes` operation
-		/// to check `transactionType` options.
+		/// Classification of the transaction that originated this invoice. Use the `getInvoicesAttributes`
+		/// operation to check `transactionType` options.
 		/// </summary>
 		[JsonProperty("transactionType")]
 		public string TransactionType { get; set; } 

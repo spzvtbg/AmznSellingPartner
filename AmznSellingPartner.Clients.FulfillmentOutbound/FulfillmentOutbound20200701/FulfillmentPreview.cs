@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Information about a fulfillment order preview, including delivery and fee information based on shipping
-	/// method.
+	/// Information about a fulfillment order preview, including delivery and fee information based
+	/// on shipping method.
 	/// </summary>
 	public class FulfillmentPreview : BaseClass
 	{
@@ -40,8 +40,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public Weight EstimatedShippingWeight { get; set; } 
 
 		/// <summary>
-		/// The estimated fulfillment fees for this fulfillment order preview, if applicable. The fees data will
-		/// not be available for IN marketplace orders.
+		/// The estimated fulfillment fees for this fulfillment order preview, if applicable. The fees
+		/// data will not be available for IN marketplace orders.
 		/// </summary>
 		[JsonProperty("estimatedFees")]
 		public FeeList EstimatedFees { get; set; } 
@@ -53,8 +53,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public UnfulfillablePreviewItemList UnfulfillablePreviewItems { get; set; } 
 
 		/// <summary>
-		/// Error codes associated with the fulfillment order preview that indicate why the order is not fulfillable.
-		/// Error code examples:  `DeliverySLAUnavailable` `InvalidDestinationAddress`
+		/// Error codes associated with the fulfillment order preview that indicate why the order is not
+		/// fulfillable.  Error code examples:  `DeliverySLAUnavailable` `InvalidDestinationAddress`
 		/// </summary>
 		[JsonProperty("orderUnfulfillableReasons")]
 		public StringList OrderUnfulfillableReasons { get; set; } 

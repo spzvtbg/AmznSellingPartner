@@ -20,14 +20,15 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public Decimal DiscountPercent { get; set; } 
 
 		/// <summary>
-		/// The number of calendar days from the Base date (Invoice date) until the discount is no longer valid.
+		/// The number of calendar days from the Base date (Invoice date) until the discount is no longer
+		/// valid.
 		/// </summary>
 		[JsonProperty("discountDueDays")]
 		public double DiscountDueDays { get; set; } 
 
 		/// <summary>
-		/// The number of calendar days from the base date (invoice date) until the total amount on the invoice is
-		/// due.
+		/// The number of calendar days from the base date (invoice date) until the total amount on the
+		/// invoice is due.
 		/// </summary>
 		[JsonProperty("netDueDays")]
 		public double NetDueDays { get; set; } 

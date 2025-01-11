@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		public OfferProgramConfigurationPromotions Promotions { get; set; } 
 
 		/// <summary>
-		/// Determines whether the offer was automatically or manually enrolled in the program. This property is
-		/// only supported for sellers and not vendors.
+		/// Determines whether the offer was automatically or manually enrolled in the program. This property
+		/// is only supported for sellers and not vendors.
 		/// </summary>
 		[JsonProperty("enrollmentMethod")]
 		public EnrollmentMethod EnrollmentMethod { get; set; } 

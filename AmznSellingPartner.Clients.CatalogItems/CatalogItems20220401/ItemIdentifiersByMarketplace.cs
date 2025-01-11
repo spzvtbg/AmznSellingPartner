@@ -7,7 +7,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace.
+	/// Identifiers associated with the item in the Amazon catalog for the indicated Amazon market
+	/// place.
 	/// </summary>
 	public class ItemIdentifiersByMarketplace : BaseClass
 	{
@@ -19,7 +20,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public string MarketplaceId { get; set; } 
 
 		/// <summary>
-		/// Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace.
+		/// Identifiers associated with the item in the Amazon catalog for the indicated Amazon market
+		/// place.
 		/// </summary>
 		[JsonProperty("identifiers")]
 		[IsRequired]

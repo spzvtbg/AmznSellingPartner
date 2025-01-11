@@ -57,7 +57,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public Address SourceAddress { get; set; } 
 
 		/// <summary>
-		/// The current status of the inbound plan. Possible values: `ACTIVE`, `VOIDED`, `SHIPPED`, `ERRORED`.
+		/// The current status of the inbound plan. Possible values: `ACTIVE`, `VOIDED`, `SHIPPED`, `E
+		/// RRORED`.
 		/// </summary>
 		[JsonProperty("status")]
 		[IsRequired]

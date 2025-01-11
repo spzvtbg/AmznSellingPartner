@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Representing the included/excluded benefits that we offer for each ShippingOffering/Rate. Benefits being
-	/// services provided by Amazon when sellers purchase shipping through Amazon.
+	/// Representing the included/excluded benefits that we offer for each ShippingOffering/Rate. Benefits
+	/// being services provided by Amazon when sellers purchase shipping through Amazon.
 	/// </summary>
 	public class Benefits : BaseClass
 	{

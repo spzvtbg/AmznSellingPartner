@@ -8,8 +8,9 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 	public class ReservedQuantity : BaseClass
 	{
 		/// <summary>
-		/// The total number of units in Amazon's fulfillment network that are currently being picked, packed, and
-		/// shipped; or are sidelined for measurement, sampling, or other internal processes.
+		/// The total number of units in Amazon's fulfillment network that are currently being picked,
+		/// packed, and shipped; or are sidelined for measurement, sampling, or other internal process
+		/// es.
 		/// </summary>
 		[JsonProperty("totalReservedQuantity")]
 		public int TotalReservedQuantity { get; set; } 
@@ -27,7 +28,8 @@ namespace AmznSellingPartner.Clients.FbaInventory.FbaInventory
 		public int PendingTransshipmentQuantity { get; set; } 
 
 		/// <summary>
-		/// The number of units that have been sidelined at the fulfillment center for additional processing.
+		/// The number of units that have been sidelined at the fulfillment center for additional proc
+		/// essing.
 		/// </summary>
 		[JsonProperty("fcProcessingQuantity")]
 		public int FcProcessingQuantity { get; set; } 

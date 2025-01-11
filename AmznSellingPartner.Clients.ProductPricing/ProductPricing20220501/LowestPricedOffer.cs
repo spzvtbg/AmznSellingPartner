@@ -12,16 +12,16 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class LowestPricedOffer : BaseClass
 	{
 		/// <summary>
-		/// The filtering criteria that are used to retrieve the lowest priced offers that correspond to the `lowestPricedOffersInputs`
-		/// request.
+		/// The filtering criteria that are used to retrieve the lowest priced offers that correspond to
+		/// the `lowestPricedOffersInputs` request.
 		/// </summary>
 		[JsonProperty("lowestPricedOffersInput")]
 		[IsRequired]
 		public LowestPricedOffersInput LowestPricedOffersInput { get; set; } 
 
 		/// <summary>
-		/// A list of up to 20 lowest priced offers that match the criteria specified in `lowestPricedOffersInpu
-		/// t`.
+		/// A list of up to 20 lowest priced offers that match the criteria specified in `lowestPriced
+		/// OffersInput`.
 		/// </summary>
 		[JsonProperty("offers")]
 		[IsRequired]

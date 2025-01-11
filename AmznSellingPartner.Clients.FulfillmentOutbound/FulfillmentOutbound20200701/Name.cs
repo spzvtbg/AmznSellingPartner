@@ -27,7 +27,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		FBATransportationFee,
 
 		/// <summary>
-		/// Estimated COD (Cash On Delivery) fee. This fee applies only to fulfillment order previews for COD.
+		/// Estimated COD (Cash On Delivery) fee. This fee applies only to fulfillment order previews for
+		/// COD.
 		/// </summary>
 		[EnumMember(Value = "FBAFulfillmentCODFee")]
 		FBAFulfillmentCODFee,

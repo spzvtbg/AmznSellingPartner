@@ -10,9 +10,9 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class ReferencePrice : BaseClass
 	{
 		/// <summary>
-		/// The name of the reference price, such as `CompetitivePriceThreshold` and `WasPrice`. For reference price
-		/// definitions, refer to the [Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/product-pri
-		/// cing-api-v2022-05-01-use-case-guide).
+		/// The name of the reference price, such as `CompetitivePriceThreshold` and `WasPrice`. For reference
+		/// price definitions, refer to the [Use Case Guide](https://developer-docs.amazon.com/sp-api/
+		/// docs/product-pricing-api-v2022-05-01-use-case-guide).
 		/// </summary>
 		[JsonProperty("name")]
 		[IsRequired]

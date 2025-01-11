@@ -42,8 +42,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		STANDARD_HEADER_IMAGE_TEXT,
 
 		/// <summary>
-		/// Two images, two paragraphs, and two bulleted lists. One image is smaller and is displayed in the sid
-		/// ebar.
+		/// Two images, two paragraphs, and two bulleted lists. One image is smaller and is displayed in
+		/// the sidebar.
 		/// </summary>
 		[EnumMember(Value = "STANDARD_IMAGE_SIDEBAR")]
 		STANDARD_IMAGE_SIDEBAR,
@@ -55,8 +55,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		STANDARD_IMAGE_TEXT_OVERLAY,
 
 		/// <summary>
-		/// Standard images with text, presented one at a time. The user clicks on thumbnails to view each block
-		/// .
+		/// Standard images with text, presented one at a time. The user clicks on thumbnails to view each
+		/// block.
 		/// </summary>
 		[EnumMember(Value = "STANDARD_MULTIPLE_IMAGE_TEXT")]
 		STANDARD_MULTIPLE_IMAGE_TEXT,
@@ -74,7 +74,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		STANDARD_SINGLE_IMAGE_HIGHLIGHTS,
 
 		/// <summary>
-		/// A standard image with paragraphs and a bulleted list, and extra space for technical details.
+		/// A standard image with paragraphs and a bulleted list, and extra space for technical detail
+		/// s.
 		/// </summary>
 		[EnumMember(Value = "STANDARD_SINGLE_IMAGE_SPECS_DETAIL")]
 		STANDARD_SINGLE_IMAGE_SPECS_DETAIL,

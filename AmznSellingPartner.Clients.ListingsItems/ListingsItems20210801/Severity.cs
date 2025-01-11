@@ -9,15 +9,15 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public enum Severity
 	{
 		/// <summary>
-		/// Indicates an issue has occurred preventing the submission from processing, such as a validation erro
-		/// r.
+		/// Indicates an issue has occurred preventing the submission from processing, such as a validation
+		/// error.
 		/// </summary>
 		[EnumMember(Value = "ERROR")]
 		ERROR,
 
 		/// <summary>
-		/// Indicates an issue has occurred that should be reviewed, but has not prevented the submission from p
-		/// rocessing.
+		/// Indicates an issue has occurred that should be reviewed, but has not prevented the submission
+		/// from processing.
 		/// </summary>
 		[EnumMember(Value = "WARNING")]
 		WARNING,

@@ -17,7 +17,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string Name { get; set; } 
 
 		/// <summary>
-		/// The company name of the recipient.  **Note**: This attribute is only available for shipping address.
+		/// The company name of the recipient.  **Note**: This attribute is only available for shipping
+		/// address.
 		/// </summary>
 		[JsonProperty("CompanyName")]
 		public string CompanyName { get; set; } 
@@ -83,17 +84,17 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string CountryCode { get; set; } 
 
 		/// <summary>
-		/// The phone number of the buyer.  **Note**:  1. This attribute is only available for shipping address.
-		/// 2. In some cases, the buyer phone number is suppressed:  a. Phone is suppressed for all `AFN` (fulfilled
-		/// by Amazon) orders. b. Phone is suppressed for the shipped `MFN` (fulfilled by seller) order when the
-		/// current date is past the Latest Delivery Date.
+		/// The phone number of the buyer.  **Note**:  1. This attribute is only available for shipping
+		/// address. 2. In some cases, the buyer phone number is suppressed:  a. Phone is suppressed for
+		/// all `AFN` (fulfilled by Amazon) orders. b. Phone is suppressed for the shipped `MFN` (fulfilled
+		/// by seller) order when the current date is past the Latest Delivery Date.
 		/// </summary>
 		[JsonProperty("Phone")]
 		public string Phone { get; set; } 
 
 		/// <summary>
-		/// The container for address extended fields. For example, street name or street number.   **Note**: This
-		/// attribute is currently only available with Brazil shipping addresses.
+		/// The container for address extended fields. For example, street name or street number.   **Note**:
+		/// This attribute is currently only available with Brazil shipping addresses.
 		/// </summary>
 		[JsonProperty("ExtendedFields")]
 		public AddressExtendedFields ExtendedFields { get; set; } 

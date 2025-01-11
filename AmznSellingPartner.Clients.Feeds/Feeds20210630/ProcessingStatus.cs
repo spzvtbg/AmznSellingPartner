@@ -15,15 +15,15 @@ namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 		CANCELLED,
 
 		/// <summary>
-		/// The feed has completed processing. Examine the contents of the result document to determine if there
-		/// were any errors during processing.
+		/// The feed has completed processing. Examine the contents of the result document to determine
+		/// if there were any errors during processing.
 		/// </summary>
 		[EnumMember(Value = "DONE")]
 		DONE,
 
 		/// <summary>
-		/// The feed was aborted due to a fatal error. Some, none, or all of the operations within the feed may have
-		/// completed successfully.
+		/// The feed was aborted due to a fatal error. Some, none, or all of the operations within the
+		/// feed may have completed successfully.
 		/// </summary>
 		[EnumMember(Value = "FATAL")]
 		FATAL,

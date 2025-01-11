@@ -8,7 +8,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public class BuyerRequestedCancel : BaseClass
 	{
 		/// <summary>
-		/// Indicate whether the buyer has requested cancellation.  **Possible Values**: `true`, `false`.
+		/// Indicate whether the buyer has requested cancellation.  **Possible Values**: `true`, `fals
+		/// e`.
 		/// </summary>
 		[JsonProperty("IsBuyerRequestedCancel")]
 		public string IsBuyerRequestedCancel { get; set; } 

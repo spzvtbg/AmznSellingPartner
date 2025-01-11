@@ -3,7 +3,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The number of Amazon Points offered with the purchase of an item, and their monetary value.
+	/// The number of Amazon Points offered with the purchase of an item, and their monetary value
+	/// .
 	/// </summary>
 	public class PointsGrantedDetail : BaseClass
 	{

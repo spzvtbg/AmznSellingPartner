@@ -33,7 +33,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public bool IsRequired { get; set; } 
 
 		/// <summary>
-		/// A list of optional value-added services available for purchase with a shipping service offering.
+		/// A list of optional value-added services available for purchase with a shipping service off
+		/// ering.
 		/// </summary>
 		[JsonProperty("valueAddedServices")]
 		public List<ValueAddedService> ValueAddedServices { get; set; } 

@@ -19,7 +19,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Description { get; set; } 
 
 		/// <summary>
-		/// Target of the incentive. Possible values: 'Placement Services', 'Fulfillment Fee Discount'.
+		/// Target of the incentive. Possible values: 'Placement Services', 'Fulfillment Fee Discount'
+		/// .
 		/// </summary>
 		[JsonProperty("target")]
 		[IsRequired]

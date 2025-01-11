@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class UpdateReservationResponse : BaseClass
 	{
 		/// <summary>
-		/// `UpdateReservationRecord` contains only the new `reservationId` if the operation was successful. Otherwise
-		/// it will contain the reservation entity with warnings/errors.
+		/// `UpdateReservationRecord` contains only the new `reservationId` if the operation was successful.
+		/// Otherwise it will contain the reservation entity with warnings/errors.
 		/// </summary>
 		[JsonProperty("payload")]
 		public UpdateReservationRecord Payload { get; set; } 

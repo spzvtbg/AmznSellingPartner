@@ -7,13 +7,15 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// This field provides information about the enforcement actions taken by Amazon that affect the publishing
-	/// or status of a listing. It also includes details about any associated exemptions.
+	/// This field provides information about the enforcement actions taken by Amazon that affect the
+	/// publishing or status of a listing. It also includes details about any associated exemption
+	/// s.
 	/// </summary>
 	public class IssueEnforcements : BaseClass
 	{
 		/// <summary>
-		/// List of enforcement actions taken by Amazon that affect the publishing or status of a listing.
+		/// List of enforcement actions taken by Amazon that affect the publishing or status of a list
+		/// ing.
 		/// </summary>
 		[JsonProperty("actions")]
 		[IsRequired]

@@ -8,7 +8,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class SubmitFulfillmentOrderStatusUpdateResponse : BaseClass
 	{
 		/// <summary>
-		/// One or more unexpected errors occurred during the `SubmitFulfillmentOrderStatusUpdate` operation.
+		/// One or more unexpected errors occurred during the `SubmitFulfillmentOrderStatusUpdate` ope
+		/// ration.
 		/// </summary>
 		[JsonProperty("errors")]
 		public ErrorList Errors { get; set; } 

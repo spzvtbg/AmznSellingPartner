@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The self ship appointment time slots availability and an expiration date for which the slots can be
-	/// scheduled.
+	/// The self ship appointment time slots availability and an expiration date for which the slots
+	/// can be scheduled.
 	/// </summary>
 	public class SelfShipAppointmentSlotsAvailability : BaseClass
 	{

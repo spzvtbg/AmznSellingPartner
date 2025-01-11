@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	public class OrderedQuantityDetails : BaseClass
 	{
 		/// <summary>
-		/// The date when the line item quantity was updated by buyer. Must be in ISO-8601 date/time format.
+		/// The date when the line item quantity was updated by buyer. Must be in ISO-8601 date/time f
+		/// ormat.
 		/// </summary>
 		[JsonProperty("updatedDate")]
 		public DateTimeValue UpdatedDate { get; set; } 

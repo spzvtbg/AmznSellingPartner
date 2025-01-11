@@ -14,8 +14,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public OrderItemList OrderItems { get; set; } 
 
 		/// <summary>
-		/// When present and not empty, pass this string token in the next request to return the next response p
-		/// age.
+		/// When present and not empty, pass this string token in the next request to return the next response
+		/// page.
 		/// </summary>
 		[JsonProperty("NextToken")]
 		public string NextToken { get; set; } 

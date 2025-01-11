@@ -18,17 +18,17 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 		public string Name { get; set; } 
 
 		/// <summary>
-		/// The AWS region in which you receive the notifications. For AWS regions that are supported in Amazon EventBridge,
-		/// refer to [Amazon EventBridge endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ev.
-		/// html).
+		/// The AWS region in which you receive the notifications. For AWS regions that are supported in
+		/// Amazon EventBridge, refer to [Amazon EventBridge endpoints and quotas](https://docs.aws.am
+		/// azon.com/general/latest/gr/ev.html).
 		/// </summary>
 		[JsonProperty("region")]
 		[IsRequired]
 		public string Region { get; set; } 
 
 		/// <summary>
-		/// The identifier for the AWS account that is responsible for charges related to receiving notification
-		/// s.
+		/// The identifier for the AWS account that is responsible for charges related to receiving no
+		/// tifications.
 		/// </summary>
 		[JsonProperty("accountId")]
 		[IsRequired]

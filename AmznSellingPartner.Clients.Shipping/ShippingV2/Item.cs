@@ -58,9 +58,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public InvoiceDetails InvoiceDetails { get; set; } 
 
 		/// <summary>
-		/// A list of unique serial numbers in an Amazon package that can be used to guarantee non-fraudulent items.
-		/// The number of serial numbers in the list must be less than or equal to the quantity of items being shipped.
-		/// Only applicable when channel source is Amazon.
+		/// A list of unique serial numbers in an Amazon package that can be used to guarantee non-fraudulent
+		/// items. The number of serial numbers in the list must be less than or equal to the quantity
+		/// of items being shipped. Only applicable when channel source is Amazon.
 		/// </summary>
 		[JsonProperty("serialNumbers")]
 		public List<string> SerialNumbers { get; set; } 

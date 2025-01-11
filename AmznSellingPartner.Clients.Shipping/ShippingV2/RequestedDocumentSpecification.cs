@@ -7,9 +7,9 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The document specifications requested. For calls to the purchaseShipment operation, the shipment purchase
-	/// fails if the specified document specifications are not among those returned in the response to the getRates
-	/// operation.
+	/// The document specifications requested. For calls to the purchaseShipment operation, the shipment
+	/// purchase fails if the specified document specifications are not among those returned in the
+	/// response to the getRates operation.
 	/// </summary>
 	public class RequestedDocumentSpecification : BaseClass
 	{

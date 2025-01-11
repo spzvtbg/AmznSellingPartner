@@ -19,8 +19,8 @@ namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 		PERFORMANCE,
 
 		/// <summary>
-		/// Indicates forecasted metrics. Only `TOTAL_SUBSCRIPTIONS_REVENUE` and `SHIPPED_SUBSCRIPTION_UNITS` are
-		/// supported. Forecast data is supported for sellers but not for vendors.
+		/// Indicates forecasted metrics. Only `TOTAL_SUBSCRIPTIONS_REVENUE` and `SHIPPED_SUBSCRIPTION_UNITS`
+		/// are supported. Forecast data is supported for sellers but not for vendors.
 		/// </summary>
 		[EnumMember(Value = "FORECAST")]
 		FORECAST,

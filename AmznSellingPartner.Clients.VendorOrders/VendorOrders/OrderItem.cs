@@ -5,13 +5,14 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Represents an individual item in an order, including item details, quantities, pricing, and backorder
-	/// information.
+	/// Represents an individual item in an order, including item details, quantities, pricing, and
+	/// backorder information.
 	/// </summary>
 	public class OrderItem : BaseClass
 	{
 		/// <summary>
-		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
+		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so
+		/// on.
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]

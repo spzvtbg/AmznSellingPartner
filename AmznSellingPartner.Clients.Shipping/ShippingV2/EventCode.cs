@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public enum EventCode
 	{
 		/// <summary>
-		/// Package has been created and is ready for pickup at the shippers location. This is a pre-transit status
-		/// event code.
+		/// Package has been created and is ready for pickup at the shippers location. This is a pre-transit
+		/// status event code.
 		/// </summary>
 		[EnumMember(Value = "ReadyForReceive")]
 		ReadyForReceive,

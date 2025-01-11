@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// `UpdateScheduleRecord` entity contains the `AvailabilityRecord` if there is an error/warning while performing
-	/// the requested operation on it.
+	/// `UpdateScheduleRecord` entity contains the `AvailabilityRecord` if there is an error/warning
+	/// while performing the requested operation on it.
 	/// </summary>
 	public class UpdateScheduleRecord : BaseClass
 	{

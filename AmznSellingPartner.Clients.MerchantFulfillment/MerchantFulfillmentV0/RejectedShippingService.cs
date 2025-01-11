@@ -31,7 +31,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public ShippingServiceIdentifier ShippingServiceId { get; set; } 
 
 		/// <summary>
-		/// A reason code meant to be consumed programatically. For example, `CARRIER_CANNOT_SHIP_TO_POBOX`.
+		/// A reason code meant to be consumed programatically. For example, `CARRIER_CANNOT_SHIP_TO_P
+		/// OBOX`.
 		/// </summary>
 		[JsonProperty("RejectionReasonCode")]
 		[IsRequired]

@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		BASE_PRODUCT,
 
 		/// <summary>
-		/// Represents an item in the Amazon catalog that is not `BASE_PRODUCT`, `PRODUCT_BUNDLE`, or `VARIATION
-		/// _PARENT`.
+		/// Represents an item in the Amazon catalog that is not `BASE_PRODUCT`, `PRODUCT_BUNDLE`, or
+		/// `VARIATION_PARENT`.
 		/// </summary>
 		[EnumMember(Value = "OTHER")]
 		OTHER,

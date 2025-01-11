@@ -64,7 +64,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public Timestamp StatusChangedDate { get; set; } 
 
 		/// <summary>
-		/// Identifies the return authorization used to return this item. Refer to `ReturnAuthorization`.
+		/// Identifies the return authorization used to return this item. Refer to `ReturnAuthorizatio
+		/// n`.
 		/// </summary>
 		[JsonProperty("returnAuthorizationId")]
 		public string ReturnAuthorizationId { get; set; } 

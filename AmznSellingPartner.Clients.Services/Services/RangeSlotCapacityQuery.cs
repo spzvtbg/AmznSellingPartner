@@ -8,13 +8,14 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Request schema for the `getRangeSlotCapacity` operation. This schema is used to define the time range
-	/// and capacity types that are being queried.
+	/// Request schema for the `getRangeSlotCapacity` operation. This schema is used to define the
+	/// time range and capacity types that are being queried.
 	/// </summary>
 	public class RangeSlotCapacityQuery : BaseClass
 	{
 		/// <summary>
-		/// An array of capacity types which are being requested. Default value is `[SCHEDULED_CAPACITY]`.
+		/// An array of capacity types which are being requested. Default value is `[SCHEDULED_CAPACIT
+		/// Y]`.
 		/// </summary>
 		[JsonProperty("capacityTypes")]
 		public List<CapacityType> CapacityTypes { get; set; } 

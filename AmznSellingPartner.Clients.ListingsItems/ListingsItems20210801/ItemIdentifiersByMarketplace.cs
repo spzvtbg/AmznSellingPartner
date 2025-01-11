@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Identity attributes associated with the item in the Amazon catalog for the indicated Amazon marketpl
-	/// ace.
+	/// Identity attributes associated with the item in the Amazon catalog for the indicated Amazon
+	/// marketplace.
 	/// </summary>
 	public class ItemIdentifiersByMarketplace : BaseClass
 	{

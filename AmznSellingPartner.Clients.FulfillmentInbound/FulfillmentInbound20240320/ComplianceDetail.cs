@@ -18,8 +18,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Asin { get; set; } 
 
 		/// <summary>
-		/// The Fulfillment Network SKU, which identifies a real fulfillable item with catalog data and conditio
-		/// n.
+		/// The Fulfillment Network SKU, which identifies a real fulfillable item with catalog data and
+		/// condition.
 		/// </summary>
 		[JsonProperty("fnsku")]
 		[MinLength(1)]

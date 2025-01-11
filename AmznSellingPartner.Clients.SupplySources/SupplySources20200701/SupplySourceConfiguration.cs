@@ -11,8 +11,8 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 		public OperationalConfiguration OperationalConfiguration { get; set; } 
 
 		/// <summary>
-		/// Please see RFC 6557, should be a canonical time zone ID as listed here: https://www.joda.org/joda-ti
-		/// me/timezones.html.
+		/// Please see RFC 6557, should be a canonical time zone ID as listed here: https://www.joda.o
+		/// rg/joda-time/timezones.html.
 		/// </summary>
 		[JsonProperty("timezone")]
 		public string Timezone { get; set; } 

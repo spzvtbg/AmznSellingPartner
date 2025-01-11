@@ -73,8 +73,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		public string PostalCode { get; set; } 
 
 		/// <summary>
-		/// State or region where this address is located. Note that this is contextual to the specified country
-		/// code.
+		/// State or region where this address is located. Note that this is contextual to the specified
+		/// country code.
 		/// </summary>
 		[JsonProperty("stateOrRegion")]
 		[IsRequired]

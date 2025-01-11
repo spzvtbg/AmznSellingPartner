@@ -32,8 +32,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string OrderItemId { get; set; } 
 
 		/// <summary>
-		/// A list of associated items that a customer has purchased with a product. For example, a tire installation
-		/// service purchased with tires.
+		/// A list of associated items that a customer has purchased with a product. For example, a tire
+		/// installation service purchased with tires.
 		/// </summary>
 		[JsonProperty("AssociatedItems")]
 		public List<AssociatedItem> AssociatedItems { get; set; } 
@@ -70,9 +70,9 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public PointsGrantedDetail PointsGranted { get; set; } 
 
 		/// <summary>
-		/// The selling price of the order item. Note that an order item is an item and a quantity. This means that
-		/// the value of `ItemPrice` is equal to the selling price of the item multiplied by the quantity ordered.
-		/// `ItemPrice` excludes `ShippingPrice` and GiftWrapPrice.
+		/// The selling price of the order item. Note that an order item is an item and a quantity. This
+		/// means that the value of `ItemPrice` is equal to the selling price of the item multiplied by
+		/// the quantity ordered. `ItemPrice` excludes `ShippingPrice` and GiftWrapPrice.
 		/// </summary>
 		[JsonProperty("ItemPrice")]
 		public Money ItemPrice { get; set; } 
@@ -147,38 +147,39 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string ConditionNote { get; set; } 
 
 		/// <summary>
-		/// The condition of the item.  **Possible values**: `New`, `Used`, `Collectible`, `Refurbished`, `Preorder`,
-		/// and `Club`.
+		/// The condition of the item.  **Possible values**: `New`, `Used`, `Collectible`, `Refurbished`,
+		/// `Preorder`, and `Club`.
 		/// </summary>
 		[JsonProperty("ConditionId")]
 		public string ConditionId { get; set; } 
 
 		/// <summary>
 		/// The subcondition of the item.  **Possible values**: `New`, `Mint`, `Very Good`, `Good`, `Acceptable`,
-		/// `Poor`, `Club`, `OEM`, `Warranty`, `Refurbished Warranty`, `Refurbished`, `Open Box`, `Any`, and `Ot
-		/// her`.
+		/// `Poor`, `Club`, `OEM`, `Warranty`, `Refurbished Warranty`, `Refurbished`, `Open Box`, `Any`,
+		/// and `Other`.
 		/// </summary>
 		[JsonProperty("ConditionSubtypeId")]
 		public string ConditionSubtypeId { get; set; } 
 
 		/// <summary>
-		/// The start date of the scheduled delivery window in the time zone for the order destination. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
-		/// date time format.
+		/// The start date of the scheduled delivery window in the time zone for the order destination.
+		/// In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date time format.
 		/// </summary>
 		[JsonProperty("ScheduledDeliveryStartDate")]
 		public string ScheduledDeliveryStartDate { get; set; } 
 
 		/// <summary>
-		/// The end date of the scheduled delivery window in the time zone for the order destination. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
-		/// date time format.
+		/// The end date of the scheduled delivery window in the time zone for the order destination. In
+		/// [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601) date time format.
 		/// </summary>
 		[JsonProperty("ScheduledDeliveryEndDate")]
 		public string ScheduledDeliveryEndDate { get; set; } 
 
 		/// <summary>
-		/// Indicates that the selling price is a special price that is only available for Amazon Business orders.
-		/// For more information about the Amazon Business Seller Program, refer to the [Amazon Business website](https://www.amazon.com/b2b/info/amazon-business).
-		/// **Possible values**: `BusinessPrice`
+		/// Indicates that the selling price is a special price that is only available for Amazon Business
+		/// orders. For more information about the Amazon Business Seller Program, refer to the [Amazon
+		/// Business website](https://www.amazon.com/b2b/info/amazon-business).   **Possible values**:
+		/// `BusinessPrice`
 		/// </summary>
 		[JsonProperty("PriceDesignation")]
 		public string PriceDesignation { get; set; } 
@@ -190,26 +191,27 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public TaxCollection TaxCollection { get; set; } 
 
 		/// <summary>
-		/// When true, the product type for this item has a serial number.   Only returned for Amazon Easy Ship
-		/// orders.
+		/// When true, the product type for this item has a serial number.   Only returned for Amazon Easy
+		/// Ship orders.
 		/// </summary>
 		[JsonProperty("SerialNumberRequired")]
 		public bool SerialNumberRequired { get; set; } 
 
 		/// <summary>
-		/// When true, the ASIN is enrolled in Transparency. The Transparency serial number that you must submit
-		/// is determined by:  **1D or 2D Barcode:** This has a **T** logo. Submit either the 29-character alpha-numeric
-		/// identifier beginning with **AZ** or **ZA**, or the 38-character Serialized Global Trade Item Number (SGTIN).
-		/// **2D Barcode SN:** Submit the 7- to 20-character serial number barcode, which likely has the prefix **SN**.
-		/// The serial number is applied to the same side of the packaging as the GTIN (UPC/EAN/ISBN) barcode. **QR
-		/// code SN:** Submit the URL that the QR code generates.
+		/// When true, the ASIN is enrolled in Transparency. The Transparency serial number that you must
+		/// submit is determined by:  **1D or 2D Barcode:** This has a **T** logo. Submit either the 29-character
+		/// alpha-numeric identifier beginning with **AZ** or **ZA**, or the 38-character Serialized Global
+		/// Trade Item Number (SGTIN). **2D Barcode SN:** Submit the 7- to 20-character serial number barcode,
+		/// which likely has the prefix **SN**. The serial number is applied to the same side of the packaging
+		/// as the GTIN (UPC/EAN/ISBN) barcode. **QR code SN:** Submit the URL that the QR code genera
+		/// tes.
 		/// </summary>
 		[JsonProperty("IsTransparency")]
 		public bool IsTransparency { get; set; } 
 
 		/// <summary>
-		/// The IOSS number of the marketplace. Sellers shipping to the EU from outside the EU must provide this
-		/// IOSS number to their carrier when Amazon has collected the VAT on the sale.
+		/// The IOSS number of the marketplace. Sellers shipping to the EU from outside the EU must provide
+		/// this IOSS number to their carrier when Amazon has collected the VAT on the sale.
 		/// </summary>
 		[JsonProperty("IossNumber")]
 		public string IossNumber { get; set; } 
@@ -221,16 +223,16 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string StoreChainStoreId { get; set; } 
 
 		/// <summary>
-		/// The category of deemed reseller. This applies to selling partners that are not based in the EU and is
-		/// used to help them meet the VAT Deemed Reseller tax laws in the EU and UK.
+		/// The category of deemed reseller. This applies to selling partners that are not based in the
+		/// EU and is used to help them meet the VAT Deemed Reseller tax laws in the EU and UK.
 		/// </summary>
 		[JsonProperty("DeemedResellerCategory")]
 		public DeemedResellerCategory DeemedResellerCategory { get; set; } 
 
 		/// <summary>
-		/// A single item's buyer information.  **Note**: The `BuyerInfo` contains restricted data. Use the Restricted
-		/// Data Token (RDT) and restricted SPDS roles to access the restricted data in `BuyerInfo`. For example,
-		/// `BuyerCustomizedInfo` and `GiftMessageText`.
+		/// A single item's buyer information.  **Note**: The `BuyerInfo` contains restricted data. Use
+		/// the Restricted Data Token (RDT) and restricted SPDS roles to access the restricted data in
+		/// `BuyerInfo`. For example, `BuyerCustomizedInfo` and `GiftMessageText`.
 		/// </summary>
 		[JsonProperty("BuyerInfo")]
 		public ItemBuyerInfo BuyerInfo { get; set; } 
@@ -242,15 +244,15 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public BuyerRequestedCancel BuyerRequestedCancel { get; set; } 
 
 		/// <summary>
-		/// A list of serial numbers for electronic products that are shipped to customers. Returned for FBA orders
-		/// only.
+		/// A list of serial numbers for electronic products that are shipped to customers. Returned for
+		/// FBA orders only.
 		/// </summary>
 		[JsonProperty("SerialNumbers")]
 		public List<string> SerialNumbers { get; set; } 
 
 		/// <summary>
-		/// Substitution preferences for the order item. This is an optional field that is only present if a seller
-		/// supports substitutions, as is the case with some grocery sellers.
+		/// Substitution preferences for the order item. This is an optional field that is only present
+		/// if a seller supports substitutions, as is the case with some grocery sellers.
 		/// </summary>
 		[JsonProperty("SubstitutionPreferences")]
 		public SubstitutionPreferences SubstitutionPreferences { get; set; } 

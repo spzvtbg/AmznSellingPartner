@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Identifier associated with the item in the Amazon catalog, such as a UPC or EAN identifier.
+	/// Identifier associated with the item in the Amazon catalog, such as a UPC or EAN identifier
+	/// .
 	/// </summary>
 	public class ItemIdentifier : BaseClass
 	{

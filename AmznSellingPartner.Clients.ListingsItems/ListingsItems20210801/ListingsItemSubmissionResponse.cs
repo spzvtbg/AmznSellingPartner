@@ -7,7 +7,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Response containing the results of a submission to the Selling Partner API for Listings Items.
+	/// Response containing the results of a submission to the Selling Partner API for Listings It
+	/// ems.
 	/// </summary>
 	public class ListingsItemSubmissionResponse : BaseClass
 	{

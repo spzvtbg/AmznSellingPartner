@@ -23,19 +23,22 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public Money CodCharge { get; set; } 
 
 		/// <summary>
-		/// The amount of the tax on the COD charge to be collected from the recipient for a COD order.
+		/// The amount of the tax on the COD charge to be collected from the recipient for a COD order
+		/// .
 		/// </summary>
 		[JsonProperty("codChargeTax")]
 		public Money CodChargeTax { get; set; } 
 
 		/// <summary>
-		/// The amount of the tax on the COD charge to be collected from the recipient for a COD order.
+		/// The amount of the tax on the COD charge to be collected from the recipient for a COD order
+		/// .
 		/// </summary>
 		[JsonProperty("shippingCharge")]
 		public Money ShippingCharge { get; set; } 
 
 		/// <summary>
-		/// The amount of the tax on the shipping charge to be collected from the recipient for a COD order.
+		/// The amount of the tax on the shipping charge to be collected from the recipient for a COD
+		/// order.
 		/// </summary>
 		[JsonProperty("shippingChargeTax")]
 		public Money ShippingChargeTax { get; set; } 

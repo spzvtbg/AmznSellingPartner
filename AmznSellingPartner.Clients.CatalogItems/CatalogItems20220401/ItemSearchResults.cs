@@ -13,16 +13,17 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	{
 		/// <summary>
 		/// For `identifiers`-based searches, the total number of Amazon catalog items found. For `keywords`-based
-		/// searches, the estimated total number of Amazon catalog items matched by the search query (only results
-		/// up to the page count limit will be returned per request regardless of the number found).  Note: The maximum
-		/// number of items (ASINs) that can be returned and paged through is 1000.
+		/// searches, the estimated total number of Amazon catalog items matched by the search query (only
+		/// results up to the page count limit will be returned per request regardless of the number found).
+		/// Note: The maximum number of items (ASINs) that can be returned and paged through is 1000.
 		/// </summary>
 		[JsonProperty("numberOfResults")]
 		[IsRequired]
 		public int NumberOfResults { get; set; } 
 
 		/// <summary>
-		/// If available, the `nextToken` and/or `previousToken` values required to return paginated results.
+		/// If available, the `nextToken` and/or `previousToken` values required to return paginated r
+		/// esults.
 		/// </summary>
 		[JsonProperty("pagination")]
 		[IsRequired]

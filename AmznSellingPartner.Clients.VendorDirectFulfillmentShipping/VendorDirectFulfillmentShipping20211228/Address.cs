@@ -60,14 +60,15 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string StateOrRegion { get; set; } 
 
 		/// <summary>
-		/// The postal code of that address. It contains a series of letters or digits or both, sometimes including
-		/// spaces or punctuation.
+		/// The postal code of that address. It contains a series of letters or digits or both, sometimes
+		/// including spaces or punctuation.
 		/// </summary>
 		[JsonProperty("postalCode")]
 		public string PostalCode { get; set; } 
 
 		/// <summary>
-		/// The two-letter country code in [ISO 3166-1 alpha-2](https://www.iban.com/country-codes) format.
+		/// The two-letter country code in [ISO 3166-1 alpha-2](https://www.iban.com/country-codes) fo
+		/// rmat.
 		/// </summary>
 		[JsonProperty("countryCode")]
 		[IsRequired]

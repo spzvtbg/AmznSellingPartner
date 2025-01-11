@@ -44,7 +44,7 @@
         {
             var line = description?.Replace('\n', ' ');
             var summary = new List<string>();
-            var maxLenght = 100;
+            var maxLenght = 90;
 
             while (line.Length > maxLenght)
             {

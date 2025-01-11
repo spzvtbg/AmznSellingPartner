@@ -15,8 +15,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		SHIPPED,
 
 		/// <summary>
-		/// Status for orders rejected due to quality issues with products on the floor, or the physical and virtual
-		/// inventory do not match.
+		/// Status for orders rejected due to quality issues with products on the floor, or the physical
+		/// and virtual inventory do not match.
 		/// </summary>
 		[EnumMember(Value = "FLOOR_DENIAL")]
 		FLOOR_DENIAL,

@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A response that contains the reference identifier for the newly created or updated outbound order. This
-	/// includes an order ID.
+	/// A response that contains the reference identifier for the newly created or updated outbound
+	/// order. This includes an order ID.
 	/// </summary>
 	public class OutboundOrderReference : BaseClass
 	{

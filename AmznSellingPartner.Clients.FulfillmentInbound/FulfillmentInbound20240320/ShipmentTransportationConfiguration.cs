@@ -24,8 +24,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public List<PalletInput> Pallets { get; set; } 
 
 		/// <summary>
-		/// The range of dates within which the seller intends to ship their items. This is the pick-up date or 'ready
-		/// to ship' date, not an estimated delivery date.
+		/// The range of dates within which the seller intends to ship their items. This is the pick-up
+		/// date or 'ready to ship' date, not an estimated delivery date.
 		/// </summary>
 		[JsonProperty("readyToShipWindow")]
 		[IsRequired]

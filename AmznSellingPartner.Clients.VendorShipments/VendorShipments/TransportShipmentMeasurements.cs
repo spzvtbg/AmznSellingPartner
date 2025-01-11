@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public class TransportShipmentMeasurements : BaseClass
 	{
 		/// <summary>
-		/// Total number of cartons present in the shipment. Provide the cartonCount only for non-palletized shi
-		/// pments.
+		/// Total number of cartons present in the shipment. Provide the cartonCount only for non-palletized
+		/// shipments.
 		/// </summary>
 		[JsonProperty("totalCartonCount")]
 		public int TotalCartonCount { get; set; } 

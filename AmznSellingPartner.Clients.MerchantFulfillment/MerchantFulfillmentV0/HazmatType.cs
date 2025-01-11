@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// Hazardous materials options for a package. Consult the terms and conditions for each carrier for more
-	/// information on hazardous materials.
+	/// Hazardous materials options for a package. Consult the terms and conditions for each carrier
+	/// for more information on hazardous materials.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum HazmatType

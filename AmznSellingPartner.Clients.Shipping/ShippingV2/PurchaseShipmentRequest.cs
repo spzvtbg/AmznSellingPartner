@@ -25,10 +25,10 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public RequestedValueAddedServiceList RequestedValueAddedServices { get; set; } 
 
 		/// <summary>
-		/// The additional inputs required to purchase a shipping offering, in JSON format. The JSON provided here
-		/// must adhere to the JSON schema that is returned in the response to the getAdditionalInputs operation.
-		/// Additional inputs are only required when indicated by the requiresAdditionalInputs property in the response
-		/// to the getRates operation.
+		/// The additional inputs required to purchase a shipping offering, in JSON format. The JSON provided
+		/// here must adhere to the JSON schema that is returned in the response to the getAdditionalInputs
+		/// operation.  Additional inputs are only required when indicated by the requiresAdditionalInputs
+		/// property in the response to the getRates operation.
 		/// </summary>
 		[JsonProperty("additionalInputs")]
 		public AdditionalInputs AdditionalInputs { get; set; } 

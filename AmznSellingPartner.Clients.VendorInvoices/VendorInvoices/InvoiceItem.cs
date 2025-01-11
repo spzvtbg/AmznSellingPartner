@@ -25,8 +25,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public string AmazonProductIdentifier { get; set; } 
 
 		/// <summary>
-		/// The vendor selected product identifier of the item. Should be the same as was provided in the purchase
-		/// order.
+		/// The vendor selected product identifier of the item. Should be the same as was provided in the
+		/// purchase order.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
 		public string VendorProductIdentifier { get; set; } 
@@ -39,25 +39,26 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public ItemQuantity InvoicedQuantity { get; set; } 
 
 		/// <summary>
-		/// The item cost to Amazon, which should match the cost on the order. Price information should not be zero
-		/// or negative. It indicates net unit price. Net cost means VAT is not included in cost. If items are priced
-		/// by weight, this cost need to be considered in conjunction with netCostUnitOfMeasure. E.g.: 5/LB
+		/// The item cost to Amazon, which should match the cost on the order. Price information should
+		/// not be zero or negative. It indicates net unit price. Net cost means VAT is not included in
+		/// cost. If items are priced by weight, this cost need to be considered in conjunction with netCostUnitOfMeasure.
+		/// E.g.: 5/LB
 		/// </summary>
 		[JsonProperty("netCost")]
 		[IsRequired]
 		public Money NetCost { get; set; } 
 
 		/// <summary>
-		/// This field represents weight unit of measure of items that are ordered by cases and supporting priced
-		/// by weight.
+		/// This field represents weight unit of measure of items that are ordered by cases and supporting
+		/// priced by weight.
 		/// </summary>
 		[JsonProperty("netCostUnitOfMeasure")]
 		public NetCostUnitOfMeasure NetCostUnitOfMeasure { get; set; } 
 
 		/// <summary>
-		/// The Amazon purchase order number for this invoiced line item. Formatting Notes: 8-character alpha-numeric
-		/// code. This value is mandatory only when invoiceType is Invoice, and is not required when invoiceType
-		/// is CreditNote.
+		/// The Amazon purchase order number for this invoiced line item. Formatting Notes: 8-character
+		/// alpha-numeric code. This value is mandatory only when invoiceType is Invoice, and is not required
+		/// when invoiceType is CreditNote.
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; } 

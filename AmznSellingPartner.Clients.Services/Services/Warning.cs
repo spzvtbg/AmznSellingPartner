@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Warning returned when the request is successful, but there are important callouts based on which API
-	/// clients should take defined actions.
+	/// Warning returned when the request is successful, but there are important callouts based on
+	/// which API clients should take defined actions.
 	/// </summary>
 	public class Warning : BaseClass
 	{

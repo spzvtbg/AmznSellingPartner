@@ -46,8 +46,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		public List<Status> Status { get; set; } 
 
 		/// <summary>
-		/// The fulfillment network stock keeping unit is an identifier used by Amazon fulfillment centers to identify
-		/// each unique item.
+		/// The fulfillment network stock keeping unit is an identifier used by Amazon fulfillment centers
+		/// to identify each unique item.
 		/// </summary>
 		[JsonProperty("fnSku")]
 		public string FnSku { get; set; } 

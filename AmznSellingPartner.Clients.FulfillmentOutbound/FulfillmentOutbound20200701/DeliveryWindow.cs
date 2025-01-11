@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The time range within which a Scheduled Delivery fulfillment order should be delivered. This is only
-	/// available in the JP marketplace.
+	/// The time range within which a Scheduled Delivery fulfillment order should be delivered. This
+	/// is only available in the JP marketplace.
 	/// </summary>
 	public class DeliveryWindow : BaseClass
 	{

@@ -26,8 +26,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string FeatureName { get; set; } 
 
 		/// <summary>
-		/// When present and not empty, pass this string token in the next request to return the next response p
-		/// age.
+		/// When present and not empty, pass this string token in the next request to return the next response
+		/// page.
 		/// </summary>
 		[JsonProperty("nextToken")]
 		public string NextToken { get; set; } 

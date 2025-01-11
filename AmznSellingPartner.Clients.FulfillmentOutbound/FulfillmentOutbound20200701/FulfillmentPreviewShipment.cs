@@ -12,15 +12,17 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	public class FulfillmentPreviewShipment : BaseClass
 	{
 		/// <summary>
-		/// The earliest date that the shipment is expected to be sent from the fulfillment center. Must be in <a
-		/// href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format.
+		/// The earliest date that the shipment is expected to be sent from the fulfillment center. Must
+		/// be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// .
 		/// </summary>
 		[JsonProperty("earliestShipDate")]
 		public Timestamp EarliestShipDate { get; set; } 
 
 		/// <summary>
-		/// The latest date that the shipment is expected to be sent from the fulfillment center. Must be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
-		/// 8601</a> format.
+		/// The latest date that the shipment is expected to be sent from the fulfillment center. Must
+		/// be in <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> format
+		/// .
 		/// </summary>
 		[JsonProperty("latestShipDate")]
 		public Timestamp LatestShipDate { get; set; } 
@@ -39,8 +41,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public Timestamp LatestArrivalDate { get; set; } 
 
 		/// <summary>
-		/// Provides additional insight into the shipment timeline when exact delivery dates are not able to be
-		/// precomputed.
+		/// Provides additional insight into the shipment timeline when exact delivery dates are not able
+		/// to be precomputed.
 		/// </summary>
 		[JsonProperty("shippingNotes")]
 		public List<string> ShippingNotes { get; set; } 

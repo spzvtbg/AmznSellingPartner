@@ -15,7 +15,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		INDIVIDUAL,
 
 		/// <summary>
-		/// Issues a business invoice to the buyer. Tax information is available in `BuyerTaxInformation`.
+		/// Issues a business invoice to the buyer. Tax information is available in `BuyerTaxInformati
+		/// on`.
 		/// </summary>
 		[EnumMember(Value = "BUSINESS")]
 		BUSINESS,

@@ -26,24 +26,24 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string MarketplaceId { get; set; } 
 
 		/// <summary>
-		/// A fulfillment order identifier submitted with the `createFulfillmentOrder` operation. Displays as the
-		/// order identifier in recipient-facing materials such as the packing slip.
+		/// A fulfillment order identifier submitted with the `createFulfillmentOrder` operation. Displays
+		/// as the order identifier in recipient-facing materials such as the packing slip.
 		/// </summary>
 		[JsonProperty("displayableOrderId")]
 		[IsRequired]
 		public string DisplayableOrderId { get; set; } 
 
 		/// <summary>
-		/// A date and time submitted with the `createFulfillmentOrder` operation. Displays as the order date in
-		/// recipient-facing materials such as the packing slip.
+		/// A date and time submitted with the `createFulfillmentOrder` operation. Displays as the order
+		/// date in recipient-facing materials such as the packing slip.
 		/// </summary>
 		[JsonProperty("displayableOrderDate")]
 		[IsRequired]
 		public Timestamp DisplayableOrderDate { get; set; } 
 
 		/// <summary>
-		/// A text block submitted with the `createFulfillmentOrder` operation. Displays in recipient-facing materials
-		/// such as the packing slip.
+		/// A text block submitted with the `createFulfillmentOrder` operation. Displays in recipient-facing
+		/// materials such as the packing slip.
 		/// </summary>
 		[JsonProperty("displayableOrderComment")]
 		[IsRequired]

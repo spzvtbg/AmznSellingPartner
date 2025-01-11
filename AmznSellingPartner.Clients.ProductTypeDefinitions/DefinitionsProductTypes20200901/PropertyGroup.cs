@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.ProductTypeDefinitions.DefinitionsProductTy
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A property group represents a logical grouping of schema properties that can be used for display or informational
-	/// purposes.
+	/// A property group represents a logical grouping of schema properties that can be used for display
+	/// or informational purposes.
 	/// </summary>
 	public class PropertyGroup : BaseClass
 	{

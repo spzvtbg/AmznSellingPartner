@@ -40,8 +40,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string Name { get; set; } 
 
 		/// <summary>
-		/// The identifier of a placement option. A placement option represents the shipment splits and destinations
-		/// of SKUs.
+		/// The identifier of a placement option. A placement option represents the shipment splits and
+		/// destinations of SKUs.
 		/// </summary>
 		[JsonProperty("placementOptionId")]
 		[IsRequired]
@@ -54,8 +54,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public SelectedDeliveryWindow SelectedDeliveryWindow { get; set; } 
 
 		/// <summary>
-		/// Identifier of a transportation option. A transportation option represent one option for how to send a
-		/// shipment.
+		/// Identifier of a transportation option. A transportation option represent one option for how
+		/// to send a shipment.
 		/// </summary>
 		[JsonProperty("selectedTransportationOptionId")]
 		[Pattern("^[a-zA-Z0-9-]*")]
@@ -92,10 +92,11 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public ShipmentSource Source { get; set; } 
 
 		/// <summary>
-		/// The status of a shipment. The state of the shipment will typically start as `UNCONFIRMED`, then transition
-		/// to `WORKING` after a placement option has been confirmed, and then to `READY_TO_SHIP` once labels are
-		/// generated.  Possible values: `ABANDONED`, `CANCELLED`, `CHECKED_IN`, `CLOSED`, `DELETED`, `DELIVERED`,
-		/// `IN_TRANSIT`, `MIXED`, `READY_TO_SHIP`, `RECEIVING`, `SHIPPED`, `UNCONFIRMED`, `WORKING`
+		/// The status of a shipment. The state of the shipment will typically start as `UNCONFIRMED`,
+		/// then transition to `WORKING` after a placement option has been confirmed, and then to `READY_TO_SHIP`
+		/// once labels are generated.  Possible values: `ABANDONED`, `CANCELLED`, `CHECKED_IN`, `CLOSED`,
+		/// `DELETED`, `DELIVERED`, `IN_TRANSIT`, `MIXED`, `READY_TO_SHIP`, `RECEIVING`, `SHIPPED`, `UNCONFIRMED`,
+		/// `WORKING`
 		/// </summary>
 		[JsonProperty("status")]
 		[MinLength(1)]

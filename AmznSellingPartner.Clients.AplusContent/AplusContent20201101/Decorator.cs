@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public DecoratorType Type { get; set; } 
 
 		/// <summary>
-		/// The starting character of this decorator within the content string. Use zero for the first character
-		/// .
+		/// The starting character of this decorator within the content string. Use zero for the first
+		/// character.
 		/// </summary>
 		[JsonProperty("offset")]
 		[Minimum(0)]
@@ -22,8 +22,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public int Offset { get; set; } 
 
 		/// <summary>
-		/// The number of content characters to alter with this decorator. Decorators such as line breaks can have
-		/// zero length and fit between characters.
+		/// The number of content characters to alter with this decorator. Decorators such as line breaks
+		/// can have zero length and fit between characters.
 		/// </summary>
 		[JsonProperty("length")]
 		[Minimum(0)]
@@ -31,8 +31,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 		public int Length { get; set; } 
 
 		/// <summary>
-		/// The relative intensity or variation of this decorator. Decorators such as bullet-points, for example,
-		/// can have multiple indentation depths.
+		/// The relative intensity or variation of this decorator. Decorators such as bullet-points, for
+		/// example, can have multiple indentation depths.
 		/// </summary>
 		[JsonProperty("depth")]
 		[Minimum(0)]

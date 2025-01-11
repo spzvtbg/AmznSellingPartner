@@ -6,6 +6,7 @@
     using Newtonsoft.Json;
 
     using System.Linq;
+    using System;
 
     internal class AmznAction : AmznUnhandled
     {
@@ -36,7 +37,7 @@
         internal void OnDeserialized(string method, string route, CsContext context, AmznParameters parameters)
         {
             var operation = this.OperationId.Capitalize();
-            var csRequest = context.GetOrCreateClass($"{operation}{method}Request");
+            var csRequest = context.GetOrCreateClass($"Amzn{operation}Request");
             csRequest.HasAttribute($"Http{method}", $"\"{route}\"")
                      .Inherits(nameof(BaseHttpRequest));
 
@@ -47,7 +48,7 @@
                 csRequest.HasProperty(csProperty);
             }
 
-            var csResponse = context.GetOrCreateClass($"{operation}{method}Response");
+            var csResponse = context.GetOrCreateClass($"Amzn{operation}Response");
             csResponse.Inherits($"BaseHttpResponse<{csResponse.GetTypeName()}>");
 
             foreach (var csProeprty in this.Responses.OnDeserialized(context))
@@ -60,23 +61,14 @@
                 .HasRequestType(csRequest.GetTypeName())
                 .HasResponseType(csResponse.GetTypeName())
                 .IsDeprecated(this.Deprecated == true);
+            var client = route
+                .Split('/', StringSplitOptions.RemoveEmptyEntries)
+                .FirstOrDefault()
+                .Capitalize();
 
-            if (this.Tags is null)
-            {
-                var tag = route
-                    .Split('/', System.StringSplitOptions.RemoveEmptyEntries)
-                    .FirstOrDefault()
-                    .Capitalize();
-
-                this.Tags = [tag];
-            }
-
-            foreach (var tag in this.Tags)
-            {
-                context.GetOrCreateClient(tag)
-                       .HasMethod(csMethod)
-                       .Inherits(nameof(BaseHttpClient));
-            }
+            context.GetOrCreateClient($"Amzn{client}")
+                   .HasMethod(csMethod)
+                   .Inherits(nameof(BaseHttpClient));
         }
     }
 }

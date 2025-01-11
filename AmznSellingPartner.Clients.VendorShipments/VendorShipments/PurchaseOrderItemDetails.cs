@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Item details for be provided for every item in shipment at either the item or carton or pallet level,
-	/// whichever is appropriate.
+	/// Item details for be provided for every item in shipment at either the item or carton or pallet
+	/// level, whichever is appropriate.
 	/// </summary>
 	public class PurchaseOrderItemDetails : BaseClass
 	{

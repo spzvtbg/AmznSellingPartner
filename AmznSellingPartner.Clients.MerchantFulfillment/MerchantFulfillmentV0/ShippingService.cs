@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class ShippingService : BaseClass
 	{
 		/// <summary>
-		/// A plain text representation of a carrier's shipping service. For example, "UPS Ground" or "FedEx Standard
-		/// Overnight".
+		/// A plain text representation of a carrier's shipping service. For example, "UPS Ground" or "FedEx
+		/// Standard Overnight".
 		/// </summary>
 		[JsonProperty("ShippingServiceName")]
 		[IsRequired]

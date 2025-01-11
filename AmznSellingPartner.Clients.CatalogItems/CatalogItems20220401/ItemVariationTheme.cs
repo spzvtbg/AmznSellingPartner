@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Variation theme indicating the combination of Amazon item catalog attributes that define the variation
-	/// family.
+	/// Variation theme indicating the combination of Amazon item catalog attributes that define the
+	/// variation family.
 	/// </summary>
 	public class ItemVariationTheme : BaseClass
 	{
@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		public List<string> Attributes { get; set; } 
 
 		/// <summary>
-		/// Variation theme indicating the combination of Amazon item catalog attributes that define the variation
-		/// family.
+		/// Variation theme indicating the combination of Amazon item catalog attributes that define the
+		/// variation family.
 		/// </summary>
 		[JsonProperty("theme")]
 		public string Theme { get; set; } 

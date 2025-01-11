@@ -9,9 +9,9 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	public enum IncludedData
 	{
 		/// <summary>
-		/// A JSON object containing structured item attribute data keyed by attribute name. Catalog item attributes
-		/// conform to the related Amazon product type definitions available in the Selling Partner API for Product
-		/// Type Definitions.
+		/// A JSON object containing structured item attribute data keyed by attribute name. Catalog item
+		/// attributes conform to the related Amazon product type definitions available in the Selling
+		/// Partner API for Product Type Definitions.
 		/// </summary>
 		[EnumMember(Value = "attributes")]
 		Attributes,
@@ -29,7 +29,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		Dimensions,
 
 		/// <summary>
-		/// Identifiers associated with the item in the Amazon catalog, such as UPC and EAN identifiers.
+		/// Identifiers associated with the item in the Amazon catalog, such as UPC and EAN identifier
+		/// s.
 		/// </summary>
 		[EnumMember(Value = "identifiers")]
 		Identifiers,
@@ -59,14 +60,15 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 		SalesRanks,
 
 		/// <summary>
-		/// Summary details of an Amazon catalog item. Refer to the "attributes" of an Amazon catalog item for more
-		/// details.
+		/// Summary details of an Amazon catalog item. Refer to the "attributes" of an Amazon catalog item
+		/// for more details.
 		/// </summary>
 		[EnumMember(Value = "summaries")]
 		Summaries,
 
 		/// <summary>
-		/// Vendor details associated with an Amazon catalog item. Vendor details are available to vendors only.
+		/// Vendor details associated with an Amazon catalog item. Vendor details are available to vendors
+		/// only.
 		/// </summary>
 		[EnumMember(Value = "vendorDetails")]
 		VendorDetails,

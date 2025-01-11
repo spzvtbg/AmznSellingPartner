@@ -5,9 +5,10 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The instructions for optionally cropping an image. If no cropping is desired, set the dimensions to the
-	/// original image size. If the image is cropped and no offset values are provided, then the coordinates
-	/// of the top left corner of the cropped image, relative to the original image, are defaulted to (0,0).
+	/// The instructions for optionally cropping an image. If no cropping is desired, set the dimensions
+	/// to the original image size. If the image is cropped and no offset values are provided, then
+	/// the coordinates of the top left corner of the cropped image, relative to the original image,
+	/// are defaulted to (0,0).
 	/// </summary>
 	public class ImageCropSpecification : BaseClass
 	{

@@ -8,7 +8,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	public class TransactionReference : BaseClass
 	{
 		/// <summary>
-		/// A GUID (Globally Unique Identifier) assigned by Amazon to uniquely identify the transaction.
+		/// A GUID (Globally Unique Identifier) assigned by Amazon to uniquely identify the transactio
+		/// n.
 		/// </summary>
 		[JsonProperty("transactionId")]
 		public string TransactionId { get; set; } 

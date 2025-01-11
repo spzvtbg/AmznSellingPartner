@@ -24,16 +24,16 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public LabelPrintType LabelType { get; set; } 
 
 		/// <summary>
-		/// The locale code constructed from ISO 639 language code and ISO 3166-1 alpha-2 standard of country codes
-		/// separated by an underscore character.
+		/// The locale code constructed from ISO 639 language code and ISO 3166-1 alpha-2 standard of country
+		/// codes separated by an underscore character.
 		/// </summary>
 		[JsonProperty("localeCode")]
 		[Pattern("^[a-z]{2}_[A-Z]{2}")]
 		public string LocaleCode { get; set; } = "en_US";
 
 		/// <summary>
-		/// The Marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://developer-docs
-		/// .amazon.com/sp-api/docs/marketplace-ids).
+		/// The Marketplace ID. For a list of possible values, refer to [Marketplace IDs](https://deve
+		/// loper-docs.amazon.com/sp-api/docs/marketplace-ids).
 		/// </summary>
 		[JsonProperty("marketplaceId")]
 		[IsRequired]

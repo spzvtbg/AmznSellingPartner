@@ -43,8 +43,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public LockerDetails LockerDetails { get; set; } 
 
 		/// <summary>
-		/// The delivery information for the package. This information is available after the package is deliver
-		/// ed.
+		/// The delivery information for the package. This information is available after the package is
+		/// delivered.
 		/// </summary>
 		[JsonProperty("deliveryInformation")]
 		public DeliveryInformation DeliveryInformation { get; set; } 

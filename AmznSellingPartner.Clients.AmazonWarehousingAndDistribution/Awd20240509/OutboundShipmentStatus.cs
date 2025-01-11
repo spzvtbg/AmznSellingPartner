@@ -18,14 +18,15 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 		CREATED,
 
 		/// <summary>
-		/// Carrier acknowledged that the shipment is in transit between the origin node and destination node.
+		/// Carrier acknowledged that the shipment is in transit between the origin node and destination
+		/// node.
 		/// </summary>
 		[EnumMember(Value = "IN_TRANSIT")]
 		IN_TRANSIT,
 
 		/// <summary>
-		/// Carrier indicated that the shipment has arrived at the destination node, but the destination node has
-		/// not acknowledged the delivery.
+		/// Carrier indicated that the shipment has arrived at the destination node, but the destination
+		/// node has not acknowledged the delivery.
 		/// </summary>
 		[EnumMember(Value = "DELIVERED")]
 		DELIVERED,

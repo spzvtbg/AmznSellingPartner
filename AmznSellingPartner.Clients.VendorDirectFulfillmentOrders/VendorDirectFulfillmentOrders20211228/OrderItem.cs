@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 	public class OrderItem : BaseClass
 	{
 		/// <summary>
-		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
+		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so
+		/// on.
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]
@@ -73,9 +74,10 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectF
 		public Money TotalPrice { get; set; } 
 
 		/// <summary>
-		/// The buyer information for products the vendor has configured as customizable, specifying the types of
-		/// customizations or configurations along with types and ranges for their product. This provides the ability
-		/// for buyers to customize multiple aspects of the products according to what the vendor allows.
+		/// The buyer information for products the vendor has configured as customizable, specifying the
+		/// types of customizations or configurations along with types and ranges for their product. This
+		/// provides the ability for buyers to customize multiple aspects of the products according to
+		/// what the vendor allows.
 		/// </summary>
 		[JsonProperty("buyerCustomizedInfo")]
 		public BuyerCustomizedInfoDetail BuyerCustomizedInfo { get; set; } 

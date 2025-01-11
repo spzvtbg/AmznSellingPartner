@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		LISTING_PRODUCT_ONLY,
 
 		/// <summary>
-		/// Indicates the submitted data contains sales terms only. Not supported for vendors (vendors will receive
-		/// an HTTP status code 400 response).
+		/// Indicates the submitted data contains sales terms only. Not supported for vendors (vendors
+		/// will receive an HTTP status code 400 response).
 		/// </summary>
 		[EnumMember(Value = "LISTING_OFFER_ONLY")]
 		LISTING_OFFER_ONLY,

@@ -5,13 +5,14 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Delivery information for a scheduled delivery. This is only available in the JP marketplace.
+	/// Delivery information for a scheduled delivery. This is only available in the JP marketplac
+	/// e.
 	/// </summary>
 	public class ScheduledDeliveryInfo : BaseClass
 	{
 		/// <summary>
-		/// The time zone of the destination address for the fulfillment order preview. Must be an IANA time zone
-		/// name. Example: Asia/Tokyo.
+		/// The time zone of the destination address for the fulfillment order preview. Must be an IANA
+		/// time zone name. Example: Asia/Tokyo.
 		/// </summary>
 		[JsonProperty("deliveryTimeZone")]
 		[IsRequired]

@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// Represents the details of an invoice, including invoice number, date, parties involved, payment terms,
-	/// totals, taxes, charges, and line items.
+	/// Represents the details of an invoice, including invoice number, date, parties involved, payment
+	/// terms, totals, taxes, charges, and line items.
 	/// </summary>
 	public class InvoiceDetail : BaseClass
 	{

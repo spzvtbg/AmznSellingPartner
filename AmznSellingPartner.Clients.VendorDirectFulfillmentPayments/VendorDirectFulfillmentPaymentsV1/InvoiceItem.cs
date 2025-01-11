@@ -12,7 +12,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	public class InvoiceItem : BaseClass
 	{
 		/// <summary>
-		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so on.
+		/// Numbering of the item on the purchase order. The first item will be 1, the second 2, and so
+		/// on.
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]
@@ -45,7 +46,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		public Money NetCost { get; set; } 
 
 		/// <summary>
-		/// The purchase order number for this order. Formatting Notes: 8-character alpha-numeric code.
+		/// The purchase order number for this order. Formatting Notes: 8-character alpha-numeric code
+		/// .
 		/// </summary>
 		[JsonProperty("purchaseOrderNumber")]
 		[IsRequired]

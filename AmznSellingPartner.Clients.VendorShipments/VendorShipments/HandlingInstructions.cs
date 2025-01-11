@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 	public enum HandlingInstructions
 	{
 		/// <summary>
-		/// A package weighing 150 pounds or less and measuring greater than 130 inches in length and girth is classified
-		/// as an oversized package.
+		/// A package weighing 150 pounds or less and measuring greater than 130 inches in length and girth
+		/// is classified as an oversized package.
 		/// </summary>
 		[EnumMember(Value = "Oversized")]
 		Oversized,

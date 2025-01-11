@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 	public class FeesEstimateError : BaseClass
 	{
 		/// <summary>
-		/// An error type, identifying either the receiver or the sender as the originator of the error.
+		/// An error type, identifying either the receiver or the sender as the originator of the erro
+		/// r.
 		/// </summary>
 		[JsonProperty("Type")]
 		[IsRequired]

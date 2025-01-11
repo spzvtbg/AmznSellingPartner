@@ -21,8 +21,8 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 		Replace,
 
 		/// <summary>
-		/// The `delete` operation removes the target property. Not supported for vendors (vendors will receive an
-		/// HTTP status code 400 response).
+		/// The `delete` operation removes the target property. Not supported for vendors (vendors will
+		/// receive an HTTP status code 400 response).
 		/// </summary>
 		[EnumMember(Value = "delete")]
 		Delete,

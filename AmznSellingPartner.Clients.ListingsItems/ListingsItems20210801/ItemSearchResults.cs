@@ -12,16 +12,17 @@ namespace AmznSellingPartner.Clients.ListingsItems.ListingsItems20210801
 	public class ItemSearchResults : BaseClass
 	{
 		/// <summary>
-		/// The total number of selling partner listings items found for the search criteria (only results up to
-		/// the page count limit will be returned per request regardless of the number found).  Note: The maximum
-		/// number of items (SKUs) that can be returned and paged through is 1000.
+		/// The total number of selling partner listings items found for the search criteria (only results
+		/// up to the page count limit will be returned per request regardless of the number found).  Note:
+		/// The maximum number of items (SKUs) that can be returned and paged through is 1000.
 		/// </summary>
 		[JsonProperty("numberOfResults")]
 		[IsRequired]
 		public int NumberOfResults { get; set; } 
 
 		/// <summary>
-		/// If available, the `nextToken` and/or `previousToken` values required to return paginated results.
+		/// If available, the `nextToken` and/or `previousToken` values required to return paginated r
+		/// esults.
 		/// </summary>
 		[JsonProperty("pagination")]
 		public Pagination Pagination { get; set; } 

@@ -9,8 +9,9 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public enum ProcessingStatus
 	{
 		/// <summary>
-		/// The report was cancelled. There are two ways a report can be cancelled: an explicit cancellation request
-		/// before the report starts processing, or an automatic cancellation if there is no data to return.
+		/// The report was cancelled. There are two ways a report can be cancelled: an explicit cancellation
+		/// request before the report starts processing, or an automatic cancellation if there is no data
+		/// to return.
 		/// </summary>
 		[EnumMember(Value = "CANCELLED")]
 		CANCELLED,
@@ -34,7 +35,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		IN_PROGRESS,
 
 		/// <summary>
-		/// The report has not yet started processing. It may be waiting for another `IN_PROGRESS` report.
+		/// The report has not yet started processing. It may be waiting for another `IN_PROGRESS` rep
+		/// ort.
 		/// </summary>
 		[EnumMember(Value = "IN_QUEUE")]
 		IN_QUEUE,

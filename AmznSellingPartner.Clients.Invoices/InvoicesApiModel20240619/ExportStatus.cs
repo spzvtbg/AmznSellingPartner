@@ -24,13 +24,15 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		PROCESSING,
 
 		/// <summary>
-		/// The export request has finished successfully. Use the document IDs to download the output documents.
+		/// The export request has finished successfully. Use the document IDs to download the output
+		/// documents.
 		/// </summary>
 		[EnumMember(Value = "DONE")]
 		DONE,
 
 		/// <summary>
-		/// The export request resulted in an error. Refer to the `errorMessage` attribute for more information.
+		/// The export request resulted in an error. Refer to the `errorMessage` attribute for more in
+		/// formation.
 		/// </summary>
 		[EnumMember(Value = "ERROR")]
 		ERROR,

@@ -23,8 +23,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string ExternalReviewerId { get; set; } 
 
 		/// <summary>
-		/// The unique identifier of the rejection reason used for rejecting the order's regulated information. Only
-		/// required if the new status is rejected.
+		/// The unique identifier of the rejection reason used for rejecting the order's regulated information.
+		/// Only required if the new status is rejected.
 		/// </summary>
 		[JsonProperty("rejectionReasonId")]
 		public string RejectionReasonId { get; set; } 

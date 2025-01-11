@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A carrier who is temporarily unavailable, most likely due to a service outage experienced by the car
-	/// rier.
+	/// A carrier who is temporarily unavailable, most likely due to a service outage experienced by
+	/// the carrier.
 	/// </summary>
 	public class TemporarilyUnavailableCarrier : BaseClass
 	{

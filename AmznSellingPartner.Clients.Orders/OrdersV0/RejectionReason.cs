@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The reason for rejecting the order's regulated information. This is only present if the order is rej
-	/// ected.
+	/// The reason for rejecting the order's regulated information. This is only present if the order
+	/// is rejected.
 	/// </summary>
 	public class RejectionReason : BaseClass
 	{

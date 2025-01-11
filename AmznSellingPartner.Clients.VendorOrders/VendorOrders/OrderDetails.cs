@@ -20,18 +20,18 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public DateTimeValue PurchaseOrderDate { get; set; } 
 
 		/// <summary>
-		/// The date when purchase order was last changed by Amazon after the order was placed. This date will be
-		/// greater than 'purchaseOrderDate'. This means the PO data was changed on that date and vendors are required
-		/// to fulfill the  updated PO. The PO changes can be related to Item Quantity, Ship to Location, Ship Window
-		/// etc. This field will not be present in orders that have not changed after creation. Must be in ISO-8601
-		/// date/time format.
+		/// The date when purchase order was last changed by Amazon after the order was placed. This date
+		/// will be greater than 'purchaseOrderDate'. This means the PO data was changed on that date and
+		/// vendors are required to fulfill the  updated PO. The PO changes can be related to Item Quantity,
+		/// Ship to Location, Ship Window etc. This field will not be present in orders that have not changed
+		/// after creation. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("purchaseOrderChangedDate")]
 		public DateTimeValue PurchaseOrderChangedDate { get; set; } 
 
 		/// <summary>
-		/// The date when current purchase order state was changed. Current purchase order state is available in
-		/// the field 'purchaseOrderState'. Must be in ISO-8601 date/time format.
+		/// The date when current purchase order state was changed. Current purchase order state is available
+		/// in the field 'purchaseOrderState'. Must be in ISO-8601 date/time format.
 		/// </summary>
 		[JsonProperty("purchaseOrderStateChangedDate")]
 		[IsRequired]
@@ -50,8 +50,8 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public ImportDetails ImportDetails { get; set; } 
 
 		/// <summary>
-		/// If requested by the recipient, this field will contain a promotional/deal number. The discount code line
-		/// is optional. It is used to obtain a price discount on items on the order.
+		/// If requested by the recipient, this field will contain a promotional/deal number. The discount
+		/// code line is optional. It is used to obtain a price discount on items on the order.
 		/// </summary>
 		[JsonProperty("dealCode")]
 		public string DealCode { get; set; } 
@@ -75,9 +75,9 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public PartyIdentification SellingParty { get; set; } 
 
 		/// <summary>
-		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses for a
-		/// region on the [Resources page of Amazon Vendor Central](https://vendorcentral.amazon.com/hz/vendor/m
-		/// embers/support/help/node/GPZ88XH8HQM97ZV6).
+		/// Name/Address and tax details of the ship to party. Find a list of fulfillment center addresses
+		/// for a region on the [Resources page of Amazon Vendor Central](https://vendorcentral.amazon
+		/// .com/hz/vendor/members/support/help/node/GPZ88XH8HQM97ZV6).
 		/// </summary>
 		[JsonProperty("shipToParty")]
 		public PartyIdentification ShipToParty { get; set; } 
@@ -89,15 +89,15 @@ namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 		public PartyIdentification BillToParty { get; set; } 
 
 		/// <summary>
-		/// This indicates the ship window. Format is start and end date separated by double hyphen (--). For example,
-		/// 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
+		/// This indicates the ship window. Format is start and end date separated by double hyphen (--).
+		/// For example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
 		/// </summary>
 		[JsonProperty("shipWindow")]
 		public DateTimeInterval ShipWindow { get; set; } 
 
 		/// <summary>
-		/// This indicates the delivery window. Format is start and end date separated by double hyphen (--). For
-		/// example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
+		/// This indicates the delivery window. Format is start and end date separated by double hyphen
+		/// (--). For example, 2007-03-01T13:00:00Z--2007-03-11T15:30:00Z.
 		/// </summary>
 		[JsonProperty("deliveryWindow")]
 		public DateTimeInterval DeliveryWindow { get; set; } 

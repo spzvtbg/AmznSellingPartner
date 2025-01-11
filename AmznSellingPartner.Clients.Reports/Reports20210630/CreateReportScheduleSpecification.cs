@@ -33,8 +33,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public ReportOptions ReportOptions { get; set; } 
 
 		/// <summary>
-		/// One of a set of predefined <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a>
-		/// periods that specifies how often a report should be created.
+		/// One of a set of predefined <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO
+		/// 8601</a> periods that specifies how often a report should be created.
 		/// </summary>
 		[JsonProperty("period")]
 		[IsRequired]

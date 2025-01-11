@@ -33,17 +33,17 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public bool IsEligible { get; set; } 
 
 		/// <summary>
-		/// A list of one or more reasons that the seller SKU is ineligibile for the feature.  Possible values: *
-		/// `MERCHANT_NOT_ENROLLED` - The merchant isn't enrolled for the feature. * `SKU_NOT_ELIGIBLE` - The SKU
-		/// doesn't reside in a warehouse that supports the feature. * `INVALID_SKU` - There is an issue with the
-		/// SKU provided.
+		/// A list of one or more reasons that the seller SKU is ineligibile for the feature.  Possible
+		/// values: * `MERCHANT_NOT_ENROLLED` - The merchant isn't enrolled for the feature. * `SKU_NOT_ELIGIBLE`
+		/// - The SKU doesn't reside in a warehouse that supports the feature. * `INVALID_SKU` - There
+		/// is an issue with the SKU provided.
 		/// </summary>
 		[JsonProperty("ineligibleReasons")]
 		public List<string> IneligibleReasons { get; set; } 
 
 		/// <summary>
-		/// Information about the SKU, including the count available, identifiers, and a list of overlapping SKUs
-		/// that share the same inventory pool.
+		/// Information about the SKU, including the count available, identifiers, and a list of overlapping
+		/// SKUs that share the same inventory pool.
 		/// </summary>
 		[JsonProperty("skuInfo")]
 		public FeatureSku SkuInfo { get; set; } 

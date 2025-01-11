@@ -13,8 +13,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public class ReportSchedule : BaseClass
 	{
 		/// <summary>
-		/// The identifier for the report schedule. This identifier is unique only in combination with a seller
-		/// ID.
+		/// The identifier for the report schedule. This identifier is unique only in combination with
+		/// a seller ID.
 		/// </summary>
 		[JsonProperty("reportScheduleId")]
 		[IsRequired]
@@ -29,8 +29,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public string ReportType { get; set; } 
 
 		/// <summary>
-		/// A list of marketplace identifiers. The report document's contents will contain data for all of the specified
-		/// marketplaces, unless the report type indicates otherwise.
+		/// A list of marketplace identifiers. The report document's contents will contain data for all
+		/// of the specified marketplaces, unless the report type indicates otherwise.
 		/// </summary>
 		[JsonProperty("marketplaceIds")]
 		public List<string> MarketplaceIds { get; set; } 
@@ -39,8 +39,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public ReportOptions ReportOptions { get; set; } 
 
 		/// <summary>
-		/// An <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> period value that indicates
-		/// how often a report should be created.
+		/// An <a href='https://developer-docs.amazon.com/sp-api/docs/iso-8601'>ISO 8601</a> period value
+		/// that indicates how often a report should be created.
 		/// </summary>
 		[JsonProperty("period")]
 		[IsRequired]

@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 	public class CreateReportResponse : BaseClass
 	{
 		/// <summary>
-		/// The identifier for the report. This identifier is unique only in combination with a seller ID.
+		/// The identifier for the report. This identifier is unique only in combination with a seller
+		/// ID.
 		/// </summary>
 		[JsonProperty("reportId")]
 		[IsRequired]

@@ -19,7 +19,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public List<string> MarketplaceIds { get; set; } 
 
 		/// <summary>
-		/// The identifier for the report. This identifier is unique only in combination with a seller ID.
+		/// The identifier for the report. This identifier is unique only in combination with a seller
+		/// ID.
 		/// </summary>
 		[JsonProperty("reportId")]
 		[IsRequired]
@@ -46,8 +47,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public DateTimeValue DataEndTime { get; set; } 
 
 		/// <summary>
-		/// The identifier of the report schedule that created this report (if any). This identifier is unique only
-		/// in combination with a seller ID.
+		/// The identifier of the report schedule that created this report (if any). This identifier is
+		/// unique only in combination with a seller ID.
 		/// </summary>
 		[JsonProperty("reportScheduleId")]
 		public string ReportScheduleId { get; set; } 
@@ -81,8 +82,8 @@ namespace AmznSellingPartner.Clients.Reports.Reports20210630
 		public DateTimeValue ProcessingEndTime { get; set; } 
 
 		/// <summary>
-		/// The identifier for the report document. Pass this into the `getReportDocument` operation to get the information
-		/// you will need to retrieve the report document's contents.
+		/// The identifier for the report document. Pass this into the `getReportDocument` operation to
+		/// get the information you will need to retrieve the report document's contents.
 		/// </summary>
 		[JsonProperty("reportDocumentId")]
 		public string ReportDocumentId { get; set; } 

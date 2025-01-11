@@ -6,6 +6,7 @@ namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 
 	/// <summary>
 	/// This object allows users to specify an order to be scheduled. Only the amazonOrderId is required.
+	/// 
 	/// </summary>
 	public class OrderScheduleDetails : BaseClass
 	{

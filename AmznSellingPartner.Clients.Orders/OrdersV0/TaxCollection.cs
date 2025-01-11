@@ -14,7 +14,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public Model Model { get; set; } 
 
 		/// <summary>
-		/// The party responsible for withholding the taxes and remitting them to the taxing authority.
+		/// The party responsible for withholding the taxes and remitting them to the taxing authority
+		/// .
 		/// </summary>
 		[JsonProperty("ResponsibleParty")]
 		public ResponsibleParty ResponsibleParty { get; set; } 

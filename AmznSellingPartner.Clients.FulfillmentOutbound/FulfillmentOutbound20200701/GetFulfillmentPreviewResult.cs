@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// A list of fulfillment order previews, including estimated shipping weights, estimated shipping fees,
-	/// and estimated ship dates and arrival dates.
+	/// A list of fulfillment order previews, including estimated shipping weights, estimated shipping
+	/// fees, and estimated ship dates and arrival dates.
 	/// </summary>
 	public class GetFulfillmentPreviewResult : BaseClass
 	{

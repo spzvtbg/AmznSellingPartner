@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// A packing option contains a set of pack groups plus additional information about the packing option,
-	/// such as any discounts or fees if it's selected.
+	/// A packing option contains a set of pack groups plus additional information about the packing
+	/// option, such as any discounts or fees if it's selected.
 	/// </summary>
 	public class PackingOption : BaseClass
 	{

@@ -18,14 +18,15 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		ADULT,
 
 		/// <summary>
-		/// Made for a child aged three years or younger, packaging with cutouts greater than one square inch.
+		/// Made for a child aged three years or younger, packaging with cutouts greater than one square
+		/// inch.
 		/// </summary>
 		[EnumMember(Value = "BABY")]
 		BABY,
 
 		/// <summary>
-		/// A prep type has been defined by the Fulfillment Center. This value is provided by Amazon and cannot be
-		/// used as an input.
+		/// A prep type has been defined by the Fulfillment Center. This value is provided by Amazon and
+		/// cannot be used as an input.
 		/// </summary>
 		[EnumMember(Value = "FC_PROVIDED")]
 		FC_PROVIDED,
@@ -85,8 +86,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		TEXTILE,
 
 		/// <summary>
-		/// An unknown prep category was found and needs to be updated. This value is provided by Amazon and cannot
-		/// be used as an input.
+		/// An unknown prep category was found and needs to be updated. This value is provided by Amazon
+		/// and cannot be used as an input.
 		/// </summary>
 		[EnumMember(Value = "UNKNOWN")]
 		UNKNOWN,

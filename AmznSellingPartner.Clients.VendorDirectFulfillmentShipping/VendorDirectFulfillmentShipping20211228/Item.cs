@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 	public class Item : BaseClass
 	{
 		/// <summary>
-		/// The sequence number of the item. The number must be the same as the order number of the item.
+		/// The sequence number of the item. The number must be the same as the order number of the it
+		/// em.
 		/// </summary>
 		[JsonProperty("itemSequenceNumber")]
 		[IsRequired]
@@ -24,8 +25,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentShipping.VendorDirec
 		public string BuyerProductIdentifier { get; set; } 
 
 		/// <summary>
-		/// An item's product identifier, which the vendor selects. This identifier should be the same as the identifier,
-		/// such as a SKU, in the purchase order.
+		/// An item's product identifier, which the vendor selects. This identifier should be the same
+		/// as the identifier, such as a SKU, in the purchase order.
 		/// </summary>
 		[JsonProperty("vendorProductIdentifier")]
 		public string VendorProductIdentifier { get; set; } 

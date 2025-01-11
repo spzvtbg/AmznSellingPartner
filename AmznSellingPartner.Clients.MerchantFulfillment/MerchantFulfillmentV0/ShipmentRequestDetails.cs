@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Shipment information required for requesting shipping service offers or for creating a shipment.
+	/// Shipment information required for requesting shipping service offers or for creating a shi
+	/// pment.
 	/// </summary>
 	public class ShipmentRequestDetails : BaseClass
 	{
@@ -49,15 +50,16 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 
 		/// <summary>
 		/// The date by which the package must arrive to keep the promise to the customer, in [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
-		/// date-time format. If `MustArriveByDate` is specified, only shipping service offers that can be delivered
-		/// by that date are returned.
+		/// date-time format. If `MustArriveByDate` is specified, only shipping service offers that can
+		/// be delivered by that date are returned.
 		/// </summary>
 		[JsonProperty("MustArriveByDate")]
 		public Timestamp MustArriveByDate { get; set; } 
 
 		/// <summary>
-		/// When used in a request, this is the date and time that the seller wants to ship the package. When used
-		/// in a response, this is the date and time that the package can be shipped by the indicated method.
+		/// When used in a request, this is the date and time that the seller wants to ship the package.
+		/// When used in a response, this is the date and time that the package can be shipped by the indicated
+		/// method.
 		/// </summary>
 		[JsonProperty("ShipDate")]
 		public Timestamp ShipDate { get; set; } 

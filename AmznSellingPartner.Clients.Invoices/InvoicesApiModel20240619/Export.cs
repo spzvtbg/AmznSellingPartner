@@ -38,9 +38,9 @@ namespace AmznSellingPartner.Clients.Invoices.InvoicesApiModel20240619
 		public DateTimeValue GenerateExportStartedAt { get; set; } 
 
 		/// <summary>
-		/// The identifier for the export documents. To get the information required to retrieve the export document's
-		/// contents, pass each ID in the `getInvoicesDocument` operation.  This list is empty until the status is
-		/// `DONE`.
+		/// The identifier for the export documents. To get the information required to retrieve the export
+		/// document's contents, pass each ID in the `getInvoicesDocument` operation.  This list is empty
+		/// until the status is `DONE`.
 		/// </summary>
 		[JsonProperty("invoicesDocumentIds")]
 		public List<string> InvoicesDocumentIds { get; set; } 

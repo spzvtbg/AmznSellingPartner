@@ -50,8 +50,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShippingMode { get; set; } 
 
 		/// <summary>
-		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OWN_CARRIER`
-		/// .
+		/// Shipping program for the option. Possible values: `AMAZON_PARTNERED_CARRIER`, `USE_YOUR_OW
+		/// N_CARRIER`.
 		/// </summary>
 		[JsonProperty("shippingSolution")]
 		[IsRequired]
@@ -60,8 +60,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string ShippingSolution { get; set; } 
 
 		/// <summary>
-		/// Identifier of a transportation option. A transportation option represent one option for how to send a
-		/// shipment.
+		/// Identifier of a transportation option. A transportation option represent one option for how
+		/// to send a shipment.
 		/// </summary>
 		[JsonProperty("transportationOptionId")]
 		[IsRequired]

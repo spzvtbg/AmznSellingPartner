@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Encryption details for required client-side encryption and decryption of document contents.
+	/// Encryption details for required client-side encryption and decryption of document contents
+	/// .
 	/// </summary>
 	public class EncryptionDetails : BaseClass
 	{

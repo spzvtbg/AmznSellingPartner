@@ -8,8 +8,8 @@ namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 	public class InStorePickupConfiguration : BaseClass
 	{
 		/// <summary>
-		/// When true, in-store pickup is supported by the supply source (default: `isSupported` value in `Picku
-		/// pChannel`).
+		/// When true, in-store pickup is supported by the supply source (default: `isSupported` value
+		/// in `PickupChannel`).
 		/// </summary>
 		[JsonProperty("isSupported")]
 		public bool IsSupported { get; set; } 

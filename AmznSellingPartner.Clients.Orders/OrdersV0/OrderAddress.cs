@@ -17,14 +17,16 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		public string AmazonOrderId { get; set; } 
 
 		/// <summary>
-		/// The company name of the contact buyer. For IBA orders, the buyer company must be Amazon entities.
+		/// The company name of the contact buyer. For IBA orders, the buyer company must be Amazon en
+		/// tities.
 		/// </summary>
 		[JsonProperty("BuyerCompanyName")]
 		public string BuyerCompanyName { get; set; } 
 
 		/// <summary>
-		/// The shipping address for the order.  **Note**: `ShippingAddress` is only available for orders with the
-		/// following status values: `Unshipped`, `PartiallyShipped`, `Shipped`, and `InvoiceUnconfirmed`.
+		/// The shipping address for the order.  **Note**: `ShippingAddress` is only available for orders
+		/// with the following status values: `Unshipped`, `PartiallyShipped`, `Shipped`, and `Invoice
+		/// Unconfirmed`.
 		/// </summary>
 		[JsonProperty("ShippingAddress")]
 		public Address ShippingAddress { get; set; } 

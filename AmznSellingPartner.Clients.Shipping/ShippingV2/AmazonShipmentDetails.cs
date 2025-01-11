@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	public class AmazonShipmentDetails : BaseClass
 	{
 		/// <summary>
-		/// This attribute is required only for a Direct Fulfillment shipment. This is the encrypted shipment ID
-		/// .
+		/// This attribute is required only for a Direct Fulfillment shipment. This is the encrypted shipment
+		/// ID.
 		/// </summary>
 		[JsonProperty("shipmentId")]
 		[IsRequired]

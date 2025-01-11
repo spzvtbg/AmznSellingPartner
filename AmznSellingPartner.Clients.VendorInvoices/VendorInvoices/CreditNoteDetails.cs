@@ -3,14 +3,14 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// References required in order to process a credit note. This information is required only if InvoiceType
-	/// is CreditNote.
+	/// References required in order to process a credit note. This information is required only if
+	/// InvoiceType is CreditNote.
 	/// </summary>
 	public class CreditNoteDetails : BaseClass
 	{
 		/// <summary>
-		/// Original Invoice Number when sending a credit note relating to an existing invoice. One Invoice only
-		/// to be processed per Credit Note. This is mandatory for AP Credit Notes.
+		/// Original Invoice Number when sending a credit note relating to an existing invoice. One Invoice
+		/// only to be processed per Credit Note. This is mandatory for AP Credit Notes.
 		/// </summary>
 		[JsonProperty("referenceInvoiceNumber")]
 		public string ReferenceInvoiceNumber { get; set; } 
@@ -40,8 +40,8 @@ namespace AmznSellingPartner.Clients.VendorInvoices.VendorInvoices
 		public string RmaId { get; set; } 
 
 		/// <summary>
-		/// Identifies the COOP reference used for COOP agreement. Failure to provide the COOP reference number or
-		/// the Debit Note number may lead to a rejection of the Credit Note.
+		/// Identifies the COOP reference used for COOP agreement. Failure to provide the COOP reference
+		/// number or the Debit Note number may lead to a rejection of the Credit Note.
 		/// </summary>
 		[JsonProperty("coopReferenceNumber")]
 		public string CoopReferenceNumber { get; set; } 

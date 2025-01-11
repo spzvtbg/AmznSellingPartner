@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.Notifications.Notifications
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The information required to create an Amazon Simple Queue Service (Amazon SQS) queue destination.
+	/// The information required to create an Amazon Simple Queue Service (Amazon SQS) queue desti
+	/// nation.
 	/// </summary>
 	public class SqsResource : BaseClass
 	{

@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.Vend
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The transaction details including the status. If the transaction was successful, also includes the requested
-	/// test order data.
+	/// The transaction details including the status. If the transaction was successful, also includes
+	/// the requested test order data.
 	/// </summary>
 	public class Transaction : BaseClass
 	{

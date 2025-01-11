@@ -30,7 +30,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		UNSUPPORTED_VAS,
 
 		/// <summary>
-		/// The shipment is ineligible because an invalid combination of value-added services were chosen.
+		/// The shipment is ineligible because an invalid combination of value-added services were cho
+		/// sen.
 		/// </summary>
 		[EnumMember(Value = "VAS_COMBINATION_RESTRICTION")]
 		VAS_COMBINATION_RESTRICTION,
@@ -60,7 +61,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		PROGRAM_CONSTRAINTS,
 
 		/// <summary>
-		/// The shipment is ineligible because terms and conditions have not been accepted by the carrier.
+		/// The shipment is ineligible because terms and conditions have not been accepted by the carr
+		/// ier.
 		/// </summary>
 		[EnumMember(Value = "TERMS_AND_CONDITIONS_NOT_ACCEPTED")]
 		TERMS_AND_CONDITIONS_NOT_ACCEPTED,

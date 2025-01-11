@@ -22,15 +22,15 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public Quantity Quantity { get; set; } 
 
 		/// <summary>
-		/// The monetary value assigned by the seller to this item. This is a required field if this order is an
-		/// export order or an India MCF order.
+		/// The monetary value assigned by the seller to this item. This is a required field if this order
+		/// is an export order or an India MCF order.
 		/// </summary>
 		[JsonProperty("perUnitDeclaredValue")]
 		public Money PerUnitDeclaredValue { get; set; } 
 
 		/// <summary>
-		/// A fulfillment order item identifier that the seller creates to track items in the fulfillment previe
-		/// w.
+		/// A fulfillment order item identifier that the seller creates to track items in the fulfillment
+		/// preview.
 		/// </summary>
 		[JsonProperty("sellerFulfillmentOrderItemId")]
 		[IsRequired]

@@ -27,7 +27,8 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 		public TransparencyCodeList TransparencyCodeList { get; set; } 
 
 		/// <summary>
-		/// A list of additional seller inputs required to ship this item using the chosen shipping service.
+		/// A list of additional seller inputs required to ship this item using the chosen shipping se
+		/// rvice.
 		/// </summary>
 		[JsonProperty("ItemLevelSellerInputsList")]
 		public AdditionalSellerInputsList ItemLevelSellerInputsList { get; set; } 

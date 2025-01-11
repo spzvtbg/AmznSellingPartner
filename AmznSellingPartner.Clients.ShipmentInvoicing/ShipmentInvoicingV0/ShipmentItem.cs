@@ -38,8 +38,8 @@ namespace AmznSellingPartner.Clients.ShipmentInvoicing.ShipmentInvoicingV0
 		public double QuantityOrdered { get; set; } 
 
 		/// <summary>
-		/// The selling price of the item multiplied by the quantity ordered. Note that ItemPrice excludes ShippingPrice
-		/// and GiftWrapPrice.
+		/// The selling price of the item multiplied by the quantity ordered. Note that ItemPrice excludes
+		/// ShippingPrice and GiftWrapPrice.
 		/// </summary>
 		[JsonProperty("ItemPrice")]
 		public Money ItemPrice { get; set; } 

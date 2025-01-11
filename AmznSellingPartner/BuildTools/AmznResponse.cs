@@ -19,12 +19,13 @@
 
         public JToken Examples { get; set; }
 
-        internal CsProperty OnDeserialized(string status, CsContext context)
+        internal CsProperty OnDeserialized(string status, CsContext _)
               => new CsProperty
               {
                   Name = this.Schema?.Ref?.GetReferenceType() ?? "Object",
                   Type = this.Schema?.Ref?.GetReferenceType() ?? "object"
               }
-              .HasDescription(this.Description);
+              .HasDescription(this.Description)
+              .HasAttribute("HttpStatus", status);
     }
 }

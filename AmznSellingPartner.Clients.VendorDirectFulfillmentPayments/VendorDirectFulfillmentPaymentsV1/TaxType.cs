@@ -9,22 +9,22 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 	public enum TaxType
 	{
 		/// <summary>
-		/// Central Goods and Services Tax (CGST) is levied by the Indian government for intrastate movement of goods
-		/// and services.
+		/// Central Goods and Services Tax (CGST) is levied by the Indian government for intrastate movement
+		/// of goods and services.
 		/// </summary>
 		[EnumMember(Value = "CGST")]
 		CGST,
 
 		/// <summary>
-		/// State Goods and Services Tax (SGST) is an indirect tax levied and collected by a State Government in
-		/// India on the intra-state supplies.
+		/// State Goods and Services Tax (SGST) is an indirect tax levied and collected by a State Government
+		/// in India on the intra-state supplies.
 		/// </summary>
 		[EnumMember(Value = "SGST")]
 		SGST,
 
 		/// <summary>
-		/// A cess is a form of tax levied by the government on tax with specific purposes till the time the government
-		/// gets enough money for that purpose.
+		/// A cess is a form of tax levied by the government on tax with specific purposes till the time
+		/// the government gets enough money for that purpose.
 		/// </summary>
 		[EnumMember(Value = "CESS")]
 		CESS,
@@ -36,8 +36,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		UTGST,
 
 		/// <summary>
-		/// Integrated Goods and Services Tax (IGST) is a tax levied on all Inter-State supplies of goods and/or
-		/// services in India.
+		/// Integrated Goods and Services Tax (IGST) is a tax levied on all Inter-State supplies of goods
+		/// and/or services in India.
 		/// </summary>
 		[EnumMember(Value = "IGST")]
 		IGST,
@@ -49,8 +49,8 @@ namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirec
 		MwSt_,
 
 		/// <summary>
-		/// A provincial sales tax (PST) is imposed on consumers of goods and particular services in many Canadian
-		/// provinces.
+		/// A provincial sales tax (PST) is imposed on consumers of goods and particular services in many
+		/// Canadian provinces.
 		/// </summary>
 		[EnumMember(Value = "PST")]
 		PST,

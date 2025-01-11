@@ -22,8 +22,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 
 		/// <summary>
 		/// The expiration date of the MSKU. In [ISO 8601](https://developer-docs.amazon.com/sp-api/docs/iso-8601)
-		/// datetime format with pattern`YYYY-MM-DD`. The same MSKU with different expiration dates cannot go into
-		/// the same box.
+		/// datetime format with pattern`YYYY-MM-DD`. The same MSKU with different expiration dates cannot
+		/// go into the same box.
 		/// </summary>
 		[JsonProperty("expiration")]
 		[Pattern("^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])")]

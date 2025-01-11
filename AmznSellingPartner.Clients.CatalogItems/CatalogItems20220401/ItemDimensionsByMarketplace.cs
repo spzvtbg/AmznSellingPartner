@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// Dimensions associated with the item in the Amazon catalog for the indicated Amazon marketplace.
+	/// Dimensions associated with the item in the Amazon catalog for the indicated Amazon marketp
+	/// lace.
 	/// </summary>
 	public class ItemDimensionsByMarketplace : BaseClass
 	{

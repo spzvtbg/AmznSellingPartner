@@ -17,8 +17,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 		public string DocumentType { get; set; } 
 
 		/// <summary>
-		/// A URL that you can use to download the document. This URL has a `Content-Type` header. Note that the
-		/// URL expires after one hour. To get a new URL, you must call the API again.
+		/// A URL that you can use to download the document. This URL has a `Content-Type` header. Note
+		/// that the URL expires after one hour. To get a new URL, you must call the API again.
 		/// </summary>
 		[JsonProperty("url")]
 		public string Url { get; set; } 

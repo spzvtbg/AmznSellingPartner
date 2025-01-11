@@ -5,8 +5,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The invoice details for charges associated with the goods in the package. Only applies to certain re
-	/// gions.
+	/// The invoice details for charges associated with the goods in the package. Only applies to certain
+	/// regions.
 	/// </summary>
 	public class InvoiceDetails : BaseClass
 	{

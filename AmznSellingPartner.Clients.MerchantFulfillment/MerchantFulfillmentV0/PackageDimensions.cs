@@ -8,28 +8,29 @@ namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 	public class PackageDimensions : BaseClass
 	{
 		/// <summary>
-		/// The length dimension. If you don't specify `PredefinedPackageDimensions`, you must specify the lengt
-		/// h.
+		/// The length dimension. If you don't specify `PredefinedPackageDimensions`, you must specify
+		/// the length.
 		/// </summary>
 		[JsonProperty("Length")]
 		public PackageDimension Length { get; set; } 
 
 		/// <summary>
-		/// The width dimension. If you don't specify `PredefinedPackageDimensions`, you must specify the width.
+		/// The width dimension. If you don't specify `PredefinedPackageDimensions`, you must specify the
+		/// width.
 		/// </summary>
 		[JsonProperty("Width")]
 		public PackageDimension Width { get; set; } 
 
 		/// <summary>
-		/// The height dimension. If you don't specify `PredefinedPackageDimensions`, you must specify the heigh
-		/// t.
+		/// The height dimension. If you don't specify `PredefinedPackageDimensions`, you must specify
+		/// the height.
 		/// </summary>
 		[JsonProperty("Height")]
 		public PackageDimension Height { get; set; } 
 
 		/// <summary>
-		/// The unit of measurement. If you don't specify `PredefinedPackageDimensions`, you must specify the un
-		/// it.
+		/// The unit of measurement. If you don't specify `PredefinedPackageDimensions`, you must specify
+		/// the unit.
 		/// </summary>
 		[JsonProperty("Unit")]
 		public UnitOfLength Unit { get; set; } 

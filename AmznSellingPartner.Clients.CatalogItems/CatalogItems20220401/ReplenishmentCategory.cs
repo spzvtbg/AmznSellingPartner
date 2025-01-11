@@ -9,7 +9,8 @@ namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 	public enum ReplenishmentCategory
 	{
 		/// <summary>
-		/// Indicates non-automated purchasing of inventory that has been allocated to Amazon by the vendor.
+		/// Indicates non-automated purchasing of inventory that has been allocated to Amazon by the v
+		/// endor.
 		/// </summary>
 		[EnumMember(Value = "ALLOCATED")]
 		ALLOCATED,

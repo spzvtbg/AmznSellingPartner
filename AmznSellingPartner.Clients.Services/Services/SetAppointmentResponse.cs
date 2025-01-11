@@ -9,8 +9,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 	public class SetAppointmentResponse : BaseClass
 	{
 		/// <summary>
-		/// New appointment identifier generated during the `addAppointmentForServiceJobByServiceJobId` or `rescheduleAppointmentForServiceJobByServiceJobId`
-		/// operations.
+		/// New appointment identifier generated during the `addAppointmentForServiceJobByServiceJobId`
+		/// or `rescheduleAppointmentForServiceJobByServiceJobId` operations.
 		/// </summary>
 		[JsonProperty("appointmentId")]
 		public AppointmentId AppointmentId { get; set; } 

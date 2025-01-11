@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// The status of the Amazon Easy Ship order. This property is only included for Amazon Easy Ship orders
-	/// .
+	/// The status of the Amazon Easy Ship order. This property is only included for Amazon Easy Ship
+	/// orders.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum EasyShipShipmentStatus

@@ -30,7 +30,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		ENCUMBERED_CAPACITY,
 
 		/// <summary>
-		/// This capacity represents the capacity made unavailable due to events like Breaks/Leaves/Lunch.
+		/// This capacity represents the capacity made unavailable due to events like Breaks/Leaves/Lu
+		/// nch.
 		/// </summary>
 		[EnumMember(Value = "RESERVED_CAPACITY")]
 		RESERVED_CAPACITY,

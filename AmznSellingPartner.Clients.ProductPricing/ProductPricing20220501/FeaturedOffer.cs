@@ -10,8 +10,8 @@ namespace AmznSellingPartner.Clients.ProductPricing.ProductPricing20220501
 	public class FeaturedOffer : BaseClass
 	{
 		/// <summary>
-		/// An offer identifier used to identify the merchant of the featured offer. Since this may not belong to
-		/// the requester, the SKU field is omitted.
+		/// An offer identifier used to identify the merchant of the featured offer. Since this may not
+		/// belong to the requester, the SKU field is omitted.
 		/// </summary>
 		[JsonProperty("offerIdentifier")]
 		[IsRequired]

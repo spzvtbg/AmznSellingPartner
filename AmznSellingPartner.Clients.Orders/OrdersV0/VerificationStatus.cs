@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum VerificationStatus
 	{
 		/// <summary>
-		/// The order is pending approval. Note that the approval might be needed from someone other than the merchant
-		/// as determined by the `RequiresMerchantAction` property.
+		/// The order is pending approval. Note that the approval might be needed from someone other than
+		/// the merchant as determined by the `RequiresMerchantAction` property.
 		/// </summary>
 		[EnumMember(Value = "Pending")]
 		Pending,

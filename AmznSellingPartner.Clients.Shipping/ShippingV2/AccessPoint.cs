@@ -40,8 +40,8 @@ namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 		public AssistanceType AssistanceType { get; set; } 
 
 		/// <summary>
-		/// The score of access point, based on proximity to postal code and sorting preference. This can be used
-		/// to sort access point results on shipper's end.
+		/// The score of access point, based on proximity to postal code and sorting preference. This can
+		/// be used to sort access point results on shipper's end.
 		/// </summary>
 		[JsonProperty("score")]
 		public string Score { get; set; } 

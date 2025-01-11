@@ -10,13 +10,15 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	public class ShipmentDestination : BaseClass
 	{
 		/// <summary>
-		/// The address the shipment should be sent to. Empty if the destination type is `AMAZON_OPTIMIZED`.
+		/// The address the shipment should be sent to. Empty if the destination type is `AMAZON_OPTIM
+		/// IZED`.
 		/// </summary>
 		[JsonProperty("address")]
 		public Address Address { get; set; } 
 
 		/// <summary>
-		/// The type of destination for this shipment. Possible values: `AMAZON_OPTIMIZED`, `AMAZON_WAREHOUSE`.
+		/// The type of destination for this shipment. Possible values: `AMAZON_OPTIMIZED`, `AMAZON_WA
+		/// REHOUSE`.
 		/// </summary>
 		[JsonProperty("destinationType")]
 		[IsRequired]
@@ -25,8 +27,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 		public string DestinationType { get; set; } 
 
 		/// <summary>
-		/// The warehouse that the shipment should be sent to. Empty if the destination type is `AMAZON_OPTIMIZE
-		/// D`.
+		/// The warehouse that the shipment should be sent to. Empty if the destination type is `AMAZO
+		/// N_OPTIMIZED`.
 		/// </summary>
 		[JsonProperty("warehouseId")]
 		[MinLength(1)]

@@ -5,7 +5,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The A+ Content document. This is the enhanced content that is published to product detail pages.
+	/// The A+ Content document. This is the enhanced content that is published to product detail
+	/// pages.
 	/// </summary>
 	public class ContentDocument : BaseClass
 	{

@@ -14,9 +14,9 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public string Name { get; set; } 
 
 		/// <summary>
-		/// Code that identifies the carrier for the shipment. The Standard Carrier Alpha Code (SCAC) is a unique
-		/// two to four letter code used to identify a carrier. Carrier SCAC codes are assigned and maintained by
-		/// the NMFTA (National Motor Freight Association).
+		/// Code that identifies the carrier for the shipment. The Standard Carrier Alpha Code (SCAC) is
+		/// a unique two to four letter code used to identify a carrier. Carrier SCAC codes are assigned
+		/// and maintained by the NMFTA (National Motor Freight Association).
 		/// </summary>
 		[JsonProperty("code")]
 		public string Code { get; set; } 
@@ -34,9 +34,9 @@ namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 		public string Email { get; set; } 
 
 		/// <summary>
-		/// The field is also known as PRO number is a unique number assigned by the carrier. It is used to identify
-		/// and track the shipment that goes out for delivery. This field is mandatory for US, CA, MX shipment c
-		/// onfirmations.
+		/// The field is also known as PRO number is a unique number assigned by the carrier. It is used
+		/// to identify and track the shipment that goes out for delivery. This field is mandatory for
+		/// US, CA, MX shipment confirmations.
 		/// </summary>
 		[JsonProperty("shipmentReferenceNumber")]
 		public string ShipmentReferenceNumber { get; set; } 

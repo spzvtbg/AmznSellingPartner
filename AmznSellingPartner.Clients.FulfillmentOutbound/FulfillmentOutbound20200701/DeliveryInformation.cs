@@ -3,8 +3,8 @@ namespace AmznSellingPartner.Clients.FulfillmentOutbound.FulfillmentOutbound2020
 	using Newtonsoft.Json;
 
 	/// <summary>
-	/// The delivery information for the package. This information is available after the package is deliver
-	/// ed.
+	/// The delivery information for the package. This information is available after the package is
+	/// delivered.
 	/// </summary>
 	public class DeliveryInformation : BaseClass
 	{

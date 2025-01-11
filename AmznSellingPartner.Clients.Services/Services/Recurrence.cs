@@ -20,8 +20,8 @@ namespace AmznSellingPartner.Clients.Services.Services
 		public DateTimeValue EndTime { get; set; } 
 
 		/// <summary>
-		/// Days of the week when recurrence is valid. If the schedule is valid every Monday, input will only contain
-		/// `MONDAY` in the list.
+		/// Days of the week when recurrence is valid. If the schedule is valid every Monday, input will
+		/// only contain `MONDAY` in the list.
 		/// </summary>
 		[JsonProperty("daysOfWeek")]
 		public List<DayOfWeek> DaysOfWeek { get; set; } 

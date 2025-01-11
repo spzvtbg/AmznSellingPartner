@@ -9,7 +9,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 	public enum OrderType
 	{
 		/// <summary>
-		/// An order that contains items for which the selling partner currently has inventory in stock.
+		/// An order that contains items for which the selling partner currently has inventory in stoc
+		/// k.
 		/// </summary>
 		[EnumMember(Value = "StandardOrder")]
 		StandardOrder,
@@ -27,8 +28,8 @@ namespace AmznSellingPartner.Clients.Orders.OrdersV0
 		Preorder,
 
 		/// <summary>
-		/// An order that contains items that already have been released in the market but are currently out of stock
-		/// and will be available in the future.
+		/// An order that contains items that already have been released in the market but are currently
+		/// out of stock and will be available in the future.
 		/// </summary>
 		[EnumMember(Value = "BackOrder")]
 		BackOrder,

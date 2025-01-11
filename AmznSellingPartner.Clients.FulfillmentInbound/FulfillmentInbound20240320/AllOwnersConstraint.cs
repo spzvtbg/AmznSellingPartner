@@ -6,8 +6,8 @@ namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound202403
 	using System.Runtime.Serialization;
 
 	/// <summary>
-	/// A constraint that applies to all owners. If no constraint is specified, defer to any individual owner
-	/// constraints.
+	/// A constraint that applies to all owners. If no constraint is specified, defer to any individual
+	/// owner constraints.
 	/// </summary>
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum AllOwnersConstraint

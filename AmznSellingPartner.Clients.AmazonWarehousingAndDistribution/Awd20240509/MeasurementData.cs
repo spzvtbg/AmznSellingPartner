@@ -10,7 +10,8 @@ namespace AmznSellingPartner.Clients.AmazonWarehousingAndDistribution.Awd2024050
 	public class MeasurementData : BaseClass
 	{
 		/// <summary>
-		/// Dimensions of the package. Dimensions are required when creating an inbound or outbound order.
+		/// Dimensions of the package. Dimensions are required when creating an inbound or outbound or
+		/// der.
 		/// </summary>
 		[JsonProperty("dimensions")]
 		public PackageDimensions Dimensions { get; set; } 

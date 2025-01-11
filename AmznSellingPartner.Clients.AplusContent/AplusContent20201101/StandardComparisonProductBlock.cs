@@ -12,8 +12,8 @@ namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 	public class StandardComparisonProductBlock : BaseClass
 	{
 		/// <summary>
-		/// The rank or index of this comparison product block within the module. Different blocks cannot occupy
-		/// the same position within a single module.
+		/// The rank or index of this comparison product block within the module. Different blocks cannot
+		/// occupy the same position within a single module.
 		/// </summary>
 		[JsonProperty("position")]
 		[IsRequired]

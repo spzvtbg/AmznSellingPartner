@@ -7,8 +7,8 @@ namespace AmznSellingPartner.Clients.FbaInboundEligibility.FbaInbound
 	using System.Collections.Generic;
 
 	/// <summary>
-	/// The response object which contains the ASIN, marketplaceId if required, eligibility program, the eligibility
-	/// status (boolean), and a list of ineligibility reason codes.
+	/// The response object which contains the ASIN, marketplaceId if required, eligibility program,
+	/// the eligibility status (boolean), and a list of ineligibility reason codes.
 	/// </summary>
 	public class ItemEligibilityPreview : BaseClass
 	{

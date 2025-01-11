@@ -1,10 +1,13 @@
 ﻿namespace AmznSellingPartner.Clients
 {
+    using AmznSellingPartner.Clients.Attributes;
+
     using Newtonsoft.Json.Linq;
 
     using System.Collections.Generic;
     using System.Linq;
     using System.Net.Http;
+    using System.Reflection;
 
     public class BaseHttpResponse<T> : BaseClass where T : BaseHttpResponse<T>, new()
     {
@@ -29,6 +32,17 @@
         private static BaseHttpResponse<T> ParseFromHttpResponseMessage(HttpResponseMessage httpResponseMessage)
         {
             var jcontent = new JObject();
+            var property = typeof(T)
+                .GetProperties()
+                .FirstOrDefault(x => x.GetCustomAttributes<HttpStatusAttribute>()
+                                      .Any(x => x.Status == (int)httpResponseMessage.StatusCode));
+            var content = httpResponseMessage
+                .Content
+                .ReadAsStringAsync()
+                .Result;
+
+            jcontent[property.Name] = JObject.Parse(content);
+            jcontent[nameof(Succeeded)] = httpResponseMessage.IsSuccessStatusCode;
 
             foreach (var (key, value) in httpResponseMessage.Headers)
             {
@@ -47,16 +61,6 @@
                         jcontent[key.ToLower()] = value.FirstOrDefault();
                     }
                 }
-            }
-
-            if (httpResponseMessage.IsSuccessStatusCode)
-            {
-                var content = httpResponseMessage
-                    .Content
-                    .ReadAsStringAsync()
-                    .Result;
-                jcontent = JObject.Parse(content);
-                jcontent.Add(nameof(Succeeded), true);
             }
 
             return jcontent.ToObject<T>();

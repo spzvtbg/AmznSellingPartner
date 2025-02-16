@@ -1,21 +1,21 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentSandboxTestData.VendorDirectFulfillmentSandboxData20211028
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// The identification object for the party information. For example, warehouse code or vendor
-	/// code. Please refer to specific party for more details.
-	/// </summary>
-	public class PartyIdentification : BaseClass
-	{
-		/// <summary>
-		/// Assigned identification for the party. For example, warehouse code or vendor code. Please refer
-		/// to specific party for more details.
-		/// </summary>
-		[JsonProperty("partyId")]
-		[IsRequired]
-		public string PartyId { get; set; } 
-	}
+    /// <summary>
+    /// The identification object for the party information. For example, warehouse code or vendor
+    /// code. Please refer to specific party for more details.
+    /// </summary>
+    public class PartyIdentification : BaseClass
+    {
+        /// <summary>
+        /// Assigned identification for the party. For example, warehouse code or vendor code. Please refer
+        /// to specific party for more details.
+        /// </summary>
+        [JsonProperty("partyId")]
+        [IsRequired]
+        public string PartyId { get; set; }
+    }
 }

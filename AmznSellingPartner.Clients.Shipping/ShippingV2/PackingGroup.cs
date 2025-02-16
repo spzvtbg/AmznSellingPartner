@@ -1,29 +1,29 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
-	using Newtonsoft.Json.Converters;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-	using System.Runtime.Serialization;
+    using System.Runtime.Serialization;
 
-	[JsonConverter(typeof(StringEnumConverter))]
-	public enum PackingGroup
-	{
-		/// <summary>
-		/// Packing group I indicates great danger.
-		/// </summary>
-		[EnumMember(Value = "I")]
-		I,
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum PackingGroup
+    {
+        /// <summary>
+        /// Packing group I indicates great danger.
+        /// </summary>
+        [EnumMember(Value = "I")]
+        I,
 
-		/// <summary>
-		/// Packing group II indicates medium danger.
-		/// </summary>
-		[EnumMember(Value = "II")]
-		II,
+        /// <summary>
+        /// Packing group II indicates medium danger.
+        /// </summary>
+        [EnumMember(Value = "II")]
+        II,
 
-		/// <summary>
-		/// Packing group III indicates minor danger.
-		/// </summary>
-		[EnumMember(Value = "III")]
-		III,
-	}
+        /// <summary>
+        /// Packing group III indicates minor danger.
+        /// </summary>
+        [EnumMember(Value = "III")]
+        III,
+    }
 }

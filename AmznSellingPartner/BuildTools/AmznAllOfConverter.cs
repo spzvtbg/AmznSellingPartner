@@ -1,7 +1,7 @@
 ﻿namespace AmznSellingPartner.BuildTools
 {
-    using Newtonsoft.Json.Linq;
     using Newtonsoft.Json;
+    using Newtonsoft.Json.Linq;
 
     using System;
 

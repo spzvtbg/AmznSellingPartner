@@ -1,0 +1,16 @@
+﻿<Page x:Class="AmznSellingPartner.BuildTools.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Controls="clr-namespace:AmznSellingPartner.BuildTools.Controls"
+      xmlns:ViewModels.Pages="clr-namespace:AmznSellingPartner.BuildTools.ViewModels.Pages">
+    <Page.DataContext>
+        <ViewModels.Pages:MainPageViewModel />
+    </Page.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Controls:MainMenu Grid.Row="0" />
+    </Grid>
+</Page>

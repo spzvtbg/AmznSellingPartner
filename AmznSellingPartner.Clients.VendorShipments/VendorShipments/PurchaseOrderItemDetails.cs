@@ -1,17 +1,17 @@
 namespace AmznSellingPartner.Clients.VendorShipments.VendorShipments
 {
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// Item details for be provided for every item in shipment at either the item or carton or pallet
-	/// level, whichever is appropriate.
-	/// </summary>
-	public class PurchaseOrderItemDetails : BaseClass
-	{
-		/// <summary>
-		/// Maximum retail price of the item being shipped.
-		/// </summary>
-		[JsonProperty("maximumRetailPrice")]
-		public Money MaximumRetailPrice { get; set; } 
-	}
+    /// <summary>
+    /// Item details for be provided for every item in shipment at either the item or carton or pallet
+    /// level, whichever is appropriate.
+    /// </summary>
+    public class PurchaseOrderItemDetails : BaseClass
+    {
+        /// <summary>
+        /// Maximum retail price of the item being shipped.
+        /// </summary>
+        [JsonProperty("maximumRetailPrice")]
+        public Money MaximumRetailPrice { get; set; }
+    }
 }

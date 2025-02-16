@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// A list of ValidationMetadata
-	/// </summary>
-	public class ValidationMetadataList : List<ValidationMetadata>
-	{
-	}
+    /// <summary>
+    /// A list of ValidationMetadata
+    /// </summary>
+    public class ValidationMetadataList : List<ValidationMetadata>
+    {
+    }
 }

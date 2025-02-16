@@ -4,6 +4,11 @@
     {
         private double value;
 
+        public DoubleValue()
+        {
+
+        }
+
         public DoubleValue(double value)
             => this.value = value;
 

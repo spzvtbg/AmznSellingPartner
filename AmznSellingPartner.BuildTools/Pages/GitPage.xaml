@@ -1,0 +1,47 @@
+﻿<Page x:Class="AmznSellingPartner.BuildTools.Pages.GitPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Controls="clr-namespace:AmznSellingPartner.BuildTools.Controls"
+      xmlns:Models="clr-namespace:AmznSellingPartner.BuildTools.Models"
+      xmlns:ViewModels.Pages="clr-namespace:AmznSellingPartner.BuildTools.ViewModels.Pages">
+    <Page.DataContext>
+        <ViewModels.Pages:GitPageViewModel />
+    </Page.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Controls:MainMenu Grid.Row="0" />
+        <Menu Grid.Row="1">
+            <MenuItem Header="Clone" IsEnabled="{Binding IsCloneEnabled}" />
+            <MenuItem Header="Init" IsEnabled="{Binding IsInitEnabled}" />
+            <MenuItem Header="Info" />
+        </Menu>
+        <ScrollViewer Grid.Row="2" 
+                      HorizontalScrollBarVisibility="Auto" 
+                      VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding GitInfo}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="{x:Type Models:CmdResponse}">
+                        <TextBlock IsEnabled="{Binding Status}" Text="{Binding Line}">
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Foreground" Value="Green" />
+                                        </Trigger>
+                                        <Trigger Property="IsEnabled" Value="True">
+                                            <Setter Property="Foreground" Value="Red" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Page>

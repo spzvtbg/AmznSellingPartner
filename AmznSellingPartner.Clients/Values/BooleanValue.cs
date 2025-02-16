@@ -4,7 +4,12 @@
     {
         private readonly bool value;
 
-        private BooleanValue(bool value)
+        public BooleanValue()
+        {
+
+        }
+
+        public BooleanValue(bool value)
             => this.value = value;
 
         public static implicit operator BooleanValue(bool value)

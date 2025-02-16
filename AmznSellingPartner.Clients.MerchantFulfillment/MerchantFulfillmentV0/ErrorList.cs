@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 {
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// A list of error responses returned when a request is unsuccessful.
-	/// </summary>
-	public class ErrorList : List<Error>
-	{
-	}
+    /// <summary>
+    /// A list of error responses returned when a request is unsuccessful.
+    /// </summary>
+    public class ErrorList : List<Error>
+    {
+    }
 }

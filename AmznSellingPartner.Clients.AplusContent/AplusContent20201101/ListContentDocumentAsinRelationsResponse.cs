@@ -1,13 +1,13 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	public class ListContentDocumentAsinRelationsResponse : BaseClass
-	{
-		[JsonProperty("asinMetadataSet")]
-		[IsRequired]
-		public AsinMetadataSet AsinMetadataSet { get; set; } 
-	}
+    public class ListContentDocumentAsinRelationsResponse : BaseClass
+    {
+        [JsonProperty("asinMetadataSet")]
+        [IsRequired]
+        public AsinMetadataSet AsinMetadataSet { get; set; }
+    }
 }

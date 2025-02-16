@@ -1,6 +1,6 @@
 ﻿namespace AmznSellingPartner.Clients
 {
-    using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.HttpAttributes;
 
     using Newtonsoft.Json.Linq;
 
@@ -16,7 +16,7 @@
 
         }
 
-        private BaseHttpResponse(Dictionary<string, string> errors) 
+        private BaseHttpResponse(Dictionary<string, string> errors)
             => this.ValidationErrors = errors;
 
         public bool Succeeded { get; set; }

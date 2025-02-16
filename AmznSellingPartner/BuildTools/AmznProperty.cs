@@ -6,8 +6,6 @@
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 
-    using System;
-
     internal class AmznProperty : AmznUnhandled
     {
         public string Type { get; set; }
@@ -48,7 +46,6 @@
 
         public int? Maximum { get; set; }
 
-        // TODO: Implement Multiple of property
         public int? MultipleOf { get; set; }
 
         internal override CsProperty OnDeserialized(string name, CsType @class, CsContext context)

@@ -1,15 +1,16 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.HttpAttributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	[HttpPost("/inbound/fba/2024-03-20/inboundPlans")]
-	public class AmznCreateInboundPlanRequest : BaseHttpRequest
-	{
-		/// <summary>
-		/// The body of the request to `createInboundPlan`.
-		/// </summary>
-		[InBody("body")]
-		[IsRequired]
-		public CreateInboundPlanRequest Body { get; set; } 
-	}
+    [HttpPost("/inbound/fba/2024-03-20/inboundPlans")]
+    public class AmznCreateInboundPlanRequest : BaseHttpRequest
+    {
+        /// <summary>
+        /// The body of the request to `createInboundPlan`.
+        /// </summary>
+        [InBody("body")]
+        [IsRequired]
+        public CreateInboundPlanRequest Body { get; set; }
+    }
 }

@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// A list of order items.
-	/// </summary>
-	public class ConfirmShipmentOrderItemsList : List<ConfirmShipmentOrderItem>
-	{
-	}
+    /// <summary>
+    /// A list of order items.
+    /// </summary>
+    public class ConfirmShipmentOrderItemsList : List<ConfirmShipmentOrderItem>
+    {
+    }
 }

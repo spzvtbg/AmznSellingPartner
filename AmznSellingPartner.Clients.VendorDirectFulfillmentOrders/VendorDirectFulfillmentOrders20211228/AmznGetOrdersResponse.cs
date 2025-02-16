@@ -1,44 +1,44 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentOrders.VendorDirectFulfillmentOrders20211228
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.HttpAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	public class AmznGetOrdersResponse : BaseHttpResponse<AmznGetOrdersResponse>
-	{
-		/// <summary>
-		/// Your rate limit (requests per second) for this operation.
-		/// </summary>
-		[JsonProperty("x-amzn-ratelimit-limit")]
-		public string XAmznRatelimitLimit { get; set; } 
+    public class AmznGetOrdersResponse : BaseHttpResponse<AmznGetOrdersResponse>
+    {
+        /// <summary>
+        /// Your rate limit (requests per second) for this operation.
+        /// </summary>
+        [JsonProperty("x-amzn-ratelimit-limit")]
+        public string XAmznRatelimitLimit { get; set; }
 
-		/// <summary>
-		/// Unique request reference identifier.
-		/// </summary>
-		[JsonProperty("x-amzn-requestid")]
-		public string XAmznRequestid { get; set; } 
+        /// <summary>
+        /// Unique request reference identifier.
+        /// </summary>
+        [JsonProperty("x-amzn-requestid")]
+        public string XAmznRequestid { get; set; }
 
-		/// <summary>
-		/// Success.
-		/// </summary>
-		[HttpStatus(200)]
-		public OrderList OrderList { get; set; } 
+        /// <summary>
+        /// Success.
+        /// </summary>
+        [HttpStatus(200)]
+        public OrderList OrderList { get; set; }
 
-		/// <summary>
-		/// Request has missing or invalid parameters and cannot be parsed. Indicates that access to the
-		/// resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token,
-		/// or Invalid Signature. The resource specified does not exist. The request payload is in an unsupported
-		/// format. The frequency of requests was greater than allowed. An unexpected condition occurred
-		/// that prevented the server from fulfilling the request. Temporary overloading or maintenance
-		/// of the server.
-		/// </summary>
-		[HttpStatus(400)]
-		[HttpStatus(403)]
-		[HttpStatus(404)]
-		[HttpStatus(415)]
-		[HttpStatus(429)]
-		[HttpStatus(500)]
-		[HttpStatus(503)]
-		public ErrorList ErrorList { get; set; } 
-	}
+        /// <summary>
+        /// Request has missing or invalid parameters and cannot be parsed. Indicates that access to the
+        /// resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token,
+        /// or Invalid Signature. The resource specified does not exist. The request payload is in an unsupported
+        /// format. The frequency of requests was greater than allowed. An unexpected condition occurred
+        /// that prevented the server from fulfilling the request. Temporary overloading or maintenance
+        /// of the server.
+        /// </summary>
+        [HttpStatus(400)]
+        [HttpStatus(403)]
+        [HttpStatus(404)]
+        [HttpStatus(415)]
+        [HttpStatus(429)]
+        [HttpStatus(500)]
+        [HttpStatus(503)]
+        public ErrorList ErrorList { get; set; }
+    }
 }

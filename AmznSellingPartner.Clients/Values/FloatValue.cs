@@ -4,6 +4,11 @@
     {
         private float value;
 
+        public FloatValue()
+        {
+
+        }
+
         public FloatValue(float value)
             => this.value = value;
 

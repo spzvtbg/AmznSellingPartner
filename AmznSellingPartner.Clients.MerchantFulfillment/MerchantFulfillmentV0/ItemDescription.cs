@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 {
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.Values;
 
-	/// <summary>
-	/// The description of the item.
-	/// </summary>
-	public class ItemDescription : StringValue
-	{
-	}
+    /// <summary>
+    /// The description of the item.
+    /// </summary>
+    public class ItemDescription : StringValue
+    {
+    }
 }

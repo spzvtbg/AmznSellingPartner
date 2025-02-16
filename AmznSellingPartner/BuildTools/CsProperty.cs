@@ -4,7 +4,6 @@
 
     using Newtonsoft.Json;
 
-    using System;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -35,7 +34,8 @@
             if (!string.IsNullOrWhiteSpace(name))
             {
                 this.attributes.Add(new KeyValuePair<string, string>(name, value?.ToString()));
-                this.usings.Add("AmznSellingPartner.Clients.Attributes");
+                this.usings.Add("AmznSellingPartner.Clients.HttpAttributes");
+                this.usings.Add("AmznSellingPartner.Clients.ValidationAttributes");
             }
 
             return this;

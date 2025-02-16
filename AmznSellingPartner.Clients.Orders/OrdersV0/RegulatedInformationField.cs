@@ -1,41 +1,41 @@
 namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// A field collected from the regulatory form.
-	/// </summary>
-	public class RegulatedInformationField : BaseClass
-	{
-		/// <summary>
-		/// The unique identifier of the field.
-		/// </summary>
-		[JsonProperty("FieldId")]
-		[IsRequired]
-		public string FieldId { get; set; } 
+    /// <summary>
+    /// A field collected from the regulatory form.
+    /// </summary>
+    public class RegulatedInformationField : BaseClass
+    {
+        /// <summary>
+        /// The unique identifier of the field.
+        /// </summary>
+        [JsonProperty("FieldId")]
+        [IsRequired]
+        public string FieldId { get; set; }
 
-		/// <summary>
-		/// The name of the field.
-		/// </summary>
-		[JsonProperty("FieldLabel")]
-		[IsRequired]
-		public string FieldLabel { get; set; } 
+        /// <summary>
+        /// The name of the field.
+        /// </summary>
+        [JsonProperty("FieldLabel")]
+        [IsRequired]
+        public string FieldLabel { get; set; }
 
-		/// <summary>
-		/// The type of field.
-		/// </summary>
-		[JsonProperty("FieldType")]
-		[IsRequired]
-		public FieldType FieldType { get; set; } 
+        /// <summary>
+        /// The type of field.
+        /// </summary>
+        [JsonProperty("FieldType")]
+        [IsRequired]
+        public FieldType FieldType { get; set; }
 
-		/// <summary>
-		/// The content of the field as collected in regulatory form. Note that `FileAttachment` type fields
-		/// contain a URL where you can download the attachment.
-		/// </summary>
-		[JsonProperty("FieldValue")]
-		[IsRequired]
-		public string FieldValue { get; set; } 
-	}
+        /// <summary>
+        /// The content of the field as collected in regulatory form. Note that `FileAttachment` type fields
+        /// contain a URL where you can download the attachment.
+        /// </summary>
+        [JsonProperty("FieldValue")]
+        [IsRequired]
+        public string FieldValue { get; set; }
+    }
 }

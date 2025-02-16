@@ -4,6 +4,11 @@
     {
         private string value;
 
+        public StringValue()
+        {
+
+        }
+
         public StringValue(string value)
             => this.value = value;
 

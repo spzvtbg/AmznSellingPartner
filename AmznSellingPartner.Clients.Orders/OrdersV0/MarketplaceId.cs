@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.Values;
 
-	/// <summary>
-	/// The unobfuscated marketplace identifier.
-	/// </summary>
-	public class MarketplaceId : StringValue
-	{
-	}
+    /// <summary>
+    /// The unobfuscated marketplace identifier.
+    /// </summary>
+    public class MarketplaceId : StringValue
+    {
+    }
 }

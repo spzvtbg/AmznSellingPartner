@@ -1,39 +1,39 @@
 namespace AmznSellingPartner.Clients.VendorDirectFulfillmentPayments.VendorDirectFulfillmentPaymentsV1
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// Details of tax amount applied.
-	/// </summary>
-	public class TaxDetail : BaseClass
-	{
-		/// <summary>
-		/// Type of the tax applied.
-		/// </summary>
-		[JsonProperty("taxType")]
-		[IsRequired]
-		public TaxType TaxType { get; set; } 
+    /// <summary>
+    /// Details of tax amount applied.
+    /// </summary>
+    public class TaxDetail : BaseClass
+    {
+        /// <summary>
+        /// Type of the tax applied.
+        /// </summary>
+        [JsonProperty("taxType")]
+        [IsRequired]
+        public TaxType TaxType { get; set; }
 
-		/// <summary>
-		/// Tax percentage applied. Percentage must be expressed in decimal.
-		/// </summary>
-		[JsonProperty("taxRate")]
-		public Decimal TaxRate { get; set; } 
+        /// <summary>
+        /// Tax percentage applied. Percentage must be expressed in decimal.
+        /// </summary>
+        [JsonProperty("taxRate")]
+        public Decimal TaxRate { get; set; }
 
-		/// <summary>
-		/// Total tax amount applied on invoice total or an item total.
-		/// </summary>
-		[JsonProperty("taxAmount")]
-		[IsRequired]
-		public Money TaxAmount { get; set; } 
+        /// <summary>
+        /// Total tax amount applied on invoice total or an item total.
+        /// </summary>
+        [JsonProperty("taxAmount")]
+        [IsRequired]
+        public Money TaxAmount { get; set; }
 
-		/// <summary>
-		/// This field will contain the invoice amount that is taxable at the rate specified in the tax
-		/// rate field.
-		/// </summary>
-		[JsonProperty("taxableAmount")]
-		public Money TaxableAmount { get; set; } 
-	}
+        /// <summary>
+        /// This field will contain the invoice amount that is taxable at the rate specified in the tax
+        /// rate field.
+        /// </summary>
+        [JsonProperty("taxableAmount")]
+        public Money TaxableAmount { get; set; }
+    }
 }

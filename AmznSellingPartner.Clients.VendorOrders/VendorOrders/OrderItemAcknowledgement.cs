@@ -1,47 +1,47 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
-	using AmznSellingPartner.Clients.Attributes;
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.ValidationAttributes;
+    using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// Represents the acknowledgement details for an individual order item, including the acknowledgement
-	/// code, acknowledged quantity, scheduled ship and delivery dates, and rejection reason (if a
-	/// pplicable).
-	/// </summary>
-	public class OrderItemAcknowledgement : BaseClass
-	{
-		/// <summary>
-		/// This indicates the acknowledgement code.
-		/// </summary>
-		[JsonProperty("acknowledgementCode")]
-		[IsRequired]
-		public AcknowledgementCode AcknowledgementCode { get; set; } 
+    /// <summary>
+    /// Represents the acknowledgement details for an individual order item, including the acknowledgement
+    /// code, acknowledged quantity, scheduled ship and delivery dates, and rejection reason (if a
+    /// pplicable).
+    /// </summary>
+    public class OrderItemAcknowledgement : BaseClass
+    {
+        /// <summary>
+        /// This indicates the acknowledgement code.
+        /// </summary>
+        [JsonProperty("acknowledgementCode")]
+        [IsRequired]
+        public AcknowledgementCode AcknowledgementCode { get; set; }
 
-		/// <summary>
-		/// Details of quantity acknowledged with the above acknowledgement code.
-		/// </summary>
-		[JsonProperty("acknowledgedQuantity")]
-		[IsRequired]
-		public ItemQuantity AcknowledgedQuantity { get; set; } 
+        /// <summary>
+        /// Details of quantity acknowledged with the above acknowledgement code.
+        /// </summary>
+        [JsonProperty("acknowledgedQuantity")]
+        [IsRequired]
+        public ItemQuantity AcknowledgedQuantity { get; set; }
 
-		/// <summary>
-		/// Estimated ship date per line item. Must be in ISO-8601 date/time format.
-		/// </summary>
-		[JsonProperty("scheduledShipDate")]
-		public DateTimeValue ScheduledShipDate { get; set; } 
+        /// <summary>
+        /// Estimated ship date per line item. Must be in ISO-8601 date/time format.
+        /// </summary>
+        [JsonProperty("scheduledShipDate")]
+        public DateTimeValue ScheduledShipDate { get; set; }
 
-		/// <summary>
-		/// Estimated delivery date per line item. Must be in ISO-8601 date/time format.
-		/// </summary>
-		[JsonProperty("scheduledDeliveryDate")]
-		public DateTimeValue ScheduledDeliveryDate { get; set; } 
+        /// <summary>
+        /// Estimated delivery date per line item. Must be in ISO-8601 date/time format.
+        /// </summary>
+        [JsonProperty("scheduledDeliveryDate")]
+        public DateTimeValue ScheduledDeliveryDate { get; set; }
 
-		/// <summary>
-		/// Indicates the reason for rejection.
-		/// </summary>
-		[JsonProperty("rejectionReason")]
-		public RejectionReason RejectionReason { get; set; } 
-	}
+        /// <summary>
+        /// Indicates the reason for rejection.
+        /// </summary>
+        [JsonProperty("rejectionReason")]
+        public RejectionReason RejectionReason { get; set; }
+    }
 }

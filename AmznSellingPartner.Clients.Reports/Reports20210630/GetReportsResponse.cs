@@ -1,26 +1,26 @@
 namespace AmznSellingPartner.Clients.Reports.Reports20210630
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// The response for the `getReports` operation.
-	/// </summary>
-	public class GetReportsResponse : BaseClass
-	{
-		/// <summary>
-		/// The reports.
-		/// </summary>
-		[JsonProperty("reports")]
-		[IsRequired]
-		public ReportList Reports { get; set; } 
+    /// <summary>
+    /// The response for the `getReports` operation.
+    /// </summary>
+    public class GetReportsResponse : BaseClass
+    {
+        /// <summary>
+        /// The reports.
+        /// </summary>
+        [JsonProperty("reports")]
+        [IsRequired]
+        public ReportList Reports { get; set; }
 
-		/// <summary>
-		/// Returned when the number of results exceeds `pageSize`. To get the next page of results, call
-		/// `getReports` with this token as the only parameter.
-		/// </summary>
-		[JsonProperty("nextToken")]
-		public string NextToken { get; set; } 
-	}
+        /// <summary>
+        /// Returned when the number of results exceeds `pageSize`. To get the next page of results, call
+        /// `getReports` with this token as the only parameter.
+        /// </summary>
+        [JsonProperty("nextToken")]
+        public string NextToken { get; set; }
+    }
 }

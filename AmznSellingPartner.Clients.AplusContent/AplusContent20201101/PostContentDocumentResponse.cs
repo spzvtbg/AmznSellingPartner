@@ -1,13 +1,13 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	public class PostContentDocumentResponse : BaseClass
-	{
-		[JsonProperty("contentReferenceKey")]
-		[IsRequired]
-		public ContentReferenceKey ContentReferenceKey { get; set; } 
-	}
+    public class PostContentDocumentResponse : BaseClass
+    {
+        [JsonProperty("contentReferenceKey")]
+        [IsRequired]
+        public ContentReferenceKey ContentReferenceKey { get; set; }
+    }
 }

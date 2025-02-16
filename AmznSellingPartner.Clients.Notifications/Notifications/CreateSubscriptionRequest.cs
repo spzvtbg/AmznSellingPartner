@@ -1,29 +1,29 @@
 namespace AmznSellingPartner.Clients.Notifications.Notifications
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// The request schema for the `createSubscription` operation.
-	/// </summary>
-	public class CreateSubscriptionRequest : BaseClass
-	{
-		/// <summary>
-		/// The version of the payload object to be used in the notification.
-		/// </summary>
-		[JsonProperty("payloadVersion")]
-		[IsRequired]
-		public string PayloadVersion { get; set; } 
+    /// <summary>
+    /// The request schema for the `createSubscription` operation.
+    /// </summary>
+    public class CreateSubscriptionRequest : BaseClass
+    {
+        /// <summary>
+        /// The version of the payload object to be used in the notification.
+        /// </summary>
+        [JsonProperty("payloadVersion")]
+        [IsRequired]
+        public string PayloadVersion { get; set; }
 
-		/// <summary>
-		/// The identifier for the destination where notifications will be delivered.
-		/// </summary>
-		[JsonProperty("destinationId")]
-		[IsRequired]
-		public string DestinationId { get; set; } 
+        /// <summary>
+        /// The identifier for the destination where notifications will be delivered.
+        /// </summary>
+        [JsonProperty("destinationId")]
+        [IsRequired]
+        public string DestinationId { get; set; }
 
-		[JsonProperty("processingDirective")]
-		public ProcessingDirective ProcessingDirective { get; set; } 
-	}
+        [JsonProperty("processingDirective")]
+        public ProcessingDirective ProcessingDirective { get; set; }
+    }
 }

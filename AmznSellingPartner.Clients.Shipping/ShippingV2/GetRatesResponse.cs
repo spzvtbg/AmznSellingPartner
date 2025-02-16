@@ -1,13 +1,13 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// The response schema for the getRates operation.
-	/// </summary>
-	public class GetRatesResponse : BaseClass
-	{
-		[JsonProperty("payload")]
-		public GetRatesResult Payload { get; set; } 
-	}
+    /// <summary>
+    /// The response schema for the getRates operation.
+    /// </summary>
+    public class GetRatesResponse : BaseClass
+    {
+        [JsonProperty("payload")]
+        public GetRatesResult Payload { get; set; }
+    }
 }

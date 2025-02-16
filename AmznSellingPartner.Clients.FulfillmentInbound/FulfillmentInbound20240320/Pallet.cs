@@ -1,41 +1,41 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// Contains information about a pallet that is used in the inbound plan. The pallet is a container
-	/// that holds multiple items or boxes.
-	/// </summary>
-	public class Pallet : BaseClass
-	{
-		[JsonProperty("dimensions")]
-		public Dimensions Dimensions { get; set; } 
+    /// <summary>
+    /// Contains information about a pallet that is used in the inbound plan. The pallet is a container
+    /// that holds multiple items or boxes.
+    /// </summary>
+    public class Pallet : BaseClass
+    {
+        [JsonProperty("dimensions")]
+        public Dimensions Dimensions { get; set; }
 
-		/// <summary>
-		/// Primary key to uniquely identify a Package (Box or Pallet).
-		/// </summary>
-		[JsonProperty("packageId")]
-		[IsRequired]
-		[Pattern("^[a-zA-Z0-9-]*")]
-		[MinLength(38)]
-		[MaxLength(38)]
-		public string PackageId { get; set; } 
+        /// <summary>
+        /// Primary key to uniquely identify a Package (Box or Pallet).
+        /// </summary>
+        [JsonProperty("packageId")]
+        [IsRequired]
+        [Pattern("^[a-zA-Z0-9-]*")]
+        [MinLength(38)]
+        [MaxLength(38)]
+        public string PackageId { get; set; }
 
-		/// <summary>
-		/// The number of containers where all other properties like weight or dimensions are identica
-		/// l.
-		/// </summary>
-		[JsonProperty("quantity")]
-		[Minimum(1)]
-		[Maximum(10000)]
-		public int Quantity { get; set; } 
+        /// <summary>
+        /// The number of containers where all other properties like weight or dimensions are identica
+        /// l.
+        /// </summary>
+        [JsonProperty("quantity")]
+        [Minimum(1)]
+        [Maximum(10000)]
+        public int Quantity { get; set; }
 
-		[JsonProperty("stackability")]
-		public Stackability Stackability { get; set; } 
+        [JsonProperty("stackability")]
+        public Stackability Stackability { get; set; }
 
-		[JsonProperty("weight")]
-		public Weight Weight { get; set; } 
-	}
+        [JsonProperty("weight")]
+        public Weight Weight { get; set; }
+    }
 }

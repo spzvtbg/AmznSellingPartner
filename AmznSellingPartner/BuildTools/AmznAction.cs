@@ -2,11 +2,11 @@
 {
     using AmznSellingPartner.Clients;
 
-    using Newtonsoft.Json.Linq;
     using Newtonsoft.Json;
+    using Newtonsoft.Json.Linq;
 
-    using System.Linq;
     using System;
+    using System.Linq;
 
     internal class AmznAction : AmznUnhandled
     {

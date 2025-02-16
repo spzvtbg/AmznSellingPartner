@@ -1,6 +1,6 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
-	public class Headers : BaseClass
-	{
-	}
+    public class Headers : BaseClass
+    {
+    }
 }

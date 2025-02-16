@@ -1,29 +1,29 @@
 namespace AmznSellingPartner.Clients.ProductFees.ProductFeesV0
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	public class Error : BaseClass
-	{
-		/// <summary>
-		/// An error code that identifies the type of error that occurred.
-		/// </summary>
-		[JsonProperty("code")]
-		[IsRequired]
-		public string Code { get; set; } 
+    public class Error : BaseClass
+    {
+        /// <summary>
+        /// An error code that identifies the type of error that occurred.
+        /// </summary>
+        [JsonProperty("code")]
+        [IsRequired]
+        public string Code { get; set; }
 
-		/// <summary>
-		/// A message that describes the error condition.
-		/// </summary>
-		[JsonProperty("message")]
-		[IsRequired]
-		public string Message { get; set; } 
+        /// <summary>
+        /// A message that describes the error condition.
+        /// </summary>
+        [JsonProperty("message")]
+        [IsRequired]
+        public string Message { get; set; }
 
-		/// <summary>
-		/// Additional details that can help the caller understand or fix the issue.
-		/// </summary>
-		[JsonProperty("details")]
-		public string Details { get; set; } 
-	}
+        /// <summary>
+        /// Additional details that can help the caller understand or fix the issue.
+        /// </summary>
+        [JsonProperty("details")]
+        public string Details { get; set; }
+    }
 }

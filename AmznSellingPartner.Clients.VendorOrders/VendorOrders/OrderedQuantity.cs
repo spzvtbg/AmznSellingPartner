@@ -1,21 +1,21 @@
 namespace AmznSellingPartner.Clients.VendorOrders.VendorOrders
 {
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	public class OrderedQuantity : BaseClass
-	{
-		/// <summary>
-		/// Item quantity ordered.
-		/// </summary>
-		[JsonProperty("orderedQuantity")]
-		public ItemQuantity OrderedQuantityValue { get; set; } 
+    public class OrderedQuantity : BaseClass
+    {
+        /// <summary>
+        /// Item quantity ordered.
+        /// </summary>
+        [JsonProperty("orderedQuantity")]
+        public ItemQuantity OrderedQuantityValue { get; set; }
 
-		/// <summary>
-		/// Details of item quantity ordered.
-		/// </summary>
-		[JsonProperty("orderedQuantityDetails")]
-		public List<OrderedQuantityDetails> OrderedQuantityDetails { get; set; } 
-	}
+        /// <summary>
+        /// Details of item quantity ordered.
+        /// </summary>
+        [JsonProperty("orderedQuantityDetails")]
+        public List<OrderedQuantityDetails> OrderedQuantityDetails { get; set; }
+    }
 }

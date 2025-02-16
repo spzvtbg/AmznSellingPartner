@@ -1,40 +1,40 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// Contains item identifiers and related tax information.
-	/// </summary>
-	public class ComplianceDetail : BaseClass
-	{
-		/// <summary>
-		/// The Amazon Standard Identification Number, which identifies the detail page identifier.
-		/// </summary>
-		[JsonProperty("asin")]
-		[MinLength(1)]
-		[MaxLength(10)]
-		public string Asin { get; set; } 
+    /// <summary>
+    /// Contains item identifiers and related tax information.
+    /// </summary>
+    public class ComplianceDetail : BaseClass
+    {
+        /// <summary>
+        /// The Amazon Standard Identification Number, which identifies the detail page identifier.
+        /// </summary>
+        [JsonProperty("asin")]
+        [MinLength(1)]
+        [MaxLength(10)]
+        public string Asin { get; set; }
 
-		/// <summary>
-		/// The Fulfillment Network SKU, which identifies a real fulfillable item with catalog data and
-		/// condition.
-		/// </summary>
-		[JsonProperty("fnsku")]
-		[MinLength(1)]
-		[MaxLength(10)]
-		public string Fnsku { get; set; } 
+        /// <summary>
+        /// The Fulfillment Network SKU, which identifies a real fulfillable item with catalog data and
+        /// condition.
+        /// </summary>
+        [JsonProperty("fnsku")]
+        [MinLength(1)]
+        [MaxLength(10)]
+        public string Fnsku { get; set; }
 
-		/// <summary>
-		/// The merchant SKU, a merchant-supplied identifier for a specific SKU.
-		/// </summary>
-		[JsonProperty("msku")]
-		[MinLength(1)]
-		[MaxLength(40)]
-		public string Msku { get; set; } 
+        /// <summary>
+        /// The merchant SKU, a merchant-supplied identifier for a specific SKU.
+        /// </summary>
+        [JsonProperty("msku")]
+        [MinLength(1)]
+        [MaxLength(40)]
+        public string Msku { get; set; }
 
-		[JsonProperty("taxDetails")]
-		public TaxDetails TaxDetails { get; set; } 
-	}
+        [JsonProperty("taxDetails")]
+        public TaxDetails TaxDetails { get; set; }
+    }
 }

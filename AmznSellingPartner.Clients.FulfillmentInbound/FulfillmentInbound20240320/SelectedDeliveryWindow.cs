@@ -1,51 +1,51 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using AmznSellingPartner.Clients.Attributes;
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.ValidationAttributes;
+    using AmznSellingPartner.Clients.Values;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// Selected delivery window attributes.
-	/// </summary>
-	public class SelectedDeliveryWindow : BaseClass
-	{
-		/// <summary>
-		/// Identifies type of Delivery Window Availability. Values: `AVAILABLE`, `CONGESTED`
-		/// </summary>
-		[JsonProperty("availabilityType")]
-		[IsRequired]
-		public string AvailabilityType { get; set; } 
+    /// <summary>
+    /// Selected delivery window attributes.
+    /// </summary>
+    public class SelectedDeliveryWindow : BaseClass
+    {
+        /// <summary>
+        /// Identifies type of Delivery Window Availability. Values: `AVAILABLE`, `CONGESTED`
+        /// </summary>
+        [JsonProperty("availabilityType")]
+        [IsRequired]
+        public string AvailabilityType { get; set; }
 
-		/// <summary>
-		/// Identifier of a delivery window option. A delivery window option represent one option for when
-		/// a shipment is expected to be delivered.
-		/// </summary>
-		[JsonProperty("deliveryWindowOptionId")]
-		[IsRequired]
-		[Pattern("^[a-zA-Z0-9-]*")]
-		[MinLength(36)]
-		[MaxLength(38)]
-		public string DeliveryWindowOptionId { get; set; } 
+        /// <summary>
+        /// Identifier of a delivery window option. A delivery window option represent one option for when
+        /// a shipment is expected to be delivered.
+        /// </summary>
+        [JsonProperty("deliveryWindowOptionId")]
+        [IsRequired]
+        [Pattern("^[a-zA-Z0-9-]*")]
+        [MinLength(36)]
+        [MaxLength(38)]
+        public string DeliveryWindowOptionId { get; set; }
 
-		/// <summary>
-		/// The timestamp at which this Window can no longer be edited.
-		/// </summary>
-		[JsonProperty("editableUntil")]
-		public DateTimeValue EditableUntil { get; set; } 
+        /// <summary>
+        /// The timestamp at which this Window can no longer be edited.
+        /// </summary>
+        [JsonProperty("editableUntil")]
+        public DateTimeValue EditableUntil { get; set; }
 
-		/// <summary>
-		/// The end timestamp of the window.
-		/// </summary>
-		[JsonProperty("endDate")]
-		[IsRequired]
-		public DateTimeValue EndDate { get; set; } 
+        /// <summary>
+        /// The end timestamp of the window.
+        /// </summary>
+        [JsonProperty("endDate")]
+        [IsRequired]
+        public DateTimeValue EndDate { get; set; }
 
-		/// <summary>
-		/// The start timestamp of the window.
-		/// </summary>
-		[JsonProperty("startDate")]
-		[IsRequired]
-		public DateTimeValue StartDate { get; set; } 
-	}
+        /// <summary>
+        /// The start timestamp of the window.
+        /// </summary>
+        [JsonProperty("startDate")]
+        [IsRequired]
+        public DateTimeValue StartDate { get; set; }
+    }
 }

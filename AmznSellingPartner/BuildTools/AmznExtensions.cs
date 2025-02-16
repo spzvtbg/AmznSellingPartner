@@ -21,7 +21,7 @@
 
                 _value += char.ToUpper(token[0]);
 
-                if (token.Length > 1 )
+                if (token.Length > 1)
                 {
                     _value += token[1..];
                 }
@@ -30,7 +30,7 @@
             return _value;
         }
 
-        public static string GetReferenceType(this string reference) 
+        public static string GetReferenceType(this string reference)
             => reference
                 ?.Split('/', StringSplitOptions.RemoveEmptyEntries)
                 ?.LastOrDefault()

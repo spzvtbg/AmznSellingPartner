@@ -1,28 +1,28 @@
 namespace AmznSellingPartner.Clients.CatalogItems.CatalogItems20220401
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// Search refinements.
-	/// </summary>
-	public class Refinements : BaseClass
-	{
-		/// <summary>
-		/// Brand search refinements.
-		/// </summary>
-		[JsonProperty("brands")]
-		[IsRequired]
-		public List<BrandRefinement> Brands { get; set; } 
+    /// <summary>
+    /// Search refinements.
+    /// </summary>
+    public class Refinements : BaseClass
+    {
+        /// <summary>
+        /// Brand search refinements.
+        /// </summary>
+        [JsonProperty("brands")]
+        [IsRequired]
+        public List<BrandRefinement> Brands { get; set; }
 
-		/// <summary>
-		/// Classification search refinements.
-		/// </summary>
-		[JsonProperty("classifications")]
-		[IsRequired]
-		public List<ClassificationRefinement> Classifications { get; set; } 
-	}
+        /// <summary>
+        /// Classification search refinements.
+        /// </summary>
+        [JsonProperty("classifications")]
+        [IsRequired]
+        public List<ClassificationRefinement> Classifications { get; set; }
+    }
 }

@@ -1,17 +1,17 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
-	using Newtonsoft.Json;
-	using Newtonsoft.Json.Converters;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-	using System.Runtime.Serialization;
+    using System.Runtime.Serialization;
 
-	[JsonConverter(typeof(StringEnumConverter))]
-	public enum Standard
-	{
-		/// <summary>
-		/// The Advanced Encryption Standard (AES).
-		/// </summary>
-		[EnumMember(Value = "AES")]
-		AES,
-	}
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum Standard
+    {
+        /// <summary>
+        /// The Advanced Encryption Standard (AES).
+        /// </summary>
+        [EnumMember(Value = "AES")]
+        AES,
+    }
 }

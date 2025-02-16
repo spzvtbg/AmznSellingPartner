@@ -1,24 +1,24 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// The `listInboundPlanPallets` response.
-	/// </summary>
-	public class ListInboundPlanPalletsResponse : BaseClass
-	{
-		[JsonProperty("pagination")]
-		public Pagination Pagination { get; set; } 
+    /// <summary>
+    /// The `listInboundPlanPallets` response.
+    /// </summary>
+    public class ListInboundPlanPalletsResponse : BaseClass
+    {
+        [JsonProperty("pagination")]
+        public Pagination Pagination { get; set; }
 
-		/// <summary>
-		/// The pallets in an inbound plan.
-		/// </summary>
-		[JsonProperty("pallets")]
-		[IsRequired]
-		public List<Pallet> Pallets { get; set; } 
-	}
+        /// <summary>
+        /// The pallets in an inbound plan.
+        /// </summary>
+        [JsonProperty("pallets")]
+        [IsRequired]
+        public List<Pallet> Pallets { get; set; }
+    }
 }

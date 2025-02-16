@@ -6,7 +6,12 @@
     {
         private readonly T[] values;
 
-        private CsvValue(string[] strings)
+        public CsvValue()
+        {
+
+        }
+
+        public CsvValue(string[] strings)
         {
             var type = typeof(T);
             var length = strings.Length;
@@ -23,7 +28,7 @@
             }
         }
 
-        public static implicit operator CsvValue<T>(string value) 
+        public static implicit operator CsvValue<T>(string value)
             => new CsvValue<T>(value?.Split(',') ?? []);
 
         public static implicit operator T[](CsvValue<T> csv)

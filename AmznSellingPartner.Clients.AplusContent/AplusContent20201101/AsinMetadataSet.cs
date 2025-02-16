@@ -1,14 +1,14 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// The set of ASIN metadata.
-	/// </summary>
-	[UniqueItems]
-	public class AsinMetadataSet : List<AsinMetadata>
-	{
-	}
+    /// <summary>
+    /// The set of ASIN metadata.
+    /// </summary>
+    [UniqueItems]
+    public class AsinMetadataSet : List<AsinMetadata>
+    {
+    }
 }

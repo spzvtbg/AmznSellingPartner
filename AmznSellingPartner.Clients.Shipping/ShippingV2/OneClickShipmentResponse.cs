@@ -1,13 +1,13 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// The response schema for the OneClickShipment operation.
-	/// </summary>
-	public class OneClickShipmentResponse : BaseClass
-	{
-		[JsonProperty("payload")]
-		public OneClickShipmentResult Payload { get; set; } 
-	}
+    /// <summary>
+    /// The response schema for the OneClickShipment operation.
+    /// </summary>
+    public class OneClickShipmentResponse : BaseClass
+    {
+        [JsonProperty("payload")]
+        public OneClickShipmentResult Payload { get; set; }
+    }
 }

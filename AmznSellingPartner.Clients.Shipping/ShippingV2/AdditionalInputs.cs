@@ -1,10 +1,10 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	public class AdditionalInputs : BaseClass
-	{
-		[JsonProperty("")]
-		public object AdditionalValue { get; set; } 
-	}
+    public class AdditionalInputs : BaseClass
+    {
+        [JsonProperty("")]
+        public object AdditionalValue { get; set; }
+    }
 }

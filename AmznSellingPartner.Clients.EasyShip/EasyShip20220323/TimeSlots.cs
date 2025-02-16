@@ -1,15 +1,15 @@
 namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// A list of time slots.
-	/// </summary>
-	[MinItems(1)]
-	[MaxItems(500)]
-	public class TimeSlots : List<TimeSlot>
-	{
-	}
+    /// <summary>
+    /// A list of time slots.
+    /// </summary>
+    [MinItems(1)]
+    [MaxItems(500)]
+    public class TimeSlots : List<TimeSlot>
+    {
+    }
 }

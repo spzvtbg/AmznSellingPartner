@@ -1,19 +1,19 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// Information about the seller of the service job.
-	/// </summary>
-	public class Seller : BaseClass
-	{
-		/// <summary>
-		/// The identifier of the seller of the service job.
-		/// </summary>
-		[JsonProperty("sellerId")]
-		[Pattern("^[A-Z0-9]*")]
-		public string SellerId { get; set; } 
-	}
+    /// <summary>
+    /// Information about the seller of the service job.
+    /// </summary>
+    public class Seller : BaseClass
+    {
+        /// <summary>
+        /// The identifier of the seller of the service job.
+        /// </summary>
+        [JsonProperty("sellerId")]
+        [Pattern("^[A-Z0-9]*")]
+        public string SellerId { get; set; }
+    }
 }

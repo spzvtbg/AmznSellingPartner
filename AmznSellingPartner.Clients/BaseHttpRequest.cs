@@ -1,6 +1,6 @@
 ﻿namespace AmznSellingPartner.Clients
 {
-    using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.HttpAttributes;
 
     using System;
     using System.Collections.Generic;

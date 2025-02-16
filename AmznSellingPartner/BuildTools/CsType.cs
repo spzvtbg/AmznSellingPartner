@@ -39,7 +39,8 @@
             if (!string.IsNullOrWhiteSpace(name))
             {
                 this.attributes[name] = value?.ToString();
-                this.usings.Add("AmznSellingPartner.Clients.Attributes");
+                this.usings.Add("AmznSellingPartner.Clients.HttpAttributes");
+                this.usings.Add("AmznSellingPartner.Clients.ValidationAttributes");
             }
 
             return this;

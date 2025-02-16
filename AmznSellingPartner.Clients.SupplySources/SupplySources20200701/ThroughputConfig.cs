@@ -1,19 +1,19 @@
 namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// The throughput configuration.
-	/// </summary>
-	public class ThroughputConfig : BaseClass
-	{
-		[JsonProperty("throughputCap")]
-		public ThroughputCap ThroughputCap { get; set; } 
+    /// <summary>
+    /// The throughput configuration.
+    /// </summary>
+    public class ThroughputConfig : BaseClass
+    {
+        [JsonProperty("throughputCap")]
+        public ThroughputCap ThroughputCap { get; set; }
 
-		[JsonProperty("throughputUnit")]
-		[IsRequired]
-		public ThroughputUnit ThroughputUnit { get; set; } 
-	}
+        [JsonProperty("throughputUnit")]
+        [IsRequired]
+        public ThroughputUnit ThroughputUnit { get; set; }
+    }
 }

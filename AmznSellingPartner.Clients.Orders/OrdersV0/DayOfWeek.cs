@@ -1,53 +1,53 @@
 namespace AmznSellingPartner.Clients.Orders.OrdersV0
 {
-	using Newtonsoft.Json;
-	using Newtonsoft.Json.Converters;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-	using System.Runtime.Serialization;
+    using System.Runtime.Serialization;
 
-	[JsonConverter(typeof(StringEnumConverter))]
-	public enum DayOfWeek
-	{
-		/// <summary>
-		/// Sunday - Day of the week.
-		/// </summary>
-		[EnumMember(Value = "SUN")]
-		SUN,
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum DayOfWeek
+    {
+        /// <summary>
+        /// Sunday - Day of the week.
+        /// </summary>
+        [EnumMember(Value = "SUN")]
+        SUN,
 
-		/// <summary>
-		/// Monday - Day of the week.
-		/// </summary>
-		[EnumMember(Value = "MON")]
-		MON,
+        /// <summary>
+        /// Monday - Day of the week.
+        /// </summary>
+        [EnumMember(Value = "MON")]
+        MON,
 
-		/// <summary>
-		/// Tuesday - Day of the week.
-		/// </summary>
-		[EnumMember(Value = "TUE")]
-		TUE,
+        /// <summary>
+        /// Tuesday - Day of the week.
+        /// </summary>
+        [EnumMember(Value = "TUE")]
+        TUE,
 
-		/// <summary>
-		/// Wednesday - Day of the week.
-		/// </summary>
-		[EnumMember(Value = "WED")]
-		WED,
+        /// <summary>
+        /// Wednesday - Day of the week.
+        /// </summary>
+        [EnumMember(Value = "WED")]
+        WED,
 
-		/// <summary>
-		/// Thursday - Day of the week.
-		/// </summary>
-		[EnumMember(Value = "THU")]
-		THU,
+        /// <summary>
+        /// Thursday - Day of the week.
+        /// </summary>
+        [EnumMember(Value = "THU")]
+        THU,
 
-		/// <summary>
-		/// Friday - Day of the week.
-		/// </summary>
-		[EnumMember(Value = "FRI")]
-		FRI,
+        /// <summary>
+        /// Friday - Day of the week.
+        /// </summary>
+        [EnumMember(Value = "FRI")]
+        FRI,
 
-		/// <summary>
-		/// Saturday - Day of the week.
-		/// </summary>
-		[EnumMember(Value = "SAT")]
-		SAT,
-	}
+        /// <summary>
+        /// Saturday - Day of the week.
+        /// </summary>
+        [EnumMember(Value = "SAT")]
+        SAT,
+    }
 }

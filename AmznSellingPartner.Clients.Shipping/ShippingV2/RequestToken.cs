@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.Shipping.ShippingV2
 {
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.Values;
 
-	/// <summary>
-	/// A unique token generated to identify a getRates operation.
-	/// </summary>
-	public class RequestToken : StringValue
-	{
-	}
+    /// <summary>
+    /// A unique token generated to identify a getRates operation.
+    /// </summary>
+    public class RequestToken : StringValue
+    {
+    }
 }

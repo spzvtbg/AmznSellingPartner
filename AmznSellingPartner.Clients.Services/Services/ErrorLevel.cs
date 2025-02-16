@@ -1,23 +1,23 @@
 namespace AmznSellingPartner.Clients.Services.Services
 {
-	using Newtonsoft.Json;
-	using Newtonsoft.Json.Converters;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-	using System.Runtime.Serialization;
+    using System.Runtime.Serialization;
 
-	[JsonConverter(typeof(StringEnumConverter))]
-	public enum ErrorLevel
-	{
-		/// <summary>
-		/// Error
-		/// </summary>
-		[EnumMember(Value = "ERROR")]
-		ERROR,
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum ErrorLevel
+    {
+        /// <summary>
+        /// Error
+        /// </summary>
+        [EnumMember(Value = "ERROR")]
+        ERROR,
 
-		/// <summary>
-		/// Warning
-		/// </summary>
-		[EnumMember(Value = "WARNING")]
-		WARNING,
-	}
+        /// <summary>
+        /// Warning
+        /// </summary>
+        [EnumMember(Value = "WARNING")]
+        WARNING,
+    }
 }

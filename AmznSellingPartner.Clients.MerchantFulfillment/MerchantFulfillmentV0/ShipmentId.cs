@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 {
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.Values;
 
-	/// <summary>
-	/// An Amazon-defined shipment identifier.
-	/// </summary>
-	public class ShipmentId : StringValue
-	{
-	}
+    /// <summary>
+    /// An Amazon-defined shipment identifier.
+    /// </summary>
+    public class ShipmentId : StringValue
+    {
+    }
 }

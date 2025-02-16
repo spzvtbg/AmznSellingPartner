@@ -1,6 +1,6 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
-	public class PostContentDocumentApprovalSubmissionResponse : BaseClass
-	{
-	}
+    public class PostContentDocumentApprovalSubmissionResponse : BaseClass
+    {
+    }
 }

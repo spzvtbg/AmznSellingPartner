@@ -6,7 +6,12 @@
     {
         private readonly byte[] buffer;
 
-        private Base64Value(byte[] buffer) 
+        public Base64Value()
+        {
+
+        }
+
+        public Base64Value(byte[] buffer)
             => this.buffer = buffer;
 
         public static implicit operator Base64Value(byte[] buffer)

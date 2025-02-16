@@ -6,6 +6,11 @@
     {
         private DateTime dateTime;
 
+        public DateTimeValue()
+        {
+
+        }
+
         public DateTimeValue(DateTime dateTime)
             => this.dateTime = dateTime;
 

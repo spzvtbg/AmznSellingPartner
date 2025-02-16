@@ -1,22 +1,22 @@
 namespace AmznSellingPartner.Clients.FulfillmentInbound.FulfillmentInbound20240320
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// The `UpdateShipmentSourceAddress` response.
-	/// </summary>
-	public class UpdateShipmentSourceAddressResponse : BaseClass
-	{
-		/// <summary>
-		/// UUID for the given operation.
-		/// </summary>
-		[JsonProperty("operationId")]
-		[IsRequired]
-		[Pattern("^[a-zA-Z0-9-]*")]
-		[MinLength(36)]
-		[MaxLength(38)]
-		public string OperationId { get; set; } 
-	}
+    /// <summary>
+    /// The `UpdateShipmentSourceAddress` response.
+    /// </summary>
+    public class UpdateShipmentSourceAddressResponse : BaseClass
+    {
+        /// <summary>
+        /// UUID for the given operation.
+        /// </summary>
+        [JsonProperty("operationId")]
+        [IsRequired]
+        [Pattern("^[a-zA-Z0-9-]*")]
+        [MinLength(36)]
+        [MaxLength(38)]
+        public string OperationId { get; set; }
+    }
 }

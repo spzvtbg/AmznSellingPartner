@@ -8,10 +8,10 @@
     {
         private static readonly HttpClient httpClient = new HttpClient();
 
-        public BaseHttpClient(Uri baseAddress) 
+        public BaseHttpClient(Uri baseAddress)
             => httpClient.BaseAddress = baseAddress;
 
-        protected static async Task<T> SendAsync<T>(BaseHttpRequest request) where T : BaseHttpResponse<T>, new() 
+        protected static async Task<T> SendAsync<T>(BaseHttpRequest request) where T : BaseHttpResponse<T>, new()
         {
             if (!request.Validate(out var errors))
             {

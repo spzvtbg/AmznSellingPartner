@@ -1,14 +1,14 @@
 namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 {
-	using AmznSellingPartner.Clients.Attributes;
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.ValidationAttributes;
+    using AmznSellingPartner.Clients.Values;
 
-	/// <summary>
-	/// The state or province code. This is a required field in Canada, US, and UK marketplaces, and
-	/// for shipments that originate in China.
-	/// </summary>
-	[MaxLength(30)]
-	public class StateOrProvinceCode : StringValue
-	{
-	}
+    /// <summary>
+    /// The state or province code. This is a required field in Canada, US, and UK marketplaces, and
+    /// for shipments that originate in China.
+    /// </summary>
+    [MaxLength(30)]
+    public class StateOrProvinceCode : StringValue
+    {
+    }
 }

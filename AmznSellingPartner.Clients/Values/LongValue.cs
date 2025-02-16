@@ -4,6 +4,11 @@
     {
         private long value;
 
+        public LongValue()
+        {
+
+        }
+
         public LongValue(long value)
             => this.value = value;
 

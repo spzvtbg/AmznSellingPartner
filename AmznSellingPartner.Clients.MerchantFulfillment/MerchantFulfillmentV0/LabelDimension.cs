@@ -1,11 +1,11 @@
 namespace AmznSellingPartner.Clients.MerchantFulfillment.MerchantFulfillmentV0
 {
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.Values;
 
-	/// <summary>
-	/// A label dimension.
-	/// </summary>
-	public class LabelDimension : DoubleValue
-	{
-	}
+    /// <summary>
+    /// A label dimension.
+    /// </summary>
+    public class LabelDimension : DoubleValue
+    {
+    }
 }

@@ -1,21 +1,21 @@
 namespace AmznSellingPartner.Clients.Feeds.Feeds20210630
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// A list of error responses returned when a request is unsuccessful.
-	/// </summary>
-	public class ErrorList : BaseClass
-	{
-		/// <summary>
-		/// An error response returned when the request is unsuccessful.
-		/// </summary>
-		[JsonProperty("errors")]
-		[IsRequired]
-		public List<Error> Errors { get; set; } 
-	}
+    /// <summary>
+    /// A list of error responses returned when a request is unsuccessful.
+    /// </summary>
+    public class ErrorList : BaseClass
+    {
+        /// <summary>
+        /// An error response returned when the request is unsuccessful.
+        /// </summary>
+        [JsonProperty("errors")]
+        [IsRequired]
+        public List<Error> Errors { get; set; }
+    }
 }

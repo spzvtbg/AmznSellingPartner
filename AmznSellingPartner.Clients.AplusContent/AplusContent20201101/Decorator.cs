@@ -1,42 +1,42 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	/// <summary>
-	/// A decorator applied to a content string value in order to create rich text.
-	/// </summary>
-	public class Decorator : BaseClass
-	{
-		[JsonProperty("type")]
-		public DecoratorType Type { get; set; } 
+    /// <summary>
+    /// A decorator applied to a content string value in order to create rich text.
+    /// </summary>
+    public class Decorator : BaseClass
+    {
+        [JsonProperty("type")]
+        public DecoratorType Type { get; set; }
 
-		/// <summary>
-		/// The starting character of this decorator within the content string. Use zero for the first
-		/// character.
-		/// </summary>
-		[JsonProperty("offset")]
-		[Minimum(0)]
-		[Maximum(10000)]
-		public int Offset { get; set; } 
+        /// <summary>
+        /// The starting character of this decorator within the content string. Use zero for the first
+        /// character.
+        /// </summary>
+        [JsonProperty("offset")]
+        [Minimum(0)]
+        [Maximum(10000)]
+        public int Offset { get; set; }
 
-		/// <summary>
-		/// The number of content characters to alter with this decorator. Decorators such as line breaks
-		/// can have zero length and fit between characters.
-		/// </summary>
-		[JsonProperty("length")]
-		[Minimum(0)]
-		[Maximum(10000)]
-		public int Length { get; set; } 
+        /// <summary>
+        /// The number of content characters to alter with this decorator. Decorators such as line breaks
+        /// can have zero length and fit between characters.
+        /// </summary>
+        [JsonProperty("length")]
+        [Minimum(0)]
+        [Maximum(10000)]
+        public int Length { get; set; }
 
-		/// <summary>
-		/// The relative intensity or variation of this decorator. Decorators such as bullet-points, for
-		/// example, can have multiple indentation depths.
-		/// </summary>
-		[JsonProperty("depth")]
-		[Minimum(0)]
-		[Maximum(100)]
-		public int Depth { get; set; } 
-	}
+        /// <summary>
+        /// The relative intensity or variation of this decorator. Decorators such as bullet-points, for
+        /// example, can have multiple indentation depths.
+        /// </summary>
+        [JsonProperty("depth")]
+        [Minimum(0)]
+        [Maximum(100)]
+        public int Depth { get; set; }
+    }
 }

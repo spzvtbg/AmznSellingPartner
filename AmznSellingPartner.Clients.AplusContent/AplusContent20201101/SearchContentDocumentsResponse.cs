@@ -1,16 +1,16 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
 
-	public class SearchContentDocumentsResponse : BaseClass
-	{
-		/// <summary>
-		/// The content metadata records.
-		/// </summary>
-		[JsonProperty("contentMetadataRecords")]
-		[IsRequired]
-		public ContentMetadataRecordList ContentMetadataRecords { get; set; } 
-	}
+    public class SearchContentDocumentsResponse : BaseClass
+    {
+        /// <summary>
+        /// The content metadata records.
+        /// </summary>
+        [JsonProperty("contentMetadataRecords")]
+        [IsRequired]
+        public ContentMetadataRecordList ContentMetadataRecords { get; set; }
+    }
 }

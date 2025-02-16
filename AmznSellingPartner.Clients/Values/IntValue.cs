@@ -4,6 +4,11 @@
     {
         private int value;
 
+        public IntValue()
+        {
+
+        }
+
         public IntValue(int value)
             => this.value = value;
 

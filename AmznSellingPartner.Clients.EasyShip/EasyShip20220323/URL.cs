@@ -1,12 +1,12 @@
 namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 {
-	using AmznSellingPartner.Clients.Values;
+    using AmznSellingPartner.Clients.Values;
 
-	/// <summary>
-	/// A pre-signed URL for the zip document containing the shipping labels and the documents enabled
-	/// for your marketplace.
-	/// </summary>
-	public class URL : StringValue
-	{
-	}
+    /// <summary>
+    /// A pre-signed URL for the zip document containing the shipping labels and the documents enabled
+    /// for your marketplace.
+    /// </summary>
+    public class URL : StringValue
+    {
+    }
 }

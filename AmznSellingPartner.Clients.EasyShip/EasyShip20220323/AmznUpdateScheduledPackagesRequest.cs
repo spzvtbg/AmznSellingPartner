@@ -1,14 +1,14 @@
 namespace AmznSellingPartner.Clients.EasyShip.EasyShip20220323
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.HttpAttributes;
 
-	[HttpPatch("/easyShip/2022-03-23/package")]
-	public class AmznUpdateScheduledPackagesRequest : BaseHttpRequest
-	{
-		/// <summary>
-		/// The request schema for the `updateScheduledPackages` operation.
-		/// </summary>
-		[InBody("UpdateScheduledPackagesRequest")]
-		public UpdateScheduledPackagesRequest UpdateScheduledPackagesRequest { get; set; } 
-	}
+    [HttpPatch("/easyShip/2022-03-23/package")]
+    public class AmznUpdateScheduledPackagesRequest : BaseHttpRequest
+    {
+        /// <summary>
+        /// The request schema for the `updateScheduledPackages` operation.
+        /// </summary>
+        [InBody("UpdateScheduledPackagesRequest")]
+        public UpdateScheduledPackagesRequest UpdateScheduledPackagesRequest { get; set; }
+    }
 }

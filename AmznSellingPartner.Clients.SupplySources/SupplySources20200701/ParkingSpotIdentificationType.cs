@@ -1,20 +1,20 @@
 namespace AmznSellingPartner.Clients.SupplySources.SupplySources20200701
 {
-	using Newtonsoft.Json;
-	using Newtonsoft.Json.Converters;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-	using System.Runtime.Serialization;
+    using System.Runtime.Serialization;
 
-	/// <summary>
-	/// The type of parking spot identification.
-	/// </summary>
-	[JsonConverter(typeof(StringEnumConverter))]
-	public enum ParkingSpotIdentificationType
-	{
-		[EnumMember(Value = "Numbered")]
-		Numbered,
+    /// <summary>
+    /// The type of parking spot identification.
+    /// </summary>
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum ParkingSpotIdentificationType
+    {
+        [EnumMember(Value = "Numbered")]
+        Numbered,
 
-		[EnumMember(Value = "Other")]
-		Other,
-	}
+        [EnumMember(Value = "Other")]
+        Other,
+    }
 }

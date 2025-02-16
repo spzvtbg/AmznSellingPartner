@@ -1,9 +1,9 @@
 namespace AmznSellingPartner.Clients.Sellers.Sellers
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.HttpAttributes;
 
-	[HttpGet("/sellers/v1/marketplaceParticipations")]
-	public class AmznGetMarketplaceParticipationsRequest : BaseHttpRequest
-	{
-	}
+    [HttpGet("/sellers/v1/marketplaceParticipations")]
+    public class AmznGetMarketplaceParticipationsRequest : BaseHttpRequest
+    {
+    }
 }

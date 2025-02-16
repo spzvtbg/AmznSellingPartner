@@ -1,14 +1,14 @@
 namespace AmznSellingPartner.Clients.AplusContent.AplusContent20201101
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// A set of messages to the user, such as warnings or comments.
-	/// </summary>
-	[UniqueItems]
-	public class MessageSet : List<Error>
-	{
-	}
+    /// <summary>
+    /// A set of messages to the user, such as warnings or comments.
+    /// </summary>
+    [UniqueItems]
+    public class MessageSet : List<Error>
+    {
+    }
 }

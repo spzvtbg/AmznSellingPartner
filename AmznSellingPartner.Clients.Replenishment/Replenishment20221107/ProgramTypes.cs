@@ -1,15 +1,15 @@
 namespace AmznSellingPartner.Clients.Replenishment.Replenishment20221107
 {
-	using AmznSellingPartner.Clients.Attributes;
+    using AmznSellingPartner.Clients.ValidationAttributes;
 
-	using System.Collections.Generic;
+    using System.Collections.Generic;
 
-	/// <summary>
-	/// A list of replenishment program types.
-	/// </summary>
-	[MinItems(1)]
-	[UniqueItems]
-	public class ProgramTypes : List<ProgramType>
-	{
-	}
+    /// <summary>
+    /// A list of replenishment program types.
+    /// </summary>
+    [MinItems(1)]
+    [UniqueItems]
+    public class ProgramTypes : List<ProgramType>
+    {
+    }
 }
